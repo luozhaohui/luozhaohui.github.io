@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[分类：读书笔记 | 飘飘白云]]></title>
-  <link href="http://luozhaohui.github.io/blog/categories/du-shu-bi-ji/atom.xml" rel="self"/>
-  <link href="http://luozhaohui.github.io/"/>
-  <updated>2017-03-31T14:10:33+08:00</updated>
-  <id>http://luozhaohui.github.io/</id>
+  <title><![CDATA[Category: 读书笔记 | My Octopress Blog]]></title>
+  <link href="http://luozhaohui.github.com/blog/categories/du-shu-bi-ji/atom.xml" rel="self"/>
+  <link href="http://luozhaohui.github.com/"/>
+  <updated>2017-03-31T14:28:14+08:00</updated>
+  <id>http://luozhaohui.github.com/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
-    <email><![CDATA[kesalin@gmail.com]]></email>
+    
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
     <title type="html"><![CDATA[学会提问：批判性思维指南]]></title>
-    <link href="http://luozhaohui.github.io/blog/2014/10/12/critical-thinking/"/>
+    <link href="http://luozhaohui.github.com/blog/2014/10/12/critical-thinking/"/>
     <updated>2014-10-12T08:35:02+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2014/10/12/critical-thinking</id>
+    <id>http://luozhaohui.github.com/blog/2014/10/12/critical-thinking</id>
     <content type="html"><![CDATA[<h3>写在前面的话：</h3>
 
 <ol>
@@ -918,9 +918,9 @@
   
   <entry>
     <title type="html"><![CDATA[《高效能人士的7个习惯》]]></title>
-    <link href="http://luozhaohui.github.io/blog/2008/07/20/seven-habits/"/>
+    <link href="http://luozhaohui.github.com/blog/2008/07/20/seven-habits/"/>
     <updated>2008-07-20T03:13:00+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2008/07/20/seven-habits</id>
+    <id>http://luozhaohui.github.com/blog/2008/07/20/seven-habits</id>
     <content type="html"><![CDATA[<p><img src="http://img5.douban.com/mpic/s4510907.jpg" alt="高效能人士的7个习惯" /></p>
 
 <p>《<a href="http://book.douban.com/subject/5325618/">高效能人士的7个习惯</a>》</p>

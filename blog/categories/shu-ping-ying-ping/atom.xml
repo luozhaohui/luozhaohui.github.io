@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[分类：书评影评 | 飘飘白云]]></title>
-  <link href="http://luozhaohui.github.io/blog/categories/shu-ping-ying-ping/atom.xml" rel="self"/>
-  <link href="http://luozhaohui.github.io/"/>
-  <updated>2017-03-31T14:10:33+08:00</updated>
-  <id>http://luozhaohui.github.io/</id>
+  <title><![CDATA[Category: 书评影评 | My Octopress Blog]]></title>
+  <link href="http://luozhaohui.github.com/blog/categories/shu-ping-ying-ping/atom.xml" rel="self"/>
+  <link href="http://luozhaohui.github.com/"/>
+  <updated>2017-03-31T14:28:14+08:00</updated>
+  <id>http://luozhaohui.github.com/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
-    <email><![CDATA[kesalin@gmail.com]]></email>
+    
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
     <title type="html"><![CDATA[读书笔记: 基因组-人种自传23章]]></title>
-    <link href="http://luozhaohui.github.io/blog/2016/01/31/book-genome/"/>
+    <link href="http://luozhaohui.github.com/blog/2016/01/31/book-genome/"/>
     <updated>2016-01-31T21:51:38+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2016/01/31/book-genome</id>
+    <id>http://luozhaohui.github.com/blog/2016/01/31/book-genome</id>
     <content type="html"><![CDATA[<h2>简评</h2>
 
 <p>这是一本比较全面、新颖、引人深思的书籍。相比<a href="http://book.douban.com/subject/11445548/">《自私的基因》</a>那种宏大概括的叙事方式，更注重个别基因这个微观层面的故事。全书选取与我们密切相关的一些基因探讨了：生命、物种、疾病、环境、智力、死亡、性别、压力、个性、死亡、基因疗法、政治、自由意志等科学的，哲学的，社会的，政治的，伦理的问题。</p>
@@ -340,9 +340,9 @@
   
   <entry>
     <title type="html"><![CDATA[2015私人阅读十五佳]]></title>
-    <link href="http://luozhaohui.github.io/blog/2016/01/01/books-annual-review/"/>
+    <link href="http://luozhaohui.github.com/blog/2016/01/01/books-annual-review/"/>
     <updated>2016-01-01T05:42:38+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2016/01/01/books-annual-review</id>
+    <id>http://luozhaohui.github.com/blog/2016/01/01/books-annual-review</id>
     <content type="html"><![CDATA[<h2>统计</h2>
 
 <p>2015年一共读完46本，其中五星18本，占比40%；四星17本，占比近40%；三星7本；两星4本。阅读主题以社科、历史、商业为主，人到中年已经消遣不起小说了。</p>
@@ -419,9 +419,9 @@
   
   <entry>
     <title type="html"><![CDATA[Android框架学习资料]]></title>
-    <link href="http://luozhaohui.github.io/blog/2015/04/02/study-android-fw/"/>
+    <link href="http://luozhaohui.github.com/blog/2015/04/02/study-android-fw/"/>
     <updated>2015-04-02T19:00:34+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2015/04/02/study-android-fw</id>
+    <id>http://luozhaohui.github.com/blog/2015/04/02/study-android-fw</id>
     <content type="html"><![CDATA[<h2>前言</h2>
 
 <p>这两年在做一个与 Android 类似的系统（参考：<a href="http://blog.csdn.net/kesalin/article/details/10474007">招聘：有兴趣做一个与Android对等的操作系统么？</a>），因此有机会对 Android framework 进行系统地学习与研究。期间也阅读了一些不错的书籍与资料，特此分享在这里，或许对其他有兴趣研究 Android framework 的朋友有所帮助。</p>
@@ -457,9 +457,9 @@
   
   <entry>
     <title type="html"><![CDATA[中文版《独裁者手册》之和谐手册]]></title>
-    <link href="http://luozhaohui.github.io/blog/2015/03/26/miss-of-the-dictatos-handbook/"/>
+    <link href="http://luozhaohui.github.com/blog/2015/03/26/miss-of-the-dictatos-handbook/"/>
     <updated>2015-03-26T10:00:34+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2015/03/26/miss-of-the-dictatos-handbook</id>
+    <id>http://luozhaohui.github.com/blog/2015/03/26/miss-of-the-dictatos-handbook</id>
     <content type="html"><![CDATA[<h2>前言</h2>
 
 <p><img src="http://img5.douban.com/lpic/s27293486.jpg" alt="《独裁者手册》" /></p>
@@ -605,9 +605,9 @@
   
   <entry>
     <title type="html"><![CDATA[读史又半年]]></title>
-    <link href="http://luozhaohui.github.io/blog/2014/06/30/reading-history/"/>
+    <link href="http://luozhaohui.github.com/blog/2014/06/30/reading-history/"/>
     <updated>2014-06-30T09:00:35+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2014/06/30/reading-history</id>
+    <id>http://luozhaohui.github.com/blog/2014/06/30/reading-history</id>
     <content type="html"><![CDATA[<p>过了三十越发觉得时间之宝贵，三十之前觉得时间管理于我等无所作为的草民是不相干的，而今真有点只争朝夕的紧迫与仓促感。最近帮我老哥弄了个微信的公众平台，他发现我基本不上微信，觉得像我这样搞IT的不用微信很不可思议，包括不少朋友也有此同感。微信这玩意，非我不懂也，我只是没那么多时间和精力去刷那些个99%或是转发或是广告的垃圾信息。我的阵地在微博，豆瓣，QQ空间，微博提供技术/社会动态资讯；豆瓣提供读与看的资讯；QQ空间提供好友资讯，有此三者足以，而且每天浏览这些社交工具上的时间碎片加起来不会超过半小时。</p>
 
 <p>回顾2014上半年，看了不少有趣的影视剧（>33部），也读了不少好玩的书，在此总结之，广而荐之。总的来说这半年关注的重点在历史，金融与社会学。</p>
