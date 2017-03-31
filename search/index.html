@@ -9,7 +9,7 @@
   <meta name="author" content="飘飘白云">
 
   
-  <meta name="description" content=" Search Results ">
+  <meta name="description" content="Search Results ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -69,21 +69,22 @@
 </nav>
   <div id="main">
     <div id="content">
-        <h1 class="entry-title"><center>Search Results</center></h1>
+      <h1 class="entry-title"><center>Search Results</center></h1>
+
+<body>
   <div id="search_loading" style="margin: 40px 0">
       <center><img src="/images/loading.gif"></center>
   </div>
 
-  <script type="text/javascript" src="/javascripts/jquery-tapir.js"></script>
-  <div id="search_results" style="display:none">
-  <br>
-  </div>
+  <div id="search_results"></div>
+
+  <script src="//libs.baidu.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="/javascripts/jquery-tapir.min.js"></script>
   <script>
-       $('#search_results').tapir({
-           'token': '58de1b7014ad6635b2a884d5',
-           'complete' : function() { document.getElementById('search_loading').style.display="none"; }
-       });
+    $('#search_results').tapir({'token': '58de1b7014ad6635b2a884d5'});
   </script>
+
+</body>
     </div>
   </div>
   <footer role="contentinfo"><p>
