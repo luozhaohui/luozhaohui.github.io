@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[分类：软件开发 | 飘飘白云]]></title>
-  <link href="http://luozhaohui.github.io/blog/categories/ruan-jian-kai-fa/atom.xml" rel="self"/>
-  <link href="http://luozhaohui.github.io/"/>
-  <updated>2017-03-31T18:42:00+08:00</updated>
-  <id>http://luozhaohui.github.io/</id>
+  <title><![CDATA[Category: 软件开发 | My Octopress Blog]]></title>
+  <link href="http://luozhaohui.github.com/blog/categories/ruan-jian-kai-fa/atom.xml" rel="self"/>
+  <link href="http://luozhaohui.github.com/"/>
+  <updated>2017-03-31T19:24:10+08:00</updated>
+  <id>http://luozhaohui.github.com/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
-    <email><![CDATA[kesalin@gmail.com]]></email>
+    
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
     <title type="html"><![CDATA[Android框架学习资料]]></title>
-    <link href="http://luozhaohui.github.io/blog/2015/04/02/study-android-fw/"/>
+    <link href="http://luozhaohui.github.com/blog/2015/04/02/study-android-fw/"/>
     <updated>2015-04-02T19:00:34+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2015/04/02/study-android-fw</id>
+    <id>http://luozhaohui.github.com/blog/2015/04/02/study-android-fw</id>
     <content type="html"><![CDATA[<h2>前言</h2>
 
 <p>这两年在做一个与 Android 类似的系统（参考：<a href="http://blog.csdn.net/kesalin/article/details/10474007">招聘：有兴趣做一个与Android对等的操作系统么？</a>），因此有机会对 Android framework 进行系统地学习与研究。期间也阅读了一些不错的书籍与资料，特此分享在这里，或许对其他有兴趣研究 Android framework 的朋友有所帮助。</p>
@@ -53,9 +53,9 @@
   
   <entry>
     <title type="html"><![CDATA[用Python编写博客导出工具]]></title>
-    <link href="http://luozhaohui.github.io/blog/2014/10/12/export-blog-using-python-on-windows/"/>
+    <link href="http://luozhaohui.github.com/blog/2014/10/12/export-blog-using-python-on-windows/"/>
     <updated>2014-10-12T08:35:02+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2014/10/12/export-blog-using-python-on-windows</id>
+    <id>http://luozhaohui.github.com/blog/2014/10/12/export-blog-using-python-on-windows</id>
     <content type="html"><![CDATA[<h3>写在前面的话</h3>
 
 <p>我在 github 上用 octopress 搭建了<a href="http://kesalin.github.io/">个人博客</a>，octopress 使用Markdown语法编写博文。之前我在CSDN博客上也写过不少的技术博文，都说自己的孩子再丑也是个宝，所以就起了把CSDN博客里面的文章导出到个人博客上的念头。刚开始想找个工具把CSDN博客导出为xml或文本，然后再把xml或文本转换为Markdown博文。可惜搜了一下现有博客导出工具，大部分要收费才能将全部博文导出为xml格式，所以就只好发明轮子了：写个工具将全部博文导出为Markdown博文（也是txt格式的）。</p>
@@ -192,13 +192,13 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <div id="papelist" class="pagelist">
     <span> 236条数据  共12页</span>
     <strong>1</strong> 
-    <a href="http://luozhaohui.github.io/kesalin/article/list/2">2</a>
-    <a href="http://luozhaohui.github.io/kesalin/article/list/3">3</a>
-    <a href="http://luozhaohui.github.io/kesalin/article/list/4">4</a> 
-    <a href="http://luozhaohui.github.io/kesalin/article/list/5">5</a> 
-    <a href="http://luozhaohui.github.io/kesalin/article/list/6">...</a> 
-    <a href="http://luozhaohui.github.io/kesalin/article/list/2">下一页</a> 
-    <a href="http://luozhaohui.github.io/kesalin/article/list/12">尾页</a>
+    <a href="http://luozhaohui.github.com/kesalin/article/list/2">2</a>
+    <a href="http://luozhaohui.github.com/kesalin/article/list/3">3</a>
+    <a href="http://luozhaohui.github.com/kesalin/article/list/4">4</a> 
+    <a href="http://luozhaohui.github.com/kesalin/article/list/5">5</a> 
+    <a href="http://luozhaohui.github.com/kesalin/article/list/6">...</a> 
+    <a href="http://luozhaohui.github.com/kesalin/article/list/2">下一页</a> 
+    <a href="http://luozhaohui.github.com/kesalin/article/list/12">尾页</a>
 </div>
 
 
@@ -283,7 +283,7 @@ article_toplist示例：(article_list的格式是类似的)
             <span class="ico ico_type_Original"></span>
             <h1>
                 <span class="link_title">
-                <a href="http://luozhaohui.github.io/kesalin/article/details/10474007">
+                <a href="http://luozhaohui.github.com/kesalin/article/details/10474007">
                 <font color="red">[置顶]</font>
                 招聘：有兴趣做一个与Android对等的操作系统么？
                 </a>
