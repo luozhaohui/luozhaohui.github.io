@@ -1,16 +1,3256 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://luozhaohui.github.com/atom.xml" rel="self"/>
-  <link href="http://luozhaohui.github.com/"/>
-  <updated>2017-03-31T11:13:42+08:00</updated>
-  <id>http://luozhaohui.github.com/</id>
+  <title><![CDATA[飘飘白云]]></title>
+  <link href="http://luozhaohui.github.io/atom.xml" rel="self"/>
+  <link href="http://luozhaohui.github.io/"/>
+  <updated>2017-03-31T14:10:33+08:00</updated>
+  <id>http://luozhaohui.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
-    
+    <email><![CDATA[kesalin@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[读书笔记: 基因组-人种自传23章]]></title>
+    <link href="http://luozhaohui.github.io/blog/2016/01/31/book-genome/"/>
+    <updated>2016-01-31T21:51:38+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2016/01/31/book-genome</id>
+    <content type="html"><![CDATA[<h2>简评</h2>
+
+<p>这是一本比较全面、新颖、引人深思的书籍。相比<a href="http://book.douban.com/subject/11445548/">《自私的基因》</a>那种宏大概括的叙事方式，更注重个别基因这个微观层面的故事。全书选取与我们密切相关的一些基因探讨了：生命、物种、疾病、环境、智力、死亡、性别、压力、个性、死亡、基因疗法、政治、自由意志等科学的，哲学的，社会的，政治的，伦理的问题。</p>
+
+<!--more-->
+
+
+<hr />
+
+<h2>导言</h2>
+
+<p>2006年6月26日，比尔.克林顿总统咋白宫，托尼.布莱尔在唐宁街同时宣布，基因组的草稿已经完成。</p>
+
+<p>人类细胞（生殖细胞和血红细胞除外）的细胞核中有两套完全的人类基因组。一套来自父亲，一套来自母亲。从原理上讲，每一套都有着相同的23条染色体，上面有相同的3万~8万个基因。每个基因由外显子或内含子的段落组成，每个段落是由称为密码子的词（总共64种）组成，每个词是由三个称为碱基的字母组成。整个基因组使用三个字母的词写成的，只用四个字母：A（腺嘌呤），C（胞嘧啶），G（鸟嘌呤）和T（胸腺嘧啶）。它们不是写在平平的纸上，而是写在糖与磷酸组成的DNA分子的长链上，碱基就附着在这长链的侧面形成侧环。每一条染色体是一对非常长的互补的DNA分子缠绕而成，形成著名的“双螺旋”结构。</p>
+
+<p>基因组是非常巧妙的一本书，因为在合适的条件下他可以复印自己也可以读出自己。复印的过程叫做复制，读出自己叫做翻译。</p>
+
+<p>翻译的过程是这样的：基因（DNA）根据碱基配对规则被转录成复制品（信使RNA，用U-尿嘧啶替代T-胸腺嘧啶），信使RNA通过把所有内含子都切除把所有外显子都连接起来的方式进行编辑。然后，信使RNA在核糖体的作用下把三个字母组成的密码子翻译成由转运RNA的分子带来的某种氨基酸（一共有20种不同的氨基酸）。每个氨基酸都链接在上一个后面形成与密码子顺序一致的长链。当整个信息被翻译完成之后，氨基酸链就把自己折叠成一个特殊的形状，这个形状是由它的序列决定，这时，它被叫做蛋白质。身体里几乎所有东西要么是由蛋白质组成的，要么是由蛋白质造出来的。每个蛋白质都是一个翻译出来的基因。具体点说，身体里面的化学反应是由叫酶的蛋白质来催化的。</p>
+
+<p>总结一下，根据DNA配对规则转录得到的信使RNA，在核糖体的帮助下被翻译成由转运RNA带来的氨基酸，从而形成氨基酸链-也就是蛋白质。简单地说，基因是蛋白质的配方，而蛋白质是人体内的化学反应的催化剂，从而基因通过蛋白质来表达。</p>
+
+<p>当基因被复制时，有时候会出差错，一个字母（碱基）偶尔被丢掉，或翻译成错误的字母，一个句子或段落有时会被重复、或被丢掉，或顺序错乱。这些称为突变。</p>
+
+<h2>第一号染色体：生命</h2>
+
+<p>所有的生命都有两种能力：复制自己和制造秩序的能力。前者指的是繁殖的遗传特性，后者说的新陈代谢的生理特性。用薛定谔的说来说就是：生命是从环境里“把秩序喝进来”的。</p>
+
+<p>遗传，实际上就是一种可以修改的内存程序；新陈代谢就是多功能的机器。把两者连接起来的是一种密码，是以物理的、化学的，甚至是非物质形式存在的一种抽象信息。它的秘密就在于它能够复制自己。任何能够利用这世界上的资源把这密码复制出来的事物，就是有生命的东西。</p>
+
+<p>生命也是数码信息，是用DNA写成的。核糖体是把DNA翻译成蛋白质的地方，而蛋白质又是使得DNA能够复制的东西。生命就是蛋白质和基因这两种化学物质的相互作用。蛋白质代表的是化学反应，是生命活动、新陈代谢、是行为&ndash;生物学家称为“表现型”的那些东西。DNA代表的是信息，是复制、是繁殖&ndash;生物学家门称为“基因型”的那些东西。两者都不能单独存在。</p>
+
+<p>越来越多的证明表面在蛋白质存在之前先有RNA，太初有词，这个词很可能就是RNA。最早的基因，“原基因”，很可能是把复制和催化合为一体的，是一个消耗自己周边化学物质以复制自己的“词”，它的结构很有可能就是RNA。这大概是40亿前，即第一种细菌出现之前的原始汤世界的情况。这些由RNA构成的“核糖生物体”因RNA的不稳定性，发展了一种更强的RNA变种：DNA，它还发明了一套从DNA复制RNA的系统，包括一种我们成为“原核糖体”的机器。这样，一个更复杂的生物就诞生了。它的遗传配方存储在DAN里，它体内的各种机器是蛋白质做成的，而RNA则在两者之间架起一座桥梁。这个生命名叫“露卡（Luca）”&ndash;所有物种在分化之前最后的一个共同祖先。</p>
+
+<h2>第二号染色体 物种</h2>
+
+<p>生存机器是那些大型的、用血肉构造成的生物体，它们善于把局部的熵减少（制造秩序）以更好地复制自己体内的基因。它们能做到这一点，是因为它们经历了漫长的、大规模的尝试与失败：自然选择。一开始，这只是一个比较简单的、化学反应是否高效的问题：最好的生物体是那些发现了怎样把其他化学物质转变成为DNA和蛋白质的细胞。这个阶段持续了大约30忆年。大约10忆年前，很突然地出现了一种新的世界秩序：更大的、多细胞的生物体被发明了，大型生物爆炸性地大批出现了，这个被俗称为寒武纪大爆发的过程大约持续了1000万到2000万年。此后，进化的路线朝智慧走去&ndash;进化出越来越大的大脑。即基因们发现了一种实现自己野心的新方法：制造一种不仅仅能够生存，而且还具有智慧行为的机器。</p>
+
+<p>猿类动物都有24对染色体，只有人类是例外，在人体中两对猩猩的染色体融合成一对了。在人类进化过程中，发达的大脑、食肉、缓慢的发育、在成年之后依然保留孩童时期的特征，这些必须同时存在。如果不吃肉，需要大量蛋白质的大脑就成了昂贵的奢侈品；如果头骨过早定型就不会有大脑所需的空间；如果不是发育缓慢，就不可能有时间去学习如何充分发挥一个发达大脑所具备的优势。这整个过程可能是由性选择来推动的，随着男女身体大小方面的性别差异减少，食物生产上形成的性别分工（狩猎采集），交配方式变为一夫一妻制，后代的质量，而不是数量更为重要。</p>
+
+<p>通过性别分工而培养出来的一些习惯也延伸到了生活的其他方面：我们擅长分享东西，这就带来新的好处：每个个体可以发展专门的技能。这种专业分工，是我们这个物种成适应环境的关键，因为它促进了技术的发展。</p>
+
+<p>自然选择就是基因改变其序列的过程。在改变的过程中，那些基因留下了一份我们这个星球上40亿年的生命的记录。换句话说，我与我们过去的记录是刻在我们的基因里的。基因组中大约2%的成分讲述了我们在生产环境与社会环境方面的进化与黑猩猩的有什么不同。基因是动物结构的配方，也是动物行为的配方。</p>
+
+<h2>第三号染色体 历史</h2>
+
+<p>我们从父母那里得到的不是别的，是一份规模巨大的配方，用来制造蛋白质和制造蛋白质所用的机器。</p>
+
+<p>孟德尔发现了生物学里的“原子理论”&ndash;遗传特征不会混杂起来，这种不可分的遗传颗粒最终被定名为基因。</p>
+
+<p>人工诱发突变是现代遗传学的开始，穆勒因此获得诺贝尔奖。
+弗兰西斯.克里克发现了DNA结构，因此获得诺贝尔奖。</p>
+
+<p>基因通过重复含密码子的段落来减少突变的影响。</p>
+
+<h2>第四号染色体 命运</h2>
+
+<p>基因的存在不是为了导致疾病的。生病是因为正常基因发生了突变。</p>
+
+<p>亨廷顿舞蹈病是遗传的一个极端，它是纯粹的宿命论，一点也不受环境因素的影响。</p>
+
+<p>整个基因组的基因突变率，在男性里是女性的五倍，因为男性DNA在男性的一生中都要不断地复制以提供新鲜的精子。</p>
+
+<p>至报告疾病检查结果却不给病人提供治疗的方法，是给人痛苦的一种方法。现在能够检测是否患有亨廷顿舞蹈病，却无法找到治疗的方法。“具有智慧，却不能从这智慧中获益，那么剩下的只有悲哀。”</p>
+
+<h2>第五号染色体 环境</h2>
+
+<p>这个世界是灰色的而不是黑白分明的，事物之间的差别可以很细微，描述事物的时候要很多修饰词、很多“视情况而定”。</p>
+
+<p>多样性与多元论：多效性是指多个基因的多种效应。</p>
+
+<p>哮喘病是呼吸道的收缩、阻塞，这时由肥大细胞释放的组胺引起的，肥大细胞又是由它们内部的免疫球蛋白E激活的，免疫球蛋白E本身又是因为它们能够识别的分子来到而被激活的。所以环境中的不卫生状况非常容易诱发哮喘。</p>
+
+<p>你最好养成习惯接受类似寻找哮喘基因的不确定性。我们对基因组研究得越深，它就越显得不那么具有宿命意义。不那么黑白分明的不确定性、易变的因果关系、模模糊糊的先天因素，这些事这个系统的特征。基因组跟生命一样负责和有很强的不确定性，因为它就是生命。</p>
+
+<h2>第六号染色体 智慧</h2>
+
+<p>等位基因是遗传信息中同一段落的不同形式，对于环境有同样的适应性，都是“合法”存在的。正常的基因有不止一种形式。如不同颜色的眼珠基因。</p>
+
+<p>科学应该是建立假说然后试图证伪他们而前进的。</p>
+
+<p>Robet Sternberg 提出智慧可以分为三类：分析能力、创造力、实践能力。学习和智商测验注重的是分析能力。各种智力能力不是独立存在的，而是互相关联的。Charles Spearman把这成为广义智慧，或者简称g。</p>
+
+<p>事实上，一个婴儿适应一种新的感官刺激所需的时间跟他今后的智商有很强的关联。</p>
+
+<p>“智慧基因”不是在真空里运作的，智慧需要环境刺激才能发展。</p>
+
+<p>子宫的重要性是最近才被人们认识到。子宫里发生的各种事件与变化对于我们智力的影响，比我们出生之后父母对我们的教育所起的作用高两倍。但即便是属于先天因素的那些基因，直到青少年时期都在表达，因此不要在一个孩子很小的时候就对他的智力下定论。</p>
+
+<p>智商大约有一半是由遗传决定的，不到五分之一是由你和你的兄弟姐妹们共同的环境-家庭-决定的。剩下的是子宫的作用、学校的作用和其他外部影响，如朋友的影响。此外，智商不仅随年龄会有变化，遗传因素对它的影响也会变化。随着年龄增长，积累了很多经验，遗传因素对它的影响也增加了。在儿童时期，遗传对智商的影响大约占45%。到了青春后期，就上升到75%了。在你长大的过程中，你内在的智力逐渐显露出来，其他人对你施加的影响渐渐消失。你会选择与你的能力、喜好相符的环境，而不是调整你的能力、喜好去适应环境。这证明了两个至关重要的观点：基因的影响并不是从精子和卵子结合的时候就固定不变了，环境的影响并不是一直不断地累积的。智力是遗传的不等于它是不变的。</p>
+
+<p>在一个公平的社会里，遗传的作用比在一个不公平的社会里大。事实上，有些荒诞的是，一个完美的英才社会的定义，就是一个人的成就取决于他的基因的社会，因为所有人都有同样好的环境。在身高方面，我们已经在飞速地接近这样一个状态了。今天，随着儿童营养的普遍提高，个体之间身高的差异主要是由遗传原因决定的。</p>
+
+<p>智商测试方面最著名的先驱者法国人阿尔弗雷德.比内强烈地提倡过：智商测试的目的不是为了奖励那些有天赋的孩子，而是为了更多关注那些没有天赋的孩子。</p>
+
+<p>平均来讲，智商高的人比智商低的人整个身体都更对称。这一事实说明人在母亲子宫里和在童年时期身体所受眼里比较少，也许他们的身体有更高的抗压性。也就是说，智商的遗传性是由那些鱼环境相互作用的基因决定的。你遗传到的不是一个高智商，而是在某种特定环境下发展出高智商的能力。支持这一理论的证据来自于所谓的“弗林效应”。新西兰政治学家詹姆斯.弗林注意到：在世界各国，一直以来人们的智商都是在增长的，大约每十年增长三点。原因很难确定，也许原因与身高的增长一样，也许智商测试并没有测到人的内在智力只测验在日常生活中常见的抽象推理能力。</p>
+
+<p>一个孩子所处的环境不仅与他的基因有关，也与外界因素有关，而一个孩子有能力到甚至创造出适合自己的环境。智力的遗传特性也许不仅仅是先天能力的遗传，也是后天因素的遗传。</p>
+
+<h2>第七号染色体 本能</h2>
+
+<p>人类的行为表明，人类比动物有更多的本能，而不是更少。</p>
+
+<p>为了学习人类语言，我们需要有的是人类语言的本能。语言的本能是在听到的语言上其作用，而不是记住的语法规则上起作用。儿童语言能力的发展都要以特定的方式经过特定的阶段。一个敏感期，在它之内有什么东西可以被学会，在它之外则不行，这时动物本能的明显特征。语言处理一般是左半脑的功能：布鲁卡区的功能看起来就像是制造话语，而威尔尼克区则是在告诉布鲁卡去应该制造什么样的活动。</p>
+
+<p>当人类祖先第一次进化出语言本能的时候，它是从发生和声音处理的区域发展出来的（布鲁卡区）。发生于声音处理的区域依然存在，与脸部肌肉和耳朵都有链接，但是语言本能的区域在这之上发展起来了，形成另一种内在能力，可以把自己这个物种其它成员所用的语法规则加在由声音而产生的词汇上。</p>
+
+<p>进化心理学寻找的是共同的人类行为&ndash;人类行为普遍性，并试图了解这些行为是为什么和怎样成了部分是本能的行为。因此，它假设个体之间没有区别，起码对于特别重要的行为是如此。这时因为自然选择的任务就是磨掉个体的差异。如果一个基因的一种形式比其他形式好得多，那么，好的这种形式很快就会成为普遍的形式，而差的形式就被淘汰了。因此，进化心理学得出这样一个结论：如果哪个基因有几种不同的形式，那么这个基因肯定不会很重要。</p>
+
+<p>假设大脑里每一个区域都是通过参考发育过程中在胚胎大脑里建立的一系列化学梯度才得以发育为成年的形式，也就是化学梯度形成了给神经元的地图。那些化学梯度本身可以是遗传机制的产物。有些基因和蛋白质能够准确地知道它们在胚胎里的位置，这虽然难以想象却无疑是存在的。这样的行为基因是现代遗传学研究最激动人心的发现之一，它与发育基因一样让人费解，但是自然从来就不会因为人类对她不理解而改变自己的行事方式。</p>
+
+<h2>X和Y染色体 冲突</h2>
+
+<p>身体是基因的载体和战场，为的是基因自己的雄心壮志。</p>
+
+<p>在我们的过去，有某一个时刻，我们的祖先从像两栖动物那样让环境温度决定性别，改成了用遗传决定性别。在人类里，决定性别的基因使我们成为男性，如果没有这些基因就是女性，在鸟类中却相反（雄性鸟类有两条X基因）。这个基因周围很快就吸引了一些有利于男性的基因，这些次要的基因就变得对一个性别有利而对另一性别有害。这样的基因就被称作性别对抗基因。当另一个基因突变抑制了两条性染色体之间进行正常遗传物质交换时，性别对抗基因就可以分道扬镳了。一个基因在Y染色体上的形式可以利用钙来造出鹿角，而它在X染色体上的形式却可以用钙来造出乳汁。这样，一对中等大小的染色体，本来是各种各样“正常”基因所在地，就能被性别决定这个过程给“劫持”了，最终成了性染色体，各自“吸引”了不同的基因。在Y染色体上积累了对雄性有好处而对雌性有坏处的基因，在X染色体上则相反。</p>
+
+<p>在所有的性染色体中有四分之三是X，只有四分之一是Y，换句话说，一条X染色体三分之二的时间实在雌性体内度过的，有三分之一的时间是在雄性体内度过的。这样X染色体进化出攻击Y染色体的能力的可能性，是Y染色体进化出攻击X染色体能力的可能性的三倍。结果就是Y染色体扔掉了尽可能多的基因，并剩下的“关闭”，以减少受到的攻击。现在人类的Y染色体上绝大多数都是没有编码功能的DNA，但有一个极为重要的基因SRY基因，这个基因启动一系列事件，导致胚胎雄性化。这个基因因为X染色体上时不时出现攻击的推动作用，而进化得非常快。</p>
+
+<p>威廉.赖斯认为性别对抗在各种环境下都是存在的，所留下的线索就是那些飞速进化的基因。比如胎盘可能是由来自父方的基因控制的、寄生在母体内的东西，它不顾母体的反对，试图控制母体内的血糖水平以及血压，以利于胚胎的成长。他的同事布雷特.霍兰认为雄孔雀的尾巴是进化来吸引雌孔雀的，但这是因为雌孔雀对这种吸引力越来越不感冒推动的。就这样，性别之间的选择是“勾引”基因与“抵制”基因之间的对抗的表达。这样每一个基因的进化都刺激着另一个的进化，即使这两个基因是被同一个人拥有。它们之间是赖斯与霍兰所说的“位点之间的竞争进化”。在过去的300万年间，推动人类智力进化的也许正是这样一个过程。马基雅维利理论认为：在操纵别人和抵御操纵这两者的“军备竞赛”中，体积大的脑子是很必要的。赖斯与霍兰写到：“我们称做智力的现象，也许只是基因组之间冲突的副产品。这种冲突，是用语言做武器的进攻与防守基因之间的冲突”。</p>
+
+<p>同性恋有高度的遗传性。同性恋在当代人群中占有可观的比例，或许有4%的男性毫无疑问是同性恋，还有更少的一些人是双性恋。</p>
+
+<p>现在变得越来越清楚的是，性取向与出生的顺序有关。在一个已经孕育过男孩的子宫里出生的男孩成为男同的可能性更大。因为Y染色体上三个叫做H-Y的抗原会“挑衅”母体的免疫系统产生一种反应，从而增强了母体的免疫系统，母体的这个免疫系统会对胚胎大脑的男性化起部分抑制作用，但却不会影响生殖器官的男性化。</p>
+
+<p>基因之间有冲突。基因组是父辈基因与孩子的基因，男性基因与女性基因之间的战场。</p>
+
+<h2>第八号染色体 自身利益</h2>
+
+<p>人类的基因组里有97%的基因是垃圾基因，有些时候也被叫做“自私的基因”，这种叫法比较准确。这些东西里有些是一种特殊的基因，但大多数就是一段一段的永远也不会被转录成蛋白质语言的DNA。</p>
+
+<p>好笑的是垃圾DNA是人们在人类基因组里发现的第一个有真正实际用途、在日常生活里能够用到的东西。它导致DNA身份验证。在整个人类基因组中最常见的蛋白质配方是编码一个叫做逆转录酶的蛋白质的基因。逆转录酶基因对人类来说一点用处也没有，它把一个基因RNA拷贝翻录成DNA，又把这段DNA“缝”回基因组里去。它是于一个基因的回程车票。这样就给了病毒可乘之机&ndash;把病毒基因整合到人体的基因组里去。人类的基因组中含有几千种病毒的几乎完整的基因组，大多数现在已经不再活跃，但基因组却没有能够把它们清理出去，只是通过甲基化把它这些基因关闭了。</p>
+
+<p>自然选择的进化方式不是物种之间的竞争，而是关于基因之间的竞争。道金斯语：基因是自私的复制机器，而身体是可以丢弃的载体。大约35%的人类基因组是各种形式的自私DNA。它们如此之多的原因很简单，它们善于复制自己。它们的基因中有一小段序列，能够把它们自己很好地复制出来。这些短序列中的一种就被用来当做“基因指纹”。DNA指纹验证在亲子鉴定中被发扬光大，这引发精子竞争理论。个小的黑猩猩是随机交配的，因此需要产生大量的精子以频繁交配，而个大的大猩猩对他们的配偶是完全占有，它们的精子没有精子对手。所以不到大猩猩身体四分之一的黑猩猩的睾丸是大猩猩的四倍大。</p>
+
+<h2>第九号染色体 疾病</h2>
+
+<p>血型：A，B，AB和O型。A和B是同意基因“共同显性”的两种形式，O是这个基因的隐性形式。</p>
+
+<p>血型与一些疾病有者某种关联，某种血型都有更容易感染的疾病。由此某个时期特定血型的人较多，但优势总是在较少的基因型那边。所以，A和B都不会消失，因为它们中的任何一个如果少了，它就会变成“时髦”的东西，又“流行”起来。在生物学上，这叫做由频率决定的选择，而这是我们的基因为什么如此多样的最常见原因之一。</p>
+
+<p>不管你往哪里看，基因多样性背后的原因好像都与传染病有关。从某种意义上说，基因组就是一份我们过去的病史的数码记录，是每一个民族每一个种族的医学圣经。</p>
+
+<p>基因组是不断变化的动态图景。生态学与遗传学一样不是关于平衡的学科，它们是关于变化的学科。变化，再变化，没有任何事是永远不变的。</p>
+
+<h2>第十号染色体 压力</h2>
+
+<p>有五种至关重要的激素是由胆固醇出发制成的，每一种都有独特的功能：孕酮、醛固酮、皮质醇、睾酮和雌二醇。它们总称类固醇。这些激素与身体中的基因的关系既亲密又迷人，却也让人不安。</p>
+
+<p>皮质醇，人体内几乎每一个系统都用得上皮质醇，它名副其实地是一个把身体和精神结合起来的激素，因为它可以改变大脑的结构。皮质醇干预免疫系统、改变耳朵、鼻子和眼睛的灵敏度、改变各种身体机能。当你的血管里流动着很多皮质醇的时候，你就处于压力之下，这是压力的定义。皮质醇与压力几乎就是同义词。皮质醇最惊人的效应之一是它能够抑制免疫系统的工作。这是通过激活基因来做到这一点的，它会抑制免疫白细胞的警惕性，从而使人更容易得病。</p>
+
+<p>脑子里的下丘脑会发出一个信号，让脑垂体释放一种激素，它会告诉肾上腺皮质去制造和分泌皮质醇。下丘脑则是从大脑里有意识的那些区域接受指令，而这些区域又是从外部世界中得到消息。这是如同经济系统一样的分散没有控制中心的系统。大脑和身体是同一个系统的两个部分。如果大脑在回应心理上的压力时刺激了皮质醇的释放，而皮质醇抑制了免疫系统的活性，从而一个潜伏在体内的病毒感染得以发作起来，或是一个新的病毒得以进入身体，那么症状虽然是生理上的，原因却是心理上的。如果一种疾病影响到大脑，而从改变人的心情，那么原因虽然是生理上的，症状却是心理上的。这个题目被称作心理神经免疫学。焦虑的人比起心情好的乐天派，更容易得阵发性的生殖系统疱疹。</p>
+
+<p>基因是需要被激活的，而外界事件&ndash;或者说自由意志控制的行为&ndash;可以激活基因。即生理变化可以被行为调动。</p>
+
+<p>一个人在工作中的地位比他是否肥胖、是否吸烟和是否血压更高更能准确地预示这个人是否有心脏病。心脏病是自己无法控制自己的生活时出现的症状。</p>
+
+<p>行为远不是受我们的生物特性所控制，我们的生物特性常常是受我们的行为控制的。心理变化先于生理变化出现。精神驱动身体，身体驱动基因组。</p>
+
+<p>睾丸酮和皮质醇一样可以抑制免疫系统，这就解释了为什么很多物种里雄性比雌性更容易感染，染病之后的死亡率也更高。雄性体表那些“装饰物”的质量以某种方式反映了他的基因的质量，尤其是反映了他对流行疾病的抵抗力。因为睾丸酮越多，炫耀性体征就越明显，其免疫系统就越强大，其基因自然很牛逼。这个理论叫做性别选择下的免疫竞争力缺陷。</p>
+
+<h2>第十一号染色体 个性</h2>
+
+<p>个性是指内在的、个性化的性格特点。</p>
+
+<p>多巴胺受体的任务是在伸到神经细胞膜以外的突触处，等待接纳化学物质多巴胺。多巴胺是一种神经递质，在得到一个电子信号之后，从其他神经细胞顶端被释放出来。当多巴胺受体与多巴胺接触的时候，多巴胺受体就会使它自己所在的神经细胞发出自己的一个电子信号。这就是大脑工作的方法：电子信号导致化学信号再导致电子信号。</p>
+
+<p>多巴胺也许是大脑里主管“动机”的化学物质。多巴胺太少，一个人就会失去做事的动机和主动性。多巴胺太多，一个人就会很快厌倦目前的事，而频繁地寻找新的冒险。</p>
+
+<p>父母的正确抚养方法能够改变内在的个性。如果不把人们根本的性格倾向说成是疾病，而是允许他们是什么样的人就当什么样的人-即让他们与自己天生、内在的性格达成“谅解”，好像是最可靠的提升自信和提高人际交往能力的办法。</p>
+
+<p>意识到一种性格是天生的，远不是一个判决，很多时候是一种解脱。</p>
+
+<p>多巴胺和去甲肾上腺素是所谓的单胺。它们的一个表亲，5-羟色胺，是存在于大脑里的另一种单胺。它是个性的化学表现，很复杂，其特点很难比抓住。如果5-羟色胺水平异常地高，你可能会是一个有强迫症的人，有洁癖，异常小心，甚至会到神经质的地步。如果5-羟色胺水平异常地低，你可能易有冲动行为。治疗胆固醇会降低5-羟色胺的水平，提高暴力水平，因而是有害的。5-羟色胺水平并不是先天的和不变的，它们本身就是社会地位的产物。你的大脑里的化学反应是由你接收到的由社会环境传来的信号所决定的。生物结构决定行为，社会又决定生物结构。社会对行为的影响是通过启动与关闭基因而完成的。这就是基因与环境的现实情况：它们之间复杂的相互作用形成了一个迷宫，而不是一个决定另一个的单向通道。我们的基因不仅事先已编好程序去产生社会行为，它们也对社会行为做出适当的反应。</p>
+
+<h2>第十二号染色体 自我组装</h2>
+
+<p>同源发育：所有的生物体都是由有秩序的一系列部件或“节”所组成。</p>
+
+<p>Hox基因：科学家发现在同一条染色体上排列在一起的八个同源框基因。它们的排列顺序与它们所影响身体结构的顺序是一样的。所有的同源框基因都是用来激活或关闭其他基因的。最前面的基因不仅仅是表达在身体的最前部，同时也是第一个表达的基因。在动物进化史上也有同样的顺序。这样Hox基因就重演了历史上的进化过程。“个体发育重现种系发育”。胚胎发育是以它的祖先进化的同样顺序出现的。</p>
+
+<h2>第十三号染色体 史前</h2>
+
+<p>基因为来自语言学的证据提供了支持：拥有新技术的人群的扩张与迁移在人类的进化史上占有重要地位。在一定程度上，语言与人群是共同迁移的。</p>
+
+<p>世界的基因地理学既有绘图上的作用也有功能上的作用。举两个例子：酒精和奶。消化酒精的能力是为抵抗喝脏水冒感染疾病的风险而喝蒸馏水的选择。消化乳糖的乳糖酶基因是游牧人群为适应游牧生活方式进化而来。这时一个重要的发现，它提供了一个文化上的变化导致进化上的、生物结构上的变化。基因们可以被自愿的、自由意志所选择的、有意识的行为诱发而产生改变。</p>
+
+<h2>第十四号染色体 永生</h2>
+
+<p>缺少端粒酶会导致衰老，添加端粒酶则会使一些细胞长生不老。</p>
+
+<p>每条染色体除了两头的末端，都能够被复制。在两端，有一些重复出现的没有意义的末端结构被称作“端粒”。每次染色体被复制的时候，端粒的一小部分就被丢掉了。几百次复制之后，染色体末端已经短到使有意义的基因有了被丢失的危险。这就是为什么在一定年龄之后细胞就变老，不在兴旺成长。</p>
+
+<p>在卵细胞和精子细胞中，基因不会被丢失的原因，是因为端粒酶的存在。它的任务是修复被损坏的染色体末端，把端粒重新加长。这些端粒酶基因也许是我们所能找到的基因里面最接近于“青春基因”的东西了。端粒酶好像是使细胞长生不老的灵药。</p>
+
+<p>每一个物种都带有一个程序，里面是计划好的衰老过程，用来与它的期望寿命和它结束生育年龄相适应。自然选择小心地除去了所有那些可能在生育年龄到来之前或生育之中损害身体的基因。它是通过杀死所有在年轻时表达这些基因的个体或降低它们的生育成功率来达到这个目的的。所有其他个体都可以生育。但是，自然选择无法除掉那些在生育年龄过后的老年时期损害身体的基因，因为在老年时期生育不会成功了。</p>
+
+<p>自然选择把我们的身体的各部件都设计得能够坚持到看到我们孩子的独立，不再更多。自然选择把我们的端粒长度控制在这样一个范围：它们可以经受得起75~90年的磨损、消耗和修复。</p>
+
+<p>癌症要求活跃的端粒酶。使一个肿瘤精神焕发的，是青春和长寿的生物化学灵丹。癌症是典型的老年病，其主要风险因素就是年龄，环境的风险因素，部分在于它加快了衰老的过程。那些容易得癌症的地方往往是那些在一生中经常要进行细胞分裂的组织，不管是要进行修补还是别的什么原因：皮肤、睾丸、乳房、结肠、胃和白血细胞。</p>
+
+<p>这样我们有了一个矛盾：缩短了的端粒导致衰老导致癌症的高风险，而保持端粒长度的端粒酶却是肿瘤的催化剂。</p>
+
+<h2>第十五号染色体 性别</h2>
+
+<p>一个基因上带有印记，标识着它是从父亲还是母亲那遗传而来。</p>
+
+<p>遗传自父方的基因负责制造胎盘；遗传自母方的基因负责胚胎大部分的发育，特别是头部好大脑。父亲的基因不太信任母亲的基因能够造就一个侵入性足够强的胎盘，所以它们自己来完成这项工作。基因标记是有胎盘的哺乳动物与种子依靠母体才能存活的植物所特有的。</p>
+
+<p>带有标记的基因通常会在这样相互作对的基因对里被发现。基因标记几乎没有任何内在的目的性；它只是基因自私理论和两性冲突的一个具体事例。</p>
+
+<p>父方的基因在脑子里比较少，只在控制感情的“皮质下感情系统”的下丘脑、杏仁体、视前区的发育上出了些力。如果我们相信父方的基因不放心让母方的基因去造一个胎盘，那么大脑就是母方的基因不信任让父方的基因去造的，因为脑皮质需要完成与母方的亲友好好相处这样一项任务，而下丘脑是个自大的器官。我们有可能带着母亲的思想和父亲的情感在这世界上生活。</p>
+
+<p>女性特有的行为应该只来自父方的X染色体上表达。如果它们也来自母方的X染色体上表达，它们就可能也会出现在男性身上，或者它们在女性体内会被表达得太多了。</p>
+
+<p>有一个在正常情况下只在父方的X染色体上表达的基因，这个基因通过某种方式促进社交的适应能力。这个结论有深远的影响。第一，儿童自闭症、阅读困难症、语言障碍以及其他与人相处方面的问题都是在男孩中比在女孩中更普遍。第二，在最早开始的自主活动里，男孩和女孩就有系统的差役。男孩有更强的竞争性，女孩则对人、衣服和语言更感兴趣。先天因素在性别的决定上是有作用的。</p>
+
+<h2>第十六号染色体 记忆</h2>
+
+<p>自然选择的过程就是从环境中提取有用的信息并把它在基因里储存起来，你也许可以把人类基因组看成是40亿年积累起来的学习成果。</p>
+
+<p>学习的过程就是改变神经细胞间突触的形状与功能，把以前没有连接或连接很弱的地方产生新的或增强的连接。整合蛋白的能力很重要，因为长效强化，需要突触性质的改变，而这个改变是通过整合蛋白把突触之间的连接“绑得更粗”。</p>
+
+<p>鼻周皮质，在这里，来自视觉、嗅觉、听觉以及其他感觉器官的信息经过处理成为记忆之后，信息被送到海马区，然后又送到间脑，暂时储存。如果某个信息被认为是值得长久储存的，他就以长期记忆的形式被送回新皮质储存起来。记忆从中心颞叶传到新皮质的过程似乎有可能是在夜间睡觉的时候发生的。</p>
+
+<h2>第十七号染色体 死亡</h2>
+
+<p>学习过程中的经验强化了一部分连接，也导致了那些没得到强化不必要的连接衰弱和消失，因此把大脑从一个多用途的机器变成了很专门的机器。环境把多余的突触去掉以使大脑功能更强。这个修剪的过程，除了让一些突触连接消失之外，还有其它意义，它意味着整个细胞的死亡。</p>
+
+<p>自私的细胞总是倾向于分裂从而复制自己，就好像它抵御不了基因要复制自己的古老召唤一样。如果这个细胞的分裂得不到制止，结果就是我们所说的癌症。但是，通常它是会被制止。所有身体比较大的动物都在细胞里带有一套精巧的开关，在细胞发现自己变得具有癌症性质的时候，这个装置可以用来引起细胞自杀。最著名和最重要的开关是TP53基因，它的主要功能就是防止癌症的产生。</p>
+
+<p>癌症是细胞组织过多的生长，这是基因的病变引起的，因此癌症并不遗传。</p>
+
+<p>癌基因是鼓励细胞生长的基因，肿瘤抑制基因则是识别细胞的过度增长，并使其停止。一个肿瘤里的细胞必须是同时具有开起了癌基因与关闭了肿瘤抑制基因。</p>
+
+<p>TP53基因上的突变几乎是致命的癌症最典型的特征，它是一连串基因突变（癌基因、肿瘤抑制基因等突变）的最后一步。一个肿瘤越大，它就越可能进展到下一个步骤的病变，并且快速繁殖增多的细胞基数增大了进一步突变的可能性。因此越早诊断肿瘤非常重要。</p>
+
+<p>癌症之所以与年龄密切相关，是因为我们活的越长，基因组里面就积累了越多的错误，在同一个细胞里一个癌基因与肿瘤抑制基因的突变可能性就越大。</p>
+
+<p>p53是由TP53制造出来的蛋白质，它主要靠激活其他基因来告诉细胞做两件事：要么停止复制它的DNA，直到损伤被修复，要么自杀。因此p54得到了“基因组卫士”的昵称，甚至被叫做“基因组的守护天使”。TP53好像是在编码集体利益，它就像一个士兵嘴里含的自身药片，当它发现这个士兵要叛变了，就开始融化杀死士兵。以这样方式进行的细胞自杀叫做“程序性死亡”。它是身体对付癌症的重要武器，是最后一道防线。所有抗癌疗法之所以有效，是因为它们改变了p53及其同伴，因而引发程序性死亡。</p>
+
+<p>化学药物疗法和放疗法之所以有效不是它们杀死了细胞，而是它们给DNA带来一些小小的损伤，这个损伤刚好能够提醒p53，然后p53会告诉细胞采取自杀行动。因此这些疗法是促使身体帮助自己的疗法。</p>
+
+<p>癌基因在没有突变的情况下是动物一生中细胞生长于繁殖所必需的：皮肤需要不断更新，新的血液细胞需要产生，伤口需要被修复等等。</p>
+
+<p>亨廷顿氏病是无计划的、过多的脑细胞的程序性死亡，而这些脑细胞一旦死亡就无法得到补充&ndash;因为这些脑细胞不是空白细胞，而是成长过程中被学习所塑造过蕴含经验的细胞。这就是为什么有些大脑损伤是不可修复的。</p>
+
+<p>在人类胚胎卵巢发育过程中，5个月大的胚胎里，有大约700万个生殖细胞，到出生时，就只有200万个了，在这200万个里，只有400个左右会进入排卵过程。剩下的大多数都是通过程序性思维被除掉了。这是大自然的优化人种过程。</p>
+
+<h2>第十八号染色体 疗法</h2>
+
+<p>操作基因需要“剪刀”与“浆糊”，自然界为了她自己的目的已经把两者都发明了。浆糊叫做连接酶，剪刀叫做限制性内切酶。现在知道400中不同的限制性内切酶，每一种识别不同的DNA字母序列，然后把那一处切开。</p>
+
+<p>1970年发现的逆转录酶病毒能够从RNA制造DNA拷贝，使得基因疗法变得可行。一个逆转录酶病毒带有由RNA写成的信息，它基本上是这么一个意思“做一份我的拷贝，把它缝到你的染色体里去”。</p>
+
+<p>对于基因技术的运用命令很大的伦理压力与环保压力。</p>
+
+<p>但对于转基因作物的反对，是出于对新技术的仇恨而不是对环境的热爱。一则转基因作物经受了大量的安全性实验，在不同物种之间进行基因交换，比我们所料想的要普遍。二则：基因改造的后果是提高对疾病和害虫的抵抗力以减少化学喷雾的使用；粮食产量的增长也减少了对土地的开发，反过来保护了环境。</p>
+
+<p>同源基因重组利用了这样一个事实：修复破损DNA的机制通常是用另一个配对染色体上富余的那个基因作为模板。同源基因重组不仅可以修补基因，还可以做想法的事情：用安插有问题的基因去故意破坏正常工作的基因。这样做的结果是所谓的“剔除”老鼠。转基因动物就是利用“剔除”技术获得特定功能的动物。</p>
+
+<h2>第十九号染色体 预防</h2>
+
+<p>任何医疗技术的进步都带来一个道德难题。如果一个技术可以挽救生命，即使有风险相伴，不发展和应用它也是道德上的错误。</p>
+
+<p>检查某人是否患有一种无药可治的病，说的最好听，也是值得怀疑的。</p>
+
+<p>基因检测技术的运用会动摇保险业的基础，雇佣歧视。我的基因组是我的财产，不是国家的。我的基因我做主，是否做基因检测以及和谁分享我的基因内容都应该由我自己决定。</p>
+
+<h2>第二十号染色体 政治</h2>
+
+<p>对瘙痒症的研究，遗传学家普鲁西纳发现了PRP基因（抵抗蛋白酶的蛋白质）。PRP是老鼠与人体内正常的基因，它制造一个正常的蛋白质。它不是一个病毒的基因。但是，它们的产品，名叫蛋白侵染子的，是一个有着不同性质的蛋白质，它可以突然改变自己的形状，变成一个又硬又稠的东西，抵御住所有想要摧毁它的企图，并结成一团，破坏细胞的结构。这种新型的蛋白侵染子有能力改变正常的蛋白侵染子，使其成为像自己一样的形状。它不改变蛋白质的序列&ndash;蛋白质与基因一样也是由长长的数码序列组成&ndash;而是改变蛋白质的折叠方式。</p>
+
+<p>蛋白侵染子的发现冲击力弗拉西斯.克里克那个遗传学的中心教义。它削弱了前面宣讲的内容：生物学的核心是数码式的。蛋白侵染子系统是个逻辑系统，不是数码系统。它的改变不是序列上的而是形状的改变，它还与剂量、位置等有关。</p>
+
+<p>看来，蛋白侵染子引起的不同疾病的不同症状，是不同的大脑区域被侵蚀的结果。</p>
+
+<p>蛋白侵染子疾病是一种链式反应引起的，一个蛋白侵染子把它的邻居变成跟它一样的形状，它的邻居再去改变其他的，就这样呈指数级地继续下去。</p>
+
+<p>疯牛病就是一种蛋白侵染子病。就科学家们所关心的来说，不同物种之间口腔传播这种病的危险小得几乎不存在。但对政治家来说，安全是个绝对的概念，不是相对的。他们想看到的不是仅有个别人患病，而是没有一个人患病。这是个政治问题。禁止进口某国牛肉的决策往往夹杂着的非安全的经济利益在里面。</p>
+
+<h2>第二十一号染色体 优化人种伦</h2>
+
+<p>唐氏综合症是因为人类内有一条能在健康人体中有三份而不是两份的染色体。这时唯一的一条。唐氏综合症通的婴儿通常有大龄母亲。随着母亲年龄的增加，生出一个唐氏综合症婴儿的机会迅速呈指数级增长。</p>
+
+<p>查尔斯.达尔文的第一代表兄臭名昭著的高尔顿提出了优化人种论：像改造其他物种那样改造人类自己。</p>
+
+<p>优化人种论经历了从鼓励最“优秀”的人以优化人种“优基因”的名义生育到阻止最“差”的人生育的过程。“最差的”很快就成了“心智虚弱”的意思。很多国家包括美国，德国，加拿大，瑞典等，通过了给“心智虚弱”的人进行绝育手续的法律，并真实执行了。英国以及其它罗马天主教影响力较大的国家没能通过优化人种的法律。</p>
+
+<p>美国对于优化人种伦的热情多是来自反对移民的热情。</p>
+
+<p>英国反优化人种论的韦奇伍德指出：优化人种论的谬误不是错误的科学理论，也不是因为在实际中不可行，而是它归根结底是对人的压制而且很残酷，因为它要求政府的权利得到保证，凌驾于个人之上。优化人种论的错误不在于它背后的科学，而在于强制的方法。优化人种与其他任何把社会利益置于个人权利之上的计划并无不同。它是人道上的罪行，不是科学上的罪行。</p>
+
+<p>基因筛选是要让人以个人的身份用个人的要求来做出个人的选择。</p>
+
+<h2>第二十二号染色体 自由意志</h2>
+
+<p>在塑造性格与能力方面最有力量的环境因素之一是子宫里的总体状况。你无法改变它。</p>
+
+<p>“美丽新世界”这个词现在已经有了这样的意义：集权统治与先进的科学手挽手实现的恶劣的社会。</p>
+
+<p>20世纪30年代统治了德国的极端的基因决定伦者与同一时期统治了苏联的极端的环境决定论者，两个极端都很恐怖。</p>
+
+<p>幸运的事，我们抵抗洗脑的能力相当强大。我们从遗传得到一种仇视权威的倾向，特别是在我们的青少年时期，我们用它来保护我们的本性。</p>
+
+<p>人们从他们的基因和他们的同伴那里得到他们的性格，而不是从他们的父母那里。</p>
+
+<p>基因确实影响行为。但是，环境依然相当重要&ndash;在所有行为中也许环境的总和都比基因重要。但是在环境的影响中只有小得惊人的一部分是父母影响的作用。</p>
+
+<p>我们都把自己生活中的公共生活和私人生活分开，而且我们并不见得会把在一个圈里学到的教训或表现的性格拿到另外一个圈里。我们很容易地在两个圈之间切换。</p>
+
+<p>如果基因能够影响行为，行为又能够影响基因，那么就有一个循环的因果关系。在一个循环反馈的系统里，简单的因果过程可以产生非常难以预料的结果。这种说法出自于混沌理论。这个理论说即使你了解所有决定一个系统的因素，你可能还是无法预测这个系统的发展轨迹，这是因为不同的因素之间相互作用的结果。即使是因果关系简单的系统也可能有混沌状态的行为。它们这样是因为“自激”性，在这里，一个行动影响下一个的初始状态，所以，很小的结果可能会成为很大的原因。</p>
+
+<p>基因与环境的相互作用使我的行为无法预测，但是它们并非没有决定我的行为。在字词的空隙里，有着自由。我们永远不可能逃避决定性，但是我们可以在好的决定性和坏的决定性之间做出区别：自由的与不自由的。</p>
+
+<p>让基因在它们自己的体内为自己作决定，这样一个月执著的信念使我们反对把自由丢给外界因素的最强堡垒。</p>
+
+<p>自由意志不会由一个基因决定，而是由于基因相比无限宏伟、给人激励的力量决定：它是人类本性的综合，事先建立在我们的基因组里，具有灵活性，又是每个人所持有的。每一个人都有一个独特的与众不同的内在实体，这就是“自我”。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2015私人阅读十五佳]]></title>
+    <link href="http://luozhaohui.github.io/blog/2016/01/01/books-annual-review/"/>
+    <updated>2016-01-01T05:42:38+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2016/01/01/books-annual-review</id>
+    <content type="html"><![CDATA[<h2>统计</h2>
+
+<p>2015年一共读完46本，其中五星18本，占比40%；四星17本，占比近40%；三星7本；两星4本。阅读主题以社科、历史、商业为主，人到中年已经消遣不起小说了。</p>
+
+<p>阅读DNA在年底停掉了，可惜。幸好还有<strong>readingtaste</strong>可以用，2015 完整的阅读统计数据见如下链接：
+<a href="http://readingtaste.com/user/1297475/stat/books">readingtaste 阅读统计</a></p>
+
+<h2>私人阅读十五佳</h2>
+
+<!--more-->
+
+
+<h3><a href="http://book.douban.com/subject/3533221/">非暴力沟通</a></h3>
+
+<p>非暴力沟通四个关键步骤：<strong>观察行为，描述感受，发现需求，提出请求</strong>。无论是表达自己还是倾听他人都可以用上非暴力沟通，这样的沟通方式误会最少，成效最大，其根基在于尊重与体会自己或他人的需求，提出建设性的方案来满足这些需求，这是爱的表达与沟通方式。对描述感受过程中，要使用“我信息”-我的哪些需求没得到满足导致了我的情绪，而非指责性质的“你信息”&ndash;你的什么行为导致了我的情绪。同系列作品<a href="http://book.douban.com/subject/25985811/">《非暴力沟通实践篇》</a>也相当不错，在该书中作者用实际的治疗案例演示如何将非暴力理论在实践中落地。最后一章“实践灵性”道出了非暴力沟通的人性关怀与哲学理念，从这个层面上去理解就能明白为什么要运用非暴力沟通。因为育儿，看过<a href="http://book.douban.com/subject/2275635/">《怎么听 孩子才会说，如何说 孩子才会听》</a>、<a href="http://book.douban.com/subject/3759379/">《父母效能训练手册》</a>、<a href="http://book.douban.com/subject/1067049/">《孩子把你的手给我》</a>、<a href="http://book.douban.com/subject/26275861/">《沟通的艺术》</a>等书籍，发现各位大师推崇的沟通理念与技巧都相似，足可见这种沟通方式的重要。</p>
+
+<h3><a href="http://book.douban.com/subject/26275861/">沟通的艺术 : 看入人里，看出人外</a></h3>
+
+<p>很全，很潮，很有实验根据的关于沟通的书籍。沟通有两个维度：关系维度和信息维度，越是亲密的对话，关系维度越重要，换句话说，在这样的对话中，情绪要素优先于信息要素。沟通是双向的，在沟通过程中，首先是要能认识自我的需求，其后学会倾听别人的需求，运用语言表达自己的感受与请求，从而促进关系。</p>
+
+<h3><a href="http://book.douban.com/subject/3759379/">父母效能训练手册</a></h3>
+
+<p>一切人际交往的关键在如何交流沟通，这本书讲述了一套如何与孩子沟通的方法。这不仅仅是一本育儿书，这套沟通方法或理念与<a href="http://book.douban.com/subject/3533221/">《非暴力沟通》</a>非常相近，足可见"道归于一".</p>
+
+<h3><a href="http://book.douban.com/subject/6952036/">对伪心理学说不</a></h3>
+
+<p>重读，第七版曾叫做《与“众”不同的心理学》。这本书的重点在介绍如何用科学的思维来认识心理学，与其说是心理学，不如说是方法论、科学哲学。书中介绍了理论必须是可证伪和可验证的，可证伪是波普尔提出的概念，是说必须有检验为假的可能&ndash;没有丑的对衬哪来的美？可验证是说要可测量与可操作，公开知识须经过同行评审；不要搞错相关与因果关系；警惕个案与见证而要重视概率；警惕可以解释一切的终极理论；重视偶然性与随机性等等科学思维。实乃批判性思维在心理学上的的实际运用。</p>
+
+<h3><a href="http://book.douban.com/subject/10945606/">精益创业 : 新创企业的成长思维</a></h3>
+
+<p>精华理念：低成本快速试错以找准需求。焦点是需求，手段是试错，策略是低成本＆快速。与<a href="http://book.douban.com/subject/11516567/">《四步创业法》</a>理念相通，以客户为导向。<a href="http://book.douban.com/subject/11516567/">《四步创业法》</a>棒喝以创意、产品为中心的创业管理思想，作者以自己丰富的创业以及顾问经历指出从创意、产品功能、开发、销售、流程化量产的每一个步骤都需要用户来检验！尤其是前期，创业应当以用户需求为导向，否则自觉不错的创意做成产品了，用户却不买账，用时髦的话说就是不在风口上。此外市场分为现有市场、细分市场、全新市场；根据产品的接纳生命曲线，客户也分为好早期（天使）客户、主流客户、怀疑者。用分清楚创业的市场类型、客户对象，采取不同的应对措施。</p>
+
+<h3><a href="http://book.douban.com/subject/1813841/">枪炮、病菌与钢铁</a></h3>
+
+<p>详细地论证了公元1800之前的历史很大部分是由于地理环境决定的。丰富的可驯化动植物以及适宜的气氛，导致新月地区与东亚最先进入生产粮食的定居农业社会，粮食生产与人口增多相互促进，引发文字、社会组织结构、技术以及病菌进化，而欧亚大陆东西向同纬度上气候条件相近的广阔大陆又有利于它们的传播。这一切积累到15世纪，欧洲人在枪炮、病菌以及其他先进技术与组织管理的帮助下踏上新大陆，将没有免疫力以及处于军事劣势的原住民征服或消灭了。</p>
+
+<h3><a href="http://book.douban.com/subject/25985021/">人类简史 : 从动物到上帝</a></h3>
+
+<p>70后作者博闻广见，将生物学、生态学、经济学、政治学、人类学、历史、哲学等统摄进人类的演化史里。认知革命、农业革命与科学革命是演化路线，而讲故事或虚构或愿景的能力是区别于其他物种的必杀技，于是金钱、帝国或宗教能够形成合力，使得人这种动物独霸地球。此书写得非常有趣，抱着普世关怀，从不同角度去看待问题，涵括了<a href="http://book.douban.com/subject/1813841/">《枪炮、病菌与钢铁》</a>、<a href="http://book.douban.com/subject/11445548/">《自私的基因》</a>、<a href="http://book.douban.com/subject/24745507/">《增长的极限》</a>等众多书中的观点，非常适合入门与激发兴趣。</p>
+
+<h3><a href="http://book.douban.com/subject/25831575/">现代世界史</a></h3>
+
+<p>非常合适的世界史入门，没看过《全球通史》不好比较，但作者能把各时期的发展趋势、脉络以及前后关联影响分析的头头是道，让全球历史长河连贯系统地展现在读者眼前。同主题的还阅读了<a href="http://book.douban.com/subject/5366248/">《你一定爱读的极简欧洲史》</a>，这本更适合欧洲史入门，框架梳理的不错；行文有趣，翻译也给力，如公国伯爵对皇帝的态度是“帝力于我何有哉！”，又如伏尔泰评神圣罗马帝国“既不神圣又不罗马亦非帝国”。全书讨论这个问题Q：“今天的欧洲和欧洲引领的现代文明是如何形成的?”。A：“希腊罗马的科学精神+基督教+日耳曼蛮族入侵”的三元合力形成了多元化、弱政府、多方角力的欧洲社会。</p>
+
+<h3><a href="http://book.douban.com/subject/3057556/">狂热分子 : 群众运动圣经</a></h3>
+
+<p>自我若是软弱无力，最多的自由又有何用？我们参加群众运动，是为了逃避个人责任或为了得到“免于自由的自由”，即摆脱自主存在这个不能承受之重的负担的自由。 此书号称为群众运动的圣经，确名不虚传，蒙田式的行文，严谨的架构，优美的翻译，佳品。</p>
+
+<h3><a href="http://book.douban.com/subject/25881102/">独裁者手册</a></h3>
+
+<p>这是一部解刨政治权力运作机制的大作，这个模式适用于民主政府，也适用于独裁政府，还适用于一切有权力的场所，如公司、组织等等。该模式以权力为中心，分析了权力的构成（三个维度），如何获取、维持权力，如何变革等等。将传统分离的民主、独裁认知统一到一个模式下，观点独到犀利。这样一本书能在中国出版实属不易，自然翻译过程中译者必须做一些和谐的功夫。坦白地说，这本书译文流畅，观点忠于原著，只有部分和中国相关的“敏感”论据被删除，其余都保留完整，实属佳品。鉴于很多人怀疑心重，我也有心一睹原著风貌，因此搜寻原文，将我找到的中英差异列在这里，让大家对这本删节书的质量心里有个谱：<a href="http://kesain.lofter.com/post/3aa744_65cd0a4">《独裁者手册》之和谐手册</a></p>
+
+<h3><a href="http://book.douban.com/subject/3260366/">社会主义 : 经济与社会学的分析</a></h3>
+
+<p>系统地从经济与社会的角度比较社会主义与自由主义，论证社会主义之不可行，尤其是从不能进行经济预算这个根本缺陷判了社会主义的死刑－社会主义必然导致贫穷，他的学生哈耶克则通过<a href="http://book.douban.com/subject/1077528/">《通往奴役之路》</a>论证了社会主义必然导致奴役。作者是坚定的自由主义者，他从社会分工有利于社会全体福利这个根本点出发，论证了生产资料私有制的是一切合理经济制度的基础。书中小部分章节中有对社会主义骂街的文笔出现&ndash;这是一点小小的瑕疵。</p>
+
+<h3><a href="http://book.douban.com/subject/4822685/">编码 : 隐匿在计算机软硬件背后的语言</a></h3>
+
+<p>从硬件与软件角度讲述计算机是如何工作的，综合了物理学，电学，电子学，数学等多方面的知识，从亲自组装一个手电筒开始，讲述其工作原理，然后扩展到计算机的基础设施，如何表示信息、存储信息、传输信息，如何进行加减运算等等。总的来说是非常不错的一本计算机工作原理科普书籍。作者亦是大牛，写过<a href="http://book.douban.com/subject/5273955/">《Windows程序设计》</a>这边经典大作，现已经出到第五版了。</p>
+
+<h3><a href="http://book.douban.com/subject/4097069/">儒家哲学</a></h3>
+
+<p>任公以其深厚的国学功底高屋建瓴地讲了儒家哲学是什么，两千年间的变迁史以及研究哪些问题。曰：用功所在：“修己安人”，最高目的：“内圣外王”，修炼之路：“格物致知诚意正心修身”以达修己与内圣，“齐家治国平天下”以达安人与外王。根基在修身，修“智仁勇”以达德。又分别就儒家历代所辩论的问题以说明其变迁之路：性之善恶（孟荀）、仁义之内外（告孟）、理欲（宋儒）、知行（明儒）。最后讨论了儒家的三大问题：性善恶、天命、心体问题。任公的另一本<a href="http://book.douban.com/subject/5990878/">《先秦政治思想史》</a>也相当不错，在此书中他对先秦四大流派儒道墨法都有精辟的概述与对比辨析，并能中西对比。书中观点亦有瑕疵，如认为道家的出现晚于儒家，但总体瑕不隐瑜。若论国学入门，力推此书！</p>
+
+<h3><a href="http://book.douban.com/subject/26411281/">水浒传（注评本）</a></h3>
+
+<p>读了金圣叹点评本，才晓得水浒一书中许多的文法，百零八人百零八个性格，真是人物描写的典范！以前对评注本不够重视，这一本引领我进入这个被忽视的天地，来年计划阅读更多经典作品的评注本。</p>
+
+<h3><a href="http://book.douban.com/subject/4322040/">蒋介石与现代中国</a></h3>
+
+<p>作者给蒋家父子都写了传，当看台版无删节版。此书以在蒋与美关系上着墨甚多，对共党评价甚低。作者树立了一位正心诚意的儒家基督信仰相结合的民族英雄。蒋在政治，战略上还是很有远见的，但事在亲为，导致无可用之将才。高华在<a href="http://book.douban.com/subject/4229282/">《革命年代》</a>中有对蒋介石为何以强大的正统优势败走台湾的分析，高华过于高估军事失败的影响，军事上的失败只是果吧。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Android框架学习资料]]></title>
+    <link href="http://luozhaohui.github.io/blog/2015/04/02/study-android-fw/"/>
+    <updated>2015-04-02T19:00:34+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2015/04/02/study-android-fw</id>
+    <content type="html"><![CDATA[<h2>前言</h2>
+
+<p>这两年在做一个与 Android 类似的系统（参考：<a href="http://blog.csdn.net/kesalin/article/details/10474007">招聘：有兴趣做一个与Android对等的操作系统么？</a>），因此有机会对 Android framework 进行系统地学习与研究。期间也阅读了一些不错的书籍与资料，特此分享在这里，或许对其他有兴趣研究 Android framework 的朋友有所帮助。</p>
+
+<!--more-->
+
+
+<h2>推荐资料</h2>
+
+<h3><a href="http://book.douban.com/subject/11530748/">Android开发精要</a></h3>
+
+<p>这一本是作为入门本，主要是从 app 开发者的角度来介绍 framework 中的各要素，从这个角度来理解框架中哪些部分直接和 App 开发相关，又起什么作用。要仔细研究 framework 内部机制，首先从外部特性入手，这样在横向层面对 framework 有一个整体的认识与把握。第3章至第6章是这本书的精华所在，重点介绍了 Android 的组件思想以及组件之间的交互媒介 Intent。</p>
+
+<h3><a href="http://book.douban.com/subject/10570841/">Android框架揭秘</a></h3>
+
+<p>对比过《深入理解Android》等书籍，还是觉得这本书讲得有体系，透彻，著者非常用心。尤其是对 C++/Java 两个层面的 framework，以及对 Client/Server 的交互过程讲得比较详细。</p>
+
+<h3><a href="http://blog.csdn.net/universus/article/details/6211589/">Android Bander设计与实现 - 设计篇</a></h3>
+
+<p>引用原文内容：</p>
+
+<blockquote><p>这篇文章首先通过介绍 Binder 通信模型和 Binder 通信协议了解 Binder 的设计需求；然后分别阐述 Binder 在系统不同部分的表述方式和起的作用；最后还会解释 Binder 在数据接收端的设计考虑，包括线程池管理，内存映射和等待队列管理等。通过本文对 Binder 的详细介绍以及与其它 IPC 通信方式的对比，读者将对 Binder 的优势和使用 Binder 作为 Android 主要 IPC 方式的原因有深入了解。</p></blockquote>
+
+<h3><a href="http://book.douban.com/subject/19986441/">Android系统源代码情景分析</a></h3>
+
+<p>这是讲解 Android Binder 以及匿名共享内存最详细的书，没有之一。作者花了进200页的篇幅来透彻讲解 Binder，此外对各种组件的启动过程也介绍得相当详细，如 Activity、Service、Content Provider 等。</p>
+
+<h3><a href="http://book.douban.com/subject/25921329/">深入理解Android内核设计思想</a></h3>
+
+<p>从操作系统的基础知识入手，讲解进程线程、内存管理、Binder 机制、Surface、SurfaceFlinger、WindowManagerService、View 体系、音频系统、输入系统等在 Android framework 中的实现原理。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[中文版《独裁者手册》之和谐手册]]></title>
+    <link href="http://luozhaohui.github.io/blog/2015/03/26/miss-of-the-dictatos-handbook/"/>
+    <updated>2015-03-26T10:00:34+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2015/03/26/miss-of-the-dictatos-handbook</id>
+    <content type="html"><![CDATA[<h2>前言</h2>
+
+<p><img src="http://img5.douban.com/lpic/s27293486.jpg" alt="《独裁者手册》" /></p>
+
+<p><a href="http://book.douban.com/subject/25881102/">《独裁者手册》</a></p>
+
+<p>《独裁者手册》是一部解析权力&ndash;尤其是政治权力&ndash;运作机制的大作，这套机制适用于民主政府，也适用于独裁政府，还适用于一切有权力的场所，如公司、组织等等。总的来说，就是从如何获取权力，如何维持权力的角度来分析现有的政治制度、公司制度。</p>
+
+<p>中文版由江苏文艺出版社出版，这样一本书能在中国出版实属不易，自然翻译过程中译者必须做一些和谐的功夫。坦白地说，这本书译文流畅，观点忠于原著，只有部分和中国相关的“敏感”论据被删除，其余都保留完整，实属佳品。鉴于很多人怀疑心重，我也有心一睹原著风貌，因此搜寻原文，将我找到的中英差异列在这里，让大家对这本删节书的质量心里有个谱。</p>
+
+<!--more-->
+
+
+<h2>正文</h2>
+
+<p>查询关键词：China、Chinese，英文粗体部分为被河蟹的部分。</p>
+
+<h3>英文版P12/190</h3>
+
+<blockquote><p>The second stratum of politics consists of the real selectorate. This is the group that actually chooses the leader. <strong>In today’s China (as in the old Soviet Union), it consists of all voting members of the Communist Party;</strong> in Saudi Arabia’s monarchy it is the senior members of the royal family; in Great Britain, the voters backing members of parliament from the majority party.</p></blockquote>
+
+<p>中文版P30：处理方式删除。</p>
+
+<h3>英文版P14/190</h3>
+
+<blockquote><p>Strange as it may seem, the same ideas and subtle differences that held true in San Francisco can be applied to illiberal governments like Zimbabwe, <strong>China,</strong> and Cuba, and even to the more ambiguous sorts of governments like current-day Russia or Venezuela or Singapore.</p></blockquote>
+
+<p>中文版P37：处理方式删除。</p>
+
+<h3>英文版P16/109</h3>
+
+<blockquote><p>For example, a married couple in the United States pays no income tax on the first $17,000 they earn. At that same income, <strong>a Chinese couple’s</strong> marginal tax rate is 45 percent.</p></blockquote>
+
+<p>中文版P41：处理方式模糊化替代，一对其他某些国家的夫妻。</p>
+
+<h3>英文版P17/190</h3>
+
+<blockquote><p>A few civic-minded autocrats slip a little into secret accounts, preferring to fend off the threat of revolt by using their discretionary funds (the leftover tax revenue not spent on buying coalition loyalty) to invest in public works. Those public works may prove successful, as was true for Lee Kwan Yew’s efforts in Singapore <strong>and Deng Xiaoping’s in China</strong>. They may also prove to be dismal failures, as was true for Kwame Nkrumah’s civic-minded industrial program in Ghana or <strong>Mao Zedong’s Great Leap Forward, which turned out to be a great leap backwards for China</strong>.</p></blockquote>
+
+<p>中文版P45：处理方式删除，Great Leap Forward 即大跃进。</p>
+
+<h3>英文版P40/190</h3>
+
+<blockquote><p>Equally, he and many others must have known that it was much better to cross swords with Gorbachev, an intellectual reformer, than with such contemporaries as Mobutu Sese Seko of Zaire <strong>or even Deng Xiaoping of China. Deng, after all, used ruthless force to end the prodemocracy uprising at Tiananmen Square in 1989.</strong></p></blockquote>
+
+<p>中文版P106：处理方式删除。</p>
+
+<h3>英文版P48/190</h3>
+
+<blockquote><p>In the United States, for example, a couple with one child and an income under about $32,400 pays no income tax. If their income were, say, $20,000 they would receive $1,000 from the federal government to help support their child. <strong>In China, a family with an income of $32,400 is expected to pay about $6,725 in income tax.</strong></p></blockquote>
+
+<p>中文版P134：处理方式删除。</p>
+
+<h3>英文版P48/190</h3>
+
+<blockquote><p><strong>His Chinese counterpart, Huang Guangyu, also known as Wong Kwong Ku, fared little better. Starting with nothing but $500 and a street cart, Guangyu created Gome, the largest electrical retailer in China. He was repeatedly ranked as China’s richest individual—until he was sentenced to fourteen years in prison for bribery. It is likely that he was guilty since bribery is commonplace in Chinese business dealings. It is also likely that he and others who have been prosecuted for corruption in China were “chosen for political reasons.”</strong></p></blockquote>
+
+<p>中文版P135：处理方式整段删除，本段"黄光裕被选择执法"本在“2004年霍尔多科夫斯基”与“在独裁国家，做个富人是不明智的”两段之间。</p>
+
+<h3>英文版P58/190</h3>
+
+<blockquote><p>Hobbes was only half right. It is true, as Hobbes’s believed, that happy, well-cared-for people are unlikely to revolt. <strong>China’s prolonged economic growth seems to have verified that belief (at least for now).</strong> Keep them fat and happy and the masses are unlikely to rise up against you.</p></blockquote>
+
+<p>中文版P158：处理方式删除</p>
+
+<h3>英文版P60/190</h3>
+
+<blockquote><p>Indeed, a common refrain among small-coalition rulers is that the very freedoms, like free speech, free press, and especially freedom of assembly, that promote welfare-improving government policies are luxuries to be doled out only after prosperity is achieved and not before. This seems to be the self-serving claim of leaders who keep their people poor and oppressed. <strong>The People’s Republic of China is the poster boy for this view. When Deng Xiaoping introduced economic liberalization to China in the 1980s, experts in wealthy Western countries contended that now China’s economy would grow and the growth would lead to rapid democratization. Today, more than thirty years into sustained rapid growth we still await these anticipated political reforms. Growth does not guarantee political improvement but neither does it preclude it. The Republic of China (aka Taiwan) and the Republic of Korea (aka South Korea) are models of building prosperity ahead of democracy. Needless to say, the People’s Republic of China certainly is not fond of promoting either of those countries’ experiences.</strong></p></blockquote>
+
+<p>中文版P163：处理方式删除，删除内容用于列举中国政府宣扬只有经济繁荣之后才考虑民主与自由问题的观点。</p>
+
+<h3>英文版P61/190</h3>
+
+<blockquote><p>A far better measure of leaders’ interest in education is the distribution of top universities. With the sole exceptions <strong>of China and Singapore</strong>, no nondemocratic country has even one university rated among the world’s top 200. <strong>Despite its size, and not counting universities in Hong Kong, which were established under British rule before Hong Kong’s return to China in 1997, the best-ranked Chinese university is only in 47th place despite China’s opportunity to draw top minds from its vast population.</strong> The highest ranking Russian university, with Russia’s long history of dictatorship, is 210th.</p></blockquote>
+
+<p>中文版P165：处理方式删除，删除内容说明中国高等教育不怎么样。</p>
+
+<h3>英文版P64/190</h3>
+
+<blockquote><p>A smart democrat, of course, tries to avoid such troubles, using eminent domain only when it benefits many people, especially members of the democrat’s constituency (the influentials). <strong>It is incredible to see how easily leaders can take people’s property in the People’s Republic of China and how hard it is to do the same in Hong Kong.</strong> When essentials are few, pretty much anything goes.</p></blockquote>
+
+<p>中文版P178：处理方式删除。</p>
+
+<h3>英文版P64/190</h3>
+
+<blockquote><p>Massive construction projects, like the Aswan Dam in Egypt <strong>and China’s Three Gorges Dam</strong>, are very much like Mobutu’s power grid.</p></blockquote>
+
+<p>中文版P178：处理方式删除，Three Gorges Dam 即三峡大坝。</p>
+
+<h3>英文版P67/190</h3>
+
+<blockquote><p>The comparison of Iran and Chile is far from unusual. <strong>China, like Chile, suffered a 7.9 earthquake of its own. It struck in May 2008, bringing down many shoddily constructed schools and apartment buildings, killing nearly 70,000. Even accounting for variations in Chile’s and China’s populations and incomes, it is impossible to reconcile the difference between China’s death toll and Chile’s, except by reflecting on the incentives to enforce proper building standards in democratic Chile—incentives missing in autocratic China and Iran.</strong> And lest it is thought these are special cases, it is worth noting that democratic Honduras had a 7.1 earthquake in May 2009, with 6 deaths and Italy a 6.3 in April 2009 with 207 deaths.</p></blockquote>
+
+<p>中文版P184：处理方式删除，内容是2008年汶川大地震导致大量人口死亡。</p>
+
+<h3>英文版P80/190</h3>
+
+<blockquote><p><strong>Mao Zedong and Deng Xiaoping in China mirrored Khrushchev and Gorbachev, but with an important difference. All of these leaders seem to have been initially motivated by the sincere desire to improve their economy. All seemed to have recognized that failing to get their economy moving could pose a threat to their hold on power. But unlike Mao, Mikhail, and Nikita, Deng belongs squarely in the hall of fame. Like them, he was not accountable to the people and, like them, he was not hesitant to put down mass movements against his rule. The horrors of Tiananmen Square should not be forgotten. But unlike his fellow dictators, he actually had good ideas about how to improve economic performance.</strong></p>
+
+<p><strong>Deng and</strong> Singapore’s Lee Kwan Yew are surely among the contemporary world’s two greatest icons of the authoritarian’s hall of fame. They did not sock fortunes away in secret bank accounts (to the best of our knowledge). They did not live the lavish lifestyles of Mobutu Sese Seko or Saddam Hussein. They used their discretionary power over revenue to institute successful, market-oriented economic reforms that made Singaporeans among the world’s wealthiest people <strong>and lifted millions of Chinese out of abject poverty</strong>.</p></blockquote>
+
+<p>中文版P228：处理方式第一段整段被张冠李戴删节为一句话“但与他们不同的是，李光耀确实知道如何改善经济”，实际是讲邓；紧接下来的一段原文邓李并举删节为只讲李一个人。</p>
+
+<h3>英文版P95/190</h3>
+
+<blockquote><p>At first, a few especially bold individuals may rise up in revolt. They proclaim their intention to make their country a democracy. Every revolution and every mass movement begins with a promise of democratic reform, of a new government that will lift up the downtrodden and alleviate their suffering. That is an essential ingredient in getting the masses to take to the streets. Of course, it doesn’t always work.</p>
+
+<p><strong>The Chinese communists, for instance, declared the formation of a Chinese Soviet Republic on November 7, 1931. They said of their newly declared state,</strong></p>
+
+<p><strong>It is the state of the suppressed workers, farmers, soldiers, and working mass. Its flag calls for the downfall of imperialism, the liquidation of landlords, the overthrow of the warlord government of the Nationalists. We shall establish a soviet government over the whole of China; we shall struggle for the interests of thousands of deprived workers, farmers, and soldiers and other suppressed masses; and to endeavor for peaceful unification of the whole of China.</strong></p>
+
+<p>Jomo Kenyatta, the leader of Kenya’s independence movement and its first head of state, likewise declared during a meeting of the Kenya African Union (KAU) on July 26, 1952:</p></blockquote>
+
+<p>中文版P280：处理方式整段删除，内容是讲毛的革命。</p>
+
+<h3>英文版P95/190</h3>
+
+<blockquote><p>Many revolutions end up simply replacing one autocracy with another. On some occasions the successor regime can actually be worse than its predecessor. This might well have been the case with Sergeant Doe’s deposition of Liberia’s True Whig government <strong>or Mao’s success against Chiang Kai Shek’s Kuomintang government in China</strong>.</p></blockquote>
+
+<p>中文版P280：处理方式删除，Chiang Kai Shek 即蒋介石。</p>
+
+<h3>英文版P100/190</h3>
+
+<blockquote><p>As might be expected, given these facts and the incentives they suggest, instances of 200 or more people dying in earthquakes is much more common in autocracies than democracies.</p>
+
+<p><strong>Not all disasters are equal in the eyes of autocrats. Dictators are particularly wary of natural disasters when they occur in politically and economically important centers. Disaster management in China emphasizes this point. When an earthquake struck the remote province of Qinghai in 2010, the Chinese government’s response was, at best, halfhearted. In contrast, its handling of disaster relief in the wake of a 2008 earthquake in Sichuan won the approval of much of the international community. The differences are stark and driven by politics. The Sichuan quake occurred in an economically and politically important center where a massed protest could potentially threaten the government. Qinghai is remote and of little political importance. Protest there would do little to threaten the government. The government did much less to assist people who could not threaten them.</strong></p></blockquote>
+
+<p>中文版P280：处理方式整段删除，内容是讲对青海与汶川大地震的不同灾变处理。</p>
+
+<h3>英文版P102/190</h3>
+
+<blockquote><p>Common threads run through each of these democratizers—common threads that are absent from revolutions that replaced one dictator with another, such as occurred under <strong>Mao Zedong in China, Fidel Castro in Cuba</strong>, Porfirio Diaz in Mexico, and Jomo Kenyatta in Kenya.</p></blockquote>
+
+<p>中文版P301：处理方式删除。</p>
+
+<h3>英文版P124/190</h3>
+
+<blockquote><p>Sure, places like Singapore <strong>and parts of China</strong> prove that it is possible to have a good material life with limited freedom—yet the vast majority of the evidence suggests that these are exceptions and not the rule. Economic success can postpone the democratic moment but it ultimately cannot replace it.</p></blockquote>
+
+<p>中文版P386：处理方式删除。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[我的父亲]]></title>
+    <link href="http://luozhaohui.github.io/blog/2015/03/06/my-father/"/>
+    <updated>2015-03-06T20:23:34+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2015/03/06/my-father</id>
+    <content type="html"><![CDATA[<h2>前言</h2>
+
+<p>我的父亲今年已七十五了，每次回家都能明显感受到无情岁月在父亲身上留下的印迹。这时时刻刻在提醒着我，相处的时间的不会太多了，尤其是对于常年飘在外面的我来说。虽说在我离开家乡之前与父亲相处了十八个春秋，可我对于父亲的生平却了解的很少，非常的支离破碎。大约以前在一起的时候总觉得明天还会见到的，加上年少总是索取以满足自己的需要而不懂得去了解父辈的需要，因此不曾打听与了解过父亲的过去。这次借过年回家相处的一个夜晚，和父亲聊了聊他的过去，记在这里，以作一个平凡农民半个多世纪的回忆。</p>
+
+<p><img src="http://i.imgur.com/H4OCoEZ.jpg" alt="我的父亲罗有胜" /></p>
+
+<!--more-->
+
+
+<h2>爷爷去世</h2>
+
+<p>我的父亲罗有胜，1940年出生在湘中的湘乡（今属于湖南省双峰县），这个地方出过不少在中国近代史上有着举足轻重影响的人物，如毛泽东，彭德怀，刘少奇都出自湘中，而曾国藩与大部分湘军都是本县的子民，蔡和森家族更是近在邻村。父亲在家中排行老大，下有一个弟弟，与三个妹妹。父亲只读过小学，之后一如其他农家子弟在家干农活，直到1959年父亲19岁那一年。</p>
+
+<p>1959年正是反右批斗运动正紧的时候。爷爷因为祖传茅山道士之术，在当时是属于被批判的“搞迷信”的道士对象。国庆前夕，不到40岁的爷爷受到严重批斗挨打，不到一个月时间就因挨打受的伤而去世了。（后来邓上台，各地平反冤错案，父亲曾为此申怨，现在留得申怨报告一份，如下所示。）</p>
+
+<p><img src="http://i.imgur.com/2GwogN8.jpg" alt="申诉材料" />
+（父亲的真实年龄与身份证上的出生年月不符，以上申诉材料中使用的年龄是根据身份证上的出生年月计算的）</p>
+
+<p>爷爷去世时，父亲才19岁，而最小的妹妹才半岁，一家六口的重担就落到父亲头上了。当时农村已经实行公社制，农民需要每天出工积累工分领取食物等生活必须用品。对于这样一个劳力少而人口多的家庭来说，人均能吃到的食物少得可怜，更因爷爷曾经的职业备受歧视，日子无疑是过的非常艰苦。</p>
+
+<h2>修铁路</h2>
+
+<p>后来碰上1960年湘西怀化修铁路（应该属于<a href="http://baike.baidu.com/view/940114.htm?fromtitle=%E6%B9%98%E9%BB%94%E7%BA%BF&amp;fromid=1569738&amp;type=syn">湘黔铁路</a>）需要劳动力，政府在农村征派劳力，每个生产队分派两个人。以当时农村的思想状况来说，父母在不远行，只有走投无路才会远走背井离乡讨生活。在这困苦的处境下，因此父亲与同生产队的肖石成两人被征派去修建怀化铁路。那个年代修筑铁路都是苦力活，尤其是在湘西怀化那种多山地区（父亲提到过在雪峰山打隧道的经历）。干活是用原始的工具开山辟路，放炮炸，用铁锤敲碎石块，用肩挑石头。父亲在那里修建了三年多（大约1960年～1964年），那一段完工之后就又回到生产队务农。</p>
+
+<p><img src="http://i.imgur.com/H5WLrGo.png" alt="父亲曾经修筑铁路的路段" />
+图中红色箭头段应该是父亲曾经修筑铁路的路段，双峰县是我家所在县，图标1处是怀化洪江县的雪峰山，现有雪峰山隧道</p>
+
+<h2>弹棉花</h2>
+
+<p>回到生产队之后，日子依旧困苦得过不下去，父亲再次外出讨生活。于是经邻村城坪村的肖玉莲的师父介绍向沙田石桥村的彭来星拜师学习弹棉花打被子。师徒俩组队外出给人打被子，从此开始了“穷游”南中国之旅。父亲有四年（大约1965～1970年）外出打被子的经历，一般都是农历七八月份出发，在除夕前赶回家里。前期是和师父彭来星搭档，后面是和邻村肖玉莲搭档。一共走过两条路线，前几次南下路线，从湖南永州东安南下到广西桂林，到云南蒙自，再返回广西回到湖南；后来是北上路线，到湖北。</p>
+
+<p>弹棉花的工作过程图（图片来源于网络）：
+<img src="http://i.imgur.com/5z5tHJz.jpg" alt="弹棉花的工作过程图" /></p>
+
+<p>父亲走过的现在依然印象深刻的地方：
+<img src="http://i.imgur.com/caY91IL.png" alt="父亲走过的现在依然印象深刻的地方" />
+图中的1处是云南蒙自。</p>
+
+<p>小时候家里有一本厚厚的中国地图册，现在已经不在了，那时候并不知道那本地图册对父亲有如此重要的意义。 现在父亲对走过的具体地名大都已经回忆不起来了，因此我也无法准确还原他曾经走过的路线，只能凭着父亲记忆深刻的一些地名去串起来。父亲对于广西桂林附近的景色以及云南蒙自县的壮族的风俗习惯记忆深刻。比如，桂林，大雁山，阳朔，昭平，蒙自都能准确说出地名来。他说到当时广西的物资比湖南要丰富，许多物资湖南还没有卖的，广西就有了。他还记得当时桂林有一条湖南街，上面有卖弹棉花打被子用的一些材料，如纱等。此外，父亲对桂林山水，阳朔岩洞的景色也记忆深刻。下图上标出的湖南永州的道县父亲虽然没有去过，当时正值文革， <a href="http://zh.wikipedia.org/wiki/%E9%81%93%E5%8E%BF%E4%BA%8B%E4%BB%B6">道县大屠杀（发生在1967年）</a>，父亲途径附近区域，听很多人说过，因此记忆深刻。他说到有一次坐火车，列车员说卧倒，声刚一落，子弹就梭梭地朝火车扫射了，车窗玻璃都打碎了，外面是两派造反派在战斗。</p>
+
+<p><img src="http://i.imgur.com/Tx6BBaJ.png" alt="桂林，大雁山，阳朔，昭平" /></p>
+
+<p>在广西的时候，父亲还提到过一个有名气的抗日村落，这个村落的布局十分独特，房屋紧凑连接，拐角星罗密布，一进入如同走入迷宫。当地人利用这个地形有效地打击日本鬼子，以至于鬼子动用飞机炸平村落才占领。父亲说这个村落叫做雷锋村，由于大一点的地名父亲记忆不详，更因为这个村落原本不叫雷锋村（抗日是啥年代，雷锋是啥年代啊，多半如《朱德的扁担》到《林彪的扁担》再到《朱德的扁担》一样被共党篡改了），现在我已无法搜索到父亲描述的这个村落记录了。</p>
+
+<p>父亲还走过一小段云南境内的茶马古道，只是父亲不明白那是一条很有历史的古路，他说有一些路两边的石壁上雕刻着吊着铃铛的马队驼着货物，我琢磨这应该是茶马古道。附上茶马古道的路线图以及蒙自到普洱、昆明的示意图以估摸父亲走过的地方：</p>
+
+<p><img src="http://i.imgur.com/mJxfrDF.jpg" alt="茶马古道" /></p>
+
+<p><img src="http://i.imgur.com/isCTI1L.png" alt="蒙自、普洱、昆明示意图" /></p>
+
+<p>父亲对蒙自壮族人民的风俗习惯记忆鲜明，而蒙自离茶马古道普洱到大理或昆明到普洱这两段路程都不远，所以可以推断出，父亲到过蒙自更西的地方，具体是哪一段古道父亲已经记忆不起来了。父亲提到过一个细节，有一次师徒俩挑着工具行李走入山区，一走七十里没有人烟，而那种地方当地传闻常有土匪出没。</p>
+
+<h2>弹棉花时的经济社会状态</h2>
+
+<p>说到外出讨生活，我仔细了解了一下当时讨生活的经济与社会状态。当时人不是自由的，小范围属于某某生产队，大范围属于某某公社，外出是需要介绍信才能通行的，因为坐火车，住旅店，到别的村落都会要求查验介绍信，否则就可能当作可疑或特务分子对待，这是当时的外部（国民党空降特务）与内部（计划经济控制人口流动）形势所形成的局面。因此，像父亲这样的弹棉花从业者，需要办理手工业证和生产队的证明信及公社的介绍信才能外出。此外，因为生产队外出一人就少了一个劳动力，所以外出自讨生活的人需要每天支付一元给生产队作为补偿。根据父亲的记忆，师徒俩人一天平均可以打两到三块被子，打一块被子当时收费十五元，平均一个月四分之一的天数有生意。因此估算下来，平均每月能进账二百五十块，除去路上的开销和弹棉花的耗材，一个月能节余两百来块。起初父亲是学徒，和师傅按照二八的比例分成，因此父亲起初只能领取到只能领取两成收入约四十多块，减去补偿给生产队的三十块每月只节余十多块。后来学艺日精，分成比例也就高一些，按照五五比例分成能得到一百多块，减去补偿生产队的费用，每月能节余七十块。在当时算是一笔不小的收入吧，只是因为奶奶不善于理家，这些钱都花掉了，并没有积蓄起来。而因花钱多，在生产队上形成在外面挣了大钱的印象，引起嫉妒，以至于后来有人作梗不同意父亲外出讨生活了（因为外出需要生产队同意和介绍信！），即便是父亲为生产队上的每一家都免费打过被子依然有人不领情。</p>
+
+<p>父亲说虽然弹被子确实比在公社务农争公分强，但却辛苦很多。在学徒阶段，每天天未亮，父亲就要先师傅起来，将旧被子里面的棉絮拆开拆散，以重复利用旧棉花，然后再掺入新棉花制成新被子，这项工作通常在天亮时就要完成。天一亮师傅就要起来开始弹的工作了。有生意的日子吃住都不用愁，因为都是在主人家吃住的。当时的社会比较穷，父亲说到，他们刚到一个新村落第一家做事情的时候，为了树立吃得少做得多的好名声以便招揽更多生意，往往忍着只吃个半饱，起早摸黑地做。免得吃得多做得慢坏了名声而招揽不到生意。当然也有生意少的时候，故意放慢进度以求多赖在主人家一两天的情况。当时招揽生意一来靠村落间的口口相传，二来是靠在赶集上招揽生意。以前经济并不发达，没有固定的商店与市场，农村地区都是在每个月固定的日子去固定地方买卖东西，叫做赶集。逢上赶集的日子，父亲就要带着弹棉花的工具当名片，站在集会显眼的地方，有需要制作被子的人就会前来询问。而在转移阵地的时候，有时候挑着行李要走上三四天才能找到下一趟生意。</p>
+
+<h2>修筑燕霄水库</h2>
+
+<p>在外出弹棉花受阻拦之后，父亲只好回到生产队。在家务农这一段时间中当上了民兵排长，现在家里还留存有当时父亲的一本民兵训练笔记本。由此可以看出当时的政治大环境还是以斗争为纲，而不是以发展为纲：</p>
+
+<p><img src="http://i.imgur.com/9E8HjxW.jpg" alt="民兵训练笔记本" /></p>
+
+<p>后来政府因修筑燕霄水库及相应的水渠（大约1974年～1979年）再次征派劳动力，而父亲曾经有过修筑铁路的经历，因此被选中。当时开凿水渠，水渠有时候要穿山而过，因此就要开山凿洞，这样的凿出来的洞方言叫做阴洞子，父亲提到过两处负责的地段：双江口和西冲。这也是苦活，也需要放炮炸山，而征派上去的农民缺少这方面的训练，出过不少事故死了一些人。而父亲在修筑铁路时有一定放炮的安全意识与经验，因此负责专管安全的任务了。当时留在生产队吃公社食堂大锅饭的伙食较差，而修筑水库干活辛苦一些因此政府重视，伙食比较好，这时候每个生产队征派的两个名额就成了香饽饽。父亲说，当时他负责的那一段每三个月就要换掉一些人，因为那些生产队采用每户轮流派出劳力的办法来求公平。而父亲因为抓安全需要老将，为人老实干活出力，所以公社顶着生产队的非议，坚持要征派父亲。这一征派就是三四年。在这次征派中，因父亲表现出色，于1975年同永丰镇西冲的刘竹初两人加入了Dang（那时候的Dang员还真是个Dang员样子），后来还调离生产队转正成为城镇户口吃国家粮（1980年）。从此父亲走上了与水利相关的职业道路，之后在茅坪村附近修筑杨津渡天桥时当过保管（1980年），再调到双江口看护，再到燕霄水库大坝管理所。在杨劲渡当保管时，经人介绍认识了我母亲（茅坪村），于是父亲直到1980年40岁才结婚。</p>
+
+<h2>卖爆花</h2>
+
+<p>工作与家庭都稳定之后，1981年我哥出生，1983年我出生。当时已经开始对城镇户口实行计划生育了，我的出生使得父亲违反了计划生育政策，因此父亲被罚停职停薪三年。在这三年里需要自谋生路，而且因不是农村户口，父亲是没有分田土的。父亲再次过上了艰苦的讨生活之路：卖爆花（就是冬天街边常见的用米制作的爆花米，爆花筒）。早上从我村的一个小作坊买来爆花，然后去其他乡村里售卖。父亲说卖不动的时候最远走到邻县衡阳县（大约50公里的路程）。这一起早摸黑的辛苦又是三年，父亲说幸好那时候每天平均能挣五元，以支撑一家人的生活。</p>
+
+<h2>燕霄水库管理所职员</h2>
+
+<p>卖了三年爆花之后，父亲回到了原单位。对于父亲在燕霄水库的工作，我不是十分了解，只知道下大雨时要派人看守水库大坝、水渠沿线以防坍陷；水电站发电时需要派人24小时看守；水库需要巡逻防止人偷鱼，水库要养鱼等等，这些父亲都做过。从我懂事起，父亲年龄也大了，便担任总务不再外出干体力活了，他要负责水库管理所三四十号人的食物采购。从县城到燕霄水库管理所有二十里的路程，路况并不好，因为水库建筑在山区。因此天气不好的时候，下大雨或下雪的时候，自行车都不能骑，而管理所不能一天没有吃的，父亲只能挑着食材走路送过去。后来父亲年龄大了，在父亲病着时候或天气不好的时候，我哥曾顶替这项工作好些次。</p>
+
+<p>燕霄水库到县城的路线图：从县城到我家附近到城坪村这一段路况较好，从城坪村到燕霄水库那一段山路的路况就差远了。
+<img src="http://i.imgur.com/ZMAs7Ol.png" alt="燕霄水库到县城的路线图" /></p>
+
+<h2>道士</h2>
+
+<p>在1989年，我家修筑了新房子，从此摆脱了一家四口人睡一张床的历史。搬到新房子之后，忘记是哪一年了，邻队筒车坝的蒋甘霖因为患大病久治不愈，各种医院、道士和尚治疗都不凑效。他家知道我家是道士世家，于是病急乱投医，说服父亲出手帮忙驱鬼辟邪。不知怎么的，这一次竟然灵了。于是父亲作为道士的第三职业（第一职业应该算是农民，第二职业是水库管理所职员）名声大震，一则因为周边的和尚道士都没治好而父亲第一次出手就灵了，二则因为祖传的法术在当地还是很有名气的。从此父亲走上了道士这一第三职业，而且随着父亲的退休而成为主业了。至今父亲依然从业中，并因这一职业，父亲又有过好几次出省驱鬼辟邪的经历。</p>
+
+<h2>总结</h2>
+
+<p>如果用职业顺序来描述父亲的经历，可以说一直都是农民，中间又成为手工业者，再成为职员，最后退休后以道士为主业。</p>
+
+<p>父亲总结说，这一辈子吃了共产党的苦，也沾了共产党的光。我觉得父亲前半句是对的，后半句缺还值得商榷。或许没有共产党这么左运动右跃进地瞎折腾，人民顺顺利利地自力更生，日子会过得更好一些呢？</p>
+
+<p>以上仅仅凌乱地记录父亲生平的一些重要事情，因为年久，很多细节以及具体年份父亲已经记不清了，因此时间上会有出入，以后再求证考证。</p>
+
+<p>纵观父亲过去的历程，因爷爷的惨死而转折，而又因此外出修铁路获得转机，并且这一经历影响了父亲后来的人生历程。在外出弹棉花以及卖爆米花的经历，让本内向老实的父亲练就了较幽默的口才，察言观色的人际交往本领以及见多识广看得开的思维。这些经验与思维对他能以低文化水平转正为城镇户口很有帮助。这些也对父亲的道士职业很有帮助，因为在我看来，驱鬼辟邪起的其实是起安慰剂的作用，求的是一个心安，而父亲的口才，交际，见识都能让他说出一些更为体贴安慰的话语，也更让人信服。</p>
+
+<p>父亲看得开的思维还体现在采纳新事物上面，在98年我读高三时，奶奶去世了。传统办丧事是亲朋戚友负责的，而父亲采取承包制，将白喜事承包出去。在当时当地，这是第二例白喜事承包，并且受到亲族的非议，而今红白喜事承包几乎成了惯例了。近些年来，父亲已经在考虑后事了，并嘱咐过要火化不土葬，并嘱咐办丧事要以简为原则，酒席都可以不办。这在现今农村很多人还怀着深深土葬情结的环境下，父亲有这样的观念实在是不一般。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[利用 Synergy 在 Mac 与 Ubuntu 间共享键盘与鼠标]]></title>
+    <link href="http://luozhaohui.github.io/blog/2014/12/08/share-screen-with-synergy/"/>
+    <updated>2014-12-08T13:03:34+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/12/08/share-screen-with-synergy</id>
+    <content type="html"><![CDATA[<h2>简介</h2>
+
+<p>Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac &amp; Ubuntu &amp; Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 Synergy 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 QuickSynergy 或 SynergyKM 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要<strong>注意各机器上的 Synergy 版本要一致</strong>，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。</p>
+
+<p>在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。</p>
+
+<!--more-->
+
+
+<h2>工具下载</h2>
+
+<p>QuickSynergy 工具下载：<br/>
+Mac 版 QuickSynergy 下载链接一：<a href="https://code.google.com/p/quicksynergy/">https://code.google.com/p/quicksynergy/</a>  <br/>
+Mac 版 QuickSynergy 下载链接二：<a href="http://sourceforge.net/projects/quicksynergy/">http://sourceforge.net/projects/quicksynergy/</a><br/>
+Ubuntu 版 QuickSynergy 直接在 Ubuntu Software Center 中输入 QuickSynergy 查找安装即可。</p>
+
+<p>若使用 SynergyKM，可以从如下链接获取：<br/>
+SynergyKM 下载链接：<a href="http://synergykm.com/">http://synergykm.com/</a></p>
+
+<h2>安装配置</h2>
+
+<ol>
+<li><p>Ubuntu 下的安装配置</p>
+
+<p> 启动 QuickSynergy，显示界面有三个 Tab 页：</p>
+
+<ul>
+<li>Share Tab：该页面用于服务器。作为服务器的机器在该界面配置受其控制的客户端机器的主机名，然后点击 Excute 启动服务器端（实际上是执行程序：<code>/usr/bin/synergys</code>）；</li>
+<li>Use Tag：该页面用于客户端。作为客户端的机器在该界面配置服务器机器的IP地址或主机名，然后点击 Excute 启动客户端端（实际上是执行程序：<code>/usr/bin/synergyc</code>）；</li>
+<li>Setting Tag：该页面用于配置 Synergy 执行程序所在的目录</li>
+</ul>
+
+
+<p> 在这里，使用 Ubuntu 机器作为服务器，所以只需要在 Share Tab 界面上的相应位置（上下左右，我的 Mac 机器在左边，所以在 left 位置设置）设置 Mac 机器的主机名即可。Mac 机器的主机名查看方法如下：启动 terminal，输入命令：<code>hostname</code>，就能得到主机名。</p>
+
+<p> 设置界面如下：<br/>
+ <img src="http://i.imgur.com/ZhCLJVS.png" alt="Ubuntu QuickSynergy 设置" /></p>
+
+<p> 然后点击启动。(注意需要先启动服务器端，然后再启动客户端)</p></li>
+<li><p>Mac 下的安装配置
+Mac 版 QuickSynergy 界面比 Ubuntu 版要简洁一些，启动 QuickSynergy，在 Share 页面设置 Server hostname/IP address 为 Ubuntu 机器的 IP 地址即可（Ubuntu 系统下启动 terminal，输入命令：<code>ifconfig</code> 即可查看 IP 地址，输入命令 <code>hostname</code> 即可查看主机名）。</p>
+
+<p>  设置界面如下：<br/>
+  <img src="http://i.imgur.com/kKxpgnx.png" alt="Mac QuickSynergy 设置" /></p>
+
+<p>  然后点击 Run，这样就能够使用 Ubuntu 机器的键盘和鼠标操作 Mac 机器了。</p></li>
+<li><p>Mac 下 SynergyKM 的安装配置<br/>
+由于 QuickSynergy 不带日志输出窗口，有时候操作不成功也不知道是怎么回事，这时可以安装 SynergyKM 来解决问题。下载 Mac 版 SynergyKM，双击安装，在安装过程中选择 Client 模式，并设置 Screen Name 为 Mac 机器的主机名（也可以在安装完毕之后在菜单 Perferences/Setting 界面设置）。安装完毕之后启动 SynergyKM，勾选 Client 选择框，在 Server IP 处填写服务器机器 Ubuntu 的 IP 地址。</p>
+
+<p>  设置界面如下：
+  <img src="http://i.imgur.com/nNcKVPg.png" alt="Mac SynergyKM 设置" /></p>
+
+<p>  然后点击 Apply 和 Start，就能在 Log 输出窗口查看日志，根据日志信息就能够知道是版本不匹配还是主机名设置错误等等。</p></li>
+<li><p>修改 key-Mapping<br/>
+由于 Mac 机键盘与非 Mac 机键盘的物理按键不同，所以在 Ubuntu 机器上的 Ctrl + C 并不能在 Mac 系统上产生同样的效果，这就需要在 Synergy 的配置文件中添加按键映射关系。首先关闭 Ubuntu 系统上的 QuickSynergy（每次启动 QuickSynergy 都会重新生成新的 synergy.conf），再在作为服务器的机器上的 terminal 中输入命令：<code>gedit ~/.quicksynergy/synergy.conf</code> 打开 synergy.conf，修改其内容如下：</p></li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>section: screens
+</span><span class='line'>  kesalin-ubuntu:
+</span><span class='line'>  kesalin-iMac:
+</span><span class='line'>      ctrl = meta
+</span><span class='line'>      meta = ctrl
+</span><span class='line'>      alt = alt
+</span><span class='line'>      super = super
+</span><span class='line'>end
+</span><span class='line'>section: links
+</span><span class='line'>  kesalin-ubuntu:
+</span><span class='line'>      left = kesalin-iMac
+</span><span class='line'>  kesalin-iMac:
+</span><span class='line'>      right = kesalin-ubuntu
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>然后在 terminal 上输入命令：<code>/usr/bin/synergys -c ~/.quicksynergy/synergy.conf</code> 根据特定配置启动 synergys 服务端，就可以实现按键映射了。</p>
+
+<p>为了避免每次启动系统之后都需要敲入上面的启动命令，可以在 Ubuntu 的启动项中添加上面的命令：点击 Perference->Startup Applications Perferences->Add，在 command 栏输入：<code>/usr/bin/synergys -c ~/.quicksynergy/synergy.conf</code> 即可。注意由于每次启动 QuickSynergy 都会重新生成新的 synergy.conf 覆盖我们修改好的配置文件，所以最好将修改好的 synergy.conf 拷贝备份为 synergy-keymap.conf，然后使用命令：<code>/usr/bin/synergys -c ~/.quicksynergy/synergy-keymap.conf</code> 作为自启动命令。</p>
+
+<h2>参考链接</h2>
+
+<p><a href="https://help.ubuntu.com/community/SynergyHowto">SynergyHowto</a><br/>
+<a href="http://superuser.com/questions/90223/synergy-key-mapping">Synergy key mapping</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[[转]洗脑秘笈：占领思想舆论阵地的十八个招式]]></title>
+    <link href="http://luozhaohui.github.io/blog/2014/10/29/brainwash/"/>
+    <updated>2014-10-29T19:21:34+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/10/29/brainwash</id>
+    <content type="html"><![CDATA[<h2>转记</h2>
+
+<p>今天在搜索波普尔的《辩证法是什么》一文时，无意中发现<a href="http://blog.kdnet.net/boke.asp?twokeqi.showchannel.0.1067.html">2可器的电线杆</a>在凯迪社区的博客。此人文笔和理论水平都不错，也非常推崇波普尔(看来反洗脑都需要攀登波普尔这座高山)。用他自己博客上的话来介绍就是：</p>
+
+<blockquote><p>这是一个以消灭粪青和傻B（消灭一个是一个）、荡涤狼奶为己任，具有鲜明的大清末年时代烙印的博客。</p></blockquote>
+
+<p>下面转一篇他最早写的一篇反洗脑的文章《洗脑秘笈：占领思想舆论阵地的十八个招式》。</p>
+
+<!--more-->
+
+
+<h2>前言</h2>
+
+<p>有人说，极权的压迫者赖以为继的无非二招：暴力和谎言。而且但凡成功的压迫者总是能够很好地为两者排序，那就是谎言在先，暴力在后。</p>
+
+<p>其实，这种排序并非统治者的自觉，因为赤裸裸的暴力和掠夺才是压迫者天然中意的方式，这种方式不仅高效、实用，而且简单、省事，甚至其本身就可以给统治者带来快感。从古罗马的斗兽场到中国小脚女人的裹脚布，其伟大程度或可不同，但做为压迫者从被压迫者残缺的肉体中获取快感的道具却是一样的。</p>
+
+<p>但是，这办法却总是天不遂人愿。秦始皇席卷了六国，却被比自己还年长些许的陈胜毁于一旦。然而，秦朝统治者交学费换来的经验教训却为后续二千年的压迫者一直受用著。法家严刑峻法的暴力统治术随著秦王朝的灭亡也便从此没落，而成就了儒家思想的兴旺发达。董仲舒「废黩百家、独尊儒术」之日，便是中国政治暴力退居幕后，政治谎言走上前台之时。</p>
+
+<p>如此说法并非对儒学的大不敬，儒家思想本身无疑是一套成体系的思想，而与谎言无涉。因为谎言显然是成不了体系的，不漏洞百出、自相矛盾已算不易，怎能流传二千余年以至海外？但是，儒家思想却不幸沦为了思想钳制的工具，就如同尼采的思想成了纳粹的工具，而从马克思哪儿生出了乌托邦的谎言一样。</p>
+
+<p>时至今日，谎言在前、暴力在后的模式显然并没有改变。在此，我们看一看思想钳制这一古老而有效的统治工具是怎样为现实的中国统治集团提供政治服务的，它有哪些隐蔽的利用方式。</p>
+
+<h2>洗脑十八式</h2>
+
+<h3>一曰【栽赃式】</h3>
+
+<p>2000年7、8月间，北京发行量极大的《北京青年报》某期头报头条刊载了一篇长篇报导，说在墨西哥境内与美国接壤地带，经常有工厂女工夜里下班途中被歹徒抢劫、奸杀，通篇文章愤怒地遣责、辛辣地挖苦美国政府和FBI：为甚么对眼皮底下的事熟视无睹？所谓的「人权卫士」为甚么管不好家门口的事？他们的原则和「人权标准」哪里去了？等等。整篇文章把美帝描述成一个持双重人权标准的、利欲熏心的邪恶国家，而且作者显然长于文字游戏，只在开头简单介绍了罪案地点，以后只是就事论事的遣责美帝。让缺少地理概念、对境外知之甚少的普通市民很难搞懂这其实是黑西哥内政，与美国根本搭不上界。即便是笔者，也是费了老大眼力也分清这层关系的。此招就是只要有机可乘，采用无所不用其极的手段抹黑对方，遑论最底线的新闻道德。</p>
+
+<h3>二曰【阉割式】</h3>
+
+<p>此为最常用的手段，在前几年的科索沃战争、周边的领土争端和国际贸易纠纷等方面有著广泛的应用。如果仅仅在有争议事件上采用此招，倒也罢了，然而，在一般性新闻上，亦如此。比如中外元首会晤或联合国会议，你很难听到外国政府的主张，既便有，大抵是「对中国政府的立场表示赞赏」之类。久而久之，中国政府就把自己打扮成了一个充满道义的、代表全世界声音的、受到国际社会拥护的正义政府。那么，再有「反华」事件，肯定是出于「别有用心」，而且「注定要失败」了。</p>
+
+<h3>三曰【明目张胆式】</h3>
+
+<p>所谓明目张胆，不仅是指中国居然能炮制出类似于《中国人权优于美国》这样的数万言报告，并通过各种媒介广而告之；而且还指在中国的媒介中广泛存在著类似于如下事情：每年，美国国务院会出一个《人权报告》，中国政府每年也会出文章驳斥。98年也不例外，在中国政府的那份驳斥文章里，以一贯的正气凌然的口气痛斥美帝「颠倒黑白」、「捏造事实」、「别有用心」后，出现了如下文字：「（《报告》）一方面污蔑中国没有迁徒自由，另一方面又承认中国内地每年有几百万人去沿海打工」，可见其「自相矛盾」、「漏洞百出」（可能和原文字有出入）。迁徒权=移动权？中国政府这样享用五十年愚民的硕果！这样玩弄一个人类普适的人权概念！</p>
+
+<h3>四曰【常有理式】</h3>
+
+<p>我们经常可以看到这样的报导：如果英美有同样的外交政策，我们就说英国是「跟屁虫」（真的用过这个词）；如果两国意见不一，我们就说：看！连美国最亲密的盟友都不与之为伍了。总之或者斥之为狼狈为奸，或者是众叛亲离。如果美国介入中东了，当然是霸权的表现；如果不介入中东了，肯定是不负责任的表现。总是占著思想舆论阵地的制高点。另一大类突出的例子是这样的：中国政府对日本的右翼行为猛烈抨击，但中国一旦被国际社会批评，总是祭出 「内政论」、「主权论」、「国情相对论」，言词凿凿，总有道理。</p>
+
+<h3>五曰【鸵鸟式】</h3>
+
+<p>如果在内外政策上总能言词凿凿，也算是高超的政治智慧，但确实有找不到词的时候，就把头埋进沙里，视而不见。最突出的例子是印尼反华事件。事件暴发后，中国政府竟说这是印尼内政，中国不予干涉！！一分不少地支付了数亿援助。客观上极大地纵容了事件的恶化。政府自己也知道没法向国内交待，乾脆佯装不知，封锁消息达三月之久！数千同胞肝脑涂地之日，却是祖国政府和人民视而不见之时！</p>
+
+<h3>六曰【偷梁换柱式】</h3>
+
+<p>这又是一个被中国政府运用得炉火纯青的手段。例子之多，顺手拈来：89之后，政府组织了一群御用文人写了一本《河殇的100个错误》（书名可能不准确），真真的写了河殇「100条错误」。河殇里有一段是这个意思：当罗马帝国以为统治了全世界的时候，它并不知道在东方还有一条「长城」在等著它。各位看官，有谁不知道这「长城」是种修辞，代指中国？但这群作者引用地理知识证明长城在中国的哪里哪里，罗马帝国若来的话，会从哪里哪里来，因此根本遇不上长城，云云。让人想起尹索《狼和羊》的寓言：狼是不缺少藉口的。2002年4月新闻：专家研究表明，中国成了初等发达国家。《南方周末》记者就此采访专家组组长何传启才发现，此「初等发达」其实就是国际上的「欠发达」，而且还没考虑环境和政治文化权利方面。至于为甚么不用通用的「欠发达」而用「初等发达」，专家何传启说：「很难听，很难听。应该从积极的角度来命名它。这个名字要在政策上、老百姓心里产生一种正面的效应。」（见4月25 日《南方周末》第A4版）也是4月中旬，新华社报导，港人移民人数远较回归前那几年下降，言外之意，回归后比英国治下强多了。然而，明眼人有谁不知97以前移民潮的根源？这种偷梁换柱的技俩太多了，比如还有：把「登记失业率」等同于「失业率」；把「反共」等同于「反华」，等等。</p>
+
+<h3>七曰【引经据典式】</h3>
+
+<p>一般用于理论战线。从经典作家那里引经据典，推演理论。通常洋洋洒洒数万字，看得人头晕脑胀。你觉得还没开始主题的时候，它已经一棰定音了：「历史反覆证明了，走社会主义道路……」，让你不知从何而来。但你不得不佩服作者的理论水平。</p>
+
+<h3>八曰【牵强附会式】</h3>
+
+<p>每每救灾之后，总要找到几个灾民对著记者话筒说：「还是党好！还是社会主义好啊！」</p>
+
+<p>我不知道911后的美国政府是否要出钱出力救助灾民，也不知道封建王朝是否有过开仓济粮，只是每每听到，总会浑身打冷战。</p>
+
+<h3>九曰【排词遣句式】</h3>
+
+<p>不用举例了，日日的报纸都是这样的，随手翻开就能看到。凡事涉非我族类的，尤其是美帝和台湾，必要多用贬意词，「密谋」、「公然」、「妄图」、「一小撮」等等；事涉国内大好形势的，则须多用褒意，如「受到群众好评」、「被传为佳话」、「群众们都说，……」、「大伙份份表示：……」等等。</p>
+
+<h3>十曰【样板式】</h3>
+
+<p>树立样板是我党多年积累的政治斗争经验，可惜常出差错。差错一般出在两个方面，第一个方面是所树的样板时过境迁不合时宜，甚至成为过去政治荒谬的明证，如刘文学斗地主、「共和国卫士」等；另一种样板是根本树错了人，其后果是：越来越多的落网贪官拥有越来越多的「劳模」、「廉政」、「先进」招牌。</p>
+
+<h3>十一曰【相对论式】</h3>
+
+<p>面对国际社会的抨击而理屈词穷的时候，一般祭出国情相对论，在人类普适的人权标准之外，再来一套中国标准。而且这中国标准里真正实在的东西只有生存权，即吃饱穿暖两件事，其它权利都是假、大、空。因此有人说中国式的所谓「人权」，其实就是动物权。</p>
+
+<h3>十二曰【自我标榜式】</h3>
+
+<p>很少有人或组织会如中国执政党这样自我标榜的。它宣称自己是「伟大、光荣、正确的党」，同时又宣称自己有著「谦虚谨慎」、「批评与自我批评的优良传统」；制造了文革这样的人间浩劫，不仅不影响党的形象，反而更加证明了党的英明，因为全面拔乱反正、否定文革 「再次证明了我党勇于改正自身错误，勇于开展批评与自我批评……」。问天怎忍如此！</p>
+
+<h3>十三曰【画大饼式】</h3>
+
+<p>充分利用中国百姓的朴实，像邪教一样画一个不切实际的大饼，让人们满怀希望地屈从于现实。五六十年代画「赶英超美」、「跑步进入共产主义」的大饼；文革以后，百姓不再相信那虚无飘渺的乌托邦梦幻，迫切需要改善生活，因而提出「三年实现全国农业机械化」，「2000年实现四个现代化」；改革开放后，邓小平提出到上世纪末人均生活水准达到多少多少元，事隔数日又说，那是不考虑人口增长的情况下，如果考虑到人口增长，又当如何如何。老天，国家的最高领导人，事涉国家的中长期目标，居然不考虑人口问题？居然可以这样改来换去的？近两年，这饼已经不好画了，但中国人有民族情绪。因此，中国媒介就开始出现这样的标题：「二十一世纪是中国人的世纪」、「二十一世纪的文化是儒家文化」，「儒家文化的第三次复兴」。</p>
+
+<h3>十四曰【耸人听闻式】</h3>
+
+<p>「如果没有党的领导，就会四分五裂」，「不实行社会主义制度，就会出现严重的贫富分化」，「如果不坚持正确的思想舆论导向，就……」。不仅对内而且对外：「六七十年代的美国四分五裂……」，「（台湾增加军费）有可能拖跨岛内经济」。一切说法，无非要证明现状是合理的、而自己比别人强。</p>
+
+<h3>十五曰【借刀杀人式】</h3>
+
+<p>众所周知，西方不同政治派别间相互制衡、攻击是常态，而且，西方传媒无须考虑「主旋律」，加之西方文化特有的「乌鸦」特色使其惯于自爆家丑。这正好合了我国胃口，看一看《参考消息》从国外传媒上摘录的文章，但凡事涉西方的基本都是「唱衰」式。这还算严肃的，更常见的是用「……」 （引号）从外刊上断章取义的，砍头截尾，也不注明出处，完全违背摘录的起码原则。并且还时常冠以「国外有识之士指出……」之类。</p>
+
+<h3>十六曰【声波式】</h3>
+
+<p>一想到新闻联播，就能想像得到那几个主持人特有的声波。他（她）们一般提细了嗓子，脑袋略微倾斜，或义正言辞严正指出、或热情洋溢深情歌颂，力图最准确、最充分地把新闻背后隐藏的意识形态传播出去。甚么是新闻主持人最底线的素质？自然不予考虑的。</p>
+
+<h3>十七曰【诛心式】</h3>
+
+<p>诛心之术自古有之，早在王安石《答司马谏之书》中就有精彩运用，王安石并没有答覆司马光对他排斥异见的指责，而是说那些异见都是「小人」之言，所以不值得一听。这招到了现代有出神入化的运用。早些年藉助革命狂热，将「小人」的帽子换作了「反革命」之类；现代往往借用民族情绪，通过「别有用心」、「怀有不可告人的目的」、「一贯敌视……」等词汇，将对方的目的、动机置于不义，至于具体事情、主张往往轻描淡写甚至一绕而过。而且这招居然用在学术上，早年马寅初所获之罪并非源于学术主张本身，而是基于「反党反社会主义」的动机上的；前几年美国学者布朗提出「谁来养活中国」，也遭到同样待遇；最近国际上有些经济学家困惑于中国经济反常的一枝独秀式增长，并做出了不太养眼的学术分析，其结果当然被戴上了「仇视中国」、「不愿看到中国崛起」的帽子。</p>
+
+<h3>十八曰【暴力式】</h3>
+
+<p>此法是最后一招，一般不常用，一旦使用，必是「事关我党生死存亡」的关键时刻，比如时期。用时直接配合国家镇压机器，是话语霸权和语言暴力的最集中体现。使用的时候，先要创造外部环境，就是通过各种手段彻底扫清不和谐声音。然后以大兵团作战方式，通过各种媒体、会议、印刷品、高音嗽叭滚滚而来，强行灌输。综合运用前面的各种招式，具体策略多种多样。有：恐吓：「我们警告那些……，不要妄图……」、「中国政府和人民决不会答应……」；欺骗：「我们决不会秋后算帐」；漫骂：「……赤膊上阵」、「……叫嚣」、「一只伸向……的黑手」；分化：「广大……还是好的，……一小撮……」；「广大不明真相的群众」。等等，不一而足。</p>
+
+<h2>结语</h2>
+
+<p>思想的钳制的工具，实际上是由一群御用文人精心炮制的，而且颇能因地制宜、随时代变化，也不乏各种招式的组合运用。</p>
+
+<p>我们国家的舆论特点是针对或者利用三个方面，有条不紊的展开，即粉饰太平、妖魔化国外和煽动情绪。自建国以来，概莫能外，只是各个时期的方式方法不同，看一看这三个方面是如何演化的：</p>
+
+<ul>
+<li><p>首先看看粉饰太平。从赤裸裸的宣传「形势一片大好，而且一天比一天好」变为 「经济持续强劲增长」、「有望成为亚洲经济增长的火车头」、「二十一世纪必将是中国人的世纪」 。其具体方法是从政客的强词夺理、胡说八道转化为由学者以点带面、以偏概全，并在「学术论证」中隐蔽性地胡说八道。前面提到的关于中国已进入初等发达国家的例子就是一个明证。不论如何偷换概念，自立门派，其结果已超出最一般的经验。当事学者居然也毫不掩饰，直言要「要在政策上、老百姓心里产生一种正面的效应。」。坦荡至此，也算到了境界。</p></li>
+<li><p>其次是妖魔化国外。直至今日，我还记得二十年前某期《小朋友》上的一组漫画。左边那幅是资本主义的万丈高楼、高楼下行乞的老人和昂首阔步、大腹便便的资本家，文字是「资本主义的一角」；右边那幅是一家人怀里抱著各种生活用品，眼角挂著幸福的泪珠，后面是失火后还冒著黑烟的房子，文字是「社会主义邻居」：这就是我们从小接受的教育。二十一世纪的媒体呢？2000年有一份报纸，国际新闻版用大号字写著英国一枪手在校园扫射，造成师生几死几伤的枪击案，并配以大幅图片；另一版则在一个不显眼的豆腐块里，用最小号字写著国内某农民用菜刀破死七人。极具讽刺的是，这两则新闻正好背靠背。</p></li>
+<li><p>第三招是煽动情绪。以前是组织大家吃忆苦饭、开批斗会，甭论你是自愿参加的，还是被强迫去的，到了那种氛围里，肯定被同化。然后媒体上充斥著最高领袖接见红卫兵的欢腾场面，高昂的革命歌曲和节节胜利的喜讯。现在则是将革命激情转到了民族主义，比如煽动大学生反美示威、连篇累犊地分析如何从英帝国那里雪了百年国耻、把申奥成功描述得好像中国人民又一次站了起来。此外，一些正常的贸易纠纷、一个牛津留学生学业出众的假新闻居然也很自然地和民族情绪扯上了关系。</p></li>
+</ul>
+
+
+<p>甚至于把这种激情带到了政府托市上，想想那年《人民日报》评论员鼓吹股市大发展的激情洋溢吧！何曾考虑过经济规律和小股东利益？</p>
+
+<p>这就是作为统治手段的思想钳制。它对于压迫者之重要和有效，是如何估计都不为过的。</p>
+
+<p>正如有人所言，在压迫者所豢养的帮凶里，有人是打手，专司暴力；有人是写手，以编造谎言为职业。谎言是日日编造的，而暴力只是偶而为之。在中国自秦以后王朝的官僚体系里，莫不是文官之位重于武将。其实道理容易理解：文官们需日日道德文章，而武将们既然只有「安内」之责而无「攘外」之事，只好「养兵千日，用兵一时」罢了。因此，随著两千年来的演变，思想钳制已不仅仅是对暴力的掩饰，而成为压迫之首要方法；相反，暴力已沦落成「保驾护航」式的工具，为谎言修补一下被戳穿的窟窿，收拾一下残局而已。</p>
+
+<p>思想钳制流毒之深，显则直接复辟，隐则借尸还魂，古今中外，概莫能外。如此好手段，压迫者也不得不放弃了观赏斗兽场和女人小脚的嗜好，变得温文而雅起来；以至于有时分明站在了被压迫者一边，要「破四旧」、「砸孔庙」、发动人民革命。在这轰轰烈烈和温文而雅之间，屡试不爽的压迫之术找到了它新的代理人，而新贵们以多数人的血泪换取了作为压迫者的历史通行证。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[从贝叶斯定理说开去]]></title>
+    <link href="http://luozhaohui.github.io/blog/2014/10/21/bayes-rule/"/>
+    <updated>2014-10-21T19:35:52+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/10/21/bayes-rule</id>
+    <content type="html"><![CDATA[<h2>简介</h2>
+
+<p>贝叶斯定理是18世纪英国数学家<a href="http://en.wikipedia.org/wiki/Thomas_Bayes">托马斯·贝叶斯（Thomas Bayes）</a>提出得重要概率论理论。以下摘一段 wikipedia 上的简介：</p>
+
+<blockquote><p>所谓的贝叶斯定理源于他生前为解决一个“逆概”问题写的一篇文章，而这篇文章是在他死后才由他的一位朋友发表出来的。在贝叶斯写这篇文章之前，人们已经能够计算“正向概率”，如“假设袋子里面有 N 个白球，M 个黑球，你伸手进去摸一把，摸出黑球的概率是多大”。而一个自然而然的问题是反过来：“如果我们事先并不知道袋子里面黑白球的比例，而是闭着眼睛摸出一个（或好几个）球，观察这些取出来的球的颜色之后，那么我们可以就此对袋子里面的黑白球的比例作出什么样的推测”。这个问题，就是所谓的逆向概率问题。</p></blockquote>
+
+<p>贝叶斯定理的思想出现在18世纪，但真正大规模派上用途还得等到计算机的出现。因为这个定理需要大规模的数据计算推理才能凸显效果，它在很多计算机应用领域中都大有作为，如自然语言拼写检查，机器学习，推荐系统，图像识别，博弈论等等。</p>
+
+<!--more-->
+
+
+<h2>定义</h2>
+
+<p><a href="http://zh.wikipedia.org/zh/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86">贝叶斯定理</a>是关于随机事件 A 和 B 的<a href="http://zh.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87">条件概率</a>：</p>
+
+<p><img src="http://upload.wikimedia.org/math/4/6/b/46b680c10ac90b0782843f4bbd0b4a95.png" alt="贝叶斯定理" /></p>
+
+<p>其中P(A|B)是在 B 发生的情况下 A 发生的可能性。</p>
+
+<p>在贝叶斯定理中，每个名词都有约定俗成的名称：</p>
+
+<pre><code>P(A)是 A 的先验概率，之所以称为“先验”是因为它不考虑任何 B 方面的因素。
+P(A|B)是已知 B 发生后 A 的条件概率，也由于得自 B 的取值而被称作 A 的后验概率。
+P(B|A)是已知 A 发生后 B 的条件概率，也由于得自 A 的取值而被称作 B 的后验概率。
+P(B)是 B 的先验概率，也作标淮化常量（normalizing constant）。
+</code></pre>
+
+<p>按这些术语，贝叶斯定理可表述为：</p>
+
+<pre><code>后验概率 = (相似度 * 先验概率)/标淮化常量
+</code></pre>
+
+<p>也就是说，后验概率与先验概率和相似度的乘积成正比。</p>
+
+<p>另外，比例P(B|A)/P(B)也有时被称作标淮相似度（standardised likelihood），Bayes定理可表述为：</p>
+
+<pre><code>后验概率 = 标淮相似度 * 先验概率
+</code></pre>
+
+<p><strong>条件概率</strong>就是事件 A 在另外一个事件 B 已经发生条件下的发生概率。条件概率表示为P(A|B)，读作“在 B 发生的条件下 A 发生的概率”。</p>
+
+<p><strong>联合概率</strong>表示两个事件共同发生（数学概念上的交集）的概率。A 与 B 的联合概率表示为<img src="http://upload.wikimedia.org/math/6/d/e/6de3a4670340b7be5303b63574cb3113.png" alt="联合概率" />。</p>
+
+<h2>推导</h2>
+
+<p>我们可以从条件概率的定义推导出贝叶斯定理。</p>
+
+<p>根据条件概率的定义，在事件 B 发生的条件下事件 A 发生的概率为：</p>
+
+<p><img src="http://upload.wikimedia.org/math/8/6/9/8694e4193ba45b55403595096b7d23c5.png" alt="贝叶斯定理" /></p>
+
+<p>同样地，在事件 A 发生的条件下事件 B 发生的概率为：</p>
+
+<p><img src="http://upload.wikimedia.org/math/8/b/6/8b6c81124815aad54c91c42b3261165d.png" alt="贝叶斯定理" /></p>
+
+<p>结合这两个方程式，我们可以得到：</p>
+
+<p><img src="http://upload.wikimedia.org/math/e/f/a/efaf8fda8a92eeb2d8cf70468c20ed5a.png" alt="贝叶斯定理" /></p>
+
+<p>这个引理有时称作概率乘法规则。上式两边同除以 P(A)，若P(A)是非零的，我们可以得到贝叶斯定理:</p>
+
+<p><img src="http://upload.wikimedia.org/math/f/1/3/f13abde4811844c29b556a35ca4f55a5.png" alt="贝叶斯定理" /></p>
+
+<h2>解释</h2>
+
+<p>通常，事件 A 在事件 B 发生的条件下的概率，与事件 B 在事件 A 发生的条件下的概率是不一样的；然而，这两者是有确定关系的，贝叶斯定理就是这种关系的陈述。</p>
+
+<p>贝叶斯公式的用途在于通过己知三个概率来推测第四个概率。它的内容是：在 B 出现的前提下，A 出现的概率等于 A 出现的前提下 B 出现的概率乘以 A 出现的概率再除以 B 出现的概率。通过联系 A 与 B，计算从一个事件发生的情况下另一事件发生的概率，即从结果上溯到源头（也即逆向概率）。</p>
+
+<p>通俗地讲就是当你不能确定某一个事件发生的概率时，你可以依靠与该事件本质属性相关的事件发生的概率去推测该事件发生的概率。用数学语言表达就是：支持某项属性的事件发生得愈多，则该事件发生的的可能性就愈大。这个推理过程有时候也叫贝叶斯推理。</p>
+
+<h2>示例</h2>
+
+<h3>示例一：应当根据新情况更新先验概率</h3>
+
+<p>《<a href="http://book.douban.com/subject/1193621/">决策与判断</a>》第十二章中讲到人们都有保守主义情结，即使出现了新信息，也不愿意根据新信息来更新先验概率。用前面解释里面的话说就是：新信息是 B 事件不断发生，人们本应该根据这个信息去更新 A 事件发生的概率，但人们却更愿意固守之前估计的 A 事件发生的概率。</p>
+
+<p>书中举了这样一个调查案例：</p>
+
+<blockquote><p>假设有两个各装了100个球的箱子，甲箱子中有70个红球，30个绿球，乙箱子中有30个红球，70个绿球。假设随机选择其中一个箱子，从中拿出一个球记下球色再放回原箱子，如此重复12次，记录得到8次红球，4次绿球。问题来了，你认为被选择的箱子是甲箱子的概率有多大？</p></blockquote>
+
+<p>调查结果显示，大部分人都低估了选择的是甲箱子的概率。根据贝叶斯定理，正确答案是96.7%。下面容我来详细分析解答。</p>
+
+<p>刚开始选择甲乙两箱子的先验概率都是50%，因为是随机二选一（这是贝叶斯定理二选一的特殊形式）。即有：</p>
+
+<blockquote><p>P(甲) = 0.5， P(乙) = 1 - P(甲)；</p></blockquote>
+
+<p>这时在拿出一个球是红球的情况下，我们就应该根据这个信息来更新选择的是甲箱子的先验概率：</p>
+
+<blockquote><p>P(甲|红球1) = P(红球|甲) × P(甲) / (P(红球|甲) × P(甲) + (P(红球|乙) × P(乙)))<br/>
+P(红球|甲)：甲箱子中拿到红球的概率<br/>
+P(红球|乙)：乙箱子中拿到红球的概率</p></blockquote>
+
+<p>因此在出现一个红球的情况下，选择的是甲箱子的先验概率就可被修正为：</p>
+
+<blockquote><p>P(甲|红球1) = 0.7 × 0.5 / (0.7 × 0.5 + 0.3 × 0.5) = 0.7</p></blockquote>
+
+<p>即在出现一个红球之后，甲乙箱子被选中的先验概率就被修正为：</p>
+
+<blockquote><p>P(甲) = 0.7， P(乙) = 1 - P(甲) = 0.3；</p></blockquote>
+
+<p>如此重复，直到经历8次红球修正（概率增加），4此绿球修正（概率减少）之后，选择的是甲箱子的概率为：96.7%。</p>
+
+<p>我写了一段 Python 代码来解这个问题：</p>
+
+<figure class='code'><figcaption><span>计算选择的是甲箱子的概率</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">bayesFunc</span><span class="p">(</span><span class="n">pIsBox1</span><span class="p">,</span> <span class="n">pBox1</span><span class="p">,</span> <span class="n">pBox2</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">return</span> <span class="p">(</span><span class="n">pIsBox1</span> <span class="o">*</span> <span class="n">pBox1</span><span class="p">)</span><span class="o">/</span><span class="p">((</span><span class="n">pIsBox1</span> <span class="o">*</span> <span class="n">pBox1</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">pIsBox1</span><span class="p">)</span> <span class="o">*</span> <span class="n">pBox2</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">redGreenBallProblem</span><span class="p">():</span>
+</span><span class='line'>    <span class="n">pIsBox1</span> <span class="o">=</span> <span class="mf">0.5</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c"># consider 8 red ball</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">):</span>
+</span><span class='line'>        <span class="n">pIsBox1</span> <span class="o">=</span> <span class="n">bayesFunc</span><span class="p">(</span><span class="n">pIsBox1</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">print</span> <span class="s">&quot; After red </span><span class="si">%d</span><span class="s"> &gt; in 甲 box: </span><span class="si">%f</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">pIsBox1</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c"># consider 4 green ball</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+</span><span class='line'>        <span class="n">pIsBox1</span> <span class="o">=</span> <span class="n">bayesFunc</span><span class="p">(</span><span class="n">pIsBox1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">print</span> <span class="s">&quot; After green </span><span class="si">%d</span><span class="s"> &gt; in 甲 box: </span><span class="si">%f</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">pIsBox1</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">redGreenBallProblem</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+在这个调查问题里面，8次红球与4次绿球出现的顺序并不重要，因为红球的出现总是使选择的是甲箱子的概率增加，而绿球的出现总是减少。因此，为了简化编程，我将红球出现的情况以及绿球出现的情况摆在一起了。</p>
+
+<p>程序运行结果如下：</p>
+
+<figure class='code'><figcaption><span>不断修正的选择的是甲箱子的先验概率</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'>After red 1 &gt; in 甲 box: 0.700000
+</span><span class='line'>After red 2 &gt; in 甲 box: 0.844828
+</span><span class='line'>After red 3 &gt; in 甲 box: 0.927027
+</span><span class='line'>After red 4 &gt; in 甲 box: 0.967365
+</span><span class='line'>After red 5 &gt; in 甲 box: 0.985748
+</span><span class='line'>After red 6 &gt; in 甲 box: 0.993842
+</span><span class='line'>After red 7 &gt; in 甲 box: 0.997351
+</span><span class='line'>After red 8 &gt; in 甲 box: 0.998863
+</span><span class='line'>After green 1 &gt; in 甲 box: 0.997351
+</span><span class='line'>After green 2 &gt; in 甲 box: 0.993842
+</span><span class='line'>After green 3 &gt; in 甲 box: 0.985748
+</span><span class='line'>After green 4 &gt; in 甲 box: 0.967365
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>从程序运行结果来看，很明显可以看到红球的出现是增加选择甲箱子的概率，而绿球则相反。</p>
+
+<h3>示例二：频率更适合用来解答概率问题</h3>
+
+<p>《<a href="http://book.douban.com/subject/2143904/">进化心理学</a>》第十三章(428页)讲到人类的心理从进化角度来看，更偏好使用频率（我最近十次打猎八次有收获）而不是概率（我最近打猎有80%的成功率）。</p>
+
+<p>书中举了同一个问题用不同方式表述使得问题的难易程度迥然不同：</p>
+
+<blockquote><p>表述一：有一种疾病的发病率是千分之一，医院有一种化验技术可以对这种疾病进行诊断，但是却有百分之五的误诊率（也即是说尽管有百分之五的人没有病，但是化验结果却显示为阳性(即假阳性)）。现在假设一个人的化验结果显示为有病，仅根据这一化验结果推测，那么这个人确实患病的概率有多大？</p></blockquote>
+
+<p>这个问题也可以用贝叶斯定理来解决，不过在看分析之前，你可以先估算下你自己的答案，然后再和正确答案比较。</p>
+
+<p>这个问题的分析过程如下：</p>
+
+<blockquote><p>已知先验概率：P(患病) = 0.001，P(正常) = 0.999；<br/>
+该化验技术的确诊率（即患病化验结果显示为阳性的概率）为：P(确诊率) = 1.00；<br/>
+该化验技术的误诊率（即正常化验结果显示为阳性的概率）为：P(误诊率) = 0.05。</p></blockquote>
+
+<p>根据上面的数据，我们就能够推测出一个人化验为阳性的情况下，这个人确实患病的概率有多大：</p>
+
+<blockquote><p>P(患病|阳性) = P(患病) × P(确诊率) / (P(患病) × P(确诊率) + P(正常) × P(误诊率)) <br/>
+ = 0.001 × 1.00 / (0.001 × 1.00 + 0.999 × 0.05)<br/>
+ = 0.0198 <br/>
+ = 2%</p></blockquote>
+
+<p>结果让你大吃一惊吧，在没有其他症状增加患病概率的情况下，单凭化验结果显示为阳性来推测的话，其真实患病的概率还不到百分之二。</p>
+
+<p>用频率作为信息来记忆或回忆更生动也更容易被提取，想想第一次打猎什么情形，第二次打猎什么情形，历历在目。正因为频率作为信息存储载体保留了事件的形象性，提高了记忆的可得性，因此在进化过程中人类的心理机制优先选择了频率而不是抽象的概率。而且在人类十多万年的进化过程中，出现概率概念的文明进程不过几千年，大脑还没有对进化到更适应抽象的概率的地步。</p>
+
+<p>所以这个问题如果换成用频率来表述的话，相信你的答案会大大接近于正确答案。</p>
+
+<blockquote><p>表述二：在一千个人中，就有一个人患有X疾病（即发病率为千分之一），有一种化验技术，可以检验是否患有该疾病。如果一个人确实患有该病，化验结果可定显示为阳性。但有时候也会出现误诊，即在一千个完全健康的人中，有五十个人的化验结果显示为阳性（也即是说误诊率为百分之五）。</p></blockquote>
+
+<p>换成以频率方式来表述这个问题，答案就显然易见了：</p>
+
+<blockquote><p>P(患病|阳性) = 1/(1 + 50) = 1/51 = 0.0196 = 2%</p></blockquote>
+
+<p>通过这个例子，我们可以懂得，若能把概率问题转换成频率来表述，即便是需要使用贝叶斯这样复杂定理来计算的问题，也能轻而易举地解答。这就是《<a href="http://book.douban.com/subject/1135754/">你的灯亮着么？</a>》里面提到的“重述问题”的技巧。</p>
+
+<h3>示例三：在博弈论里面的应用</h3>
+
+<p>挑战者 B 不知道原垄断者 A 是属于高阻挠成本（为阻止 B 进入而花费的成本）类型还是低阻挠成本类型，但B知道，如果 A 属于高阻挠成本类型，B 进入市场时A进行阻挠的概率是20%（阻扰成本高，因此阻挠概率低）；如果 A 属于低阻挠成本类型，B 进入市场时 A 进行阻挠的概率是100%。</p>
+
+<p>博弈开始时，B 认为 A 属于高阻挠成本企业的概率为70%，因此，B 估计自己在进入市场时，受到 A 阻挠的概率为：</p>
+
+<blockquote><p>P(阻挠) = 0.7 × 0.2 + 0.3 × 1.0 = 0.44</p></blockquote>
+
+<p>0.44 是在 B 给定 A 所属类型的先验概率下，A 可能采取阻挠行为的概率。</p>
+
+<p>当 B 进入市场时，若 A 确实进行阻挠。根据贝叶斯定理，从 A 进行阻挠这一行为，B 可修正 A 属于高阻挠成本企业的概率为：：</p>
+
+<blockquote><p>P(高成本阻扰企业) = 0.7 × 0.2 ÷ 0.44 × 1.0 = 0.32</p></blockquote>
+
+<p>根据这一新的先验概率，B 估计自己在进入市场时，受到 A 阻挠的概率为：</p>
+
+<blockquote><p>P(阻挠) = 0.32 × 0.2 + 0.68 × 1 = 0.744</p></blockquote>
+
+<p>若 B 再一次进入市场时，A 又进行了阻挠。根据贝叶斯定理，从 A 再次进行阻挠这一行为，B 可修正 A 属于高阻挠成本企业的概率为</p>
+
+<blockquote><p>P(高成本阻扰企业) = 0.32 × 0.2 ÷ 0.744 × 1.0 = 0.086</p></blockquote>
+
+<p>这样，根据 A 一次又一次的阻挠行为，B 不断修正判断 A 为高阻挠成本的概率（越来越低了），从而越来越倾向于将 A 判断为低阻挠成本企业。</p>
+
+<h3>示例四：在计算机领域中的应用</h3>
+
+<p>贝叶斯定理在计算机领域中的应用那可是太多了，无论是在机器学习，自然语言处理，图像识别，推荐算法，搜索算法还是垃圾邮件处理中都大有用途。这些应用中都有一个特点，那就是根据既有输入，在庞大的已有数据库中寻找匹配程度（也即是发生概率）最高的那些项。由于这些话题太大，在这里就不展开了。</p>
+
+<p>徐宥翻译过 Peter Norvig 写的一篇<a href="http://norvig.com/spell-correct.html">怎样写一个拼写检查器</a>的文章，作者只用了 20 行 Python 代码就实现了拼写检查/纠错，相当强大。文章也写得深入浅出，推荐看看，<a href="http://blog.youxu.info/spell-correct.html">翻译版本在这里</a>。</p>
+
+<h2>参考</h2>
+
+<ul>
+<li><a href="http://zh.wikipedia.org/zh/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86">WikiPedia 贝叶斯定理</a></li>
+<li><a href="http://wiki.mbalib.com/wiki/%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%B3%95%E5%88%99">Mbalib 贝叶斯法则</a></li>
+<li>《<a href="http://book.douban.com/subject/1193621/">决策与判断</a>》</li>
+<li>《<a href="http://book.douban.com/subject/2143904/">进化心理学</a>》</li>
+<li>刘未鹏<a href="http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/">数学之美番外篇：平凡而又神奇的贝叶斯方法</a></li>
+<li>Peter Norvig，徐宥译<a href="http://norvig.com/spell-correct.html">怎样写一个拼写检查器</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[用Python编写博客导出工具]]></title>
+    <link href="http://luozhaohui.github.io/blog/2014/10/12/export-blog-using-python-on-windows/"/>
+    <updated>2014-10-12T08:35:02+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/10/12/export-blog-using-python-on-windows</id>
+    <content type="html"><![CDATA[<h3>写在前面的话</h3>
+
+<p>我在 github 上用 octopress 搭建了<a href="http://kesalin.github.io/">个人博客</a>，octopress 使用Markdown语法编写博文。之前我在CSDN博客上也写过不少的技术博文，都说自己的孩子再丑也是个宝，所以就起了把CSDN博客里面的文章导出到个人博客上的念头。刚开始想找个工具把CSDN博客导出为xml或文本，然后再把xml或文本转换为Markdown博文。可惜搜了一下现有博客导出工具，大部分要收费才能将全部博文导出为xml格式，所以就只好发明轮子了：写个工具将全部博文导出为Markdown博文（也是txt格式的）。</p>
+
+<p>我将详细介绍这个工具的编写过程，希望没有学习过编程的人也能够学会一些简单的Python语法来修改这个脚本工具，以满足他们将其他类型的博客导出为文本格式。这也是我第一次学习和使用Python，所以相信我，你一定也可以将自己的博客导出为想要的文本格式。</p>
+
+<p>本文源代码在这里：<a href="https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py">ExportCSDNBlog.py</a></p>
+
+<!--more-->
+
+
+<p>考虑到大部分非程序员使用Windows系统，下面将介绍在Windows下如何编写这个工具。</p>
+
+<h3>下载工具</h3>
+
+<p>在 Windows 下安装Python开发环境（Linux/Mac下用pip安装相应包即可，程序员自己解决咯）：</p>
+
+<p><strong>Python 2.7.3</strong><br/>
+请安装这个版本，更高版本的Python与一些库不兼容。<br/>
+<a href="https://www.python.org/download/releases/2.7.3/">下载页面</a><br/>
+下载完毕双击可执行文件进行安装，默认安装在C:\Python2.7。</p>
+
+<p><strong>six</strong><br/>
+<a href="https://pypi.python.org/pypi/six">下载页面</a>
+下载完毕，解压到Python安装目录下，如C:\Python2.7\six-1.8.0目录下。</p>
+
+<p><strong>BeautifulSoup 4.3.2</strong><br/>
+<a href="http://www.crummy.com/software/BeautifulSoup/bs4/download/">下载页面</a>，
+下载完毕，解压到Python安装目录下，如C:\Python2.7\BeautifulSoup目录下。</p>
+
+<p><strong>html5lib</strong><br/>
+<a href="https://pypi.python.org/pypi/html5lib">下载页面</a>
+下载完毕，解压到Python安装目录下，如C:\Python2.7\html5lib-0.999目录下。</p>
+
+<h3>安装工具</h3>
+
+<p>Windows下启动命令行，依次进入如下目录，执行setup.py install进行安装：</p>
+
+<pre><code>C:\Python2.7\six-1.8.0&gt;setup.py install  
+C:\Python2.7\html5lib-0.999&gt;setup.py install  
+C:\Python2.7\BeautifulSoup&gt;setup.py install  
+</code></pre>
+
+<h3>参考文档</h3>
+
+<p><a href="https://docs.python.org/2/">Python 2.X文档</a><br/>
+<a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html">BeautifulSoup文档</a><br/>
+<a href="http://www.regexlab.com/zh/regref.htm">正则表达式文档</a><br/>
+<a href="http://tool.oschina.net/regex">正则表达式在线测试</a></p>
+
+<h3>用到的Python语法</h3>
+
+<p>这个工具只用到了一些基本的Python语法，如果你没有Python基础，稍微了解一下如下博文是很有好处的。</p>
+
+<ul>
+<li>string: 字符串操作，参考<a href="http://www.cnblogs.com/sevenyuan/archive/2010/12/10/1902145.html">python: string的操作函数</a></li>
+<li>list: 列表操作，参考<a href="http://www.cnblogs.com/zhengyuxin/articles/1938300.html">Python list 操作</a></li>
+<li>dictionary: 字典操作，参考<a href="http://www.cnblogs.com/yangyongzhi/archive/2012/09/17/2688326.html">Python中dict详解</a></li>
+<li>datetime: 日期时间，参考<a href="http://www.cnblogs.com/lhj588/archive/2012/04/23/2466653.html">python datetime处理时间</a></li>
+</ul>
+
+
+<p><br/></p>
+
+<h3>编写博客导出工具</h3>
+
+<h4>分析</h4>
+
+<p>首先来分析这样一个工具的需求：</p>
+
+<pre><code>导出所有CSDN博客文章为Markdown文本。
+</code></pre>
+
+<p>这个总需求其实可以分两步来做：</p>
+
+<pre><code>* 获得CSDN博客文章
+* 将文章转换为Markdown文本
+</code></pre>
+
+<p>针对第一步：如何获取博客文章呢？</p>
+
+<p>打开任何一个CSDN博客，我们都可以看到下方的页面导航显示“XXX条数据 共XXX页 1 2 3 &hellip; 尾页”，我们从这个地方入手考虑。每个页面上都会显示属于该页的文章标题及文章链接，如果我们依次访问这些页面链接，就能从每个页面链接中找出属于该页面的文章标题及文章链接。这样所有的文章标题以及文章链接就都获取到了，有了这些文章链接，我们就能获取对应文章的html内容，然后通过解析这些html页面来生成相应Markdown文本了。</p>
+
+<h4>实现</h4>
+
+<p>从上面的分析可以看出，首先我们需要根据首页获取所有的页面链接，然后遍历每一个页面链接来获取文章链接。</p>
+
+<ul>
+<li>获取页面链接的代码：</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>获取所有的页面的 url</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span><span class='line'>    <span class="c"># 获取所有的页面的 url</span>
+</span><span class='line'>    <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c">#print data</span>
+</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="bp">None</span>
+</span><span class='line'>    <span class="n">pageListDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;papelist&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">pageList</span> <span class="ow">in</span> <span class="n">pageListDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">hrefDocs</span> <span class="o">=</span> <span class="n">pageList</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">lastArticleHrefDoc</span> <span class="o">=</span> <span class="n">hrefDocs</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+</span><span class='line'>            <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="n">lastArticleHrefDoc</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="n">lastArticleHref</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">return</span> <span class="p">[]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c">#print &quot; &gt; last page href:&quot; + lastArticleHref</span>
+</span><span class='line'>    <span class="n">lastPageIndex</span> <span class="o">=</span> <span class="n">lastArticleHref</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">lastPageNum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lastArticleHref</span><span class="p">[</span><span class="n">lastPageIndex</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
+</span><span class='line'>    <span class="n">urlInfo</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">lastArticleHref</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">lastPageIndex</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">lastPageNum</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span><span class='line'>        <span class="n">pageUrl</span> <span class="o">=</span> <span class="n">urlInfo</span> <span class="o">+</span> <span class="s">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">pageUrlList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt; page &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span> <span class="o">+</span> <span class="n">pageUrl</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total pages: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pageUrlList</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">pageUrlList</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>参数 url = &ldquo;<a href="http://blog.csdn.net/">http://blog.csdn.net/</a>&rdquo; + username，即你首页的网址。通过urllib2库打开这个url发起一个web请求，从response中获取返回的html页面内容保存到data中。你可以被注释的 print data 来查看到底返回了什么内容。</p>
+
+<p>有了html页面内容，接下来就用BeautifulSoup来解析它。BeautifulSoup极大地减少了我们的工作量。我会详细在这里介绍它的使用，后面再次出现类似的解析就会从略了。soup.find_all(id=&ldquo;papelist&rdquo;) 将会查找html页面中所有id=&ldquo;papelist"的tag，然后返回包含这些tag的list。对应 CSDN 博文页面来说，只有一处地方：</p>
+
+<figure class='code'><figcaption><span>papelist html内容示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;papelist&quot;</span> <span class="na">class=</span><span class="s">&quot;pagelist&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;span&gt;</span> 236条数据  共12页<span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;strong&gt;</span>1<span class="nt">&lt;/strong&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/2&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/3&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/4&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/5&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/6&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/2&quot;</span><span class="nt">&gt;</span>下一页<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/12&quot;</span><span class="nt">&gt;</span>尾页<span class="nt">&lt;/a&gt;</span>
+</span><span class='line'><span class="nt">&lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>好，我们获得了papelist 的tag对象，通过这个tag对象我们能够找出尾页tag a对象，从这个tag a解析出对应的href属性，获得尾页的编号12，然后自己拼出所有page页面的访问url来，并保存在pageUrlList中返回。page页面的访问url形式示例如下：</p>
+
+<pre><code>&gt; page 1: http://blog.csdn.net/kesalin/article/list/1
+</code></pre>
+
+<ul>
+<li>根据page来获取文章链接的代码：</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>根据page来获取文章链接</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">getArticleList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span><span class='line'>    <span class="c"># 获取所有的文章的 url/title</span>
+</span><span class='line'>    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="n">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">articleListDocs</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">strPage</span> <span class="o">=</span> <span class="s">&quot; &gt; parsing page {0}&quot;</span>
+</span><span class='line'>    <span class="n">pageNum</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>    <span class="k">global</span> <span class="n">gRetryCount</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">pageUrl</span> <span class="ow">in</span> <span class="n">pageUrlList</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">retryCount</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>        <span class="n">pageNum</span> <span class="o">=</span> <span class="n">pageNum</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class='line'>        <span class="n">pageNumStr</span> <span class="o">=</span> <span class="n">strPage</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pageNum</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">print</span> <span class="n">pageNumStr</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">while</span> <span class="n">retryCount</span> <span class="o">&lt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
+</span><span class='line'>            <span class="k">try</span><span class="p">:</span>
+</span><span class='line'>                <span class="n">retryCount</span> <span class="o">=</span> <span class="n">retryCount</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class='line'>                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
+</span><span class='line'>                <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>                <span class="c">#print data</span>
+</span><span class='line'>                <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>                <span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
+</span><span class='line'>                <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
+</span><span class='line'>                <span class="k">break</span>
+</span><span class='line'>            <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
+</span><span class='line'>                <span class="k">print</span> <span class="s">&quot;getArticleList exception:</span><span class="si">%s</span><span class="s">, url:</span><span class="si">%s</span><span class="s">, retry count:</span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">pageUrl</span><span class="p">,</span> <span class="n">retryCount</span><span class="p">)</span>
+</span><span class='line'>                <span class="k">pass</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">artices</span> <span class="o">=</span> <span class="p">[]</span>
+</span><span class='line'>    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">articleListDoc</span> <span class="ow">in</span> <span class="n">articleListDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">linkDocs</span> <span class="o">=</span> <span class="n">articleListDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_title&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">for</span> <span class="n">linkDoc</span> <span class="ow">in</span> <span class="n">linkDocs</span><span class="p">:</span>
+</span><span class='line'>            <span class="c">#print linkDoc.prettify().encode(&#39;UTF-8&#39;)</span>
+</span><span class='line'>            <span class="n">link</span> <span class="o">=</span> <span class="n">linkDoc</span><span class="o">.</span><span class="n">a</span>
+</span><span class='line'>            <span class="n">url</span> <span class="o">=</span> <span class="n">link</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">title</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>            <span class="n">oneHref</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">url</span>
+</span><span class='line'>            <span class="c">#log(&quot;   &gt; title:&quot; + title + &quot;, url:&quot; + oneHref)</span>
+</span><span class='line'>            <span class="n">artices</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">oneHref</span><span class="p">,</span> <span class="n">title</span><span class="p">])</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total articles: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">artices</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">artices</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码是下面这三行：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>从page的html内容中查找置顶的文章（article_toplist）以及普通的文章（article_list）的tag对象，然后将这些tag保存到articleListDocs中。</p>
+
+<p>article_toplist示例：(article_list的格式是类似的)</p>
+
+<figure class='code'><figcaption><span>article_toplist html内容示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;article_toplist&quot;</span> <span class="na">class=</span><span class="s">&quot;list&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item article_item&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;article_title&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ico ico_type_Original&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;h1&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;link_title&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/details/10474007&quot;</span><span class="nt">&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;font</span> <span class="na">color=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span>[置顶]<span class="nt">&lt;/font&gt;</span>
+</span><span class='line'>                招聘：有兴趣做一个与Android对等的操作系统么？
+</span><span class='line'>                <span class="nt">&lt;/a&gt;</span>
+</span><span class='line'>                <span class="nt">&lt;/span&gt;</span>
+</span><span class='line'>            <span class="nt">&lt;/h1&gt;</span>
+</span><span class='line'>        <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>        ... ...
+</span><span class='line'>    <span class="nt">&lt;/div&gt;</span>
+</span><span class='line'>    ... ...
+</span><span class='line'><span class="nt">&lt;/div&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>然后遍历所有的保存到articleListDocs里的tag对象，从中解析出link_title的span tag对象保存到linkDocs中；然后从中解析出链接的url和标题，这里去掉了置顶文章标题中的“置顶”两字；最后将url和标题保存到artices列表中返回。artices列表中的每一项内容示例：</p>
+
+<pre><code>   title:招聘：有兴趣做一个与Android对等的操作系统么？  
+   url:http://blog.csdn.net/kesalin/article/details/10474007
+</code></pre>
+
+<ul>
+<li>根据文章链接获取文章html内容并解析转换为Markdown文本</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>根据文章链接获取文章html内容并解析转换为Markdown文本</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+</span><span class='line'>    <span class="c"># 下载文章，并保存为 markdown 格式</span>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; download: &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">data</span> <span class="o">=</span> <span class="bp">None</span>
+</span><span class='line'>    <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">categories</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">content</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+</span><span class='line'>    <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">global</span> <span class="n">gRetryCount</span>
+</span><span class='line'>    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
+</span><span class='line'>            <span class="k">break</span>
+</span><span class='line'>        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class='line'>        <span class="k">try</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
+</span><span class='line'>            <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>            <span class="k">break</span>
+</span><span class='line'>        <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span><span class="n">e</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">exstr</span> <span class="o">=</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span>
+</span><span class='line'>            <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span> <span class="o">+</span> <span class="s">&quot;, retry: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;, error:&quot;</span> <span class="o">+</span> <span class="n">exstr</span><span class="p">)</span>
+</span><span class='line'>            <span class="k">pass</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="n">data</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">return</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c">#print data</span>
+</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
+</span><span class='line'>    <span class="n">titleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_title&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">titleDoc</span> <span class="ow">in</span> <span class="n">titleDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">titleStr</span> <span class="o">=</span> <span class="n">titleDoc</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">title</span> <span class="o">=</span> <span class="n">titleStr</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>        <span class="c">#log(&quot; &gt;&gt; title: &quot; + title)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">manageDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_manage&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">managerDoc</span> <span class="ow">in</span> <span class="n">manageDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">categoryDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_categories&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">categoryDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">categories</span> <span class="o">=</span> <span class="n">categoryDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">postDateDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_postdate&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">postDateDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">postDateStr</span> <span class="o">=</span> <span class="n">postDateDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">string</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+</span><span class='line'>            <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">postDateStr</span><span class="p">,</span> <span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">contentDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_content&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">contentDoc</span> <span class="ow">in</span> <span class="n">contentDocs</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">htmlContent</span> <span class="o">=</span> <span class="n">contentDoc</span><span class="o">.</span><span class="n">prettify</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">content</span> <span class="o">=</span> <span class="n">htmlContent2String</span><span class="p">(</span><span class="n">htmlContent</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">exportToMarkdown</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">postDate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>同前面的分析类似，在这里通过访问具体文章页面获得html内容，从中解析出文章标题，分类，发表时间，文章内容信息。然后把这些内容传递给函数exportToMarkdown，在其中生成相应的Markdown文本文件。值得一提的是，在解析文章内容信息时，由于html文档内容有一些特殊的标签或转义符号，需要作特殊处理，这些特殊处理在函数htmlContent2String中进行。目前只导出了所有的文本内容，图片，url链接以及表格都没有处理，后续我会尽量完善这些转换。</p>
+
+<figure class='code'><figcaption><span>转换html文档内容</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">htmlContent2String</span><span class="p">(</span><span class="n">contentStr</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">patternImg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;img.+?src=&quot;)(.+?)(&quot;.+ /&gt;)&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">patternHref</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;a.+?href=&quot;)(.+?)(&quot;.+?&gt;)(.+?)(&lt;/a&gt;)&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">patternRemoveHtml</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;&lt;/?[^&gt;]+&gt;&#39;</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternImg</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;![image_mark](\2)&#39;</span><span class="p">,</span> <span class="n">contentStr</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternHref</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;[\4](\2)&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">patternRemoveHtml</span><span class="p">,</span> <span class="s">r&#39;&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">decodeHtmlSpecialCharacter</span><span class="p">(</span><span class="n">resultContent</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">resultContent</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>目前仅仅是删除所有的html标签，并在函数decodeHtmlSpecialCharacter中转换转义字符。</p>
+
+<ul>
+<li>生成Markdown文本文件</li>
+</ul>
+
+
+<figure class='code'><figcaption><span>生成Markdown文本文件</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">exportToMarkdown</span><span class="p">(</span><span class="n">exportDir</span><span class="p">,</span> <span class="n">postdate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">titleDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">contentDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M:%S %z&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">filename</span> <span class="o">=</span> <span class="n">titleDate</span> <span class="o">+</span> <span class="s">&#39;-&#39;</span> <span class="o">+</span> <span class="n">title</span>
+</span><span class='line'>    <span class="n">filename</span> <span class="o">=</span> <span class="n">repalceInvalidCharInFilename</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">filepath</span> <span class="o">=</span> <span class="n">exportDir</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">filename</span> <span class="o">+</span> <span class="s">&#39;.markdown&#39;</span>
+</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; save as &quot;</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">newFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="nb">unicode</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s">&quot;utf8&quot;</span><span class="p">),</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;layout: post&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;title: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;date: &#39;</span> <span class="o">+</span> <span class="n">contentDate</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;comments: true&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;categories: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;tags: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;description: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;keywords: &#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>生成Markdown文本文件就很简单了，在这里我需要生成github page用的Markdown博文形式，所以内容如此，你可以根据你的需要修改为其他形式的文本内容。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[学会提问：批判性思维指南]]></title>
+    <link href="http://luozhaohui.github.io/blog/2014/10/12/critical-thinking/"/>
+    <updated>2014-10-12T08:35:02+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/10/12/critical-thinking</id>
+    <content type="html"><![CDATA[<h3>写在前面的话：</h3>
+
+<ol>
+<li><p>本笔记结合《学问提问：批判性思维指南》<a href="http://book.douban.com/subject/1504957/">第七版</a>，<a href="http://book.douban.com/subject/20428922/">第十版</a>，<a href="http://blog.vsharing.com/qsxiao">萧秋水</a>的<a href="http://book.douban.com/review/4474858/">PPT形式的笔记摘要</a>，以及《<a href="http://book.douban.com/subject/7057936/">批判性思维.带你走出思维的误区</a>》整理而成，在此对以上作者表示感谢。</p></li>
+<li><p>关于《学问提问：批判性思维指南》的版本选择。<br/>
+个人推荐<a href="http://book.douban.com/subject/20428922/">第十版</a>，翻译尚可，内容更完善。</p></li>
+</ol>
+
+
+<hr />
+
+<h2>为什么要具备批判性思维？</h2>
+
+<h3>获取真相</h3>
+
+<p>在一个被泛滥信息包围的时代，我们需要从各种真真假假的信息中获取真相：</p>
+
+<pre><code>* 电视上说
+* 报纸上说
+* 书籍上说
+* 专家们说
+* 网络上说
+* 亲友们说
+* ......
+</code></pre>
+
+<h3>培养会独立思考的公民</h3>
+
+<p>中国要真正进入现代文明，必须培养合格的公民。</p>
+
+<pre><code>* 群众：依赖权威和力量解决问题
+    * 盲目听从时是顺民；
+    * 盲目反对时是刁民；
+    * 被煽动时是暴民。
+
+* 合格公民：依据理性和程序解决问题
+    * 知道在何时何地提出问题？
+    * 知道提出什么样的问题？
+    * 知道提出批判性问题是维权必需能力。
+</code></pre>
+
+<!--more-->
+
+
+<p>只有公众都能批判性地思考问题，民主制度实行起来才会更加顺利。</p>
+
+<pre><code>* 我们不能头脑空空由人摆布。
+* 我们不能总像愤青一样活着。
+* 我们不能依赖别人思想生存。
+* 我们需要靠自己去问为什么。
+</code></pre>
+
+<h2>什么是批判性思维</h2>
+
+<p>批判性思维就是审慎地运用逻辑推理去评估一个论述的质量。</p>
+
+<p>主要涵盖如下方面：</p>
+
+<pre><code>* 具有提出一套相互关联，环环相扣的关键问题的意识；
+* 具有恰如其分地提出和回答关键问题的能力；
+* 具有积极主动地提出关键问题的强烈愿望。
+</code></pre>
+
+<p>批判性思维的运用：对自己所耳闻目睹的一切系统地进行评判。</p>
+
+<h3>两种思维方式</h3>
+
+<pre><code>* 海绵式思维：
+    * 对所接触到的信息深信不疑，而不进行评判与取舍，一古脑被动地接收；
+    * 强调单纯地获取知识结果。
+
+* 淘金式思维：
+    * 带着问题与态度来评判所接触到的信息；
+    * 问自己一系列既定的问题，以找出最佳判断或最合理的看法。
+        * 为什么别人要我相信他的观点？
+        * 别人的说法哪些地方可能有问题？
+        * 我对别人的说法有没有进行客观评价？
+        * 针对某一特定主题我有没有在别人合理说法的基础上形成自己的结论？
+</code></pre>
+
+<h3>两种批判性思维</h3>
+
+<p>我们作的每一个判断都有自己的个人印记：经历、价值观和文化的习惯。通常我们对这些已有的观点怀有感情，如果我们不对外部怪异甚至危险的观点保持开放心态，就无法吸取或采纳外部观点从而改善我们的思想和价值观。</p>
+
+<pre><code>* 弱势批判性思维
+    * 用批判性思维来维护自己既有的观念。
+    * 目的：抵制和驳倒那些与你意见不同的观点和论述。
+    * 效果：摧毁了批判性思维潜在的人性的一面，阻碍了进步提升的可能。
+    * 心理状态：思想封闭。
+
+* 强势批判性思维
+    * 用批评性思维来评估所有的观念，尤其是自己的看法。
+    * 目的：正确评估与修正自己的观点与立场。
+    * 效果：使自己不会变得自欺欺人和盲从他人，还可能更加坚定既有的观点。
+    * 心理状态：思想开放。
+</code></pre>
+
+<h2>价值观</h2>
+
+<p>价值观的重要性：</p>
+
+<pre><code>* 价值观决定人与之间的互动；
+* 党同伐异，价值观决定你的朋友圈。
+</code></pre>
+
+<p>批判性思维所需要的主要价值观：</p>
+
+<pre><code>* 自主性（若没有自主性，你都能够接受别人替你思考，还谈什么批判性？）
+* 好奇心（需要对自己遇到的一切不断提问，而且是关键问题）
+* 谦恭有礼（没有人是百科全书，承认自己在某些方面有欠缺）
+* 以理服人（对事不对人）
+</code></pre>
+
+<h2>批判性思维提问大纲</h2>
+
+<p>批判性思维关键问题一览表：</p>
+
+<pre><code>1. 论题和结论是什么？
+2. 理由是什么？
+3. 哪些词句有歧义？
+4. 价值观假设和描述性假设是什么？
+5. 推理有没有谬误？
+6. 证据可信么？
+7. 有没有替代性原因？
+8. 数据有没有欺骗性？
+9. 有没有遗漏关键信息？
+10. 能得出哪些合理的结论？
+</code></pre>
+
+<h2>基本要素</h2>
+
+<h3>断言/陈述</h3>
+
+<p>断言是表达意见或信念的陈述，或真或假。<br/>
+批判性思维的关键就是检查或评估断言及其各断言之间的关系。</p>
+
+<p>示例：北京是中国最大的城市。</p>
+
+<h3>论题</h3>
+
+<p>论题是因探究问题而提出的断言。<br/>
+批判性思维主要关注那些被论据支持或反驳的论题。</p>
+
+<h3>前提</h3>
+
+<p>前提是为另一个断言提供理由的断言。</p>
+
+<h3>结论</h3>
+
+<p>被前提支持的断言就是论证的结论。</p>
+
+<h3>论证/推理</h3>
+
+<p>论证是由断言按一定结构形成的两部分（前提和结论），前提为结论的真提供理由。<br/>
+形式：因为A，所以B。B代表结论，A代表支持结论的前提。</p>
+
+<p>论证用于支持或证明某个断言为真。论证步骤如下：</p>
+
+<pre><code>1. 首先找出结论；
+2. 其次找出为支持结论而陈述的种种理由，即找出前提；
+3. 最后辨别前提与结论之间的逻辑关系。
+</code></pre>
+
+<h3>评估</h3>
+
+<p>论证/推理的过程是逻辑的，就可能存在逻辑上的错误。无论是结论存在失误还是理由存在失误，都会影响对论证的评估。</p>
+
+<p>评估方法：判断前提的真假及其推理过程是否合理。<br/>
+评估标准：</p>
+
+<pre><code>* 支持结论的前提必须是真；
+* 前提与结论必须相关：即前提为真能够证明或支持结论为真。
+</code></pre>
+
+<h2>1. 论题和结论是什么？</h2>
+
+<p>在对某个推理进行评价之前，我们首先要分析他的推理是什么，这第一步就是找出论题和结论。</p>
+
+<h3>论题</h3>
+
+<p>会话或讨论中出现的有争议的问题。</p>
+
+<p>有两类论题：</p>
+
+<pre><code>* 描述性论题
+    * 针对有关有关过去、现在、未来的描述是否正确而提出的问题。
+    * 是什么？答案往往要求精确。
+
+* 规定性论题
+    * 针对我们应当怎样做及对与错、好与坏而提出的问题。
+    * 应该是什么？答案是说明性的，且见解会多元。
+</code></pre>
+
+<h3>结论</h3>
+
+<p>结论就是信息传递者希望你接受的信息。<br/>
+好的论证的基本结构是：因为A，所以B。B代表结论，A代表支持结论的理由。</p>
+
+<p>在找出结论之前我们无法做出批判性评价！</p>
+
+<pre><code>* 理性判断
+    * 结论是一种需要其他观点支持的观点，没有理由支持的观点不是结论。
+    * 结论值得批判。
+    * 示例：房价当然会跌，不然中央会采取措施！（前半句是结论，后半句是理由。）
+
+* 非理性判断
+    * 没有理由支持的言论仅仅是观点，而不是结论。
+    * 观点不值得批判。
+    * 示例：房价当然会跌，不跌怎么行！（两句都是观点，没有提供理由。）
+</code></pre>
+
+<h2>2. 理由是什么？</h2>
+
+<p>理由包括信念、论据、比喻、类推以及其他用来支持或证明这些结论的陈述，是对我们为什么要相信某一个特定结论的解释。</p>
+
+<p>在确定理由之前我们无法对一个结论的质量进行评价。</p>
+
+<pre><code>* 理性思考者：用充分恰当证据来支持自己的信念（对事不对人）。
+
+* 非理性的人：用猜疑假设污蔑来证明别人的无理（对人不对事）。
+    示例：
+        * 楼主是脑残！
+        * 楼主，你是中国人吗？
+        * 此人在装B!
+</code></pre>
+
+<h2>3. 哪些词句有歧义？</h2>
+
+<h3>找出歧义词语</h3>
+
+<p>在决定赞同或反对某个观点之前，首先要确定关键词或关键句的准确含义，否则就由可能曲解或误解作者的观点。因此首先要找出有<strong>歧义</strong>的关键词句，明确它们在其上下文中的含义。</p>
+
+<p>示例：</p>
+
+<pre><code>* 断言：没有所谓的普世价值观。
+* 歧义：“普世价值观”的定义是什么？
+
+* 断言：大学教育质量普遍下降了。
+* 歧义：“教育质量”是之哪些方面？
+</code></pre>
+
+<p>歧义的种类：</p>
+
+<pre><code>* 语义歧义：表达断言的语句中罕有歧义的词语或短句；
+* 组合歧义：不能明确一个词语是指群体还是群体中的个别成员；
+    * 合成谬误：从群体的每个成员具有某特征推导出群体也具有该特征；
+    * 分解谬误：从群体具有某特征推导出群体中的每个成员也具有该特征。 
+* 语法歧义：一个句子的语法结构可以做两种以上的解释；
+* 指代歧义：一个代词所指代的事物或对象不明；
+* 抽象：抽象的表达无法界定词语所指代的具体范围。
+</code></pre>
+
+<p>去哪里找歧义词语？</p>
+
+<pre><code>* 在论题中找关键词； 
+* 在理由和结论中找重要的词语；
+* 注意抽象词语；
+* 扮演反串角色来判断其他人对关键词一的不同定义。
+</code></pre>
+
+<h3>时刻做好心理准备</h3>
+
+<p>时刻留意歧义的影响，要养成三个习惯：</p>
+
+<pre><code>* 避免假设和作者观点相同，养成“你这么说是什么意思？”的提问习惯；
+* 避免认为词语只有单一的、明显的含义，养成“这些词句是否还有不同的含义？”的提问习惯；
+* 注意修辞的影响，修辞手法通常会悄然无声地影响我们的情绪，从而影响我们的态度。
+</code></pre>
+
+<p>常见<strong>修辞手法</strong>：</p>
+
+<p>委婉语和粗直语</p>
+
+<pre><code>* 定义:
+    * 委婉语：使用能引起正面联想的词语来淡化负面影响，如：用褒义词或中性词。
+    * 粗直语：使用能引起负面联想的词语来强化负面影响，如：用贬义词或中心词。
+* 效果：往往带有欺骗性或暗含欺骗性。
+</code></pre>
+
+<p>修辞性类比、定义或解释</p>
+
+<pre><code>* 修辞性定义：运用诉诸情感的语言来激发积极或消极的态度。
+    * 示例：将”堕胎“定义为”谋杀未出生的孩子“ 
+* 修辞性解释：貌似解释的修辞技巧。
+    * 示例：他因缺乏勇气而输了比赛。 VS 他因过于谨慎而输了比赛。   
+</code></pre>
+
+<p>刻板印象</p>
+
+<pre><code>* 定义：没有正当理由过于简单地概括一类对象中的每个成员。
+* 示例：自由分子 / 右翼分子 / 女人感性，男人理性。
+</code></pre>
+
+<p>暗示</p>
+
+<pre><code>* 定义：运用中立的甚至积极的语言暗示人们联想事情的反面。
+* 示例：在不少方面，她时称职的。
+</code></pre>
+
+<p>贬抑</p>
+
+<pre><code>* 定义：降低事物的重要性。
+* 示例：贬抑最常见的词语是“只不过是”，“所谓的”，“仅仅”。 
+</code></pre>
+
+<p>嘲笑/讽刺</p>
+
+<p>夸张</p>
+
+<h3>谁在利用歧义</h3>
+
+<p>广告商：利用歧义让你误会。</p>
+
+<pre><code>* 人头马一开，好事自然来
+* 百事可乐：新一代的选择
+</code></pre>
+
+<p>政客：利用歧义诱发情感。</p>
+
+<pre><code>* 坚持主流价值观
+* 少数不明真相的群众
+* 不要走邪路
+* 少数西方敌对势力
+* 有关部门
+</code></pre>
+
+<h2>4. 价值观假设与描述性假设是什么？</h2>
+
+<p>要理解一个论证，就要知道信息传递者没有明确表述的信念，这些信念支持外显的推理。</p>
+
+<p>在所有论证中，都存在一些信息传递者所认同的信念，而这类信念却并没有明确表述出来，需要批判性思维者自己去找出来。这些隐形的信念是信息传递者承认的<strong>假设</strong>，在推理结构中，他们是重要的环节，是将全部论证整合在一起的黏合剂。</p>
+
+<p><strong>理由 + 假设 = 结论。</strong></p>
+
+<p>这些假设的特点是：</p>
+
+<pre><code>1. 隐藏的或没有清楚表述的（在多数情况下）；
+2. 作者承认；
+3. 影响对结论的判断；
+4. 具有潜在的欺骗性。
+</code></pre>
+
+<p>去哪里找假设？</p>
+
+<pre><code>* 寻找理由所需要的假设，有了这些假设理由才能支持结论（这叫连接假设）；
+* 寻找能证明理由真实性的假设。
+</code></pre>
+
+<p>示例：</p>
+
+<pre><code>* 断言：政府应该采取一切手段，包括行政手段强力打压高房价。高房价不仅损害穷人的利益，也损害房屋投资者的潜在利益。  
+* 分析：
+    * 理由：高房价不仅损害穷人的利益，也损害房屋投资者的潜在利益，
+    * 价值观假设：当群体利益受到损害时，政府可以用看得见的手干涉市场；
+    * 结论：政府应该采取一切手段，包括行政手段强力打压高房价。
+</code></pre>
+
+<h3>价值观假设</h3>
+
+<p><strong>价值观</strong>是人们认为值得为之努力、却没有明确表述的观念。这些观念为行为设定了标准，并通过这些标准来衡量行为的质量。</p>
+
+<p>在一个特定的情境中，<strong>价值观假设</strong>是一种内隐的偏向，它代表着某种价值观胜过另一种价值观，即具有某种<strong>价值观倾向或偏好</strong>。</p>
+
+<p>典型的价值观冲突</p>
+
+<pre><code>* 忠诚 VS 诚实：你是否把同学逃学事情告诉班主任？
+* 新闻自由 VS 社会秩序：你是否认为公开报道群体性事件不明智？
+* 竞争 VS 合作：你是否认为给少数民族高考加分有违公平？
+* 理性 VS 感性：你认为婚姻建立在爱情还是面包上？
+* 保守 VS 激进：你是否同意同性婚姻也应该得到祝福？
+* 公平 VS 效率：为提高经济效率是否可以牺牲部分人利益？
+</code></pre>
+
+<p>示例：
+个人是否应该给与乞丐以物质上的帮助？<br/>
+以下价值观冲突可能影响一个人帮助乞丐的意愿：</p>
+
+<pre><code>* 个人责任 VS 公共责任
+* 竞争 VS 合作
+* 效率 VS 社会稳定
+</code></pre>
+
+<p>关于价值观的一些常识：</p>
+
+<pre><code>* 每个人的价值观都是多维的，你并非只有一种价值观
+* 不同的人对同一个价值观认同的强烈程度是不同的
+* 在不同情境中你的价值观可能有不同的偏向
+* 不同思想的人对同样的话题往往设定了不同的价值观假设
+</code></pre>
+
+<p>去哪里找价值观假设？</p>
+
+<pre><code>* 检查信息传递者的背景；
+* 结论是确定价值观假设的线索：为什么那些作为理由呈现的结果看起来如此令人满意？
+* 扮演反串角色：持相反立场的人关心什么？
+* 寻找常见的价值观冲突，如个人 VS 集体。
+</code></pre>
+
+<p>一个批判性思考者在被说服之前，会要求辩论者能提供一些解释来说明：</p>
+
+<pre><code>* 为什么我应该接受隐含在论据中的你的价值观假设。
+* 也许这次讨论我不支持你的观点，但我支持你的价值观 … …
+* 也许下次讨论我不支持你的价值观，但我支持你的观点 … …
+</code></pre>
+
+<h3>描述性假设</h3>
+
+<p>描述性假设是关于这个世界<strong>是什么</strong>样子，或者将来是什么样子的为阐明的观念。它是理由与结论之间的联结，如果这一联结有缺陷，那么，理由就不一定能推导出那个结论。</p>
+
+<p>识别描述性假设容许你判定理由是否导致了结论。</p>
+
+<p>去哪里找描述性假设？</p>
+
+<pre><code>* 思考理由与结论之间的差距：
+    * 你是怎样从理由中得出结论的？
+    * 如果理由是真，还可以从中得出什么结论来？
+* 寻找支持理由的观点：理由的合理性依赖于人们对那些想当然的观点的认可程度。
+这些想当然的观点是描述性假设。
+    示例：
+        * 结论：我们需要提高花在艾滋病教育上的经费。
+        * 理由：如果我们这么做，将大大减少艾滋病患者的数量。
+        * 描述性假设：
+            1. 这些钱的花费方式是有效的，即受众为没有接受过艾滋病教育的高危人群；
+            2. 这些人愿意并且能够接受这些教育信息。
+* 把自己当作演讲者，试想自己为结论辩护；
+* 扮演反串角色；
+* 考虑支持结论最具优势的理由；
+* 避免使用不完全确定的原因作为假设。
+</code></pre>
+
+<p>示例：</p>
+
+<pre><code>* 断言：你会从李教授那里学到很多东西，他的学生都称赞他的报告。
+* 理由：他的学生都称赞他的报告。
+* 描述性假设：
+    1. 学生称赞性评价是从一个报告中学到多少东西的良好指标；
+    2. 学到很多东西意味着从报告中获取了一些材料。
+* 结论：你会从李教授那里学到很多东西。
+</code></pre>
+
+<p>定义假设：确定某个包含多种含义的词在一个具体情境中使用的时什么含义。如上例中“学到很多东西”被定义为“从报告中获取了一些资料”，而不是“发展思维技能”。</p>
+
+<h2>5. 推理中有没有谬误？</h2>
+
+<p>现在的焦点放在<strong>评价上</strong>。即根据提供的理由，评判结论的可接受性。这个评判过程首先是要检查推理是否合理，即是否采用了有问题的假设或者运用“骗术”蒙混过关。推理谬误就是推理过程中的欺骗手段。</p>
+
+<p>三个常见的谬误：</p>
+
+<pre><code>1. 提供了错误或不正确假设的理由；
+2. 通过是信息看起来与结论相关而实际上并不相干来转移我们的视线；
+3. 使用待评价的结论为来为结论提供支持。
+</code></pre>
+
+<p>去哪里找推理谬误？</p>
+
+<pre><code>* 考虑与结论相关的理由，把这些理由与信息传递者提供的理由比较；
+* 判定理由是否阐明了一个确切的、具体的优势或者不足，若不是，则需要谨慎对待；
+* 找出必要的假设：如果理由为真，要相信什么采纳在逻辑上支持结论呢？是否要相信理由是真实的呢？
+* 这些假设有意义么？
+* 留意修辞手法，剔除感情用语。
+</code></pre>
+
+<h3>人身攻击</h3>
+
+<p>定义：不阐述原因而直接攻击或侮辱其人。</p>
+
+<p>示例：</p>
+
+<pre><code>* 当官就没有不贪的，你怎么能指望他们改变？
+* 他就是一个骗子，你怎么能相信他说的话？
+* 此人是拿钱的五毛，你怎么能支持他的观点呢？
+</code></pre>
+
+<h3>滑坡推理</h3>
+
+<p>定义：假设如果某事发生，则会引发相关的一连串事情。</p>
+
+<p>示例：</p>
+
+<pre><code>* 如果我们同意开放负面新闻报道，那么报纸上一定都是负面消息，进而影响社会稳定。
+* 如何政府允许游行示威，那么国家就会乱。
+</code></pre>
+
+<h3>妄求完美</h3>
+
+<p>如果某方法不能彻底解决某问题，就不采用此方法。</p>
+
+<p>示例：</p>
+
+<pre><code>* 假如你的软件还存在 BUG，你就不应该推向市场。
+* 我们不应该允许给妓女发放避孕套，因为这是鼓励卖淫。
+</code></pre>
+
+<h3>移花接木</h3>
+
+<p>一个关键词在一个论据中被使用了两个或两个以上的含义。</p>
+
+<p>示例：</p>
+
+<pre><code>* 我们支持车船税，因为民意调查（被调查的对象未必是我们）一致赞成征收车船税。
+</code></pre>
+
+<h3>诉诸公众</h3>
+
+<p>试图通过偏爱多数人一致赞成的观点使某个观点合理化，错误地认为多数人支持的就是合理的。</p>
+
+<p>示例：</p>
+
+<pre><code>* 群众支持对贪官要判处死刑，所以贪官要判处死刑。
+* 小三该纳入刑罚，因为对已婚妇女的调查她们都支持立法处罚。
+</code></pre>
+
+<h3>诉诸权威</h3>
+
+<p>通过引入在某个问题上可疑的权威来支持结论，通常是A领域权威对B领域观点。</p>
+
+<p>示例：</p>
+
+<pre><code>* 专家表示官员公开财产操作上不具备现实可行性。
+* 专家表示白酒都含有塑化剂，适当饮用无害。
+</code></pre>
+
+<h3>诉诸情感</h3>
+
+<p>利用调动感情的词汇，激发情感共鸣替代理性判断。</p>
+
+<p>示例：</p>
+
+<pre><code>* 拿了房地产商钱的专家总是鼓吹有利他们的政策。
+* 砸光小日本的车，让小日本经济彻底垮掉！
+</code></pre>
+
+<h3>砍稻草人</h3>
+
+<p>歪曲对方的观点，使之易于攻击，因而攻击的是一种事实上并不存在的观点。</p>
+
+<p>示例：</p>
+
+<pre><code>* 我反对做产前B超检查，这些医生实际上想杀死有缺陷的生命。
+* 上帝并不能如科学一样解释世界，所以你不应该信仰上帝。
+</code></pre>
+
+<h3>虚假的两难困境</h3>
+
+<p>制造虚假的两难困境，非此即彼，其实还有更多选择。</p>
+
+<p>示例：</p>
+
+<pre><code>* 要么考研，要么考公务员，否则我们找不到好工作。
+* 在通货膨胀的今天，理财的两种最佳选择一是股票，二是房产。
+</code></pre>
+
+<h3>乱扣帽子/乱贴标签</h3>
+
+<p>抛出恶意或负面的词汇引导你对事物的评判。</p>
+
+<p>示例：</p>
+
+<pre><code>* 你妈妈为什么最近脾气不好？她现在肯定是更年期了。
+* 她为什么喜欢和政府过不去，到处上访？她有神经病。
+</code></pre>
+
+<h3>一厢情愿</h3>
+
+<p>因为我希望这样，所以就是这样。</p>
+
+<p>示例：</p>
+
+<pre><code>* 我准备考公务员，这样我就能过上稳定的生活了。
+* 不可能是今天考试，我还没有开始复习呢！
+</code></pre>
+
+<h3>光环效应</h3>
+
+<p>使用模糊、情绪化美德词汇让我们不经仔细思考就接受观点。</p>
+
+<p>示例：</p>
+
+<pre><code>* 这是一位伟大的共产党员，为革命工作付出一辈子心血，他的卓越业绩、崇高品德、光辉人格，
+深深铭记在我们心中，我们有什么理由不继承他的遗志呢？
+* 这是一位有爱心的女士，她有决心，信心和勇气，支持儿童事业和环境保护，
+为这位女士投一票就是为公正、爱、和平等投票。
+</code></pre>
+
+<h3>循环论证</h3>
+
+<p>把结论换个说法当成理由，即在论证中变结论为理由。</p>
+
+<p>示例：</p>
+
+<pre><code>* 经济发展会推动股票上涨，因为在经济发展地区，股票都在上涨。
+* 我爱牛人们精辟观点，因为网络牛人观点犀利，不正值得信赖吗？
+</code></pre>
+
+<h3>转移话题</h3>
+
+<p>提出一个不相干话题转移是读者的注意力离开原来的论题。</p>
+
+<p>示例：</p>
+
+<pre><code>* 我不明白为什么大家要讨论日本的政治体制比我们的好，看看最近20年发展就知道了，
+我们前进，他们衰退。
+* 母亲：我不是告诉你要按时回家吃饭吗？儿子：你看你总是在责怪我！
+</code></pre>
+
+<h3>错置举证</h3>
+
+<p>本应该由信息提供者来举证提供理由，却通过诡辩让接收者来举证提供理由。</p>
+
+<p>示例：</p>
+
+<pre><code>推销员：这个牌子的化妆品很管用，你试试看。
+顾客：我才不信。
+推销员：你不试，怎么知道不管用呢？
+</code></pre>
+
+<h2>6. 证据可信么？</h2>
+
+<p>如何判断可信度？</p>
+
+<pre><code>* 证据是什么？在哪里？
+* 你如何知道它是真实的？你能证明它么？
+</code></pre>
+
+<h3>可信度</h3>
+
+<p>支持一个信念的证据越多，该信念越接近真实。 <br/>
+对很多观点来说，没有足够的证据完全支持或驳倒它们，我们必须判断证据的优劣。<br/>
+断言都需要证据，结论的可信度取决于证据的可信度。</p>
+
+<h3>常用证据可靠性</h3>
+
+<h3>直觉</h3>
+
+<p>当人说“常识告诉我们”或“我只知道这是真的”，他就在用直觉作为证据。</p>
+
+<pre><code>* 问题：过度自信。
+* 对策：必须谨慎使用直觉作为声明的依据，批判性思考者应当弄清楚由直觉得出的声明
+是否有其他类型证据的支持。
+* 示例：常识告诉我们，一个作者应该记得自己写过作品的内容。
+</code></pre>
+
+<h3>个人经历</h3>
+
+<p>根据少数人经历就得出关于整体的结论。虽然结论有可能是对的，但推理过程绝对是无厘头的。</p>
+
+<pre><code>* 问题：鲜活形象的个案。
+* 对策：牢记个人经验让人记忆深刻，以致我们常常把它当做证据来支持自己的观点，
+但凡事总有例外。
+* 示例：如果你没有读过原著，你不可能在写作中引用他们的经典语句。
+</code></pre>
+
+<h3>典型案例</h3>
+
+<p>通过对一个或几个特殊个体或事件进行详细描述来支持结论，以观察或访谈为基础。</p>
+
+<pre><code>* 问题：以偏概全。
+* 对策：警惕利用动人案例作为证据的情况，要时刻提醒自己：
+“这个案例是否典型？”“能不能找出有力的反面典型？”
+* 示例：最近微博举报多起贪官落网，充分说明微博是建立群众监督的利器。
+</code></pre>
+
+<h3>当事人证词</h3>
+
+<p>商业信息、影视广告、书籍封底经常使用他人经验证词企图说服我们。</p>
+
+<pre><code>* 问题：伪证以及情绪感染。
+* 对策：必须认识到这类证词根本没有多大帮助，除非我们了解证人的专业技术水平，
+个人兴趣，价值观或偏见。
+* 示例：我郑重向你推荐这种减肥药，因为我朋友使用一周后瘦了6斤。
+</code></pre>
+
+<h3>专家意见</h3>
+
+<p>权威专家对特定的问题，比多数人了解更多的信息源。</p>
+
+<pre><code>* 问题：盲从或过度膨胀。
+* 对策：更谨慎对待权威观点，问问自己我为什么要相信这个权威？
+* 示例：任志强：房价肯定还会涨！
+</code></pre>
+
+<h3>个人观察</h3>
+
+<p>一种有价值的证据，是许多科学研究的基础。</p>
+
+<pre><code>* 问题：自我服务偏见或观察误差，眼见未必实。
+* 对策：必须警惕不要仅仅依赖一个观察者的观察。
+* 示例：在一起抢劫案中，一名目击证人说犯人手里拿着一把很大的手枪，
+其实犯人只是拿着一根木棍。
+</code></pre>
+
+<h3>科学研究</h3>
+
+<p>在可控环境下进行的观察资料为依据，并经过同行评审，能重复验证结果，结论描述用语精确。</p>
+
+<pre><code>* 问题：容易结论自相矛盾。
+* 对策：要认识到研究者的预期、态度、价值观和资助单位期望等，会使他们的提问、
+研究方法以及解释研究结果的方式存在偏差，样本范围的广泛性以及随机性，
+研究结果不能证明结论，只能作为研究结果支持结论。
+* 示例：大量的科学实验表明转基因食品对人体无害。
+</code></pre>
+
+<h3>类比</h3>
+
+<p>用熟悉的事物来解释不熟悉的，假如某一方面相似，则其他方面也有可能相似。</p>
+
+<pre><code>* 问题：不当类比
+* 对策：
+    1. 从多个方面比较两种事物之间的相似之处与不同之处；
+    2. 相似性与差异性之间的关联；
+    3. 当存在与论题相关的相似之处，但没有与论题相关的差异时，这样的类比才是强有力的；
+    4. 制造可替代性类比来理解信息传递者试图说明的相同现象。
+</code></pre>
+
+<p>示例：</p>
+
+<pre><code>* 假如你的手烂了，你会切除它，所以我们也不得不消灭搞聚众淫乱这样道德败坏的人。
+</code></pre>
+
+<h2>7. 有没有替代性原因？</h2>
+
+<p><strong>替代性原因</strong>是一个看似合理、与信息提供者的解释不同，但能说明一个已知的结果如何发生的解释。</p>
+
+<p>替代性原因越多，某个具体替代性原因的可信度就越轻，它可能只是造成结论的一个“促成因素”，而不是决定性因素。</p>
+
+<p>不同的替代性原因单独看往往都看似合理，也都能就一个结论发生的原因提供能自圆其说的解释，但有些解释看起来更合理。在寻找对某件事进行因果解释的证据时，需要留意替代性原因。</p>
+
+<p>去哪里寻找替代性原因？</p>
+
+<pre><code>* 我能想出其它方法来解释这个论据么？
+* 还有什么其它可能的原因会导致这个结论？
+* 换一个角度来看，能找到什么重要的原因呢？
+* 如果现有的解释是错误的，那何种解释才是争取的呢？
+</code></pre>
+
+<p>两件事有很强的相关性并不能等于可以证明他们有因果关系。</p>
+
+<h3>简单归因</h3>
+
+<p>问题：根据一些不够充分的因素来解释某事件，过分强调某一个或某几个因素对事件的作用。</p>
+
+<p>对策：</p>
+
+<pre><code>* 有无替代性原因？
+* 是唯一的原因还是其中的一个原因？
+* 有相关性不等于有因果性！
+</code></pre>
+
+<p>示例：</p>
+
+<pre><code>* 断言：因为银行进入加息通道，所以房价一定会跌。
+* 分析：房价下跌因素很多，除了金融因素，还有同期市场需求，国家政策，
+投资风险偏好多种因素影响，一个因素变动并不能导致结论成立。
+</code></pre>
+
+<h3>混淆原因和结果</h3>
+
+<p>问题：将原因和结果混淆在一起或没有认识到两件事可能是互相影响的。</p>
+
+<p>示例：</p>
+
+<pre><code>* 断言：统计100名女性工作者研究表明：容易生气的女人免疫系统就容易受到伤害。
+* 分析：答案也许是免疫系统容易受到伤害的女人，容易导致肝火旺盛而易怒。
+</code></pre>
+
+<h3>对共同原因的疏忽</h3>
+
+<p>问题：没认识到两件事可能因为另一个共同因素的影响而相互联系。</p>
+
+<p>示例：</p>
+
+<pre><code>* 断言：统计100名女性工作者研究表明容易生气的女人免疫系统就容易受到伤害。
+* 分析：也许容易产生敌意和免疫系统不好都是因为这群调查对象拥有不良的生活习惯，
+也许是其它原因（比如高强度加班）导致某些女人容易生气同时免疫系统受到伤害。 
+</code></pre>
+
+<h3>事后归因谬误</h3>
+
+<p>问题：仅仅因为B在时间上发生在A之后，就认为B是由A引起的。</p>
+
+<p>示例：</p>
+
+<pre><code>* 断言：每次播放郑少秋拍摄的电影，比如《大时代》，香港股市就下跌。所以存在“丁蟹效应”。
+* 分析：丁蟹效应是典型的事后归因，在人分析自己的错误过程中常常会犯这种错误。
+</code></pre>
+
+<h2>8. 数据有没有欺骗性？</h2>
+
+<p><strong>统计数据</strong>是一种以数字形式表现出来的证据。这样的证据可以给人留下深刻的印象，因为数字使证据看起来非常科学、精确，让人感觉到代表着“事实”。然而统计数据可以并且经常欺骗大家。</p>
+
+<h3>出处不可靠，有偏见的数据</h3>
+
+<p>示例：</p>
+
+<pre><code>* 中国估计有6750万套空置房。
+* 保守估计，中国有3000万性工作者。
+* 今年物价肯定涨了3倍以上！
+</code></pre>
+
+<h3>令人困惑的平均数</h3>
+
+<ul>
+<li>算术平均数：将所有数据相加，再用所得的和除以数据的个数得到的结果是算术平均数。</li>
+<li><a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E4%BD%8D%E6%95%B8">中数</a>：将所有数据按从大小顺序排列，位于中间的那个数就是中数。</li>
+<li><a href="http://zh.wikipedia.org/wiki/%E4%BC%97%E6%95%B0_(%E6%95%B0%E5%AD%A6)">众数</a>：将所有数值按照一定规则分组，在一组数据中出现次数最多的那个数就是众数。</li>
+</ul>
+
+
+<p>不仅分辨出是哪一种平均数很重要，考虑数据的范围（最大值与最小值之间的跨距）、数据出现的频率（即数据的分布）也同样重要。</p>
+
+<p>示例：</p>
+
+<pre><code>* 我国内公司人均工资收入增长较快。（也许只是领导收入增加较快）
+* 随我国GDP不断增快，中国人民平均收入近年来保持较高增长水平。
+（如果用中数或众数平均数统计，也许是下降）
+</code></pre>
+
+<h3>用不相关的数据证明结论</h3>
+
+<p>用正确的数据证明错误的结论。</p>
+
+<p>对策：</p>
+
+<pre><code>* 不去看信息提供者提供的统计数据，问自己：“哪种统计数据有助于证明作者的结论？”，
+然后将自己得出的数据与信息提供者的数据相比较；
+* 不去看信息提供者的结论，问自己：“这些统计数据能得出什么结论？”，
+然后将自己得出的结论与信息提供者的结论作比较。
+</code></pre>
+
+<p>示例：</p>
+
+<pre><code>* 每1000名消费者中，只有5个人投诉对服务不满意，因此证明这项服务质量很好。
+* 通货膨胀主要原因是因为国际油价这类资源类产品涨价带来输入性通货膨胀。
+</code></pre>
+
+<h3>借助遗漏信息撒谎</h3>
+
+<p>选择性遗漏一些信息来达到欺骗的目的。比如忽略比较的对象，或使用忽略了信息的百分比与绝对数值，或使用相对数据来夸大可能的风险或收益。</p>
+
+<p>示例：</p>
+
+<pre><code>* 新的汰渍洗衣粉洗衣效率提高了30%。（是和谁对比？也许其它产品更高）
+* 现在小区治安越来越糟糕，恶性犯罪率增加了400%。（也许绝对数量只是从1起增加到4起，
+而入住人口增加了10倍）
+</code></pre>
+
+<h2>9. 有没有遗漏关键信息？</h2>
+
+<p>论证中的信息是信息提供者精心选择并组织在一起的，选择和组织这些信息的人希望在某种程度上影响你的思维，往往会选择对结论有利的信息而忽略不利的信息。批判性思维者需要问问自己：哪些关键信息被遗漏了？</p>
+
+<p>遗漏信息必然存在：</p>
+
+<pre><code>* 时间和空间上的局限性，使得论据不完整；
+* 有限的注意范围，只列出最吸引人的论据；
+* 人们具备的知识有限；
+* 为了达到欺骗的目的；
+* 每个人的视角不同。
+</code></pre>
+
+<p>示例：</p>
+
+<pre><code>* 治疗方案X将使心脏病发作的可能性减少20%。
+（也许本来发作风险就不足5%，减少20%也只减少到4%）
+* 我明年的销售目标是销售额是比今年增加500%。（今年我的销售额是零）
+</code></pre>
+
+<p>如何查找被遗漏的关键信息？</p>
+
+<pre><code>* 有哪些相反的事例、证明或信息？
+* 缺失定义：尝试用不同的方式来定义关键词；
+* 缺失价值取向或偏好；
+* 缺失论证里提到事实的来源；
+* 缺失得出事实的详细程序：问卷的措辞与被调查者的样本质量；
+* 缺失或不完整的数字，图表，表格或数据
+* 缺失文章中引证或证明；
+* 信息提供者是否会从中获得好处。
+</code></pre>
+
+<p>我们要格外注意被遗漏了的消极观点。</p>
+
+<h2>10. 能得出哪些合理的结论？</h2>
+
+<p>由于每个人的背景和目标不同，因而会持有不同的假设，导致我们面对同样的理由却得出不同的结论。</p>
+
+<p>注意如下事实：</p>
+
+<pre><code>* 一个特定结论往往只在特定条件下才成立；
+    * 何时正确？
+    * 何地争取？
+    * 为了什么目的或凭什么说它是正确的？
+* 别做非黑即白二元式推理，寻找多种结论的可能性；
+* 认识到备选结论的存在对解放思想非常重要；
+* 不是所有的结论都一样合理，选择最有可能接近真相的那个结论；
+* 好的结论并非完美，如果发现新的证据，要有勇气改变你的看法。
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[科学理论之可证伪性]]></title>
+    <link href="http://luozhaohui.github.io/blog/2014/10/08/falsifiability/"/>
+    <updated>2014-10-08T20:49:18+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/10/08/falsifiability</id>
+    <content type="html"><![CDATA[<h2>简介</h2>
+
+<ul>
+<li><strong><a href="http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7">可证伪性</a></strong>是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨<strong>科学与非科学</strong>的一种理论，他认为:
+
+<blockquote><p>一切从经验得来的假说、命题和理论都不是科学的，除非它们容许反例存在的可能。</p></blockquote></li>
+</ul>
+
+
+<h2>定义/What</h2>
+
+<ul>
+<li>如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。</li>
+</ul>
+
+
+<!--more-->
+
+
+<h2>解释/How</h2>
+
+<ul>
+<li>可证伪性是说要存在被证明为假的这种可能性（即证明为假的方法要存在），但和证明目前是不是可实施并没有关系。</li>
+<li>可证伪性是科学理论的必要属性，但非充分属性。科学理论必须具备可证伪性，且仍未被证伪。</li>
+<li>不具备可证伪性的理论都是非科学的。</li>
+<li>非科学的伦理并非都是伪科学，只有冒称是科学的那些非科学理论才是伪科学。</li>
+</ul>
+
+
+<h2>深究/Why</h2>
+
+<ul>
+<li><p>我们知道归纳与演绎是人类思维方法中的两大法宝。</p>
+
+<blockquote><ul>
+<li>归纳：从许多个别的事物中概括出一般性概念、原则或结论的思维方法。</li>
+<li>演绎：从普遍性的理论知识出发，去认识个别的、特殊的现象的一种逻辑推理方法。</li>
+</ul>
+</blockquote>
+
+<p>  可证伪性是针对归纳法而言的。由于人类认知和探索的世界有限，在归纳出一种理论时，不可能穷举所有符合这一理论的个案来证实这一理论。倘若存在可以检验为假的某种方法在，即使在目前的条件下还不能够实施检验，假以时日，或许会出现这样的反例从而检验其为假，当然也可能这样的反例永远都不会出现，谁知道呢？如果一种理论不存在任何可检验为假的方法，那么这种理论因缺乏检验方法，而无法判断其真假，因此一定不是科学。用老子相反相成思想来讲就是“天下皆知真之为真，斯假也”。</p></li>
+<li><p>示例一：“所有的天鹅都是白的。”，试图穷举一只，两只，三只&hellip; &hellip; 白天鹅来证实这一描述是科学的都不够充分，检验这一描述为科学的必要条件是“没有非白色的天鹅”这种可能性存在（可证伪性），当黑天鹅在澳大利亚被发现时，人们就推翻了这一论述。</p></li>
+<li><p>示例二：“上帝是存在的。”，这一描述因无法观测或证明“上帝不存在”，从而无法被证伪，因此这一描述是非科学的。</p></li>
+</ul>
+
+
+<h2>意义</h2>
+
+<ul>
+<li>牛顿定律在相对论没有发现之前被认为是科学理论，但存在检验其为假的标准，而后被相对论证伪，这时人们通过增加牛顿定律发生的限定条件，来完善牛顿定律。这是可证伪性的意义所在，科学理论永远在不断的证伪检验过程中被完善或推翻。用胡适先生的话来说就是“大胆假设，小心求证”。</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Subline Text 2 安装 Markdown 插件]]></title>
+    <link href="http://luozhaohui.github.io/blog/2014/10/05/subline-text2-markdown/"/>
+    <updated>2014-10-05T22:35:02+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/10/05/subline-text2-markdown</id>
+    <content type="html"><![CDATA[<h2>简介</h2>
+
+<p>本文介绍如何在 Subline Text 2 中安装 Markdown 插件。</p>
+
+<!--more-->
+
+
+<h2>步骤</h2>
+
+<ol>
+<li><p>按 ctrl + ` 调出 console；</p></li>
+<li><p>粘贴以下代码到底部命令行并回车：</p></li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="kn">import</span> <span class="nn">urllib2</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">pf</span><span class="o">=</span><span class="s">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span><span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span> <span class="k">else</span> <span class="bp">None</span><span class="p">;</span><span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="s">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s">&#39;http://sublime.wbond.net/&#39;</span><span class="o">+</span><span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s">&#39; &#39;</span><span class="p">,</span><span class="s">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li><p>稍作等待，若在 output 窗口输出如下信息，表示安装成功：</p>
+
+<blockquote><p>Please restart Sublime Text to finish installation</p></blockquote></li>
+<li><p>然后重启 Subline Text 2，这时在菜单 Perferences -> package settings 中会出现 package control 项；</p></li>
+<li><p>点击 package control 项(或 Mac 系统下按 cmd + shift + p，Windows 系统下按 ctrl + shift + p)，接着输入 install package，回车，稍作等待（需要连接网络）；</p></li>
+<li><p>在上方的输入窗口中输入 markdown，就会列出一堆与 Markdown 相关的插件；</p></li>
+<li><p>依次安装 Markdown Build 和 Markdown Preview 两个插件即可；</p></li>
+<li><p>新建后缀为 .markdown 的文件，按照 <a href="http://wowubuntu.com/markdown/#blockquote">Markdown 语法</a> 规则添加内容；</p></li>
+<li><p>选择菜单 Tools -> Build System -> Markdown，然后选择 Tools -> Build 编译，就会在与 .markdown 文件同目录下生成相应的 .html 文件；</p></li>
+<li><p>Mac 系统下按 cmd + shift + p (Windows 系统下按 ctrl + shift + p)，输入 markdown，在自助提示列表中选择 Markdown Preview: Preview in browser，则会在浏览器中预览其效果。</p></li>
+</ol>
+
+
+<hr />
+
+<p>补充：</p>
+
+<ol>
+<li><p>Mac 系统下可以安装Markdown编辑工具 <a href="http://macdown.uranusjr.com/">Macdown</a> ；</p></li>
+<li><p>或直接使用在线Markdown编辑工具：<a href="http://mahua.jser.me/">mahua</a> 。</p></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[读史又半年]]></title>
+    <link href="http://luozhaohui.github.io/blog/2014/06/30/reading-history/"/>
+    <updated>2014-06-30T09:00:35+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/06/30/reading-history</id>
+    <content type="html"><![CDATA[<p>过了三十越发觉得时间之宝贵，三十之前觉得时间管理于我等无所作为的草民是不相干的，而今真有点只争朝夕的紧迫与仓促感。最近帮我老哥弄了个微信的公众平台，他发现我基本不上微信，觉得像我这样搞IT的不用微信很不可思议，包括不少朋友也有此同感。微信这玩意，非我不懂也，我只是没那么多时间和精力去刷那些个99%或是转发或是广告的垃圾信息。我的阵地在微博，豆瓣，QQ空间，微博提供技术/社会动态资讯；豆瓣提供读与看的资讯；QQ空间提供好友资讯，有此三者足以，而且每天浏览这些社交工具上的时间碎片加起来不会超过半小时。</p>
+
+<p>回顾2014上半年，看了不少有趣的影视剧（>33部），也读了不少好玩的书，在此总结之，广而荐之。总的来说这半年关注的重点在历史，金融与社会学。</p>
+
+<!--more-->
+
+
+<p><strong>如何读史</strong></p>
+
+<p>唐代的历史学家<a href="http://zh.wikipedia.org/wiki/%E5%88%98%E7%9F%A5%E5%87%A0">刘知几</a>就历史研究提出了才、学、识三长之说。史才，是指对历史事件的叙述和对史料的组织富有逻辑性和生动性，文字简洁、条理清楚；史学，是指史学家历史知识的广博，掌握资料的丰富，考证史料的严谨；史识，是指所持的观念、立场问题，即应该如何认识历史、判断历史。清代学者章学诚在此基础上，又提出“史德”之说，史德是对历史学家人品、道德、修养的要求，就是“著书者之心术也”。若据此标准，解放后大陆所著的绝大部分史书仅仅勉强达到史才之叙述清楚的标准，其它三项史学之资料确凿，史识之立场客观，史德之人品过硬，远远不及。当然不能全怪研究历史的，大环境要求统一思想，高度自宫，否则轻则不能出版，重则精神分裂。很不幸，我们所授的历史教育就是以这些有缺陷的历史书籍为课本，停留在史料堆砌的层次，而且近代史还不能做到史料之确凿，这是作为一个中国人接受义务教育天生的缺陷，唯有靠后天的自我教育才能得以拨乱反正。</p>
+
+<p><strong>历史时期</strong></p>
+
+<p>马克思主义历史观，认为人类社会的发展历程是要经历奴隶，封建，资本，社会，最后到达共产，这是马大爷在研究欧洲已有历史的基础上（从奴隶到封建到资本社会的历程），继之展望为社会主义，最后到达共产这一终极目标所形成的一整套理论。马大爷前半部分理论是符合欧洲历史的，欧洲确实是有奴隶社会的，后半部分里面，从目前的情形看是不太可能符合了。而大陆官方把马大爷的理论硬套在中国的历史上，认为中国从夏到秦是奴隶社会，秦到中华民国是封建社会。但这种观点却不被非马克思主义历史观的史学家所接受，他们认为中国并不存在奴隶社会，自夏至秦是封建社会（封建，分封建国，天子分封诸侯，诸侯再分封卿大夫），而自秦始“废封建，置郡县”（《汉书》），尤其是隋唐之后，一直到清朝都应该是中央集权的郡县文官制。我觉得后者的分期更符合中国历史。而中国历史上两个重要的转型时期（春秋战国，以及清末明国初期），是最值得关注的，在文化上也是最为璀璨的，百家齐放是也。</p>
+
+<p><strong>和历史相关的书籍与影视</strong></p>
+
+<ul>
+<li><p>《<a href="http://book.douban.com/subject/2002025/">东周列国志</a>》：五星推荐。感觉这本书甩了《三国演义》好几条街，《三国演义》是经过长期演化（多为说书人口述）多人创作的产物，诸多卫道士不断修改此书以满足或宣扬符合当时社会需要的道德（尤重忠义）标准，最终由罗贯中汇总。其中人物与事迹被历代卫道士伪造，以致鲁迅说“刘备之德近乎伪，诸葛之智近乎妖”，与《三国志》相去甚远。《<a href="http://book.douban.com/subject/2002025/">东周列国志</a>》是冯梦龙参考《春秋》，《战国策》等诸多史书编写而成的历史小说，虽然它终归是小说，而不是史书，但《<a href="http://book.douban.com/subject/2002025/">东周列国志</a>》的靠谱程度比三国要高得多，其时间跨度大（五百年：公元前722年至公元前221年，以公元前403年三分晋国为春秋战国之分界），社会演化历程长久（从天子势微，到诸侯称霸，到大夫家臣登场，到门客名士唱戏；从春秋讲究骑士风度的礼仪之战，演化到战国动辄几十万人的无信义凶残之战），人物多且关系复杂。让你看过无数朝起朝落，三十年河东三十年河西的故事，在浮浮沉沉之中体会为人处世之道，高瞻远瞩之识。但为啥《东周》远不如《三国》流行呢，我觉得有三个主要的因素：第一，年代久远更为久远，就如现今清宫戏远比明宫，唐宫，汉宫戏要多；第二，人物多且关系复杂，阅读难度大；第三，书中有众多篡权弑君的示例，是君王之大忌，必不为历代朝廷所喜。</p></li>
+<li><p>东周列国传电视剧：现在真是最好的时代，有书看，还有相应的影视可看，影视剧集：东周列国传，分<a href="http://movie.douban.com/subject/2341884/">春秋</a>和<a href="http://movie.douban.com/subject/2972189/">战国</a>两部， 各有36集，<a href="http://movie.douban.com/subject/2341884/">春秋篇</a>五星推荐，<a href="http://movie.douban.com/subject/2972189/">战国篇</a>四星推荐。为啥春秋更为好看呢，一则春秋的时间跨度更长一些故事更多一些，二则春秋是受礼义约束的战争，往往致胜因素在战场之外，更有艺术性。这部剧集是以《<a href="http://book.douban.com/subject/2002025/">东周列国志</a>》为蓝本的，在改编的过程了作了不少细节上的修改以求更有看头，尤其是增加了很多情感美色的戏份，与书籍不相符合。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1055347/">中国史纲</a>》：四星推荐，民国史学家张荫麟留下的唯一著作，恨作者英年早逝，仅仅写到汉代，宋代尚只有一些草稿章节。王家范评此书：“文笔流畅优美，运思遣事之情深意远，举重若轻，在通史著作中当时称绝，后也罕见。”</p></li>
+<li><p>徐中约写的港版《<a href="http://book.douban.com/subject/2376486/">中国近代史</a>》，五星推荐。读过不少近代史，这本是最为出众的，国内出版的是阉割的，所以要看繁体版。客观就不说了，大凡非大陆出的历史名著大都做得到客观，这本尤为可贵的是作者具备全球视野，能把发生在中国的事情与发生在其他国家的事情联系统一起来，在世界史的大局中讲述中国近代史。比如说毛同志吸取了斯大林同志在肉体上消灭异己的教训，采取精神上消灭的措施；又如毛同志为避免重蹈斯大林被继任者赫鲁晓夫全盘否定的覆辙，清算了少奇同志。此外，49年之后，大陆，台湾，香港三地的历史齐头并进讲解，而大陆的近代史书一般只讲大陆部分。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/10825612/">近代中国社会的新陈代谢</a>》，四星推荐。作者可是咱双峰老乡，敬佩敬佩。大约成书于1989年，大陆学者出的一本不错的近代史书。重点讲1840~1930间的中国历史，一如书名所示，“新陈代谢”的演进过程讲得很不错，把一串事件的前因后果都串起来了，引用资料详实，足可见当时社会的各种争辩：从夷夏，古今，中西，长技/政体/文化，改良/革命，立宪/共和等等之争辩之演化。唯一的遗憾是毕竟写于80年代，不免有一些的意识形态词语在其中，且受马克思唯物主义历史观影响，不过总体瑕不掩瑜。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1060025/">中国近代史</a>》，五星推荐。这本书是民国外交官员蒋廷黻所写，自然善于从外交角度来阐述。短小精悍是其最大的特点，叹为观止！短短五六万字就将清末至民国历史发展的脉络展现出来，一气呵成。对人物的历史评判新颖客观独到。“鸦片战争的军事失败还不是民族致命伤。失败以后还不明了失败的理由力图改革，那才是民族的致命伤。”，振聋发聩。这是引起我对近代史感兴趣的入门书籍。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/5288371/">蒋经国传</a>》，四星推荐。此书可以从不同的视角佐证其他书籍中的近代中国史，而更值得重视的是经国先生如何将台湾从一个军事戒严的独裁政府平稳过渡到一个本地人做主的民主政府。经国在治理上海时期曾提出“只打老虎，不拍苍蝇”的口号，是不是很熟悉？衷心感谢经国先生领导台湾人民缔造了一个华人民主社会，楷模！经国有能力，有魄力，有度量来顺应潮流，启用台湾本土人，开放报禁，党禁，实现民主政治。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/3239549/">夹边沟记事</a>》：四星推荐，国内学者所著，难得，被翻译为英文（有很有噱头的封面与标题）。讲述59～61年期间“右派”在西北酒泉附近夹边沟/明水农场改造的非人经历，百分之七八十的人饿死了，活脱脱的饥饿实验室。当然在D的领导下他们都有正常死亡的病历的，若非作者的记录，这惨烈的历史将鲜为人知。作者文笔不错，寓深沉于木讷，寓悲愤于质朴，和大戈壁盐碱地上那些无声的惨烈浑然一体。</p></li>
+<li><p>关于近代史的最佳影视剧集：以前也推荐过，那就是《<a href="http://movie.douban.com/subject/1441794/">走向共和</a>》，60集，依然五星推荐。此外还有美国人Sue Williams制作的三集纪录片《<a href="http://movie.douban.com/subject/2042115/">中国，一个世纪的革命</a>》（China - A Century of Revolution），每集两小时，共六小时。该片从1911年一直叙述到1997年，横跨一个世纪的中国历史。较（与国内史书／教科书相较）为真实客观地还原了中国近百年的历史，该片中有许多在中国主流媒体上不可能看到的极为珍贵且罕见的历史镜头，如孙中山讲话、宋美龄在美筹款、访谈蒋经国、80年代末的某次运动、访谈崔健等等。这一点相当赞！。</p></li>
+</ul>
+
+
+<p>上面列的都是从历史的角度看中国的过去，下面这些则是从社会学人类学的角度来审视中国社会：</p>
+
+<ul>
+<li><p>《<a href="http://book.douban.com/subject/10532835/">乡土中国 生育制度 乡土重建</a>》 ：五星推荐，费孝通的名著。为什么中国人的乡土观念这么强，家族宗法制的形成背景，乡绅阶层与地方自治以及无讼是求之间的关系，在《乡土中国》里都讲的相当透彻；而《生育制度》则着重讲解中国特色的婚姻制度，家族观念之形成背景以及掩藏其礼俗表面下的缘由，进化因素，这对理解传统社会相当有帮助，对理解当今农村社会生活的一些习俗依然有非常重要的现实意义，比如理解娘亲舅大，爹亲叔大之缘由。《乡土重建》则是作者为民国政府重建农村经济出谋划策写的一些建议策略，对理解中国传统农村的经济状态非常有帮助。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/2988944/">金翼</a>》：四星推荐，人类学著作，成书于1940年。述说20 ~ 30年代两个农村家庭在中国民间传统文化与经济的背景下，面对新的商业社会的经济方式，如何调整适应以求新的发展或因不能适应而日渐衰落，再现了30年代前后中国农村生活的情景及经济变迁的剖断面。作者提出均衡理论：橡皮筋-竹竿模型来描述传统熟人社会里的人际均衡关系。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1082196/">林村的故事：一九四九年后的中国农村变革</a>》 ：四星推荐，也是人类学著作。这是一部关于解放初至改革开放初(85年)厦门城郊农村变迁过程的人类学著作，通过一个有个性有思想的村支书的之眼展现土地改革，公社，大跃进，大饥荒，四清运动，文革，家庭承包责任制，解体集体制，改革开放等众多社会大事对农村的影响。《金翼》写的是解放前，这本则是写解放后，这两本书衔接起来看，再加上《乡土中国》的理论分析，基本上就能对近一百年的农村概况有所了解了。这本书最好结合徐中约《中国近代史-下册》阅读，才能明白此书中各种政治运动的来龙去脉，因为这本书只是描述运动之现象。</p></li>
+</ul>
+
+
+<p> OK，列举了一大堆中国历史的书，也来看看西方历史吧，虽然西方历史我还没有正式涉猎，仅仅看了下面这本还不错的入门书。</p>
+
+<ul>
+<li><p>《<a href="http://book.douban.com/subject/4201719/">西洋史</a>》：五星推荐。又一本民国牛书，倘若要推荐西方史书籍，这本绝对是第一。史料虽都一样，但能把那些能提纲挈领的事件以及这些事件之间的前后连贯的因果关系讲得明明明白的史书却少之又少。作者精辟地总结道：上古希腊罗马是入世观，中古黑暗时代是出世观，文艺复兴之后又复入世观。作者是陈衡哲作为我国第一位女教授。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1065142/">欧洲文明十五讲</a>》 ：三星推荐，根据北大课堂讲课整理而成。一本能让你了解欧洲历史发展整体脉络的书籍，非常不错的欧洲历史入门读物：从希伯来，希腊，罗马，中世纪，文艺复兴，启蒙运动，宗教革命，工业革命，近代英法大革命一路讲来，能激发兴趣，并推荐了进一步的读物。上古中古讲得很不错，近代尤其是第十一，十二讲有点水。对比着看中国历史，很有趣，中国在公元前221年政治早熟，由秦一统天下时，基督还没诞生呢，罗马帝国，中世纪影子都还没有呢。</p></li>
+</ul>
+
+
+<p>本来想一口气写完的，实在太多了，只写了历史部分，那就算上篇吧。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[中国，一个世纪的革命]]></title>
+    <link href="http://luozhaohui.github.io/blog/2014/05/02/century-of-revolution/"/>
+    <updated>2014-05-02T04:33:46+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/05/02/century-of-revolution</id>
+    <content type="html"><![CDATA[<p><img src="http://img5.douban.com/mpic/s3052908.jpg" alt="中国革命" /></p>
+
+<h3>纪录片简介</h3>
+
+<p>由美国人Sue Williams制作的三集纪录片《<a href="http://movie.douban.com/subject/2042115/">中国，一个世纪的革命</a>》（China - A Century of Revolution），从1911年一直叙述到1997年，横跨一个世纪的中国历史。较（与国内史书／教科书相较）为真实客观地还原了中国近百年的历史，该片中有许多在中国主流媒体上不可能看到的极为珍贵且罕见的历史镜头，如孙中山讲话、宋美龄在美筹款、访谈蒋经国、80年代末的某次运动、访谈崔健等等。这一点相当赞！</p>
+
+<!--more-->
+
+
+<p>20世纪，是中国历史上最为动荡同时也是变化最为深刻的时期，世界著名历史学家斯塔夫里阿诺斯认为：“在中国长达数千年的历史上，有过三次从根本上改变了中国的政治和社会结构的大革命。第一次发生于公元前221年，它结束了领主封建制，创立了实行中央集权制的帝国；第二次发生于1911年，它结束了帝国，建立了共和国；第三次发生在1949年，建立了共产党领导的政权。”（《<a href="http://book.douban.com/subject/1922216/">全球通史</a>》p160）</p>
+
+<p>而其中有两次大革命就发生在最近的一百年里。熟悉这百年历史的，都能读懂这些时间节点所发生的事件及其深刻影响。至于片中具体内容，实在难以尽述，一则因为文字乏力有图才有真相，二则即便能笔下生花，多半也会被和谐。是故，在这里略去不谈，请君阅片。</p>
+
+<h3>分集简介</h3>
+
+<p>该纪录片按时间顺序分为三集，每集两小时，三集共六小时。</p>
+
+<ul>
+<li><p>第一集《<a href="http://movie.douban.com/subject/2042115/">中国革命</a>》（China in Revolution）（1911-1949），由两部分组成：为生存而战（1911-1936），为未来而战（1936-1949）。內容是民初北洋政府、民国、抗日、内战。</p></li>
+<li><p>第二集《毛时代》（The Mao Years）（1949-1976）也分为两部分：追星揽月（1949-1960），造反有理（1960-1976）。内容是建国后毛泽东主政中国的27年，包括最为痛心的十多年浩劫。</p></li>
+<li><p>第三集《生于红旗下》（Born Under the Red Flag）（1976-1997），可以说是邓时代，内容是邓和他的三位接班人对中国历史的影响，包括80年代末的那次著名运动。</p></li>
+</ul>
+
+
+<p>如果想要了解清末到1911年之间的历史，推荐被河蟹的电视剧《走向共和​》。</p>
+
+<h3>下载链接</h3>
+
+<p>三集，每集两小时，共六小时。以下附迅雷下载链接</p>
+
+<ul>
+<li><p>第一集 中国革命（China In Revolution）
+<a href="thunder://QUFlZDJrOi8vfGZpbGV8JUU0JUI4JUFEJUU1JTlCJUJELiVFOSU5RCVBOSVFNSU5MSVCRCVFNyU5QSU4NCVFNCVCOCU5NiVFNyVCQSVBQS4lRTQlQjglODklRTklODMlQTglRTYlOUIlQjIlRTQlQjklOEIlRTQlQjglODkuQ2hpbmEuQS5DZW50dXJ5Lm9mLlJldm9sdXRpb24uJUU3JTk0JTlGJUU1JTlDJUE4JUU3JUJBJUEyJUU2JTk3JTk3JUU0JUI4JThCLkJvcm4uVW5kZXIudGhlLlJlZC5GbGFnLjE5OTcuRDUuSEFMRkNELVRMRihFRDIwMDAuQ09NKS5ta3Z8NTA3ODk4NTE4fEU4QTAwNzU4Q0RDOTA0NjA5MTA5QzU0QjY5MTdDQTQ5fC9aWg">迅雷下载</a></p></li>
+<li><p>第二集 毛时代（The Mao years）
+<a href="thunder://QUFlZDJrOi8vfGZpbGV8JUU0JUI4JUFEJUU1JTlCJUJELiVFOSU5RCVBOSVFNSU5MSVCRCVFNyU5QSU4NCVFNCVCOCU5NiVFNyVCQSVBQS4lRTQlQjglODklRTklODMlQTglRTYlOUIlQjIlRTQlQjklOEIlRTQlQkElOEMuQ2hpbmEuQS5DZW50dXJ5Lm9mLlJldm9sdXRpb24uJUU2JUFGJTlCJUU2JTk3JUI2JUU0JUJCJUEzLlRoZS5NYW8uWWVhcnMuMTk5NC5ENS5IQUxGQ0QtVExGKEVEMjAwMC5DT00pLm1rdnw1MTgyNzczNTN8NkZDODhGNTZDQzZFMUI0NTg5QTEyNDBBRUU1NTQxRjF8L1pa/">迅雷下载</a></p></li>
+</ul>
+
+
+<p>​* 第三集 生于红旗下（Born under the red flag）
+<a href="thunder://QUFlZDJrOi8vfGZpbGV8JUU0JUI4JUFEJUU1JTlCJUJELiVFOSU5RCVBOSVFNSU5MSVCRCVFNyU5QSU4NCVFNCVCOCU5NiVFNyVCQSVBQS4lRTQlQjglODklRTklODMlQTglRTYlOUIlQjIlRTQlQjklOEIlRTQlQjglODAuQ2hpbmEuQS5DZW50dXJ5Lm9mLlJldm9sdXRpb24uJUU5JTlEJUE5JUU1JTkxJUJEJUU0JUI4JUFEJUU3JTlBJTg0JUU0JUI4JUFEJUU1JTlCJUJELkNoaW5hLmluLlJldm9sdXRpb24uMTk4OS5ENS5IQUxGQ0QtVExGKEVEMjAwMC5DT00pLm1rdnw1MTI1MTI3NDN8NkRCREM4MUREOENCNUQ5REQ4OTI2M0M3NzNBQkE4MUJ8L1pa/">迅雷下载</a></p>
+
+<h3>更多介绍：</h3>
+
+<p><a href="http://www.360doc.com/content/11/0624/18/332078_129331107.shtml">总体介绍</a><br/>
+​<a href="http://movie.douban.com/subject/2042115/%E2%80%8B">第一集的豆瓣链接</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[关于成就的那些事]]></title>
+    <link href="http://luozhaohui.github.io/blog/2014/04/07/success/"/>
+    <updated>2014-04-07T06:16:00+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/04/07/success</id>
+    <content type="html"><![CDATA[<p>最近在练习主题阅读（关于主题阅读，请参考《如何阅读一本书》，或许我会整理一篇文章来），选的主题就是成就是怎样获得的？为此阅读/复习了一些书，获益良多，特此总结分析在这里，也算是完成主题阅读步骤的流程。</p>
+
+<!--more-->
+
+
+<h3>髓鞘质原理</h3>
+
+<p>人类的活动（练习）最终都是通过在神经纤维之间传导神经信号来完成的，习得一种技能就通过神经信号的触发在神经元之间建立有效连接来实现的。髓鞘质则是包裹在神经纤维上的一层层绝缘物质。包裹神经纤维的髓鞘质越厚，神经信号传递的速度就越快和精确度就越高，从而技能的反应速度和精准度就越好。髓鞘质的生成速度很缓慢，大量重复刻意的练习可以生成大量的髓鞘质，从而提高技能水平。你可以把神经元之间的连接想象成网线，而包裹在连接之上的髓鞘质想象成包裹网线的绝缘物质，练习越多绝缘物质就越厚，带宽就越高。这是从生理学角度解释习得技能的原因。</p>
+
+<p>髓鞘质在人的整个一生中都会生成/分解，但在不同年龄段各自的速度是不同的。髓鞘质在0到30岁之间是大量生成的阶段，在30岁之后会随着年龄的增长而分解，而到了50岁分解的速度就会超过生成的速度。这就是为什么30岁之前是学习技能的黄金时刻，而50岁之后学习技能就要付出更多的努力。</p>
+
+<p>人不同于大多数动物，生下来时并没有预置太多工作良好的神经回路，像走路这样的技能都得靠后天的练习，而牛，马等动物则不同，它们一生下来就能走路。当然大自然这样的安排是巧夺天工，人类大脑中有的是建立神经回路所需的元件，组合好这些元件就能够习得各式各样的技能。换句话说，大多数动物就是定制版，出生了就不能修改；而人类是DIY（Do it yourself）的产物，要什么技能就自个玩呗。</p>
+
+<h3>十年法则/一万小时天才理论</h3>
+
+<p>前面说了技能水平的提高得靠髓鞘质的生成，髓鞘质的生成得靠练习，而髓鞘质的很缓慢，所以需要大量重复的练习。经过研究，埃里克森同学提出了一条法则：要经过一万小时的精深练习才能达到世界级的水准。精深练习是很耗精力的，人每天最多进行3-5小时这样的练习，因而需要十年左右的时间才能练出世界级水平的技能。</p>
+
+<p>君不见网球娜姐，台球丁哥，钢琴朗朗艰苦练习的成长之路？要想取得成就，不要急躁，也别妄想一步登天，取得成就的生理限制就在那里，一步一个脚印地练习才是王道。</p>
+
+<h3>精深练习/刻意练习</h3>
+
+<p>为提高技能而进行的练习与普通的练习是大不同的。这种练习通常是明确和有计划的，是为了提高技能，且通常是需要外部(教练，老师等)帮助的；它能反复多次，并能从练习的结果中得到持续的反馈；无论是智力还是体力练习，它都极其耗费心神和枯燥乏味的。</p>
+
+<p>也许你会问从初中就开始练习英语了，从大二就开始学习编程了，至今何止十年了，为啥水平还是不行？那是因为平常的大多数练习都没能真正提高技能，仅仅是在低层次水平的重复练习而已。要想提高技能，第一，你得晓得当前处在什么水平，然后朝着稍高一点水平的目标练习，太高了也不行（太难了，那完全是自找折磨）。即有效的练习要在学习区进行，而不是舒适区或恐慌区（想象两个同心圆，最里面是舒适区，中间是学习区，外头是无限的恐慌区）。第二，练习要在的反馈中前进。在练习的过程中你需要得到持续不断的反馈，你练得对不对，有效不有效，错了要怎么改进，这些对精深练习是非常关键的。第三，大量地重复前面两个阶段，加强技能回路。你晓得为什么外部强有力的指导很有帮助了吧？当然教练/老师等的作用不仅仅如此，后面再说。</p>
+
+<p>一言以蔽之，精深练习就是选定合适的目标，努力练习，评估差距改进，不断地重复这个过程。</p>
+
+<h3>组块理论（Chunking）</h3>
+
+<p>组块理论是讲如何进行练习细节的。在学习一个知识点时，要遵循三个步骤：第一，整体吸收，整体了解任务。也就是先建立一个完整但并不那么有效的神经回路。第二，分拆任务，将任务分解成最基础的组块，针对这些组块进行练习。第三，放慢练习，花时间用慢动作练习。放慢节奏一则能使你更加关注错误，每一次都提高一点精确度；二则能更好地掌握技能的形状与节奏。</p>
+
+<h3>激情/动力</h3>
+
+<p>前面说到进行精深练习是极其耗费精力与枯燥无味的，而取得成就又得经历长达十年的艰苦练习。没有强劲的兴趣，激情与动力，绝大部分人是做不到的。激情在不同阶段需要不同的信号刺激。第一阶段是启动信号，让你对某个领域感兴趣；第二阶段是持续信号，让你能够坚持长久的精神练习而不轻易放弃。</p>
+
+<p>启动信号通常是知晓成功的先例榜样，让你想成为榜样那样的人；或偶然的一次小成功带来的惊喜和满足感，让你想更多地了解那个领域。所以为人父母者，带好孩子最重要的是要培养对一些东西的兴趣，而不是灌输太多的知识。</p>
+
+<p>持续信号是需要外部环境支撑的，在这个环境中练习者能随时随地地得到信号的刺激。这就是封闭式训练，全英语环境学习的理论来源。有句老话说“龙生龙，凤生凤，老鼠生出来打地洞”，从外部环境角度分析是有道理的，你看经商家庭中生长的孩子，生意头脑通常高出一般水平，浙江人会做生意是在其成长过程中耳濡目染习得的。为人父母者，责任重大啊。</p>
+
+<p>此外还有一种特殊的刺激，那就是缺乏安全感。穷人的孩子早当家，被逼的呀。试用期的员工更努力认真，有辞退风险啊。</p>
+
+<p>好的教练或老师在启动和持续激情方面都能提供帮助，这是他们的重要作用之二。基于技能回路形成的过程，对练习者的最有效的激励不是那些“你真聪明啊”，“你好棒啊”这类空洞泛泛而谈的话，而是那些能够肯定其努力以及渐进进步的话，“你真努力”，“干得不错，比先前做得好！”。前者并不能真正激励人，它会让觉得成功是靠的是我聪明的天赋，何苦辛苦练习（有心理学实验作证：将成功归因于外部因素的孩子更容易在困难面前放弃努力尝试）；而后者赞其勤奋的话，能够让练习者更加勤奋地练习。</p>
+
+<p>对于激情，外部环境相当重要，而这些很多时候并不是我们个体能够控制的。</p>
+
+<h3>机遇</h3>
+
+<p>上面说的1到5点大多是从个体方面来讲的，是所谓战术方面的问题；要想取得成功光靠战术是不行的，诸葛亮这么牛逼也没能让蜀国一统天下，怀才不遇的人多了去，接下来要讲讲战略问题，也就是机遇问题。</p>
+
+<p>首先，是要有机遇。生错人种，生不逢时，长错地方，都可能限制你在某些方面取得成就。比如说朝鲜人在当今世界上有取得辉煌成果的有几个？ 而今中国互联网的那些大佬如马云，李彦宏，马化腾，丁磊，张朝阳等为啥年龄都约在45岁至50岁之间？因为他们是在合适的年龄赶上了中国互联网的第一波浪潮（97~99年）。98年，腾讯，新浪，搜狐成立，99年阿里，百度成立。那时他们大约在30岁左右，拥有足够的行业知识，又赶上了互联网的第一班车。再如，1950~1960出生的美国富翁潮（比尔盖茨，乔布斯，施密特等），正好在10-20岁左右赶上美国历史上经济发生最大变革的时代（60年代-70年代）。如果仅从人口出生情况看，00后的机遇比我们80后要好得多（80~89年出生人口在两千万以上，99年出生人口不到一千二百万）。</p>
+
+<p>其次，是要把握住机遇。把握机会也是一种能力。或许这和情商有关。美国人斯托弗.兰根，智商高达195，一则成长环境有限，二则缺少把握机会的能力，所以没能取得多大成就。想想网球娜姐要是留在国家队会是怎样的结果？</p>
+
+<h3>累积效应</h3>
+
+<p>在一个群体中，如果一开始在某一方面有一丁点的优势，这个优势就会不断地积累放大，最终出类拔萃。比如说，美国梅迪辛哈特猛虎队棒球明星们，出生月份都靠前。他们小时候在练习棒球时比同年晚些月份出生的孩子有身体上的优势，从而表现较好，自然就会得到教练更多的关注，获得更多的资源，从而“利滚利”，越来越优秀了。中国父母“不能输在起跑线上”的观念也是有一定道理的。</p>
+
+<h3>总结</h3>
+
+<p>可以说那些获得成就的人都是外部机遇以及个人努力的合成物。</p>
+
+<hr />
+
+<p>扩展阅读：
+《<a href="http://book.douban.com/subject/4726323/">一万小时天才理论</a>》<br/>
+《<a href="http://book.douban.com/subject/4010185/">哪来的天才——练习中的平凡与伟大</a>》<br/>
+《<a href="http://book.douban.com/subject/3688489/">异类</a>》</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[书评：致逝去的这一年]]></title>
+    <link href="http://luozhaohui.github.io/blog/2014/01/06/summary/"/>
+    <updated>2014-01-06T03:36:44+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/01/06/summary</id>
+    <content type="html"><![CDATA[<p>New Year 已经过了好几天了，却一直没写点什么，念头倒是起了好几次，却总是浑浑噩噩中地忙碌着过了时间点洗洗睡了。奔三这一年真是在忙碌中度过的，也就上半年算悠闲点。1月底办婚事，5，6月份跳槽换工作，之后开始小马宝养成计划，然后9月开始学驾照，然后卖房子。可喜的是除了1月份大破财之外一切都很顺利，跳槽回到老东家科泰，小马宝一如我以前设想的那般将在年头出生（唯马首是瞻，咱的地位要不保了），考驾照整好三个月（9.25考科目一到12.15科目四考完），房子也在年终卖出了。感谢东家灵活的调休制度，让我有较自由的时间来处理这很多私事。</p>
+
+<!--more-->
+
+
+<h3>看过的书</h3>
+
+<p>这一年虽然忙碌，书还是看了一些，有不少是温故而知新的。如重看了《<a href="http://book.douban.com/subject/5325618/">高效能人士的7个习惯</a>》，《<a href="http://book.douban.com/subject/5287474/">影响力</a>》，《<a href="http://book.douban.com/subject/1008357/">水浒传</a>》以及一些技术书籍，也看了一些不错的新书：</p>
+
+<ol>
+<li><p>《<a href="http://book.douban.com/subject/4051739/">第五项修炼</a>》★★★★★
+这本书入手好几年了，可惜早几年没达到那境地，看不明白，今年终于读明白些了。这本书主要将如何系统地通过采用学习型组织的战略与行动步骤，来排除阻碍成长与发展的障碍，以达成理想的成就与目标。学得知识点：学习型组织/系统（全局）思维。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/4243770/">创新者的窘境</a>》★★★★★
+这本书虽然讲的是公司创新，其实可以泛化为一切领域的推陈出新，可以说就是讲《<a href="">易</a>》之道。书中讲述了两种创新模式：延续性创新和颠覆性创新。延续性创新就是在原有系统上的小扩展，如Nokia的功能机系统Symbian 3 延续升级到 Symbian 5；而颠覆性创新则是腾空出世，颠覆原有系统的大手笔，如苹果/Android智能机系统，如微博/微信的腾空出世。作者重点讲什么是颠覆性创新，为什么老系统会阻碍是颠覆性创新，怎样才能打破这些阻碍。作者虽然讲的是公司系统，其实在之后的领悟中，我发现一切领域都是如此。于我们个体而言，如何突破自己的思维定势，保持开明开放心态，接触了解新事物新思维也是如此。于一个国家，清朝的这样的老系统灭亡是必然（看《<a href="http://movie.douban.com/subject/1441794/">走向共和</a>》，《<a href="http://book.douban.com/subject/1015699/">中国大历史</a>》有感）。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1041385/">论美国的民主</a>》★★★★★
+这本书是托克维尔同学在法国大革命时期因抱有不同政见，托辞前往美国考察9个月之后写下的名作，我是在看了他的《<a href="http://book.douban.com/subject/11607261/">旧制度与大革命</a>》（这本据传官方高层曾向官员们推荐看看的）之后抱着牛人的书都应该看看心态入手这一本的。作者细致地分析和考察了美国成立的过程。在美国民主思想为什么那么深根蒂固呢？一则，英国的新教为了开辟纯净的教土离开英国本土前往美洲（新教是一种颠覆性创新），很有信仰信念的一批人；二则，落地在美国的每一个人一开始就没有贵族，望族，官二代，富二代等身份，等级，财富之差别，每个人都是凭借自己的才智勤劳取得成就，平等观念自然形成；三则，美洲得天独厚的地理条件，周边没有陈旧的强国虎视眈眈。所以幸运的美国几乎没有经历太多的流血反复就走向了民主共和。作者认为正是每一个个微小独立平等毫无依靠的个体，为最大程度地保障自己的利益，追求个人的幸福，才制定出最强大民主的宪法制度来限制政府以及一切他人来剥夺个人追求幸福之权利。所以我看好中国之未来，随着城镇化程度的扩大，每一个微小独立需靠自己拼搏奋斗的个体都有助于中国走向民主社会。独立的个体的增多这是因，走向民主社会只是果，这是必然的趋势，正所谓历史的滚滚车轮挡不住，那一天必将到来。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1336330/">冰与火之歌</a>》★★★
+萝卜白菜各有所爱吧，对我自己而言是五星的好小说，还是谦虚点三星推荐。一开始是追《<a href="http://movie.douban.com/subject/3016187/">权力的游戏</a>》这部美剧的（这部剧也是五星推荐，制作相当精致），可是一年才出一季，哥等不及了就看小说剧透了，可小说也才写到第五部（总计划七部），急急如令作者快点写，别玩太监书。废话少说，这部书为啥这么牛逼？<br/>
+第一，作者对每一个主要角色都是用第一人称角度来讲述的，长这么大才碰到有这种写法的；<br/>
+第二，情节吸引人，血腥暴力色情魔幻样样不少；<br/>
+第三，从很多侧面可以了解到当时欧洲贵族/骑士制度的一些情形。</p></li>
+</ol>
+
+
+<p>其他读过一些还不错的，但目前算不上五星推荐（不是书不好，是我境界还没练到家）：</p>
+
+<ol>
+<li><p>《<a href="http://book.douban.com/subject/6082808/">百年孤独</a>》
+讲一个家三代人在时间消磨下的家族孤独史，书中人物的名字很费脑，爷爷儿子孙子名字都一样，搞得你分不清谁是谁。套用一句话，在时间的魔力面前，一切都是浮云（跑题下，浮云出自孔夫子的"不义富且贵，于我如浮云"，老语变流行语）。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1015699/">中国大历史</a>》
+从宏观角度，连贯地讲述中国历史的发展演变历程。这本书之所以叫大历史就是要从宏观的纵向跨度上前后连贯来讲述朝代更替的前因后果，来龙去脉。中国的历史教科书真是一坨屎，只会告诉你时间地人物，教会你李渊见糖留一把（李渊建立唐朝于公园618年）这种应试的伎俩，却没有系统地把历史演进的前因后果，来龙去脉讲清楚。就拿文体来说：从几字短句的诗经楚辞，五言七律的唐诗，到宋词，到元曲，到明清小说，到白话文，你看到连贯性了没？（文体越来越长，语言越来越简单明了）明白这种连贯性背后的因由没？（从甲骨，到鼎，到竹简，到丝绸，到纸张，到印刷术，书写成本越来越低，书写材料越来越易得，不用字字斟酌来减少书写成本）这些教科书是不会讲的。这本书了解自己国家历史不可不看，推测未来走向亦不可不看，用科泰老总陈榕同志的话来说就是：看得到多远的过去，就望得到多远的未来。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1019568/">三国演义</a>》
+之所以重看这本书，是看了《<a href="http://book.douban.com/subject/1041385/">论美国的民主</a>》，《<a href="http://book.douban.com/subject/1336330/">冰与火之歌</a>》，《<a href="http://movie.douban.com/subject/4769314/">唐顿庄园</a>》之后了解了一些欧洲的骑士贵族制度，联想到中国古代类似的武士诸侯制度，从士的精神”这个角度对比着阅读找来看的。在三国及汉之前那些个时代，中国还是很讲究些“士”的气质，“道义”的气节的，武勇文谋，认定一个人就忠诚地跟随，打仗不斩来使，也不杀降者，惜才不滥杀。之后就一代不一代，唐太祖还算讲民主的，臣子可以带佩剑入朝，到了宋太祖就杯酒释兵权，到明太祖就斩杀建国功臣，到毛太祖就整风文绉绉)革命。三国志是了解过去社会风情的一部好书，可惜它被后人篡改了太多以满足“道德”二字的标准，如刘安杀妻取肉招待刘备，刘备摔阿斗以示爱惜赵云等等，太假太做作了。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/1040538/">中国哲学史大纲</a>》★★★★
+大师胡适写的，讲述中国哲学的发展历演进程，有高屋建瓴，提纲挈领之作用。胡适搞研究很有一套，用他的话说研究中国哲学史有三大目标：明变（明白古今哲学的沿革变迁），求因（寻找沿革变迁的原因），评判（知道各家学说的价值以及影响后果）。这和《<a href="http://book.douban.com/subject/1015699/">中国大历史</a>》的研究写作思路相似，这个类似的思路可以用老子的”道“来描述，也即道理相通。记得看张国荣演的《<a href="http://movie.douban.com/subject/1297447/">倩女幽魂</a>》里面有个道士出场就是”道可道，非常道；名可名，非常名“，这句话熟悉得不能再熟悉了。可要不是看了这本书还真没琢磨过这句话的含义，这句话中的“常”古时候同“尚”，表示上等的意思，因此这句话讲的是手中无剑，心中有剑的境界：那些个可以说出来的道，不是（上等的）真正的道，那些个可以命名的名不是真正的名。这就是老子万事的无为思想，他这个思想也不是凭空而来的，而是因周朝末年到春秋三百年间，王室诸侯胡作非为，昏庸的政策频出，弄得老百姓民不聊生，所以老子就认为正是政府乱出政策给害的（有为，但是是胡作非为），要是政府无为而治，天下就自然太平了。</p></li>
+<li><p>《<a href="http://book.douban.com/subject/10436418/">战争和革命中的西南联大</a>》★★★★
+老外写的，这个人是研究西南联大的专家，二十年就研究西南联大，佩服其专注与兴趣，也景仰支持他搞这种研究的社会制度。中国现在不是缺人才，而是没有这样的研究环境与社会环境。西南联大在战争非常时期，从北京搬往长沙，再搬往昆明，学校学生都穷苦，器材教材都缺乏，还不时面临日军战机的轰炸却大师辈出，培养出大批人才（杨振宁也曾在西南联大就学），必有一些可贵的精神所在，也必有一些特殊的社会环境所在（云南老大龙云与蒋介石不和，龙云在背后支持西南联大，让西南联大获得了不一般的自主自治）。看了这本书可以了解那时候的社会风气，乡村情况，以及知识分子的精神气概。</p></li>
+<li><p>技术方面的一些书籍，全面偏向移动领域：<br/>
+iPhone 3D Programming<br/>
+Android框架揭秘<br/>
+Android系统源代码情景分析</p></li>
+</ol>
+
+
+<p>总得来说，这一年的知识图谱在这几个点上穿梭，从欧洲骑士贵族制度到中国的士族制度，中国历史/哲学发展脉络，清末/民国社会风情，美国建国历程。</p>
+
+<h3>印象较深的那些电影：</h3>
+
+<p>地下 / Underground / 没有天空的都市 / 地下社会<br/>
+被嫌弃的松子的一生<br/>
+浪潮 / Die Welle / 恶魔教室(台) / 白恤暴潮(港)<br/>
+V字仇杀队 / V for Vendetta / V煞(港) / V怪客(台)<br/>
+熊的故事 / L'ours / 熊的故事 / 子熊故事</p>
+
+<h3>最喜欢的两部剧：</h3>
+
+<p><a href="http://movie.douban.com/subject/3016187/">权力的游戏</a><br/>
+走向共和 / 满清末代皇朝(台) / For the sake of the Republic of China</p>
+
+<h3>最喜欢的两个词：</h3>
+
+<p>互联网思维，长尾理论</p>
+
+<h3>这一年的其他总结：</h3>
+
+<p>就消费来说是：网购猛于虎；<br/>
+就心态来说是：感恩。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[那个推销的小伙子《影响力》你一定读过！]]></title>
+    <link href="http://luozhaohui.github.io/blog/2013/05/17/influence-boy/"/>
+    <updated>2013-05-17T03:42:38+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2013/05/17/influence-boy</id>
+    <content type="html"><![CDATA[<p><img src="http://img5.douban.com/mpic/s4552058.jpg" alt="影响力" /></p>
+
+<p>最近重读了《<a href="http://book.douban.com/subject/5287474/">影响力</a>》，这至少是第三遍或第四遍读它了，我也在博客中多次推荐过。在读过诸多行为心理学，社会心理学书籍之后，这次重读对书中列举的各种例子和试验背后的心理因素了如指掌，深感又拉近了与当初西奥迪尼写这本书时境地的距离。好书就是这样的牛逼，你知道作者的境界在那里，但你却只能通过充实自己的阅历与见识，一遍一遍的重读，慢慢向作者写书时的境界靠近。</p>
+
+<!--more-->
+
+
+<p>重读之后，我并没有写书评的欲望，因为书中内容以及背后蕴含的心理因素我已经非常熟悉了。但今天上门来推销的一个小伙子的推销行为却激起我的兴趣来，于是学以致用，好好地分析了一把。</p>
+
+<p>今天周日在家，下午有个小伙子前门，说是“最近多人反映蟑螂等虫子多发，社区委员会决定上门服务帮助清理。”，小伙子穿着非常职业，带着工作证，虽然我没细看到牌子上面都写着什么。我当时一听是社区来的，就让他进来了。小伙子一进门就上下观察，一边赞您可真是爱整洁的人，屋子里面这么干净，一面又吹捧一看就是有修养的成功人士云云（当时我心里就觉得此人必有所求），最后询问厨房在哪里？我指给他看，小伙子径直走到灶台前，打开门柜，在门柜上撒上杀虫的药剂，并一边示范说，“这药剂要每隔20公分洒一点才有效果。”，撒完之后，就拿出一个册子，说“为了表示愿意配合这次社区杀虫，很多社区居民都签名了，请您在这里签名，同时也证明我确实来过”之类的话。册子上有不少楼层的人签名，当时我没有细想就签名了。最后他问“您在这里是长住呢还是短住？”，我说“不确定。”，他就拿出两盒药剂塞到我手里说“长住一般需要六盒药剂配合后续使用，短住的话需要两盒配合后续使用，既然你不太确定就先给你两盒吧。你准备一下后续药剂的费用就好了，50元一盒。”</p>
+
+<p>听到最后一句，我就完全明白了，好一个打着社区委员会幌子的骗子!在我的质疑和追问下，他没法自圆其说：他到底代表谁？这活动到底是谁组织的？自愿的还是商业的？。最后他的阴谋自然没有得逞，被我毫不客气的请出去了。但我对小伙子在整个过程中采取的行为与《影响力》中描述的策略惊人地一致很感兴趣，也对这个过程中我没有及早发觉他的真实目的进行了反思。</p>
+
+<p><strong>权威</strong></p>
+
+<p>小伙子一身职业装，挂着工作证的牌子，口中声称是社区委员会派来的。无疑他在这点上是非常成功的，以至于当时我没有怀疑。事后我想了想，倘若我不被他的装饰的“权威”所迷惑，必定会想到这样的活动社区里面的布告栏里一定会有告示的，而且社区服务的工作人员一般都是大妈，这么年轻的小伙子相当可疑。</p>
+
+<p><strong>喜好</strong></p>
+
+<p>小伙子一进来就东称道西赞美，一个劲儿地套近乎，可惜他这套手艺还没到家，套的太空太露骨了，引起我的怀疑了。</p>
+
+<p><strong>互惠</strong></p>
+
+<p>小伙子自作主张地喷洒药剂，制造了一个“互惠”的假象。然后又为我“着想”，只安排了两盒药剂的后续杀虫任务。</p>
+
+<p><strong>承诺一致</strong></p>
+
+<p>小伙子要求在册子上签名表示愿意配合这次杀毒任务。</p>
+
+<p><strong>社会认同</strong></p>
+
+<p>小伙子的册子上面显示着许多或真或假的社区居民的签名。</p>
+
+<p><strong>短缺</strong></p>
+
+<p>小伙子杜撰了一个最近多人反映遭受虫害的故事，造成若不及时除虫害，会带来很大损失的规避风险的心理情境。</p>
+
+<p>短短的三五分钟，《影响力》的六大武器全部被小伙子给用上了，虽然运用得有些牵强，而且带着一定的欺骗性质（伪装成社区委员会派来的）。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[还没二够，就奔三了]]></title>
+    <link href="http://luozhaohui.github.io/blog/2013/04/16/thirty/"/>
+    <updated>2013-04-16T18:31:42+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2013/04/16/thirty</id>
+    <content type="html"><![CDATA[<p>某人说：你还没二够，就奔三了。我也是这么想的，三不三，我还真没感觉。记得小时候，三十是个大事，一般都是要办酒席的，我还记得几个叔叔三十的时候办酒席的情景。在儿时的农村，三十岁的人一般都“立”起来了，家庭，子女都有了，且不论在事业/生活上是否真正立起来l了。成长路上，见证了很多叔叔辈的而立之路，而今，岁月无情的年轮终于碾到我了。</p>
+
+<!--more-->
+
+
+<p>夫子曰：“三十而立”。很显然，夫子的标准不适用于张江男。夫张江男，名誉其外，苦逼其内。而我又恰是张江男之一。不知这是不幸中的万幸，抑或万幸中的不幸？在进入而立年之前，我曾想，夫子当时说而立的时候，这个立是指什么样的一种境界呢？我想必定不是婆子，房子，票子。据《论语》上说是指“立于礼”的，若用马斯洛的需求理论来衡量，那又该位于金字塔上的哪一层呢？</p>
+
+<p>今天看到一句话说：“与其说我害怕成为普通人，还不如说我害怕生活，害怕找不到一种自己喜欢的方式去度过人生，害怕不知道什么才是我想要的生活。”心有戚戚焉。或许，每一个人心底都有一对黑白小人，一个说：这就是你的生活，另一个说：这不是你想要的生活。三十岁与二十岁最大的区别是，二十岁真的不知道生活是啥样，三十岁知道生活的一种模式是啥样，却不知道或想知道其它的模式是啥样。其它模式会是啥样呢？或别有洞天，或别有地狱。或许这是我近来对了解不同人很有兴趣的原因之一，每个人都是某种生活模式的镜子。</p>
+
+<p>而立之年，有很多事情需要去做，于家庭，于社会，也会有更多的担当；而立之年，深感好奇心，自由，时间，阅读之重要。然机会均等，鱼与熊掌不可兼得，得学会取舍。</p>
+
+<p>告诫自己：</p>
+
+<pre><code>别光顾着走，而迷失了前行的方向。
+Slow is fast.
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[大宋末年]]></title>
+    <link href="http://luozhaohui.github.io/blog/2012/06/30/tianchao/"/>
+    <updated>2012-06-30T22:46:01+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2012/06/30/tianchao</id>
+    <content type="html"><![CDATA[<p>借用高中一同学的作文名言：如有雷同，纯属巧合。</p>
+
+<p>大宋末年，内患外扰，局势波涛汹涌。话说自艺高胆大的矮凳哥散手之后，江湖中并无王者，江湖管委会遂由东邪水工哥，青帮古月哥，望族子弟帮三方构成。</p>
+
+<p>这三方都非善类，彼此为着长老名额，势力范围明争暗斗。江湖管委会虽然内斗不断，但一般对外口径还算是一致，所以许多暗伤就不为江湖小混混所知也。</p>
+
+<!--more-->
+
+
+<p>江了十年，湖了十年，一眨眼就过去了二十年，江湖看似依旧，实在波涛暗涌。江湖管委会日益庞大，管委会的嫡系徒子徒孙打着爱我江湖的旗号，招摇撞骗，作威作福。这在江湖上引起许多非议，尤其是南方的丐帮意见非常大。</p>
+
+<p>南方丐帮一向有着不怕死敢拼命的传统，百余年前，丐帮孙帮主就大闹了一场，将当时的江湖管委会给赶下来。如今，丐帮深受南洋气候影响，乃至西风吹拂，丐帮帮刊常有震聋发聩的檄文贴出，而民间各路英雄好汉亦或明或暗附和。</p>
+
+<p>江湖管委会大不喜，一时捕快业务繁忙。奈何管委会内部失和，外则金国，倭国，南洋诸国觊觎，难挽局面。时年，国库充军伍仟亿金，捕快费用仟余亿金。江湖管委会又广设钱庄，巧立名目，无形中豪夺了各路江湖好汉的口粮。又值华山将论剑，江湖管委会将重新划分势力范围，亦将试图做出一些力挽管委会一统江湖的举措。</p>
+
+<p>然今江湖非昔江湖也。江湖中出现了若干如飞鸽传书般的神器，芝麻大的小事都能经此类神器瞬间传遍江湖。西方传教人士宣扬的普世价值，印度教宣扬的非暴不合作，以及西域的各种范例在江湖中广为流传。或许再二十年，华山不再论剑。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[再荐《高效能人士的七个习惯》]]></title>
+    <link href="http://luozhaohui.github.io/blog/2012/06/17/seven-habits-more/"/>
+    <updated>2012-06-17T11:54:02+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2012/06/17/seven-habits-more</id>
+    <content type="html"><![CDATA[<p><img src="http://img5.douban.com/mpic/s4510907.jpg" alt="高效能人士的七个习惯" /></p>
+
+<p>最近托张迪同学的福，重读了《<a href="http://book.douban.com/subject/5325618/">高效能人士的七个习惯</a>》这本书（请点击链接查看豆瓣介绍），2008年7月我曾推荐过这本小书，绝对值得花一两包烟钱或一块面膜的钱买来阅读与收藏。</p>
+
+<p>张迪同学曾经的公司给员工人手配备一本，让我很敬佩这家民营公司。如果用7个习惯的话来分析，这家公司的管理层正是在运用习惯四：双赢的思维在管理员工，员工自身成长了，自然不愁公司不成长。</p>
+
+<!--more-->
+
+
+<p>下面透露下书情：以下摘自书中：</p>
+
+<ul>
+<li>习惯一：主动积极（BE PROACTIVE）</li>
+</ul>
+
+
+<p>主动积极即采取主动，为自己过去、现在及未来的行为负责，并依据原则及价值观，而非情绪或外在环境来下决定。主动积极的人是改变的催生者，他们扬弃被动受害者角色，不怨恨别人，发挥了人类四项独特的禀赋&ndash;自觉、良知、想象力和主动意志，同时以由内而外的方式来创造改变，积极面对一切。他们选择创造自己的生命，这也是每个人最基本的决定。</p>
+
+<ul>
+<li>习惯二：以终为始（BEGIN WITH THEN IN MIND）　　</li>
+</ul>
+
+
+<p>所有事物都经过两次的创造&ndash;先是在脑海里酝酿，其次才是实质的创造。个人、家庭、团队和组织在做任何计划时，均先拟处愿景和目标，并据此创造未来，全心投注于自己最重视的原则、价值观、关系及目标之上。对个人、家庭或组织而言，使命宣言可说是愿景的最高形式，它是主要的决策，主宰了所有其他的决定。领导工作的核心，就是在共用的使命、原景和价值观之后，创造出一个文化。</p>
+
+<ul>
+<li>习惯三：要事第一（PUT FIRST THINGS FIRT）</li>
+</ul>
+
+
+<p>要事第一即实质的创造，是梦想（你的目标、愿景、价值观及要事处理顺序）的组织与实践。次要的事情不必摆在第一，要事也不能放在第二。无论迫切性如何，个人与组织均针对要事而来，重点是，把要事放在第一顺位。</p>
+
+<ul>
+<li>习惯四: 双赢思维（THINK WIN）　　</li>
+</ul>
+
+
+<p>双赢思维是一种基于互敬，寻求互惠的思考筐架与心意，目的是更丰盛的机会、财富及资源，而非患不足的敌对式竞争。双赢即非损人利己（赢输），亦非损人利人（输赢）。我们的工作伙伴及其家庭成员要从互赖式的角度来思考（"我们"而非"我"）。双赢思维鼓励我们解决问题，并协助个人找到互惠的解决办法，是一种资讯、力量、认可及报酬的分享。</p>
+
+<ul>
+<li>习惯五：知彼解己（SEEK FIRST TO UNDERSTAND,THEN TO BE UNDERSTOOD）</li>
+</ul>
+
+
+<p>当我们舍弃回答问题心，改以了解心去聆听别人，便能开启真正的沟通，增进彼此关系。对方获得了解后，会觉得收到尊重和认可，进而卸下心防，坦然而谈，双方对彼此的了解也就更流畅自然。知彼需要仁慈心；解已需要勇气，能平衡两者，则可大幅提升沟通的效率。</p>
+
+<ul>
+<li>习惯六：综合综效（SYNERGIZE）　　</li>
+</ul>
+
+
+<p>综合综效的是创造第三种选择&ndash;即非按照我的方式，亦非遵循你的方式，而是第三种远胜过个人之见的办法。它是互相尊重的成果&ndash;不但是了解彼此，甚至是称许彼此的差异，欣赏对方解决问题及掌握机会的手法。个人的力量是团队和家庭统合综效的利基，能使整体获得一加一大于二的成效。</p>
+
+<ul>
+<li>习惯七：不断更新（SHARPEN THE SAW）　　</li>
+</ul>
+
+
+<p>不断更新谈到的是，如何在四个基础生活面向（生理、社会、情感、心智及心灵）中，不断更新自己。这个习惯提升了其他七个习惯的实施效率。对组织而言，七习惯提供愿景、更新及不断的改善，使组织不至呈现老化及疲态，并迈向新的成长之径。对家庭而言，七习惯透过固定的个人及家庭活动，使家庭效能升级，就像建立系统，使家庭日新月异，即是一例。</p>
+
+<p>这七个习惯的关系图如下：</p>
+
+<p><img src="http://i.imgur.com/7g3695I.jpg" alt="七个习惯的关系图" /></p>
+
+<p>作者认为人的成长分三个阶段，并在这三个阶段中不断重复习惯七：不断更新成长。依赖期：在生活，精神上依赖于他人。以“你”为中心，你为我的生活负责，你为我的得失成败买单，这个“你”可以扩大为外部环境；独立期：生活自理，思想独立。以“我”为中心，我为自己的生活负责，我可以靠我自己，我有权选择；互赖期：相互合作，形成 1 + 1 > 2 的效应）。以“我们”为中心，我们可以做到，我们可以合作，共创伟业。</p>
+
+<p>这七个习惯的前三个对从依赖期到独立期的转变非常重要，它们共同影响
+个人领域的成功：</p>
+
+<pre><code>积极主动：个人愿景，想不想的问题；
+以终为始：自我领导，哪个方向目标的问题；
+要事第一：自我管理，如何实施的问题；
+</code></pre>
+
+<p>真正独立的品德能够让我们行事主动，摆脱对环境与他人的依赖。</p>
+
+<p>我多么希望在毕业之前我们大多数个体能具备这样习惯思维，可惜的是咱们的教育系统（无论是学校教育还是家庭教育）实在有点问题。至少我在毕业时是没有达到独立的，反而在毕业之后花了数年的时间来褪去学校教育养成的很多不良依赖思维习惯。</p>
+
+<p>我们都不是一个人在奋斗，所以即便达到个人领域独立的水准，我们还需在融入社会之中，而后三个习惯正是针对这个话题的，它们对从独立期到互赖期的转变非常重要，它们共同影响公众领域的成功：</p>
+
+<pre><code>双赢思维：人际交往的指导原则，输赢才能利益最大化，信任持久化（老顾客就是这样的例子）；
+知彼解己：移情沟通的交流原则，有洗耳恭听，却无闭嘴请听这样的成语，古人也非常明白学会聆听的重要性；
+统合综效：创造性合作的原则，如果我们具有双赢的思维，又能聆听各方的声音，那我们就能充分合作，开创创造性的解法；
+不断更新：保持开放心态，吸取各方面营养，快速成长，这个习惯影响成长的每一个阶段。
+</code></pre>
+
+<p>在这里我想说一点对要事第一的一些体会，七八年前就听<a href="http://www.youku.com/playlist_show/id_5655186_ascending_0_mode_pic.html">余世雄的讲座视频</a>接触到事情分为四种：重要紧急，重要不紧急，紧急不重要，不紧急也不重要。在我的时间管理观念中，我认为重要紧急的事情是放在第一位的，很多时间管理软件设计也是基于这一假设的。其实仔细想想，放在第一位的应该是重要不紧急的事情，只是这类事情因为其不紧急的特性而被我们忽略与拖延了。重要紧急的事情是相当于起火，你瞧神舟大地隔三差五的安全事故就属于此类事情，影帝正因此被戏称救火员，如果我们平时把重要不紧急的事情做好了，比如定期安全检查，遵守安全规范操作，就能减少安全事故这类重要紧急的事情发生。</p>
+
+<p>对于我们个人来说，锻炼身体，修心养性，自我成长学习，维护人际关系等就是这类重要不紧急的事情。如果我们平时不把它们放在第一位，迟早有一天我们得亡羊补不了牢来救火如病倒了，没准备好丧失发展机会等这样的第一类紧急重要的事情。</p>
+]]></content>
+  </entry>
   
 </feed>

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://luozhaohui.github.com/sitemap.xml 
+Sitemap: http://luozhaohui.github.io/sitemap.xml 
