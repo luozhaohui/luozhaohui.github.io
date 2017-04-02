@@ -109,5 +109,5 @@ default_asides: [custom/asides/category_list.html, asides/recent_posts.html, cus
 recent_posts: 5
 
 # Jiathis
-jiathis_share: true
+#jiathis_share: true
 
