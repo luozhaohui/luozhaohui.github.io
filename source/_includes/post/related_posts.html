@@ -1,0 +1,21 @@
+{% if site.related_posts.size > 1 %}
+
+<div class="related-posts" style="font-size:12px;BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 1px solid; BACKGROUND: #f6f6f6; BORDER-TOP: #bbbbbb 1px solid; BORDER-RIGHT: #bbbbbb 1px solid; padding-left: 8px; padding-top: 8px">
+<h3 style="margin-bottom: 0px"> 您也许会喜欢：</h3>
+<ol style="margin-left: 8px">
+{% for post in site.related_posts limit:3 %}
+  	<ul>
+      	<li>
+	      	<article class="post type-post status-publish format-standard hentry">
+				{% capture category %}{{ post.categories | size }}{% endcapture %}
+				<a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
+				<span></span><span></span>
+				<time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
+			</article>
+		</li>
+	</ul>
+{% endfor %}
+<ol>
+</div>
+
+{% endif %}

@@ -15,6 +15,10 @@ single: true
       {% include post/categories.html %}
       {% include post/tags.html %}
       {% include post/license.html %}
+    </p>
+    
+    <p>
+      {% include post/related_posts.html %}
       {% unless page.sharing == false %}
       {% include post/sharing.html %}
       {% endunless %}
