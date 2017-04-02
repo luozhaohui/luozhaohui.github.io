@@ -6,8 +6,11 @@ url: http://luozhaohui.github.io
 title: 飘飘白云
 subtitle: 所读，所看，所思
 author: 飘飘白云
-simple_search: https://www.bing.com/search
 description: 飘飘白云的个人博客
+simple_search: https://www.bing.com/search
+
+category_title_prefix: 分类：
+tag_title_prefix: 标签：
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -48,10 +51,12 @@ excerpt_link: "阅读全文 &rarr;"  # "Continue reading" link text at the botto
 excerpt_separator: "<!--继续阅读-->"
 
 titlecase: true       # Converts page and post titles to titlecase
+post_license: true    # Show license
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+#default_asides: [custom/asides/category_list.html, asides/recent_posts.html, custom/asides/recent_comments.html, custom/asides/weibo.html, custom/asides/douban.html]
+default_asides: [custom/asides/category_list.html, asides/recent_posts.html, custom/asides/tags.html, custom/asides/weibo.html, custom/asides/douban.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -103,6 +108,6 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # 最新文章
 recent_posts: 5
 
-# 博文共享
-#jiathis_share: true
+# Jiathis
+jiathis_share: true
 
