@@ -12,7 +12,7 @@ keywords: 书评, 阅读统计
 ## 2007年阅读统计
 ## 总计阅读 17 本
 ### 评价统计:
-![评价统计](2007_reading_tags.png)
+![评价统计](http://imgur.com/eApuqJp)
 
  > 五星图书 5 本，占比 29.4%  
  > 四星图书 6 本，占比 35.3%  
@@ -22,7 +22,7 @@ keywords: 书评, 阅读统计
 <!--more-->
 
 ### 标签统计:
-![标签统计](2007_reading_tags.png)
+![标签统计](http://imgur.com/rAwritp)
 
  > 文学 16 本  
  > 心理 1 本  

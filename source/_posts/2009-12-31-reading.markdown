@@ -21,7 +21,7 @@ keywords: 书评, 阅读统计
 <!--more-->
 
 ### 标签统计:
-![标签统计](2009_reading_tags.png)
+![标签统计](http://imgur.com/MilhBsH)
 
  > 编程 9 本  
  > 心理 3 本  
