@@ -15,7 +15,7 @@ keywords: 书评, 阅读统计
 
 ## 总计阅读 46 本
 ### 评价统计:
-![评价统计](http://i.imgur.com/553cdL2)
+![评价统计](http://i.imgur.com/553cdL2.png)
 
  > 五星图书 14 本，占比 30.4%  
  > 四星图书 25 本，占比 54.3%  
@@ -25,7 +25,7 @@ keywords: 书评, 阅读统计
 <!--more-->
 
 ### 标签统计:
-![标签统计](http://i.imgur.com/WppBj6Y)
+![标签统计](http://i.imgur.com/WppBj6Y.png)
 
  > 历史 10 本  
  > 编程 9 本  
