@@ -340,3 +340,12 @@ keywords: 书评, 阅读统计
  > 我的评论：这是余英时的文集，但大体上可由“士”这根绳串起来，仅仅确实隋唐以及科举部分。士起源于低级贵族，春秋战国从王官之学到“天下裂”，下层贵族与庶民流动融合，孔子的巨大影响之下，士遂专为文士。士在战国抗争的背景下收到追捧，齐国的“稷下”制度达到顶峰，树立了道高于政的理念。随后大一统政府的控制下，道统渐弱。汉初朝廷尊黄老，体制从秦制（儒表法里），循吏从儒（以吏为师，先富后教）。到魏晋，士不再是战国时的游士而豪族门第，在精神上也走向标新立异的清谈玄理之风。到宋明，新儒家受佛教影响，弥补形而上而成理学、心学，而商业的发达，四民重新异业同道：士魂商才。  
 
 
+##个人阅读年度统计：
+* [2017，34本](https://luozhaohui.github.io/blog/2017/01/01/reading/)
+* [2016，46本](https://luozhaohui.github.io/blog/2016/01/01/reading/)
+* [2015，46本](https://luozhaohui.github.io/blog/2015/01/01/reading/)
+* [2014，65本](https://luozhaohui.github.io/blog/2014/01/01/reading/)
+* [2013，33本](https://luozhaohui.github.io/blog/2013/01/01/reading/)
+* [2012，43本](https://luozhaohui.github.io/blog/2012/01/01/reading/)
+* [2011，41本](https://luozhaohui.github.io/blog/2011/01/01/reading/)
+* [2010，47本](https://luozhaohui.github.io/blog/2010/01/01/reading/)

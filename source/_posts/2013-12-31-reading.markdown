@@ -248,3 +248,12 @@ keywords: 书评, 阅读统计
  > 我的评论：《社会心理学》精简版，就当是别人作的读书笔记吧。还是推荐看《社》那本的。。。  
 
 
+##个人阅读年度统计：
+* [2017，34本](https://luozhaohui.github.io/blog/2017/01/01/reading/)
+* [2016，46本](https://luozhaohui.github.io/blog/2016/01/01/reading/)
+* [2015，46本](https://luozhaohui.github.io/blog/2015/01/01/reading/)
+* [2014，65本](https://luozhaohui.github.io/blog/2014/01/01/reading/)
+* [2013，33本](https://luozhaohui.github.io/blog/2013/01/01/reading/)
+* [2012，43本](https://luozhaohui.github.io/blog/2012/01/01/reading/)
+* [2011，41本](https://luozhaohui.github.io/blog/2011/01/01/reading/)
+* [2010，47本](https://luozhaohui.github.io/blog/2010/01/01/reading/)
