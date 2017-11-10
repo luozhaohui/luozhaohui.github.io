@@ -7,6 +7,7 @@ categories: [书评影评]
 tags: [书评]
 description: 2017
 keywords: 书评, 阅读统计
+published: false
 ---
 
 ## 2017年阅读统计，本页面由代码自动生成
@@ -310,7 +311,7 @@ keywords: 书评, 阅读统计
  > 我的评论：通过科学观察写成的有关黑猩猩的江湖，集科学性、故事性、启发性于一体，佩服作者的专注与热情。培养某个或某些兴趣是最好的成长。  
 
 
-##个人阅读年度统计：
+##私人阅读年度统计：
 * [2016，46本](https://luozhaohui.github.io/blog/2017/01/01/reading/)
 * [2015，46本](https://luozhaohui.github.io/blog/2016/01/01/reading/)
 * [2014，65本](https://luozhaohui.github.io/blog/2015/01/01/reading/)

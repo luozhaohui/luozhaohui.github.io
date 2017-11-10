@@ -25,6 +25,9 @@ keywords: 推荐书单, 心智成长, 读书如抽丝
 通过整理这个豆列，我在知乎上系统地回答了[有哪些让人三观端正的书籍推荐？](http://www.zhihu.com/question/29114634/answer/44400202?group_id=578888300425814016)这个问题。
 
 其他推荐书单：
-> [读书如抽丝：分类推荐书单](https://github.com/luozhaohui/books/blob/master/reading/booklist.md)  
-> [读书如抽丝：豆瓣各主题图书 Top 100](https://github.com/luozhaohui/books)  
+> [分类推荐书单](https://github.com/luozhaohui/books/blob/master/reading/booklist.md)  
+> [豆瓣各主题图书 Top 100](https://github.com/luozhaohui/books)  
+
+私人阅读：
+> [私人阅读年度统计](https://github.com/luozhaohui/books/blob/master/reading/annual_readings.md)  
 

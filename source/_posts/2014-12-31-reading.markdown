@@ -519,7 +519,7 @@ keywords: 书评, 阅读统计
  > 我的评论：植物也是有“意识的”，能看，能嗅，能触，有方位感，也有记忆，神奇吧。这本小小的科普书通过对比人类的感官系统，讲述植物如何感知外界除了听觉之外的各种刺激，有满足探奇增进见识之效用。  
 
 
-##个人阅读年度统计：
+##私人阅读年度统计：
 * [2016，46本](https://luozhaohui.github.io/blog/2017/01/01/reading/)
 * [2015，46本](https://luozhaohui.github.io/blog/2016/01/01/reading/)
 * [2014，65本](https://luozhaohui.github.io/blog/2015/01/01/reading/)
