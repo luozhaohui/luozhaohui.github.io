@@ -4,7 +4,7 @@
   <title><![CDATA[飘飘白云]]></title>
   <link href="http://luozhaohui.github.io/atom.xml" rel="self"/>
   <link href="http://luozhaohui.github.io/"/>
-  <updated>2017-11-13T11:37:23+08:00</updated>
+  <updated>2017-11-13T16:13:38+08:00</updated>
   <id>http://luozhaohui.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -3751,7 +3751,7 @@ P(红球|乙)：乙箱子中拿到红球的概率</p></blockquote>
 
 <p>我将详细介绍这个工具的编写过程，希望没有学习过编程的人也能够学会一些简单的Python语法来修改这个脚本工具，以满足他们将其他类型的博客导出为文本格式。这也是我第一次学习和使用Python，所以相信我，你一定也可以将自己的博客导出为想要的文本格式。</p>
 
-<p>本文源代码在这里：<a href="https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py">ExportCSDNBlog.py</a></p>
+<p>本文源代码在这里：<a href="https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py">ExportCSDNBlog.py</a></p>
 
 <!--more-->
 
@@ -3837,7 +3837,7 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </ul>
 
 
-<figure class='code'><figcaption><span>获取所有的页面的 url</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>获取所有的页面的 url</span><a href='https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -3870,14 +3870,46 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <span class='line-number'>31</span>
 <span class='line-number'>32</span>
 <span class='line-number'>33</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-</span><span class='line'>    <span class="c"># 获取所有的页面的 url</span>
-</span><span class='line'>    <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">getHtml</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span><span class='line'>    <span class="k">try</span> <span class="p">:</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">gUseCookie</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">opener</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">build_opener</span><span class="p">()</span>
+</span><span class='line'>            <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">gHeaders</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+</span><span class='line'>                <span class="n">opener</span><span class="o">.</span><span class="n">addheaders</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">))</span>
+</span><span class='line'>            <span class="n">response</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;utf-8&#39;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">else</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">gHeaders</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+</span><span class='line'>            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;utf-8&#39;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">except</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">URLError</span><span class="p">,</span> <span class="n">e</span> <span class="p">:</span>
+</span><span class='line'>        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="s">&quot;code&quot;</span><span class="p">):</span>
+</span><span class='line'>            <span class="k">print</span> <span class="s">&quot;The server couldn&#39;t fulfill the request: &quot;</span> <span class="o">+</span> <span class="n">url</span>
+</span><span class='line'>            <span class="k">print</span> <span class="s">&quot;Error code: </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">e</span><span class="o">.</span><span class="n">code</span>
+</span><span class='line'>        <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="s">&quot;reason&quot;</span><span class="p">):</span>
+</span><span class='line'>            <span class="k">print</span> <span class="s">&quot;We failed to reach a server. Please check your url: &quot;</span> <span class="o">+</span> <span class="n">url</span> <span class="o">+</span> <span class="s">&quot;, and read the Reason.&quot;</span>
+</span><span class='line'>            <span class="k">print</span> <span class="s">&quot;Reason: </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">e</span><span class="o">.</span><span class="n">reason</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">data</span>
 </span><span class='line'>
-</span><span class='line'>    <span class="c">#print data</span>
-</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">page</span> <span class="o">=</span> <span class="n">getHtml</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
 </span><span class='line'>
 </span><span class='line'>    <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="bp">None</span>
 </span><span class='line'>    <span class="n">pageListDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;papelist&quot;</span><span class="p">)</span>
@@ -3890,7 +3922,7 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </span><span class='line'>    <span class="k">if</span> <span class="n">lastArticleHref</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
 </span><span class='line'>        <span class="k">return</span> <span class="p">[]</span>
 </span><span class='line'>
-</span><span class='line'>    <span class="c">#print &quot; &gt; last page href:&quot; + lastArticleHref</span>
+</span><span class='line'>    <span class="k">print</span> <span class="s">&quot; &gt; last page href:&quot;</span> <span class="o">+</span> <span class="n">lastArticleHref</span>
 </span><span class='line'>    <span class="n">lastPageIndex</span> <span class="o">=</span> <span class="n">lastArticleHref</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span>
 </span><span class='line'>    <span class="n">lastPageNum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lastArticleHref</span><span class="p">[</span><span class="n">lastPageIndex</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
 </span><span class='line'>    <span class="n">urlInfo</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">lastArticleHref</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">lastPageIndex</span><span class="p">]</span>
@@ -3949,7 +3981,7 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </ul>
 
 
-<figure class='code'><figcaption><span>根据page来获取文章链接</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>根据page来获取文章链接</span><a href='https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -3992,13 +4024,6 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <span class='line-number'>41</span>
 <span class='line-number'>42</span>
 <span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
 </pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">getArticleList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
 </span><span class='line'>    <span class="c"># 获取所有的文章的 url/title</span>
 </span><span class='line'>    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="n">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
@@ -4006,32 +4031,25 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </span><span class='line'>    <span class="n">articleListDocs</span> <span class="o">=</span> <span class="p">[]</span>
 </span><span class='line'>
 </span><span class='line'>    <span class="n">strPage</span> <span class="o">=</span> <span class="s">&quot; &gt; parsing page {0}&quot;</span>
-</span><span class='line'>    <span class="n">pageNum</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class='line'>    <span class="k">global</span> <span class="n">gRetryCount</span>
 </span><span class='line'>    <span class="k">for</span> <span class="n">pageUrl</span> <span class="ow">in</span> <span class="n">pageUrlList</span><span class="p">:</span>
 </span><span class='line'>        <span class="n">retryCount</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class='line'>        <span class="n">pageNum</span> <span class="o">=</span> <span class="n">pageNum</span> <span class="o">+</span> <span class="mi">1</span>
-</span><span class='line'>        <span class="n">pageNumStr</span> <span class="o">=</span> <span class="n">strPage</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pageNum</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">print</span> <span class="n">pageNumStr</span>
+</span><span class='line'>        <span class="k">print</span> <span class="s">&quot; &gt; parsing page {0}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
 </span><span class='line'>
-</span><span class='line'>        <span class="k">while</span> <span class="n">retryCount</span> <span class="o">&lt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
-</span><span class='line'>            <span class="k">try</span><span class="p">:</span>
-</span><span class='line'>                <span class="n">retryCount</span> <span class="o">=</span> <span class="n">retryCount</span> <span class="o">+</span> <span class="mi">1</span>
-</span><span class='line'>                <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
-</span><span class='line'>                <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
+</span><span class='line'>        <span class="n">slow_down</span><span class="p">()</span> <span class="c">#访问太快会不响应</span>
+</span><span class='line'>        <span class="n">page</span> <span class="o">=</span> <span class="n">getHtml</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">);</span>
+</span><span class='line'>        <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
 </span><span class='line'>
-</span><span class='line'>                <span class="c">#print data</span>
-</span><span class='line'>                <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</span><span class='line'>        <span class="c"># 获取置顶文章</span>
+</span><span class='line'>        <span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">topArticleDocs</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span>
 </span><span class='line'>
-</span><span class='line'>                <span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
-</span><span class='line'>                <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
-</span><span class='line'>                <span class="k">break</span>
-</span><span class='line'>            <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span> <span class="n">e</span><span class="p">:</span>
-</span><span class='line'>                <span class="k">print</span> <span class="s">&quot;getArticleList exception:</span><span class="si">%s</span><span class="s">, url:</span><span class="si">%s</span><span class="s">, retry count:</span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">pageUrl</span><span class="p">,</span> <span class="n">retryCount</span><span class="p">)</span>
-</span><span class='line'>                <span class="k">pass</span>
+</span><span class='line'>        <span class="c"># 获取文章</span>
+</span><span class='line'>        <span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
+</span><span class='line'>        <span class="k">if</span> <span class="n">articleDocs</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class='line'>            <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">break</span>
 </span><span class='line'>
 </span><span class='line'>    <span class="n">artices</span> <span class="o">=</span> <span class="p">[]</span>
 </span><span class='line'>    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
@@ -4054,14 +4072,26 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p></p>
 
-<p>从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码是下面这三行：</p>
+<p>从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码如下面：</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
-</span><span class='line'><span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'>    <span class="c"># 获取置顶文章</span>
+</span><span class='line'>    <span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">topArticleDocs</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c"># 获取文章</span>
+</span><span class='line'>    <span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">articleDocs</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -4121,7 +4151,7 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </ul>
 
 
-<figure class='code'><figcaption><span>根据文章链接获取文章html内容并解析转换为Markdown文本</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>根据文章链接获取文章html内容并解析转换为Markdown文本</span><a href='https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -4150,75 +4180,17 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <span class='line-number'>27</span>
 <span class='line-number'>28</span>
 <span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
 </span><span class='line'>    <span class="c"># 下载文章，并保存为 markdown 格式</span>
 </span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; download: &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
 </span><span class='line'>
-</span><span class='line'>    <span class="n">data</span> <span class="o">=</span> <span class="bp">None</span>
-</span><span class='line'>    <span class="n">title</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
 </span><span class='line'>    <span class="n">categories</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
 </span><span class='line'>    <span class="n">content</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
 </span><span class='line'>    <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
 </span><span class='line'>
-</span><span class='line'>    <span class="k">global</span> <span class="n">gRetryCount</span>
-</span><span class='line'>    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class='line'>    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-</span><span class='line'>        <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;=</span> <span class="n">gRetryCount</span><span class="p">:</span>
-</span><span class='line'>            <span class="k">break</span>
-</span><span class='line'>        <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-</span><span class='line'>        <span class="k">try</span><span class="p">:</span>
-</span><span class='line'>            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="c">#访问太快会不响应</span>
-</span><span class='line'>            <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="p">)</span>
-</span><span class='line'>            <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</span><span class='line'>            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class='line'>            <span class="k">break</span>
-</span><span class='line'>        <span class="k">except</span> <span class="ne">Exception</span><span class="p">,</span><span class="n">e</span><span class="p">:</span>
-</span><span class='line'>            <span class="n">exstr</span> <span class="o">=</span> <span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span>
-</span><span class='line'>            <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span> <span class="o">+</span> <span class="s">&quot;, retry: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;, error:&quot;</span> <span class="o">+</span> <span class="n">exstr</span><span class="p">)</span>
-</span><span class='line'>            <span class="k">pass</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">if</span> <span class="n">data</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
-</span><span class='line'>        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; failed to download &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">return</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="c">#print data</span>
-</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
-</span><span class='line'>    <span class="n">titleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_title&quot;</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">for</span> <span class="n">titleDoc</span> <span class="ow">in</span> <span class="n">titleDocs</span><span class="p">:</span>
-</span><span class='line'>        <span class="n">titleStr</span> <span class="o">=</span> <span class="n">titleDoc</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class='line'>        <span class="n">title</span> <span class="o">=</span> <span class="n">titleStr</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class='line'>        <span class="c">#log(&quot; &gt;&gt; title: &quot; + title)</span>
+</span><span class='line'>    <span class="n">slow_down</span><span class="p">();</span>
+</span><span class='line'>    <span class="n">page</span> <span class="o">=</span> <span class="n">getHtml</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
 </span><span class='line'>
 </span><span class='line'>    <span class="n">manageDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_manage&quot;</span><span class="p">)</span>
 </span><span class='line'>    <span class="k">for</span> <span class="n">managerDoc</span> <span class="ow">in</span> <span class="n">manageDocs</span><span class="p">:</span>
@@ -4244,7 +4216,7 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 
 <p>同前面的分析类似，在这里通过访问具体文章页面获得html内容，从中解析出文章标题，分类，发表时间，文章内容信息。然后把这些内容传递给函数exportToMarkdown，在其中生成相应的Markdown文本文件。值得一提的是，在解析文章内容信息时，由于html文档内容有一些特殊的标签或转义符号，需要作特殊处理，这些特殊处理在函数htmlContent2String中进行。目前只导出了所有的文本内容，图片，url链接以及表格都没有处理，后续我会尽量完善这些转换。</p>
 
-<figure class='code'><figcaption><span>转换html文档内容</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>转换html文档内容</span><a href='https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -4276,7 +4248,7 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </ul>
 
 
-<figure class='code'><figcaption><span>生成Markdown文本文件</span><a href='https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>生成Markdown文本文件</span><a href='https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>

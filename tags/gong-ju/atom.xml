@@ -4,7 +4,7 @@
   <title><![CDATA[标签：工具 | 飘飘白云]]></title>
   <link href="http://luozhaohui.github.io/tags/gong-ju/atom.xml" rel="self"/>
   <link href="http://luozhaohui.github.io/"/>
-  <updated>2017-11-13T11:37:23+08:00</updated>
+  <updated>2017-11-13T16:13:38+08:00</updated>
   <id>http://luozhaohui.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -114,7 +114,7 @@ end
 
 <p>我将详细介绍这个工具的编写过程，希望没有学习过编程的人也能够学会一些简单的Python语法来修改这个脚本工具，以满足他们将其他类型的博客导出为文本格式。这也是我第一次学习和使用Python，所以相信我，你一定也可以将自己的博客导出为想要的文本格式。</p>
 
-<p>本文源代码在这里：<a href="https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py">ExportCSDNBlog.py</a></p>
+<p>本文源代码在这里：<a href="https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py">ExportCSDNBlog.py</a></p>
 
 <!--more-->
 
@@ -200,14 +200,31 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 </ul>
 
 
-<pre><code class="python 获取所有的页面的 url https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source">def getPageUrlList(url):
-    # 获取所有的页面的 url
-    request = urllib2.Request(url, None, header)
-    response = urllib2.urlopen(request)
-    data = response.read()
+<pre><code class="python 获取所有的页面的 url https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py View Source">
+def getHtml(url):
+    try :
+        if gUseCookie:
+            opener = urllib2.build_opener()
+            for k, v in gHeaders.items():
+                opener.addheaders.append((k, v))
+            response = opener.open(url)
+            data = response.read().decode('utf-8')
+        else:
+            request = urllib2.Request(url, None, gHeaders)
+            response = urllib2.urlopen(request)
+            data = response.read().decode('utf-8')
+    except urllib2.URLError, e :
+        if hasattr(e, "code"):
+            print "The server couldn't fulfill the request: " + url
+            print "Error code: %s" % e.code
+        elif hasattr(e, "reason"):
+            print "We failed to reach a server. Please check your url: " + url + ", and read the Reason."
+            print "Reason: %s" % e.reason
+    return data
 
-    #print data
-    soup = BeautifulSoup(data)
+def getPageUrlList(url):
+    page = getHtml(url)
+    soup = BeautifulSoup(page)
 
     lastArticleHref = None
     pageListDocs = soup.find_all(id="papelist")
@@ -220,7 +237,7 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
     if lastArticleHref == None:
         return []
 
-    #print " &gt; last page href:" + lastArticleHref
+    print " &gt; last page href:" + lastArticleHref
     lastPageIndex = lastArticleHref.rfind("/")
     lastPageNum = int(lastArticleHref[lastPageIndex+1:])
     urlInfo = "http://blog.csdn.net" + lastArticleHref[0:lastPageIndex]
@@ -269,32 +286,25 @@ C:\Python2.7\BeautifulSoup&gt;setup.py install
 <pre><code>articleListDocs = []
 
 strPage = " &gt; parsing page {0}"
-pageNum = 0
-global gRetryCount
 for pageUrl in pageUrlList:
     retryCount = 0
-    pageNum = pageNum + 1
-    pageNumStr = strPage.format(pageNum)
-    print pageNumStr
+    print " &gt; parsing page {0}".format(pageUrl)
 
-    while retryCount &lt;= gRetryCount:
-        try:
-            retryCount = retryCount + 1
-            time.sleep(1.0) #访问太快会不响应
-            request = urllib2.Request(pageUrl, None, header)
-            response = urllib2.urlopen(request)
-            data = response.read().decode('UTF-8')
+    slow_down() #访问太快会不响应
+    page = getHtml(pageUrl);
+    soup = BeautifulSoup(page)
 
-            #print data
-            soup = BeautifulSoup(data)
+    # 获取置顶文章
+    topArticleDocs = soup.find_all(id="article_toplist")
+    if topArticleDocs != None:
+        articleListDocs = articleListDocs + topArticleDocs
 
-            topArticleDocs = soup.find_all(id="article_toplist")
-            articleDocs = soup.find_all(id="article_list")
-            articleListDocs = articleListDocs + topArticleDocs + articleDocs
-            break
-        except Exception, e:
-            print "getArticleList exception:%s, url:%s, retry count:%d" % (e, pageUrl, retryCount)
-            pass
+    # 获取文章
+    articleDocs = soup.find_all(id="article_list")
+    if articleDocs != None:
+        articleListDocs = articleListDocs + articleDocs
+
+    break
 
 artices = []
 topTile = "[置顶]"
@@ -315,12 +325,18 @@ return artices
 </code></pre>
 
 <pre><code class="">
-从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码是下面这三行：
+从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码如下面：
 </code></pre>
 
-<pre><code>topArticleDocs = soup.find_all(id="article_toplist")
-articleDocs = soup.find_all(id="article_list")
-articleListDocs = articleListDocs + topArticleDocs + articleDocs
+<pre><code>    # 获取置顶文章
+    topArticleDocs = soup.find_all(id="article_toplist")
+    if topArticleDocs != None:
+        articleListDocs = articleListDocs + topArticleDocs
+
+    # 获取文章
+    articleDocs = soup.find_all(id="article_list")
+    if articleDocs != None:
+        articleListDocs = articleListDocs + articleDocs
 </code></pre>
 
 <pre><code class="">
@@ -357,46 +373,17 @@ article_toplist示例：(article_list的格式是类似的)
 * 根据文章链接获取文章html内容并解析转换为Markdown文本
 </code></pre>
 
-<p>def download(url, output):
+<p>def download(title, url, output):
     # 下载文章，并保存为 markdown 格式
     log(&ldquo; >> download: &rdquo; + url)</p>
 
-<pre><code>data = None
-title = ""
-categories = ""
+<pre><code>categories = ""
 content = ""
 postDate = datetime.datetime.now()
 
-global gRetryCount
-count = 0
-while True:
-    if count &gt;= gRetryCount:
-        break
-    count = count + 1
-    try:
-        time.sleep(2.0) #访问太快会不响应
-        request = urllib2.Request(url, None, header)
-        response = urllib2.urlopen(request)
-        data = response.read().decode('UTF-8')
-        break
-    except Exception,e:
-        exstr = traceback.format_exc()
-        log(" &gt;&gt; failed to download " + url + ", retry: " + str(count) + ", error:" + exstr)
-        pass
-
-if data == None:
-    log(" &gt;&gt; failed to download " + url)
-    return
-
-#print data
-soup = BeautifulSoup(data)
-
-topTile = "[置顶]"
-titleDocs = soup.find_all("div", "article_title")
-for titleDoc in titleDocs:
-    titleStr = titleDoc.a.get_text().encode('UTF-8')
-    title = titleStr.replace(topTile, '').strip()
-    #log(" &gt;&gt; title: " + title)
+slow_down();
+page = getHtml(url)
+soup = BeautifulSoup(page)
 
 manageDocs = soup.find_all("div", "article_manage")
 for managerDoc in manageDocs:
