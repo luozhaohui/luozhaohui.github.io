@@ -15,7 +15,7 @@ keywords: 博客导出工具, Python
 
 我将详细介绍这个工具的编写过程，希望没有学习过编程的人也能够学会一些简单的Python语法来修改这个脚本工具，以满足他们将其他类型的博客导出为文本格式。这也是我第一次学习和使用Python，所以相信我，你一定也可以将自己的博客导出为想要的文本格式。
 
-本文源代码在这里：[ExportCSDNBlog.py](https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py)
+本文源代码在这里：[ExportCSDNBlog.py](https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py)
 
 <!--more-->
 
@@ -85,15 +85,32 @@ Windows下启动命令行，依次进入如下目录，执行setup.py install进
 
 * 获取页面链接的代码：
 
-``` python 获取所有的页面的 url https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source
-def getPageUrlList(url):
-    # 获取所有的页面的 url
-    request = urllib2.Request(url, None, header)
-    response = urllib2.urlopen(request)
-    data = response.read()
+``` python 获取所有的页面的 url https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py View Source
 
-    #print data
-    soup = BeautifulSoup(data)
+def getHtml(url):
+    try :
+        if gUseCookie:
+            opener = urllib2.build_opener()
+            for k, v in gHeaders.items():
+                opener.addheaders.append((k, v))
+            response = opener.open(url)
+            data = response.read().decode('utf-8')
+        else:
+            request = urllib2.Request(url, None, gHeaders)
+            response = urllib2.urlopen(request)
+            data = response.read().decode('utf-8')
+    except urllib2.URLError, e :
+        if hasattr(e, "code"):
+            print "The server couldn't fulfill the request: " + url
+            print "Error code: %s" % e.code
+        elif hasattr(e, "reason"):
+            print "We failed to reach a server. Please check your url: " + url + ", and read the Reason."
+            print "Reason: %s" % e.reason
+    return data
+
+def getPageUrlList(url):
+    page = getHtml(url)
+    soup = BeautifulSoup(page)
 
     lastArticleHref = None
     pageListDocs = soup.find_all(id="papelist")
@@ -106,7 +123,7 @@ def getPageUrlList(url):
     if lastArticleHref == None:
         return []
     
-    #print " > last page href:" + lastArticleHref
+    print " > last page href:" + lastArticleHref
     lastPageIndex = lastArticleHref.rfind("/")
     lastPageNum = int(lastArticleHref[lastPageIndex+1:])
     urlInfo = "http://blog.csdn.net" + lastArticleHref[0:lastPageIndex]
@@ -145,7 +162,8 @@ def getPageUrlList(url):
 
 * 根据page来获取文章链接的代码：
 
-``` python 根据page来获取文章链接 https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source
+``` python 根据page来获取文章链接 https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py View Source
+
 def getArticleList(url):
     # 获取所有的文章的 url/title
     pageUrlList = getPageUrlList(url)
@@ -153,32 +171,25 @@ def getArticleList(url):
     articleListDocs = []
 
     strPage = " > parsing page {0}"
-    pageNum = 0
-    global gRetryCount
     for pageUrl in pageUrlList:
         retryCount = 0
-        pageNum = pageNum + 1
-        pageNumStr = strPage.format(pageNum)
-        print pageNumStr
+        print " > parsing page {0}".format(pageUrl)
 
-        while retryCount <= gRetryCount:
-            try:
-                retryCount = retryCount + 1
-                time.sleep(1.0) #访问太快会不响应
-                request = urllib2.Request(pageUrl, None, header)
-                response = urllib2.urlopen(request)
-                data = response.read().decode('UTF-8')
-                
-                #print data
-                soup = BeautifulSoup(data)
-                
-                topArticleDocs = soup.find_all(id="article_toplist")
-                articleDocs = soup.find_all(id="article_list")
-                articleListDocs = articleListDocs + topArticleDocs + articleDocs
-                break
-            except Exception, e:
-                print "getArticleList exception:%s, url:%s, retry count:%d" % (e, pageUrl, retryCount)
-                pass
+        slow_down() #访问太快会不响应
+        page = getHtml(pageUrl);
+        soup = BeautifulSoup(page)
+        
+        # 获取置顶文章
+        topArticleDocs = soup.find_all(id="article_toplist")
+        if topArticleDocs != None:
+            articleListDocs = articleListDocs + topArticleDocs
+
+        # 获取文章
+        articleDocs = soup.find_all(id="article_list")
+        if articleDocs != None:
+            articleListDocs = articleListDocs + articleDocs
+
+        break
     
     artices = []
     topTile = "[置顶]"
@@ -196,14 +207,21 @@ def getArticleList(url):
 
     log("total articles: " + str(len(artices)) + "\n")
     return artices
+
 ``` 
 
-从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码是下面这三行：
+从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码如下面：
 
 ``` python
-    topArticleDocs = soup.find_all(id="article_toplist")
-    articleDocs = soup.find_all(id="article_list")
-    articleListDocs = articleListDocs + topArticleDocs + articleDocs
+        # 获取置顶文章
+        topArticleDocs = soup.find_all(id="article_toplist")
+        if topArticleDocs != None:
+            articleListDocs = articleListDocs + topArticleDocs
+
+        # 获取文章
+        articleDocs = soup.find_all(id="article_list")
+        if articleDocs != None:
+            articleListDocs = articleListDocs + articleDocs
 ``` 
 
 从page的html内容中查找置顶的文章（article_toplist）以及普通的文章（article_list）的tag对象，然后将这些tag保存到articleListDocs中。
@@ -237,47 +255,19 @@ article_toplist示例：(article_list的格式是类似的)
 
 * 根据文章链接获取文章html内容并解析转换为Markdown文本
 
-``` python 根据文章链接获取文章html内容并解析转换为Markdown文本 https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source
-def download(url, output):
+``` python 根据文章链接获取文章html内容并解析转换为Markdown文本 https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py View Source
+
+def download(title, url, output):
     # 下载文章，并保存为 markdown 格式
     log(" >> download: " + url)
 
-    data = None
-    title = ""
     categories = ""
     content = ""
     postDate = datetime.datetime.now()
     
-    global gRetryCount
-    count = 0
-    while True:
-        if count >= gRetryCount:
-            break
-        count = count + 1
-        try:
-            time.sleep(2.0) #访问太快会不响应
-            request = urllib2.Request(url, None, header)
-            response = urllib2.urlopen(request)
-            data = response.read().decode('UTF-8')
-            break
-        except Exception,e:
-            exstr = traceback.format_exc()
-            log(" >> failed to download " + url + ", retry: " + str(count) + ", error:" + exstr)
-            pass
-
-    if data == None:
-        log(" >> failed to download " + url)
-        return
-
-    #print data
-    soup = BeautifulSoup(data)
-
-    topTile = "[置顶]"
-    titleDocs = soup.find_all("div", "article_title")
-    for titleDoc in titleDocs:
-        titleStr = titleDoc.a.get_text().encode('UTF-8')
-        title = titleStr.replace(topTile, '').strip()
-        #log(" >> title: " + title)
+    slow_down();
+    page = getHtml(url)
+    soup = BeautifulSoup(page)
 
     manageDocs = soup.find_all("div", "article_manage")
     for managerDoc in manageDocs:
@@ -296,11 +286,12 @@ def download(url, output):
         content = htmlContent2String(htmlContent)
 
     exportToMarkdown(output, postDate, categories, title, content)
+
 ``` 
 
 同前面的分析类似，在这里通过访问具体文章页面获得html内容，从中解析出文章标题，分类，发表时间，文章内容信息。然后把这些内容传递给函数exportToMarkdown，在其中生成相应的Markdown文本文件。值得一提的是，在解析文章内容信息时，由于html文档内容有一些特殊的标签或转义符号，需要作特殊处理，这些特殊处理在函数htmlContent2String中进行。目前只导出了所有的文本内容，图片，url链接以及表格都没有处理，后续我会尽量完善这些转换。
 
-``` python 转换html文档内容 https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source
+``` python 转换html文档内容 https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py View Source
 def htmlContent2String(contentStr):
     patternImg = re.compile(r'(<img.+?src=")(.+?)(".+ />)')
     patternHref = re.compile(r'(<a.+?href=")(.+?)(".+?>)(.+?)(</a>)')
@@ -317,7 +308,7 @@ def htmlContent2String(contentStr):
 
 * 生成Markdown文本文件
 
-``` python 生成Markdown文本文件 https://github.com/kesalin/PythonSnippet/blob/master/ExportCSDNBlog.py View Source
+``` python 生成Markdown文本文件 https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py View Source
 def exportToMarkdown(exportDir, postdate, categories, title, content):
     titleDate = postdate.strftime('%Y-%m-%d')
     contentDate = postdate.strftime('%Y-%m-%d %H:%M:%S %z')
