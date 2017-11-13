@@ -7,7 +7,7 @@ title: 飘飘白云
 subtitle: 所读，所看，所思
 author: 飘飘白云
 description: 飘飘白云的个人博客
-simple_search: https://www.bing.com/search
+simple_search: https://www.bing.com/search/
 
 category_title_prefix: 分类：
 tag_title_prefix: 标签：
@@ -96,7 +96,7 @@ default_asides: [custom/asides/category_list.html, asides/recent_posts.html, cus
 #delicious_count: 3
 
 # Disqus Comments
-#disqus_short_name:
+#disqus_short_name:https-luozhaohui-github-io
 #disqus_show_comment_count: false
 
 # Google Analytics
