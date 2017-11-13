@@ -96,8 +96,8 @@ default_asides: [custom/asides/category_list.html, asides/recent_posts.html, cus
 #delicious_count: 3
 
 # Disqus Comments
-#disqus_short_name:https-luozhaohui-github-io
-#disqus_show_comment_count: false
+disqus_short_name: https-luozhaohui-github-io
+disqus_show_comment_count: true
 
 # Google Analytics
 #google_analytics_tracking_id:
