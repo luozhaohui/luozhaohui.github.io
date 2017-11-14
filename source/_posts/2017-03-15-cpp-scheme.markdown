@@ -20,6 +20,8 @@ keywords: C++, Scheme
 
 如果你对<code>Scheme</code>感兴趣，推荐使用[drracket](http://racket-lang.org/)这个</ode>GUI</code>解释器，入门教程有：[How to Design Programs](http://www.htdp.org/)，高级教程有：[SICP](https://book.douban.com/subject/1148282/)。
 
+<!--more-->
+
 ### Scheme中的list及相关操作
 <code>list</code>可以说是<code>Lisp</code>系语言的根基，其名就得自于<code>**LIS**t **P**rocessor</code>，其重要性就像文件概念之于<code>unix</code>。
 
