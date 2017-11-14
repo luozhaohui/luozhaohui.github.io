@@ -4,7 +4,7 @@
   <title><![CDATA[分类：软件开发 | 飘飘白云]]></title>
   <link href="http://luozhaohui.github.io/blog/categories/ruan-jian-kai-fa/atom.xml" rel="self"/>
   <link href="http://luozhaohui.github.io/"/>
-  <updated>2017-11-14T16:19:05+08:00</updated>
+  <updated>2017-11-14T17:51:24+08:00</updated>
   <id>http://luozhaohui.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -31,6 +31,9 @@
 <p>它是一个小巧而又强大的语言，作为一个多用途的编程语言，它可以作为脚本语言使用，也可以作为应用软件的扩展语言来使用，它具有元语言特性，还有很多独到的特色,以致于它被称为编程语言中的"皇后"。</p>
 
 <p>如果你对<code>Scheme</code>感兴趣，推荐使用<a href="http://racket-lang.org/">drracket</a>这个</ode>GUI</code>解释器，入门教程有：<a href="http://www.htdp.org/">How to Design Programs</a>，高级教程有：<a href="https://book.douban.com/subject/1148282/">SICP</a>。</p>
+
+<!--more-->
+
 
 <h3>Scheme中的list及相关操作</h3>
 
