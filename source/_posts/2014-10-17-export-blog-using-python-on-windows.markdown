@@ -3,7 +3,7 @@ layout: post
 title: "用Python编写博客导出工具"
 date: 2014-10-12 08:35:02 +0800
 comments: true
-categories: [工具软件, 软件开发]
+categories: [软件开发]
 tags: [Python, 工具]
 description: 用Python编写博客导出工具
 keywords: 博客导出工具, Python
