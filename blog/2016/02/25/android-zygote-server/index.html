@@ -1,0 +1,1987 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Android5 Zygote 与 SystemServer 启动流程分析 - 飘飘白云</title>
+  <meta name="author" content="飘飘白云">
+
+  
+  <meta name="description" content="Android5 Zygote 与 SystemServer 启动流程分析">
+  <meta name="keywords" content="android, zygote, system server">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://luozhaohui.github.io/blog/2016/02/25/android-zygote-server/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="飘飘白云" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  <script src="//libs.baidu.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">飘飘白云</a></h1>
+  
+    <h2>所读，所看，所思</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.bing.com/search/" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="luozhaohui.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="搜索..."/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">首页</a></li>
+  <li><a href="/blog/archives">所有文章</a></li>
+  <!-- <li><a href="/blog/archives/tags.html">标签</a></li> -->
+  <li><a href="/books">读书如抽丝</a></li>
+  <li><a href="/about">关于我</a></li>
+</ul>
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Android5 Zygote 与 SystemServer 启动流程分析</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2016-02-25T22:13:20+08:00'><span class='date'>2016-02-25</span> <span class='time'>10:13 pm</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://luozhaohui.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>前言</h2>
+
+<p><code>Android5.0.1</code> 的启动流程与之前的版本相比变化并不大，OK，变化虽然还是有：<code>SystemServer</code> 启动过程的 <code>init1()</code>, <code>init2()</code>没有了，但主干流程依然不变：<code>Linux</code> 内核加载完毕之后，首先启动 <code>init</code> 进程，然后解析 <code>init.rc</code>，并根据其内容由 <code>init</code> 进程装载 <code>Android</code> 文件系统、创建系统目录、初始化属性系统、启动一些守护进程，其中最重要的守护进程就是 <code>Zygote</code> 进程。<code>Zygote</code> 进程初始化时会创建 <code>Dalvik</code> 虚拟机、预装载系统的资源和 <code>Java</code> 类。所有从 <code>Zygote</code> 进程 <code>fork</code> 出来的用户进程都将继承和共享这些预加载的资源。<code>init</code> 进程是 <code>Android</code> 的第一个进程，而 <code>Zygote</code> 进程则是所有用户进程的根进程。<code>SystemServer</code> 是 <code>Zygote</code> 进程 <code>fork</code> 出的第一个进程，也是整个 <code>Android</code> 系统的核心进程。</p>
+
+<h2>zygote 进程</h2>
+
+<h3>解析 zygote.rc</h3>
+
+<p>在文件中 /system/core/rootdir/init.rc 中包含了 zygote.rc:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>import /init.${ro.zygote}.rc</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>${ro.zygote}</code>是平台相关的参数，实际可对应到 <code>init.zygote32.rc</code>， <code>init.zygote64.rc</code>， <code>init.zygote64_32.rc</code>， <code>init.zygote32_64.rc</code>，前两个只会启动单一<code>app_process(64)</code> 进程，而后两个则会启动两个<code>app_process</code>进程：第二个<code>app_process</code>进程称为 <code>secondary</code>，在后面的代码中可以看到相应 <code>secondary socket</code> 的创建过程。为简化起见，在这里就不考虑这种创建两个<code>app_process</code>进程的情形。</p>
+
+<p>以 <code>/system/core/rootdir/init.zygote32.rc</code> 为例：</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-system-server
+</span><span class='line'>class main
+</span><span class='line'>socket zygote stream 660 root system
+</span><span class='line'>onrestart write /sys/android_power/request_state wake
+</span><span class='line'>onrestart write /sys/power/state on
+</span><span class='line'>onrestart restart media
+</span><span class='line'>onrestart restart netd</span></code></pre></td></tr></table></div></figure>
+
+
+<p>第一行创建了名为 <code>zygote</code> 的进程，这个进程是通过 <code>app_process</code> 的 <code>main</code> 启动并以<code>-Xzygote /system/bin &ndash;zygote &ndash;start-system-server</code>作为<code>main</code>的入口参数。</p>
+
+<p><code>app_process</code> 对应代码为 <code>framework/base/cmds/app_process/app_main.cpp</code>。在这个文件的 <code>main</code> 函数中：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">AppRuntime</span> <span class="nf">runtime</span><span class="o">(</span><span class="n">argv</span><span class="o">[</span><span class="mi">0</span><span class="o">],</span> <span class="n">computeArgBlockSize</span><span class="o">(</span><span class="n">argc</span><span class="o">,</span> <span class="n">argv</span><span class="o">));</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="o">(</span><span class="n">zygote</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">runtime</span><span class="o">.</span><span class="na">start</span><span class="o">(</span><span class="s">&quot;com.android.internal.os.ZygoteInit&quot;</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span> <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">className</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">runtime</span><span class="o">.</span><span class="na">start</span><span class="o">(</span><span class="s">&quot;com.android.internal.os.RuntimeInit&quot;</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>根据入口参数，我们知道 <code>zygote</code> 为<code>true</code>，<code>args</code>参数中包含了<code>&ldquo;start-system-server&rdquo;</code>。</p>
+
+<p><code>AppRuntime</code> 继承自 <code>AndroidRuntime</code>，因此下一步就执行到 <code>AndroidRuntime</code> 的 <code>start</code> 函数。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kt">void</span> <span class="nl">AndroidRuntime:</span><span class="o">:</span><span class="n">start</span><span class="o">(</span><span class="kd">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">className</span><span class="o">,</span> <span class="kd">const</span> <span class="n">Vector</span><span class="o">&lt;</span><span class="n">String8</span><span class="o">&gt;&amp;</span> <span class="n">options</span><span class="o">)</span>
+</span><span class='line'><span class="o">{</span>
+</span><span class='line'>    <span class="cm">/* start the virtual machine */</span> <span class="c1">// 创建虚拟机</span>
+</span><span class='line'>    <span class="n">JniInvocation</span> <span class="n">jni_invocation</span><span class="o">;</span>
+</span><span class='line'>    <span class="n">jni_invocation</span><span class="o">.</span><span class="na">Init</span><span class="o">(</span><span class="n">NULL</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">JNIEnv</span><span class="o">*</span> <span class="n">env</span><span class="o">;</span>
+</span><span class='line'>    <span class="k">if</span> <span class="o">(</span><span class="n">startVm</span><span class="o">(&amp;</span><span class="n">mJavaVM</span><span class="o">,</span> <span class="o">&amp;</span><span class="n">env</span><span class="o">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">return</span><span class="o">;</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>    <span class="n">onVmCreated</span><span class="o">(</span><span class="n">env</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'>    <span class="c1">//调用className对应类的静态main()函数</span>
+</span><span class='line'>    <span class="kt">char</span><span class="o">*</span> <span class="n">slashClassName</span> <span class="o">=</span> <span class="n">toSlashClassName</span><span class="o">(</span><span class="n">className</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">jclass</span> <span class="n">startClass</span> <span class="o">=</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">FindClass</span><span class="o">(</span><span class="n">slashClassName</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">jmethodID</span> <span class="n">startMeth</span> <span class="o">=</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">GetStaticMethodID</span><span class="o">(</span><span class="n">startClass</span><span class="o">,</span> <span class="s">&quot;main&quot;</span><span class="o">,</span>
+</span><span class='line'>    <span class="n">env</span><span class="o">-&gt;</span><span class="n">CallStaticVoidMethod</span><span class="o">(</span><span class="n">startClass</span><span class="o">,</span> <span class="n">startMeth</span><span class="o">,</span> <span class="n">strArray</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>start</code>函数主要做两件事：创建虚拟机和调用传入类名对应类的 <code>main</code> 函数。因此下一步就执行到 <code>com.android.internal.os.ZygoteInit</code> 的 <code>main</code> 函数。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span> <span class="n">argv</span><span class="o">[])</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">try</span> <span class="o">{</span>
+</span><span class='line'>        <span class="kt">boolean</span> <span class="n">startSystemServer</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+</span><span class='line'>        <span class="n">String</span> <span class="n">socketName</span> <span class="o">=</span> <span class="s">&quot;zygote&quot;</span><span class="o">;</span>
+</span><span class='line'>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">argv</span><span class="o">.</span><span class="na">length</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="k">if</span> <span class="o">(</span><span class="s">&quot;start-system-server&quot;</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">argv</span><span class="o">[</span><span class="n">i</span><span class="o">]))</span> <span class="o">{</span>
+</span><span class='line'>                <span class="n">startSystemServer</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+</span><span class='line'>            <span class="o">}</span>
+</span><span class='line'>            <span class="o">...</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">registerZygoteSocket</span><span class="o">(</span><span class="n">socketName</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">...</span>
+</span><span class='line'>        <span class="n">preload</span><span class="o">();</span>
+</span><span class='line'>        <span class="o">...</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">if</span> <span class="o">(</span><span class="n">startSystemServer</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="n">startSystemServer</span><span class="o">(</span><span class="n">abiList</span><span class="o">,</span> <span class="n">socketName</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">Log</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">&quot;Accepting command socket connections&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">runSelectLoop</span><span class="o">(</span><span class="n">abiList</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">closeServerSocket</span><span class="o">();</span>
+</span><span class='line'>    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">MethodAndArgsCaller</span> <span class="n">caller</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">caller</span><span class="o">.</span><span class="na">run</span><span class="o">();</span>
+</span><span class='line'>    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">RuntimeException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">&quot;Zygote died with exception&quot;</span><span class="o">,</span> <span class="n">ex</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">closeServerSocket</span><span class="o">();</span>
+</span><span class='line'>        <span class="k">throw</span> <span class="n">ex</span><span class="o">;</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>它主要做了三件事情:
+1. 调用 <code>registerZygoteSocket</code> 函数创建了一个 <code>socket</code> 接口，用来和 <code>ActivityManagerService</code> 通讯；
+2. 调用 <code>startSystemServer</code> 函数来启动 <code>SystemServer</code>;
+3. 调用 <code>runSelectLoop</code> 函数进入一个无限循环在前面创建的 <code>socket</code> 接口上等待 <code>ActivityManagerService</code> 请求创建新的应用程序进程。</p>
+
+<p>这里要留意 <code>catch (MethodAndArgsCaller caller)</code> 这一行，<code>android</code> 在这里通过抛出一个异常来处理正常的业务逻辑。</p>
+
+<h3>创建 zygote socket</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">ANDROID_SOCKET_PREFIX</span> <span class="o">=</span> <span class="s">&quot;ANDROID_SOCKET_&quot;</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">registerZygoteSocket</span><span class="o">(</span><span class="n">String</span> <span class="n">socketName</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">if</span> <span class="o">(</span><span class="n">sServerSocket</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="kt">int</span> <span class="n">fileDesc</span><span class="o">;</span>
+</span><span class='line'>        <span class="kd">final</span> <span class="n">String</span> <span class="n">fullSocketName</span> <span class="o">=</span> <span class="n">ANDROID_SOCKET_PREFIX</span> <span class="o">+</span> <span class="n">socketName</span><span class="o">;</span>
+</span><span class='line'>        <span class="k">try</span> <span class="o">{</span>
+</span><span class='line'>            <span class="n">String</span> <span class="n">env</span> <span class="o">=</span> <span class="n">System</span><span class="o">.</span><span class="na">getenv</span><span class="o">(</span><span class="n">fullSocketName</span><span class="o">);</span>
+</span><span class='line'>            <span class="n">fileDesc</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">env</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">RuntimeException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="n">fullSocketName</span> <span class="o">+</span> <span class="s">&quot; unset or invalid&quot;</span><span class="o">,</span> <span class="n">ex</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">try</span> <span class="o">{</span>
+</span><span class='line'>            <span class="n">sServerSocket</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">LocalServerSocket</span><span class="o">(</span>
+</span><span class='line'>                    <span class="n">createFileDescriptor</span><span class="o">(</span><span class="n">fileDesc</span><span class="o">));</span>
+</span><span class='line'>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span>
+</span><span class='line'>                    <span class="s">&quot;Error binding to local socket &#39;&quot;</span> <span class="o">+</span> <span class="n">fileDesc</span> <span class="o">+</span> <span class="s">&quot;&#39;&quot;</span><span class="o">,</span> <span class="n">ex</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在这里根据传入参数<code>&ldquo;zygote&rdquo;</code>拼成名为 <code>fullSocketName</code> 的<code>key</code>，该 <code>key</code> 的值为：<code>ANDROID_SOCKET_zygote</code>，然后查找它对应的环境变量值，解析该值得到文件描述符号，再根据该文件描述符创建 <code>socket</code>。那么这个文件描述符是什么地方创建并写到环境变量里去的呢？还记得前面 <code>init.zygote32.rc</code> 的第二行么？</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">socket</span> <span class="n">zygote</span> <span class="n">stream</span> <span class="mi">660</span> <span class="n">root</span> <span class="n">system</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>系统启动脚本文件 <code>init.rc</code> 是由 <code>init</code> 进程来解释执行的，而 <code>init</code> 进程的源代码位于 <code>system/core/init</code> 目录中，在 <code>init.c</code> 文件中，是由 <code>service_start</code> 函数来解释 <code>init.zygote32.rc</code> 文件中的 <code>service</code> 命令的：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="kt">void</span> <span class="nf">service_start</span><span class="p">(</span><span class="k">struct</span> <span class="n">service</span> <span class="o">*</span><span class="n">svc</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">dynamic_args</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="p">...</span>
+</span><span class='line'>    <span class="n">pid</span> <span class="o">=</span> <span class="n">fork</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">struct</span> <span class="n">socketinfo</span> <span class="o">*</span><span class="n">si</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">...</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">for</span> <span class="p">(</span><span class="n">si</span> <span class="o">=</span> <span class="n">svc</span><span class="o">-&gt;</span><span class="n">sockets</span><span class="p">;</span> <span class="n">si</span><span class="p">;</span> <span class="n">si</span> <span class="o">=</span> <span class="n">si</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="kt">int</span> <span class="n">socket_type</span> <span class="o">=</span> <span class="p">(</span>
+</span><span class='line'>                    <span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">si</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">,</span> <span class="s">&quot;stream&quot;</span><span class="p">)</span> <span class="o">?</span> <span class="nl">SOCK_STREAM</span> <span class="p">:</span>
+</span><span class='line'>                        <span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="n">si</span><span class="o">-&gt;</span><span class="n">type</span><span class="p">,</span> <span class="s">&quot;dgram&quot;</span><span class="p">)</span> <span class="o">?</span> <span class="nl">SOCK_DGRAM</span> <span class="p">:</span> <span class="n">SOCK_SEQPACKET</span><span class="p">));</span>
+</span><span class='line'>            <span class="kt">int</span> <span class="n">s</span> <span class="o">=</span> <span class="n">create_socket</span><span class="p">(</span><span class="n">si</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">,</span> <span class="n">socket_type</span><span class="p">,</span>
+</span><span class='line'>                                  <span class="n">si</span><span class="o">-&gt;</span><span class="n">perm</span><span class="p">,</span> <span class="n">si</span><span class="o">-&gt;</span><span class="n">uid</span><span class="p">,</span> <span class="n">si</span><span class="o">-&gt;</span><span class="n">gid</span><span class="p">,</span> <span class="n">si</span><span class="o">-&gt;</span><span class="n">socketcon</span> <span class="o">?:</span> <span class="n">scon</span><span class="p">);</span>
+</span><span class='line'>            <span class="k">if</span> <span class="p">(</span><span class="n">s</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>                <span class="n">publish_socket</span><span class="p">(</span><span class="n">si</span><span class="o">-&gt;</span><span class="n">name</span><span class="p">,</span> <span class="n">s</span><span class="p">);</span>
+</span><span class='line'>            <span class="p">}</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="p">...</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="p">...</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>每一个 service 命令都会促使 init 进程调用 fork 函数来创建一个新的进程，在新的进程里面，会分析里面的 socket 选项，对于每一个 socket 选项，都会通过 <code>create_socket</code> 函数来在 <code>/dev/socket</code> 目录下创建一个文件，在 zygote 进程中 socket 选项为<code>socket zygote stream 660 root system</code>，因此这个文件便是 zygote了，然后得到的文件描述符通过 <code>publish_socket</code> 函数写入到环境变量中去：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="k">static</span> <span class="kt">void</span> <span class="nf">publish_socket</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">fd</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="kt">char</span> <span class="n">key</span><span class="p">[</span><span class="mi">64</span><span class="p">]</span> <span class="o">=</span> <span class="n">ANDROID_SOCKET_ENV_PREFIX</span><span class="p">;</span>
+</span><span class='line'>    <span class="kt">char</span> <span class="n">val</span><span class="p">[</span><span class="mi">64</span><span class="p">];</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">strlcpy</span><span class="p">(</span><span class="n">key</span> <span class="o">+</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ANDROID_SOCKET_ENV_PREFIX</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span>
+</span><span class='line'>            <span class="n">name</span><span class="p">,</span>
+</span><span class='line'>            <span class="k">sizeof</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="o">-</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">ANDROID_SOCKET_ENV_PREFIX</span><span class="p">));</span>
+</span><span class='line'>    <span class="n">snprintf</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">val</span><span class="p">),</span> <span class="s">&quot;%d&quot;</span><span class="p">,</span> <span class="n">fd</span><span class="p">);</span>
+</span><span class='line'>    <span class="n">add_environment</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">val</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="cm">/* make sure we don&#39;t close-on-exec */</span>
+</span><span class='line'>    <span class="n">fcntl</span><span class="p">(</span><span class="n">fd</span><span class="p">,</span> <span class="n">F_SETFD</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这里传进来的参数name值为"zygote"，而 <code>ANDROID_SOCKET_ENV_PREFIX</code> 在 <code>system/core/include/cutils/sockets.h</code> 定义为：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="cp">#define ANDROID_SOCKET_ENV_PREFIX   &quot;ANDROID_SOCKET_&quot;</span>
+</span><span class='line'><span class="cp">#define ANDROID_SOCKET_DIR          &quot;/dev/socket&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>因此，这里就把上面得到的文件描述符写入到以 <code>ANDROID_SOCKET_zygote</code> 为 key 值的环境变量中。又因为上面的 <code>ZygoteInit.registerZygoteSocket</code> 函数与这里创建 socket 文件的 create_socket 函数是运行在同一个进程中，因此，上面的 <code>ZygoteInit.registerZygoteSocket</code> 函数可以直接使用这个文件描述符来创建一个 Java 层的 LocalServerSocket 对象。如果其它进程也需要打开这个 <code>/dev/socket/zygote</code> 文件来和 zygote 进程进行通信，那就必须要通过文件名来连接这个 LocalServerSocket了。也就是说创建 zygote socket 之后，ActivityManagerService 就能够通过该 socket 与 zygote 进程通信从而 fork 创建新进程，android 中的所有应用进程都是通过这种方式 fork zygote 进程创建的。在 ActivityManagerService中 的 <code>startProcessLocked</code> 中调用了 <code>Process.start()</code> 方法，进而调用 <code>Process.startViaZygote</code> 和 <code>Process.openZygoteSocketIfNeeded</code>。</p>
+
+<h3>启动 SystemServer</h3>
+
+<p>socket 创建完成之后，紧接着就通过 <code>startSystemServer</code> 函数来启动 <code>SystemServer</code> 进程。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">startSystemServer</span><span class="o">(</span><span class="n">String</span> <span class="n">abiList</span><span class="o">,</span> <span class="n">String</span> <span class="n">socketName</span><span class="o">)</span>
+</span><span class='line'><span class="o">{</span>
+</span><span class='line'>    <span class="kt">long</span> <span class="n">capabilities</span> <span class="o">=</span> <span class="n">posixCapabilitiesAsBits</span><span class="o">(</span>
+</span><span class='line'>        <span class="n">OsConstants</span><span class="o">.</span><span class="na">CAP_BLOCK_SUSPEND</span><span class="o">,</span>
+</span><span class='line'>        <span class="n">OsConstants</span><span class="o">.</span><span class="na">CAP_KILL</span><span class="o">,</span>
+</span><span class='line'>        <span class="n">OsConstants</span><span class="o">.</span><span class="na">CAP_NET_ADMIN</span><span class="o">,</span>
+</span><span class='line'>        <span class="n">OsConstants</span><span class="o">.</span><span class="na">CAP_NET_BIND_SERVICE</span><span class="o">,</span>
+</span><span class='line'>        <span class="n">OsConstants</span><span class="o">.</span><span class="na">CAP_NET_BROADCAST</span><span class="o">,</span>
+</span><span class='line'>        <span class="n">OsConstants</span><span class="o">.</span><span class="na">CAP_NET_RAW</span><span class="o">,</span>
+</span><span class='line'>        <span class="n">OsConstants</span><span class="o">.</span><span class="na">CAP_SYS_MODULE</span><span class="o">,</span>
+</span><span class='line'>        <span class="n">OsConstants</span><span class="o">.</span><span class="na">CAP_SYS_NICE</span><span class="o">,</span>
+</span><span class='line'>        <span class="n">OsConstants</span><span class="o">.</span><span class="na">CAP_SYS_RESOURCE</span><span class="o">,</span>
+</span><span class='line'>        <span class="n">OsConstants</span><span class="o">.</span><span class="na">CAP_SYS_TIME</span><span class="o">,</span>
+</span><span class='line'>        <span class="n">OsConstants</span><span class="o">.</span><span class="na">CAP_SYS_TTY_CONFIG</span>
+</span><span class='line'>    <span class="o">);</span>
+</span><span class='line'>    <span class="cm">/* Hardcoded command line to start the system server */</span>
+</span><span class='line'>    <span class="n">String</span> <span class="n">args</span><span class="o">[]</span> <span class="o">=</span> <span class="o">{</span>
+</span><span class='line'>        <span class="s">&quot;--setuid=1000&quot;</span><span class="o">,</span>
+</span><span class='line'>        <span class="s">&quot;--setgid=1000&quot;</span><span class="o">,</span>
+</span><span class='line'>        <span class="s">&quot;--setgroups=1001,1002,1003,1004,1005,1006,1007,1008,1009,1010,1018,1032,3001,3002,3003,3006,3007&quot;</span><span class="o">,</span>
+</span><span class='line'>        <span class="s">&quot;--capabilities=&quot;</span> <span class="o">+</span> <span class="n">capabilities</span> <span class="o">+</span> <span class="s">&quot;,&quot;</span> <span class="o">+</span> <span class="n">capabilities</span><span class="o">,</span>
+</span><span class='line'>        <span class="s">&quot;--runtime-init&quot;</span><span class="o">,</span>
+</span><span class='line'>        <span class="s">&quot;--nice-name=system_server&quot;</span><span class="o">,</span>
+</span><span class='line'>        <span class="s">&quot;com.android.server.SystemServer&quot;</span><span class="o">,</span>
+</span><span class='line'>    <span class="o">};</span>
+</span><span class='line'>    <span class="n">ZygoteConnection</span><span class="o">.</span><span class="na">Arguments</span> <span class="n">parsedArgs</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">pid</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">try</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">parsedArgs</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ZygoteConnection</span><span class="o">.</span><span class="na">Arguments</span><span class="o">(</span><span class="n">args</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">...</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="cm">/* Request to fork the system server process */</span>
+</span><span class='line'>        <span class="n">pid</span> <span class="o">=</span> <span class="n">Zygote</span><span class="o">.</span><span class="na">forkSystemServer</span><span class="o">(</span>
+</span><span class='line'>                <span class="n">parsedArgs</span><span class="o">.</span><span class="na">uid</span><span class="o">,</span> <span class="n">parsedArgs</span><span class="o">.</span><span class="na">gid</span><span class="o">,</span>
+</span><span class='line'>                <span class="n">parsedArgs</span><span class="o">.</span><span class="na">gids</span><span class="o">,</span>
+</span><span class='line'>                <span class="n">parsedArgs</span><span class="o">.</span><span class="na">debugFlags</span><span class="o">,</span>
+</span><span class='line'>                <span class="kc">null</span><span class="o">,</span>
+</span><span class='line'>                <span class="n">parsedArgs</span><span class="o">.</span><span class="na">permittedCapabilities</span><span class="o">,</span>
+</span><span class='line'>                <span class="n">parsedArgs</span><span class="o">.</span><span class="na">effectiveCapabilities</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IllegalArgumentException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="n">ex</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="cm">/* For child process */</span>
+</span><span class='line'>    <span class="k">if</span> <span class="o">(</span><span class="n">pid</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">if</span> <span class="o">(</span><span class="n">hasSecondZygote</span><span class="o">(</span><span class="n">abiList</span><span class="o">))</span> <span class="o">{</span>
+</span><span class='line'>            <span class="n">waitForSecondaryZygote</span><span class="o">(</span><span class="n">socketName</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">handleSystemServerProcess</span><span class="o">(</span><span class="n">parsedArgs</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这里我们可以从参数推测出：创建名为<code>“system_server"</code>的进程，其入口是： <code>com.android.server.SystemServer</code> 的 <code>main</code> 函数。<code>zygote</code> 进程通过 <code>Zygote.forkSystemServer</code> 函数来创建一个新的进程来启动 <code>SystemServer</code> 组件，返回值 <code>pid</code> 等 0 的地方就是新的进程要执行的路径，即新创建的进程会执行 <code>handleSystemServerProcess</code> 函数。<code>hasSecondZygote</code> 是针对 <code>init.zygote64_32.rc</code>， <code>init.zygote32_64.rc</code> 这两者情况的，在这里跳过不谈。接下来来看 <code>handleSystemServerProcess</code>：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm"> * Finish remaining work for the newly forked system server process.</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">handleSystemServerProcess</span><span class="o">(</span>
+</span><span class='line'>        <span class="n">ZygoteConnection</span><span class="o">.</span><span class="na">Arguments</span> <span class="n">parsedArgs</span><span class="o">)</span>
+</span><span class='line'>        <span class="kd">throws</span> <span class="n">ZygoteInit</span><span class="o">.</span><span class="na">MethodAndArgsCaller</span>
+</span><span class='line'><span class="o">{</span>
+</span><span class='line'>    <span class="n">closeServerSocket</span><span class="o">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// set umask to 0077 so new files and directories will default to owner-only permissions.</span>
+</span><span class='line'>    <span class="n">Os</span><span class="o">.</span><span class="na">umask</span><span class="o">(</span><span class="n">S_IRWXG</span> <span class="o">|</span> <span class="n">S_IRWXO</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="o">(</span><span class="n">parsedArgs</span><span class="o">.</span><span class="na">niceName</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">Process</span><span class="o">.</span><span class="na">setArgV0</span><span class="o">(</span><span class="n">parsedArgs</span><span class="o">.</span><span class="na">niceName</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">final</span> <span class="n">String</span> <span class="n">systemServerClasspath</span> <span class="o">=</span> <span class="n">Os</span><span class="o">.</span><span class="na">getenv</span><span class="o">(</span><span class="s">&quot;SYSTEMSERVERCLASSPATH&quot;</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">ClassLoader</span> <span class="n">cl</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>    <span class="k">if</span> <span class="o">(</span><span class="n">systemServerClasspath</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">cl</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">PathClassLoader</span><span class="o">(</span><span class="n">systemServerClasspath</span><span class="o">,</span> <span class="n">ClassLoader</span><span class="o">.</span><span class="na">getSystemClassLoader</span><span class="o">());</span>
+</span><span class='line'>        <span class="n">Thread</span><span class="o">.</span><span class="na">currentThread</span><span class="o">().</span><span class="na">setContextClassLoader</span><span class="o">(</span><span class="n">cl</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="cm">/*</span>
+</span><span class='line'><span class="cm">     * Pass the remaining arguments to SystemServer.</span>
+</span><span class='line'><span class="cm">     */</span>
+</span><span class='line'>    <span class="n">RuntimeInit</span><span class="o">.</span><span class="na">zygoteInit</span><span class="o">(</span><span class="n">parsedArgs</span><span class="o">.</span><span class="na">targetSdkVersion</span><span class="o">,</span> <span class="n">parsedArgs</span><span class="o">.</span><span class="na">remainingArgs</span><span class="o">,</span> <span class="n">cl</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="cm">/* should never reach here */</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>handleSystemServerProcess</code> 会抛出 <code>MethodAndArgsCaller</code> 异常，前面提到这个异常其实是处理正常业务逻辑的，相当于一个回调。由于由 <code>zygote</code> 进程创建的子进程会继承 <code>zygote</code> 进程在前面创建的 <code>socket</code> 文件描述符，而这里的子进程又不会用到它，因此，这里就调用 <code>closeServerSocket</code> 函数来关闭它。<code>SYSTEMSERVERCLASSPATH</code> 是包含 <code>/system/framework/framework.jar</code> 的环境变量，它定义在 <code>system/core/rootdir/init.environ.rc.in</code> 中：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="n">on</span> <span class="n">init</span>
+</span><span class='line'>    <span class="n">export</span> <span class="n">PATH</span> <span class="o">/</span><span class="nl">sbin:</span><span class="o">/</span><span class="n">vendor</span><span class="o">/</span><span class="nl">bin:</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="nl">sbin:</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="nl">bin:</span><span class="o">/</span><span class="n">system</span><span class="o">/</span><span class="n">xbin</span>
+</span><span class='line'>    <span class="n">export</span> <span class="n">ANDROID_BOOTLOGO</span> <span class="mi">1</span>
+</span><span class='line'>    <span class="n">export</span> <span class="n">ANDROID_ROOT</span> <span class="o">/</span><span class="n">system</span>
+</span><span class='line'>    <span class="n">export</span> <span class="n">SYSTEMSERVERCLASSPATH</span> <span class="o">%</span><span class="n">SYSTEMSERVERCLASSPATH</span><span class="o">%</span>
+</span><span class='line'>    <span class="n">export</span> <span class="n">LD_PRELOAD</span> <span class="n">libsigchain</span><span class="o">.</span><span class="na">so</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>handleSystemServerProcess</code> 函数接着调用 <code>RuntimeInit.zygoteInit</code> 函数来进一步执行启动 <code>SystemServer</code> 组件的操作。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">void</span> <span class="nf">zygoteInit</span><span class="o">(</span><span class="kt">int</span> <span class="n">targetSdkVersion</span><span class="o">,</span> <span class="n">String</span><span class="o">[]</span> <span class="n">argv</span><span class="o">,</span> <span class="n">ClassLoader</span> <span class="n">classLoader</span><span class="o">)</span>
+</span><span class='line'>        <span class="kd">throws</span> <span class="n">ZygoteInit</span><span class="o">.</span><span class="na">MethodAndArgsCaller</span> <span class="o">{</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">commonInit</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">nativeZygoteInit</span><span class="o">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">applicationInit</span><span class="o">(</span><span class="n">targetSdkVersion</span><span class="o">,</span> <span class="n">argv</span><span class="o">,</span> <span class="n">classLoader</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>commonInit</code> 设置线程未处理异常 <code>handler</code>，时区等，<code>JNI</code> 方法 <code>nativeZygoteInit</code> 实现在 <code>frameworks/base/core/jni/AndroidRuntime.cpp</code> 中：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="k">static</span> <span class="n">AndroidRuntime</span><span class="o">*</span> <span class="n">gCurRuntime</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">static</span> <span class="kt">void</span> <span class="nf">com_android_internal_os_RuntimeInit_nativeZygoteInit</span><span class="p">(</span><span class="n">JNIEnv</span><span class="o">*</span> <span class="n">env</span><span class="p">,</span> <span class="n">jobject</span> <span class="n">clazz</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="n">gCurRuntime</span><span class="o">-&gt;</span><span class="n">onZygoteInit</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>AndroidRuntime</code> 是个带虚函数的基类，真正的实现是在 <code>app_main.cpp</code> 中的 <code>AppRuntime</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="k">class</span> <span class="nc">AppRuntime</span> <span class="o">:</span> <span class="k">public</span> <span class="n">AndroidRuntime</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">onStarted</span><span class="p">()</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="n">sp</span><span class="o">&lt;</span><span class="n">ProcessState</span><span class="o">&gt;</span> <span class="n">proc</span> <span class="o">=</span> <span class="n">ProcessState</span><span class="o">::</span><span class="n">self</span><span class="p">();</span>
+</span><span class='line'>        <span class="n">ALOGV</span><span class="p">(</span><span class="s">&quot;App process: starting thread pool.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>        <span class="n">proc</span><span class="o">-&gt;</span><span class="n">startThreadPool</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">AndroidRuntime</span><span class="o">*</span> <span class="n">ar</span> <span class="o">=</span> <span class="n">AndroidRuntime</span><span class="o">::</span><span class="n">getRuntime</span><span class="p">();</span>
+</span><span class='line'>        <span class="n">ar</span><span class="o">-&gt;</span><span class="n">callMain</span><span class="p">(</span><span class="n">mClassName</span><span class="p">,</span> <span class="n">mClass</span><span class="p">,</span> <span class="n">mArgs</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">IPCThreadState</span><span class="o">::</span><span class="n">self</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">stopProcess</span><span class="p">();</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">onZygoteInit</span><span class="p">()</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="c1">// Re-enable tracing now that we&#39;re no longer in Zygote.</span>
+</span><span class='line'>        <span class="n">atrace_set_tracing_enabled</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">sp</span><span class="o">&lt;</span><span class="n">ProcessState</span><span class="o">&gt;</span> <span class="n">proc</span> <span class="o">=</span> <span class="n">ProcessState</span><span class="o">::</span><span class="n">self</span><span class="p">();</span>
+</span><span class='line'>        <span class="n">ALOGV</span><span class="p">(</span><span class="s">&quot;App process: starting thread pool.</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+</span><span class='line'>        <span class="n">proc</span><span class="o">-&gt;</span><span class="n">startThreadPool</span><span class="p">();</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">virtual</span> <span class="kt">void</span> <span class="n">onExit</span><span class="p">(</span><span class="kt">int</span> <span class="n">code</span><span class="p">)</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="n">mClassName</span><span class="p">.</span><span class="n">isEmpty</span><span class="p">())</span> <span class="p">{</span>
+</span><span class='line'>            <span class="c1">// if zygote</span>
+</span><span class='line'>            <span class="n">IPCThreadState</span><span class="o">::</span><span class="n">self</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">stopProcess</span><span class="p">();</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="n">AndroidRuntime</span><span class="o">::</span><span class="n">onExit</span><span class="p">(</span><span class="n">code</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>通过执行 <code>AppRuntime::onZygoteInit</code> 函数，这个进程的 <code>Binder</code> 进程间通信机制基础设施就准备好了，参考代码 <code>frameworks/native/libs/binder/ProcessState.cpp</code>。</p>
+
+<p>接下来，看 applicationInit ：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">applicationInit</span><span class="o">(</span><span class="kt">int</span> <span class="n">targetSdkVersion</span><span class="o">,</span> <span class="n">String</span><span class="o">[]</span> <span class="n">argv</span><span class="o">,</span> <span class="n">ClassLoader</span> <span class="n">classLoader</span><span class="o">)</span>
+</span><span class='line'>        <span class="kd">throws</span> <span class="n">ZygoteInit</span><span class="o">.</span><span class="na">MethodAndArgsCaller</span> <span class="o">{</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">final</span> <span class="n">Arguments</span> <span class="n">args</span><span class="o">;</span>
+</span><span class='line'>    <span class="k">try</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">args</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Arguments</span><span class="o">(</span><span class="n">argv</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IllegalArgumentException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">Slog</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="n">ex</span><span class="o">.</span><span class="na">getMessage</span><span class="o">());</span>
+</span><span class='line'>        <span class="c1">// let the process exit</span>
+</span><span class='line'>        <span class="k">return</span><span class="o">;</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Remaining arguments are passed to the start class&#39;s static main</span>
+</span><span class='line'>    <span class="n">invokeStaticMain</span><span class="o">(</span><span class="n">args</span><span class="o">.</span><span class="na">startClass</span><span class="o">,</span> <span class="n">args</span><span class="o">.</span><span class="na">startArgs</span><span class="o">,</span> <span class="n">classLoader</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>applicationInit</code> 仅仅是转调 <code>invokeStaticMain</code>：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">invokeStaticMain</span><span class="o">(</span><span class="n">String</span> <span class="n">className</span><span class="o">,</span> <span class="n">String</span><span class="o">[]</span> <span class="n">argv</span><span class="o">,</span> <span class="n">ClassLoader</span> <span class="n">classLoader</span><span class="o">)</span>
+</span><span class='line'>        <span class="kd">throws</span> <span class="n">ZygoteInit</span><span class="o">.</span><span class="na">MethodAndArgsCaller</span>
+</span><span class='line'><span class="o">{</span>
+</span><span class='line'>    <span class="n">Class</span> <span class="n">cl</span><span class="o">;</span>
+</span><span class='line'>    <span class="n">cl</span> <span class="o">=</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">className</span><span class="o">,</span> <span class="kc">true</span><span class="o">,</span> <span class="n">classLoader</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Method</span> <span class="n">m</span><span class="o">;</span>
+</span><span class='line'>    <span class="n">m</span> <span class="o">=</span> <span class="n">cl</span><span class="o">.</span><span class="na">getMethod</span><span class="o">(</span><span class="s">&quot;main&quot;</span><span class="o">,</span> <span class="k">new</span> <span class="n">Class</span><span class="o">[]</span> <span class="o">{</span> <span class="n">String</span><span class="o">[].</span><span class="na">class</span> <span class="o">});</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>    <span class="cm">/*</span>
+</span><span class='line'><span class="cm">     * This throw gets caught in ZygoteInit.main(), which responds</span>
+</span><span class='line'><span class="cm">     * by invoking the exception&#39;s run() method. This arrangement</span>
+</span><span class='line'><span class="cm">     * clears up all the stack frames that were required in setting</span>
+</span><span class='line'><span class="cm">     * up the process.</span>
+</span><span class='line'><span class="cm">     */</span>
+</span><span class='line'>    <span class="k">throw</span> <span class="k">new</span> <span class="n">ZygoteInit</span><span class="o">.</span><span class="na">MethodAndArgsCaller</span><span class="o">(</span><span class="n">m</span><span class="o">,</span> <span class="n">argv</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>invokeStaticMain</code> 也很简单，通过反射找到参数 <code>className</code> 对应的类的静态 <code>main</code> 方法，然后将该方法与参数生成 <code>ZygoteInit.MethodAndArgsCaller</code> 对象当做异常抛出，这个异常对象在 <code>ZygoteInit</code> 的 <code>main</code> 函数被捕获并执行该对象的 <code>run</code> 方法。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm"> * Helper exception class which holds a method and arguments and</span>
+</span><span class='line'><span class="cm"> * can call them. This is used as part of a trampoline to get rid of</span>
+</span><span class='line'><span class="cm"> * the initial process setup stack frames.</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'><span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">MethodAndArgsCaller</span> <span class="kd">extends</span> <span class="n">Exception</span>
+</span><span class='line'>        <span class="kd">implements</span> <span class="n">Runnable</span> <span class="o">{</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>        <span class="o">...</span>
+</span><span class='line'>        <span class="n">mMethod</span><span class="o">.</span><span class="na">invoke</span><span class="o">(</span><span class="kc">null</span><span class="o">,</span> <span class="k">new</span> <span class="n">Object</span><span class="o">[]</span> <span class="o">{</span> <span class="n">mArgs</span> <span class="o">});</span>
+</span><span class='line'>        <span class="o">...</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这么复杂的跳转，其实就做了一件简单的事情：根据 <code>className </code>反射调用该类的静态 <code>main</code> 方法。这个类名是 <code>ZygoteInit.startSystemServer</code> 方法中写死的 <code>com.android.server.SystemServer</code>。 从而进入 <code>SystemServer</code> 类的 <code>main()</code>方法。</p>
+
+<h3>执行 ZygoteInit.runSelectLoop</h3>
+
+<p>在 <code>startSystemServer</code> 函数中，创建 <code>system_server</code> 进程之后，<code>pid</code> 等于 0 时在该新进程中执行 <code>SystemServer.main</code>，否则回到 <code>zygote</code> 进程进行执行 <code>ZygoteInit.runSelectLoop</code>：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">runSelectLoop</span><span class="o">(</span><span class="n">String</span> <span class="n">abiList</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">MethodAndArgsCaller</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">FileDescriptor</span><span class="o">&gt;</span> <span class="n">fds</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">FileDescriptor</span><span class="o">&gt;();</span>
+</span><span class='line'>    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">ZygoteConnection</span><span class="o">&gt;</span> <span class="n">peers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">ZygoteConnection</span><span class="o">&gt;();</span>
+</span><span class='line'>    <span class="n">FileDescriptor</span><span class="o">[]</span> <span class="n">fdArray</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FileDescriptor</span><span class="o">[</span><span class="mi">4</span><span class="o">];</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">fds</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">sServerSocket</span><span class="o">.</span><span class="na">getFileDescriptor</span><span class="o">());</span>
+</span><span class='line'>    <span class="n">peers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="kc">null</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">loopCount</span> <span class="o">=</span> <span class="n">GC_LOOP_COUNT</span><span class="o">;</span>
+</span><span class='line'>    <span class="k">while</span> <span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="kt">int</span> <span class="n">index</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="cm">/*</span>
+</span><span class='line'><span class="cm">         * Call gc() before we block in select().</span>
+</span><span class='line'><span class="cm">         * It&#39;s work that has to be done anyway, and it&#39;s better</span>
+</span><span class='line'><span class="cm">         * to avoid making every child do it.  It will also</span>
+</span><span class='line'><span class="cm">         * madvise() any free memory as a side-effect.</span>
+</span><span class='line'><span class="cm">         *</span>
+</span><span class='line'><span class="cm">         * Don&#39;t call it every time, because walking the entire</span>
+</span><span class='line'><span class="cm">         * heap is a lot of overhead to free a few hundred bytes.</span>
+</span><span class='line'><span class="cm">         */</span>
+</span><span class='line'>        <span class="k">if</span> <span class="o">(</span><span class="n">loopCount</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="n">gc</span><span class="o">();</span>
+</span><span class='line'>            <span class="n">loopCount</span> <span class="o">=</span> <span class="n">GC_LOOP_COUNT</span><span class="o">;</span>
+</span><span class='line'>        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span><span class='line'>            <span class="n">loopCount</span><span class="o">--;</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">try</span> <span class="o">{</span>
+</span><span class='line'>            <span class="n">fdArray</span> <span class="o">=</span> <span class="n">fds</span><span class="o">.</span><span class="na">toArray</span><span class="o">(</span><span class="n">fdArray</span><span class="o">);</span>
+</span><span class='line'>            <span class="n">index</span> <span class="o">=</span> <span class="n">selectReadable</span><span class="o">(</span><span class="n">fdArray</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="s">&quot;Error in select()&quot;</span><span class="o">,</span> <span class="n">ex</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">if</span> <span class="o">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="s">&quot;Error in select()&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">}</span> <span class="k">else</span> <span class="nf">if</span> <span class="o">(</span><span class="n">index</span> <span class="o">==</span> <span class="mi">0</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="n">ZygoteConnection</span> <span class="n">newPeer</span> <span class="o">=</span> <span class="n">acceptCommandPeer</span><span class="o">(</span><span class="n">abiList</span><span class="o">);</span>
+</span><span class='line'>            <span class="n">peers</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">newPeer</span><span class="o">);</span>
+</span><span class='line'>            <span class="n">fds</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">newPeer</span><span class="o">.</span><span class="na">getFileDescriptor</span><span class="o">());</span>
+</span><span class='line'>        <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+</span><span class='line'>            <span class="kt">boolean</span> <span class="n">done</span><span class="o">;</span>
+</span><span class='line'>            <span class="n">done</span> <span class="o">=</span> <span class="n">peers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">index</span><span class="o">).</span><span class="na">runOnce</span><span class="o">();</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="k">if</span> <span class="o">(</span><span class="n">done</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>                <span class="n">peers</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">index</span><span class="o">);</span>
+</span><span class='line'>                <span class="n">fds</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">index</span><span class="o">);</span>
+</span><span class='line'>            <span class="o">}</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>runSelectLoop</code> 函数的逻辑比较简单，主要有两点：
+1、 处理客户端的连接和请求。前面创建的 <code>LocalServerSocket</code> 对象保存 <code>sServerSocket</code>，这个 <code>socket</code> 通过 <code>selectReadable</code> 等待 <code>ActivityManagerService</code>(简写 <code>AMS</code>) 与之通信。<code>selectReadable</code>是一个<code>native</code>函数，内部调用<code>select</code>等待 <code>AMS</code> 连接，<code>AMS</code> 连接上之后就会返回: 返回值 &lt; 0：内部发生错误；返回值 = 0：第一次连接到服务端 ；返回值 > 0：与服务端已经建立连接，并开始发送数据。每一个链接在 <code>zygote</code> 进程中使用 <code>ZygoteConnection</code> 对象表示。</p>
+
+<p>2、 客户端的请求由 <code>ZygoteConnection.runOnce</code> 来处理，这个方法也抛出 <code>MethodAndArgsCaller</code> 异常，从而进入 <code>MethodAndArgsCaller.run</code> 中调用根据客户请求数据反射出的类的 <code>main</code> 方法。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">private</span> <span class="n">String</span><span class="o">[]</span> <span class="nf">readArgumentList</span><span class="o">()</span>
+</span><span class='line'><span class="o">{</span>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">argc</span><span class="o">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">try</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="n">mSocketReader</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+</span><span class='line'>
+</span><span class='line'>        <span class="k">if</span> <span class="o">(</span><span class="n">s</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="c1">// EOF reached.</span>
+</span><span class='line'>            <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>        <span class="n">argc</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">parseInt</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NumberFormatException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">Log</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">&quot;invalid Zygote wire format: non-int at argc&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="k">throw</span> <span class="k">new</span> <span class="nf">IOException</span><span class="o">(</span><span class="s">&quot;invalid wire format&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">String</span><span class="o">[]</span> <span class="n">result</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[</span><span class="n">argc</span><span class="o">];</span>
+</span><span class='line'>    <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">argc</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">result</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">mSocketReader</span><span class="o">.</span><span class="na">readLine</span><span class="o">();</span>
+</span><span class='line'>        <span class="k">if</span> <span class="o">(</span><span class="n">result</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>            <span class="c1">// We got an unexpected EOF.</span>
+</span><span class='line'>            <span class="k">throw</span> <span class="k">new</span> <span class="nf">IOException</span><span class="o">(</span><span class="s">&quot;truncated request&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">return</span> <span class="n">result</span><span class="o">;</span>
+</span><span class='line'><span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">boolean</span> <span class="nf">runOnce</span><span class="o">()</span> <span class="kd">throws</span> <span class="n">ZygoteInit</span><span class="o">.</span><span class="na">MethodAndArgsCaller</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">String</span> <span class="n">args</span><span class="o">[];</span>
+</span><span class='line'>    <span class="n">Arguments</span> <span class="n">parsedArgs</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+</span><span class='line'>    <span class="n">args</span> <span class="o">=</span> <span class="n">readArgumentList</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">parsedArgs</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Arguments</span><span class="o">(</span><span class="n">args</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'>    <span class="n">pid</span> <span class="o">=</span> <span class="n">Zygote</span><span class="o">.</span><span class="na">forkAndSpecialize</span><span class="o">(</span><span class="n">parsedArgs</span><span class="o">.</span><span class="na">uid</span><span class="o">,</span> <span class="n">parsedArgs</span><span class="o">.</span><span class="na">gid</span><span class="o">,</span> <span class="n">parsedArgs</span><span class="o">.</span><span class="na">gids</span><span class="o">,</span>
+</span><span class='line'>            <span class="n">parsedArgs</span><span class="o">.</span><span class="na">debugFlags</span><span class="o">,</span> <span class="n">rlimits</span><span class="o">,</span> <span class="n">parsedArgs</span><span class="o">.</span><span class="na">mountExternal</span><span class="o">,</span> <span class="n">parsedArgs</span><span class="o">.</span><span class="na">seInfo</span><span class="o">,</span>
+</span><span class='line'>            <span class="n">parsedArgs</span><span class="o">.</span><span class="na">niceName</span><span class="o">,</span> <span class="n">fdsToClose</span><span class="o">,</span> <span class="n">parsedArgs</span><span class="o">.</span><span class="na">instructionSet</span><span class="o">,</span>
+</span><span class='line'>            <span class="n">parsedArgs</span><span class="o">.</span><span class="na">appDataDir</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">...</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>SystemServer 启动过程</h2>
+
+<p>在前面启动 SystemServer一节讲到，通过反射调用类 <code>com.android.server.SystemServer</code> main() 函数，从而开始执行 SystemServer 的初始化流程。</p>
+
+<p>SystemServer.main()</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm"> * The main entry point from zygote.</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="k">new</span> <span class="nf">SystemServer</span><span class="o">().</span><span class="na">run</span><span class="o">();</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>main 函数创建一个 SystemServer 对象，调用其 run() 方法。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">private</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>    <span class="c1">// If a device&#39;s clock is before 1970 (before 0), a lot of</span>
+</span><span class='line'>    <span class="c1">// APIs crash dealing with negative numbers, notably</span>
+</span><span class='line'>    <span class="c1">// java.io.File#setLastModified, so instead we fake it and</span>
+</span><span class='line'>    <span class="c1">// hope that time from cell towers or NTP fixes it shortly.</span>
+</span><span class='line'>    <span class="k">if</span> <span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">currentTimeMillis</span><span class="o">()</span> <span class="o">&lt;</span> <span class="n">EARLIEST_SUPPORTED_TIME</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">Slog</span><span class="o">.</span><span class="na">w</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">&quot;System clock is before 1970; setting to 1970.&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">SystemClock</span><span class="o">.</span><span class="na">setCurrentTimeMillis</span><span class="o">(</span><span class="n">EARLIEST_SUPPORTED_TIME</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span> <span class="c1">// 检测时间设置</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Here we go!</span>
+</span><span class='line'>    <span class="n">Slog</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">&quot;Entered the Android system server!&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">EventLog</span><span class="o">.</span><span class="na">writeEvent</span><span class="o">(</span><span class="n">EventLogTags</span><span class="o">.</span><span class="na">BOOT_PROGRESS_SYSTEM_RUN</span><span class="o">,</span> <span class="n">SystemClock</span><span class="o">.</span><span class="na">uptimeMillis</span><span class="o">());</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// In case the runtime switched since last boot (such as when</span>
+</span><span class='line'>    <span class="c1">// the old runtime was removed in an OTA), set the system</span>
+</span><span class='line'>    <span class="c1">// property so that it is in sync. We can&#39;t do this in</span>
+</span><span class='line'>    <span class="c1">// libnativehelper&#39;s JniInvocation::Init code where we already</span>
+</span><span class='line'>    <span class="c1">// had to fallback to a different runtime because it is</span>
+</span><span class='line'>    <span class="c1">// running as root and we need to be the system user to set</span>
+</span><span class='line'>    <span class="c1">// the property. http://b/11463182</span>
+</span><span class='line'>    <span class="n">SystemProperties</span><span class="o">.</span><span class="na">set</span><span class="o">(</span><span class="s">&quot;persist.sys.dalvik.vm.lib.2&quot;</span><span class="o">,</span> <span class="n">VMRuntime</span><span class="o">.</span><span class="na">getRuntime</span><span class="o">().</span><span class="na">vmLibrary</span><span class="o">());</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Enable the sampling profiler.</span>
+</span><span class='line'>    <span class="k">if</span> <span class="o">(</span><span class="n">SamplingProfilerIntegration</span><span class="o">.</span><span class="na">isEnabled</span><span class="o">())</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">SamplingProfilerIntegration</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">mProfilerSnapshotTimer</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">Timer</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">mProfilerSnapshotTimer</span><span class="o">.</span><span class="na">schedule</span><span class="o">(</span><span class="k">new</span> <span class="nf">TimerTask</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>            <span class="nd">@Override</span>
+</span><span class='line'>            <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>                <span class="n">SamplingProfilerIntegration</span><span class="o">.</span><span class="na">writeSnapshot</span><span class="o">(</span><span class="s">&quot;system_server&quot;</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+</span><span class='line'>            <span class="o">}</span>
+</span><span class='line'>        <span class="o">},</span> <span class="n">SNAPSHOT_INTERVAL</span><span class="o">,</span> <span class="n">SNAPSHOT_INTERVAL</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span> <span class="c1">// 启动性能分析采样</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Mmmmmm... more memory!</span>
+</span><span class='line'>    <span class="n">VMRuntime</span><span class="o">.</span><span class="na">getRuntime</span><span class="o">().</span><span class="na">clearGrowthLimit</span><span class="o">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// The system server has to run all of the time, so it needs to be</span>
+</span><span class='line'>    <span class="c1">// as efficient as possible with its memory usage.</span>
+</span><span class='line'>    <span class="n">VMRuntime</span><span class="o">.</span><span class="na">getRuntime</span><span class="o">().</span><span class="na">setTargetHeapUtilization</span><span class="o">(</span><span class="mf">0.8f</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Some devices rely on runtime fingerprint generation, so make sure</span>
+</span><span class='line'>    <span class="c1">// we&#39;ve defined it before booting further.</span>
+</span><span class='line'>    <span class="n">Build</span><span class="o">.</span><span class="na">ensureFingerprintProperty</span><span class="o">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Within the system server, it is an error to access Environment paths without</span>
+</span><span class='line'>    <span class="c1">// explicitly specifying a user.</span>
+</span><span class='line'>    <span class="n">Environment</span><span class="o">.</span><span class="na">setUserRequired</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Ensure binder calls into the system always run at foreground priority.</span>
+</span><span class='line'>    <span class="n">BinderInternal</span><span class="o">.</span><span class="na">disableBackgroundScheduling</span><span class="o">(</span><span class="kc">true</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Prepare the main looper thread (this thread).</span>
+</span><span class='line'>    <span class="n">android</span><span class="o">.</span><span class="na">os</span><span class="o">.</span><span class="na">Process</span><span class="o">.</span><span class="na">setThreadPriority</span><span class="o">(</span>
+</span><span class='line'>            <span class="n">android</span><span class="o">.</span><span class="na">os</span><span class="o">.</span><span class="na">Process</span><span class="o">.</span><span class="na">THREAD_PRIORITY_FOREGROUND</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">android</span><span class="o">.</span><span class="na">os</span><span class="o">.</span><span class="na">Process</span><span class="o">.</span><span class="na">setCanSelfBackground</span><span class="o">(</span><span class="kc">false</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">Looper</span><span class="o">.</span><span class="na">prepareMainLooper</span><span class="o">();</span> <span class="c1">// 准备主线程循环</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Initialize native services.</span>
+</span><span class='line'>    <span class="n">System</span><span class="o">.</span><span class="na">loadLibrary</span><span class="o">(</span><span class="s">&quot;android_servers&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">nativeInit</span><span class="o">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Check whether we failed to shut down last time we tried.</span>
+</span><span class='line'>    <span class="c1">// This call may not return.</span>
+</span><span class='line'>    <span class="n">performPendingShutdown</span><span class="o">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Initialize the system context.</span>
+</span><span class='line'>    <span class="n">createSystemContext</span><span class="o">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Create the system service manager.</span>
+</span><span class='line'>    <span class="n">mSystemServiceManager</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">SystemServiceManager</span><span class="o">(</span><span class="n">mSystemContext</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">LocalServices</span><span class="o">.</span><span class="na">addService</span><span class="o">(</span><span class="n">SystemServiceManager</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">mSystemServiceManager</span><span class="o">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Start services.  // 启动服务</span>
+</span><span class='line'>    <span class="k">try</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">startBootstrapServices</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">startCoreServices</span><span class="o">();</span>
+</span><span class='line'>        <span class="n">startOtherServices</span><span class="o">();</span>
+</span><span class='line'>    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">Throwable</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">Slog</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">&quot;System&quot;</span><span class="o">,</span> <span class="s">&quot;******************************************&quot;</span><span class="o">);</span>
+</span><span class='line'>        <span class="n">Slog</span><span class="o">.</span><span class="na">e</span><span class="o">(</span><span class="s">&quot;System&quot;</span><span class="o">,</span> <span class="s">&quot;************ Failure starting system services&quot;</span><span class="o">,</span> <span class="n">ex</span><span class="o">);</span>
+</span><span class='line'>        <span class="k">throw</span> <span class="n">ex</span><span class="o">;</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// For debug builds, log event loop stalls to dropbox for analysis.</span>
+</span><span class='line'>    <span class="k">if</span> <span class="o">(</span><span class="n">StrictMode</span><span class="o">.</span><span class="na">conditionallyEnableDebugLogging</span><span class="o">())</span> <span class="o">{</span>
+</span><span class='line'>        <span class="n">Slog</span><span class="o">.</span><span class="na">i</span><span class="o">(</span><span class="n">TAG</span><span class="o">,</span> <span class="s">&quot;Enabled StrictMode for system server main thread.&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Loop forever.</span>
+</span><span class='line'>    <span class="n">Looper</span><span class="o">.</span><span class="na">loop</span><span class="o">();</span>  <span class="c1">// 启动线程循环，等待消息处理</span>
+</span><span class='line'>    <span class="k">throw</span> <span class="k">new</span> <span class="nf">RuntimeException</span><span class="o">(</span><span class="s">&quot;Main thread loop unexpectedly exited&quot;</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在这个 run 方法中，主要完成三件事情，创建 system context 和 system service manager，启动一些系统服务，进入主线程消息循环。</p>
+
+<h2>Zygote 的 fork 本地方法分析</h2>
+
+<p>接下来我们仔细分析 <code>Zygote.forkSystemServer</code> 与 <code>Zygote.forkAndSpecialize</code> 两个方法。</p>
+
+<h3>forkSystemServer</h3>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">ZygoteHooks</span> <span class="n">VM_HOOKS</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">ZygoteHooks</span><span class="o">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">forkSystemServer</span><span class="o">(</span><span class="kt">int</span> <span class="n">uid</span><span class="o">,</span> <span class="kt">int</span> <span class="n">gid</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">gids</span><span class="o">,</span> <span class="kt">int</span> <span class="n">debugFlags</span><span class="o">,</span>
+</span><span class='line'>        <span class="kt">int</span><span class="o">[][]</span> <span class="n">rlimits</span><span class="o">,</span> <span class="kt">long</span> <span class="n">permittedCapabilities</span><span class="o">,</span> <span class="kt">long</span> <span class="n">effectiveCapabilities</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">VM_HOOKS</span><span class="o">.</span><span class="na">preFork</span><span class="o">();</span>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">nativeForkSystemServer</span><span class="o">(</span>
+</span><span class='line'>            <span class="n">uid</span><span class="o">,</span> <span class="n">gid</span><span class="o">,</span> <span class="n">gids</span><span class="o">,</span> <span class="n">debugFlags</span><span class="o">,</span> <span class="n">rlimits</span><span class="o">,</span> <span class="n">permittedCapabilities</span><span class="o">,</span> <span class="n">effectiveCapabilities</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">VM_HOOKS</span><span class="o">.</span><span class="na">postForkCommon</span><span class="o">();</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">pid</span><span class="o">;</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>在调用 <code>nativeForkSystemServer</code> 创建 <code>system_server</code> 进程之前与之后，都会调用 ZygoteHooks 进行一些前置与后置处理。</p>
+
+<h4>ZygoteHooks.preFork</h4>
+
+<p>前置处理 <code>ZygoteHooks.preFork</code>：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kt">void</span> <span class="nf">preFork</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">Daemons</span><span class="o">.</span><span class="na">stop</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">waitUntilAllThreadsStopped</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">token</span> <span class="o">=</span> <span class="n">nativePreFork</span><span class="o">();</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>Daemons.stop()</code>; 停止虚拟机中一些守护线程操作：如引用队列、终接器、GC等</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">stop</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">ReferenceQueueDaemon</span><span class="o">.</span><span class="na">INSTANCE</span><span class="o">.</span><span class="na">stop</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">FinalizerDaemon</span><span class="o">.</span><span class="na">INSTANCE</span><span class="o">.</span><span class="na">stop</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">FinalizerWatchdogDaemon</span><span class="o">.</span><span class="na">INSTANCE</span><span class="o">.</span><span class="na">stop</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">HeapTrimmerDaemon</span><span class="o">.</span><span class="na">INSTANCE</span><span class="o">.</span><span class="na">stop</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">GCDaemon</span><span class="o">.</span><span class="na">INSTANCE</span><span class="o">.</span><span class="na">stop</span><span class="o">();</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>waitUntilAllThreadsStopped</code> 保证被 <code>fork</code> 的进程是单线程，这样可以确保通过 <code>copyonwrite fork</code> 出来的进程也是单线程，从而节省资源。与前面提到的在新建 <code>system_server</code> 进程中调用 <code>closeServerSocket</code> 关闭 <code>sockect</code> 有异曲同工之妙。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="cm">/**</span>
+</span><span class='line'><span class="cm"> * We must not fork until we&#39;re single-threaded again. Wait until /proc shows we&#39;re</span>
+</span><span class='line'><span class="cm"> * down to just one thread.</span>
+</span><span class='line'><span class="cm"> */</span>
+</span><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">waitUntilAllThreadsStopped</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">File</span> <span class="n">tasks</span> <span class="o">=</span> <span class="k">new</span> <span class="nf">File</span><span class="o">(</span><span class="s">&quot;/proc/self/task&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="k">while</span> <span class="o">(</span><span class="n">tasks</span><span class="o">.</span><span class="na">list</span><span class="o">().</span><span class="na">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="k">try</span> <span class="o">{</span>
+</span><span class='line'>            <span class="c1">// Experimentally, booting and playing about with a stingray, I never saw us</span>
+</span><span class='line'>            <span class="c1">// go round this loop more than once with a 10ms sleep.</span>
+</span><span class='line'>            <span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">10</span><span class="o">);</span>
+</span><span class='line'>        <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InterruptedException</span> <span class="n">ignored</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>        <span class="o">}</span>
+</span><span class='line'>    <span class="o">}</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>本地方法 <code>nativePreFork</code> 实现在 <code>art/runtime/native/dalvik_system_ZygoteHooks.cc</code> 中。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="k">static</span> <span class="n">jlong</span> <span class="nf">ZygoteHooks_nativePreFork</span><span class="p">(</span><span class="n">JNIEnv</span><span class="o">*</span> <span class="n">env</span><span class="p">,</span> <span class="n">jclass</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">Runtime</span><span class="o">*</span> <span class="n">runtime</span> <span class="o">=</span> <span class="n">Runtime</span><span class="o">::</span><span class="n">Current</span><span class="p">();</span>
+</span><span class='line'>  <span class="n">CHECK</span><span class="p">(</span><span class="n">runtime</span><span class="o">-&gt;</span><span class="n">IsZygote</span><span class="p">())</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;runtime instance not started with -Xzygote&quot;</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">runtime</span><span class="o">-&gt;</span><span class="n">PreZygoteFork</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">// Grab thread before fork potentially makes Thread::pthread_key_self_ unusable.</span>
+</span><span class='line'>  <span class="n">Thread</span><span class="o">*</span> <span class="n">self</span> <span class="o">=</span> <span class="n">Thread</span><span class="o">::</span><span class="n">Current</span><span class="p">();</span>
+</span><span class='line'>  <span class="k">return</span> <span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="n">jlong</span><span class="o">&gt;</span><span class="p">(</span><span class="n">self</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>ZygoteHooks_nativePreFork</code> 通过调用 <code>Runtime::PreZygoteFork</code> 来完成 <code>gc</code> 堆的一些初始化，这部分代码在 <code>art/runtime/runtime.cc</code> 中：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="n">heap_</span> <span class="o">=</span> <span class="k">new</span> <span class="n">gc</span><span class="o">::</span><span class="n">Heap</span><span class="p">(...);</span>
+</span><span class='line'><span class="kt">void</span> <span class="n">Runtime</span><span class="o">::</span><span class="n">PreZygoteFork</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">heap_</span><span class="o">-&gt;</span><span class="n">PreZygoteFork</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>创建 system_server 进程：</h4>
+
+<p><code>nativeForkSystemServer</code> 实现在 <code>framework/base/core/jni/com_android_internal_os_Zygote.cpp</code> 中：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="k">static</span> <span class="n">jint</span> <span class="nf">com_android_internal_os_Zygote_nativeForkSystemServer</span><span class="p">(</span>
+</span><span class='line'>        <span class="n">JNIEnv</span><span class="o">*</span> <span class="n">env</span><span class="p">,</span> <span class="n">jclass</span><span class="p">,</span> <span class="kt">uid_t</span> <span class="n">uid</span><span class="p">,</span> <span class="kt">gid_t</span> <span class="n">gid</span><span class="p">,</span> <span class="n">jintArray</span> <span class="n">gids</span><span class="p">,</span>
+</span><span class='line'>        <span class="n">jint</span> <span class="n">debug_flags</span><span class="p">,</span> <span class="n">jobjectArray</span> <span class="n">rlimits</span><span class="p">,</span> <span class="n">jlong</span> <span class="n">permittedCapabilities</span><span class="p">,</span>
+</span><span class='line'>        <span class="n">jlong</span> <span class="n">effectiveCapabilities</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kt">pid_t</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">ForkAndSpecializeCommon</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">gid</span><span class="p">,</span> <span class="n">gids</span><span class="p">,</span>
+</span><span class='line'>                    <span class="n">debug_flags</span><span class="p">,</span> <span class="n">rlimits</span><span class="p">,</span>
+</span><span class='line'>                    <span class="n">permittedCapabilities</span><span class="p">,</span> <span class="n">effectiveCapabilities</span><span class="p">,</span>
+</span><span class='line'>                    <span class="n">MOUNT_EXTERNAL_NONE</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">true</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span>
+</span><span class='line'>                    <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="c1">// The zygote process checks whether the child process has died or not.</span>
+</span><span class='line'>        <span class="n">ALOGI</span><span class="p">(</span><span class="s">&quot;System server process %d has been created&quot;</span><span class="p">,</span> <span class="n">pid</span><span class="p">);</span>
+</span><span class='line'>        <span class="n">gSystemServerPid</span> <span class="o">=</span> <span class="n">pid</span><span class="p">;</span>
+</span><span class='line'>        <span class="c1">// There is a slight window that the system server process has crashed</span>
+</span><span class='line'>        <span class="c1">// but it went unnoticed because we haven&#39;t published its pid yet. So</span>
+</span><span class='line'>        <span class="c1">// we recheck here just to make sure that all is well.</span>
+</span><span class='line'>        <span class="kt">int</span> <span class="n">status</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="n">waitpid</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">status</span><span class="p">,</span> <span class="n">WNOHANG</span><span class="p">)</span> <span class="o">==</span> <span class="n">pid</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="n">ALOGE</span><span class="p">(</span><span class="s">&quot;System server process %d has died. Restarting Zygote!&quot;</span><span class="p">,</span> <span class="n">pid</span><span class="p">);</span>
+</span><span class='line'>            <span class="n">RuntimeAbort</span><span class="p">(</span><span class="n">env</span><span class="p">);</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">pid</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>它转调 <code>ForkAndSpecializeCommon</code> 来创建新进程，并确保 <code>system_server</code> 创建成功，若不成功便成仁：重启 <code>zygote</code>，因为没有 <code>system_server</code> 就干不了什么事情。<code>ForkAndSpecializeCommon</code> 实现如下：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="k">static</span> <span class="k">const</span> <span class="kt">char</span> <span class="n">kZygoteClassName</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;com/android/internal/os/Zygote&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">gZygoteClass</span> <span class="o">=</span> <span class="p">(</span><span class="n">jclass</span><span class="p">)</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">NewGlobalRef</span><span class="p">(</span><span class="n">env</span><span class="o">-&gt;</span><span class="n">FindClass</span><span class="p">(</span><span class="n">kZygoteClassName</span><span class="p">));</span>
+</span><span class='line'><span class="n">gCallPostForkChildHooks</span> <span class="o">=</span> <span class="n">env</span><span class="o">-&gt;</span><span class="n">GetStaticMethodID</span><span class="p">(</span><span class="n">gZygoteClass</span><span class="p">,</span> <span class="s">&quot;callPostForkChildHooks&quot;</span><span class="p">,</span>
+</span><span class='line'>                                       <span class="s">&quot;(ILjava/lang/String;)V&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// Utility routine to fork zygote and specialize the child process.</span>
+</span><span class='line'><span class="k">static</span> <span class="kt">pid_t</span> <span class="nf">ForkAndSpecializeCommon</span><span class="p">(</span><span class="n">JNIEnv</span><span class="o">*</span> <span class="n">env</span><span class="p">,</span> <span class="kt">uid_t</span> <span class="n">uid</span><span class="p">,</span> <span class="kt">gid_t</span> <span class="n">gid</span><span class="p">,</span> <span class="n">jintArray</span> <span class="n">javaGids</span><span class="p">,</span>
+</span><span class='line'>                 <span class="n">jint</span> <span class="n">debug_flags</span><span class="p">,</span> <span class="n">jobjectArray</span> <span class="n">javaRlimits</span><span class="p">,</span>
+</span><span class='line'>                 <span class="n">jlong</span> <span class="n">permittedCapabilities</span><span class="p">,</span> <span class="n">jlong</span> <span class="n">effectiveCapabilities</span><span class="p">,</span>
+</span><span class='line'>                 <span class="n">jint</span> <span class="n">mount_external</span><span class="p">,</span>
+</span><span class='line'>                 <span class="n">jstring</span> <span class="n">java_se_info</span><span class="p">,</span> <span class="n">jstring</span> <span class="n">java_se_name</span><span class="p">,</span>
+</span><span class='line'>                 <span class="kt">bool</span> <span class="n">is_system_server</span><span class="p">,</span> <span class="n">jintArray</span> <span class="n">fdsToClose</span><span class="p">,</span>
+</span><span class='line'>                 <span class="n">jstring</span> <span class="n">instructionSet</span><span class="p">,</span> <span class="n">jstring</span> <span class="n">dataDir</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="n">SetSigChldHandler</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kt">pid_t</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">fork</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="c1">// The child process.</span>
+</span><span class='line'>        <span class="p">...</span>
+</span><span class='line'>        <span class="n">rc</span> <span class="o">=</span> <span class="n">selinux_android_setcontext</span><span class="p">(</span><span class="n">uid</span><span class="p">,</span> <span class="n">is_system_server</span><span class="p">,</span> <span class="n">se_info_c_str</span><span class="p">,</span> <span class="n">se_name_c_str</span><span class="p">);</span>
+</span><span class='line'>        <span class="p">...</span>
+</span><span class='line'>        <span class="n">UnsetSigChldHandler</span><span class="p">();</span>
+</span><span class='line'>        <span class="p">...</span>
+</span><span class='line'>        <span class="n">env</span><span class="o">-&gt;</span><span class="n">CallStaticVoidMethod</span><span class="p">(</span><span class="n">gZygoteClass</span><span class="p">,</span> <span class="n">gCallPostForkChildHooks</span><span class="p">,</span> <span class="n">debug_flags</span><span class="p">,</span>
+</span><span class='line'>                      <span class="n">is_system_server</span> <span class="o">?</span> <span class="nb">NULL</span> <span class="o">:</span> <span class="n">instructionSet</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="c1">// the parent process</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">return</span> <span class="n">pid</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>ForkAndSpecializeCommon</code> 首先设置子进程异常处理<code>handler</code>，然后 </ode>fork</code> 新进程，在新进程中设置 <code>SELinux</code>，并清除它的子进程异常处理 <code>handler</code>，然后调用 <code>Zygote.callPostForkChildHooks</code> 方法。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">callPostForkChildHooks</span><span class="o">(</span><span class="kt">int</span> <span class="n">debugFlags</span><span class="o">,</span> <span class="n">String</span> <span class="n">instructionSet</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="n">SystemClock</span><span class="o">.</span><span class="na">elapsedRealtime</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">VM_HOOKS</span><span class="o">.</span><span class="na">postForkChild</span><span class="o">(</span><span class="n">debugFlags</span><span class="o">,</span> <span class="n">instructionSet</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">checkTime</span><span class="o">(</span><span class="n">startTime</span><span class="o">,</span> <span class="s">&quot;Zygote.callPostForkChildHooks&quot;</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>callPostForkChildHooks</code> 又转调 <code>ZygoteHooks.postForkChild</code> :</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kt">void</span> <span class="nf">postForkChild</span><span class="o">(</span><span class="kt">int</span> <span class="n">debugFlags</span><span class="o">,</span> <span class="n">String</span> <span class="n">instructionSet</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">nativePostForkChild</span><span class="o">(</span><span class="n">token</span><span class="o">,</span> <span class="n">debugFlags</span><span class="o">,</span> <span class="n">instructionSet</span><span class="o">);</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>本地方法 <code>nativePostForkChild</code> 又进到 <code>dalvik_system_ZygoteHooks.cc</code> 中：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="k">static</span> <span class="kt">void</span> <span class="nf">ZygoteHooks_nativePostForkChild</span><span class="p">(</span><span class="n">JNIEnv</span><span class="o">*</span> <span class="n">env</span><span class="p">,</span> <span class="n">jclass</span><span class="p">,</span> <span class="n">jlong</span> <span class="n">token</span><span class="p">,</span> <span class="n">jint</span> <span class="n">debug_flags</span><span class="p">,</span>
+</span><span class='line'>                                        <span class="n">jstring</span> <span class="n">instruction_set</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">Thread</span><span class="o">*</span> <span class="kr">thread</span> <span class="o">=</span> <span class="k">reinterpret_cast</span><span class="o">&lt;</span><span class="n">Thread</span><span class="o">*&gt;</span><span class="p">(</span><span class="n">token</span><span class="p">);</span>
+</span><span class='line'>    <span class="c1">// Our system thread ID, etc, has changed so reset Thread state.</span>
+</span><span class='line'>    <span class="kr">thread</span><span class="o">-&gt;</span><span class="n">InitAfterFork</span><span class="p">();</span>
+</span><span class='line'>    <span class="n">EnableDebugFeatures</span><span class="p">(</span><span class="n">debug_flags</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">instruction_set</span> <span class="o">!=</span> <span class="k">nullptr</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">ScopedUtfChars</span> <span class="n">isa_string</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">instruction_set</span><span class="p">);</span>
+</span><span class='line'>        <span class="n">InstructionSet</span> <span class="n">isa</span> <span class="o">=</span> <span class="n">GetInstructionSetFromString</span><span class="p">(</span><span class="n">isa_string</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+</span><span class='line'>        <span class="n">Runtime</span><span class="o">::</span><span class="n">NativeBridgeAction</span> <span class="n">action</span> <span class="o">=</span> <span class="n">Runtime</span><span class="o">::</span><span class="n">NativeBridgeAction</span><span class="o">::</span><span class="n">kUnload</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">if</span> <span class="p">(</span><span class="n">isa</span> <span class="o">!=</span> <span class="n">kNone</span> <span class="o">&amp;&amp;</span> <span class="n">isa</span> <span class="o">!=</span> <span class="n">kRuntimeISA</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="n">action</span> <span class="o">=</span> <span class="n">Runtime</span><span class="o">::</span><span class="n">NativeBridgeAction</span><span class="o">::</span><span class="n">kInitialize</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>        <span class="n">Runtime</span><span class="o">::</span><span class="n">Current</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">DidForkFromZygote</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">action</span><span class="p">,</span> <span class="n">isa_string</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+</span><span class='line'>    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">Runtime</span><span class="o">::</span><span class="n">Current</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">DidForkFromZygote</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">Runtime</span><span class="o">::</span><span class="n">NativeBridgeAction</span><span class="o">::</span><span class="n">kUnload</span><span class="p">,</span> <span class="k">nullptr</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>thread->InitAfterFork()</code>; 实现在 <code>art/runtime/thread.cc</code> 中，设置新进程主线程的线程<code>id</code>： <code>tid</code>。<code>DidForkFromZygote</code> 实现在 <code>Runtime.cc</code> 中：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="kt">void</span> <span class="n">Runtime</span><span class="o">::</span><span class="n">DidForkFromZygote</span><span class="p">(</span><span class="n">JNIEnv</span><span class="o">*</span> <span class="n">env</span><span class="p">,</span> <span class="n">NativeBridgeAction</span> <span class="n">action</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">isa</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="n">is_zygote_</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">switch</span> <span class="p">(</span><span class="n">action</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">case</span> <span class="n">NativeBridgeAction</span><span class="o">::</span><span class="nl">kUnload</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">UnloadNativeBridge</span><span class="p">();</span>
+</span><span class='line'>        <span class="k">break</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">case</span> <span class="n">NativeBridgeAction</span><span class="o">::</span><span class="nl">kInitialize</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">InitializeNativeBridge</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">isa</span><span class="p">);</span>
+</span><span class='line'>        <span class="k">break</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Create the thread pool.</span>
+</span><span class='line'>    <span class="n">heap_</span><span class="o">-&gt;</span><span class="n">CreateThreadPool</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">StartSignalCatcher</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1">// Start the JDWP thread. If the command-line debugger flags specified &quot;suspend=y&quot;,</span>
+</span><span class='line'>    <span class="c1">// this will pause the runtime, so we probably want this to come last.</span>
+</span><span class='line'>    <span class="n">Dbg</span><span class="o">::</span><span class="n">StartJdwp</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>首先根据 <code>action</code> 参数来卸载或转载用于跨平台桥接用的库。然后启动 <code>gc</code> 堆的线程池。<code>StartSignalCatcher</code> 设置信号处理 <code>handler</code>，其代码在 <code>signal_catcher.cc</code> 中。</p>
+
+<h4>ZygoteHooks.postForkCommon</h4>
+
+<p>后置处理 <code>ZygoteHooks.postForkCommon</code>：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kt">void</span> <span class="nf">postForkCommon</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">Daemons</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><code>postForkCommon</code> 转调 <code>Daemons.start</code>，以初始化虚拟机中引用队列、终接器以及 <code>gc</code> 的守护线程。</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">()</span> <span class="o">{</span>
+</span><span class='line'>    <span class="n">ReferenceQueueDaemon</span><span class="o">.</span><span class="na">INSTANCE</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">FinalizerDaemon</span><span class="o">.</span><span class="na">INSTANCE</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">FinalizerWatchdogDaemon</span><span class="o">.</span><span class="na">INSTANCE</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">HeapTrimmerDaemon</span><span class="o">.</span><span class="na">INSTANCE</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">GCDaemon</span><span class="o">.</span><span class="na">INSTANCE</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>forkAndSpecialize</h3>
+
+<p><code>Zygote.forkAndSpecialize</code> 方法</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">forkAndSpecialize</span><span class="o">(</span><span class="kt">int</span> <span class="n">uid</span><span class="o">,</span> <span class="kt">int</span> <span class="n">gid</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">gids</span><span class="o">,</span> <span class="kt">int</span> <span class="n">debugFlags</span><span class="o">,</span>
+</span><span class='line'>      <span class="kt">int</span><span class="o">[][]</span> <span class="n">rlimits</span><span class="o">,</span> <span class="kt">int</span> <span class="n">mountExternal</span><span class="o">,</span> <span class="n">String</span> <span class="n">seInfo</span><span class="o">,</span> <span class="n">String</span> <span class="n">niceName</span><span class="o">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">fdsToClose</span><span class="o">,</span>
+</span><span class='line'>      <span class="n">String</span> <span class="n">instructionSet</span><span class="o">,</span> <span class="n">String</span> <span class="n">appDataDir</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>    <span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="n">SystemClock</span><span class="o">.</span><span class="na">elapsedRealtime</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">VM_HOOKS</span><span class="o">.</span><span class="na">preFork</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">checkTime</span><span class="o">(</span><span class="n">startTime</span><span class="o">,</span> <span class="s">&quot;Zygote.preFork&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="kt">int</span> <span class="n">pid</span> <span class="o">=</span> <span class="n">nativeForkAndSpecialize</span><span class="o">(</span>
+</span><span class='line'>              <span class="n">uid</span><span class="o">,</span> <span class="n">gid</span><span class="o">,</span> <span class="n">gids</span><span class="o">,</span> <span class="n">debugFlags</span><span class="o">,</span> <span class="n">rlimits</span><span class="o">,</span> <span class="n">mountExternal</span><span class="o">,</span> <span class="n">seInfo</span><span class="o">,</span> <span class="n">niceName</span><span class="o">,</span> <span class="n">fdsToClose</span><span class="o">,</span>
+</span><span class='line'>              <span class="n">instructionSet</span><span class="o">,</span> <span class="n">appDataDir</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">checkTime</span><span class="o">(</span><span class="n">startTime</span><span class="o">,</span> <span class="s">&quot;Zygote.nativeForkAndSpecialize&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="n">VM_HOOKS</span><span class="o">.</span><span class="na">postForkCommon</span><span class="o">();</span>
+</span><span class='line'>    <span class="n">checkTime</span><span class="o">(</span><span class="n">startTime</span><span class="o">,</span> <span class="s">&quot;Zygote.postForkCommon&quot;</span><span class="o">);</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">pid</span><span class="o">;</span>
+</span><span class='line'><span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>前置处理与后置处理与 <code>forkSystemServer</code> 中一样的，这里就跳过不讲了。本地方法 <code>nativeForkAndSpecialize</code> 实现在 <code>framework/base/core/jni/com_android_internal_os_Zygote.cpp</code> 中：</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="k">static</span> <span class="n">jint</span> <span class="nf">com_android_internal_os_Zygote_nativeForkAndSpecialize</span><span class="p">(</span>
+</span><span class='line'>        <span class="n">JNIEnv</span><span class="o">*</span> <span class="n">env</span><span class="p">,</span> <span class="n">jclass</span><span class="p">,</span> <span class="n">jint</span> <span class="n">uid</span><span class="p">,</span> <span class="n">jint</span> <span class="n">gid</span><span class="p">,</span> <span class="n">jintArray</span> <span class="n">gids</span><span class="p">,</span>
+</span><span class='line'>        <span class="n">jint</span> <span class="n">debug_flags</span><span class="p">,</span> <span class="n">jobjectArray</span> <span class="n">rlimits</span><span class="p">,</span>
+</span><span class='line'>        <span class="n">jint</span> <span class="n">mount_external</span><span class="p">,</span> <span class="n">jstring</span> <span class="n">se_info</span><span class="p">,</span> <span class="n">jstring</span> <span class="n">se_name</span><span class="p">,</span>
+</span><span class='line'>        <span class="n">jintArray</span> <span class="n">fdsToClose</span><span class="p">,</span> <span class="n">jstring</span> <span class="n">instructionSet</span><span class="p">,</span> <span class="n">jstring</span> <span class="n">appDataDir</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="c1">// Grant CAP_WAKE_ALARM to the Bluetooth process.</span>
+</span><span class='line'>    <span class="n">jlong</span> <span class="n">capabilities</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">if</span> <span class="p">(</span><span class="n">uid</span> <span class="o">==</span> <span class="n">AID_BLUETOOTH</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="n">capabilities</span> <span class="o">|=</span> <span class="p">(</span><span class="mi">1LL</span> <span class="o">&lt;&lt;</span> <span class="n">CAP_WAKE_ALARM</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">return</span> <span class="n">ForkAndSpecializeCommon</span><span class="p">(</span><span class="n">env</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">gid</span><span class="p">,</span> <span class="n">gids</span><span class="p">,</span> <span class="n">debug_flags</span><span class="p">,</span>
+</span><span class='line'>            <span class="n">rlimits</span><span class="p">,</span> <span class="n">capabilities</span><span class="p">,</span> <span class="n">capabilities</span><span class="p">,</span> <span class="n">mount_external</span><span class="p">,</span> <span class="n">se_info</span><span class="p">,</span>
+</span><span class='line'>            <span class="n">se_name</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="n">fdsToClose</span><span class="p">,</span> <span class="n">instructionSet</span><span class="p">,</span> <span class="n">appDataDir</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>这个函数与 <code>com_android_internal_os_Zygote_nativeForkSystemServer</code> 非常类似，只不过少了一个确保子进程创建成功的步骤。</p>
+</div>
+
+
+  
+  <footer>
+
+    <p>
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">飘飘白云</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-02-25T22:13:20+08:00'><span class='date'>2016-02-25</span> <span class='time'>10:13 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ruan-jian-kai-fa/'>软件开发</a>
+  
+</span>
+
+
+      
+
+<span class="tags">
+  
+    <a class='tag' href='/tags/android/'>android</a>
+  
+</span>
+
+
+      
+
+<DIV style="font-size:12px;BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 1px solid; BACKGROUND: #f6f6f6; HEIGHT: 120px; BORDER-TOP: #bbbbbb 1px solid; BORDER-RIGHT: #bbbbbb 1px solid" class=kesalinlicense> 
+	<DIV style="MARGIN-TOP: 10px; FLOAT: left; MARGIN-LEFT: 5px; MARGIN-RIGHT: 10px"> 
+		<IMG alt="" src="http://pic.cnitblog.com/avatar/81194/20130411221004.png" width=90 height=100>
+	</DIV> 
+	<DIV style="LINE-HEIGHT: 200%; MARGIN-TOP: 10px; COLOR: #000000"> 
+		作者： <A href="http://luozhaohui.github.io/">飘飘白云/罗朝辉</A> <BR> 
+		出处： <A href="http://luozhaohui.github.io/">http://luozhaohui.github.io/</A> 
+		<BR>本文基于<a target="_blank" title="Creative Commons Attribution 2.5 China Mainland License" href="http://creativecommons.org/licenses/by-nc-sa/2.5/cn/">署名-非商业性使用-相同方式共享 2.5 中国大陆</a>许可协议发布
+		<BR>欢迎非商业目的转载，须保持文章完整，并保留署名<a href="http://luozhaohui.github.io/">飘飘白云/罗朝辉</a>与<a href="http://luozhaohui.github.io/">出处</a>。 
+	</DIV>
+</DIV> 
+
+    </p>
+
+    <p>
+      
+
+<div class="related-posts" style="font-size:12px;BORDER-BOTTOM: #bbbbbb 1px solid; BORDER-LEFT: #bbbbbb 1px solid; BACKGROUND: #f6f6f6; BORDER-TOP: #bbbbbb 1px solid; BORDER-RIGHT: #bbbbbb 1px solid; padding-left: 8px; padding-top: 8px">
+<h3 style="margin-bottom: 0px"> 您也许会喜欢：</h3>
+<ol style="margin-left: 8px">
+
+  	<ul>
+      	<li>
+	      	<article class="post type-post status-publish format-standard hentry">
+				
+				<a href="/blog/2017/08/07/the-strunggle-for-law/">法律的斗争（萨孟武节录意译本）</a>
+				<span></span><span></span>
+				<time datetime="2017-08-07T20:30:02+08:00" pubdate><span class='month'>Aug</span> <span class='day'>07</span> <span class='year'>2017</span></time>
+			</article>
+		</li>
+	</ul>
+
+  	<ul>
+      	<li>
+	      	<article class="post type-post status-publish format-standard hentry">
+				
+				<a href="/blog/2017/03/15/cpp-scheme/">Cpp Scheme</a>
+				<span></span><span></span>
+				<time datetime="2017-03-15T00:00:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>15</span> <span class='year'>2017</span></time>
+			</article>
+		</li>
+	</ul>
+
+  	<ul>
+      	<li>
+	      	<article class="post type-post status-publish format-standard hentry">
+				
+				<a href="/blog/2017/01/01/reading/">2016年阅读统计</a>
+				<span></span><span></span>
+				<time datetime="2017-01-01T05:42:38+08:00" pubdate><span class='month'>Jan</span> <span class='day'>01</span> <span class='year'>2017</span></time>
+			</article>
+		</li>
+	</ul>
+
+<ol>
+</div>
+
+
+    </p>
+
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2017/01/01/reading/" title="上一篇: 2016年阅读统计">&laquo; 2016年阅读统计</a>
+      
+
+      
+        <a class="basic-alignment right" href="/blog/2016/01/31/book-genome/" title="下一篇: 读书笔记: 基因组-人种自传23章">读书笔记: 基因组-人种自传23章 &raquo;</a>
+      
+    </p>
+
+  </footer>
+</article>
+
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>文章分类</h1>
+  <ul id="categories">
+    <li class='category'><a href='/blog/categories/shu-ping-ying-ping/'>书评影评 (38)</a></li>
+<li class='category'><a href='/blog/categories/gong-ju-ruan-jian/'>工具软件 (2)</a></li>
+<li class='category'><a href='/blog/categories/xin-zhi-si-wei/'>心智思维 (4)</a></li>
+<li class='category'><a href='/blog/categories/sui-sui-nian/'>碎碎念 (24)</a></li>
+<li class='category'><a href='/blog/categories/she-hui-za-tan/'>社会杂谈 (9)</a></li>
+<li class='category'><a href='/blog/categories/du-shu-bi-ji/'>读书笔记 (2)</a></li>
+<li class='category'><a href='/blog/categories/ruan-jian-kai-fa/'>软件开发 (8)</a></li>
+<li class='category'><a href='/blog/categories/bian-zou-bian-kan/'>边走边看 (2)</a></li>
+
+  </ul>
+</section><section>
+  <h1>最新文章</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2017/08/07/the-strunggle-for-law/">法律的斗争（萨孟武节录意译本）</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/03/15/cpp-scheme/">Cpp Scheme</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2017/01/01/reading/">2016年阅读统计</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/02/25/android-zygote-server/">Android5 Zygote 与 SystemServer 启动流程分析</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2016/01/31/book-genome/">读书笔记: 基因组-人种自传23章</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>标签云</h1>
+  <ul class="tag-cloud">
+    <a style="font-size: 110%" href="/tags/shu-ping/">书评</a>
+<a style="font-size: 108%" href="/tags/sui-sui-nian/">碎碎念</a>
+<a style="font-size: 106%" href="/tags/ying-ping/">影评</a>
+<a style="font-size: 103%" href="/tags/si-wei/">思维</a>
+<a style="font-size: 101%" href="/tags/za-tan/">杂谈</a>
+<a style="font-size: 101%" href="/tags/android/">android</a>
+<a style="font-size: 100%" href="/tags/xin-qing/">心情</a>
+<a style="font-size: 100%" href="/tags/thread/">thread</a>
+<a style="font-size: 98%" href="/tags/hui-yi/">回忆</a>
+<a style="font-size: 97%" href="/tags/gong-ju/">工具</a>
+<a style="font-size: 97%" href="/tags/zheng-zhi/">政治</a>
+<a style="font-size: 97%" href="/tags/ri-ben/">日本</a>
+<a style="font-size: 97%" href="/tags/li-shi/">历史</a>
+<a style="font-size: 94%" href="/tags/lu-you/">旅游</a>
+<a style="font-size: 94%" href="/tags/bi-ji/">笔记</a>
+<a style="font-size: 94%" href="/tags/fang-fa-lun/">方法论</a>
+<a style="font-size: 90%" href="/tags/duan-lian/">锻炼</a>
+<a style="font-size: 90%" href="/tags/jiao-yu/">教育</a>
+<a style="font-size: 90%" href="/tags/xin-li-xue/">心理学</a>
+<a style="font-size: 90%" href="/tags/xi-guan/">习惯</a>
+
+  </ul>
+</section>
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - 飘飘白云 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+
+<!-- 友盟站点统计：http://www.umeng.com/ -->
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261636993'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261636993%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</p>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'https-luozhaohui-github-io';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://luozhaohui.github.io/blog/2016/02/25/android-zygote-server/';
+        var disqus_url = 'http://luozhaohui.github.io/blog/2016/02/25/android-zygote-server/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

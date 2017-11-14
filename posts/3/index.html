@@ -74,6 +74,98 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/07/12/android-thread-tutoria04/">Android多线程分析之四：MessageQueue的实现</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-07-12T20:53:20+08:00'><span class='date'>2014-07-12</span> <span class='time'>8:53 pm</span></time>
+        
+           | <a href="/blog/2014/07/12/android-thread-tutoria04/#disqus_thread"
+             data-disqus-identifier="http://luozhaohui.github.io/blog/2014/07/12/android-thread-tutoria04/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>引言</h2>
+
+<p>在前面两篇文章<a href="https://luozhaohui.github.io/blog/2014/07/10/android-thread-tutoria02/">Android多线程分析之二：Thread的实现</a>，<a href="https://luozhaohui.github.io/blog/2014/07/12/android-thread-tutoria03/">Android多线程分析之三：Handler，Looper的实现</a>中分别介绍了 <code>Thread</code> 的创建，运行，销毁的过程以及 <code>Thread</code>与 <code>Handler</code>，<code>Looper</code> 之间的关联：<code>Thread</code> 在其 <code>run()</code> 方法中创建和运行消息处理循环 <code>Looper</code>，而 <code>Looper::loop()</code> 方法不断地从 <code>MessageQueue</code> 中获取消息，并由 <code>Handler</code> 分发处理该消息。接下来就来介绍 <code>MessageQueue</code> 的运作机制。</p>
+
+<h2>参考源码：</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>android/framework/base/core/java/android/os/MessageQueue.java
+</span><span class='line'>android/framework/base/core/java/android/os/Message.java
+</span><span class='line'>android/frameworks/base/core/jni/android_os_MessageQueue.h
+</span><span class='line'>android/frameworks/base/core/jni/android_os_MessageQueue.cpp</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/07/12/android-thread-tutoria04/">阅读全文 &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/12/android-thread-tutoria03/">Android多线程分析之三：Handler，Looper的实现</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-07-12T20:53:20+08:00'><span class='date'>2014-07-12</span> <span class='time'>8:53 pm</span></time>
+        
+           | <a href="/blog/2014/07/12/android-thread-tutoria03/#disqus_thread"
+             data-disqus-identifier="http://luozhaohui.github.io/blog/2014/07/12/android-thread-tutoria03/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>引言</h2>
+
+<p>在前文<a href="https://luozhaohui.github.io/blog/2014/07/10/android-thread-tutoria02/">Android多线程分析之二：Thread的实现</a>中已经详细分析了<code>Android Thread</code> 是如何创建，运行以及销毁的，其重点是对相应 <code>native</code> 方法进行分析，今天我将聚焦于 <code>Android Framework</code> 层多线程相关的类：<code>Handler</code>, <code>Looper</code>, <code>MessageQueue</code>, <code>Message</code> 以及它们与<code>Thread</code> 之间的关系。可以用一个不太妥当的比喻来形容它们之间的关联：如果把 <code>Thread</code> 比作生产车间，那么 <code>Looper</code> 就是放在这车间里的生产线，这条生产线源源不断地从 <code>MessageQueue</code> 中获取材料 <code>Messsage</code>，并分发处理 <code>Message</code> (由于 <code>Message</code> 通常是完备的，所以 <code>Looper</code> 大多数情况下只是调度让 <code>Message</code> 的 <code>Handler</code> 去处理 <code>Message</code>)。正是因为消息需要在 <code>Looper</code> 中处理，而 <code>Looper</code> 又需运行在 <code>Thread</code> 中，所以不能随随便便在非 <code>UI</code> 线程中进行 <code>UI</code> 操作。 <code>UI</code> 操作通常会通过投递消息来实现，只有往正确的 <code>Looper</code> 投递消息才能得到处理，对于 <code>UI</code> 来说，这个 <code>Looper</code> 一定是运行在 <code>UI</code> 线程中。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/07/12/android-thread-tutoria03/">阅读全文 &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/07/10/android-thread-tutoria02/">Android多线程分析之二：Thread的实现</a></h1>
     
     
@@ -387,91 +479,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/16/thirty/">还没二够，就奔三了</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2013-04-16T18:31:42+08:00'><span class='date'>2013-04-16</span> <span class='time'>6:31 pm</span></time>
-        
-           | <a href="/blog/2013/04/16/thirty/#disqus_thread"
-             data-disqus-identifier="http://luozhaohui.github.io/blog/2013/04/16/thirty/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>某人说：你还没二够，就奔三了。我也是这么想的，三不三，我还真没感觉。记得小时候，三十是个大事，一般都是要办酒席的，我还记得几个叔叔三十的时候办酒席的情景。在儿时的农村，三十岁的人一般都“立”起来了，家庭，子女都有了，且不论在事业/生活上是否真正立起来l了。成长路上，见证了很多叔叔辈的而立之路，而今，岁月无情的年轮终于碾到我了。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/04/16/thirty/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/01/01/reading/">2012年阅读统计</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2013-01-01T05:42:38+08:00'><span class='date'>2013-01-01</span> <span class='time'>5:42 am</span></time>
-        
-           | <a href="/blog/2013/01/01/reading/#disqus_thread"
-             data-disqus-identifier="http://luozhaohui.github.io/blog/2013/01/01/reading/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>2012年阅读统计，本页面由代码自动生成</h2>
-
-<h2>总计阅读 43 本</h2>
-
-<h3>评价统计:</h3>
-
-<p><img src="https://i.imgur.com/ElTRuS8.png" alt="评价统计" /></p>
-
-<blockquote><p>五星图书 13 本，占比 30.2%<br/>
-四星图书 16 本，占比 37.2%<br/>
-三星图书 12 本，占比 27.9%<br/>
-两星图书 2 本，占比 4.7%</p></blockquote>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/01/01/reading/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
     <a class="prev" href="/posts/2">&larr; 新帖子</a>
@@ -493,7 +500,7 @@
 <li class='category'><a href='/blog/categories/sui-sui-nian/'>碎碎念 (24)</a></li>
 <li class='category'><a href='/blog/categories/she-hui-za-tan/'>社会杂谈 (9)</a></li>
 <li class='category'><a href='/blog/categories/du-shu-bi-ji/'>读书笔记 (2)</a></li>
-<li class='category'><a href='/blog/categories/ruan-jian-kai-fa/'>软件开发 (7)</a></li>
+<li class='category'><a href='/blog/categories/ruan-jian-kai-fa/'>软件开发 (8)</a></li>
 <li class='category'><a href='/blog/categories/bian-zou-bian-kan/'>边走边看 (2)</a></li>
 
   </ul>
@@ -506,19 +513,19 @@
       </li>
     
       <li class="post">
+        <a href="/blog/2017/03/15/cpp-scheme/">Cpp Scheme</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2017/01/01/reading/">2016年阅读统计</a>
       </li>
     
       <li class="post">
+        <a href="/blog/2016/02/25/android-zygote-server/">Android5 Zygote 与 SystemServer 启动流程分析</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2016/01/31/book-genome/">读书笔记: 基因组-人种自传23章</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/01/01/reading/">2015年阅读统计</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2016/01/01/books-annual-review/">2015私人阅读十五佳</a>
       </li>
     
   </ul>
@@ -531,16 +538,16 @@
 <a style="font-size: 106%" href="/tags/ying-ping/">影评</a>
 <a style="font-size: 103%" href="/tags/si-wei/">思维</a>
 <a style="font-size: 101%" href="/tags/za-tan/">杂谈</a>
+<a style="font-size: 101%" href="/tags/android/">android</a>
 <a style="font-size: 100%" href="/tags/xin-qing/">心情</a>
 <a style="font-size: 100%" href="/tags/thread/">thread</a>
-<a style="font-size: 100%" href="/tags/android/">android</a>
 <a style="font-size: 98%" href="/tags/hui-yi/">回忆</a>
 <a style="font-size: 97%" href="/tags/gong-ju/">工具</a>
 <a style="font-size: 97%" href="/tags/zheng-zhi/">政治</a>
 <a style="font-size: 97%" href="/tags/ri-ben/">日本</a>
 <a style="font-size: 97%" href="/tags/li-shi/">历史</a>
-<a style="font-size: 94%" href="/tags/bi-ji/">笔记</a>
 <a style="font-size: 94%" href="/tags/lu-you/">旅游</a>
+<a style="font-size: 94%" href="/tags/bi-ji/">笔记</a>
 <a style="font-size: 94%" href="/tags/fang-fa-lun/">方法论</a>
 <a style="font-size: 90%" href="/tags/duan-lian/">锻炼</a>
 <a style="font-size: 90%" href="/tags/jiao-yu/">教育</a>
