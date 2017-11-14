@@ -74,6 +74,199 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/07/10/android-thread-tutoria02/">Android多线程分析之二：Thread的实现</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-07-10T21:21:40+08:00'><span class='date'>2014-07-10</span> <span class='time'>9:21 pm</span></time>
+        
+           | <a href="/blog/2014/07/10/android-thread-tutoria02/#disqus_thread"
+             data-disqus-identifier="http://luozhaohui.github.io/blog/2014/07/10/android-thread-tutoria02/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>引言</h2>
+
+<p>在前文<a href="https://luozhaohui.github.io/blog/2014/07/08/android-thread-tutoria01/">Android多线程分析之一：使用Thread异步下载图像</a>中演示了如何使用<code>Thread</code>处理异步事务。示例中这个<code>Java Thread</code>类都是位于<code>Framework</code>层的类，它自身是通过<code>JNI</code>转调<code>dalvik</code>里面的<code>Thread</code>相关方法实现的。因此要分析<code>Andriod</code> 中的线程，就需要分析这两层中的与线程相关的代码，这就是本文要探讨的主题。本文将把<code>Framework</code>层中的<code>Java Thread</code>称为<code>Android Thread</code>，而把<code>dalvik</code>中的 <code>Thread</code>成为<code>dalvik Thread</code>。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/07/10/android-thread-tutoria02/">阅读全文 &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/08/android-thread-tutoria01/">Android多线程分析之一：使用Thread异步下载图像</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-07-08T20:38:35+08:00'><span class='date'>2014-07-08</span> <span class='time'>8:38 pm</span></time>
+        
+           | <a href="/blog/2014/07/08/android-thread-tutoria01/#disqus_thread"
+             data-disqus-identifier="http://luozhaohui.github.io/blog/2014/07/08/android-thread-tutoria01/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>打算整理一下对<code>Android Framework</code>中多线程相关知识的理解，主要集中在<code>Framework</code>层的<code>thread</code>, <code>Handler</code>, <code>Looper</code>, <code>MessageQueue</code>, <code>Message</code>, <code>AysncTask</code>，当然不可避免地要涉及到<code>native</code>方法，因此也会分析<code>dalvik</code>中和线程以及消息处理相关的代码：如<code>dalvik</code>中的<code>C++ Thread</code>类以及<code>MessageQueue</code>类。本文将从一个使用<code>Thread</code>的简单应用入手，引入<code>Thread</code>这个话题，接下来的几篇文章会依次介绍前面提到的那些主题。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/07/08/android-thread-tutoria01/">阅读全文 &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/06/30/reading-history/">读史又半年</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-06-30T09:00:35+08:00'><span class='date'>2014-06-30</span> <span class='time'>9:00 am</span></time>
+        
+           | <a href="/blog/2014/06/30/reading-history/#disqus_thread"
+             data-disqus-identifier="http://luozhaohui.github.io/blog/2014/06/30/reading-history/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>过了三十越发觉得时间之宝贵，三十之前觉得时间管理于我等无所作为的草民是不相干的，而今真有点只争朝夕的紧迫与仓促感。最近帮我老哥弄了个微信的公众平台，他发现我基本不上微信，觉得像我这样搞IT的不用微信很不可思议，包括不少朋友也有此同感。微信这玩意，非我不懂也，我只是没那么多时间和精力去刷那些个99%或是转发或是广告的垃圾信息。我的阵地在微博，豆瓣，QQ空间，微博提供技术/社会动态资讯；豆瓣提供读与看的资讯；QQ空间提供好友资讯，有此三者足以，而且每天浏览这些社交工具上的时间碎片加起来不会超过半小时。</p>
+
+<p>回顾2014上半年，看了不少有趣的影视剧（>33部），也读了不少好玩的书，在此总结之，广而荐之。总的来说这半年关注的重点在历史，金融与社会学。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/06/30/reading-history/">阅读全文 &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/02/century-of-revolution/">中国，一个世纪的革命</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-05-02T04:33:46+08:00'><span class='date'>2014-05-02</span> <span class='time'>4:33 am</span></time>
+        
+           | <a href="/blog/2014/05/02/century-of-revolution/#disqus_thread"
+             data-disqus-identifier="http://luozhaohui.github.io/blog/2014/05/02/century-of-revolution/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://img5.doubanio.com/mpic/s3052908.jpg" alt="中国革命" /></p>
+
+<h3>纪录片简介</h3>
+
+<p>由美国人Sue Williams制作的三集纪录片《<a href="http://movie.douban.com/subject/2042115/">中国，一个世纪的革命</a>》（China - A Century of Revolution），从1911年一直叙述到1997年，横跨一个世纪的中国历史。较（与国内史书／教科书相较）为真实客观地还原了中国近百年的历史，该片中有许多在中国主流媒体上不可能看到的极为珍贵且罕见的历史镜头，如孙中山讲话、宋美龄在美筹款、访谈蒋经国、80年代末的某次运动、访谈崔健等等。这一点相当赞！</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/05/02/century-of-revolution/">阅读全文 &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/04/07/success/">关于成就的那些事</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-04-07T06:16:00+08:00'><span class='date'>2014-04-07</span> <span class='time'>6:16 am</span></time>
+        
+           | <a href="/blog/2014/04/07/success/#disqus_thread"
+             data-disqus-identifier="http://luozhaohui.github.io/blog/2014/04/07/success/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>最近在练习主题阅读（关于主题阅读，请参考《如何阅读一本书》，或许我会整理一篇文章来），选的主题就是成就是怎样获得的？为此阅读/复习了一些书，获益良多，特此总结分析在这里，也算是完成主题阅读步骤的流程。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/04/07/success/">阅读全文 &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/01/06/summary/">书评：致逝去的这一年</a></h1>
     
     
@@ -279,222 +472,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/06/30/tianchao/">大宋末年</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-06-30T22:46:01+08:00'><span class='date'>2012-06-30</span> <span class='time'>10:46 pm</span></time>
-        
-           | <a href="/blog/2012/06/30/tianchao/#disqus_thread"
-             data-disqus-identifier="http://luozhaohui.github.io/blog/2012/06/30/tianchao/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>借用高中一同学的作文名言：如有雷同，纯属巧合。</p>
-
-<p>大宋末年，内患外扰，局势波涛汹涌。话说自艺高胆大的矮凳哥散手之后，江湖中并无王者，江湖管委会遂由东邪水工哥，青帮古月哥，望族子弟帮三方构成。</p>
-
-<p>这三方都非善类，彼此为着长老名额，势力范围明争暗斗。江湖管委会虽然内斗不断，但一般对外口径还算是一致，所以许多暗伤就不为江湖小混混所知也。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/06/30/tianchao/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/06/17/seven-habits-more/">再荐《高效能人士的七个习惯》</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-06-17T11:54:02+08:00'><span class='date'>2012-06-17</span> <span class='time'>11:54 am</span></time>
-        
-           | <a href="/blog/2012/06/17/seven-habits-more/#disqus_thread"
-             data-disqus-identifier="http://luozhaohui.github.io/blog/2012/06/17/seven-habits-more/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="https://img5.doubanio.com/mpic/s4510907.jpg" alt="高效能人士的七个习惯" /></p>
-
-<p>最近托张迪同学的福，重读了《<a href="http://book.douban.com/subject/5325618/">高效能人士的七个习惯</a>》这本书（请点击链接查看豆瓣介绍），2008年7月我曾推荐过这本小书，绝对值得花一两包烟钱或一块面膜的钱买来阅读与收藏。</p>
-
-<p>张迪同学曾经的公司给员工人手配备一本，让我很敬佩这家民营公司。如果用7个习惯的话来分析，这家公司的管理层正是在运用习惯四：双赢的思维在管理员工，员工自身成长了，自然不愁公司不成长。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/06/17/seven-habits-more/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/01/reading/">2011年阅读统计</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-01-01T05:42:38+08:00'><span class='date'>2012-01-01</span> <span class='time'>5:42 am</span></time>
-        
-           | <a href="/blog/2012/01/01/reading/#disqus_thread"
-             data-disqus-identifier="http://luozhaohui.github.io/blog/2012/01/01/reading/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>2011年阅读统计，本页面由代码自动生成</h2>
-
-<h2>总计阅读 41 本</h2>
-
-<h3>评价统计:</h3>
-
-<p><img src="https://i.imgur.com/bZ4Ts0P.png" alt="评价统计" /></p>
-
-<blockquote><p>五星图书 13 本，占比 31.7%<br/>
-四星图书 14 本，占比 34.1%<br/>
-三星图书 11 本，占比 26.8%<br/>
-两星图书 3 本，占比 7.3%</p></blockquote>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/01/01/reading/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/10/20/huangbitang/">《巨流河》中的璜壁堂</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2011-10-20T21:41:32+08:00'><span class='date'>2011-10-20</span> <span class='time'>9:41 pm</span></time>
-        
-           | <a href="/blog/2011/10/20/huangbitang/#disqus_thread"
-             data-disqus-identifier="http://luozhaohui.github.io/blog/2011/10/20/huangbitang/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://imgur.com/fS1H7aW"><img src="http://i.imgur.com/fS1H7aW.jpg" title="璜壁堂" /></a></p>
-
-<p>璜壁堂，是我的老家所在地，虽然在那里长大，可是对她的历史确实一无所知，惭愧。今天在看齐邦媛写的《<a href="http://book.douban.com/subject/4842446/">巨流河</a>》这本书的时候，看到有关东北中三中学“从汉口逃到湘乡”一节中如下一段：</p>
-
-<pre><code>“父亲多方奔波设法在湖南湘乡永丰镇找到了一座祠堂，璜壁堂。
-地方人士答应他，祠堂里可以收容一千个学生。。。。
-湘乡是齐白石的故乡，非常具有地方色彩。磺壁堂距湘乡又又几十里路。
-在永丰镇，是明朝一支皇族的祠堂。这祠堂大到居然能有近百间房舍。
-不但住得下学生，而且能够上课。
-我们家则跟家眷一起搬进另一处祠堂：扶稼堂。”
-</code></pre>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2011/10/20/huangbitang/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/07/18/passion/">找回使命感，重燃激情！</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2011-07-18T22:21:42+08:00'><span class='date'>2011-07-18</span> <span class='time'>10:21 pm</span></time>
-        
-           | <a href="/blog/2011/07/18/passion/#disqus_thread"
-             data-disqus-identifier="http://luozhaohui.github.io/blog/2011/07/18/passion/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>近来心态非常滴不踏实，不淡定。怎么说呢，就像一个拧紧发条向前冲的人，突然停下来想：这么冲为了啥呢？于是乎，心底疑惑起来，其余的一切依然在惯性的作用下看似如往常一样运转前行。</p>
-
-<p>也许也许很久很久没有过的迷茫阵痛期又要来了。记得当初毕业那阵子每隔几个月就要迷茫一下，那时候是为不知道以后会干什么，该学什么，也就是为一无所有以及不确定的前程迷茫。而现在的迷惑却是人活着为了啥？</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2011/07/18/passion/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
     <a class="prev" href="/posts/2">&larr; 新帖子</a>
@@ -511,12 +488,12 @@
   <h1>文章分类</h1>
   <ul id="categories">
     <li class='category'><a href='/blog/categories/shu-ping-ying-ping/'>书评影评 (38)</a></li>
-<li class='category'><a href='/blog/categories/gong-ju-ruan-jian/'>工具软件 (3)</a></li>
+<li class='category'><a href='/blog/categories/gong-ju-ruan-jian/'>工具软件 (2)</a></li>
 <li class='category'><a href='/blog/categories/xin-zhi-si-wei/'>心智思维 (4)</a></li>
 <li class='category'><a href='/blog/categories/sui-sui-nian/'>碎碎念 (24)</a></li>
 <li class='category'><a href='/blog/categories/she-hui-za-tan/'>社会杂谈 (9)</a></li>
 <li class='category'><a href='/blog/categories/du-shu-bi-ji/'>读书笔记 (2)</a></li>
-<li class='category'><a href='/blog/categories/ruan-jian-kai-fa/'>软件开发 (2)</a></li>
+<li class='category'><a href='/blog/categories/ruan-jian-kai-fa/'>软件开发 (7)</a></li>
 <li class='category'><a href='/blog/categories/bian-zou-bian-kan/'>边走边看 (2)</a></li>
 
   </ul>
@@ -555,20 +532,20 @@
 <a style="font-size: 103%" href="/tags/si-wei/">思维</a>
 <a style="font-size: 101%" href="/tags/za-tan/">杂谈</a>
 <a style="font-size: 100%" href="/tags/xin-qing/">心情</a>
+<a style="font-size: 100%" href="/tags/thread/">thread</a>
+<a style="font-size: 100%" href="/tags/android/">android</a>
 <a style="font-size: 98%" href="/tags/hui-yi/">回忆</a>
+<a style="font-size: 97%" href="/tags/gong-ju/">工具</a>
+<a style="font-size: 97%" href="/tags/zheng-zhi/">政治</a>
 <a style="font-size: 97%" href="/tags/ri-ben/">日本</a>
 <a style="font-size: 97%" href="/tags/li-shi/">历史</a>
-<a style="font-size: 97%" href="/tags/zheng-zhi/">政治</a>
-<a style="font-size: 97%" href="/tags/gong-ju/">工具</a>
+<a style="font-size: 94%" href="/tags/bi-ji/">笔记</a>
 <a style="font-size: 94%" href="/tags/lu-you/">旅游</a>
 <a style="font-size: 94%" href="/tags/fang-fa-lun/">方法论</a>
-<a style="font-size: 94%" href="/tags/bi-ji/">笔记</a>
 <a style="font-size: 90%" href="/tags/duan-lian/">锻炼</a>
 <a style="font-size: 90%" href="/tags/jiao-yu/">教育</a>
-<a style="font-size: 90%" href="/tags/xi-guan/">习惯</a>
-<a style="font-size: 90%" href="/tags/huan-bao/">环保</a>
 <a style="font-size: 90%" href="/tags/xin-li-xue/">心理学</a>
-<a style="font-size: 90%" href="/tags/ri-ju/">日剧</a>
+<a style="font-size: 90%" href="/tags/xi-guan/">习惯</a>
 
   </ul>
 </section>
