@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "基于C++11模板元编程实现Scheme中的list及相关函数式编程接口"
+title: "C++ 11模板元编程实现Scheme中的list及相关函数式编程接口"
 date: 2017-03-15 9:03:20 +0800
 comments: true
 categories: [软件开发]
-tags: [cpp]
-description: 基于C++11模板元编程实现Scheme中的list及相关函数式编程接口
-keywords: cpp, scheme
+tags: [C++, Scheme]
+description: C++ 11模板元编程实现Scheme中的list及相关函数式编程接口
+keywords: C++, Scheme
 ---
 
 ## 前言
@@ -24,26 +24,23 @@ keywords: cpp, scheme
 <code>list</code>可以说是<code>Lisp</code>系语言的根基，其名就得自于<code>**LIS**t **P**rocessor</code>，其重要性就像文件概念之于<code>unix</code>。
 
 <code>list</code>示例：
-``` 
-> (list "red" "green" "blue")
-'("red" "green" "blue")
-> (list 1 2 3)
-'(1 2 3)
-```
+
+> (list "red" "green" "blue")  
+> '("red" "green" "blue")  
+> (list 1 2 3)  
+> '(1 2 3)  
+
 上面的语法糖<code>list</code>其实是通过递归调用点对<code>cons</code>实现的，因此上面的语法等价于：
 
-``` 
-> (cons "red" (cons "green" (cons "blue" empty)))
-'("red" "green" "blue")
-> (cons 1 (cons 2 (cons 3 empty)))
-'(1 2 3)
-```
+> (cons "red" (cons "green" (cons "blue" empty)))  
+> '("red" "green" "blue")  
+> (cons 1 (cons 2 (cons 3 empty)))  
+> '(1 2 3)  
 
 另外两个重要的点对操作是<code>car</code>和<code>cdr</code>，名字有点奇怪但是是有[历史的](https://en.wikipedia.org/wiki/CAR_and_CDR)：**C**urrent **A**ddress **R**egister and **C**urrent **D**ecrement **R**egister，其实就相当于<code>first</code>和<code>second</code>的意思。
-``` 
-(car (cons 1 2))  ==> 1
-(cdr (cons 1 2))  ==> 2
-```
+
+> (car (cons 1 2))  ==> 1  
+> (cdr (cons 1 2))  ==> 2  
 
 ### 模板元编程
 C++中的Meta Programming，即模板元编程，是图灵完备的，而且是编译期间完成的。模板元编程通常用于编写工具库，如STL、Boost等。
@@ -61,7 +58,8 @@ int main() {
     std::cout << factorial(5) << std::endl;
     return 0;
 }
-```  
+```
+
 我们也可以通过模板元编程来实现：
 
 ``` 
@@ -207,7 +205,7 @@ struct cdr : cdr_t::template apply<cons>::type {};
 
 对于上面的实现，稍微解释一下：<code>car</code>是对<code>car_t</code>的封装，这样使用起来更为方便，对比如下用法就能明了，后面这样的封装手法还会用到：
 ``` 
-car<cons<int_<1>, int_<2>>::value 					// == 1
+car<cons<int_<1>, int_<2>>::value                   // == 1
 car_f::template apply<cons<int_<1>, int_<2>>::value // == 1
 ```
 
@@ -360,6 +358,7 @@ struct reverse : std::conditional <
     >::type
 {};
 ```
+
 使用示例：
 
 ``` 
@@ -429,6 +428,7 @@ struct map : std::conditional <
     print<m1>();    // 2, 3, 4
     print<m2>();
 ```
+
 为了让<code>map</code>支持形如<code>inc</code>这样的模板类，而不仅仅是形如<code>inc_t</code>，我们需要定义一个转换器：<code>lambda</code>：
 
 ``` 
@@ -515,8 +515,8 @@ struct transform : std::conditional <
 
 实现细节：
 
- - 使用C++11新特性<code>static_assert</code>对两个列表的长度相等做断言；
- - 使用<code>std::conditional</code>处理空列表，如果非空forward给<code>transform_t</code>；
+ - 使用<code>C++11</code>新特性<code>static_assert</code>对两个列表的长度相等做断言；
+ - 使用<code>std::conditional</code>处理空列表，如果非空<code>forward</code>给<code>transform_t</code>；
  - 对<code>transform_t</code>特化处理空列表的情况；
  - 如果<code>list1</code>与<code>list2</code>均非空，那么通过<code>car</code>取出两个列表的<code>head</code>作用于方法，然后递归调用<code>transform_t</code>作用于两个列表的<code>tail</code>。
 
@@ -603,7 +603,7 @@ struct equal : equal_t::template apply<list1, list2,
 
 <code>equal</code>的实现也有点复杂。
 
- - pred是等价比较谓词，默认是使用<code>std::is_same</code>来做比较；
+ - <code>pred</code>是等价比较谓词，默认是使用<code>std::is_same</code>来做比较；
  - 关键部分依然是通过<code>std::conditional</code>来实现的；
  - 第一参数是判断两个列表的<code>head</code>是否相等；
  - 如果不等就返回第二参数；
