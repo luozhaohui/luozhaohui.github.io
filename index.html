@@ -115,7 +115,7 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2017/03/15/cpp-scheme/">Cpp Scheme</a></h1>
+      <h1 class="entry-title"><a href="/blog/2017/03/15/cpp-scheme/">C++ 11模板元编程实现Scheme中的list及相关函数式编程接口</a></h1>
     
     
       <p class="meta">
@@ -124,7 +124,7 @@
 
 
 
-<time class='entry-date' datetime='2017-03-15T00:00:00+08:00'><span class='date'>2017-03-15</span> <span class='time'>12:00 am</span></time>
+<time class='entry-date' datetime='2017-03-15T09:03:20+08:00'><span class='date'>2017-03-15</span> <span class='time'>9:03 am</span></time>
         
            | <a href="/blog/2017/03/15/cpp-scheme/#disqus_thread"
              data-disqus-identifier="http://luozhaohui.github.io/blog/2017/03/15/cpp-scheme/">Comments</a>
@@ -134,57 +134,44 @@
   </header>
 
 
-  <div class="entry-content"><h1>前言</h1>
+  <div class="entry-content"><h2>前言</h2>
 
-<p>本文将介绍如何使用C++11模板元编程实现Scheme中的list及相关函数式编程接口，如<code>list</code>，<code>cons</code>，<code>car</code>，<code>cdr</code>，<code>length</code>，<code>is_empty</code>，<code>reverse</code>，<code>append</code>,<code>map</code>，<code>transform</code>，<code>enumerate</code>，<code>lambda</code>等。</p>
+<p>本文将介绍如何使用<code>C++11</code>模板元编程实现<code>Scheme</code>中的<code>list</code>及相关函数式编程接口，如<code>list</code>，<code>cons</code>，<code>car</code>，<code>cdr</code>，<code>length</code>，<code>is_empty</code>，<code>reverse</code>，<code>append</code>,<code>map</code>，<code>transform</code>，<code>enumerate</code>，<code>lambda</code>等。</p>
 
-<h1>预备知识</h1>
+<h2>预备知识</h2>
 
-<h2>Scheme简介</h2>
+<h3>Scheme简介</h3>
 
-<p><a href="http://schemers.org/">Scheme</a>语言是<code>lisp>语言的一个方言(或说成变种)，它诞生于1975年的MIT，对于这个有近三十年历史的编程语言来说，它并没有象 C++，java，C#那样受到商业领域的青睐，在国内更是鲜为人知。但它在国外的计算机教育领域内却是有着广泛应用的，有很多人学的第一门计算机语言就 是Scheme语言（<a href="https://book.douban.com/subject/1148282/">SICP</a>就是以Scheme为教学语言）。</p>
+<p><a href="http://schemers.org/">Scheme</a>语言是<code>lisp</code>语言的一个方言(或说成变种)，它诞生于1975年的<code>MIT</code>，对于这个有近三十年历史的编程语言来说，它并没有象 C++，java，C#那样受到商业领域的青睐，在国内更是鲜为人知。但它在国外的计算机教育领域内却是有着广泛应用的，有很多人学的第一门计算机语言就 是<code>Scheme</code>语言（<a href="https://book.douban.com/subject/1148282/">SICP</a>曾经就是以<code>Scheme</code>为教学语言）。</p>
 
 <p>它是一个小巧而又强大的语言，作为一个多用途的编程语言，它可以作为脚本语言使用，也可以作为应用软件的扩展语言来使用，它具有元语言特性，还有很多独到的特色,以致于它被称为编程语言中的"皇后"。</p>
 
-<p>如果你对Scheme感兴趣，推荐使用<a href="http://racket-lang.org/">drracket</a>这个GUI解释器，入门教程有：<a href="http://www.htdp.org/">How to Design Programs</a>，高级教程有：<a href="https://book.douban.com/subject/1148282/">SICP</a>。</p>
+<p>如果你对<code>Scheme</code>感兴趣，推荐使用<a href="http://racket-lang.org/">drracket</a>这个</ode>GUI</code>解释器，入门教程有：<a href="http://www.htdp.org/">How to Design Programs</a>，高级教程有：<a href="https://book.douban.com/subject/1148282/">SICP</a>。</p>
 
-<h2>Scheme中的list及相关操作</h2>
+<h3>Scheme中的list及相关操作</h3>
 
-<p><code>list</code>可以说是Lisp系语言的根基，其名就得自于<code><strong>LIS</strong>t <strong>P</strong>rocessor</code>，其重要性就像文件概念之于unix。</p>
+<p><code>list</code>可以说是<code>Lisp</code>系语言的根基，其名就得自于<code><strong>LIS</strong>t <strong>P</strong>rocessor</code>，其重要性就像文件概念之于<code>unix</code>。</p>
 
 <p><code>list</code>示例：</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&gt; (list "red" "green" "blue")
-</span><span class='line'>'("red" "green" "blue")
-</span><span class='line'>&gt; (list 1 2 3)
-</span><span class='line'>'(1 2 3)</span></code></pre></td></tr></table></div></figure>
-
+<blockquote><p>(list &ldquo;red&rdquo; &ldquo;green&rdquo; &ldquo;blue&rdquo;)<br/>
+&lsquo;(&ldquo;red&rdquo; &ldquo;green&rdquo; &ldquo;blue&rdquo;)<br/>
+(list 1 2 3)<br/>
+&rsquo;(1 2 3)</p></blockquote>
 
 <p>上面的语法糖<code>list</code>其实是通过递归调用点对<code>cons</code>实现的，因此上面的语法等价于：</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&gt; (cons "red" (cons "green" (cons "blue" empty)))
-</span><span class='line'>'("red" "green" "blue")
-</span><span class='line'>&gt; (cons 1 (cons 2 (cons 3 empty)))
-</span><span class='line'>'(1 2 3)</span></code></pre></td></tr></table></div></figure>
-
+<blockquote><p>(cons &ldquo;red&rdquo; (cons &ldquo;green&rdquo; (cons &ldquo;blue&rdquo; empty)))<br/>
+&lsquo;(&ldquo;red&rdquo; &ldquo;green&rdquo; &ldquo;blue&rdquo;)<br/>
+(cons 1 (cons 2 (cons 3 empty)))<br/>
+&rsquo;(1 2 3)</p></blockquote>
 
 <p>另外两个重要的点对操作是<code>car</code>和<code>cdr</code>，名字有点奇怪但是是有<a href="https://en.wikipedia.org/wiki/CAR_and_CDR">历史的</a>：<strong>C</strong>urrent <strong>A</strong>ddress <strong>R</strong>egister and <strong>C</strong>urrent <strong>D</strong>ecrement <strong>R</strong>egister，其实就相当于<code>first</code>和<code>second</code>的意思。</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>(car (cons 1 2))  ==&gt; 1
-</span><span class='line'>(cdr (cons 1 2))  ==&gt; 2</span></code></pre></td></tr></table></div></figure>
+<blockquote><p>(car (cons 1 2))  ==> 1<br/>
+(cdr (cons 1 2))  ==> 2</p></blockquote>
 
-
-<h2>模板元编程</h2>
+<h3>模板元编程</h3>
 
 <p>C++中的Meta Programming，即模板元编程，是图灵完备的，而且是编译期间完成的。模板元编程通常用于编写工具库，如STL、Boost等。</p>
 
@@ -212,8 +199,7 @@
 </span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
 
 
-<p>
-我们也可以通过模板元编程来实现：</p>
+<p>我们也可以通过模板元编程来实现：</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -249,11 +235,11 @@
 </span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
 
 
-<h1>实现</h1>
+<h2>实现</h2>
 
 <p>本文完整代码可以在这里查看：<a href="https://github.com/luozhaohui/cpp/blob/master/cons.cpp">点击查看代码</a></p>
 
-<h2>基本数据结构</h2>
+<h3>基本数据结构</h3>
 
 <p>为了用模板元编程来模拟Scheme中<code>list</code>即相关操作，我们需要先定义一些模板数据结构。这些数据结构非常简单，即重新定义基本数据类型，为了简化，在这里我只特化了必须的<code>int</code>、<code>uint</code>、<code>bool</code>以及<code>empty</code>的实现。<code>empty</code>是递归实现<code>list</code>的最后一个元素，其作用相当于<code>&lsquo;\0&rsquo;</code>之于字符串。</p>
 
@@ -375,7 +361,7 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>std::cout &lt;&lt; binary&lt;101&gt;::value &lt;&lt; std::endl;               // 5</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>cons &amp; car &amp; cdr实现</h2>
+<h3>cons &amp; car &amp; cdr实现</h3>
 
 <p><code>cons</code>的实现原理很简单：就是能够递归调用自己结合成点对<code>pair</code>。在<code>Scheme</code>中示例如下：</p>
 
@@ -467,7 +453,7 @@
 </span><span class='line'>car_f::template apply&lt;cons&lt;int_&lt;1&gt;, int_&lt;2&gt;&gt;::value // == 1</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>list的实现</h2>
+<h3>list的实现</h3>
 
 <p><code>list</code>其实一种特殊的<code>cons</code>，其实现如下：</p>
 
@@ -525,7 +511,7 @@
 </span><span class='line'>std::cout &lt;&lt; car&lt;l1&gt;::value &lt;&lt; ", " &lt;&lt; cdr&lt;l1&gt;::head::value &lt;&lt; std::endl;   // 1, 2</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>length &amp; is_empty的实现</h2>
+<h3>length &amp; is_empty的实现</h3>
 
 <p>先来看看<code>length<code>的实现，其思路与list的实现一样：递归调用自身，并针对<code>empty</code>特化处理。</p>
 
@@ -635,7 +621,7 @@
 </span><span class='line'>std::cout &lt;&lt; "length&lt;list&lt;int, 1, 2, 3&gt;&gt; : " &lt;&lt; length&lt;l1&gt;::value &lt;&lt; std::endl;      // 3</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>append &amp; reverse的实现</h2>
+<h3>append &amp; reverse的实现</h3>
 
 <p><code>append</code>是将一个列表list2追加到已有列表list1的后面，其实现思路是递归地将car<list1>当做head，然后将cdr<list1>作为新的list1递归调用append。不要忘记特化<code>empty</code>的情况。</p>
 
@@ -751,11 +737,11 @@
 </span><span class='line'>print&lt;a3&gt;();    // 1, 2, 3</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>函数式编程</h2>
+<h3>函数式编程</h3>
 
 <p><code>lisp</code>系语言的最大特性就是支持函数式编程，它能够把无差别地对待数据与函数，实现了对数据与代码的同等抽象。下面我们来添加对函数式编程的支持：<code>enumerate</code>, <code>map</code>，<code>apply</code>, <code>lambda</code> 以及 <code>transform</code>。</p>
 
-<h3>map的实现</h3>
+<h4>map的实现</h4>
 
 <p><code>map</code>的语义是迭代地将某个方法作用于列表中的每个元素，然后得到结果<code>list</code>。先来定义一些辅助的方法：</p>
 
@@ -885,7 +871,7 @@
 </span><span class='line'>print&lt;ml1&gt;();  // 2, 3, 4</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>transform的实现</h2>
+<h3>transform的实现</h3>
 
 <p><code>transform</code>的语义是对迭代地将某个方法作用于两个列表上的元素，然后得到结果<code>list</code>。</p>
 
@@ -986,14 +972,14 @@
 <p>实现细节：</p>
 
 <ul>
-<li>使用C++11新特性<code>static_assert</code>对两个列表的长度相等做断言；</li>
-<li>使用<code>std::conditional</code>处理空列表，如果非空forward给<code>transform_t</code>；</li>
+<li>使用<code>C++11</code>新特性<code>static_assert</code>对两个列表的长度相等做断言；</li>
+<li>使用<code>std::conditional</code>处理空列表，如果非空<code>forward</code>给<code>transform_t</code>；</li>
 <li>对<code>transform_t</code>特化处理空列表的情况；</li>
 <li>如果<code>list1</code>与<code>list2</code>均非空，那么通过<code>car</code>取出两个列表的<code>head</code>作用于方法，然后递归调用<code>transform_t</code>作用于两个列表的<code>tail</code>。</li>
 </ul>
 
 
-<h2>enumerate的实现</h2>
+<h3>enumerate的实现</h3>
 
 <p><code>enumerate</code>的语义是迭代将某个方法作用于列表元素。</p>
 
@@ -1063,7 +1049,7 @@
 </span><span class='line'>enumerate&lt;decltype(sqr_print), e1&gt;(sqr_print);      // 1 4 9</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>equal的实现</h2>
+<h3>equal的实现</h3>
 
 <p><code>equal</code>用于判断两个列表是否等价。</p>
 
@@ -1140,7 +1126,7 @@
 <p><code>equal</code>的实现也有点复杂。</p>
 
 <ul>
-<li>pred是等价比较谓词，默认是使用<code>std::is_same</code>来做比较；</li>
+<li><code>pred</code>是等价比较谓词，默认是使用<code>std::is_same</code>来做比较；</li>
 <li>关键部分依然是通过<code>std::conditional</code>来实现的；</li>
 <li>第一参数是判断两个列表的<code>head</code>是否相等；</li>
 <li>如果不等就返回第二参数；</li>
@@ -1169,9 +1155,9 @@
 </span><span class='line'>std::cout &lt;&lt; "equal&lt;list&lt;int&gt;, list&lt;int&gt;&gt; : " &lt;&lt; equal&lt;list&lt;int&gt;, list&lt;int&gt;&gt;::value &lt;&lt; std::endl;   // 1</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>print的实现</h2>
+<h3>print的实现</h3>
 
-<p><code>print</code>是依次打印列表元素，也可以使用enumerate来实现：</p>
+<p><code>print</code>是依次打印列表元素，也可以使用<code>enumerate</code>来实现：</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -1237,11 +1223,11 @@
 
 <p><code>print</code>的实现思路与<code>enumerate</code>，是通过模板方法与函数子来实现的。模板方法内部调用函数子来做事情，函数子又是一个模板类，并对空列表做了特化处理。</p>
 
-<h1>总结</h1>
+<h2>总结</h2>
 
-<p>C++尤其是C++11，14，17等新特性使得这把实用的瑞士军刀越发锋利与实用，虽然实现的形式上不如<code>Scheme</code>、<code>Python</code>等优雅，但它确实能够，而且无需获得语言层面上的支持。纸上得来终觉浅，绝知此事要躬行。看过本文的读者不妨自己实现一番本文中的提到的相关概念。</p>
+<p><code>C++</code>尤其是<code>C++</code>11，14，17等新特性使得这把实用的瑞士军刀越发锋利与实用，虽然实现的形式上不如<code>Scheme</code>、<code>Python</code>等优雅，但它确实能够，而且无需获得语言层面上的支持。纸上得来终觉浅，绝知此事要躬行。看过本文的读者不妨自己实现一番本文中的提到的相关概念。</p>
 
-<h2>参考阅读</h2>
+<h3>参考阅读</h3>
 
 <p><a href="https://book.douban.com/subject/1148282/">《计算机程序的构造与解释》</a></p>
 </div>
@@ -3271,7 +3257,7 @@
 <li class='category'><a href='/blog/categories/sui-sui-nian/'>碎碎念 (24)</a></li>
 <li class='category'><a href='/blog/categories/she-hui-za-tan/'>社会杂谈 (9)</a></li>
 <li class='category'><a href='/blog/categories/du-shu-bi-ji/'>读书笔记 (2)</a></li>
-<li class='category'><a href='/blog/categories/ruan-jian-kai-fa/'>软件开发 (8)</a></li>
+<li class='category'><a href='/blog/categories/ruan-jian-kai-fa/'>软件开发 (9)</a></li>
 <li class='category'><a href='/blog/categories/bian-zou-bian-kan/'>边走边看 (2)</a></li>
 
   </ul>
@@ -3284,7 +3270,7 @@
       </li>
     
       <li class="post">
-        <a href="/blog/2017/03/15/cpp-scheme/">Cpp Scheme</a>
+        <a href="/blog/2017/03/15/cpp-scheme/">C++ 11模板元编程实现Scheme中的list及相关函数式编程接口</a>
       </li>
     
       <li class="post">
@@ -3320,8 +3306,8 @@
 <a style="font-size: 94%" href="/tags/lu-you/">旅游</a>
 <a style="font-size: 94%" href="/tags/bi-ji/">笔记</a>
 <a style="font-size: 94%" href="/tags/fang-fa-lun/">方法论</a>
-<a style="font-size: 90%" href="/tags/duan-lian/">锻炼</a>
 <a style="font-size: 90%" href="/tags/jiao-yu/">教育</a>
+<a style="font-size: 90%" href="/tags/duan-lian/">锻炼</a>
 <a style="font-size: 90%" href="/tags/xin-li-xue/">心理学</a>
 <a style="font-size: 90%" href="/tags/xi-guan/">习惯</a>
 
