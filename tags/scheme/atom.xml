@@ -4,7 +4,7 @@
   <title><![CDATA[标签：Scheme | 飘飘白云]]></title>
   <link href="http://luozhaohui.github.io/tags/scheme/atom.xml" rel="self"/>
   <link href="http://luozhaohui.github.io/"/>
-  <updated>2017-11-14T17:51:24+08:00</updated>
+  <updated>2017-11-15T15:38:03+08:00</updated>
   <id>http://luozhaohui.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -191,44 +191,27 @@ std::cout &lt;&lt; cons&lt;int_&lt;1&gt;, int_&lt;2&gt;&gt;::head::value &lt;&lt
 </code></p>
 
 <p>同样，我们可以实现用于获取<code>head</code>的<code>car</code>与获取<code>tail</code>的<code>cdr</code>操作：
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>struct car_t {
-</span><span class='line'>    template &lt;typename cons&gt;
-</span><span class='line'>    struct apply {
-</span><span class='line'>        using type = typename cons::type::head;
-</span><span class='line'>    };
-</span><span class='line'>};&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;typename cons&gt;
-</span><span class='line'>struct car : car_t::template apply&lt;cons&gt;::type {};&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;struct cdr_t {
-</span><span class='line'>    template &lt;typename cons&gt;
-</span><span class='line'>    struct apply {
-</span><span class='line'>        using type = typename cons::type::tail::type;
-</span><span class='line'>    };
-</span><span class='line'>};&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;typename cons&gt;
-</span><span class='line'>struct cdr : cdr_t::template apply&lt;cons&gt;::type {};</span></code></pre></td></tr></table></div></figure></p>
+```
+struct car_t {
+    template <typename cons>
+    struct apply {
+        using type = typename cons::type::head;
+    };
+};</p>
+
+<p>template <typename cons>
+struct car : car_t::template apply<cons>::type {};</p>
+
+<p>struct cdr_t {
+    template <typename cons>
+    struct apply {
+        using type = typename cons::type::tail::type;
+    };
+};</p>
+
+<p>template <typename cons>
+struct cdr : cdr_t::template apply<cons>::type {};
+```</p>
 
 <p>使用示例：
 <code>
@@ -246,30 +229,20 @@ car_f::template apply&lt;cons&lt;int_&lt;1&gt;, int_&lt;2&gt;&gt;::value // == 1
 <h3>list的实现</h3>
 
 <p><code>list</code>其实一种特殊的<code>cons</code>，其实现如下：
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>template &lt;typename first = empty, typename ...rest&gt;
-</span><span class='line'>struct list_t : std::conditional &lt;
-</span><span class='line'>    sizeof&hellip;(rest) == 0,
-</span><span class='line'>    cons&lt;first, empty&gt;,
-</span><span class='line'>    cons&lt;first, typename list_t&lt;rest&hellip;&gt;::type&gt;&gt;::type
-</span><span class='line'>{};&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;&gt;
-</span><span class='line'>struct list_t&lt;empty&gt; : empty {};&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;typename T, T ...elements&gt;
-</span><span class='line'>struct list : list_t&lt;type&lt;em&gt;&lt;T, elements&gt;&hellip;&gt; {};</span></code></pre></td></tr></table></div></figure>
+```
+template <typename first = empty, typename ...rest>
+struct list_t : std::conditional &lt;
+    sizeof&hellip;(rest) == 0,
+    cons&lt;first, empty>,
+    cons&lt;first, typename list_t&lt;rest&hellip;>::type>>::type
+{};</p>
+
+<p>template &lt;>
+struct list_t<empty> : empty {};</p>
+
+<p>template <typename T, T ...elements>
+struct list : list_t&lt;type<em>&lt;T, elements>&hellip;> {};
+```
 这里用到了C++11中的变长模板参数，<code>std::conditional</code>以及对<code>empty</code>的特化处理。
  - 变长模板参数：<code>list</code>接收变长模板参数<code>elements</code>，然后封装类型为成<code>type</em></code>的变长模板参数forward给<code>list_t</code>；
  - <code>std::conditional</code>：相当于<code>if &hellip; else &hellip;</code>，如果第一参数为真，则返回第二参数，否则返回第三参数；
@@ -279,72 +252,41 @@ car_f::template apply&lt;cons&lt;int_&lt;1&gt;, int_&lt;2&gt;&gt;::value // == 1
  - 因为<code>empty</code>比较特殊，所以需要特化处理</p>
 
 <p>使用示例：
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>using l1 = list&lt;int, 1, 2, 3&gt;;
-</span><span class='line'>using l2 = list&lt;int, 4, 5, 6, 7&gt;;
-</span><span class='line'>using l3 = list_t&lt;int&lt;em&gt;&lt;1&gt;, int&lt;/em&gt;&lt;2&gt;, int_&lt;3&gt;&gt;;&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;pre&gt;&lt;code&gt;std::cout &lt;&lt; "\n&gt;list" &lt;&lt; std::endl;
-</span><span class='line'>print&lt;l1&gt;();    // 1, 2, 3
-</span><span class='line'>print&lt;l3&gt;();    // 1, 2, 3
-</span><span class='line'>std::cout &lt;&lt; car&lt;l1&gt;::value &lt;&lt; ", " &lt;&lt; cdr&lt;l1&gt;::head::value &lt;&lt; std::endl;   // 1, 2
-</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;pre&gt;&lt;code&gt;
-</span><span class='line'>### length &amp; is_empty的实现
-</span><span class='line'>先来看看&lt;code&gt;length&lt;code&gt;的实现，其思路与list的实现一样：递归调用自身，并针对&lt;code&gt;empty&lt;/code&gt;特化处理。
-</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;typename list&gt;
-</span><span class='line'>struct length_t
-</span><span class='line'>{
-</span><span class='line'>static constexpr unsigned int value =
-</span><span class='line'>    1 + length_t&lt;typename cdr&lt;list&gt;::type&gt;::value;
-</span><span class='line'>};&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;&gt;
-</span><span class='line'>struct length_t&lt;empty&gt;
-</span><span class='line'>{
-</span><span class='line'>static constexpr unsigned int value = 0;
-</span><span class='line'>};&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;typename list&gt;
-</span><span class='line'>struct length
-</span><span class='line'>{
-</span><span class='line'>static constexpr unsigned int value = length_t&lt;typename list::type&gt;::value;
-</span><span class='line'>};</span></code></pre></td></tr></table></div></figure>
+```
+    using l1 = list&lt;int, 1, 2, 3>;
+    using l2 = list&lt;int, 4, 5, 6, 7>;
+    using l3 = list_t&lt;int<em><1>, int</em><2>, int_<3>>;</p>
+
+<pre><code>std::cout &lt;&lt; "\n&gt;list" &lt;&lt; std::endl;
+print&lt;l1&gt;();    // 1, 2, 3
+print&lt;l3&gt;();    // 1, 2, 3
+std::cout &lt;&lt; car&lt;l1&gt;::value &lt;&lt; ", " &lt;&lt; cdr&lt;l1&gt;::head::value &lt;&lt; std::endl;   // 1, 2
+</code></pre>
+
+<pre><code>
+### length &amp; is_empty的实现
+先来看看&lt;code&gt;length&lt;code&gt;的实现，其思路与list的实现一样：递归调用自身，并针对&lt;code&gt;empty&lt;/code&gt;特化处理。
+</code></pre>
+
+<p>template <typename list>
+struct length_t
+{
+    static constexpr unsigned int value =
+        1 + length_t<typename cdr<list>::type>::value;
+};</p>
+
+<p>template &lt;>
+struct length_t<empty>
+{
+    static constexpr unsigned int value = 0;
+};</p>
+
+<p>template <typename list>
+struct length
+{
+    static constexpr unsigned int value = length_t<typename list::type>::value;
+};
+```
 <code>is_empty</code>可以简单实现为判断<code>length</code>为0：</p>
 
 <pre><code class="">template &lt;typename list&gt;
@@ -474,46 +416,28 @@ struct inc : int_ &lt; n::value + 1 &gt; {};
 </code></pre>
 
 <p>下面来看map的实现
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>struct map_t {
-</span><span class='line'>    template &lt;typename fn, typename list&gt;
-</span><span class='line'>    struct apply : cons &lt;
-</span><span class='line'>        typename fn::template apply&lt;typename car&lt;list&gt;::type&gt;,
-</span><span class='line'>        map_t::template apply&lt;fn, typename cdr&lt;list&gt;::type&gt;
-</span><span class='line'>    &gt;{};&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;pre&gt;&lt;code&gt;template &lt;typename fn&gt;
-</span><span class='line'>struct apply &lt;fn, empty&gt;: empty{};
-</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;};&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;typename fn, typename list&gt;
-</span><span class='line'>struct map : std::conditional &lt;
-</span><span class='line'>    is_empty&lt;list&gt;::value,
-</span><span class='line'>    list,
-</span><span class='line'>    map_t::template apply&lt;fn, list&gt;
-</span><span class='line'>    &gt;::type
-</span><span class='line'>{};</span></code></pre></td></tr></table></div></figure>
+```
+struct map_t {
+    template <typename fn, typename list>
+    struct apply : cons &lt;
+        typename fn::template apply<typename car<list>::type>,
+        map_t::template apply&lt;fn, typename cdr<list>::type>
+    >{};</p>
+
+<pre><code>template &lt;typename fn&gt;
+struct apply &lt;fn, empty&gt;: empty{};
+</code></pre>
+
+<p>};</p>
+
+<p>template <typename fn, typename list>
+struct map : std::conditional &lt;
+    is_empty<list>::value,
+    list,
+    map_t::template apply&lt;fn, list>
+    >::type
+{};
+```
 使用示例：</p>
 
 <pre><code class="">    using m1 = map&lt;inc_t, list&lt;int, 1, 2, 3&gt;&gt;;
