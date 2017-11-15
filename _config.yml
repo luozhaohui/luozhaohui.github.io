@@ -52,6 +52,7 @@ excerpt_separator: "<!--继续阅读-->"
 
 titlecase: true       # Converts page and post titles to titlecase
 post_license: true    # Show license
+post_payment: true    # Show personal payment
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
@@ -109,5 +110,5 @@ disqus_show_comment_count: true
 recent_posts: 5
 
 # Jiathis
-#jiathis_share: true
+jiathis_share: true
 
