@@ -94,6 +94,9 @@
 
 <p><code>Android5.0.1</code> 的启动流程与之前的版本相比变化并不大，OK，变化虽然还是有：<code>SystemServer</code> 启动过程的 <code>init1()</code>, <code>init2()</code>没有了，但主干流程依然不变：<code>Linux</code> 内核加载完毕之后，首先启动 <code>init</code> 进程，然后解析 <code>init.rc</code>，并根据其内容由 <code>init</code> 进程装载 <code>Android</code> 文件系统、创建系统目录、初始化属性系统、启动一些守护进程，其中最重要的守护进程就是 <code>Zygote</code> 进程。<code>Zygote</code> 进程初始化时会创建 <code>Dalvik</code> 虚拟机、预装载系统的资源和 <code>Java</code> 类。所有从 <code>Zygote</code> 进程 <code>fork</code> 出来的用户进程都将继承和共享这些预加载的资源。<code>init</code> 进程是 <code>Android</code> 的第一个进程，而 <code>Zygote</code> 进程则是所有用户进程的根进程。<code>SystemServer</code> 是 <code>Zygote</code> 进程 <code>fork</code> 出的第一个进程，也是整个 <code>Android</code> 系统的核心进程。</p>
 
+<!--more-->
+
+
 <h2>zygote 进程</h2>
 
 <h3>解析 zygote.rc</h3>
