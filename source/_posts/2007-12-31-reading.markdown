@@ -151,6 +151,7 @@ keywords: 书评, 阅读统计
 
 
 ##私人阅读年度统计：
+* [2017，37本](https://luozhaohui.github.io/blog/2018/01/01/reading/)
 * [2016，46本](https://luozhaohui.github.io/blog/2017/01/01/reading/)
 * [2015，46本](https://luozhaohui.github.io/blog/2016/01/01/reading/)
 * [2014，65本](https://luozhaohui.github.io/blog/2015/01/01/reading/)
