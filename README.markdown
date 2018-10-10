@@ -43,3 +43,48 @@ THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 #### If you want to be awesome.
 - Proudly display the 'Powered by Octopress' credit in the footer.
 - [Add your site to the Wiki](https://github.com/imathis/octopress/wiki/Octopress-Sites/_edit) so we can watch the community grow.
+
+
+#### Before You Begin
+1. Install Git.
+2. Install Ruby 1.9.3 or greater using either rbenv or RVM.
+3. Install one of the ExecJS supported JavaScript runtimes.
+4. If ruby --version doesn't say you're using Ruby at least 1.9.3, revisit your rbenv or RVM installation.
+
+#### Setup Octopress
+```
+git clone git://github.com/imathis/octopress.git octopress
+cd octopress
+```
+
+Next, install dependencies.
+```
+gem install bundler
+sudo apt install rbenv
+rbenv rehash    # If you use rbenv, rehash to be able to run the bundle command
+bundle install
+```
+
+Install the default Octopress theme.
+```
+rake install
+```
+
+#### Generate & Preview
+```
+rake generate   # Generates posts and pages into the public directory
+rake watch      # Watches source/ and sass/ for changes and regenerates
+rake preview    # Watches, and mounts a webserver at http://localhost:4000
+```
+
+#### Deploy
+```
+rake deploy
+```
+
+Don't forget to commit the source for your blog.
+```
+git add .
+git commit -m 'your message'
+git push origin source
+```
