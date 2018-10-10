@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[标签：C++ | 飘飘白云]]></title>
+  <link href="http://luozhaohui.github.io/tags/c-plus-plus/atom.xml" rel="self"/>
+  <link href="http://luozhaohui.github.io/"/>
+  <updated>2018-10-10T15:33:41+08:00</updated>
+  <id>http://luozhaohui.github.io/</id>
+  <author>
+    <name><![CDATA[飘飘白云]]></name>
+    <email><![CDATA[kesalin@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[C++ 11模板元编程实现Scheme中的list及相关函数式编程接口]]></title>
+    <link href="http://luozhaohui.github.io/blog/2017/03/15/cpp-scheme/"/>
+    <updated>2017-03-15T09:03:20+08:00</updated>
+    <id>http://luozhaohui.github.io/blog/2017/03/15/cpp-scheme</id>
+    <content type="html"><![CDATA[<h2>前言</h2>
+
+<p>本文将介绍如何使用<code>C++11</code>模板元编程实现<code>Scheme</code>中的<code>list</code>及相关函数式编程接口，如<code>list</code>，<code>cons</code>，<code>car</code>，<code>cdr</code>，<code>length</code>，<code>is_empty</code>，<code>reverse</code>，<code>append</code>,<code>map</code>，<code>transform</code>，<code>enumerate</code>，<code>lambda</code>等。</p>
+
+<h2>预备知识</h2>
+
+<h3>Scheme简介</h3>
+
+<p><a href="http://schemers.org/">Scheme</a>语言是<code>lisp</code>语言的一个方言(或说成变种)，它诞生于1975年的<code>MIT</code>，对于这个有近三十年历史的编程语言来说，它并没有象 C++，java，C#那样受到商业领域的青睐，在国内更是鲜为人知。但它在国外的计算机教育领域内却是有着广泛应用的，有很多人学的第一门计算机语言就 是<code>Scheme</code>语言（<a href="https://book.douban.com/subject/1148282/">SICP</a>曾经就是以<code>Scheme</code>为教学语言）。</p>
+
+<p>它是一个小巧而又强大的语言，作为一个多用途的编程语言，它可以作为脚本语言使用，也可以作为应用软件的扩展语言来使用，它具有元语言特性，还有很多独到的特色,以致于它被称为编程语言中的"皇后"。</p>
+
+<p>如果你对<code>Scheme</code>感兴趣，推荐使用<a href="http://racket-lang.org/">drracket</a>这个</ode>GUI</code>解释器，入门教程有：<a href="http://www.htdp.org/">How to Design Programs</a>，高级教程有：<a href="https://book.douban.com/subject/1148282/">SICP</a>。</p>
+
+<!--more-->
+
+
+<h3>Scheme中的list及相关操作</h3>
+
+<p><code>list</code>可以说是<code>Lisp</code>系语言的根基，其名就得自于<code><strong>LIS</strong>t <strong>P</strong>rocessor</code>，其重要性就像文件概念之于<code>unix</code>。</p>
+
+<p><code>list</code>示例：</p>
+
+<blockquote><p>(list &ldquo;red&rdquo; &ldquo;green&rdquo; &ldquo;blue&rdquo;)<br/>
+&lsquo;(&ldquo;red&rdquo; &ldquo;green&rdquo; &ldquo;blue&rdquo;)<br/>
+(list 1 2 3)<br/>
+&rsquo;(1 2 3)</p></blockquote>
+
+<p>上面的语法糖<code>list</code>其实是通过递归调用点对<code>cons</code>实现的，因此上面的语法等价于：</p>
+
+<blockquote><p>(cons &ldquo;red&rdquo; (cons &ldquo;green&rdquo; (cons &ldquo;blue&rdquo; empty)))<br/>
+&lsquo;(&ldquo;red&rdquo; &ldquo;green&rdquo; &ldquo;blue&rdquo;)<br/>
+(cons 1 (cons 2 (cons 3 empty)))<br/>
+&rsquo;(1 2 3)</p></blockquote>
+
+<p>另外两个重要的点对操作是<code>car</code>和<code>cdr</code>，名字有点奇怪但是是有<a href="https://en.wikipedia.org/wiki/CAR_and_CDR">历史的</a>：<strong>C</strong>urrent <strong>A</strong>ddress <strong>R</strong>egister and <strong>C</strong>urrent <strong>D</strong>ecrement <strong>R</strong>egister，其实就相当于<code>first</code>和<code>second</code>的意思。</p>
+
+<blockquote><p>(car (cons 1 2))  ==> 1<br/>
+(cdr (cons 1 2))  ==> 2</p></blockquote>
+
+<h3>模板元编程</h3>
+
+<p>C++中的Meta Programming，即模板元编程，是图灵完备的，而且是编译期间完成的。模板元编程通常用于编写工具库，如STL、Boost等。</p>
+
+<p>比如通常我们使用递归来实现实现阶乘：</p>
+
+<pre><code class="">#include &lt;iostream&gt;
+
+unsigned int factorial(unsigned int n) {
+    return n == 0 ? 1 : n * factorial(n - 1);
+}
+
+int main() {
+    std::cout &lt;&lt; factorial(5) &lt;&lt; std::endl;
+    return 0;
+}
+</code></pre>
+
+<p>我们也可以通过模板元编程来实现：</p>
+
+<pre><code class="">#include &lt;iostream&gt;
+
+template &lt;unsigned int n&gt;
+struct factorial {
+    static constexpr unsigned int value = n * factorial&lt;n - 1&gt;::value;
+};
+
+template &lt;&gt;
+struct factorial&lt;0&gt; {
+    static constexpr unsigned int value = 1;
+};
+
+int main() {
+    std::cout &lt;&lt; factorial&lt;5&gt;::value &lt;&lt; std::endl; // 120
+    return 0;
+}
+</code></pre>
+
+<h2>实现</h2>
+
+<p>本文完整代码可以在这里查看：<a href="https://github.com/luozhaohui/cpp/blob/master/cons.cpp">点击查看代码</a></p>
+
+<h3>基本数据结构</h3>
+
+<p>为了用模板元编程来模拟Scheme中<code>list</code>即相关操作，我们需要先定义一些模板数据结构。这些数据结构非常简单，即重新定义基本数据类型，为了简化，在这里我只特化了必须的<code>int</code>、<code>uint</code>、<code>bool</code>以及<code>empty</code>的实现。<code>empty</code>是递归实现<code>list</code>的最后一个元素，其作用相当于<code>&lsquo;\0&rsquo;</code>之于字符串。</p>
+
+<pre><code class="">// type_
+//
+template &lt;typename T, T N&gt;
+struct type_ {
+    using type = type_&lt;T, N&gt;;
+    using value_type = T;
+    static constexpr T value = N;
+};
+
+// int_
+//
+template &lt;int N&gt;
+struct int_ {
+    using type = int_&lt;N&gt;;
+    using value_type = int;
+    static constexpr int value = N;
+};
+
+// uint_
+//
+template &lt;unsigned int N&gt;
+struct uint_ {
+    using type = uint_&lt;N&gt;;
+    using value_type = unsigned int;
+    static constexpr unsigned int value = N;
+};
+
+template &lt;&gt;
+struct uint_&lt;0&gt; {
+    using type = uint_&lt;0&gt;;
+    using value_type = unsigned int;
+    static constexpr unsigned int value = 0;
+};
+
+// bool_
+template &lt;bool N&gt;
+struct bool_ {
+    using type = bool_&lt;N&gt;;
+    using value_type = bool;
+    static constexpr bool value = N;
+};
+
+// empty
+//
+struct empty {
+    using type = empty;
+    using value = empty;
+};
+</code></pre>
+
+<p>下面我们先来个小示例，看看怎么使用这些模板数据结构。这个示例的作用是将仅仅用0和1表示的十进制数字当成二进制看，转换为十进制数值。如：101 转换为十进制数值为 5.</p>
+
+<pre><code class="">template &lt;unsigned int N&gt;
+struct binary : uint_ &lt; binary &lt; N / 10 &gt;::type::value * 2 + (N % 10) &gt; {};
+
+template &lt;&gt;
+struct binary&lt;0&gt; : uint_&lt;0&gt; {};
+</code></pre>
+
+<p>测试示例：
+<code>
+std::cout &lt;&lt; binary&lt;101&gt;::value &lt;&lt; std::endl;               // 5
+</code></p>
+
+<h3>cons &amp; car &amp; cdr实现</h3>
+
+<p><code>cons</code>的实现原理很简单：就是能够递归调用自己结合成点对<code>pair</code>。在<code>Scheme</code>中示例如下：
+<code>
+(cons 1 (cons 2 (cons 3 '())))
+</code>
+其中<code>&lsquo;()</code>表示空的点对<code>pair</code>，在我们的实现里面就是<code>empty</code>。</p>
+
+<p>因此<code>cons</code>用C++元编程实现就是：
+<code>
+template &lt;typename h, typename t&gt;
+struct cons {
+    using type = cons&lt;h, t&gt;;
+    using head = h;
+    using tail = t;
+};
+</code>
+使用示例：
+<code>
+std::cout &lt;&lt; cons&lt;int_&lt;1&gt;, int_&lt;2&gt;&gt;::head::value &lt;&lt; std::endl;  // 1
+</code></p>
+
+<p>同样，我们可以实现用于获取<code>head</code>的<code>car</code>与获取<code>tail</code>的<code>cdr</code>操作：
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>struct car_t {
+</span><span class='line'>    template &lt;typename cons&gt;
+</span><span class='line'>    struct apply {
+</span><span class='line'>        using type = typename cons::type::head;
+</span><span class='line'>    };
+</span><span class='line'>};&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;template &lt;typename cons&gt;
+</span><span class='line'>struct car : car_t::template apply&lt;cons&gt;::type {};&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;struct cdr_t {
+</span><span class='line'>    template &lt;typename cons&gt;
+</span><span class='line'>    struct apply {
+</span><span class='line'>        using type = typename cons::type::tail::type;
+</span><span class='line'>    };
+</span><span class='line'>};&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;template &lt;typename cons&gt;
+</span><span class='line'>struct cdr : cdr_t::template apply&lt;cons&gt;::type {};</span></code></pre></td></tr></table></div></figure></p>
+
+<p>使用示例：
+<code>
+    using c1 = cons&lt;int_&lt;1&gt;, cons&lt;int_&lt;2&gt;, int_&lt;3&gt;&gt;&gt;;
+    std::cout &lt;&lt; car&lt;c1&gt;::value &lt;&lt; ", " &lt;&lt; cdr&lt;c1&gt;::head::value &lt;&lt; std::endl; // 1, 2
+    std::cout &lt;&lt; car&lt;c1&gt;::value &lt;&lt; ", " &lt;&lt; car&lt;cdr&lt;c1&gt;&gt;::value &lt;&lt; std::endl; // 1, 2
+</code></p>
+
+<p>对于上面的实现，稍微解释一下：<code>car</code>是对<code>car_t</code>的封装，这样使用起来更为方便，对比如下用法就能明了，后面这样的封装手法还会用到：
+<code>
+car&lt;cons&lt;int_&lt;1&gt;, int_&lt;2&gt;&gt;::value                   // == 1
+car_f::template apply&lt;cons&lt;int_&lt;1&gt;, int_&lt;2&gt;&gt;::value // == 1
+</code></p>
+
+<h3>list的实现</h3>
+
+<p><code>list</code>其实一种特殊的<code>cons</code>，其实现如下：
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>template &lt;typename first = empty, typename ...rest&gt;
+</span><span class='line'>struct list_t : std::conditional &lt;
+</span><span class='line'>    sizeof&hellip;(rest) == 0,
+</span><span class='line'>    cons&lt;first, empty&gt;,
+</span><span class='line'>    cons&lt;first, typename list_t&lt;rest&hellip;&gt;::type&gt;&gt;::type
+</span><span class='line'>{};&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;template &lt;&gt;
+</span><span class='line'>struct list_t&lt;empty&gt; : empty {};&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;template &lt;typename T, T ...elements&gt;
+</span><span class='line'>struct list : list_t&lt;type&lt;em&gt;&lt;T, elements&gt;&hellip;&gt; {};</span></code></pre></td></tr></table></div></figure>
+这里用到了C++11中的变长模板参数，<code>std::conditional</code>以及对<code>empty</code>的特化处理。
+ - 变长模板参数：<code>list</code>接收变长模板参数<code>elements</code>，然后封装类型为成<code>type</em></code>的变长模板参数forward给<code>list_t</code>；
+ - <code>std::conditional</code>：相当于<code>if &hellip; else &hellip;</code>，如果第一参数为真，则返回第二参数，否则返回第三参数；
+ - &lt;第一参数中的code>sizeof&hellip;(rest)</code>：<code>sizeof</code>是C++11的新用法，用于获取变长参数的个数；
+ - 第二参数的作用是终止递归；
+ - 第三参数的作用是递归调用<code>list_t</code>构造点对。
+ - 因为<code>empty</code>比较特殊，所以需要特化处理</p>
+
+<p>使用示例：
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>using l1 = list&lt;int, 1, 2, 3&gt;;
+</span><span class='line'>using l2 = list&lt;int, 4, 5, 6, 7&gt;;
+</span><span class='line'>using l3 = list_t&lt;int&lt;em&gt;&lt;1&gt;, int&lt;/em&gt;&lt;2&gt;, int_&lt;3&gt;&gt;;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;std::cout &lt;&lt; "\n&gt;list" &lt;&lt; std::endl;
+</span><span class='line'>print&lt;l1&gt;();    // 1, 2, 3
+</span><span class='line'>print&lt;l3&gt;();    // 1, 2, 3
+</span><span class='line'>std::cout &lt;&lt; car&lt;l1&gt;::value &lt;&lt; ", " &lt;&lt; cdr&lt;l1&gt;::head::value &lt;&lt; std::endl;   // 1, 2
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;
+</span><span class='line'>### length &amp; is_empty的实现
+</span><span class='line'>先来看看&lt;code&gt;length&lt;code&gt;的实现，其思路与list的实现一样：递归调用自身，并针对&lt;code&gt;empty&lt;/code&gt;特化处理。
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;template &lt;typename list&gt;
+</span><span class='line'>struct length_t
+</span><span class='line'>{
+</span><span class='line'>static constexpr unsigned int value =
+</span><span class='line'>    1 + length_t&lt;typename cdr&lt;list&gt;::type&gt;::value;
+</span><span class='line'>};&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;template &lt;&gt;
+</span><span class='line'>struct length_t&lt;empty&gt;
+</span><span class='line'>{
+</span><span class='line'>static constexpr unsigned int value = 0;
+</span><span class='line'>};&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;template &lt;typename list&gt;
+</span><span class='line'>struct length
+</span><span class='line'>{
+</span><span class='line'>static constexpr unsigned int value = length_t&lt;typename list::type&gt;::value;
+</span><span class='line'>};</span></code></pre></td></tr></table></div></figure>
+<code>is_empty</code>可以简单实现为判断<code>length</code>为0：</p>
+
+<pre><code class="">template &lt;typename list&gt;
+struct is_empty
+{
+    static constexpr bool value = (0 == length&lt;list&gt;::value);
+};
+</code></pre>
+
+<p>当然这样的实现效率并不高，因此可以通过对<code>list</code>以及<code>empty</code>的特化处理来高效实现：</p>
+
+<pre><code class="">template &lt;typename list&gt;
+struct is_empty_t
+{
+    static constexpr bool value = false;
+};
+
+template &lt;&gt;
+struct is_empty_t&lt;empty&gt;
+{
+    static constexpr bool value = true;
+};
+
+template &lt;typename list&gt;
+struct is_empty
+{
+    static constexpr bool value = is_empty_t&lt;typename list::type&gt;::value;
+};
+</code></pre>
+
+<p>使用示例：</p>
+
+<pre><code class="">    std::cout &lt;&lt; "is_empty&lt;empty&gt; : " &lt;&lt; is_empty&lt;empty&gt;::value &lt;&lt; std::endl;            // 1
+    std::cout &lt;&lt; "is_empty&lt;list&lt;int&gt;&gt; : " &lt;&lt; is_empty&lt;list&lt;int&gt;&gt;::value &lt;&lt; std::endl;    // 1
+    std::cout &lt;&lt; "is_empty&lt;list&lt;int, 1, 2, 3&gt;&gt; : " &lt;&lt; is_empty&lt;l1&gt;::value &lt;&lt; std::endl;  // 0
+    std::cout &lt;&lt; "length&lt;empty&gt; : " &lt;&lt; length&lt;empty&gt;::value &lt;&lt; std::endl;                // 0
+    std::cout &lt;&lt; "length&lt;list&lt;int&gt;&gt; : " &lt;&lt; length&lt;list&lt;int&gt;&gt;::value &lt;&lt; std::endl;        // 0
+    std::cout &lt;&lt; "length&lt;list&lt;int, 1, 2, 3&gt;&gt; : " &lt;&lt; length&lt;l1&gt;::value &lt;&lt; std::endl;      // 3
+</code></pre>
+
+<h3>append &amp; reverse的实现</h3>
+
+<p><code>append</code>是将一个列表list2追加到已有列表list1的后面，其实现思路是递归地将car<list1>当做head，然后将cdr<list1>作为新的list1递归调用append。不要忘记特化<code>empty</code>的情况。</p>
+
+<pre><code class="">struct append_t {
+    template &lt;typename list1, typename list2&gt;
+    struct apply : cons&lt;
+        typename car&lt;list1&gt;::type,
+        typename append_t::template apply&lt;typename cdr&lt;list1&gt;::type, list2&gt;::type&gt;
+    {};
+
+    template&lt;typename list2&gt;
+    struct apply &lt;empty, list2&gt;: list2
+    {};
+};
+
+template &lt;typename list1, typename list2&gt;
+struct append : std::conditional &lt;
+    is_empty&lt;list1&gt;::value,
+    list2,
+    append_t::template apply&lt;list1, list2&gt;
+    &gt;::type
+{};
+</code></pre>
+
+<p><code>reverse</code>的实现思路与<code>append</code>类似，只不过是要逆序罢了：</p>
+
+<pre><code class="">struct reverse_t {
+    template &lt;typename reset, typename ready&gt;
+    struct apply : reverse_t::template apply&lt;
+            typename cdr&lt;reset&gt;::type,
+            cons&lt;typename car&lt;reset&gt;::type, ready&gt;&gt;
+    {};
+
+    template&lt;typename ready&gt;
+    struct apply &lt;empty, ready&gt; : ready
+    {};
+};
+
+template &lt;typename list&gt;
+struct reverse : std::conditional &lt;
+    is_empty&lt;list&gt;::value,
+    list,
+    reverse_t::template apply&lt;typename list::type, empty&gt;
+    &gt;::type
+{};
+</code></pre>
+
+<p>使用示例：</p>
+
+<pre><code class="">    // reverse
+    using r1 = reverse&lt;l1&gt;;
+    using r2 = reverse&lt;list&lt;int&gt;&gt;;
+    print&lt;r1&gt;();    // 3, 2, 1
+    print&lt;r2&gt;();
+
+    // append
+    using a1 = append&lt;l1, l2&gt;;
+    using a2 = append&lt;l1, list&lt;int&gt;&gt;;
+    using a3 = append&lt;list&lt;int&gt;, l1&gt;;
+    print&lt;a1&gt;();    // 1, 2, 3, 4, 5, 6, 7
+    print&lt;a2&gt;();    // 1, 2, 3
+    print&lt;a3&gt;();    // 1, 2, 3
+</code></pre>
+
+<h3>函数式编程</h3>
+
+<p><code>lisp</code>系语言的最大特性就是支持函数式编程，它能够把无差别地对待数据与函数，实现了对数据与代码的同等抽象。下面我们来添加对函数式编程的支持：<code>enumerate</code>, <code>map</code>，<code>apply</code>, <code>lambda</code> 以及 <code>transform</code>。</p>
+
+<h4>map的实现</h4>
+
+<p><code>map</code>的语义是迭代地将某个方法作用于列表中的每个元素，然后得到结果<code>list</code>。先来定义一些辅助的方法：</p>
+
+<pre><code class="">template &lt;typename T, typename N&gt;
+struct plus : int_ &lt; T::value + N::value &gt; {};
+
+template &lt;typename T, typename N&gt;
+struct minus : int_ &lt; T::value - N::value &gt; {};
+
+struct inc_t {
+    template &lt;typename n&gt;
+    struct apply : int_ &lt; n::value + 1 &gt; {};
+};
+
+template &lt;typename n&gt;
+struct inc : int_ &lt; n::value + 1 &gt; {};
+</code></pre>
+
+<p>下面来看map的实现
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>struct map_t {
+</span><span class='line'>    template &lt;typename fn, typename list&gt;
+</span><span class='line'>    struct apply : cons &lt;
+</span><span class='line'>        typename fn::template apply&lt;typename car&lt;list&gt;::type&gt;,
+</span><span class='line'>        map_t::template apply&lt;fn, typename cdr&lt;list&gt;::type&gt;
+</span><span class='line'>    &gt;{};&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;template &lt;typename fn&gt;
+</span><span class='line'>struct apply &lt;fn, empty&gt;: empty{};
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;};&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;template &lt;typename fn, typename list&gt;
+</span><span class='line'>struct map : std::conditional &lt;
+</span><span class='line'>    is_empty&lt;list&gt;::value,
+</span><span class='line'>    list,
+</span><span class='line'>    map_t::template apply&lt;fn, list&gt;
+</span><span class='line'>    &gt;::type
+</span><span class='line'>{};</span></code></pre></td></tr></table></div></figure>
+使用示例：</p>
+
+<pre><code class="">    using m1 = map&lt;inc_t, list&lt;int, 1, 2, 3&gt;&gt;;
+    using m2 = map&lt;inc_t, list&lt;int&gt;&gt;;
+    print&lt;m1&gt;();    // 2, 3, 4
+    print&lt;m2&gt;();
+</code></pre>
+
+<p>为了让<code>map</code>支持形如<code>inc</code>这样的模板类，而不仅仅是形如<code>inc_t</code>，我们需要定义一个转换器：<code>lambda</code>：</p>
+
+<pre><code class="">struct apply_t {
+    template &lt;template &lt;typename...&gt; class F, typename ...args&gt;
+    struct apply : F&lt;typename args::type...&gt; {};
+
+    template &lt;template &lt;typename...&gt; class F&gt;
+    struct apply &lt;F, empty&gt; : empty {};
+};
+
+template &lt;template &lt;typename...&gt; class F, typename ...args&gt;
+struct apply : apply_t::template apply&lt;F, args...&gt; {};
+
+template &lt;template &lt;typename...&gt; class F&gt;
+struct lambda {
+    template &lt;typename ...args&gt;
+    struct apply : apply_t::template apply&lt;F, args...&gt; {};
+};
+</code></pre>
+
+<p>使用示例：</p>
+
+<pre><code class="">    std::cout &lt;&lt; lambda&lt;inc&gt;::template apply&lt;int_&lt;0&gt;&gt;::value &lt;&lt; std::endl;  // 1
+    using ml1 = map&lt;lambda&lt;inc&gt;, list&lt;int, 1, 2, 3&gt;&gt;;
+    print&lt;ml1&gt;();  // 2, 3, 4
+</code></pre>
+
+<h3>transform的实现</h3>
+
+<p><code>transform</code>的语义是对迭代地将某个方法作用于两个列表上的元素，然后得到结果<code>list</code>。</p>
+
+<pre><code class="">struct transform_t {
+    template &lt;typename list1, typename list2, typename fn&gt;
+    struct apply : cons &lt;
+        typename fn::template apply&lt;
+            typename car&lt;list1&gt;::type, typename car&lt;list2&gt;::type&gt;::type,
+        typename transform_t::template apply &lt;
+            typename cdr&lt;list1&gt;::type, typename cdr&lt;list2&gt;::type, fn&gt;::type
+    &gt; {};
+
+    template &lt;typename list1, typename fn&gt;
+    struct apply&lt;list1, empty, fn&gt; : cons &lt;
+        typename fn::template apply&lt;typename car&lt;list1&gt;::type, empty&gt;,
+        typename transform_t::template apply &lt;typename cdr&lt;list1&gt;::type, empty, fn&gt;::type
+    &gt; {};
+
+    template &lt;typename list2, typename fn&gt;
+    struct apply&lt;empty, list2, fn&gt; : cons &lt;
+        typename fn::template apply&lt;empty, typename car&lt;list2&gt;::type&gt;::type,
+        typename transform_t::template apply &lt;empty, typename cdr&lt;list2&gt;::type, fn&gt;::type
+    &gt; {};
+
+    template &lt;typename fn&gt;
+    struct apply&lt;empty, empty, fn&gt; : empty {};
+};
+
+template &lt;typename list1, typename list2, typename fn&gt;
+struct transform : std::conditional &lt;
+    is_empty&lt;list1&gt;::value,
+    list1,
+    transform_t::template apply&lt;list1, list2, fn&gt;
+    &gt;::type
+{
+    static_assert(length&lt;list1&gt;::value == length&lt;list2&gt;::value, "transform: length of lists mismatch!");
+};
+</code></pre>
+
+<p>其实现是最为复杂的，我们先来看使用示例，再来讲解实现细节。</p>
+
+<pre><code class="">    using t1 = list&lt;int, 1, 2, 3&gt;;
+    using t2 = list&lt;int, 3, 2, 1&gt;;
+    using ml = transform&lt;t1, t2, lambda&lt;minus&gt;&gt;;
+    using pl = transform&lt;t1, t2, lambda&lt;plus&gt;&gt;;
+    using te = transform&lt;list&lt;int&gt;, list&lt;int&gt;, lambda&lt;plus&gt;&gt;;
+    using el = transform&lt;t1, list&lt;int&gt;, lambda&lt;plus&gt;&gt;;
+    print&lt;ml&gt;();    // -2, 0, 2
+    print&lt;pl&gt;();    // 4, 4, 4
+    print&lt;te&gt;();
+    // print&lt;el&gt;(); // assertion: length mismatch!
+</code></pre>
+
+<p>实现细节：</p>
+
+<ul>
+<li>使用<code>C++11</code>新特性<code>static_assert</code>对两个列表的长度相等做断言；</li>
+<li>使用<code>std::conditional</code>处理空列表，如果非空<code>forward</code>给<code>transform_t</code>；</li>
+<li>对<code>transform_t</code>特化处理空列表的情况；</li>
+<li>如果<code>list1</code>与<code>list2</code>均非空，那么通过<code>car</code>取出两个列表的<code>head</code>作用于方法，然后递归调用<code>transform_t</code>作用于两个列表的<code>tail</code>。</li>
+</ul>
+
+
+<h3>enumerate的实现</h3>
+
+<p><code>enumerate</code>的语义是迭代将某个方法作用于列表元素。</p>
+
+<pre><code class="">template &lt;typename fn, typename list, bool is_empty&gt;
+struct enumerate_t;
+
+template &lt;typename fn, typename list&gt;
+void enumerate(fn f)
+{
+    enumerate_t&lt;fn, list, is_empty&lt;list&gt;::value&gt; impl;
+    impl(f);
+}
+
+template &lt;typename fn, typename list, bool is_empty = false&gt;
+struct enumerate_t
+{
+    void operator()(fn f) {
+        f(car&lt;list&gt;::value);
+        enumerate&lt;fn, typename cdr&lt;list&gt;::type&gt;(f);
+    }
+};
+
+template &lt;typename fn, typename list&gt;
+struct enumerate_t&lt;fn, list, true&gt;
+{
+    void operator()(fn f) {
+        // nothing for empty
+    }
+};
+</code></pre>
+
+<p><code>enumerate</code>的实现与之前的<code>map</code>的实现很不一样，它是通过模板方法与函数子来实现的。模板方法内部调用函数子来做事情，函数子又是一个模板类，并对空列表做了特化处理。</p>
+
+<p>使用示例：</p>
+
+<pre><code class="">    using value_type = typename car&lt;e1&gt;::value_type;
+    auto sqr_print = [](value_type val) { std::cout &lt;&lt; val * val &lt;&lt; " "; };
+    enumerate&lt;decltype(sqr_print), e1&gt;(sqr_print);      // 1 4 9
+</code></pre>
+
+<h3>equal的实现</h3>
+
+<p><code>equal</code>用于判断两个列表是否等价。</p>
+
+<pre><code class="">struct equal_t {
+    // both lists are not empty
+    template &lt;typename list1, typename list2, int empty_value = 0,
+        typename pred = lambda&lt;std::is_same&gt;&gt;
+    struct apply : std::conditional &lt;
+        !pred::template apply &lt;
+            typename car&lt;list1&gt;::type,
+            typename car&lt;list2&gt;::type
+            &gt;::type::value,
+        bool_&lt;false&gt;,
+        typename equal_t::template apply &lt;
+            typename cdr&lt;list1&gt;::type,
+            typename cdr&lt;list2&gt;::type,
+            (is_empty&lt;typename cdr&lt;list1&gt;::type&gt;::value
+                + is_empty&lt;typename cdr&lt;list2&gt;::type&gt;::value),
+            pred
+        &gt;::type
+    &gt; {};
+
+    // one of the list is empty.
+    template &lt;typename list1, typename list2, typename pred&gt;
+    struct apply&lt;list1, list2, 1, pred&gt;: bool_&lt;false&gt;
+    {};
+
+    // both lists are empty.
+    template &lt;typename list1, typename list2, typename pred&gt;
+    struct apply&lt;list1, list2, 2, pred&gt;: bool_&lt;true&gt;
+    {};
+};
+
+template &lt;typename list1, typename list2, typename pred = lambda&lt;std::is_same&gt;&gt;
+struct equal : equal_t::template apply&lt;list1, list2,
+    (is_empty&lt;list1&gt;::value + is_empty&lt;list2&gt;::value), pred&gt;::type
+{};
+</code></pre>
+
+<p><code>equal</code>的实现也有点复杂。</p>
+
+<ul>
+<li><code>pred</code>是等价比较谓词，默认是使用<code>std::is_same</code>来做比较；</li>
+<li>关键部分依然是通过<code>std::conditional</code>来实现的；</li>
+<li>第一参数是判断两个列表的<code>head</code>是否相等；</li>
+<li>如果不等就返回第二参数；</li>
+<li>如果相等就递归比较两个列表的剩余元素；</li>
+<li>这里使用了一个小小的技巧来简化模板类特化的情况：如果其中一个列表为空，那么<code>empty_value</code>为1；如果两个列表均为空，那么<code>empty_value</code>为2，这两种情况都会调用特化版本。</li>
+</ul>
+
+
+<p>使用示例：</p>
+
+<pre><code class="">    using e1 = list&lt;int, 1, 2, 3&gt;;
+    using e2 = list&lt;int, 1, 2, 3&gt;;
+    using e3 = list&lt;int, 1, 2, 1&gt;;
+    std::cout &lt;&lt; "equal&lt;e1, e2&gt; : " &lt;&lt; equal&lt;e1, e2&gt;::value &lt;&lt; std::endl;   // 1
+    std::cout &lt;&lt; "equal&lt;e1, e3&gt; : " &lt;&lt; equal&lt;e1, e3&gt;::value &lt;&lt; std::endl;   // 0
+    std::cout &lt;&lt; "equal&lt;e1, list&lt;int&gt;&gt; : " &lt;&lt; equal&lt;e1, list&lt;int&gt;&gt;::value &lt;&lt; std::endl; // 0
+    std::cout &lt;&lt; "equal&lt;list&lt;int&gt;, e1&gt; : " &lt;&lt; equal&lt;list&lt;int&gt;, e1&gt;::value &lt;&lt; std::endl; // 0
+    std::cout &lt;&lt; "equal&lt;list&lt;int&gt;, list&lt;int&gt;&gt; : " &lt;&lt; equal&lt;list&lt;int&gt;, list&lt;int&gt;&gt;::value &lt;&lt; std::endl;   // 1
+</code></pre>
+
+<h3>print的实现</h3>
+
+<p><code>print</code>是依次打印列表元素，也可以使用<code>enumerate</code>来实现：</p>
+
+<pre><code class="">template &lt;typename list, bool is_empty&gt;
+struct print_t;
+
+template &lt;typename list&gt;
+void print()
+{
+    print_t&lt;list, is_empty&lt;list&gt;::value&gt; impl;
+    impl();
+}
+
+template &lt;typename list, bool is_empty = true&gt;
+struct print_t
+{
+    void operator()() {
+        std::cout &lt;&lt; std::endl;
+    }
+};
+
+template &lt;typename list&gt;
+struct print_t&lt;list, false&gt;
+{
+    void operator()() {
+        std::cout &lt;&lt; car&lt;list&gt;::value;
+        using rest = typename cdr&lt;list&gt;::type;
+        if (false == is_empty&lt;rest&gt;::value) {
+            std::cout &lt;&lt; ", ";
+        }
+        print&lt;rest&gt;();
+    }
+};
+</code></pre>
+
+<p><code>print</code>的实现思路与<code>enumerate</code>，是通过模板方法与函数子来实现的。模板方法内部调用函数子来做事情，函数子又是一个模板类，并对空列表做了特化处理。</p>
+
+<h2>总结</h2>
+
+<p><code>C++</code>尤其是<code>C++</code>11，14，17等新特性使得这把实用的瑞士军刀越发锋利与实用，虽然实现的形式上不如<code>Scheme</code>、<code>Python</code>等优雅，但它确实能够，而且无需获得语言层面上的支持。纸上得来终觉浅，绝知此事要躬行。看过本文的读者不妨自己实现一番本文中的提到的相关概念。</p>
+
+<h3>参考阅读</h3>
+
+<p><a href="https://book.douban.com/subject/1148282/">《计算机程序的构造与解释》</a></p>
+]]></content>
+  </entry>
+  
+</feed>
