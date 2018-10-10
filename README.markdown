@@ -68,6 +68,9 @@ bundle install
 Install the default Octopress theme.
 ```
 rake install
+rake setup_github_pages
+git@github.com:luozhaohui/luozhaohui.github.io.git
+
 ```
 
 #### Generate & Preview
