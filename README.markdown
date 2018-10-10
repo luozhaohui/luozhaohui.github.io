@@ -68,15 +68,16 @@ bundle install
 Install the default Octopress theme.
 ```
 rake install
-rake setup_github_pages
-
-mkdir _deploy
-_deploy/
-git clone git@github.com:luozhaohui/luozhaohui.github.io.git
 ```
 
 #### Generate & Preview
 ```
+rake setup_github_pages
+git@github.com:luozhaohui/luozhaohui.github.io.git
+
+cd _deploy
+git pull
+
 rake generate   # Generates posts and pages into the public directory
 rake watch      # Watches source/ and sass/ for changes and regenerates
 rake preview    # Watches, and mounts a webserver at http://localhost:4000
