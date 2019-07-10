@@ -100,6 +100,9 @@ default_asides: [custom/asides/category_list.html, asides/recent_posts.html, cus
 disqus_short_name: https-luozhaohui-github-io
 disqus_show_comment_count: true
 
+# Commentit comments
+# commentit_short_name: https-luozhaohui-github-io
+
 # Google Analytics
 #google_analytics_tracking_id:
 

@@ -51,6 +51,12 @@ THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 3. Install one of the ExecJS supported JavaScript runtimes.
 4. If ruby --version doesn't say you're using Ruby at least 1.9.3, revisit your rbenv or RVM installation.
 
+##### Notes
+It needs to install ruby dev on Ubuntu.
+```
+sudo apt-get install ruby2.3-dev
+```
+
 #### Setup Octopress
 ```
 git clone git://github.com/imathis/octopress.git octopress
@@ -94,3 +100,7 @@ git add .
 git commit -m 'your message'
 git push origin source
 ```
+
+#### commentit
+https://www.liriansu.com/use-commentit
+https://commentit.io/
