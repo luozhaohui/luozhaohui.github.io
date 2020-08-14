@@ -4,7 +4,7 @@
   <title><![CDATA[飘飘白云]]></title>
   <link href="http://luozhaohui.github.io/atom.xml" rel="self"/>
   <link href="http://luozhaohui.github.io/"/>
-  <updated>2019-07-10T12:53:15+08:00</updated>
+  <updated>2020-08-14T09:36:15+08:00</updated>
   <id>http://luozhaohui.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -14,10 +14,307 @@
 
   
   <entry>
+    <title type="html"><![CDATA[2019年阅读统计]]></title>
+    <link href="http://luozhaohui.github.io/blog/2019/12/31/reading/"/>
+    <updated>2019-12-31T10:32:38+00:00</updated>
+    <id>http://luozhaohui.github.io/blog/2019/12/31/reading</id>
+    <content type="html"><![CDATA[<h2>2019 年阅读统计，本页面由代码自动生成</h2>
+
+<h2>总计阅读 30 本</h2>
+
+<h3>评价统计:</h3>
+
+<p><img src="http://luozhaohui.github.io/images/posts/2019_reading_rate.png" alt="评价统计" /></p>
+
+<blockquote><p>五星图书 8 本，占比 26.7%
+四星图书 12 本，占比 40.0%
+三星图书 4 本，占比 13.3%
+两星图书 3 本，占比 10.0%
+一星图书 3 本，占比 10.0%</p></blockquote>
+
+<h3>标签统计:</h3>
+
+<p><img src="http://luozhaohui.github.io/images/posts/2019_reading_tags.png" alt="标签统计" /></p>
+
+<blockquote><p>心理 6 本
+教育 6 本
+软件开发 6 本
+科普 3 本
+社会 2 本
+历史 2 本
+哲学 1 本
+艺术 1 本
+思维 1 本
+文学 1 本
+科学 1 本
+管理 1 本</p></blockquote>
+
+<!--more-->
+
+
+<h3>心理: 5 本</h3>
+
+<h4>No.1 亲密关系</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/5952488/">亲密关系</a>
+豆瓣链接：<a href="https://book.douban.com/subject/5952488/">https://book.douban.com/subject/5952488/</a>
+出版信息：罗兰•米勒 (Rowland Miller)、丹尼尔•珀尔曼 (Daniel Perlman) / 王伟平 / 人民邮电出版社 / 2011-1-1 / 68.00 元
+标签：心理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★★</strong>
+我的评论：感觉只有《态度改变与社会影响》可与此书媲美，科学理性全方位的提供亲密关系的元知识，综合心理学、沟通、社会学、进化学、神经科学、经济学等多个学科的研究成果，几乎每一句话都可以找到一篇相关的论文依据。依恋模型对人一生的影响真心不可小觑。翻译很用心，可谓信达雅。</p></blockquote>
+
+<h4>No.2 身体从未忘记</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/26796536/">身体从未忘记</a>
+豆瓣链接：<a href="https://book.douban.com/subject/26796536/">https://book.douban.com/subject/26796536/</a>
+出版信息：Bessel van der Kolk M.D. (范德考克) / 李智 / 机械工业出版社 / 2016-3 / 55.00 元
+标签：心理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★★</strong>
+我的评论：从生理上：情绪脑（爬行脑-脑干、哺乳脑-边缘系统）以及理性脑（大脑皮层）诠释人在面对不同程度的安全状态决定激活哪一种生理状态：社会参与（理性脑）、战斗或逃跑（哺乳脑）还是惊呆（吓傻）或奔溃（爬行脑）。创伤，尤其是前语言阶段的经历会在身体上烙下难以磨灭的烙印，这会影响对自我的认知、以及依恋的安全类型。心理创伤会影响大脑的神经联结、身体的激素水平、碎片化过往经历，无法分别当下与过去。治疗心理创伤的首要是关注当下身体感觉，明白恐惧的回闪发生在过去，从而恢复对身体的控制，增强其安全感，找回自我。这本书在大脑结构、神经联结、心理创伤、安全性型恋、母婴互动影响、创伤治疗方面有非常系统、连贯、整合的论述。</p></blockquote>
+
+<h4>No.3 心智探奇</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/26742180/">心智探奇</a>
+豆瓣链接：<a href="https://book.douban.com/subject/26742180/">https://book.douban.com/subject/26742180/</a>
+出版信息：[美]史蒂芬·平克（Steven Pinker） / 郝耀伟 / 浙江人民出版社 / 2016-3 / 139.9
+标签：心理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：心智（感知、推理、情感、社会关系）是一种计算，组块分层，是祖先们为适应当时的环境通过漫长的自然选择演化而来。作者很博学，各领域知识旁征博引，书中引用了很多熟悉的书、作者与论点。心水书中对情绪的演化解释，但作者也承认无法很好地解释艺术、自我以及意义层面的事物。原著文笔隽永，翻译有点糟心。</p></blockquote>
+
+<h4>No.4 情感依附</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/25697495/">情感依附</a>
+豆瓣链接：<a href="https://book.douban.com/subject/25697495/">https://book.douban.com/subject/25697495/</a>
+出版信息：[美]亨利•马西、[美]内森•塞恩伯格 / 童俊，武怡堃，陈昉，韩丹 / 世界图书出版公司 / 2013-9-30 / 38.00 元
+标签：心理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：论原生家庭与创伤性事件对成长的影响。偏学术报告，因此主题框架不够清晰与集中。但书中的示例非常形象、生动地给出直观的观点：婴儿期间对婴儿积极的反应、良性的互动，是建立安全型依赖的关键，这个安全感的建立是健康成长的根基。为人父母者，以身作则是最佳的教养方式，用书中的话说就是：儿童不是由父母培养大的，不是父母交给他们如何成长，而是儿童自己从父母那里“捕捉”了成长所需的东西。该书主要是从统计数据、案例介绍得出结论，如果对心理创伤的生理反应、治疗等有兴趣，可以阅读《身体从未忘记》。</p></blockquote>
+
+<h4>No.5 心理咨询师的 14 堂必修课</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/20258609/">心理咨询师的 14 堂必修课</a>
+豆瓣链接：<a href="https://book.douban.com/subject/20258609/">https://book.douban.com/subject/20258609/</a>
+出版信息：[美]路易斯·科佐林诺 / 黄志强、张朝阳 / 华东师范大学出版社 / 2012-10 / 26.00 元
+标签：心理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★</strong>
+我的评论：《我的心理咨询师经历可以复制》？9.0 的评分太水军了，对 2010 之后的新书评分真心要绝望了。</p></blockquote>
+
+<h3>教育: 5 本</h3>
+
+<h4>No.6 幸福的婚姻</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/25833051/">幸福的婚姻</a>
+豆瓣链接：<a href="https://book.douban.com/subject/25833051/">https://book.douban.com/subject/25833051/</a>
+出版信息：[美] 约翰·戈特曼、[美] 娜恩·西尔弗 / 刘小敏 / 浙江人民出版社 / 2014-2 / 49.90 元
+标签：教育&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★★</strong>
+我的评论：早期的译本叫做《获得幸福婚姻的 7 法则》：了解才能理解，欣赏才能喜爱，沟通才能亲近，平权才能平等，温和妥协可解决的问题，挖掘不可解决问题的深层缘由并与之和解共处，创建共同愿景打造家庭文化与仪式。书中也非常重视诉说与倾听的技巧，比如情绪优先，多以我为主语表达感受与愿望而避免指责批评。有实例，有操作指南，也有练习。情侣、夫妻居家旅行必读良物。</p></blockquote>
+
+<h4>No.7 孤独症儿童早期干预丹佛模式</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/26656050/">孤独症儿童早期干预丹佛模式</a>
+豆瓣链接：<a href="https://book.douban.com/subject/26656050/">https://book.douban.com/subject/26656050/</a>
+出版信息：［美］萨莉 J. 罗杰斯（Sally J. Rogers）、［美］杰拉尔丁道森（Geraldine Dawson）、［美］劳里 A. 维斯马拉（Laurie A. Vismara） / 张庆长、何逸君、秦博雅、王蔡琳 等、审校/ 复旦大学附属儿科医院 / 华夏出版社 / 2016-1-1
+标签：教育&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★★</strong>
+我的评论：内容详细，有原理、有指导、有案例。每一章大体都遵循同样的框架：为什么这样的活动重要，正常儿童如何，孤独症儿童又如何，怎样干预，回顾总结。干预方案循序渐进：抓住注意力，感觉社交常规，来回互动活动，非口语沟通，模仿活动，共同注意力，扮演游戏，言语沟通。把 0~3 岁婴儿的学习过程详细的分解成可操作可干预的步骤。</p></blockquote>
+
+<h4>No.8 英语魔法师之语法俱乐部</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/1014914/">英语魔法师之语法俱乐部</a>
+豆瓣链接：<a href="https://book.douban.com/subject/1014914/">https://book.douban.com/subject/1014914/</a>
+出版信息：旋元佑 / 九州出版社 / 2001-5 / 35.00
+标签：教育&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：总结归纳的不错，思路清奇，别具一格而有趣的从句语法书。</p></blockquote>
+
+<h4>No.9 新家庭如何塑造人</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/1879497/">新家庭如何塑造人</a>
+豆瓣链接：<a href="https://book.douban.com/subject/1879497/">https://book.douban.com/subject/1879497/</a>
+出版信息：维吉尼亚·萨提亚 / 易春丽、叶冬梅 / 世界图书出版公司 / 2006-8-1 / 32.00 元
+标签：教育&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★</strong>
+我的评论：观念启蒙型书籍，文笔优美。重点在前半部分：家庭在自我价值感、沟通方式、规则、社会联系四个方面塑造其成员。了解是改变的开始，体验使改变发生。因此首先需要识别什么是好的，然后通过游戏体验不同的选项。作者有大爱：从高自尊一致性的个人组成一致性的家庭，进而形成一致性的社会。篇幅需精简。</p></blockquote>
+
+<h4>No.10 倾听孩子</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/2304415/">倾听孩子</a>
+豆瓣链接：<a href="https://book.douban.com/subject/2304415/">https://book.douban.com/subject/2304415/</a>
+出版信息：[美] 帕蒂·惠芙乐 / 陈平俊 [等] / 北京大学出版社 / 2007-9 / 18.00 元
+标签：教育&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★</strong>
+我的评论：只能说作者真心能写，一句话的事情能够写上一章节。把同样的原理套在各中不同的情境下就能写一章。倾听确实重要，情绪优先，道理其次，沟通原则都相通，还是推荐：《孩子，把你的手给我》和《如何说孩子才会听，怎么听孩子才肯说》</p></blockquote>
+
+<h3>软件开发: 6 本</h3>
+
+<h4>No.11 人件</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/1108725/">人件</a>
+豆瓣链接：<a href="https://book.douban.com/subject/1108725/">https://book.douban.com/subject/1108725/</a>
+出版信息：Tom DeMarco、Timothy Lister / UML China / 清华大学出版社 / 2003-6 / 35.00 元
+标签：软件开发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：人月神话关注点在项目，人件关注点在管理：如何管理知识工人，如何打造自组织的团队。理想很丰满，现实很骨感，因为这样高度自由态的管理文化，不仅对公司有极高的要求，对员工的自律自主也有极高的要求，任何一方脱节都将走向失败。</p></blockquote>
+
+<h4>No.12 Python 源码剖析</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/3117898/">Python 源码剖析</a>
+豆瓣链接：<a href="https://book.douban.com/subject/3117898/">https://book.douban.com/subject/3117898/</a>
+出版信息：陈儒 / 电子工业出版社 / 2008-6 / 69.80 元
+标签：软件开发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：从 C 的实现层面，讲解 python 对象以及语法的实现过程。</p></blockquote>
+
+<h4>No.13 Linux 多线程服务端编程</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/20471211/">Linux 多线程服务端编程</a>
+豆瓣链接：<a href="https://book.douban.com/subject/20471211/">https://book.douban.com/subject/20471211/</a>
+出版信息：陈硕 / 电子工业出版社 / 2013-1-15 / 89.00 元
+标签：软件开发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：涉猎甚广：C++，多线程，Linux 下的网络编程，分布式系统，协议的设计，工作方法，代码标准。。。</p></blockquote>
+
+<h4>No.14 代码整洁之道:程序员的职业素养</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/26919457/">代码整洁之道:程序员的职业素养</a>
+豆瓣链接：<a href="https://book.douban.com/subject/26919457/">https://book.douban.com/subject/26919457/</a>
+出版信息：罗伯特·C.马丁 (Robert C.Martin) / 余晟、章显洲 / 人民邮电出版社 / 2016-9-1 / 49.00 元
+标签：软件开发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：提供了与他人合作的时很多问题的解决方案，专业的素养，专业的沟通，专业的估计，专业的抗压也即说“不”。</p></blockquote>
+
+<h4>No.15 软件研发之道</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/6713152/">软件研发之道</a>
+豆瓣链接：<a href="https://book.douban.com/subject/6713152/">https://book.douban.com/subject/6713152/</a>
+出版信息：Jim McCarthy、Michele McCarthy / 赵　俐、石华耀 / 人民邮电出版社 / 2011-8 / 45.00 元
+标签：软件开发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★</strong>
+我的评论：书名更改为软件研发管理之道更为合适，翻译一般。软件=团队，软件研发的关键在于构建一个高效的自组织团队是按时交付的关键。最后的核心准则 v3.0 重点突出了一些团队合作的沟通原则，值得借鉴，其他章节可略。</p></blockquote>
+
+<h4>No.16 开源机器人操作系统</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/20266668/">开源机器人操作系统</a>
+豆瓣链接：<a href="https://book.douban.com/subject/20266668/">https://book.douban.com/subject/20266668/</a>
+出版信息：2012-9 / 88.00 元
+标签：软件开发&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★</strong>
+我的评论：把 roswiki 翻译了一下而已，语句还不那么通顺。。。</p></blockquote>
+
+<h3>科普: 3 本</h3>
+
+<h4>No.17 病者生存</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/30219713/">病者生存</a>
+豆瓣链接：<a href="https://book.douban.com/subject/30219713/">https://book.douban.com/subject/30219713/</a>
+出版信息：[美]沙龙·莫勒姆（Sharon Moalem）、[美]乔纳森·普林斯（Jonathan Prince） / 程纪莲 / 中信出版集团·见识城邦 / 2018-7-20 / 48.00 元
+标签：科普&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：阐述疾病以及病毒在进化上的作用：为了生存与繁殖而进化出来的“长痛”。对一些常见病的进化原因、病毒与寄生菌的作用、非编码基因的重组功用有较前沿的科学解释。人类可以说是带病与菌前行。</p></blockquote>
+
+<h4>No.18 身体使用手册</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/1146495/">身体使用手册</a>
+豆瓣链接：<a href="https://book.douban.com/subject/1146495/">https://book.douban.com/subject/1146495/</a>
+出版信息：[英] 尼克・阿诺德、[英] 托尼・德・索雷斯 / 韩庆九 / 北京少年儿童出版社 / 2004-1 / 9.80
+标签：科普&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：非常通俗又有趣的身体科普读物。</p></blockquote>
+
+<h4>No.19 连接组：造就独一无二的你</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/26666358/">连接组：造就独一无二的你</a>
+豆瓣链接：<a href="https://book.douban.com/subject/26666358/">https://book.douban.com/subject/26666358/</a>
+出版信息：[美] 承现峻 / 孙天齐 / 清华大学出版社 / 2016-1 / 45
+标签：科普&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：你不只是你的基因组，你是你的连接组。基因组代表先天因素，从父母遗传而来无法轻易改变；而连接组象征后天因素，是经过无数外界信息塑造后的大脑。建议与《基因组》一起看看，两本都很精彩。</p></blockquote>
+
+<h3>社会: 2 本</h3>
+
+<h4>No.20 健全的社会</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/6859959/">健全的社会</a>
+豆瓣链接：<a href="https://book.douban.com/subject/6859959/">https://book.douban.com/subject/6859959/</a>
+出版信息：[美]艾里希·弗洛姆 / 孙恺祥 / 上海译文出版社 / 2011-9 / 29.00 元
+标签：社会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：当今的人作为人的价值在于他的可售性，而不在于他的爱及理性等人的品质，或他的艺术能力。他同自己疏离了，崇拜他自己双手造出来的产品以及他自己造就的领袖。当今的偶像不是太阳神或爱神，而是极权国家中神化了的国家与权力，以及资本社会中神话了的机器和成功之道，当今的偶像是威胁着人的精神素质的那无处不在的异化。十九世纪的问题是上帝死了，二十世纪的问题是人类死了。在十九世纪，不人道意味着残酷；在二十世纪，不人道意味着精神分裂的自我异化。过去的危险是人成了奴隶，将来的危险是人会成为机器人。</p></blockquote>
+
+<h4>No.21 当代中国社会分层</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/30424945/">当代中国社会分层</a>
+豆瓣链接：<a href="https://book.douban.com/subject/30424945/">https://book.douban.com/subject/30424945/</a>
+出版信息：李强 / 生活·读书·新知三联书店 / 2019-6-1 / 59.00 元
+标签：社会&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★</strong>
+我的评论：没什么内涵，一堆和学生“合著”的论文结集，止步于列举了一些表象现状。</p></blockquote>
+
+<h3>历史: 2 本</h3>
+
+<h4>No.22 大历史</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/26827546/">大历史</a>
+豆瓣链接：<a href="https://book.douban.com/subject/26827546/">https://book.douban.com/subject/26827546/</a>
+出版信息：[美] 大卫·克里斯蒂安（David Christian）、辛西娅·斯托克斯·布朗 (Cynthia Stokes Brown)、克雷格·本杰明 (Craig Benjamin) / 刘耀辉 / 北京联合出版公司·后浪出版公司 / 2016-8-1 / 88.00 元
+标签：历史&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★★</strong>
+我的评论：大历史将自然史与人类史结合为一种单一、宏大且易懂的叙述。综合了宇宙学、生物、地理、历史等多方面的知识，写成一部带有全局视角和框架的历史。</p></blockquote>
+
+<h4>No.23 红雨</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/25790421/">红雨</a>
+豆瓣链接：<a href="https://book.douban.com/subject/25790421/">https://book.douban.com/subject/25790421/</a>
+出版信息：罗威廉 (William T.Rowe) / 李里峰 等 / 中国人民大学出版社 / 2014-1 / 69.00 元
+标签：历史&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★</strong>
+我的评论：资料考据与串联功底深厚，但立论与论证脱节，绝大部分是史料堆砌，但堆砌得挺连贯与一致，或曰有趣的地方志，或曰提供交叉佐证的史料集更为精确。个人对 19 世纪 20~30 年代的历史感兴趣，因此麻城的这一时期的历史提供了很不错的佐证。</p></blockquote>
+
+<h3>哲学: 1 本</h3>
+
+<h4>No.24 道可道</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/6725981/">道可道</a>
+豆瓣链接：<a href="https://book.douban.com/subject/6725981/">https://book.douban.com/subject/6725981/</a>
+出版信息：熊逸 / 线装书局 / 2011-7 / 36.00 元
+标签：哲学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★</strong>
+我的评论：要义的没有，诘难的倒是有，引这个引那个，就是没看出啥连贯的脉络。另外把老子哲学和道教黄老之学过于混谈，不清楚的还以为他俩是一家。</p></blockquote>
+
+<h3>艺术: 1 本</h3>
+
+<h4>No.25 美的历程</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/3410718/">美的历程</a>
+豆瓣链接：<a href="https://book.douban.com/subject/3410718/">https://book.douban.com/subject/3410718/</a>
+出版信息：李泽厚 / 生活·读书·新知三联书店 / 2009-1-1 / 43.00 元
+标签：艺术&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★★</strong>
+我的评论：高屋建瓴，势如破竹地把把中国历史上各时期的文艺特色与当时的社会背景、思潮联系起来。如战国秦汉表现的是人对世界的铺陈和征服；魏晋六朝突出的是人的风神和思辨；盛唐是人的意气和功业；中唐以后呈现的则是人的心境和意绪；宋元山水画体现从无我到有我的意兴心绪；明清戏曲小说反应世俗人情。文学艺术的对象从天上，到庙堂，到人间，逐步体现了人的觉醒，个体的觉醒。这本大家小书把中国人古往今来对美的感觉玲珑剔透地展现在大家眼前，如斯感性，如斯亲切。如诗境深厚宽大、词境精工细巧、曲境酣畅明达。盛唐句如海日生残夜，江春入旧年；中唐句如风兼残雪起，河带断冰流；晚唐句如鸡声茅店月，人迹板桥霜。 去各种博物馆之前瞄一瞄这本书将大有裨益。</p></blockquote>
+
+<h3>思维: 1 本</h3>
+
+<h4>No.26 反脆弱</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/25782902/">反脆弱</a>
+豆瓣链接：<a href="https://book.douban.com/subject/25782902/">https://book.douban.com/subject/25782902/</a>
+出版信息：[美]纳西姆•尼古拉斯•塔勒布 / 雨珂 / 中信出版社 / 2014-1-1 / 68.00 元
+标签：思维&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★</strong>
+我的评论：一两句话的事情就洋洋洒洒扯了这么一大本，犯得着扯各种哲学来表明自己的观点是有历史根源的么？期望越大，失望越大，用在这本书上正合适。</p></blockquote>
+
+<h3>文学: 1 本</h3>
+
+<h4>No.27 京华烟云</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/4115698/">京华烟云</a>
+豆瓣链接：<a href="https://book.douban.com/subject/4115698/">https://book.douban.com/subject/4115698/</a>
+出版信息：林语堂 / 张振玉 / 江苏文艺出版社 / 2009-10-1 / 39.00 元
+标签：文学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★</strong>
+我的评论：这本书的意义不在书的文学性，而在其开拓性与历史意义。其开拓性体现在用英文写就出版的向外国人介绍中国文化、哲学、社会、时政的一本小说，历史意义重点体现在后半部对北洋军阀乱政、日本无人性侵略的揭露上。为这两点加一星。</p></blockquote>
+
+<h3>科学: 1 本</h3>
+
+<h4>No.28 最好的抉择</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/26838785/">最好的抉择</a>
+豆瓣链接：<a href="https://book.douban.com/subject/26838785/">https://book.douban.com/subject/26838785/</a>
+出版信息：[ 美]杰尔姆•格罗普曼（Jerome Groopman）、帕米拉•哈茨班德（Pamela Hartzband） / 鞠玮婕、邓力 / 浙江人民出版社 / 2016-7 / 54.90
+标签：科学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★</strong>
+我的评论：结合行为心理学里的损失厌恶、易得性偏差、聚焦偏差，来讲述如何做出医疗方案选择，尤其是关系生命这样信息不对称的情境下。决策的框架依然是：自决原则、行善原则、不伤害原则。湛庐文化的广告做的真心强大，这本书的水准远低于《最好的告别》。</p></blockquote>
+
+<h3>管理: 1 本</h3>
+
+<h4>No.29 经验的疆界</h4>
+
+<blockquote><p>图书名称：<a href="https://book.douban.com/subject/6687032/">经验的疆界</a>
+豆瓣链接：<a href="https://book.douban.com/subject/6687032/">https://book.douban.com/subject/6687032/</a>
+出版信息：[美] 詹姆斯 G. 马奇 / 丁丹 / 东方出版社 / 2011-6 / 18.00 元
+标签：管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;评分：<strong>★★★★★</strong>
+我的评论：篇幅短小，旁征博引，信息量巨大，归纳总结的好。没有个十来本经典的管理学、经济学、社会学、历史性、概率统计学的阅读量，基本上很难明白似平常的每一句话背后的底蕴。翻译不到位，有那么点意思但就是拗口，比如试错翻译成试误。</p></blockquote>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[2018年阅读统计]]></title>
-    <link href="http://luozhaohui.github.io/blog/2019/01/01/reading/"/>
-    <updated>2019-01-01T05:32:38+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2019/01/01/reading</id>
+    <link href="http://luozhaohui.github.io/blog/2018/12/31/reading/"/>
+    <updated>2018-12-31T21:32:38+00:00</updated>
+    <id>http://luozhaohui.github.io/blog/2018/12/31/reading</id>
     <content type="html"><![CDATA[<h2>2018年阅读统计，本页面由代码自动生成</h2>
 
 <h2>总计阅读 31 本</h2>
@@ -462,9 +759,9 @@
   
   <entry>
     <title type="html"><![CDATA[2017年阅读统计]]></title>
-    <link href="http://luozhaohui.github.io/blog/2018/01/01/reading/"/>
-    <updated>2018-01-01T05:42:38+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2018/01/01/reading</id>
+    <link href="http://luozhaohui.github.io/blog/2017/12/31/reading/"/>
+    <updated>2017-12-31T21:42:38+00:00</updated>
+    <id>http://luozhaohui.github.io/blog/2017/12/31/reading</id>
     <content type="html"><![CDATA[<h2>2017年阅读统计，本页面由代码自动生成</h2>
 
 <h2>总计阅读 37 本</h2>
@@ -2029,9 +2326,9 @@
   
   <entry>
     <title type="html"><![CDATA[2016年阅读统计]]></title>
-    <link href="http://luozhaohui.github.io/blog/2017/01/01/reading/"/>
-    <updated>2017-01-01T05:42:38+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2017/01/01/reading</id>
+    <link href="http://luozhaohui.github.io/blog/2016/12/31/reading/"/>
+    <updated>2016-12-31T21:42:38+00:00</updated>
+    <id>http://luozhaohui.github.io/blog/2016/12/31/reading</id>
     <content type="html"><![CDATA[<h2>前言</h2>
 
 <p>2016年又即将过去了，这一年阅读时间相比往年少了许多，总计只阅读了 46 本书，评价以四星、五星图书为主，主题以历史、编程、育儿为主。其中有几本是重读，如《万历十五年》、《论美国的民主》、《士与中国文化》、《COM本质论》等。</p>
@@ -4153,7 +4450,7 @@
   <entry>
     <title type="html"><![CDATA[读书笔记: 基因组-人种自传23章]]></title>
     <link href="http://luozhaohui.github.io/blog/2016/01/31/book-genome/"/>
-    <updated>2016-01-31T21:51:38+08:00</updated>
+    <updated>2016-01-31T13:51:38+00:00</updated>
     <id>http://luozhaohui.github.io/blog/2016/01/31/book-genome</id>
     <content type="html"><![CDATA[<h2>简评</h2>
 
@@ -4477,9 +4774,9 @@
   
   <entry>
     <title type="html"><![CDATA[2015年阅读统计]]></title>
-    <link href="http://luozhaohui.github.io/blog/2016/01/01/reading/"/>
-    <updated>2016-01-01T05:42:38+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2016/01/01/reading</id>
+    <link href="http://luozhaohui.github.io/blog/2015/12/31/reading/"/>
+    <updated>2015-12-31T21:42:38+00:00</updated>
+    <id>http://luozhaohui.github.io/blog/2015/12/31/reading</id>
     <content type="html"><![CDATA[<h2>2015年阅读统计，本页面由代码自动生成</h2>
 
 <h2>总计阅读 46 本</h2>
@@ -4929,9 +5226,9 @@
   
   <entry>
     <title type="html"><![CDATA[2015私人阅读十五佳]]></title>
-    <link href="http://luozhaohui.github.io/blog/2016/01/01/books-annual-review/"/>
-    <updated>2016-01-01T05:42:38+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2016/01/01/books-annual-review</id>
+    <link href="http://luozhaohui.github.io/blog/2015/12/31/books-annual-review/"/>
+    <updated>2015-12-31T21:42:38+00:00</updated>
+    <id>http://luozhaohui.github.io/blog/2015/12/31/books-annual-review</id>
     <content type="html"><![CDATA[<h2>统计</h2>
 
 <p>2015年一共读完46本，其中五星18本，占比40%；四星17本，占比近40%；三星7本；两星4本。阅读主题以社科、历史、商业为主，人到中年已经消遣不起小说了。</p>
@@ -5399,9 +5696,9 @@
   
   <entry>
     <title type="html"><![CDATA[2014年阅读统计]]></title>
-    <link href="http://luozhaohui.github.io/blog/2015/01/01/reading/"/>
-    <updated>2015-01-01T05:42:38+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2015/01/01/reading</id>
+    <link href="http://luozhaohui.github.io/blog/2014/12/31/reading/"/>
+    <updated>2014-12-31T21:42:38+00:00</updated>
+    <id>http://luozhaohui.github.io/blog/2014/12/31/reading</id>
     <content type="html"><![CDATA[<h2>2014年阅读统计，本页面由代码自动生成</h2>
 
 <h2>总计阅读 65 本</h2>
@@ -7443,567 +7740,6 @@ P(红球|乙)：乙箱子中拿到红球的概率</p></blockquote>
 <li>Peter Norvig，徐宥译<a href="http://norvig.com/spell-correct.html">怎样写一个拼写检查器</a></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[用Python编写博客导出工具]]></title>
-    <link href="http://luozhaohui.github.io/blog/2014/10/12/export-blog-using-python-on-windows/"/>
-    <updated>2014-10-12T08:35:02+08:00</updated>
-    <id>http://luozhaohui.github.io/blog/2014/10/12/export-blog-using-python-on-windows</id>
-    <content type="html"><![CDATA[<h3>写在前面的话</h3>
-
-<p>我在 github 上用 octopress 搭建了<a href="http://kesalin.github.io/">个人博客</a>，octopress 使用Markdown语法编写博文。之前我在CSDN博客上也写过不少的技术博文，都说自己的孩子再丑也是个宝，所以就起了把CSDN博客里面的文章导出到个人博客上的念头。刚开始想找个工具把CSDN博客导出为xml或文本，然后再把xml或文本转换为Markdown博文。可惜搜了一下现有博客导出工具，大部分要收费才能将全部博文导出为xml格式，所以就只好发明轮子了：写个工具将全部博文导出为Markdown博文（也是txt格式的）。</p>
-
-<p>我将详细介绍这个工具的编写过程，希望没有学习过编程的人也能够学会一些简单的Python语法来修改这个脚本工具，以满足他们将其他类型的博客导出为文本格式。这也是我第一次学习和使用Python，所以相信我，你一定也可以将自己的博客导出为想要的文本格式。</p>
-
-<p>本文源代码在这里：<a href="https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py">ExportCSDNBlog.py</a></p>
-
-<!--more-->
-
-
-<p>考虑到大部分非程序员使用Windows系统，下面将介绍在Windows下如何编写这个工具。</p>
-
-<h3>下载工具</h3>
-
-<p>在 Windows 下安装Python开发环境（Linux/Mac下用pip安装相应包即可，程序员自己解决咯）：</p>
-
-<p><strong>Python 2.7.3</strong><br/>
-请安装这个版本，更高版本的Python与一些库不兼容。<br/>
-<a href="https://www.python.org/download/releases/2.7.3/">下载页面</a><br/>
-下载完毕双击可执行文件进行安装，默认安装在C:\Python2.7。</p>
-
-<p><strong>six</strong><br/>
-<a href="https://pypi.python.org/pypi/six">下载页面</a>
-下载完毕，解压到Python安装目录下，如C:\Python2.7\six-1.8.0目录下。</p>
-
-<p><strong>BeautifulSoup 4.3.2</strong><br/>
-<a href="http://www.crummy.com/software/BeautifulSoup/bs4/download/">下载页面</a>，
-下载完毕，解压到Python安装目录下，如C:\Python2.7\BeautifulSoup目录下。</p>
-
-<p><strong>html5lib</strong><br/>
-<a href="https://pypi.python.org/pypi/html5lib">下载页面</a>
-下载完毕，解压到Python安装目录下，如C:\Python2.7\html5lib-0.999目录下。</p>
-
-<h3>安装工具</h3>
-
-<p>Windows下启动命令行，依次进入如下目录，执行setup.py install进行安装：</p>
-
-<pre><code>C:\Python2.7\six-1.8.0&gt;setup.py install  
-C:\Python2.7\html5lib-0.999&gt;setup.py install  
-C:\Python2.7\BeautifulSoup&gt;setup.py install  
-</code></pre>
-
-<h3>参考文档</h3>
-
-<p><a href="https://docs.python.org/2/">Python 2.X文档</a><br/>
-<a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html">BeautifulSoup文档</a><br/>
-<a href="http://www.regexlab.com/zh/regref.htm">正则表达式文档</a><br/>
-<a href="http://tool.oschina.net/regex">正则表达式在线测试</a></p>
-
-<h3>用到的Python语法</h3>
-
-<p>这个工具只用到了一些基本的Python语法，如果你没有Python基础，稍微了解一下如下博文是很有好处的。</p>
-
-<ul>
-<li>string: 字符串操作，参考<a href="http://www.cnblogs.com/sevenyuan/archive/2010/12/10/1902145.html">python: string的操作函数</a></li>
-<li>list: 列表操作，参考<a href="http://www.cnblogs.com/zhengyuxin/articles/1938300.html">Python list 操作</a></li>
-<li>dictionary: 字典操作，参考<a href="http://www.cnblogs.com/yangyongzhi/archive/2012/09/17/2688326.html">Python中dict详解</a></li>
-<li>datetime: 日期时间，参考<a href="http://www.cnblogs.com/lhj588/archive/2012/04/23/2466653.html">python datetime处理时间</a></li>
-</ul>
-
-
-<p><br/></p>
-
-<h3>编写博客导出工具</h3>
-
-<h4>分析</h4>
-
-<p>首先来分析这样一个工具的需求：</p>
-
-<pre><code>导出所有CSDN博客文章为Markdown文本。
-</code></pre>
-
-<p>这个总需求其实可以分两步来做：</p>
-
-<pre><code>* 获得CSDN博客文章
-* 将文章转换为Markdown文本
-</code></pre>
-
-<p>针对第一步：如何获取博客文章呢？</p>
-
-<p>打开任何一个CSDN博客，我们都可以看到下方的页面导航显示“XXX条数据 共XXX页 1 2 3 &hellip; 尾页”，我们从这个地方入手考虑。每个页面上都会显示属于该页的文章标题及文章链接，如果我们依次访问这些页面链接，就能从每个页面链接中找出属于该页面的文章标题及文章链接。这样所有的文章标题以及文章链接就都获取到了，有了这些文章链接，我们就能获取对应文章的html内容，然后通过解析这些html页面来生成相应Markdown文本了。</p>
-
-<h4>实现</h4>
-
-<p>从上面的分析可以看出，首先我们需要根据首页获取所有的页面链接，然后遍历每一个页面链接来获取文章链接。</p>
-
-<ul>
-<li>获取页面链接的代码：</li>
-</ul>
-
-
-<figure class='code'><figcaption><span>获取所有的页面的 url</span><a href='https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">getHtml</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-</span><span class='line'>    <span class="k">try</span> <span class="p">:</span>
-</span><span class='line'>        <span class="k">if</span> <span class="n">gUseCookie</span><span class="p">:</span>
-</span><span class='line'>            <span class="n">opener</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">build_opener</span><span class="p">()</span>
-</span><span class='line'>            <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">gHeaders</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-</span><span class='line'>                <span class="n">opener</span><span class="o">.</span><span class="n">addheaders</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">))</span>
-</span><span class='line'>            <span class="n">response</span> <span class="o">=</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-</span><span class='line'>            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;utf-8&#39;</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">else</span><span class="p">:</span>
-</span><span class='line'>            <span class="n">request</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">gHeaders</span><span class="p">)</span>
-</span><span class='line'>            <span class="n">response</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</span><span class='line'>            <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">&#39;utf-8&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">except</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">URLError</span><span class="p">,</span> <span class="n">e</span> <span class="p">:</span>
-</span><span class='line'>        <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="s">&quot;code&quot;</span><span class="p">):</span>
-</span><span class='line'>            <span class="k">print</span> <span class="s">&quot;The server couldn&#39;t fulfill the request: &quot;</span> <span class="o">+</span> <span class="n">url</span>
-</span><span class='line'>            <span class="k">print</span> <span class="s">&quot;Error code: </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">e</span><span class="o">.</span><span class="n">code</span>
-</span><span class='line'>        <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="s">&quot;reason&quot;</span><span class="p">):</span>
-</span><span class='line'>            <span class="k">print</span> <span class="s">&quot;We failed to reach a server. Please check your url: &quot;</span> <span class="o">+</span> <span class="n">url</span> <span class="o">+</span> <span class="s">&quot;, and read the Reason.&quot;</span>
-</span><span class='line'>            <span class="k">print</span> <span class="s">&quot;Reason: </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">e</span><span class="o">.</span><span class="n">reason</span>
-</span><span class='line'>    <span class="k">return</span> <span class="n">data</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">def</span> <span class="nf">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-</span><span class='line'>    <span class="n">page</span> <span class="o">=</span> <span class="n">getHtml</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="bp">None</span>
-</span><span class='line'>    <span class="n">pageListDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;papelist&quot;</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">for</span> <span class="n">pageList</span> <span class="ow">in</span> <span class="n">pageListDocs</span><span class="p">:</span>
-</span><span class='line'>        <span class="n">hrefDocs</span> <span class="o">=</span> <span class="n">pageList</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span class='line'>            <span class="n">lastArticleHrefDoc</span> <span class="o">=</span> <span class="n">hrefDocs</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">hrefDocs</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
-</span><span class='line'>            <span class="n">lastArticleHref</span> <span class="o">=</span> <span class="n">lastArticleHrefDoc</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">if</span> <span class="n">lastArticleHref</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span>
-</span><span class='line'>        <span class="k">return</span> <span class="p">[]</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">print</span> <span class="s">&quot; &gt; last page href:&quot;</span> <span class="o">+</span> <span class="n">lastArticleHref</span>
-</span><span class='line'>    <span class="n">lastPageIndex</span> <span class="o">=</span> <span class="n">lastArticleHref</span><span class="o">.</span><span class="n">rfind</span><span class="p">(</span><span class="s">&quot;/&quot;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">lastPageNum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">lastArticleHref</span><span class="p">[</span><span class="n">lastPageIndex</span><span class="o">+</span><span class="mi">1</span><span class="p">:])</span>
-</span><span class='line'>    <span class="n">urlInfo</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">lastArticleHref</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">lastPageIndex</span><span class="p">]</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span class='line'>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">lastPageNum</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-</span><span class='line'>        <span class="n">pageUrl</span> <span class="o">=</span> <span class="n">urlInfo</span> <span class="o">+</span> <span class="s">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span><span class='line'>        <span class="n">pageUrlList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
-</span><span class='line'>        <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt; page &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;: &quot;</span> <span class="o">+</span> <span class="n">pageUrl</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total pages: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pageUrlList</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">return</span> <span class="n">pageUrlList</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p>参数 url = &ldquo;<a href="http://blog.csdn.net/">http://blog.csdn.net/</a>&rdquo; + username，即你首页的网址。通过urllib2库打开这个url发起一个web请求，从response中获取返回的html页面内容保存到data中。你可以被注释的 print data 来查看到底返回了什么内容。</p>
-
-<p>有了html页面内容，接下来就用BeautifulSoup来解析它。BeautifulSoup极大地减少了我们的工作量。我会详细在这里介绍它的使用，后面再次出现类似的解析就会从略了。soup.find_all(id=&ldquo;papelist&rdquo;) 将会查找html页面中所有id=&ldquo;papelist"的tag，然后返回包含这些tag的list。对应 CSDN 博文页面来说，只有一处地方：</p>
-
-<figure class='code'><figcaption><span>papelist html内容示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;papelist&quot;</span> <span class="na">class=</span><span class="s">&quot;pagelist&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;span&gt;</span> 236条数据  共12页<span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;strong&gt;</span>1<span class="nt">&lt;/strong&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/2&quot;</span><span class="nt">&gt;</span>2<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/3&quot;</span><span class="nt">&gt;</span>3<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/4&quot;</span><span class="nt">&gt;</span>4<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/5&quot;</span><span class="nt">&gt;</span>5<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/6&quot;</span><span class="nt">&gt;</span>...<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/2&quot;</span><span class="nt">&gt;</span>下一页<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/list/12&quot;</span><span class="nt">&gt;</span>尾页<span class="nt">&lt;/a&gt;</span>
-</span><span class='line'><span class="nt">&lt;/div&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p>好，我们获得了papelist 的tag对象，通过这个tag对象我们能够找出尾页tag a对象，从这个tag a解析出对应的href属性，获得尾页的编号12，然后自己拼出所有page页面的访问url来，并保存在pageUrlList中返回。page页面的访问url形式示例如下：</p>
-
-<pre><code>&gt; page 1: http://blog.csdn.net/kesalin/article/list/1
-</code></pre>
-
-<ul>
-<li>根据page来获取文章链接的代码：</li>
-</ul>
-
-
-<figure class='code'><figcaption><span>根据page来获取文章链接</span><a href='https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">getArticleList</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-</span><span class='line'>    <span class="c"># 获取所有的文章的 url/title</span>
-</span><span class='line'>    <span class="n">pageUrlList</span> <span class="o">=</span> <span class="n">getPageUrlList</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">articleListDocs</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">strPage</span> <span class="o">=</span> <span class="s">&quot; &gt; parsing page {0}&quot;</span>
-</span><span class='line'>    <span class="k">for</span> <span class="n">pageUrl</span> <span class="ow">in</span> <span class="n">pageUrlList</span><span class="p">:</span>
-</span><span class='line'>        <span class="n">retryCount</span> <span class="o">=</span> <span class="mi">0</span>
-</span><span class='line'>        <span class="k">print</span> <span class="s">&quot; &gt; parsing page {0}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="n">slow_down</span><span class="p">()</span> <span class="c">#访问太快会不响应</span>
-</span><span class='line'>        <span class="n">page</span> <span class="o">=</span> <span class="n">getHtml</span><span class="p">(</span><span class="n">pageUrl</span><span class="p">);</span>
-</span><span class='line'>        <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="c"># 获取置顶文章</span>
-</span><span class='line'>        <span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">if</span> <span class="n">topArticleDocs</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
-</span><span class='line'>            <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="c"># 获取文章</span>
-</span><span class='line'>        <span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">if</span> <span class="n">articleDocs</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
-</span><span class='line'>            <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="k">break</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">artices</span> <span class="o">=</span> <span class="p">[]</span>
-</span><span class='line'>    <span class="n">topTile</span> <span class="o">=</span> <span class="s">&quot;[置顶]&quot;</span>
-</span><span class='line'>    <span class="k">for</span> <span class="n">articleListDoc</span> <span class="ow">in</span> <span class="n">articleListDocs</span><span class="p">:</span>
-</span><span class='line'>        <span class="n">linkDocs</span> <span class="o">=</span> <span class="n">articleListDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_title&quot;</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">for</span> <span class="n">linkDoc</span> <span class="ow">in</span> <span class="n">linkDocs</span><span class="p">:</span>
-</span><span class='line'>            <span class="c">#print linkDoc.prettify().encode(&#39;UTF-8&#39;)</span>
-</span><span class='line'>            <span class="n">link</span> <span class="o">=</span> <span class="n">linkDoc</span><span class="o">.</span><span class="n">a</span>
-</span><span class='line'>            <span class="n">url</span> <span class="o">=</span> <span class="n">link</span><span class="p">[</span><span class="s">&quot;href&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class='line'>            <span class="n">title</span> <span class="o">=</span> <span class="n">link</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class='line'>            <span class="n">title</span> <span class="o">=</span> <span class="n">title</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">topTile</span><span class="p">,</span> <span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class='line'>            <span class="n">oneHref</span> <span class="o">=</span> <span class="s">&quot;http://blog.csdn.net&quot;</span> <span class="o">+</span> <span class="n">url</span>
-</span><span class='line'>            <span class="c">#log(&quot;   &gt; title:&quot; + title + &quot;, url:&quot; + oneHref)</span>
-</span><span class='line'>            <span class="n">artices</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">oneHref</span><span class="p">,</span> <span class="n">title</span><span class="p">])</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot;total articles: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">artices</span><span class="p">))</span> <span class="o">+</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">return</span> <span class="n">artices</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p>从第一步获得所有的page链接保存在pageUrlList中，接下来就根据这些page 页面来获取对应page的article链接和标题。关键代码如下面：</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'>    <span class="c"># 获取置顶文章</span>
-</span><span class='line'>    <span class="n">topArticleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_toplist&quot;</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">if</span> <span class="n">topArticleDocs</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
-</span><span class='line'>        <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">topArticleDocs</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="c"># 获取文章</span>
-</span><span class='line'>    <span class="n">articleDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_list&quot;</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">if</span> <span class="n">articleDocs</span> <span class="o">!=</span> <span class="bp">None</span><span class="p">:</span>
-</span><span class='line'>        <span class="n">articleListDocs</span> <span class="o">=</span> <span class="n">articleListDocs</span> <span class="o">+</span> <span class="n">articleDocs</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p>从page的html内容中查找置顶的文章（article_toplist）以及普通的文章（article_list）的tag对象，然后将这些tag保存到articleListDocs中。</p>
-
-<p>article_toplist示例：(article_list的格式是类似的)</p>
-
-<figure class='code'><figcaption><span>article_toplist html内容示例</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;article_toplist&quot;</span> <span class="na">class=</span><span class="s">&quot;list&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;list_item article_item&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;article_title&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>            <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;ico ico_type_Original&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
-</span><span class='line'>            <span class="nt">&lt;h1&gt;</span>
-</span><span class='line'>                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;link_title&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>                <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">&quot;/kesalin/article/details/10474007&quot;</span><span class="nt">&gt;</span>
-</span><span class='line'>                <span class="nt">&lt;font</span> <span class="na">color=</span><span class="s">&quot;red&quot;</span><span class="nt">&gt;</span>[置顶]<span class="nt">&lt;/font&gt;</span>
-</span><span class='line'>                招聘：有兴趣做一个与Android对等的操作系统么？
-</span><span class='line'>                <span class="nt">&lt;/a&gt;</span>
-</span><span class='line'>                <span class="nt">&lt;/span&gt;</span>
-</span><span class='line'>            <span class="nt">&lt;/h1&gt;</span>
-</span><span class='line'>        <span class="nt">&lt;/div&gt;</span>
-</span><span class='line'>        ... ...
-</span><span class='line'>    <span class="nt">&lt;/div&gt;</span>
-</span><span class='line'>    ... ...
-</span><span class='line'><span class="nt">&lt;/div&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p>然后遍历所有的保存到articleListDocs里的tag对象，从中解析出link_title的span tag对象保存到linkDocs中；然后从中解析出链接的url和标题，这里去掉了置顶文章标题中的“置顶”两字；最后将url和标题保存到artices列表中返回。artices列表中的每一项内容示例：</p>
-
-<pre><code>   title:招聘：有兴趣做一个与Android对等的操作系统么？  
-   url:http://blog.csdn.net/kesalin/article/details/10474007
-</code></pre>
-
-<ul>
-<li>根据文章链接获取文章html内容并解析转换为Markdown文本</li>
-</ul>
-
-
-<figure class='code'><figcaption><span>根据文章链接获取文章html内容并解析转换为Markdown文本</span><a href='https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">download</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
-</span><span class='line'>    <span class="c"># 下载文章，并保存为 markdown 格式</span>
-</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; download: &quot;</span> <span class="o">+</span> <span class="n">url</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">categories</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-</span><span class='line'>    <span class="n">content</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-</span><span class='line'>    <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">slow_down</span><span class="p">();</span>
-</span><span class='line'>    <span class="n">page</span> <span class="o">=</span> <span class="n">getHtml</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">page</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">manageDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;div&quot;</span><span class="p">,</span> <span class="s">&quot;article_manage&quot;</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">for</span> <span class="n">managerDoc</span> <span class="ow">in</span> <span class="n">manageDocs</span><span class="p">:</span>
-</span><span class='line'>        <span class="n">categoryDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_categories&quot;</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">categoryDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span class='line'>            <span class="n">categories</span> <span class="o">=</span> <span class="n">categoryDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">a</span><span class="o">.</span><span class="n">get_text</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="n">postDateDoc</span> <span class="o">=</span> <span class="n">managerDoc</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s">&quot;span&quot;</span><span class="p">,</span> <span class="s">&quot;link_postdate&quot;</span><span class="p">)</span>
-</span><span class='line'>        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">postDateDoc</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-</span><span class='line'>            <span class="n">postDateStr</span> <span class="o">=</span> <span class="n">postDateDoc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">string</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-</span><span class='line'>            <span class="n">postDate</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">postDateStr</span><span class="p">,</span> <span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M&#39;</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">contentDocs</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="s">&quot;article_content&quot;</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">for</span> <span class="n">contentDoc</span> <span class="ow">in</span> <span class="n">contentDocs</span><span class="p">:</span>
-</span><span class='line'>        <span class="n">htmlContent</span> <span class="o">=</span> <span class="n">contentDoc</span><span class="o">.</span><span class="n">prettify</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s">&#39;UTF-8&#39;</span><span class="p">)</span>
-</span><span class='line'>        <span class="n">content</span> <span class="o">=</span> <span class="n">htmlContent2String</span><span class="p">(</span><span class="n">htmlContent</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">exportToMarkdown</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">postDate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p>同前面的分析类似，在这里通过访问具体文章页面获得html内容，从中解析出文章标题，分类，发表时间，文章内容信息。然后把这些内容传递给函数exportToMarkdown，在其中生成相应的Markdown文本文件。值得一提的是，在解析文章内容信息时，由于html文档内容有一些特殊的标签或转义符号，需要作特殊处理，这些特殊处理在函数htmlContent2String中进行。目前只导出了所有的文本内容，图片，url链接以及表格都没有处理，后续我会尽量完善这些转换。</p>
-
-<figure class='code'><figcaption><span>转换html文档内容</span><a href='https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">htmlContent2String</span><span class="p">(</span><span class="n">contentStr</span><span class="p">):</span>
-</span><span class='line'>    <span class="n">patternImg</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;img.+?src=&quot;)(.+?)(&quot;.+ /&gt;)&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">patternHref</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;(&lt;a.+?href=&quot;)(.+?)(&quot;.+?&gt;)(.+?)(&lt;/a&gt;)&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">patternRemoveHtml</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s">r&#39;&lt;/?[^&gt;]+&gt;&#39;</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternImg</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;![image_mark](\2)&#39;</span><span class="p">,</span> <span class="n">contentStr</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">patternHref</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;[\4](\2)&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">patternRemoveHtml</span><span class="p">,</span> <span class="s">r&#39;&#39;</span><span class="p">,</span> <span class="n">resultContent</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">resultContent</span> <span class="o">=</span> <span class="n">decodeHtmlSpecialCharacter</span><span class="p">(</span><span class="n">resultContent</span><span class="p">)</span>
-</span><span class='line'>    <span class="k">return</span> <span class="n">resultContent</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p>目前仅仅是删除所有的html标签，并在函数decodeHtmlSpecialCharacter中转换转义字符。</p>
-
-<ul>
-<li>生成Markdown文本文件</li>
-</ul>
-
-
-<figure class='code'><figcaption><span>生成Markdown文本文件</span><a href='https://github.com/luozhaohui/python/blob/master/exportCSDNBlogAsMarkdown.py'>View Source</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">def</span> <span class="nf">exportToMarkdown</span><span class="p">(</span><span class="n">exportDir</span><span class="p">,</span> <span class="n">postdate</span><span class="p">,</span> <span class="n">categories</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
-</span><span class='line'>    <span class="n">titleDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">contentDate</span> <span class="o">=</span> <span class="n">postdate</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s">&#39;%Y-%m-</span><span class="si">%d</span><span class="s"> %H:%M:%S %z&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">filename</span> <span class="o">=</span> <span class="n">titleDate</span> <span class="o">+</span> <span class="s">&#39;-&#39;</span> <span class="o">+</span> <span class="n">title</span>
-</span><span class='line'>    <span class="n">filename</span> <span class="o">=</span> <span class="n">repalceInvalidCharInFilename</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">filepath</span> <span class="o">=</span> <span class="n">exportDir</span> <span class="o">+</span> <span class="s">&#39;/&#39;</span> <span class="o">+</span> <span class="n">filename</span> <span class="o">+</span> <span class="s">&#39;.markdown&#39;</span>
-</span><span class='line'>    <span class="n">log</span><span class="p">(</span><span class="s">&quot; &gt;&gt; save as &quot;</span> <span class="o">+</span> <span class="n">filename</span><span class="p">)</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="n">newFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="nb">unicode</span><span class="p">(</span><span class="n">filepath</span><span class="p">,</span> <span class="s">&quot;utf8&quot;</span><span class="p">),</span> <span class="s">&#39;w&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;layout: post&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;title: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;date: &#39;</span> <span class="o">+</span> <span class="n">contentDate</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;comments: true&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;categories: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;tags: [&#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;]&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;description: </span><span class="se">\&quot;</span><span class="s">&#39;</span> <span class="o">+</span> <span class="n">title</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\&quot;\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;keywords: &#39;</span> <span class="o">+</span> <span class="n">categories</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;---&#39;</span> <span class="o">+</span> <span class="s">&#39;</span><span class="se">\n\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">newFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p>生成Markdown文本文件就很简单了，在这里我需要生成github page用的Markdown博文形式，所以内容如此，你可以根据你的需要修改为其他形式的文本内容。</p>
 ]]></content>
   </entry>
   
