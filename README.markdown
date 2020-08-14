@@ -79,7 +79,10 @@ rake install
 #### Generate & Preview
 ```
 rake setup_github_pages
-git@github.com:luozhaohui/luozhaohui.github.io.git
+
+git@github.com:luozhaohui/luozhaohui.github.io.git _deploy
+
+or
 
 cd _deploy
 git pull
@@ -87,6 +90,13 @@ git pull
 rake generate   # Generates posts and pages into the public directory
 rake watch      # Watches source/ and sass/ for changes and regenerates
 rake preview    # Watches, and mounts a webserver at http://localhost:4000
+
+# for rake > 10.5
+bundle exec rake generate
+bundle exec rake watch
+bundle exec rake preview
+
+bundle exec rake deploy
 ```
 
 #### Deploy
