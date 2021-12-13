@@ -74,6 +74,7 @@ bundle install
 Install the default Octopress theme.
 ```
 rake install
+bundle exec rake install
 ```
 
 #### Generate & Preview
