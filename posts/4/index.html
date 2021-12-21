@@ -74,6 +74,43 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/07/08/android-thread-tutoria01/">Android多线程分析之一：使用Thread异步下载图像</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-07-08T20:38:35+08:00'><span class='date'>2014-07-08</span> <span class='time'>8:38 pm</span></time>
+        
+           | <a href="/blog/2014/07/08/android-thread-tutoria01/#disqus_thread"
+             data-disqus-identifier="http://luozhaohui.github.io/blog/2014/07/08/android-thread-tutoria01/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>打算整理一下对<code>Android Framework</code>中多线程相关知识的理解，主要集中在<code>Framework</code>层的<code>thread</code>, <code>Handler</code>, <code>Looper</code>, <code>MessageQueue</code>, <code>Message</code>, <code>AysncTask</code>，当然不可避免地要涉及到<code>native</code>方法，因此也会分析<code>dalvik</code>中和线程以及消息处理相关的代码：如<code>dalvik</code>中的<code>C++ Thread</code>类以及<code>MessageQueue</code>类。本文将从一个使用<code>Thread</code>的简单应用入手，引入<code>Thread</code>这个话题，接下来的几篇文章会依次介绍前面提到的那些主题。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/07/08/android-thread-tutoria01/">阅读全文 &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/06/30/reading-history/">读史又半年</a></h1>
     
     
@@ -437,47 +474,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/06/17/seven-habits-more/">再荐《高效能人士的七个习惯》</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-06-17T11:54:02+08:00'><span class='date'>2012-06-17</span> <span class='time'>11:54 am</span></time>
-        
-           | <a href="/blog/2012/06/17/seven-habits-more/#disqus_thread"
-             data-disqus-identifier="http://luozhaohui.github.io/blog/2012/06/17/seven-habits-more/">评论</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="https://img5.doubanio.com/mpic/s4510907.jpg" alt="高效能人士的七个习惯" /></p>
-
-<p>最近托张迪同学的福，重读了《<a href="http://book.douban.com/subject/5325618/">高效能人士的七个习惯</a>》这本书（请点击链接查看豆瓣介绍），2008年7月我曾推荐过这本小书，绝对值得花一两包烟钱或一块面膜的钱买来阅读与收藏。</p>
-
-<p>张迪同学曾经的公司给员工人手配备一本，让我很敬佩这家民营公司。如果用7个习惯的话来分析，这家公司的管理层正是在运用习惯四：双赢的思维在管理员工，员工自身成长了，自然不愁公司不成长。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/06/17/seven-habits-more/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
     <a class="prev" href="/posts/3">&larr; 新帖子</a>
@@ -493,7 +489,7 @@
     <section>
   <h1>文章分类</h1>
   <ul id="categories">
-    <li class='category'><a href='/blog/categories/shu-ping-ying-ping/'>书评影评 (42)</a></li>
+    <li class='category'><a href='/blog/categories/shu-ping-ying-ping/'>书评影评 (43)</a></li>
 <li class='category'><a href='/blog/categories/gong-ju-ruan-jian/'>工具软件 (2)</a></li>
 <li class='category'><a href='/blog/categories/xin-zhi-si-wei/'>心智思维 (6)</a></li>
 <li class='category'><a href='/blog/categories/sui-sui-nian/'>碎碎念 (24)</a></li>
@@ -506,6 +502,10 @@
 </section><section>
   <h1>最新文章</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2021/12/31/reading/">2021年阅读统计</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2020/12/31/reading/">2020年阅读统计</a>
@@ -523,10 +523,6 @@
         <a href="/blog/2018/10/10/kids-english-with-phonics/">幼儿英语启蒙路线图</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2017/12/31/reading/">2017年阅读统计</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -538,20 +534,20 @@
 <a style="font-size: 103%" href="/tags/si-wei/">思维</a>
 <a style="font-size: 101%" href="/tags/za-tan/">杂谈</a>
 <a style="font-size: 100%" href="/tags/android/">android</a>
-<a style="font-size: 99%" href="/tags/thread/">thread</a>
 <a style="font-size: 99%" href="/tags/xin-qing/">心情</a>
+<a style="font-size: 99%" href="/tags/thread/">thread</a>
 <a style="font-size: 98%" href="/tags/hui-yi/">回忆</a>
-<a style="font-size: 96%" href="/tags/li-shi/">历史</a>
 <a style="font-size: 96%" href="/tags/ri-ben/">日本</a>
-<a style="font-size: 96%" href="/tags/zheng-zhi/">政治</a>
+<a style="font-size: 96%" href="/tags/li-shi/">历史</a>
 <a style="font-size: 96%" href="/tags/gong-ju/">工具</a>
-<a style="font-size: 94%" href="/tags/jiao-yu/">教育</a>
+<a style="font-size: 96%" href="/tags/zheng-zhi/">政治</a>
 <a style="font-size: 94%" href="/tags/lu-you/">旅游</a>
 <a style="font-size: 94%" href="/tags/bi-ji/">笔记</a>
+<a style="font-size: 94%" href="/tags/jiao-yu/">教育</a>
 <a style="font-size: 94%" href="/tags/fang-fa-lun/">方法论</a>
-<a style="font-size: 90%" href="/tags/scheme/">Scheme</a>
-<a style="font-size: 90%" href="/tags/xin-li-xue/">心理学</a>
-<a style="font-size: 90%" href="/tags/xi-guan/">习惯</a>
+<a style="font-size: 90%" href="/tags/wen-hua/">文化</a>
+<a style="font-size: 90%" href="/tags/fang-yan/">方言</a>
+<a style="font-size: 90%" href="/tags/ri-ju/">日剧</a>
 
   </ul>
 </section>
