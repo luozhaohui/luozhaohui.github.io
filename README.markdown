@@ -54,7 +54,8 @@ THE SOFTWARE IS PROVIDED ‘AS IS’, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 ##### Notes
 It needs to install ruby dev on Ubuntu.
 ```
-sudo apt-get install ruby2.3-dev
+sudo apt-get install ruby2.5-dev
+sudo apt-get install ruby-dev
 ```
 
 #### Setup Octopress
