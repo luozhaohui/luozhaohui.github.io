@@ -1,4 +1,4 @@
-## Octopress 3.0
+## Octopress
 
 Note: Octopress 3.0 is in development at https://github.com/octopress/octopress
 
@@ -81,8 +81,11 @@ bundle exec rake install
 #### Generate & Preview
 ```
 rake setup_github_pages
+bundle exec rake setup_github_pages
 
 git@github.com:luozhaohui/luozhaohui.github.io.git _deploy
+
+git clone git@github.com:luozhaohui/luozhaohui.github.io.git -b master _deploy
 
 or
 
