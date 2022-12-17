@@ -4,7 +4,7 @@
   <title><![CDATA[标签：C++ | 飘飘白云]]></title>
   <link href="http://luozhaohui.github.io/tags/c-plus-plus/atom.xml" rel="self"/>
   <link href="http://luozhaohui.github.io/"/>
-  <updated>2021-12-27T13:47:59+08:00</updated>
+  <updated>2022-12-17T19:03:03+08:00</updated>
   <id>http://luozhaohui.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -64,7 +64,7 @@
 
 <p>比如通常我们使用递归来实现实现阶乘：</p>
 
-<pre><code class="">#include &lt;iostream&gt;
+<pre><code>#include &lt;iostream&gt;
 
 unsigned int factorial(unsigned int n) {
     return n == 0 ? 1 : n * factorial(n - 1);
@@ -78,7 +78,7 @@ int main() {
 
 <p>我们也可以通过模板元编程来实现：</p>
 
-<pre><code class="">#include &lt;iostream&gt;
+<pre><code>#include &lt;iostream&gt;
 
 template &lt;unsigned int n&gt;
 struct factorial {
@@ -104,7 +104,7 @@ int main() {
 
 <p>为了用模板元编程来模拟Scheme中<code>list</code>即相关操作，我们需要先定义一些模板数据结构。这些数据结构非常简单，即重新定义基本数据类型，为了简化，在这里我只特化了必须的<code>int</code>、<code>uint</code>、<code>bool</code>以及<code>empty</code>的实现。<code>empty</code>是递归实现<code>list</code>的最后一个元素，其作用相当于<code>&lsquo;\0&rsquo;</code>之于字符串。</p>
 
-<pre><code class="">// type_
+<pre><code>// type_
 //
 template &lt;typename T, T N&gt;
 struct type_ {
@@ -156,7 +156,7 @@ struct empty {
 
 <p>下面我们先来个小示例，看看怎么使用这些模板数据结构。这个示例的作用是将仅仅用0和1表示的十进制数字当成二进制看，转换为十进制数值。如：101 转换为十进制数值为 5.</p>
 
-<pre><code class="">template &lt;unsigned int N&gt;
+<pre><code>template &lt;unsigned int N&gt;
 struct binary : uint_ &lt; binary &lt; N / 10 &gt;::type::value * 2 + (N % 10) &gt; {};
 
 template &lt;&gt;
@@ -262,7 +262,7 @@ car_f::template apply&lt;cons&lt;int_&lt;1&gt;, int_&lt;2&gt;&gt;::value // == 1
 </span><span class='line'>struct list_t : std::conditional &lt;
 </span><span class='line'>    sizeof&hellip;(rest) == 0,
 </span><span class='line'>    cons&lt;first, empty&gt;,
-</span><span class='line'>    cons&lt;first, typename list_t&lt;rest&hellip;&gt;::type&gt;&gt;::type
+</span><span class='line'>    cons&lt;first, typename list_t&lt;rest...&gt;::type&gt;&gt;::type
 </span><span class='line'>{};&lt;/p&gt;
 </span><span class='line'>
 </span><span class='line'>&lt;p&gt;template &lt;&gt;
@@ -312,6 +312,138 @@ car_f::template apply&lt;cons&lt;int_&lt;1&gt;, int_&lt;2&gt;&gt;::value // == 1
 <span class='line-number'>31</span>
 <span class='line-number'>32</span>
 <span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+<span class='line-number'>77</span>
+<span class='line-number'>78</span>
+<span class='line-number'>79</span>
+<span class='line-number'>80</span>
+<span class='line-number'>81</span>
+<span class='line-number'>82</span>
+<span class='line-number'>83</span>
+<span class='line-number'>84</span>
+<span class='line-number'>85</span>
+<span class='line-number'>86</span>
+<span class='line-number'>87</span>
+<span class='line-number'>88</span>
+<span class='line-number'>89</span>
+<span class='line-number'>90</span>
+<span class='line-number'>91</span>
+<span class='line-number'>92</span>
+<span class='line-number'>93</span>
+<span class='line-number'>94</span>
+<span class='line-number'>95</span>
+<span class='line-number'>96</span>
+<span class='line-number'>97</span>
+<span class='line-number'>98</span>
+<span class='line-number'>99</span>
+<span class='line-number'>100</span>
+<span class='line-number'>101</span>
+<span class='line-number'>102</span>
+<span class='line-number'>103</span>
+<span class='line-number'>104</span>
+<span class='line-number'>105</span>
+<span class='line-number'>106</span>
+<span class='line-number'>107</span>
+<span class='line-number'>108</span>
+<span class='line-number'>109</span>
+<span class='line-number'>110</span>
+<span class='line-number'>111</span>
+<span class='line-number'>112</span>
+<span class='line-number'>113</span>
+<span class='line-number'>114</span>
+<span class='line-number'>115</span>
+<span class='line-number'>116</span>
+<span class='line-number'>117</span>
+<span class='line-number'>118</span>
+<span class='line-number'>119</span>
+<span class='line-number'>120</span>
+<span class='line-number'>121</span>
+<span class='line-number'>122</span>
+<span class='line-number'>123</span>
+<span class='line-number'>124</span>
+<span class='line-number'>125</span>
+<span class='line-number'>126</span>
+<span class='line-number'>127</span>
+<span class='line-number'>128</span>
+<span class='line-number'>129</span>
+<span class='line-number'>130</span>
+<span class='line-number'>131</span>
+<span class='line-number'>132</span>
+<span class='line-number'>133</span>
+<span class='line-number'>134</span>
+<span class='line-number'>135</span>
+<span class='line-number'>136</span>
+<span class='line-number'>137</span>
+<span class='line-number'>138</span>
+<span class='line-number'>139</span>
+<span class='line-number'>140</span>
+<span class='line-number'>141</span>
+<span class='line-number'>142</span>
+<span class='line-number'>143</span>
+<span class='line-number'>144</span>
+<span class='line-number'>145</span>
+<span class='line-number'>146</span>
+<span class='line-number'>147</span>
+<span class='line-number'>148</span>
+<span class='line-number'>149</span>
+<span class='line-number'>150</span>
+<span class='line-number'>151</span>
+<span class='line-number'>152</span>
+<span class='line-number'>153</span>
+<span class='line-number'>154</span>
+<span class='line-number'>155</span>
+<span class='line-number'>156</span>
+<span class='line-number'>157</span>
+<span class='line-number'>158</span>
+<span class='line-number'>159</span>
+<span class='line-number'>160</span>
+<span class='line-number'>161</span>
+<span class='line-number'>162</span>
+<span class='line-number'>163</span>
+<span class='line-number'>164</span>
+<span class='line-number'>165</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>using l1 = list&lt;int, 1, 2, 3&gt;;
 </span><span class='line'>using l2 = list&lt;int, 4, 5, 6, 7&gt;;
 </span><span class='line'>using l3 = list_t&lt;int&lt;em&gt;&lt;1&gt;, int&lt;/em&gt;&lt;2&gt;, int_&lt;3&gt;&gt;;&lt;/p&gt;
@@ -322,201 +454,185 @@ car_f::template apply&lt;cons&lt;int_&lt;1&gt;, int_&lt;2&gt;&gt;::value // == 1
 </span><span class='line'>std::cout &lt;&lt; car&lt;l1&gt;::value &lt;&lt; ", " &lt;&lt; cdr&lt;l1&gt;::head::value &lt;&lt; std::endl;   // 1, 2
 </span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;pre&gt;&lt;code&gt;
-</span><span class='line'>### length &amp; is_empty的实现
-</span><span class='line'>先来看看&lt;code&gt;length&lt;code&gt;的实现，其思路与list的实现一样：递归调用自身，并针对&lt;code&gt;empty&lt;/code&gt;特化处理。
-</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>&lt;p&gt;```&lt;/p&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;typename list&gt;
+</span><span class='line'>&lt;h3&gt;length &amp; is_empty的实现&lt;/h3&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;先来看看&lt;code&gt;length&lt;code&gt;的实现，其思路与list的实现一样：递归调用自身，并针对&lt;code&gt;empty&lt;/code&gt;特化处理。&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;template &lt;typename list&gt;
 </span><span class='line'>struct length_t
 </span><span class='line'>{
 </span><span class='line'>static constexpr unsigned int value =
 </span><span class='line'>    1 + length_t&lt;typename cdr&lt;list&gt;::type&gt;::value;
-</span><span class='line'>};&lt;/p&gt;
+</span><span class='line'>};
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;&gt;
+</span><span class='line'>template &lt;&gt;
 </span><span class='line'>struct length_t&lt;empty&gt;
 </span><span class='line'>{
 </span><span class='line'>static constexpr unsigned int value = 0;
-</span><span class='line'>};&lt;/p&gt;
+</span><span class='line'>};
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;typename list&gt;
+</span><span class='line'>template &lt;typename list&gt;
 </span><span class='line'>struct length
 </span><span class='line'>{
 </span><span class='line'>static constexpr unsigned int value = length_t&lt;typename list::type&gt;::value;
-</span><span class='line'>};</span></code></pre></td></tr></table></div></figure>
-<code>is_empty</code>可以简单实现为判断<code>length</code>为0：</p>
-
-<pre><code class="">template &lt;typename list&gt;
-struct is_empty
-{
-    static constexpr bool value = (0 == length&lt;list&gt;::value);
-};
-</code></pre>
-
-<p>当然这样的实现效率并不高，因此可以通过对<code>list</code>以及<code>empty</code>的特化处理来高效实现：</p>
-
-<pre><code class="">template &lt;typename list&gt;
-struct is_empty_t
-{
-    static constexpr bool value = false;
-};
-
-template &lt;&gt;
-struct is_empty_t&lt;empty&gt;
-{
-    static constexpr bool value = true;
-};
-
-template &lt;typename list&gt;
-struct is_empty
-{
-    static constexpr bool value = is_empty_t&lt;typename list::type&gt;::value;
-};
-</code></pre>
-
-<p>使用示例：</p>
-
-<pre><code class="">    std::cout &lt;&lt; "is_empty&lt;empty&gt; : " &lt;&lt; is_empty&lt;empty&gt;::value &lt;&lt; std::endl;            // 1
-    std::cout &lt;&lt; "is_empty&lt;list&lt;int&gt;&gt; : " &lt;&lt; is_empty&lt;list&lt;int&gt;&gt;::value &lt;&lt; std::endl;    // 1
-    std::cout &lt;&lt; "is_empty&lt;list&lt;int, 1, 2, 3&gt;&gt; : " &lt;&lt; is_empty&lt;l1&gt;::value &lt;&lt; std::endl;  // 0
-    std::cout &lt;&lt; "length&lt;empty&gt; : " &lt;&lt; length&lt;empty&gt;::value &lt;&lt; std::endl;                // 0
-    std::cout &lt;&lt; "length&lt;list&lt;int&gt;&gt; : " &lt;&lt; length&lt;list&lt;int&gt;&gt;::value &lt;&lt; std::endl;        // 0
-    std::cout &lt;&lt; "length&lt;list&lt;int, 1, 2, 3&gt;&gt; : " &lt;&lt; length&lt;l1&gt;::value &lt;&lt; std::endl;      // 3
-</code></pre>
-
-<h3>append &amp; reverse的实现</h3>
-
-<p><code>append</code>是将一个列表list2追加到已有列表list1的后面，其实现思路是递归地将car<list1>当做head，然后将cdr<list1>作为新的list1递归调用append。不要忘记特化<code>empty</code>的情况。</p>
-
-<pre><code class="">struct append_t {
-    template &lt;typename list1, typename list2&gt;
-    struct apply : cons&lt;
-        typename car&lt;list1&gt;::type,
-        typename append_t::template apply&lt;typename cdr&lt;list1&gt;::type, list2&gt;::type&gt;
-    {};
-
-    template&lt;typename list2&gt;
-    struct apply &lt;empty, list2&gt;: list2
-    {};
-};
-
-template &lt;typename list1, typename list2&gt;
-struct append : std::conditional &lt;
-    is_empty&lt;list1&gt;::value,
-    list2,
-    append_t::template apply&lt;list1, list2&gt;
-    &gt;::type
-{};
-</code></pre>
-
-<p><code>reverse</code>的实现思路与<code>append</code>类似，只不过是要逆序罢了：</p>
-
-<pre><code class="">struct reverse_t {
-    template &lt;typename reset, typename ready&gt;
-    struct apply : reverse_t::template apply&lt;
-            typename cdr&lt;reset&gt;::type,
-            cons&lt;typename car&lt;reset&gt;::type, ready&gt;&gt;
-    {};
-
-    template&lt;typename ready&gt;
-    struct apply &lt;empty, ready&gt; : ready
-    {};
-};
-
-template &lt;typename list&gt;
-struct reverse : std::conditional &lt;
-    is_empty&lt;list&gt;::value,
-    list,
-    reverse_t::template apply&lt;typename list::type, empty&gt;
-    &gt;::type
-{};
-</code></pre>
-
-<p>使用示例：</p>
-
-<pre><code class="">    // reverse
-    using r1 = reverse&lt;l1&gt;;
-    using r2 = reverse&lt;list&lt;int&gt;&gt;;
-    print&lt;r1&gt;();    // 3, 2, 1
-    print&lt;r2&gt;();
-
-    // append
-    using a1 = append&lt;l1, l2&gt;;
-    using a2 = append&lt;l1, list&lt;int&gt;&gt;;
-    using a3 = append&lt;list&lt;int&gt;, l1&gt;;
-    print&lt;a1&gt;();    // 1, 2, 3, 4, 5, 6, 7
-    print&lt;a2&gt;();    // 1, 2, 3
-    print&lt;a3&gt;();    // 1, 2, 3
-</code></pre>
-
-<h3>函数式编程</h3>
-
-<p><code>lisp</code>系语言的最大特性就是支持函数式编程，它能够把无差别地对待数据与函数，实现了对数据与代码的同等抽象。下面我们来添加对函数式编程的支持：<code>enumerate</code>, <code>map</code>，<code>apply</code>, <code>lambda</code> 以及 <code>transform</code>。</p>
-
-<h4>map的实现</h4>
-
-<p><code>map</code>的语义是迭代地将某个方法作用于列表中的每个元素，然后得到结果<code>list</code>。先来定义一些辅助的方法：</p>
-
-<pre><code class="">template &lt;typename T, typename N&gt;
-struct plus : int_ &lt; T::value + N::value &gt; {};
-
-template &lt;typename T, typename N&gt;
-struct minus : int_ &lt; T::value - N::value &gt; {};
-
-struct inc_t {
-    template &lt;typename n&gt;
-    struct apply : int_ &lt; n::value + 1 &gt; {};
-};
-
-template &lt;typename n&gt;
-struct inc : int_ &lt; n::value + 1 &gt; {};
-</code></pre>
-
-<p>下面来看map的实现
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>struct map_t {
-</span><span class='line'>    template &lt;typename fn, typename list&gt;
-</span><span class='line'>    struct apply : cons &lt;
-</span><span class='line'>        typename fn::template apply&lt;typename car&lt;list&gt;::type&gt;,
-</span><span class='line'>        map_t::template apply&lt;fn, typename cdr&lt;list&gt;::type&gt;
-</span><span class='line'>    &gt;{};&lt;/p&gt;
-</span><span class='line'>
-</span><span class='line'>&lt;pre&gt;&lt;code&gt;template &lt;typename fn&gt;
-</span><span class='line'>struct apply &lt;fn, empty&gt;: empty{};
+</span><span class='line'>};
 </span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;};&lt;/p&gt;
+</span><span class='line'>&lt;p&gt;&lt;code&gt;is_empty&lt;/code&gt;可以简单实现为判断&lt;code&gt;length&lt;/code&gt;为0：&lt;/p&gt;
 </span><span class='line'>
-</span><span class='line'>&lt;p&gt;template &lt;typename fn, typename list&gt;
-</span><span class='line'>struct map : std::conditional &lt;
-</span><span class='line'>    is_empty&lt;list&gt;::value,
-</span><span class='line'>    list,
-</span><span class='line'>    map_t::template apply&lt;fn, list&gt;
-</span><span class='line'>    &gt;::type
-</span><span class='line'>{};</span></code></pre></td></tr></table></div></figure>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;template &lt;typename list&gt;
+</span><span class='line'>struct is_empty
+</span><span class='line'>{
+</span><span class='line'>static constexpr bool value = (0 == length&lt;list&gt;::value);
+</span><span class='line'>};
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;当然这样的实现效率并不高，因此可以通过对&lt;code&gt;list&lt;/code&gt;以及&lt;code&gt;empty&lt;/code&gt;的特化处理来高效实现：&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;template &lt;typename list&gt;
+</span><span class='line'>struct is_empty_t
+</span><span class='line'>{
+</span><span class='line'>static constexpr bool value = false;
+</span><span class='line'>};
+</span><span class='line'>
+</span><span class='line'>template &lt;&gt;
+</span><span class='line'>struct is_empty_t&lt;empty&gt;
+</span><span class='line'>{
+</span><span class='line'>static constexpr bool value = true;
+</span><span class='line'>};
+</span><span class='line'>
+</span><span class='line'>template &lt;typename list&gt;
+</span><span class='line'>struct is_empty
+</span><span class='line'>{
+</span><span class='line'>static constexpr bool value = is_empty_t&lt;typename list::type&gt;::value;
+</span><span class='line'>};
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;使用示例：&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;    std::cout &lt;&lt; "is_empty&lt;empty&gt; : " &lt;&lt; is_empty&lt;empty&gt;::value &lt;&lt; std::endl;            // 1
+</span><span class='line'>std::cout &lt;&lt; "is_empty&lt;list&lt;int&gt;&gt; : " &lt;&lt; is_empty&lt;list&lt;int&gt;&gt;::value &lt;&lt; std::endl;    // 1
+</span><span class='line'>std::cout &lt;&lt; "is_empty&lt;list&lt;int, 1, 2, 3&gt;&gt; : " &lt;&lt; is_empty&lt;l1&gt;::value &lt;&lt; std::endl;  // 0
+</span><span class='line'>std::cout &lt;&lt; "length&lt;empty&gt; : " &lt;&lt; length&lt;empty&gt;::value &lt;&lt; std::endl;                // 0
+</span><span class='line'>std::cout &lt;&lt; "length&lt;list&lt;int&gt;&gt; : " &lt;&lt; length&lt;list&lt;int&gt;&gt;::value &lt;&lt; std::endl;        // 0
+</span><span class='line'>std::cout &lt;&lt; "length&lt;list&lt;int, 1, 2, 3&gt;&gt; : " &lt;&lt; length&lt;l1&gt;::value &lt;&lt; std::endl;      // 3
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h3&gt;append &amp; reverse的实现&lt;/h3&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;&lt;code&gt;append&lt;/code&gt;是将一个列表list2追加到已有列表list1的后面，其实现思路是递归地将car&lt;list1&gt;当做head，然后将cdr&lt;list1&gt;作为新的list1递归调用append。不要忘记特化&lt;code&gt;empty&lt;/code&gt;的情况。&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;struct append_t {
+</span><span class='line'>template &lt;typename list1, typename list2&gt;
+</span><span class='line'>struct apply : cons&lt;
+</span><span class='line'>    typename car&lt;list1&gt;::type,
+</span><span class='line'>    typename append_t::template apply&lt;typename cdr&lt;list1&gt;::type, list2&gt;::type&gt;
+</span><span class='line'>{};
+</span><span class='line'>
+</span><span class='line'>template&lt;typename list2&gt;
+</span><span class='line'>struct apply &lt;empty, list2&gt;: list2
+</span><span class='line'>{};
+</span><span class='line'>};
+</span><span class='line'>
+</span><span class='line'>template &lt;typename list1, typename list2&gt;
+</span><span class='line'>struct append : std::conditional &lt;
+</span><span class='line'>is_empty&lt;list1&gt;::value,
+</span><span class='line'>list2,
+</span><span class='line'>append_t::template apply&lt;list1, list2&gt;
+</span><span class='line'>&gt;::type
+</span><span class='line'>{};
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;&lt;code&gt;reverse&lt;/code&gt;的实现思路与&lt;code&gt;append&lt;/code&gt;类似，只不过是要逆序罢了：&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;struct reverse_t {
+</span><span class='line'>template &lt;typename reset, typename ready&gt;
+</span><span class='line'>struct apply : reverse_t::template apply&lt;
+</span><span class='line'>        typename cdr&lt;reset&gt;::type,
+</span><span class='line'>        cons&lt;typename car&lt;reset&gt;::type, ready&gt;&gt;
+</span><span class='line'>{};
+</span><span class='line'>
+</span><span class='line'>template&lt;typename ready&gt;
+</span><span class='line'>struct apply &lt;empty, ready&gt; : ready
+</span><span class='line'>{};
+</span><span class='line'>};
+</span><span class='line'>
+</span><span class='line'>template &lt;typename list&gt;
+</span><span class='line'>struct reverse : std::conditional &lt;
+</span><span class='line'>is_empty&lt;list&gt;::value,
+</span><span class='line'>list,
+</span><span class='line'>reverse_t::template apply&lt;typename list::type, empty&gt;
+</span><span class='line'>&gt;::type
+</span><span class='line'>{};
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;使用示例：&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;    // reverse
+</span><span class='line'>using r1 = reverse&lt;l1&gt;;
+</span><span class='line'>using r2 = reverse&lt;list&lt;int&gt;&gt;;
+</span><span class='line'>print&lt;r1&gt;();    // 3, 2, 1
+</span><span class='line'>print&lt;r2&gt;();
+</span><span class='line'>
+</span><span class='line'>// append
+</span><span class='line'>using a1 = append&lt;l1, l2&gt;;
+</span><span class='line'>using a2 = append&lt;l1, list&lt;int&gt;&gt;;
+</span><span class='line'>using a3 = append&lt;list&lt;int&gt;, l1&gt;;
+</span><span class='line'>print&lt;a1&gt;();    // 1, 2, 3, 4, 5, 6, 7
+</span><span class='line'>print&lt;a2&gt;();    // 1, 2, 3
+</span><span class='line'>print&lt;a3&gt;();    // 1, 2, 3
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h3&gt;函数式编程&lt;/h3&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;&lt;code&gt;lisp&lt;/code&gt;系语言的最大特性就是支持函数式编程，它能够把无差别地对待数据与函数，实现了对数据与代码的同等抽象。下面我们来添加对函数式编程的支持：&lt;code&gt;enumerate&lt;/code&gt;, &lt;code&gt;map&lt;/code&gt;，&lt;code&gt;apply&lt;/code&gt;, &lt;code&gt;lambda&lt;/code&gt; 以及 &lt;code&gt;transform&lt;/code&gt;。&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;h4&gt;map的实现&lt;/h4&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;&lt;code&gt;map&lt;/code&gt;的语义是迭代地将某个方法作用于列表中的每个元素，然后得到结果&lt;code&gt;list&lt;/code&gt;。先来定义一些辅助的方法：&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;template &lt;typename T, typename N&gt;
+</span><span class='line'>struct plus : int_ &lt; T::value + N::value &gt; {};
+</span><span class='line'>
+</span><span class='line'>template &lt;typename T, typename N&gt;
+</span><span class='line'>struct minus : int_ &lt; T::value - N::value &gt; {};
+</span><span class='line'>
+</span><span class='line'>struct inc_t {
+</span><span class='line'>template &lt;typename n&gt;
+</span><span class='line'>struct apply : int_ &lt; n::value + 1 &gt; {};
+</span><span class='line'>};
+</span><span class='line'>
+</span><span class='line'>template &lt;typename n&gt;
+</span><span class='line'>struct inc : int_ &lt; n::value + 1 &gt; {};
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;下面来看map的实现</span></code></pre></td></tr></table></div></figure>
+struct map_t {
+    template <typename fn, typename list>
+    struct apply : cons &lt;
+        typename fn::template apply&lt;typename car<list>::type>,
+        map_t::template apply&lt;fn, typename cdr<list>::type>
+    >{};</p>
+
+<pre><code>template &lt;typename fn&gt;
+struct apply &lt;fn, empty&gt;: empty{};
+</code></pre>
+
+<p>};</p>
+
+<p>template <typename fn, typename list>
+struct map : std::conditional &lt;
+    is_empty<list>::value,
+    list,
+    map_t::template apply<fn, list>
+    >::type
+{};
+```
 使用示例：</p>
 
-<pre><code class="">    using m1 = map&lt;inc_t, list&lt;int, 1, 2, 3&gt;&gt;;
+<pre><code>    using m1 = map&lt;inc_t, list&lt;int, 1, 2, 3&gt;&gt;;
     using m2 = map&lt;inc_t, list&lt;int&gt;&gt;;
     print&lt;m1&gt;();    // 2, 3, 4
     print&lt;m2&gt;();
@@ -524,7 +640,7 @@ struct inc : int_ &lt; n::value + 1 &gt; {};
 
 <p>为了让<code>map</code>支持形如<code>inc</code>这样的模板类，而不仅仅是形如<code>inc_t</code>，我们需要定义一个转换器：<code>lambda</code>：</p>
 
-<pre><code class="">struct apply_t {
+<pre><code>struct apply_t {
     template &lt;template &lt;typename...&gt; class F, typename ...args&gt;
     struct apply : F&lt;typename args::type...&gt; {};
 
@@ -544,7 +660,7 @@ struct lambda {
 
 <p>使用示例：</p>
 
-<pre><code class="">    std::cout &lt;&lt; lambda&lt;inc&gt;::template apply&lt;int_&lt;0&gt;&gt;::value &lt;&lt; std::endl;  // 1
+<pre><code>    std::cout &lt;&lt; lambda&lt;inc&gt;::template apply&lt;int_&lt;0&gt;&gt;::value &lt;&lt; std::endl;  // 1
     using ml1 = map&lt;lambda&lt;inc&gt;, list&lt;int, 1, 2, 3&gt;&gt;;
     print&lt;ml1&gt;();  // 2, 3, 4
 </code></pre>
@@ -553,7 +669,7 @@ struct lambda {
 
 <p><code>transform</code>的语义是对迭代地将某个方法作用于两个列表上的元素，然后得到结果<code>list</code>。</p>
 
-<pre><code class="">struct transform_t {
+<pre><code>struct transform_t {
     template &lt;typename list1, typename list2, typename fn&gt;
     struct apply : cons &lt;
         typename fn::template apply&lt;
@@ -591,7 +707,7 @@ struct transform : std::conditional &lt;
 
 <p>其实现是最为复杂的，我们先来看使用示例，再来讲解实现细节。</p>
 
-<pre><code class="">    using t1 = list&lt;int, 1, 2, 3&gt;;
+<pre><code>    using t1 = list&lt;int, 1, 2, 3&gt;;
     using t2 = list&lt;int, 3, 2, 1&gt;;
     using ml = transform&lt;t1, t2, lambda&lt;minus&gt;&gt;;
     using pl = transform&lt;t1, t2, lambda&lt;plus&gt;&gt;;
@@ -617,7 +733,7 @@ struct transform : std::conditional &lt;
 
 <p><code>enumerate</code>的语义是迭代将某个方法作用于列表元素。</p>
 
-<pre><code class="">template &lt;typename fn, typename list, bool is_empty&gt;
+<pre><code>template &lt;typename fn, typename list, bool is_empty&gt;
 struct enumerate_t;
 
 template &lt;typename fn, typename list&gt;
@@ -649,7 +765,7 @@ struct enumerate_t&lt;fn, list, true&gt;
 
 <p>使用示例：</p>
 
-<pre><code class="">    using value_type = typename car&lt;e1&gt;::value_type;
+<pre><code>    using value_type = typename car&lt;e1&gt;::value_type;
     auto sqr_print = [](value_type val) { std::cout &lt;&lt; val * val &lt;&lt; " "; };
     enumerate&lt;decltype(sqr_print), e1&gt;(sqr_print);      // 1 4 9
 </code></pre>
@@ -658,7 +774,7 @@ struct enumerate_t&lt;fn, list, true&gt;
 
 <p><code>equal</code>用于判断两个列表是否等价。</p>
 
-<pre><code class="">struct equal_t {
+<pre><code>struct equal_t {
     // both lists are not empty
     template &lt;typename list1, typename list2, int empty_value = 0,
         typename pred = lambda&lt;std::is_same&gt;&gt;
@@ -708,7 +824,7 @@ struct equal : equal_t::template apply&lt;list1, list2,
 
 <p>使用示例：</p>
 
-<pre><code class="">    using e1 = list&lt;int, 1, 2, 3&gt;;
+<pre><code>    using e1 = list&lt;int, 1, 2, 3&gt;;
     using e2 = list&lt;int, 1, 2, 3&gt;;
     using e3 = list&lt;int, 1, 2, 1&gt;;
     std::cout &lt;&lt; "equal&lt;e1, e2&gt; : " &lt;&lt; equal&lt;e1, e2&gt;::value &lt;&lt; std::endl;   // 1
@@ -722,7 +838,7 @@ struct equal : equal_t::template apply&lt;list1, list2,
 
 <p><code>print</code>是依次打印列表元素，也可以使用<code>enumerate</code>来实现：</p>
 
-<pre><code class="">template &lt;typename list, bool is_empty&gt;
+<pre><code>template &lt;typename list, bool is_empty&gt;
 struct print_t;
 
 template &lt;typename list&gt;

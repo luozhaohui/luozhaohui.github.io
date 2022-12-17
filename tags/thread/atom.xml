@@ -4,7 +4,7 @@
   <title><![CDATA[标签：thread | 飘飘白云]]></title>
   <link href="http://luozhaohui.github.io/tags/thread/atom.xml" rel="self"/>
   <link href="http://luozhaohui.github.io/"/>
-  <updated>2021-12-27T13:47:59+08:00</updated>
+  <updated>2022-12-17T19:03:03+08:00</updated>
   <id>http://luozhaohui.github.io/</id>
   <author>
     <name><![CDATA[飘飘白云]]></name>
@@ -392,160 +392,155 @@ Message next;    // 链表结构，指向下一个消息
 }
 </code></pre>
 
-<pre><code>
-首先检测消息的合法性：是否已经在处理中和是否有处理它的 &lt;code&gt;Handler&lt;/code&gt;，然后判断 &lt;code&gt;mQuiting&lt;/code&gt; 是否中止了，如果没有则根据消息处理时间排序将消息插入链表中的合适位置。在这其中作了一些减少同步操作的优化，即使当前消息队列已经处于 &lt;code&gt;Blocked&lt;/code&gt; 状态，且队首是一个消息屏障(和内存屏障的理念一样，这里是通过 &lt;code&gt;p.target == null&lt;/code&gt; 来判断队首是否是消息屏障)，并且要插入的消息是所有异步消息中最早要处理的才会 &lt;code&gt;needwake&lt;/code&gt; 激活消息队列去获取下一个消息。&lt;code&gt;Handler&lt;/code&gt; 的 &lt;code&gt;post/sendMessage&lt;/code&gt; 系列方法最后都是通过转调 &lt;code&gt;MessageQueue&lt;/code&gt; 的 &lt;code&gt;enqueueMessage&lt;/code&gt; 来实现的，比如：
-</code></pre>
+<p>```</p>
 
-<pre><code>public boolean sendMessageAtTime(Message msg, long uptimeMillis) {
-    MessageQueue queue = mQueue;
-    if (queue == null) {
-        RuntimeException e = new RuntimeException(
-                this + " sendMessageAtTime() called with no mQueue");
-        Log.w("Looper", e.getMessage(), e);
-        return false;
+<p>首先检测消息的合法性：是否已经在处理中和是否有处理它的 <code>Handler</code>，然后判断 <code>mQuiting</code> 是否中止了，如果没有则根据消息处理时间排序将消息插入链表中的合适位置。在这其中作了一些减少同步操作的优化，即使当前消息队列已经处于 <code>Blocked</code> 状态，且队首是一个消息屏障(和内存屏障的理念一样，这里是通过 <code>p.target == null</code> 来判断队首是否是消息屏障)，并且要插入的消息是所有异步消息中最早要处理的才会 <code>needwake</code> 激活消息队列去获取下一个消息。<code>Handler</code> 的 <code>post/sendMessage</code> 系列方法最后都是通过转调 <code>MessageQueue</code> 的 <code>enqueueMessage</code> 来实现的，比如：</p>
+
+<pre><code class="java">    public boolean sendMessageAtTime(Message msg, long uptimeMillis) {
+        MessageQueue queue = mQueue;
+        if (queue == null) {
+            RuntimeException e = new RuntimeException(
+                    this + " sendMessageAtTime() called with no mQueue");
+            Log.w("Looper", e.getMessage(), e);
+            return false;
+        }
+        return enqueueMessage(queue, msg, uptimeMillis);
     }
-    return enqueueMessage(queue, msg, uptimeMillis);
-}
 
-private boolean enqueueMessage(MessageQueue queue, Message msg, long uptimeMillis) {
-    msg.target = this;
-    if (mAsynchronous) {
-        msg.setAsynchronous(true);
+    private boolean enqueueMessage(MessageQueue queue, Message msg, long uptimeMillis) {
+        msg.target = this;
+        if (mAsynchronous) {
+            msg.setAsynchronous(true);
+        }
+        return queue.enqueueMessage(msg, uptimeMillis);
     }
-    return queue.enqueueMessage(msg, uptimeMillis);
-}
 </code></pre>
 
-<pre><code>
-其实 &lt;code&gt;Handler&lt;/code&gt; 中与 &lt;code&gt;Message&lt;/code&gt; 相关的静态方法都是通过 &lt;code&gt;MessageQueue&lt;/code&gt; 的对应的静态方法实现的，比如 &lt;code&gt;removeMessages&lt;/code&gt;, &lt;code&gt;hasMessages&lt;/code&gt;, &lt;code&gt;hasCallbacks&lt;/code&gt; 等等，这里就不一一详述了。至此，已经完整地分析了如何通过 &lt;code&gt;Handler&lt;/code&gt; 提交消息到 &lt;code&gt;MessageQueue&lt;/code&gt; 中了。
+<p>其实 <code>Handler</code> 中与 <code>Message</code> 相关的静态方法都是通过 <code>MessageQueue</code> 的对应的静态方法实现的，比如 <code>removeMessages</code>, <code>hasMessages</code>, <code>hasCallbacks</code> 等等，这里就不一一详述了。至此，已经完整地分析了如何通过 <code>Handler</code> 提交消息到 <code>MessageQueue</code> 中了。</p>
 
-## 获取消息
-下面来分析如何从 &lt;code&gt;MessageQueue&lt;/code&gt; 中获取合适的消息, 这是 &lt;code&gt;next()&lt;/code&gt; 要做的最主要的事情，&lt;code&gt;next()&lt;/code&gt; 方法还做了其他一些事情，这些其它事情是为了提高系统效果，利用消息队列在空闲时通过 &lt;code&gt;idle handler&lt;/code&gt; 做一些事情，比如 &lt;code&gt;gc&lt;/code&gt; 等等。但它们和获取消息关系不大，所以这部分将从略介绍。
-</code></pre>
+<h2>获取消息</h2>
 
-<p>   final Message next() {
+<p>下面来分析如何从 <code>MessageQueue</code> 中获取合适的消息, 这是 <code>next()</code> 要做的最主要的事情，<code>next()</code> 方法还做了其他一些事情，这些其它事情是为了提高系统效果，利用消息队列在空闲时通过 <code>idle handler</code> 做一些事情，比如 <code>gc</code> 等等。但它们和获取消息关系不大，所以这部分将从略介绍。</p>
+
+<pre><code class="java">   final Message next() {
         int pendingIdleHandlerCount = -1; // -1 only during first iteration
-        int nextPollTimeoutMillis = 0;</p>
+        int nextPollTimeoutMillis = 0;
 
-<pre><code>    for (;;) {
-        if (nextPollTimeoutMillis != 0) {
-            Binder.flushPendingCommands();
-        }
-        nativePollOnce(mPtr, nextPollTimeoutMillis);
-
-        synchronized (this) {
-            if (mQuiting) {
-                return null;
+        for (;;) {
+            if (nextPollTimeoutMillis != 0) {
+                Binder.flushPendingCommands();
             }
+            nativePollOnce(mPtr, nextPollTimeoutMillis);
 
-            // Try to retrieve the next message.  Return if found.
-            final long now = SystemClock.uptimeMillis();
-            Message prevMsg = null;
-            Message msg = mMessages;
-            if (msg != null &amp;&amp; msg.target == null) {
-                // Stalled by a barrier.  Find the next asynchronous message in the queue.
-                do {
-                    prevMsg = msg;
-                    msg = msg.next;
-                } while (msg != null &amp;&amp; !msg.isAsynchronous());
-            }
-            if (msg != null) {
-                if (now &lt; msg.when) {
-                    // Next message is not ready.  Set a timeout to wake up when it is ready.
-                    nextPollTimeoutMillis = (int) Math.min(msg.when - now, Integer.MAX_VALUE);
-                } else {
-                    // Got a message.
-                    mBlocked = false;
-                    if (prevMsg != null) {
-                        prevMsg.next = msg.next;
+            synchronized (this) {
+                if (mQuiting) {
+                    return null;
+                }
+
+                // Try to retrieve the next message.  Return if found.
+                final long now = SystemClock.uptimeMillis();
+                Message prevMsg = null;
+                Message msg = mMessages;
+                if (msg != null &amp;&amp; msg.target == null) {
+                    // Stalled by a barrier.  Find the next asynchronous message in the queue.
+                    do {
+                        prevMsg = msg;
+                        msg = msg.next;
+                    } while (msg != null &amp;&amp; !msg.isAsynchronous());
+                }
+                if (msg != null) {
+                    if (now &lt; msg.when) {
+                        // Next message is not ready.  Set a timeout to wake up when it is ready.
+                        nextPollTimeoutMillis = (int) Math.min(msg.when - now, Integer.MAX_VALUE);
                     } else {
-                        mMessages = msg.next;
+                        // Got a message.
+                        mBlocked = false;
+                        if (prevMsg != null) {
+                            prevMsg.next = msg.next;
+                        } else {
+                            mMessages = msg.next;
+                        }
+                        msg.next = null;
+                        if (false) Log.v("MessageQueue", "Returning message: " + msg);
+                        msg.markInUse();
+                        return msg;
                     }
-                    msg.next = null;
-                    if (false) Log.v("MessageQueue", "Returning message: " + msg);
-                    msg.markInUse();
-                    return msg;
+                } else {
+                    // No more messages.
+                    nextPollTimeoutMillis = -1;
                 }
-            } else {
-                // No more messages.
-                nextPollTimeoutMillis = -1;
+
+                // If first time idle, then get the number of idlers to run.
+                // Idle handles only run if the queue is empty or if the first message
+                // in the queue (possibly a barrier) is due to be handled in the future.
+                if (pendingIdleHandlerCount &lt; 0
+                        &amp;&amp; (mMessages == null || now &lt; mMessages.when)) {
+                    pendingIdleHandlerCount = mIdleHandlers.size();
+                }
+                if (pendingIdleHandlerCount &lt;= 0) {
+                    // No idle handlers to run.  Loop and wait some more.
+                    mBlocked = true;
+                    continue;
+                }
+
+                if (mPendingIdleHandlers == null) {
+                    mPendingIdleHandlers = new IdleHandler[Math.max(pendingIdleHandlerCount, 4)];
+                }
+                mPendingIdleHandlers = mIdleHandlers.toArray(mPendingIdleHandlers);
             }
 
-            // If first time idle, then get the number of idlers to run.
-            // Idle handles only run if the queue is empty or if the first message
-            // in the queue (possibly a barrier) is due to be handled in the future.
-            if (pendingIdleHandlerCount &lt; 0
-                    &amp;&amp; (mMessages == null || now &lt; mMessages.when)) {
-                pendingIdleHandlerCount = mIdleHandlers.size();
-            }
-            if (pendingIdleHandlerCount &lt;= 0) {
-                // No idle handlers to run.  Loop and wait some more.
-                mBlocked = true;
-                continue;
-            }
+            // Run the idle handlers.
+            // We only ever reach this code block during the first iteration.
+            for (int i = 0; i &lt; pendingIdleHandlerCount; i++) {
+                final IdleHandler idler = mPendingIdleHandlers[i];
+                mPendingIdleHandlers[i] = null; // release the reference to the handler
 
-            if (mPendingIdleHandlers == null) {
-                mPendingIdleHandlers = new IdleHandler[Math.max(pendingIdleHandlerCount, 4)];
-            }
-            mPendingIdleHandlers = mIdleHandlers.toArray(mPendingIdleHandlers);
-        }
+                boolean keep = false;
+                try {
+                    keep = idler.queueIdle();
+                } catch (Throwable t) {
+                    Log.wtf("MessageQueue", "IdleHandler threw exception", t);
+                }
 
-        // Run the idle handlers.
-        // We only ever reach this code block during the first iteration.
-        for (int i = 0; i &lt; pendingIdleHandlerCount; i++) {
-            final IdleHandler idler = mPendingIdleHandlers[i];
-            mPendingIdleHandlers[i] = null; // release the reference to the handler
-
-            boolean keep = false;
-            try {
-                keep = idler.queueIdle();
-            } catch (Throwable t) {
-                Log.wtf("MessageQueue", "IdleHandler threw exception", t);
-            }
-
-            if (!keep) {
-                synchronized (this) {
-                    mIdleHandlers.remove(idler);
+                if (!keep) {
+                    synchronized (this) {
+                        mIdleHandlers.remove(idler);
+                    }
                 }
             }
+
+            // Reset the idle handler count to 0 so we do not run them again.
+            pendingIdleHandlerCount = 0;
+
+            // While calling an idle handler, a new message could have been delivered
+            // so go back and look again for a pending message without waiting.
+            nextPollTimeoutMillis = 0;
         }
-
-        // Reset the idle handler count to 0 so we do not run them again.
-        pendingIdleHandlerCount = 0;
-
-        // While calling an idle handler, a new message could have been delivered
-        // so go back and look again for a pending message without waiting.
-        nextPollTimeoutMillis = 0;
     }
-}
 </code></pre>
 
-<pre><code>
-队列被激活之后，首先判断队首是不是消息屏障，如果是则跳过所有的同步消息，查找最先要处理的异步消息。如果第一个待处理的消息还没有到要处理的时机则设置激活等待时间；否则这个消息就是需要处理的消息，将该消息设置为 &lt;code&gt;inuse&lt;/code&gt;，并将队列设置为非  &lt;code&gt;blocked&lt;/code&gt; 状态，然后返回该消息。&lt;code&gt;next()&lt;/code&gt; 方法是在  &lt;code&gt;Looper.loop()&lt;/code&gt; 中被调用的，&lt;code&gt;Looper&lt;/code&gt; 在获得要处理的消息之后就会调用和消息关联的 &lt;code&gt;Handler&lt;/code&gt; 来分发消息，这里再回顾一下：
-</code></pre>
+<p>队列被激活之后，首先判断队首是不是消息屏障，如果是则跳过所有的同步消息，查找最先要处理的异步消息。如果第一个待处理的消息还没有到要处理的时机则设置激活等待时间；否则这个消息就是需要处理的消息，将该消息设置为 <code>inuse</code>，并将队列设置为非  <code>blocked</code> 状态，然后返回该消息。<code>next()</code> 方法是在  <code>Looper.loop()</code> 中被调用的，<code>Looper</code> 在获得要处理的消息之后就会调用和消息关联的 <code>Handler</code> 来分发消息，这里再回顾一下：</p>
 
-<p>  public static void loop() {
+<pre><code class="java">  public static void loop() {
         final Looper me = myLooper();
         if (me == null) {
-            throw new RuntimeException(&ldquo;No Looper; Looper.prepare() wasn&rsquo;t called on this thread.&rdquo;);
+            throw new RuntimeException("No Looper; Looper.prepare() wasn't called on this thread.");
         }
         final MessageQueue queue = me.mQueue;
-        &hellip;
+        ...
         for (;;) {
             Message msg = queue.next(); // might block
             if (msg == null) {
                 // No message indicates that the message queue is quitting.
                 return;
-            }</p>
+            }
 
-<pre><code>        msg.target.dispatchMessage(msg);
+            msg.target.dispatchMessage(msg);
 
-        msg.recycle();
+            msg.recycle();
+        }
     }
-}
 </code></pre>
-
-<p>```</p>
 
 <p>如果队列中没有消息或者第一个待处理的消息时机未到，且也没有其他利用队列空闲要处理的事务，则将队列设置为设置 <code>blocked</code> 状态，进入等待状态；否则就利用队列空闲处理其它事务。</p>
 
