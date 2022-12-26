@@ -7,22 +7,18 @@ sharing: false
 footer: true
 ---
 
-### 基本信息   
+### 基本信息
 
 * 中文网名：飘飘白云  
 * 英文网名：kesalin  
 * 真实姓名：罗朝辉(Luo Zhaohui)  
 * 毕 业 于：  江南大学  
 * 居住信息：籍贯湖南双峰，现居上海张江  
-* 兴趣爱好：崇尚自我持续学习，理性思考，好跨界阅读不求甚解  
-* 技术偏好：程序语言、嵌入式、图形技术、Linux & Mac  
-* 政治取向：推崇民主，反对愚民，为普及公民意识和反洗脑而努力  
+* 兴趣爱好：好跨界阅读不求甚解  
 
 
 ### 其它站点
-
-* [Current Github](http://github.com/luozhaohui/)  
-* [Previous Github](http://github.com/kesalin/)  
+ 
 * [CSDN博客](http://blog.csdn.net/kesalin)  
 * [豆瓣阅读](http://book.douban.com/people/kesalin/)  
 
