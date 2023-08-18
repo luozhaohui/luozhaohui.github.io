@@ -74,6 +74,45 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/07/10/android-thread-tutoria02/">Android多线程分析之二：Thread的实现</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-07-10T21:21:40+08:00'><span class='date'>2014-07-10</span> <span class='time'>9:21 pm</span></time>
+        
+           | <a href="/blog/2014/07/10/android-thread-tutoria02/#disqus_thread"
+             data-disqus-identifier="http://luozhaohui.github.io/blog/2014/07/10/android-thread-tutoria02/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>引言</h2>
+
+<p>在前文<a href="https://luozhaohui.github.io/blog/2014/07/08/android-thread-tutoria01/">Android多线程分析之一：使用Thread异步下载图像</a>中演示了如何使用<code>Thread</code>处理异步事务。示例中这个<code>Java Thread</code>类都是位于<code>Framework</code>层的类，它自身是通过<code>JNI</code>转调<code>dalvik</code>里面的<code>Thread</code>相关方法实现的。因此要分析<code>Andriod</code> 中的线程，就需要分析这两层中的与线程相关的代码，这就是本文要探讨的主题。本文将把<code>Framework</code>层中的<code>Java Thread</code>称为<code>Android Thread</code>，而把<code>dalvik</code>中的 <code>Thread</code>成为<code>dalvik Thread</code>。</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/07/10/android-thread-tutoria02/">阅读全文 &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/07/08/android-thread-tutoria01/">Android多线程分析之一：使用Thread异步下载图像</a></h1>
     
     
@@ -433,47 +472,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/06/30/tianchao/">大宋末年</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-06-30T22:46:01+08:00'><span class='date'>2012-06-30</span> <span class='time'>10:46 pm</span></time>
-        
-           | <a href="/blog/2012/06/30/tianchao/#disqus_thread"
-             data-disqus-identifier="http://luozhaohui.github.io/blog/2012/06/30/tianchao/">评论</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>借用高中一同学的作文名言：如有雷同，纯属巧合。</p>
-
-<p>大宋末年，内患外扰，局势波涛汹涌。话说自艺高胆大的矮凳哥散手之后，江湖中并无王者，江湖管委会遂由东邪水工哥，青帮古月哥，望族子弟帮三方构成。</p>
-
-<p>这三方都非善类，彼此为着长老名额，势力范围明争暗斗。江湖管委会虽然内斗不断，但一般对外口径还算是一致，所以许多暗伤就不为江湖小混混所知也。</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/06/30/tianchao/">阅读全文 &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
     <a class="prev" href="/posts/3">&larr; 新帖子</a>
@@ -493,7 +491,7 @@
 <li class='category'><a href='/blog/categories/gong-ju-ruan-jian/'>工具软件 (2)</a></li>
 <li class='category'><a href='/blog/categories/xin-zhi-si-wei/'>心智思维 (6)</a></li>
 <li class='category'><a href='/blog/categories/sui-sui-nian/'>碎碎念 (24)</a></li>
-<li class='category'><a href='/blog/categories/she-hui-za-tan/'>社会杂谈 (9)</a></li>
+<li class='category'><a href='/blog/categories/she-hui-za-tan/'>社会杂谈 (10)</a></li>
 <li class='category'><a href='/blog/categories/du-shu-bi-ji/'>读书笔记 (2)</a></li>
 <li class='category'><a href='/blog/categories/ruan-jian-kai-fa/'>软件开发 (8)</a></li>
 <li class='category'><a href='/blog/categories/bian-zou-bian-kan/'>边走边看 (2)</a></li>
@@ -502,6 +500,10 @@
 </section><section>
   <h1>最新文章</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2023/08/20/land-finance/">经济危机为什么这次不一样又一样？</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2022/12/31/reading/">2022年阅读总结-国学经典与欧亚历史</a>
@@ -517,10 +519,6 @@
     
       <li class="post">
         <a href="/blog/2019/12/31/reading/">2019年阅读统计</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2018/12/31/reading/">2018年阅读统计</a>
       </li>
     
   </ul>
@@ -541,11 +539,11 @@
 <a style="font-size: 96%" href="/tags/ri-ben/">日本</a>
 <a style="font-size: 96%" href="/tags/zheng-zhi/">政治</a>
 <a style="font-size: 96%" href="/tags/gong-ju/">工具</a>
-<a style="font-size: 94%" href="/tags/jiao-yu/">教育</a>
+<a style="font-size: 94%" href="/tags/fang-fa-lun/">方法论</a>
 <a style="font-size: 94%" href="/tags/lu-you/">旅游</a>
 <a style="font-size: 94%" href="/tags/bi-ji/">笔记</a>
-<a style="font-size: 94%" href="/tags/fang-fa-lun/">方法论</a>
-<a style="font-size: 90%" href="/tags/scheme/">Scheme</a>
+<a style="font-size: 94%" href="/tags/jiao-yu/">教育</a>
+<a style="font-size: 90%" href="/tags/jing-ji/">经济</a>
 <a style="font-size: 90%" href="/tags/xin-li-xue/">心理学</a>
 <a style="font-size: 90%" href="/tags/xi-guan/">习惯</a>
 
@@ -557,7 +555,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2022 - 飘飘白云 -
+  Copyright &copy; 2023 - 飘飘白云 -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 
 <!-- 友盟站点统计：http://www.umeng.com/ -->
