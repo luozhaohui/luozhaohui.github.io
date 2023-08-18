@@ -1,4 +1,8 @@
-source "https://gems.ruby-china.com"
+#source "https://gems.ruby-china.com"
+#source "https://mirrors.aliyun.com/rubygems"
+#source "https://mirrors.tuna.tsinghua.edu.cn/rubygems/"
+#source "https://mirror.xtom.com.hk/rubygems/"
+source "https://rubygems.org"
 
 group :development do
   gem 'rake', '~> 10.0'
