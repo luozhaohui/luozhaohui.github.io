@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: 
-
-Sitemap: http://luozhaohui.github.io/sitemap.xml 
+Sitemap: https://luozhaohui.github.io/sitemap.xml

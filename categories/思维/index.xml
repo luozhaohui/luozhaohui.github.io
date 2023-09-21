@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>思维 on 飘飘白云：所读，所观，所思</title>
+    <link>https://luozhaohui.github.io/categories/%E6%80%9D%E7%BB%B4/</link>
+    <description>Recent content in 思维 on 飘飘白云：所读，所观，所思</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 29 Oct 2014 23:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/categories/%E6%80%9D%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[转]洗脑秘笈：占领思想舆论阵地的十八个招式</title>
+      <link>https://luozhaohui.github.io/post/2014/2014-10-29-brainwash/</link>
+      <pubDate>Wed, 29 Oct 2014 23:14:00 +0800</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2014/2014-10-29-brainwash/</guid>
+      <description>&lt;h2 id=&#34;转记&#34;&gt;转记&lt;/h2&gt;
+&lt;p&gt;今天在搜索波普尔的《辩证法是什么》一文时，无意中发现&lt;a href=&#34;http://blog.kdnet.net/boke.asp?twokeqi.showchannel.0.1067.html&#34;&gt;2可器的电线杆&lt;/a&gt;在凯迪社区的博客。此人文笔和理论水平都不错，也非常推崇波普尔(看来反洗脑都需要攀登波普尔这座高山)。用他自己博客上的话来介绍就是：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这是一个以消灭粪青和傻B（消灭一个是一个）、荡涤狼奶为己任，具有鲜明的大清末年时代烙印的博客。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;下面转一篇他最早写的一篇反洗脑的文章《洗脑秘笈：占领思想舆论阵地的十八个招式》。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>从贝叶斯定理说开去</title>
+      <link>https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/</link>
+      <pubDate>Tue, 21 Oct 2014 23:14:00 +0800</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/</guid>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;贝叶斯定理是18世纪英国数学家&lt;a href=&#34;http://en.wikipedia.org/wiki/Thomas_Bayes&#34;&gt;托马斯·贝叶斯（Thomas Bayes）&lt;/a&gt;提出得重要概率论理论。以下摘一段 wikipedia 上的简介：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所谓的贝叶斯定理源于他生前为解决一个“逆概”问题写的一篇文章，而这篇文章是在他死后才由他的一位朋友发表出来的。在贝叶斯写这篇文章之前，人们已经能够计算“正向概率”，如“假设袋子里面有 N 个白球，M 个黑球，你伸手进去摸一把，摸出黑球的概率是多大”。而一个自然而然的问题是反过来：“如果我们事先并不知道袋子里面黑白球的比例，而是闭着眼睛摸出一个（或好几个）球，观察这些取出来的球的颜色之后，那么我们可以就此对袋子里面的黑白球的比例作出什么样的推测”。这个问题，就是所谓的逆向概率问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;贝叶斯定理的思想出现在18世纪，但真正大规模派上用途还得等到计算机的出现。因为这个定理需要大规模的数据计算推理才能凸显效果，它在很多计算机应用领域中都大有作为，如自然语言拼写检查，机器学习，推荐系统，图像识别，博弈论等等。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>学会提问：批判性思维指南</title>
+      <link>https://luozhaohui.github.io/post/2014/2014-10-12-critical-thinking/</link>
+      <pubDate>Sun, 12 Oct 2014 23:14:00 +0800</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2014/2014-10-12-critical-thinking/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;本笔记结合《学问提问：批判性思维指南》&lt;a href=&#34;http://book.douban.com/subject/1504957/&#34;&gt;第七版&lt;/a&gt;，&lt;a href=&#34;http://book.douban.com/subject/20428922/&#34;&gt;第十版&lt;/a&gt;，&lt;a href=&#34;http://blog.vsharing.com/qsxiao&#34;&gt;萧秋水&lt;/a&gt;的&lt;a href=&#34;http://book.douban.com/review/4474858/&#34;&gt;PPT形式的笔记摘要&lt;/a&gt;，以及《&lt;a href=&#34;http://book.douban.com/subject/7057936/&#34;&gt;批判性思维.带你走出思维的误区&lt;/a&gt;》整理而成，在此对以上作者表示感谢。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;关于《学问提问：批判性思维指南》的版本选择。&lt;br&gt;
+个人推荐&lt;a href=&#34;http://book.douban.com/subject/20428922/&#34;&gt;第十版&lt;/a&gt;，翻译尚可，内容更完善。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;为什么要具备批判性思维&#34;&gt;为什么要具备批判性思维？&lt;/h2&gt;
+&lt;h3 id=&#34;获取真相&#34;&gt;获取真相&lt;/h3&gt;
+&lt;p&gt;在一个被泛滥信息包围的时代，我们需要从各种真真假假的信息中获取真相：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电视上说&lt;/li&gt;
+&lt;li&gt;报纸上说&lt;/li&gt;
+&lt;li&gt;书籍上说&lt;/li&gt;
+&lt;li&gt;专家们说&lt;/li&gt;
+&lt;li&gt;网络上说&lt;/li&gt;
+&lt;li&gt;亲友们说&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;培养会独立思考的公民&#34;&gt;培养会独立思考的公民&lt;/h3&gt;
+&lt;p&gt;中国要真正进入现代文明，必须培养合格的公民。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;群众：依赖权威和力量解决问题&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;盲目听从时是顺民；&lt;/li&gt;
+&lt;li&gt;盲目反对时是刁民；&lt;/li&gt;
+&lt;li&gt;被煽动时是暴民。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;合格公民：依据理性和程序解决问题&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;知道在何时何地提出问题？&lt;/li&gt;
+&lt;li&gt;知道提出什么样的问题？&lt;/li&gt;
+&lt;li&gt;知道提出批判性问题是维权必需能力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>科学理论之可证伪性</title>
+      <link>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</link>
+      <pubDate>Wed, 08 Oct 2014 23:14:00 +0800</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</guid>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7&#34;&gt;可证伪性&lt;/a&gt;&lt;/strong&gt; 是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨 &lt;strong&gt;科学与非科学&lt;/strong&gt; 的一种理论，他认为:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一切从经验得来的假说、命题和理论都不是科学的，除非它们容许反例存在的可能。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;定义what&#34;&gt;定义/What&lt;/h2&gt;
+&lt;p&gt;如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>能力培养与教育体制</title>
+      <link>https://luozhaohui.github.io/post/2009/2009-05-04-education/</link>
+      <pubDate>Mon, 04 May 2009 23:14:00 +0800</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2009/2009-05-04-education/</guid>
+      <description>&lt;p&gt;不经意间已十多天没有冒泡了，不太像我一贯的做法，或许是心静得下来了，坦实了点，专注了些，也算是好事情吧。其实上周有想过要写篇关于学习与教育的文章，只是早早地夭折在构思之中，还是简单地就这个话题感慨几句吧，思绪来的时候不留点痕迹，就真如风吹过一样无影无踪了。我们的学校教育一直是填鸭式的灌输，我们只是被动地接收现成的概念和定律，缺少洞悉有关这些概念与定律非常重要的三点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;产生的原因（Why）：是碰到哪些问题或想解释哪些现象从而引出来的。分析问题的能力；&lt;/li&gt;
+&lt;li&gt;推导的过程（How）：这些概念与定律是怎样一步一步被推导与归纳出来的。解决问题的能力；&lt;/li&gt;
+&lt;li&gt;适用的场合（When）：什么情况下可以运用这些概念与定律来解决哪些问题。运用知识的能力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;于是在我们往往知其然却不知其所以然。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

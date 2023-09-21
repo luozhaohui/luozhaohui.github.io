@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>科学 on 飘飘白云：所读，所观，所思</title>
+    <link>https://luozhaohui.github.io/categories/%E7%A7%91%E5%AD%A6/</link>
+    <description>Recent content in 科学 on 飘飘白云：所读，所观，所思</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 21 Oct 2014 23:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/categories/%E7%A7%91%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从贝叶斯定理说开去</title>
+      <link>https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/</link>
+      <pubDate>Tue, 21 Oct 2014 23:14:00 +0800</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/</guid>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;贝叶斯定理是18世纪英国数学家&lt;a href=&#34;http://en.wikipedia.org/wiki/Thomas_Bayes&#34;&gt;托马斯·贝叶斯（Thomas Bayes）&lt;/a&gt;提出得重要概率论理论。以下摘一段 wikipedia 上的简介：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所谓的贝叶斯定理源于他生前为解决一个“逆概”问题写的一篇文章，而这篇文章是在他死后才由他的一位朋友发表出来的。在贝叶斯写这篇文章之前，人们已经能够计算“正向概率”，如“假设袋子里面有 N 个白球，M 个黑球，你伸手进去摸一把，摸出黑球的概率是多大”。而一个自然而然的问题是反过来：“如果我们事先并不知道袋子里面黑白球的比例，而是闭着眼睛摸出一个（或好几个）球，观察这些取出来的球的颜色之后，那么我们可以就此对袋子里面的黑白球的比例作出什么样的推测”。这个问题，就是所谓的逆向概率问题。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;贝叶斯定理的思想出现在18世纪，但真正大规模派上用途还得等到计算机的出现。因为这个定理需要大规模的数据计算推理才能凸显效果，它在很多计算机应用领域中都大有作为，如自然语言拼写检查，机器学习，推荐系统，图像识别，博弈论等等。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>科学理论之可证伪性</title>
+      <link>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</link>
+      <pubDate>Wed, 08 Oct 2014 23:14:00 +0800</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</guid>
+      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7&#34;&gt;可证伪性&lt;/a&gt;&lt;/strong&gt; 是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨 &lt;strong&gt;科学与非科学&lt;/strong&gt; 的一种理论，他认为:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一切从经验得来的假说、命题和理论都不是科学的，除非它们容许反例存在的可能。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;定义what&#34;&gt;定义/What&lt;/h2&gt;
+&lt;p&gt;如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
