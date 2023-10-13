@@ -6,7 +6,24 @@
     <description>Recent content in Posts on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 19 Aug 2023 23:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Oct 2023 23:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>作文九问：小学生如何写作？</title>
+      <link>https://luozhaohui.github.io/post/2023/2023-10-12-writing/</link>
+      <pubDate>Thu, 12 Oct 2023 23:14:00 +0800</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2023/2023-10-12-writing/</guid>
+      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;《作文九问》是蒋军晶老师写给小学生高年级阅读的作文技巧书籍，分为&lt;a href=&#34;https://book.douban.com/subject/27025526/&#34;&gt;《作文九问：基础篇》&lt;/a&gt;和&lt;a href=&#34;https://book.douban.com/subject/27025524/&#34;&gt;《作文九问：实战篇》&lt;/a&gt;两册。内容并不太多，分两册价格就不菲了，但确实值得，因为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;内容较为全面，各种题材、内容结构、开头、创意都有涉猎&lt;/li&gt;
+&lt;li&gt;有针对性，专治小学生们不知道写啥、干巴巴写不好、记流水账等毛病&lt;/li&gt;
+&lt;li&gt;语言适合小学生阅读，有技巧规律，有举例，也有完整范文以及评说&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;写作首先是要“能感之”，然后才是“能写之”（语出王国维）。只有“能感之”才会从不同的视角体会到特别的、新颖的、深刻的感受，然后才借助“能写之”的技巧把这种感受表达出来。这两册书聚焦于“能写之”的技巧。类似的技巧书籍有：&lt;a href=&#34;https://book.douban.com/subject/36594392/&#34;&gt;7天学会扩句法&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下面简要记述这两册书中提到的写作妙招。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>经济危机为什么这次不一样又一样？</title>
       <link>https://luozhaohui.github.io/post/2023/2023-08-19-land-finance/</link>
@@ -270,20 +287,6 @@
       <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Synergy&lt;/code&gt; 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac，Ubuntu，Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 &lt;code&gt;Synergy&lt;/code&gt; 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 &lt;code&gt;QuickSynergy&lt;/code&gt; 或 &lt;code&gt;SynergyKM&lt;/code&gt; 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要&lt;strong&gt;注意各机器上的 Synergy 版本要一致&lt;/strong&gt;，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。&lt;/p&gt;
 &lt;p&gt;在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>[转]洗脑秘笈：占领思想舆论阵地的十八个招式</title>
-      <link>https://luozhaohui.github.io/post/2014/2014-10-29-brainwash/</link>
-      <pubDate>Wed, 29 Oct 2014 23:14:00 +0800</pubDate>
-      
-      <guid>https://luozhaohui.github.io/post/2014/2014-10-29-brainwash/</guid>
-      <description>&lt;h2 id=&#34;转记&#34;&gt;转记&lt;/h2&gt;
-&lt;p&gt;今天在搜索波普尔的《辩证法是什么》一文时，无意中发现&lt;a href=&#34;http://blog.kdnet.net/boke.asp?twokeqi.showchannel.0.1067.html&#34;&gt;2可器的电线杆&lt;/a&gt;在凯迪社区的博客。此人文笔和理论水平都不错，也非常推崇波普尔(看来反洗脑都需要攀登波普尔这座高山)。用他自己博客上的话来介绍就是：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这是一个以消灭粪青和傻B（消灭一个是一个）、荡涤狼奶为己任，具有鲜明的大清末年时代烙印的博客。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;下面转一篇他最早写的一篇反洗脑的文章《洗脑秘笈：占领思想舆论阵地的十八个招式》。&lt;/p&gt;</description>
     </item>
     
   </channel>
