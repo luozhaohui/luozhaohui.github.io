@@ -9,6 +9,55 @@
   </url>
   
   <url>
+    <loc>https://luozhaohui.github.io/categories/</loc>
+    <lastmod>2024-01-24T22:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/post/</loc>
+    <lastmod>2024-01-24T22:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/tags/</loc>
+    <lastmod>2024-01-24T22:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/</loc>
+    <lastmod>2024-01-24T22:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/post/2024/2024-01-24-influence.md/</loc>
+    <lastmod>2024-01-24T22:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/tags/%E5%BD%B1%E5%93%8D%E5%8A%9B/</loc>
+    <lastmod>2024-01-24T22:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/categories/%E9%98%85%E8%AF%BB/</loc>
+    <lastmod>2024-01-24T22:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://luozhaohui.github.io/post/annual-reading/2023-12-31-reading/</loc>
     <lastmod>2023-12-31T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -16,42 +65,7 @@
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/categories/</loc>
-    <lastmod>2023-12-31T18:30:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://luozhaohui.github.io/post/</loc>
-    <lastmod>2023-12-31T18:30:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://luozhaohui.github.io/tags/</loc>
-    <lastmod>2023-12-31T18:30:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://luozhaohui.github.io/</loc>
-    <lastmod>2023-12-31T18:30:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://luozhaohui.github.io/tags/%E9%98%85%E8%AF%BB/</loc>
-    <lastmod>2023-12-31T18:30:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://luozhaohui.github.io/categories/%E9%98%85%E8%AF%BB/</loc>
     <lastmod>2023-12-31T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -640,13 +654,6 @@
   
   <url>
     <loc>https://luozhaohui.github.io/post/2013/2013-05-16-influence-boy/</loc>
-    <lastmod>2013-05-16T23:14:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%BD%B1%E5%93%8D%E5%8A%9B/</loc>
     <lastmod>2013-05-16T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
