@@ -10,28 +10,56 @@
   
   <url>
     <loc>https://luozhaohui.github.io/categories/</loc>
-    <lastmod>2024-01-24T22:14:00+08:00</lastmod>
+    <lastmod>2024-02-22T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://luozhaohui.github.io/post/</loc>
-    <lastmod>2024-01-24T22:14:00+08:00</lastmod>
+    <lastmod>2024-02-22T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://luozhaohui.github.io/tags/</loc>
-    <lastmod>2024-01-24T22:14:00+08:00</lastmod>
+    <lastmod>2024-02-22T22:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/tags/%E7%A7%91%E6%8A%80/</loc>
+    <lastmod>2024-02-22T22:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/categories/%E7%A7%91%E6%8A%80/</loc>
+    <lastmod>2024-02-22T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://luozhaohui.github.io/</loc>
-    <lastmod>2024-01-24T22:14:00+08:00</lastmod>
+    <lastmod>2024-02-22T22:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
+    <lastmod>2024-02-22T22:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/</loc>
+    <lastmod>2024-02-22T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

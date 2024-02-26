@@ -6,7 +6,17 @@
     <description>Recent content in Posts on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 24 Jan 2024 22:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Feb 2024 22:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人工智能：Sora 随感</title>
+      <link>https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/</link>
+      <pubDate>Thu, 22 Feb 2024 22:14:00 +0800</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/</guid>
+      <description>&lt;h2 id=&#34;sora-做了什么&#34;&gt;Sora 做了什么&lt;/h2&gt;
+&lt;p&gt;基于目前公开的信息 Sora 模型奠基于两大原理之上：Transformer 与 Scaling Law。前者本质就是换个角度看问题，使得跨领域建模及其处理更为一致、高效，一如：频率和概率，直角坐标系和极坐标系，大数据常用的矩阵变换等等；后者就是大力出奇迹的规模效应：模型大，数据多，算力强，那效果就更好（是否能达到涌现的程度存疑）。个人感觉前者使“通用”成为可能，后者使“智能”成为可能。Sora 强大之处是仅通过学习人类产生的视频（仅视觉、听觉、字幕），就能产生&lt;strong&gt;世界模拟器&lt;/strong&gt;的四维视频。但我不认为它从中推理出牛顿定律或能量守恒定律等，进而根据这些理论来构建四维世界视频，它仅仅是通过大数据分析在可能性空间中选择相关关系最大的情景。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>无处不在的《影响力》</title>
       <link>https://luozhaohui.github.io/post/2024/2024-01-24-influence.md/</link>
@@ -285,22 +295,6 @@
 &lt;p&gt;【法语、德语等语种正式列入高中课程 上海部分学校率先试点】根据教育部的新课程方案，今年秋季开学起，中学生除了英语，还可以选择法语、德语、西班牙语等语言作为自己的第一外语，去参加高考。目前在上海，已有光明中学、上外附中等学校进行了先期试点。另据了解，方案推出后，上外和北外都编了法语中学生的教材并将于明年秋季开始试用。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;估计上海的宝妈宝爸们又要白几根头发了，小孩第一外语尚未学好，第二外语就要开始了。但第二外语计划列入的毕竟是高中的课程，对英语启蒙阶段的小孩来说尚有许多年头可以去学习，而且英语、法语、德语都同属于印欧语系，如果把英语学好了，再去学习法语或德语，也会容易许多。因此，宝妈宝爸们也不必过于焦虑，&lt;code&gt;Rome wasn&#39;t built in a day&lt;/code&gt;（罗马不是一天建成的），一个阶段做好一个阶段的事情就好。对于学龄前的幼儿来说，最关键的是做好英语启蒙教育。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>2017年阅读统计</title>
-      <link>https://luozhaohui.github.io/post/annual-reading/2017-12-31-reading/</link>
-      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://luozhaohui.github.io/post/annual-reading/2017-12-31-reading/</guid>
-      <description>&lt;h2 id=&#34;总计-37-本&#34;&gt;总计 37 本&lt;/h2&gt;
-&lt;h3 id=&#34;评价统计&#34;&gt;评价统计:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;五星图书 15 本，占比 40.5%&lt;/li&gt;
-&lt;li&gt;四星图书 13 本，占比 35.1%&lt;/li&gt;
-&lt;li&gt;三星图书 8 本，占比 21.6%&lt;/li&gt;
-&lt;li&gt;两星图书 1 本，占比 2.7%&lt;/li&gt;
-&lt;/ul&gt;</description>
     </item>
     
   </channel>

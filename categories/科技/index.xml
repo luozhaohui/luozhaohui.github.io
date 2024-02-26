@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>科技 on 飘飘白云：所读，所观，所思</title>
+    <link>https://luozhaohui.github.io/categories/%E7%A7%91%E6%8A%80/</link>
+    <description>Recent content in 科技 on 飘飘白云：所读，所观，所思</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 22 Feb 2024 22:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/categories/%E7%A7%91%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人工智能：Sora 随感</title>
+      <link>https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/</link>
+      <pubDate>Thu, 22 Feb 2024 22:14:00 +0800</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/</guid>
+      <description>&lt;h2 id=&#34;sora-做了什么&#34;&gt;Sora 做了什么&lt;/h2&gt;
+&lt;p&gt;基于目前公开的信息 Sora 模型奠基于两大原理之上：Transformer 与 Scaling Law。前者本质就是换个角度看问题，使得跨领域建模及其处理更为一致、高效，一如：频率和概率，直角坐标系和极坐标系，大数据常用的矩阵变换等等；后者就是大力出奇迹的规模效应：模型大，数据多，算力强，那效果就更好（是否能达到涌现的程度存疑）。个人感觉前者使“通用”成为可能，后者使“智能”成为可能。Sora 强大之处是仅通过学习人类产生的视频（仅视觉、听觉、字幕），就能产生&lt;strong&gt;世界模拟器&lt;/strong&gt;的四维视频。但我不认为它从中推理出牛顿定律或能量守恒定律等，进而根据这些理论来构建四维世界视频，它仅仅是通过大数据分析在可能性空间中选择相关关系最大的情景。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
