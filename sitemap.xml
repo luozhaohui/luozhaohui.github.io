@@ -10,21 +10,49 @@
   
   <url>
     <loc>https://luozhaohui.github.io/categories/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://luozhaohui.github.io/post/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://luozhaohui.github.io/tags/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/tags/%E9%BB%84%E5%B1%B1/</loc>
+    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/post/2024/2024-07-23-mount-huang/</loc>
+    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/categories/%E6%97%85%E8%A1%8C/</loc>
+    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/</loc>
+    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -45,13 +73,6 @@
   
   <url>
     <loc>https://luozhaohui.github.io/tags/%E5%8E%86%E5%8F%B2/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://luozhaohui.github.io/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -871,13 +892,6 @@
   
   <url>
     <loc>https://luozhaohui.github.io/tags/%E9%AB%98%E5%B0%BE%E5%B1%B1/</loc>
-    <lastmod>2008-11-23T23:14:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://luozhaohui.github.io/categories/%E6%97%85%E8%A1%8C/</loc>
     <lastmod>2008-11-23T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
