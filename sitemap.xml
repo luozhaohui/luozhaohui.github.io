@@ -10,21 +10,49 @@
   
   <url>
     <loc>https://luozhaohui.github.io/categories/</loc>
-    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://luozhaohui.github.io/post/</loc>
-    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://luozhaohui.github.io/tags/</loc>
-    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/tags/%E5%8E%86%E5%8F%B2/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/categories/%E5%8E%86%E5%8F%B2/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/post/2024/2024-09-21-japan-not-guilty.md/</loc>
+    <lastmod>2024-09-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -51,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/</loc>
-    <lastmod>2024-07-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://luozhaohui.github.io/tags/%E4%BA%8C%E6%88%98/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -66,13 +87,6 @@
   
   <url>
     <loc>https://luozhaohui.github.io/post/2024/2024-06-11-invasion-south-or-north/</loc>
-    <lastmod>2024-06-11T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%8E%86%E5%8F%B2/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
