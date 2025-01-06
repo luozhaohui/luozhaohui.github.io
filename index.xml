@@ -94,11 +94,12 @@
 &lt;li&gt;&lt;strong&gt;计数&lt;/strong&gt;：通过排列和组合的方法解决问题，理解基本的计数原理。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;概率&lt;/strong&gt;：能够计算简单事件发生的概率，理解概率的基本概念。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;二amc8考试大纲&#34;&gt;二、AMC8考试大纲&lt;/h2&gt;
-&lt;p&gt;![AMC8考试大纲][/image/posts/2025/AMC8考试大纲.jpg]&lt;/p&gt;
-&lt;h2 id=&#34;三amc8知识点和学校知识点比较&#34;&gt;三、AMC8知识点和学校知识点比较&lt;/h2&gt;
-&lt;p&gt;![AMC8知识点和学校知识点比较][/image/posts/2025/AMC8知识点和学校知识点比较.png]&lt;/p&gt;
-&lt;h2 id=&#34;四amc8题目方向&#34;&gt;四、AMC8题目方向&lt;/h2&gt;
+&lt;h2 id=&#34;二amc8考试大纲与知识点&#34;&gt;二、AMC8考试大纲与知识点&lt;/h2&gt;
+&lt;h3 id=&#34;amc8-考试大纲&#34;&gt;AMC8 考试大纲&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/2025/AMC8%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2.jpg&#34; alt=&#34;AMC8考试大纲&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;amc8-知识点和学校知识点比较&#34;&gt;AMC8 知识点和学校知识点比较&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/2025/AMC8%E7%9F%A5%E8%AF%86%E7%82%B9%E5%92%8C%E5%AD%A6%E6%A0%A1%E7%9F%A5%E8%AF%86%E7%82%B9%E6%AF%94%E8%BE%83.png&#34; alt=&#34;AMC8知识点和学校知识点比较&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;三amc8-题目方向&#34;&gt;三、AMC8 题目方向&lt;/h2&gt;
 &lt;p&gt;考察内容：从历年AMC8竞赛题目分析得出，题目主要分为三个方向：&lt;strong&gt;小学数学、初中数学和小学奥数&lt;/strong&gt;。其中有部分图表问题夹在小学数学、小奥和初中数学之间，划定范围模棱两可，但基于专业学科老师分析，基本上可以认为上述三类题目范畴各占三分之一。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;小学阶段考察范畴&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -118,7 +119,7 @@
 &lt;li&gt;&lt;em&gt;代数:&lt;/em&gt; 乘方运算、多项式、一次与二次方程、列方程或方程组解应用题、不等式等差数列和等比数列及其有关计算、一次函数及其计算，文字与图表相结合的常见应用题，复杂的利用代数方法解决的统计学问题;&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;几何:&lt;/em&gt; 坐标系有关问题，平面几何中的三角形、四边形、圆形与扇形的定理与性质图形的全等与相似及其在计算中的应用、勾股定理与计算，圆柱和圆锥等立体几何图形;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;五amc8答题技巧和注意事项&#34;&gt;五、AMC8答题技巧和注意事项&lt;/h2&gt;
+&lt;h2 id=&#34;四amc8答题技巧和注意事项&#34;&gt;四、AMC8答题技巧和注意事项&lt;/h2&gt;
 &lt;h3 id=&#34;1额外的答题技巧&#34;&gt;1、额外的答题技巧&lt;/h3&gt;
 &lt;p&gt;在AMC8竞赛中，除了常规的解题方法外，巧妙的解题技巧和合理的猜测（smart guess）也能帮助我们提高答题效率和准确率。以下是一些常见的技巧：&lt;/p&gt;
 &lt;ul&gt;
@@ -142,7 +143,7 @@
 &lt;li&gt;&lt;strong&gt;参考英文题目&lt;/strong&gt;：尽管中国区考试为双语试卷，还是尽量参照英文题目，避免因翻译错误导致理解偏差。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;保持良好状态&lt;/strong&gt;：考试前应注重休息和饮食安排，尽量将身体和精神状态调整到最佳。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;六amc8竞赛&#34;&gt;六、AMC8竞赛&lt;/h2&gt;
+&lt;h3 id=&#34;五amc8-竞赛制度&#34;&gt;五、AMC8 竞赛制度&lt;/h3&gt;
 &lt;h3 id=&#34;难度分析&#34;&gt;难度分析&lt;/h3&gt;
 &lt;p&gt;AMC8竞赛的难度相对较大，题目设计灵活且复杂，要求学生具备较强的数学知识储备和逻辑思维能力。难度逐层递增，特别是第16至25题，着重考察学生的逻辑思维和解决问题的能力。这体现在多个方面：&lt;/p&gt;
 &lt;h4 id=&#34;1-题目设计&#34;&gt;1. 题目设计&lt;/h4&gt;
@@ -153,7 +154,7 @@
 &lt;p&gt;AMC8的题目难度通常较高，需要学生具备一定的数学素养和思维能力才能解答。一些题目可能需要学生运用多种数学知识和方法进行推理和计算，才能得出正确答案。例如，某些题目可能涉及复杂的数论或组合数学问题，需要学生具备较强的推理和计算能力。&lt;/p&gt;
 &lt;h4 id=&#34;4-时间限制&#34;&gt;4. 时间限制&lt;/h4&gt;
 &lt;p&gt;AMC8竞赛的时间限制为40分钟，对于部分学生来说可能比较紧张。学生需要在有限的时间内快速准确地解答25道题目，这对他们的思维速度和解题能力提出了更高的要求。时间管理不当可能导致部分题目无法完成，从而影响整体成绩。&lt;/p&gt;
-&lt;h3 id=&#34;考试要求&#34;&gt;考试要求&lt;/h3&gt;
+&lt;h3 id=&#34;考试制度&#34;&gt;考试制度&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;允许携带：&lt;/strong&gt; 书写用具（注：包括彩色笔/铅笔）；笔记本电脑或平板电脑；空白草稿纸；橡皮擦。
 &lt;strong&gt;禁止携带：&lt;/strong&gt; 计算器；智能手表；电话；计算设备；指南针；量角器；方格纸。
 &lt;strong&gt;注意：&lt;/strong&gt; 为了以数字方式管理比赛，学生可以使用笔记本电脑或平板电脑，打开一个选项卡查看比赛。否则，学生在比赛期间只能使用书写用具、空白草稿纸、尺子和橡皮擦。&lt;/p&gt;
@@ -203,7 +204,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h3 id=&#34;证书&#34;&gt;证书&lt;/h3&gt;
+&lt;h3 id=&#34;证书种类&#34;&gt;证书种类&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Honor Roll of Distinction AMC8 - 全球卓越奖&lt;/strong&gt; ——达到全球前1%，一般在21分及以上。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Honor Roll AMC8 - 全球优秀奖&lt;/strong&gt; ——达到全球前5%，一般在17分及以上。&lt;/li&gt;
@@ -211,7 +212,7 @@
 &lt;li&gt;&lt;strong&gt;Certificate of Achievement AMC8 - 全球荣誉奖&lt;/strong&gt; ——六年级及其以下参加且在15分及以上。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;AMC8 Participation - 参赛证书&lt;/strong&gt; ——参赛即可获得。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;七备考与资料&#34;&gt;七、备考与资料&lt;/h2&gt;
+&lt;h2 id=&#34;六备考与资料&#34;&gt;六、备考与资料&lt;/h2&gt;
 &lt;h3 id=&#34;备考规划&#34;&gt;备考规划&lt;/h3&gt;
 &lt;p&gt;如果想要报考好的初中学校，那需要提前规划好时间，在小升初选拔之前完成 &lt;strong&gt;AMC8&lt;/strong&gt; 考试。拿五四制来说，一般的升学选拔在五年级第二学期（约三、四月份），因此需要在五年级寒假期间完成考试，领悟能力强的学生可以在四年级寒假参加第一次 AMC8 考试，五年级寒假再参加第二次 AMC8 考试。&lt;/p&gt;
 &lt;ul&gt;
@@ -235,11 +236,9 @@
 &lt;li&gt;思路：如果涉及复杂的计算，那么思路一定错了&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;历年真题&#34;&gt;历年真题&lt;/h3&gt;
-&lt;h4 id=&#34;amc-8-problems-and-solutions&#34;&gt;AMC 8 Problems and Solutions&lt;/h4&gt;
-&lt;p&gt;在线真题以及解决方案：&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/AMC_8_Problems_and_Solutions&#34;&gt;AMC Art of Problem Solving&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/AMC_8&#34; title=&#34;AMC 8&#34;&gt;AMC 8&lt;/a&gt; / &lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/AJHSME&#34; title=&#34;AJHSME&#34;&gt;AJHSME&lt;/a&gt; problems and solutions.&lt;/p&gt;
+&lt;h4 id=&#34;amc-8-历年真题以及解决方案&#34;&gt;AMC 8 历年真题以及解决方案&lt;/h4&gt;
+&lt;p&gt;外部资源：&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/AMC_8_Problems_and_Solutions&#34;&gt;AMC Art of Problem Solving&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2025_AMC_8&#34; title=&#34;2025 AMC 8&#34;&gt;2025 AMC 8&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2024_AMC_8&#34; title=&#34;2024 AMC 8&#34;&gt;2024 AMC 8&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2023_AMC_8&#34; title=&#34;2023 AMC 8&#34;&gt;2023 AMC 8&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2022_AMC_8&#34; title=&#34;2022 AMC 8&#34;&gt;2022 AMC 8&lt;/a&gt;&lt;/li&gt;
@@ -266,8 +265,8 @@
 &lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2000_AMC_8&#34; title=&#34;2000 AMC 8&#34;&gt;2000 AMC 8&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/1999_AMC_8&#34; title=&#34;1999 AMC 8&#34;&gt;1999 AMC 8&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;amc-8-在线模拟考试&#34;&gt;AMC 8 在线模拟考试&lt;/h4&gt;
-&lt;p&gt;在线模拟考试：&lt;a href=&#34;https://live.poshenloh.com/past-contests&#34;&gt;https://live.poshenloh.com/past-contests&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;amc-8-历年真题在线模拟考试&#34;&gt;AMC 8 历年真题在线模拟考试&lt;/h4&gt;
+&lt;p&gt;外部资源：&lt;a href=&#34;https://live.poshenloh.com/past-contests&#34;&gt;https://live.poshenloh.com/past-contests&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2024&#34;&gt;2024&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2023&#34;&gt;2023&lt;/a&gt;&lt;/li&gt;
