@@ -6,7 +6,7 @@
     <description>Recent content on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 28 Dec 2024 18:30:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jan 2025 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://luozhaohui.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -36,6 +36,267 @@
 &lt;li&gt;电子邮箱：&lt;code&gt;kesalin@gmail.com&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
+      
+    </item>
+    
+    <item>
+      <title>关于 AMC8 数学竞赛你所需要知道的一切</title>
+      <link>https://luozhaohui.github.io/post/2025/2025-01-05-amc8-all-in-one/</link>
+      <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2025/2025-01-05-amc8-all-in-one/</guid>
+      
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;AMC&lt;/strong&gt; 美国数学竞赛全称 &lt;strong&gt;American Mathematics Competitions&lt;/strong&gt;，由美国数学协会主办，是美国国家级别的系列数学竞赛，赛事分 &lt;strong&gt;AMC8&lt;/strong&gt;（初级中学）、&lt;strong&gt;AMC10&lt;/strong&gt;（高级中学）、&lt;strong&gt;AMC12&lt;/strong&gt;（高级中学）三个级别，分别允许不超过美国 8、10、12 年级的学生参加。&lt;/p&gt;
+&lt;p&gt;为什么要参加一个美国的数学竞赛考试？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;从功利角度来讲：对走国际路线的学生，AMC 竞赛是美国国家级别的竞赛，拿到 AMC 高分证书是申请美国高中、本科学校非常有说服力的材料。对国内的升学来说，很多优秀初中在小升初的刷选中也很看重 AMC 证书，比如网传的上海三公对数学素质的期待为 &lt;strong&gt;AMC8&lt;/strong&gt; 20分。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从非功利角度来讲：学习数学竞赛能开拓学生思维，把学过的一个概念应用于更综合、更深奥的问题中，培养深度思考的能力。&lt;strong&gt;遇到难题不畏惧，遇到简单题不骄躁，通过理智的分析，逐步解除复杂问题&lt;/strong&gt;。这种解决问题的行为模式，能跳出学术，应用到生活中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;什么样的&lt;strong&gt;小学&lt;/strong&gt;学生适合参加 &lt;strong&gt;AMC8&lt;/strong&gt; 竞赛？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;打算走国际学校路线的学生&lt;/li&gt;
+&lt;li&gt;打算参加小升初选拔的学生&lt;/li&gt;
+&lt;li&gt;对数学有兴趣，以考促学的学生&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;总的来说，小学阶段&lt;strong&gt;有实际需求以及具备相应领悟能力、学有余力&lt;/strong&gt;的学生可以备考 &lt;strong&gt;AMC8&lt;/strong&gt; 竞赛。&lt;strong&gt;不建议硬控硬上，给孩子留一个快乐的童年和一份阳光健康的心态比让孩子在高压下学习要重要得多&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;一amc8高频考点&#34;&gt;一、AMC8高频考点&lt;/h2&gt;
+&lt;p&gt;AMC8竞赛考点涵盖了中国小学全部的数学知识和部分初中的知识，旨在全面考察学生的数学知识和思维能力。&lt;/p&gt;
+&lt;h3 id=&#34;1-基础代数&#34;&gt;1. 基础代数&lt;/h3&gt;
+&lt;p&gt;基础代数是 &lt;strong&gt;AMC8&lt;/strong&gt; 考试中出现频率最高的考点之一，通常约占10道题目。代数的核心内容涵盖了以下知识点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;分数&lt;/strong&gt;：学生需要熟练掌握分数的加减乘除运算，以及如何进行分数的简化和比较。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方程&lt;/strong&gt;：包括简单的一元一次方程的解法，学生需能够独立设置和求解方程。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数列&lt;/strong&gt;：理解数列的基本概念，能够识别和生成简单的数列，如等差数列和等比数列。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-基础几何&#34;&gt;2. 基础几何&lt;/h3&gt;
+&lt;p&gt;基础几何的题目数量虽然低于代数，通常约为6-8道，但其考察内容依然非常重要。主要注意的是：大部分几何内容在国际课程中可能没有涉及，学生应通过额外的学习和练习来补充相关知识。&lt;/p&gt;
+&lt;p&gt;主要涉及的知识点包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;三角形&lt;/strong&gt;：理解三角形的性质，包括角的关系、边的长度等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;四边形&lt;/strong&gt;：掌握不同类型四边形的特性，如矩形、正方形和菱形等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;勾股定理&lt;/strong&gt;：能够应用勾股定理解决与直角三角形相关的问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-基础数论&#34;&gt;3. 基础数论&lt;/h3&gt;
+&lt;p&gt;基础数论在AMC8的考察比例逐渐增加，通常占3-4道题目。数论题目通常涉及较为基础的概念，但对于学生的逻辑思维能力有较高的要求。主要考察的内容包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;整除&lt;/strong&gt;：理解整除的概念，能够判断一个数是否可以被另一个数整除。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;质因数分解&lt;/strong&gt;：掌握质因数分解的基本方法，能够将合数分解为质数的乘积。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-基础组合&#34;&gt;4. 基础组合&lt;/h3&gt;
+&lt;p&gt;组合题目在AMC8中相对较少，通常约为3-5道，主要涉及计数和概率等内容。其中，计数题是每年必考的内容，学生应特别重视这一部分的复习。&lt;/p&gt;
+&lt;p&gt;重点考察以下知识点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;计数&lt;/strong&gt;：通过排列和组合的方法解决问题，理解基本的计数原理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;概率&lt;/strong&gt;：能够计算简单事件发生的概率，理解概率的基本概念。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;二amc8考试大纲&#34;&gt;二、AMC8考试大纲&lt;/h2&gt;
+&lt;p&gt;![AMC8考试大纲][/image/posts/2025/AMC8考试大纲.jpg]&lt;/p&gt;
+&lt;h2 id=&#34;三amc8知识点和学校知识点比较&#34;&gt;三、AMC8知识点和学校知识点比较&lt;/h2&gt;
+&lt;p&gt;![AMC8知识点和学校知识点比较][/image/posts/2025/AMC8知识点和学校知识点比较.png]&lt;/p&gt;
+&lt;h2 id=&#34;四amc8题目方向&#34;&gt;四、AMC8题目方向&lt;/h2&gt;
+&lt;p&gt;考察内容：从历年AMC8竞赛题目分析得出，题目主要分为三个方向：&lt;strong&gt;小学数学、初中数学和小学奥数&lt;/strong&gt;。其中有部分图表问题夹在小学数学、小奥和初中数学之间，划定范围模棱两可，但基于专业学科老师分析，基本上可以认为上述三类题目范畴各占三分之一。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小学阶段考察范畴&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;基本的计算与应用题:&lt;/em&gt; 整数分数小数以及混合的四则运算，百分比以及比与比例运算类型应用题，行程和相关变形的问题，平均数、中位数、众数等统计问题等;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;基础几何:&lt;/em&gt; 简单的三角形、四边形与圆形等求角、求边求面积的计算，常见且基础的立体图形或需要空间想象的图形有关计算问题;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;简单数论:&lt;/em&gt; 质数与合数，约数和倍数以及最大公约数、最小公倍数和整除性质应用有关问题;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;小学奥数考察范畴&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;巧算和应用题:&lt;/em&gt; 整数分数小数以及混合运算的巧算，计算找规律，多种不同类型的更深入的应用题，例如鸡兔同笼、青蛙跳井问题、植树问题、工程问题、行船流水与环形跑道问题等:&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;几何求值:&lt;/em&gt; 利用割补方法求复杂图形面积;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;数论延伸:&lt;/em&gt; 质因数分析问题、约数个数计算、奇数偶数特点与奇偶性分析问题、余数问题、位置原理有关的问题，以及填数阵图、解竖式类型的计算与数论综合应用题;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;计数与组合杂题:&lt;/em&gt; 阶乘运算，图形计数、找规律计数、加法与乘法原理，举法与分类讨论，容斥原理等，逻辑推理问题，游戏与操作对策问题;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;初中阶段考察范畴&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;代数:&lt;/em&gt; 乘方运算、多项式、一次与二次方程、列方程或方程组解应用题、不等式等差数列和等比数列及其有关计算、一次函数及其计算，文字与图表相结合的常见应用题，复杂的利用代数方法解决的统计学问题;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;几何:&lt;/em&gt; 坐标系有关问题，平面几何中的三角形、四边形、圆形与扇形的定理与性质图形的全等与相似及其在计算中的应用、勾股定理与计算，圆柱和圆锥等立体几何图形;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;五amc8答题技巧和注意事项&#34;&gt;五、AMC8答题技巧和注意事项&lt;/h2&gt;
+&lt;h3 id=&#34;1额外的答题技巧&#34;&gt;1、额外的答题技巧&lt;/h3&gt;
+&lt;p&gt;在AMC8竞赛中，除了常规的解题方法外，巧妙的解题技巧和合理的猜测（smart guess）也能帮助我们提高答题效率和准确率。以下是一些常见的技巧：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代值法、特殊值法和选项结合法&lt;/strong&gt;：在涉及比与比例、百分比的问题中，当总数未知且总数不影响答案时，可以假设一个总数来进行计算。在数论的整数性分析问题中，可以使用特殊值法结合选项排除法来找到正确答案。例如，可以假设某个变量为一个方便计算的数，从而简化问题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;作图与几何问题&lt;/strong&gt;：AMC8的几何题通常附有标准配图。在时间紧张或思路不清晰时，可以尝试直接测量图中的参数来快速推理出答案。这种方法尤其适用于那些视觉化的几何问题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;排除法&lt;/strong&gt;：根据奇偶性、平方数、质数性等特征，可以排除不符合要求的选项。例如，如果题目要求找一个质数，而某个选项明显不是质数，则可以直接排除。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;找规律&lt;/strong&gt;：从最简单的初始情况开始研究，找到大致规律后，再延伸验证。这种方法在处理递归关系或数列问题时尤为有效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2要规避的错误&#34;&gt;2、要规避的错误&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;避免计算错误&lt;/strong&gt;：在计算过程中，尽量少跳步，多打草稿，并进行复算检查。时间紧张时，可以采用个位数检查的方法快速验证计算结果。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免理解题意错误&lt;/strong&gt;：注意题目中的关键词和关键条件，例如“包括、排除”，“奇数、偶数”，“质数、合数”，“整数、实数、正数、非负数”等。特别要注意提问部分，准确理解题目所问的问题。对关键条件和关键词划线标注，以避免遗漏。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免方法选择错误&lt;/strong&gt;：审题后，不要急于演算和作答。先判断题目类型，思考题目是否存在多解或巧解，然后选择最适当的方法求解，以避免因方法选择错误而浪费时间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3考试注意事项&#34;&gt;3、考试注意事项&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;时间安排和答题策略&lt;/strong&gt;：根据自己的学习和备考水平，提前确定实际考试中的时间安排和答题策略。合理分配时间，确保有足够的时间处理难题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;充分准备常考题型&lt;/strong&gt;：对于AMC8常考的计算题、应用题、计数概率题等，要做充分的准备，特别是提高各类计算的熟练度。这样不仅能提高常规题目的正确率，还能为应对复杂问题争取更多时间。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;错题反思&lt;/strong&gt;：考前刷题不应只注重题量，而应在刷题的同时多做错题反思。做会一道错题比盲目多做题更加有用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;审题仔细&lt;/strong&gt;：对于题干文字量较大的题目，一定要多次审题，标出重点，避免遗漏条件或审题出错。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;参考英文题目&lt;/strong&gt;：尽管中国区考试为双语试卷，还是尽量参照英文题目，避免因翻译错误导致理解偏差。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;保持良好状态&lt;/strong&gt;：考试前应注重休息和饮食安排，尽量将身体和精神状态调整到最佳。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;六amc8竞赛&#34;&gt;六、AMC8竞赛&lt;/h2&gt;
+&lt;h3 id=&#34;难度分析&#34;&gt;难度分析&lt;/h3&gt;
+&lt;p&gt;AMC8竞赛的难度相对较大，题目设计灵活且复杂，要求学生具备较强的数学知识储备和逻辑思维能力。难度逐层递增，特别是第16至25题，着重考察学生的逻辑思维和解决问题的能力。这体现在多个方面：&lt;/p&gt;
+&lt;h4 id=&#34;1-题目设计&#34;&gt;1. 题目设计&lt;/h4&gt;
+&lt;p&gt;AMC8的题目通常设计得既有趣又具挑战性，旨在全面考察学生的数学知识和思维能力。题目不仅要求学生具备扎实的数学基础，还需要他们具备良好的数学思维和问题解决能力。例如，题目可能设计成趣味性的问题情境，让学生在解题过程中感到既有挑战又有趣味。&lt;/p&gt;
+&lt;h4 id=&#34;2-知识点覆盖&#34;&gt;2. 知识点覆盖&lt;/h4&gt;
+&lt;p&gt;AMC8竞赛的内容涵盖了多个数学领域，包括数与代数、几何、数论、组合数学以及逻辑推理等。知识点广泛且深入，要求学生全面掌握这些领域的知识，并能够灵活运用它们解决实际问题。例如，学生可能需要在同一道题目中运用代数和几何的知识进行综合解答。&lt;/p&gt;
+&lt;h4 id=&#34;3-题目难度&#34;&gt;3. 题目难度&lt;/h4&gt;
+&lt;p&gt;AMC8的题目难度通常较高，需要学生具备一定的数学素养和思维能力才能解答。一些题目可能需要学生运用多种数学知识和方法进行推理和计算，才能得出正确答案。例如，某些题目可能涉及复杂的数论或组合数学问题，需要学生具备较强的推理和计算能力。&lt;/p&gt;
+&lt;h4 id=&#34;4-时间限制&#34;&gt;4. 时间限制&lt;/h4&gt;
+&lt;p&gt;AMC8竞赛的时间限制为40分钟，对于部分学生来说可能比较紧张。学生需要在有限的时间内快速准确地解答25道题目，这对他们的思维速度和解题能力提出了更高的要求。时间管理不当可能导致部分题目无法完成，从而影响整体成绩。&lt;/p&gt;
+&lt;h3 id=&#34;考试要求&#34;&gt;考试要求&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;允许携带：&lt;/strong&gt; 书写用具（注：包括彩色笔/铅笔）；笔记本电脑或平板电脑；空白草稿纸；橡皮擦。
+&lt;strong&gt;禁止携带：&lt;/strong&gt; 计算器；智能手表；电话；计算设备；指南针；量角器；方格纸。
+&lt;strong&gt;注意：&lt;/strong&gt; 为了以数字方式管理比赛，学生可以使用笔记本电脑或平板电脑，打开一个选项卡查看比赛。否则，学生在比赛期间只能使用书写用具、空白草稿纸、尺子和橡皮擦。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;竞赛时间：&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;报名截止：&lt;/strong&gt; 2025年1月12日，&lt;strong&gt;考试：&lt;/strong&gt; 1月23日，10:00-10:40&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;报考要求：&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;8年级(初二)且14.5岁以下年级/年龄学生(年龄截止至测评活动当天)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;试卷构成：&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;25道单项选择题，每题有五个选项&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;比赛语言：&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;AMC8数学竞赛提供中英双语试卷，以满足不同语言背景的学生的需求&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;计分方式：&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;满分25分，答对1题得1分，答错得0分&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;活动时长：&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;40分钟，学生需要在这个时间内完成所有题目&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;考试地点：&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;线上或者线下自由选择&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;发布成绩:&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;在 6-8 周内公布竞赛成绩，在官方网站上查询成绩&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;在线模拟考试:&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;2025年1月15日至1月19日&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;准考证下载：&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;2025年1月15日&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;证书&#34;&gt;证书&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Honor Roll of Distinction AMC8 - 全球卓越奖&lt;/strong&gt; ——达到全球前1%，一般在21分及以上。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Honor Roll AMC8 - 全球优秀奖&lt;/strong&gt; ——达到全球前5%，一般在17分及以上。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Perfect Score AMC8 - 满分奖&lt;/strong&gt; ——达到满分25分。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Certificate of Achievement AMC8 - 全球荣誉奖&lt;/strong&gt; ——六年级及其以下参加且在15分及以上。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AMC8 Participation - 参赛证书&lt;/strong&gt; ——参赛即可获得。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;七备考与资料&#34;&gt;七、备考与资料&lt;/h2&gt;
+&lt;h3 id=&#34;备考规划&#34;&gt;备考规划&lt;/h3&gt;
+&lt;p&gt;如果想要报考好的初中学校，那需要提前规划好时间，在小升初选拔之前完成 &lt;strong&gt;AMC8&lt;/strong&gt; 考试。拿五四制来说，一般的升学选拔在五年级第二学期（约三、四月份），因此需要在五年级寒假期间完成考试，领悟能力强的学生可以在四年级寒假参加第一次 AMC8 考试，五年级寒假再参加第二次 AMC8 考试。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;四年级暑假～五年级第一学期：刷蓝宝书（《美国初中数学竞赛-AMC8准备》一套六卷，第一到五卷为知识点、示例以及习题，第六卷为十套模拟题）。&lt;/li&gt;
+&lt;li&gt;12月：进行模拟考试，知识点查漏补短，学习答题技巧。&lt;/li&gt;
+&lt;li&gt;第二年1月：刷真题，总结错题和答题技巧，提升解题效率，为正式考试做好充分准备。&lt;/li&gt;
+&lt;li&gt;第二年2月～3月查询结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;资料分析&#34;&gt;资料分析&lt;/h3&gt;
+&lt;p&gt;蓝宝书中的例题和习题总体难度是大于真题的，但真题考试有严格的时间限制，因此，会做也不一定能考高分。为此，必须提高读题能力、解题速度、以及答题技巧，在前面15道题上挤出时间来解答后面10道题，才可能拿到高分。前15题是基础题，一般细心就不太会错；后10道题是综合提升题，难度逐步提高。&lt;/p&gt;
+&lt;p&gt;真题主要是考察&lt;strong&gt;多个知识点的灵活综合应用&lt;/strong&gt;，不会有很复杂的计算；20题以后的题目通常都有多种解决思路，这些题目通常也有避免复杂计算的设计。可以说 &lt;strong&gt;AMC8&lt;/strong&gt; 的出题非常灵活，注意考察的是思维的灵活性、开阔性以及关联应用能力，有点像脑筋急转弯，思路对了就很简单。因此要特别&lt;strong&gt;仔细读题，明确有哪些条件，这些条件之间可以怎样关联和转换，可以和哪些知识点关联，题目的问题是什么&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;解题技巧&#34;&gt;解题技巧&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：每道题平均不到一分半钟，包括读题、解题、答题&lt;/li&gt;
+&lt;li&gt;巧算：不要计算小数，尽量利用分数计算化约&lt;/li&gt;
+&lt;li&gt;延迟计算：不要过早计算中间结果，可以延后化约&lt;/li&gt;
+&lt;li&gt;排除：边算边估选排除选项，无需全部做完。选择题是去证明，而无需完全解答&lt;/li&gt;
+&lt;li&gt;简化：不同尺度的单位统一，简化为熟悉的单位&lt;/li&gt;
+&lt;li&gt;代入：尽量用简单或特殊的值去代入，如：百分比就用100，占比几分之几就用最小公倍数&lt;/li&gt;
+&lt;li&gt;估算：图表都是标准尺寸，可用尺子量大胆估算&lt;/li&gt;
+&lt;li&gt;思路：如果涉及复杂的计算，那么思路一定错了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;历年真题&#34;&gt;历年真题&lt;/h3&gt;
+&lt;h4 id=&#34;amc-8-problems-and-solutions&#34;&gt;AMC 8 Problems and Solutions&lt;/h4&gt;
+&lt;p&gt;在线真题以及解决方案：&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/AMC_8_Problems_and_Solutions&#34;&gt;AMC Art of Problem Solving&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/AMC_8&#34; title=&#34;AMC 8&#34;&gt;AMC 8&lt;/a&gt; / &lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/AJHSME&#34; title=&#34;AJHSME&#34;&gt;AJHSME&lt;/a&gt; problems and solutions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2025_AMC_8&#34; title=&#34;2025 AMC 8&#34;&gt;2025 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2024_AMC_8&#34; title=&#34;2024 AMC 8&#34;&gt;2024 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2023_AMC_8&#34; title=&#34;2023 AMC 8&#34;&gt;2023 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2022_AMC_8&#34; title=&#34;2022 AMC 8&#34;&gt;2022 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2020_AMC_8&#34; title=&#34;2020 AMC 8&#34;&gt;2020 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2019_AMC_8&#34; title=&#34;2019 AMC 8&#34;&gt;2019 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2018_AMC_8&#34; title=&#34;2018 AMC 8&#34;&gt;2018 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2017_AMC_8&#34; title=&#34;2017 AMC 8&#34;&gt;2017 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2016_AMC_8&#34; title=&#34;2016 AMC 8&#34;&gt;2016 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2015_AMC_8&#34; title=&#34;2015 AMC 8&#34;&gt;2015 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2014_AMC_8&#34; title=&#34;2014 AMC 8&#34;&gt;2014 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2013_AMC_8&#34; title=&#34;2013 AMC 8&#34;&gt;2013 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2012_AMC_8&#34; title=&#34;2012 AMC 8&#34;&gt;2012 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2011_AMC_8&#34; title=&#34;2011 AMC 8&#34;&gt;2011 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2010_AMC_8&#34; title=&#34;2010 AMC 8&#34;&gt;2010 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2009_AMC_8&#34; title=&#34;2009 AMC 8&#34;&gt;2009 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2008_AMC_8&#34; title=&#34;2008 AMC 8&#34;&gt;2008 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2007_AMC_8&#34; title=&#34;2007 AMC 8&#34;&gt;2007 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2006_AMC_8&#34; title=&#34;2006 AMC 8&#34;&gt;2006 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2005_AMC_8&#34; title=&#34;2005 AMC 8&#34;&gt;2005 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2004_AMC_8&#34; title=&#34;2004 AMC 8&#34;&gt;2004 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2003_AMC_8&#34; title=&#34;2003 AMC 8&#34;&gt;2003 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2002_AMC_8&#34; title=&#34;2002 AMC 8&#34;&gt;2002 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2001_AMC_8&#34; title=&#34;2001 AMC 8&#34;&gt;2001 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2000_AMC_8&#34; title=&#34;2000 AMC 8&#34;&gt;2000 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/1999_AMC_8&#34; title=&#34;1999 AMC 8&#34;&gt;1999 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;amc-8-在线模拟考试&#34;&gt;AMC 8 在线模拟考试&lt;/h4&gt;
+&lt;p&gt;在线模拟考试：&lt;a href=&#34;https://live.poshenloh.com/past-contests&#34;&gt;https://live.poshenloh.com/past-contests&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2024&#34;&gt;2024&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2023&#34;&gt;2023&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2022&#34;&gt;2022&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2020&#34;&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2019&#34;&gt;2019&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2018&#34;&gt;2018&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2017&#34;&gt;2017&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2016&#34;&gt;2016&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2015&#34;&gt;2015&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2014&#34;&gt;2014&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2013&#34;&gt;2013&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2012&#34;&gt;2012&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2011&#34;&gt;2011&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2010&#34;&gt;2010&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2009&#34;&gt;2009&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2008&#34;&gt;2008&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2007&#34;&gt;2007&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2006&#34;&gt;2006&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2005&#34;&gt;2005&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2004&#34;&gt;2004&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2003&#34;&gt;2003&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2002&#34;&gt;2002&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2001&#34;&gt;2001&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2000&#34;&gt;2000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/1999&#34;&gt;1999&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/1998&#34;&gt;1998&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/1997&#34;&gt;1997&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
       
     </item>
     
@@ -1731,27 +1992,6 @@
 &lt;p&gt;词的发展从酒筵歌女所唱之艳词，到文人以女性口吻用游戏笔墨写文人小词，无意中流露或寄托诗中所不能写之幽情隐思，至温飞卿秾丽精致写客观意象，至韦庄清丽婉转写主观一己人生事，至冯正中深美闳约泛写人生感触，至李后主境界始博大，至晏欧始抒写情志胸怀之文人小词，精通音律的柳永在形式上开拓了长调与在内容上开拓了秋士感怀，“苒苒物华休”。&lt;/p&gt;
 &lt;p&gt;短调字数小，需有要眇幽微之含蕴感发，长调可铺陈但非直白，需起承转合，勾勒出层次。东坡拓展了诗化之词，用胸襟怀抱的笔法自觉来写豪放词。秦观转向词的本源，善女感怀，婉约、纤细、柔媚，“淡语皆有味，浅语皆有致”，后历贬谪，词风转为凄婉乃至凄厉，“春去也，飞红万点愁如海”，“雾失楼台，月迷津渡”，“可堪孤馆闭春寒，杜鹃声里斜阳暮”。周邦彦开南宋先声、集北宋大成，富艳精工，善用唐诗，开创了新调，也拓展了长调的叙写方式，无序勾勒，无笔不缩，浑成浑厚，在软媚之中有气魄，在勾勒之中不失完整，“斜阳冉冉春无极”。&lt;/p&gt;
 &lt;p&gt;总的来说，词之为体，要眇宜修。能言诗之所不能言，而不能尽言诗之所能言。诗之境阔，词之言长。词的内容从南唐与家国之忧患意识相结合转变为北宋与作者性情、修养、胸襟、经历相结合，从小调到长调。诗歌最重要的是要有感发的生命，其程度的大小、深浅、厚薄取决于两个维度：人生世事的体认（屈原、杜甫、辛弃疾），大自然的融会（江上之清风和山间之明月，相看两不厌，唯有敬亭山）。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>叶老受词之感发，用一生在传承：《南宋名家词选讲》</title>
-      <link>https://luozhaohui.github.io/post/2023/2023-03-15-poem/</link>
-      <pubDate>Wed, 15 Mar 2023 23:14:00 +0800</pubDate>
-      
-      <guid>https://luozhaohui.github.io/post/2023/2023-03-15-poem/</guid>
-      
-        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://book.douban.com/subject/2049360/&#34;&gt;《南宋名家词选讲》&lt;/a&gt;是诗词大家叶嘉莹诗词系列演讲中关于南宋名家词的汇集。叶老这一系列关于词的讲座实录，讲述词从唐五代、北宋到南宋所经历的诞生、发展、流变的过程，以及相关词人在这发展过程中所起的作用和特色。叶老是比较注重知人论词的，她主张词的特色是“要眇宜修”，给人以丰富的联想与感发；伟大的作品一定是以深厚博大的志意、襟怀、操守为底蕴的，因此叶老最为推崇用生命来写诗词的那些作者，如杜甫、辛弃疾、陶渊明。词的发展经历了歌词之词、诗化之词、赋化之词，从早期的直接感发到南宋思力安排的间接感发。叶老这系列讲座纵横捭阖，将她对多位唐诗、宋词作者的解说综合起来，善于引用同情境的诗词进行比照，对比总结多位作者的特色，如“冯延巳是执着的热情，晏殊是圆融的关照，欧阳修是遣玩的意兴，东坡的豪放是逸怀浩兴，辛弃疾的豪放是英雄豪气”，地位类比“诗中杜甫，词中辛弃疾”。&lt;/p&gt;
-&lt;h2 id=&#34;简要&#34;&gt;简要&lt;/h2&gt;
-&lt;p&gt;歌辞之词、诗化之词与赋化之词这三种不同类型的词在北宋就已经发展完成了。李后主是最早一个很明显地将小词诗化的人，而有意识地这样去改变的则是苏东坡。柳永将词从小调发展到长调，周邦彦将长调在叙写方式上拓展为赋化之词。赋化之词要故意避免这种直白铺陈的感发，要勾勒出层次感、韵味。真正继承了诗化之词的是南宋以后的词人，尤其是辛弃疾。姜夔、吴文英、王沂孙等则继承了赋化之词，用思索安排的手法来写词，讲究用典，“隔”一层。&lt;/p&gt;
-&lt;p&gt;诗词有意象，这个意象是物象在特定文化背景中的文化语码，附有特定的联想和寓意。如“蛾眉”寓品德高洁，“斜阳”寓国破家亡。&lt;/p&gt;
-&lt;p&gt;李清照早年“芳馨俊逸”，晚年悲哀沉痛中有豪健飘举，“生当作人杰，死亦为鬼雄”，“天上星河转，人间帘幕垂”。&lt;/p&gt;
-&lt;p&gt;陆游无论爱国还是爱情《沈园》，用情执著，诗词皆真率直接，喷薄奔涌的感情，毫不做作，唯一的缺点是缺乏含蓄蕴藉，不耐寻思，没有余味。&lt;/p&gt;
-&lt;p&gt;辛弃疾的人生与诗词都是“峡束苍江对起，过危楼，欲飞还敛”，他的风格一本万殊，这个本体是那种英雄豪杰的志意在被摒弃压抑中所受的挫折，“斜阳正在，烟柳断肠处”。&lt;/p&gt;
-&lt;p&gt;姜夔的词主要有两种情感：主要的一种就是合肥的爱情，另一种是有一点家国的感慨。其词风“清空骚雅”，“词者意内而言外也。意内者骚，言外者雅”，清空即“非从实际上写其形态，乃从空灵中摄其神理”，如《暗香》、《疏影》。其词用思力安排写出，笔法、思致上的幽隐宛转曲折，王国维评“如雾里看花，终隔一层”。&lt;/p&gt;
-&lt;p&gt;南宋的词人受了周邦彦的影响，大多是用思力安排来写词，吴文英尤甚，语言晦涩，时空错综，感性修辞，又能“奇思壮采，腾天潜渊”，“幽云怪雨，翠蓱湿空梁，夜深飞去”，“嚼花灯冷”，“霜红罢舞”，“岸锁春船，画旗喧赛鼓”，“海烟沉处倒残霞，一杼鲛绡和泪织”。&lt;/p&gt;
-&lt;p&gt;咏物词属于赋化之词，它是用写赋的笔法来写的，其诞生的环境一是只能隐晦表达，二是诗词集会，其美感特质是隐语和巧谈，叙写方式可思力安排也可兴发感动。王沂孙的咏物词两者兼具，如《龙涎香》。&lt;/p&gt;</description>
       
     </item>
     
