@@ -23,19 +23,8 @@
       <pubDate>Thu, 22 Feb 2024 22:14:00 +0800</pubDate>
       
       <guid>https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/</guid>
-      <description>&lt;h2 id=&#34;20250210-更新&#34;&gt;2025.02.10 更新&lt;/h2&gt;
-&lt;p&gt;一年前在粗略了解 Sora 之后发表的对 AI 的粗浅看法，在对 Scaling Law 以及智能/涌现的理解上有不准确和不完善之处，在此更新最新的理解。&lt;/p&gt;
-&lt;h3 id=&#34;scaling-law&#34;&gt;Scaling Law&lt;/h3&gt;
-&lt;p&gt;Scaling Law 描述了计算资源、数据规模和模型参数对 AI 性能的影响。随着科技进步，曾经被视为难以突破的计算和数据限制，如今已成为可管理的挑战。从本质上讲，Scaling Law 不是决定 AI 智能形态的根本因素，而是影响其发展的资源门槛。就像“巧妇难为无米之炊”，即使有再先进的模型架构，也需要足够的数据和计算能力来支持。此外，涌现现象的出现通常依赖于规模化的个体相互作用，只有在足够大的系统中，个体之间的非线性关系才能催生出整体大于部分之和的智能表现。&lt;/p&gt;
-&lt;h3 id=&#34;智能与涌现&#34;&gt;智能与涌现&lt;/h3&gt;
-&lt;p&gt;基于对 Transformer 架构的理解，我们可以推测智能和涌现现象在此架构中极有可能发生。&lt;strong&gt;涌现（Emergence）&lt;/strong&gt; 指的是复杂系统中的整体行为无法从个体行为中直接推测，而是由个体之间的相互作用催生出的新现象。Transformer 的多个机制为智能和涌现提供了可能性：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;自注意力机制（Self-Attention）&lt;/strong&gt;：自注意力机制允许模型在多个层次上建立词与词之间的长距离关联，使其能够捕捉隐含的模式和语义结构，从而生成具有深层理解的内容。例如，在文本生成过程中，模型可以学会创造类似藏头诗的结构。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;前馈神经网络的非线性变换（Feedforward Neural Networks）&lt;/strong&gt;：前馈层的非线性激活函数使模型具备更强的表达能力，能够对输入进行高度非线性变换，帮助模型捕捉复杂的语言模式，提高生成内容的多样性。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;多层深度结构（Deep Stacked Layers）&lt;/strong&gt;：Transformer 通过多层堆叠，使信息在层间传播和变换，每一层都对输入进行不同的加工。这种逐层累积的过程增加了模型的发散性和泛化能力。例如，如果每一层的确定性为 95%，经过 8 层后，信息变换的不确定性增加（95% 的 8 次方是 66.34%），为模型提供更大的联想和知识迁移空间。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;自回归生成机制（Autoregressive Generation）&lt;/strong&gt;：在生成过程中，Transformer 通过自回归方式逐步构建文本，每一步生成都受到之前生成内容的影响。这种机制可能导致模型“偏离”原始路径，并在新的语境中逐步自适应，类似演化论中的“变异累积”过程，使其能够探索新的模式和表达。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;通俗来说，Transformer 的智能体现在“&lt;strong&gt;要有想法，又不能太离谱&lt;/strong&gt;”，或者说“&lt;strong&gt;要浪，又不能太浪&lt;/strong&gt;”。数学上，这体现为“&lt;strong&gt;既要发散，又要收敛&lt;/strong&gt;”，即既要有足够的探索空间来发现新模式，又要有一定的约束来避免无意义的生成。这与深度学习中的“&lt;strong&gt;梯度既不能消失，也不能爆炸&lt;/strong&gt;”类似，也可以比喻为头脑风暴的过程：第一阶段发散思维，探索尽可能多的可能性；第二阶段筛选和收敛，确保输出合理有用。在 Transformer 结构中，这一平衡由&lt;strong&gt;层归一化（Layer Normalization）&lt;/strong&gt; 和&lt;strong&gt;损失函数&lt;/strong&gt;调控，从而确保生成结果既具有创造性，又不至于完全偏离预期。&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;sora-做了什么&#34;&gt;Sora 做了什么&lt;/h2&gt;
+&lt;p&gt;基于目前公开的信息 Sora 模型奠基于两大原理之上：Transformer 与 Scaling Law。前者本质就是换个角度看问题，使得跨领域建模及其处理更为一致、高效，一如：频率和概率，直角坐标系和极坐标系，大数据常用的矩阵变换等等；后者就是大力出奇迹的规模效应：模型大，数据多，算力强，那效果就更好（是否能达到涌现的程度存疑）。个人感觉前者使“通用”成为可能，后者使“智能”成为可能。Sora 强大之处是仅通过学习人类产生的视频（仅视觉、听觉、字幕），就能产生&lt;strong&gt;世界模拟器&lt;/strong&gt;的四维视频。但我不认为它从中推理出牛顿定律或能量守恒定律等，进而根据这些理论来构建四维世界视频，它仅仅是通过大数据分析在可能性空间中选择相关关系最大的情景。&lt;/p&gt;</description>
     </item>
     
     <item>
