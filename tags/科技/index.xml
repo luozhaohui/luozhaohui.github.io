@@ -14,7 +14,7 @@
       
       <guid>https://luozhaohui.github.io/post/2025/2025-02-15-thinking-about-agi/</guid>
       <description>&lt;h3 id=&#34;引子&#34;&gt;引子&lt;/h3&gt;
-&lt;p&gt;一年前在粗略了解 Sora 之后发表了对通用人工智能（AGI） 的粗浅看法（（见&lt;a href=&#34;https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/&#34;&gt;人工智能：Sora 随感&lt;/a&gt;)，经过对 AGI 知识的学习之后，再次刷新对 Scaling Law、Transformer 以及智能/涌现的理解，因此有了此文以更新对这个知识点的“模型参数”（一年前我对 AGI 能否达到涌现是存疑的，现在转变为肯定）。都说大道至简，但精准简化岂是常人所能，我只好在通俗与严谨之间，弃严谨而取通俗。下面就是用通俗的方式来讲述我对人工智能架构主要思想的新理解。&lt;/p&gt;
+&lt;p&gt;一年前在粗略了解 Sora 之后发表了对通用人工智能（AGI） 的粗浅看法（见&lt;a href=&#34;https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/&#34;&gt;人工智能：Sora 随感&lt;/a&gt;)，经过对 AGI 知识的学习之后，再次刷新对 Scaling Law、Transformer 以及智能/涌现的理解，因此有了此文以更新对这个知识点的“模型参数”（一年前我对 AGI 能否达到涌现是存疑的，现在转变为肯定）。都说大道至简，但精准简化岂是常人所能，我只好在通俗与严谨之间，弃严谨而取通俗。下面就是用通俗的方式来讲述我对人工智能架构主要思想的新理解。&lt;/p&gt;
 &lt;h3 id=&#34;scaling-law-与涌现&#34;&gt;Scaling Law 与涌现&lt;/h3&gt;
 &lt;p&gt;Scaling Law 描述了数据规模、计算资源和模型参数对 AI 模型的影响。大模型之所要大，是因为只有当模型的训练（样本）数据和参数大到突破一定的临界值后，才可能涌现出一些不可预测、更复杂的能力和特性，而进行这样大规模的训练又依赖于大规模的计算资源。这等规模的模型能够从原始训练数据中自动学习并发现或发明新的、更高层次的特征和模式，这种能力被称为“&lt;strong&gt;涌现（Emergence）&lt;/strong&gt;”。随着科技的进步，曾经被认为难以突破的计算和数据限制，将来一定会是可控和可实现的。从本质上讲，Scaling Law 不是决定 AI 智能形态的根本因素，而是影响其发展的&lt;strong&gt;资源门槛&lt;/strong&gt;。但就像“巧妇难为无米之炊”，即使有再先进的模型架构，也需要规模足够大的数据和计算能力来达到涌现所需的阈值。此外，涌现现象的出现通常依赖于大规模个体之间的相互作用，只有在规模足够大的个体之间的&lt;strong&gt;非线性关系&lt;/strong&gt;才可能催生出&lt;strong&gt;整体大于部分之和&lt;/strong&gt;的智能表现。&lt;/p&gt;</description>
     </item>
