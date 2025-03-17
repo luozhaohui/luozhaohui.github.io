@@ -84,7 +84,7 @@ Scaling Law 描述了数据规模、计算资源和模型参数对 AI 模型的�
 Scaling Law 与涌现
 Scaling Law 描述了数据规模、计算资源和模型参数对 AI 模型的影响。大模型之所要大，是因为只有当模型的训练（样本）数据和参数大到突破一定的临界值后，才可能涌现出一些不可预测、更复杂的能力和特性，而进行这样大规模的训练又依赖于大规模的计算资源。这等规模的模型能够从原始训练数据中自动学习并发现或发明新的、更高层次的特征和模式，这种能力被称为“涌现（Emergence）”。随着科技的进步，曾经被认为难以突破的计算和数据限制，将来一定会是可控和可实现的。从本质上讲，Scaling Law 不是决定 AI 智能形态的根本因素，而是影响其发展的资源门槛。但就像“巧妇难为无米之炊”，即使有再先进的模型架构，也需要规模足够大的数据和计算能力来达到涌现所需的阈值。此外，涌现现象的出现通常依赖于大规模个体之间的相互作用，只有在规模足够大的个体之间的非线性关系才可能催生出整体大于部分之和的智能表现。"><meta itemprop="datePublished" content="2025-02-15T22:14:00+08:00" />
 <meta itemprop="dateModified" content="2025-02-15T22:14:00+08:00" />
-<meta itemprop="wordCount" content="3411">
+<meta itemprop="wordCount" content="3427">
 <meta itemprop="keywords" content="科技,人工智能," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="人工智能：对涌现与智能的再思考"/>
 <meta name="twitter:description" content="引子
@@ -387,7 +387,7 @@ Scaling Law 描述了数据规模、计算资源和模型参数对 AI 模型的�
 
   <div class="post-meta__right">
     <span class="post-meta-more">
-        约 3411 字 -
+        约 3427 字 -
         预计阅读 7 分钟
       </span>
 
@@ -417,7 +417,7 @@ Scaling Law 描述了数据规模、计算资源和模型参数对 AI 模型的�
 <h3 id="transformer-与智能">Transformer 与智能</h3>
 <p>可以说<strong>世界是一个基于贝叶斯定理的概率（经验）大模型（推理在经验之上）</strong>。关于贝叶斯定理，多年以前我写过一篇《从贝叶斯定理说开去》的文章，互联网应该还有这个记忆。通俗地讲，<strong>贝叶斯定理就是根据新的观察结果来调整由过去学习到的经验概率值</strong>。比如：猎人在某片树林连续三天发现猎物群，于是猎人习得经验（逐天增加这片树林发现猎物的概率），当然猎物群也会调整自身的经验（逐步增加这片树林的危险性概率）。</p>
 <p>展开说说经验与推理，西方经典哲学分两派：英国经验主义与大陆唯理主义。这可以用来类比大模型的两种实现思路：经验概率和逻辑推理，经验概率不是绝对可靠的，需要逻辑推理来引导和试错，两相结合就完美了。</p>
-<p>因此<strong>智能可以简化理解为从环境中自主学习、调整和应用经验的能力</strong>。如果说 Scaling Law 解决大模型之“大”的问题（大才可能有足够多的相关性概率参数来突破涌现所需的阈值），那么 Transformer 就是要解决基于贝叶斯定理的概率问题，通俗地说就是解决经验问题（表现为智能，表征为模型参数）：参数从哪来？参数怎么调整？参数怎么评估？参数怎么应用？参数怎么存储？Transformer 中的对这些问题的解决机制非常巧妙与精细，也非常专业，在此不展开细述（遇事不决，问 AI 啊）。</p>
+<p>因此<strong>智能可以简化理解为从环境中自主学习、调整和应用经验的能力（反思过去、改变现在、规划未来）</strong>。如果说 Scaling Law 解决大模型之“大”的问题（大才可能有足够多的相关性概率参数来突破涌现所需的阈值），那么 Transformer 就是要解决基于贝叶斯定理的概率问题，通俗地说就是解决经验问题（表现为智能，表征为模型参数）：参数从哪来？参数怎么调整？参数怎么评估？参数怎么应用？参数怎么存储？Transformer 中的对这些问题的解决机制非常巧妙与精细，也非常专业，在此不展开细述（遇事不决，问 AI 啊）。</p>
 <h3 id="通俗解读-transformer-架构">通俗解读 Transformer 架构</h3>
 <p><img src="https://opensource.niutrans.com/niutensor/Transformer/1.png" alt="Transformer 架构图"></p>
 <hr>
@@ -527,6 +527,19 @@ Scaling Law 描述了数据规模、计算资源和模型参数对 AI 模型的�
           
           <nav class="post-nav">
             
+              <a class="prev" href="/post/2025/2025-03-15-history-of-ai/">
+                
+                <i class="iconfont">
+                  <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+                </i>
+                <span class="prev-text nav-default">人工智能发展之潮起潮落</span>
+                <span class="prev-text nav-mobile">上一篇</span>
+              </a>
             
               <a class="next" href="/post/2025/2025-01-05-amc8-all-in-one/">
                 <span class="next-text nav-default">关于 AMC8 数学竞赛你所需要知道的一切</span>
@@ -720,7 +733,7 @@ Scaling Law 描述了数据规模、计算资源和模型参数对 AI 模型的�
 
 
 
-<script type="text/javascript" src="/js/main.0777578bba49ea0d4f6917f0b46e2e0c80549a0842953ff390e23699858f06ac.js" integrity="sha256-B3dXi7pJ6g1PaRfwtG4uDIBUmghClT/zkOI2mYWPBqw=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.7e0b0eae1fcab1b0cc1d18b9902a972b3b0001926ae74fc9ba1c37eeb1053573.js" integrity="sha256-fgsOrh/KsbDMHRi5kCqXKzsAAZJq50/Juhw37rEFNXM=" crossorigin="anonymous"></script>
 
 
 

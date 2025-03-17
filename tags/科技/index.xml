@@ -6,7 +6,36 @@
     <description>Recent content in 科技 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 15 Feb 2025 22:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/tags/%E7%A7%91%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Mar 2025 22:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/tags/%E7%A7%91%E6%8A%80/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>人工智能发展之潮起潮落</title>
+      <link>https://luozhaohui.github.io/post/2025/2025-03-15-history-of-ai/</link>
+      <pubDate>Sat, 15 Mar 2025 22:14:00 +0800</pubDate>
+      
+      <guid>https://luozhaohui.github.io/post/2025/2025-03-15-history-of-ai/</guid>
+      <description>&lt;h2 id=&#34;引子&#34;&gt;引子&lt;/h2&gt;
+&lt;p&gt;借 Deepseek 的东风，打算深入了解一下人工智能，因而读了《&lt;a href=&#34;https://book.douban.com/subject/30379536/&#34;&gt;智慧的疆界：从图灵机到人工智能&lt;/a&gt;》、《&lt;a href=&#34;https://book.douban.com/subject/35418482/&#34;&gt;人工智能全传&lt;/a&gt;》、《&lt;a href=&#34;https://book.douban.com/subject/36668702/&#34;&gt;GPT图解&lt;/a&gt;》等一批人工智能相关的书籍。《智慧的疆界》是技术派作家周志明用心著作的一本人工智能科普书籍。在此书中作者注入了自己的思考，并将思考所得的人工智能发展脉络、哲学上的思索、道德上的褒贬一并展现出来。因此内容不像某些所谓的人工智能教授搜罗堆砌名词术语的书籍那样空大乏，但在文字叙述的达和雅上还欠些火候。引用一下豆瓣上对此书名副其实的简介：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;从奠基人物、历史事件、学术理论、研究成果、技术应用等5个维度全面读懂人工智能。本书以时间为主线，用专业的知识、通俗的语言、巧妙的内容组织方式，详细讲解了人工智能这个学科的全貌、能解决什么问题、面临怎样的困难、尝试过哪些努力、取得过多少成绩、未来将向何方发展，尽可能消除人工智能的神秘感，把阳春白雪的人工智能从科学的殿堂推向公众面前。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;站在这些前人的肩膀上，结合人工智能最新的进展，在此整理一番人工智能的发展历程，并加入跨学科的思考所得。&lt;/p&gt;
+&lt;h2 id=&#34;理论开端&#34;&gt;理论开端&lt;/h2&gt;
+&lt;h3 id=&#34;可形式化与可计算&#34;&gt;可形式化与可计算&lt;/h3&gt;
+&lt;p&gt;1900年，数学家大卫·希尔伯特于向国际数学界提出了著名的“二十三个数学问题”，其中第二个和第十个问题与人工智能的&lt;strong&gt;理论可能性&lt;/strong&gt;和&lt;strong&gt;实现可能性&lt;/strong&gt;紧密相关：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;问题二：&lt;strong&gt;算术公理的一致性证明&lt;/strong&gt;：证明在算术系统中，即在基本的算术运算（加法、乘法等）和数的概念基础上，不存在能够同时成立又相互矛盾的定理。&lt;/li&gt;
+&lt;li&gt;问题十：&lt;strong&gt;丢番图方程的可解性判定&lt;/strong&gt;：是否存在一种算法，可以通过有限步骤判断任意给定的丢番图方程（Diophantine equation）是否有整数解。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1931年库尔特·哥德尔提出了著名的&lt;strong&gt;哥德尔不完备定理&lt;/strong&gt;证否问题二。哥德尔不完备定理表明，在任何足够复杂形式系统中，总存在一些命题是无法在这个系统内部被证明或证伪，即该系统是不完备的，存在逻辑矛盾的表述。典型示例如语言符号系统中的：“这句话是错的”。&lt;/p&gt;
+&lt;p&gt;1970年尤里·马季亚谢维奇证明了无法通过固定的算法步骤来判断所有丢番图方程是否具有整数解，从而证否了问题十。问题十和图灵停机问题是等价的。图灵停机问题（Halting Problem）图灵在1936年提出的，该问题是说：是否存在一个算法对于任意给定的程序和输入，可以判定程序最终会停止运行还是会无限期地运行下去。图灵自己通过反证法证明图灵停机是不可判定的。&lt;/p&gt;
+&lt;p&gt;这两个问题都被证否了，也就是说：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;不是所有问题都可以被形式系统所表征。&lt;/li&gt;
+&lt;li&gt;不能所有被形式系统表征的问题都可以通过计算来解决。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于问题的范围大于可形式化的范围，而可形式化的范围又大于可计算的范围，所以可形式化和可计算理论就限定了机器计算的边界。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>人工智能：对涌现与智能的再思考</title>
       <link>https://luozhaohui.github.io/post/2025/2025-02-15-thinking-about-agi/</link>
