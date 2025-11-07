@@ -33,14 +33,13 @@
 在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。
 " />
 
-  <meta name="keywords" content="飘飘白云, 罗朝辉, kesalin" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.118.2" />
+<meta name="generator" content="Hugo 0.149.0" />
 
 
 <link rel="canonical" href="https://luozhaohui.github.io/post/2014/2014-12-08-share-screen-with-synergy/" />
@@ -61,7 +60,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.be793c33be77e9d09e889a754d0585a1e64c10400af5e54ee17c529aec5311db.css" integrity="sha256-vnk8M7536dCeiJp1TQWFoeZMEEAK9eVO4XxSmuxTEds=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.75e69c67b8ca8a1eebb9ef5585f7f362389907124f37b1737f8e3114708ce0ab.css" integrity="sha256-deacZ7jKih7rue9VhffzYjiZBxJPN7Fzf44xFHCM4Ks=" media="screen" crossorigin="anonymous">
 
 
 
@@ -69,25 +68,30 @@
 
 
 
-<meta property="og:title" content="利用 Synergy 在多台电脑间共享键盘与鼠标" />
-<meta property="og:description" content="简介
-Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac，Ubuntu，Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 Synergy 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 QuickSynergy 或 SynergyKM 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要注意各机器上的 Synergy 版本要一致，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。
-在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://luozhaohui.github.io/post/2014/2014-12-08-share-screen-with-synergy/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2014-12-08T23:14:00+08:00" />
-<meta property="article:modified_time" content="2014-12-08T23:14:00+08:00" />
-<meta itemprop="name" content="利用 Synergy 在多台电脑间共享键盘与鼠标">
-<meta itemprop="description" content="简介
-Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac，Ubuntu，Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 Synergy 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 QuickSynergy 或 SynergyKM 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要注意各机器上的 Synergy 版本要一致，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。
-在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。"><meta itemprop="datePublished" content="2014-12-08T23:14:00+08:00" />
-<meta itemprop="dateModified" content="2014-12-08T23:14:00+08:00" />
-<meta itemprop="wordCount" content="1603">
-<meta itemprop="keywords" content="Synergy,软件," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="利用 Synergy 在多台电脑间共享键盘与鼠标"/>
-<meta name="twitter:description" content="简介
-Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac，Ubuntu，Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 Synergy 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 QuickSynergy 或 SynergyKM 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要注意各机器上的 Synergy 版本要一致，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。
-在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。"/>
+<meta property="og:url" content="https://luozhaohui.github.io/post/2014/2014-12-08-share-screen-with-synergy/">
+  <meta property="og:site_name" content="飘飘白云：所读，所观，所思">
+  <meta property="og:title" content="利用 Synergy 在多台电脑间共享键盘与鼠标">
+  <meta property="og:description" content="简介 Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac，Ubuntu，Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 Synergy 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 QuickSynergy 或 SynergyKM 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要注意各机器上的 Synergy 版本要一致，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。
+在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。">
+  <meta property="og:locale" content="zh_cn">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2014-12-08T23:14:00+08:00">
+    <meta property="article:modified_time" content="2014-12-08T23:14:00+08:00">
+    <meta property="article:tag" content="Synergy">
+    <meta property="article:tag" content="软件">
+
+  <meta itemprop="name" content="利用 Synergy 在多台电脑间共享键盘与鼠标">
+  <meta itemprop="description" content="简介 Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac，Ubuntu，Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 Synergy 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 QuickSynergy 或 SynergyKM 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要注意各机器上的 Synergy 版本要一致，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。
+在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。">
+  <meta itemprop="datePublished" content="2014-12-08T23:14:00+08:00">
+  <meta itemprop="dateModified" content="2014-12-08T23:14:00+08:00">
+  <meta itemprop="wordCount" content="1603">
+  <meta itemprop="keywords" content="Synergy,软件">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="利用 Synergy 在多台电脑间共享键盘与鼠标">
+  <meta name="twitter:description" content="简介 Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac，Ubuntu，Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 Synergy 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 QuickSynergy 或 SynergyKM 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要注意各机器上的 Synergy 版本要一致，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。
+在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。">
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -107,7 +111,7 @@ Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常
 
     <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">飘飘白云</a>
+    <a href="/" class="logo">飘飘白云：所读，所观，所思</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -186,64 +190,6 @@ Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常
 
 
     
-      
-
-
-
-
-
-
-  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
-  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
-
-
-
-
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-<div class="pswp__bg"></div>
-
-<div class="pswp__scroll-wrap">
-    
-    <div class="pswp__container">
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-    </div>
-    
-    <div class="pswp__ui pswp__ui--hidden">
-    <div class="pswp__top-bar">
-      
-      <div class="pswp__counter"></div>
-      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-      <button class="pswp__button pswp__button--share" title="Share"></button>
-      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-      
-      
-      <div class="pswp__preloader">
-        <div class="pswp__preloader__icn">
-          <div class="pswp__preloader__cut">
-            <div class="pswp__preloader__donut"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-      <div class="pswp__share-tooltip"></div>
-    </div>
-    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-    </button>
-    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-    </button>
-    <div class="pswp__caption">
-      <div class="pswp__caption__center"></div>
-    </div>
-    </div>
-    </div>
-</div>
-
-    
 
     
 
@@ -254,7 +200,7 @@ Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常
       <div class="logo-wrapper">
   <a href="/" class="logo">
     
-      飘飘白云
+      飘飘白云：所读，所观，所思
     
   </a>
 </div>
@@ -383,10 +329,7 @@ Synergy 是一款相当不错的跨平台共享桌面的工具软件，我时常
 
 
   <div class="post-meta__right">
-    <span class="post-meta-more">
-        约 1603 字 -
-        预计阅读 4 分钟
-      </span>
+    
 
     <div class="post-meta-category">
         <a href="https://luozhaohui.github.io/categories/%E6%8A%80%E8%89%BA/"> 技艺 </a>
@@ -473,24 +416,6 @@ Mac 版 QuickSynergy 界面比 Ubuntu 版要简洁一些，启动 QuickSynergy�
 
         
         
-<div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">文章作者</span>
-    <span class="item-content">飘飘白云</span>
-  </p>
-  <p class="copyright-item">
-    <span class="item-title">上次更新</span>
-    <span class="item-content">
-      2014-12-08
-      
-    </span>
-  </p>
-  
-  <p class="copyright-item">
-    <span class="item-title">许可协议</span>
-    <span class="item-content"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">自由转载-非商用-非衍生-保持署名 4.0 国际许可协议</a>进行许可。</span>
-  </p>
-</div>
 
 
 
@@ -609,19 +534,7 @@ Mac 版 QuickSynergy 界面比 Ubuntu 版要简洁一些，启动 QuickSynergy�
     </div>
 
     
-    <nav class="toc" id="toc">
-    <div class="toc-title">文章目录</div>
-    <div class="toc-content custom-scrollbar">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#简介">简介</a></li>
-    <li><a href="#工具下载">工具下载</a></li>
-    <li><a href="#安装配置">安装配置</a></li>
-    <li><a href="#参考链接">参考链接</a></li>
-  </ul>
-</nav>
-    </div>
-  </nav>
+    
 
 
   </div>
@@ -725,7 +638,7 @@ Mac 版 QuickSynergy 界面比 Ubuntu 版要简洁一些，启动 QuickSynergy�
 
 
 
-<script type="text/javascript" src="/js/main.7e0b0eae1fcab1b0cc1d18b9902a972b3b0001926ae74fc9ba1c37eeb1053573.js" integrity="sha256-fgsOrh/KsbDMHRi5kCqXKzsAAZJq50/Juhw37rEFNXM=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/main.f62f0fcbd973595351eeeefb324854b3665e976c1f8c192d43ae9de750f8fd10.js" integrity="sha256-9i8Py9lzWVNR7u77MkhUs2Zel2wfjBktQ66d51D4/RA=" crossorigin="anonymous"></script>
 
 
 
@@ -737,11 +650,6 @@ Mac 版 QuickSynergy 界面比 Ubuntu 版要简洁一些，启动 QuickSynergy�
 
 
 
-
-  
-    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
-    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
-  
 
 
 

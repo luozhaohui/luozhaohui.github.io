@@ -6,14 +6,19 @@
     <description>Recent content in 宇宙 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 26 Apr 2025 14:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/tags/%E5%AE%87%E5%AE%99/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 26 Apr 2025 14:14:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://luozhaohui.github.io/tags/%E5%AE%87%E5%AE%99/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>《大爆炸简史》：宇宙观的范式革命</title>
       <link>https://luozhaohui.github.io/post/2025/2025-04-26-big-bang/</link>
       <pubDate>Sat, 26 Apr 2025 14:14:00 +0800</pubDate>
       
       <guid>https://luozhaohui.github.io/post/2025/2025-04-26-big-bang/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+      
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;《大爆炸简史》由科普名家&lt;strong&gt;西蒙·辛格&lt;/strong&gt;撰写，书中通过科学家的探索与争论，展现了大爆炸理论如何从异想天开的假说逐渐成为现代宇宙学的核心。大爆炸理论揭示了宇宙的起源，是集体智慧的历史结晶，凝聚了哥白尼、第谷、开普勒、伽利略、牛顿、爱因斯坦、赫歇尔（恒星亮度正比于距离）、莱维特（造父变星亮度周期变化）、哈金斯（恒星光谱-多普勒频移）、弗里德曼及勒迈特（膨胀宇宙）、哈勃（室女星座独立、星系退行验证宇宙膨胀）、伽莫夫（大爆炸理论、氢氦丰度，学生阿尔弗及赫尔曼，及预言宇宙微波背景辐射-CMB）、霍伊尔（氢核聚变为碳）、彭齐亚斯及威尔逊（验证CMB）、COBE（宇宙背景探测，CMB涨落-星系成因）、古斯（暴胀理论）、霍金及彭罗斯（量子引力理论）等许多科学家的贡献。&lt;/p&gt;
 &lt;h2 id=&#34;科学思想的萌芽&#34;&gt;科学思想的萌芽&lt;/h2&gt;
 &lt;p&gt;人类对宇宙起源的追问始于远古神话，但真正以理性探索自然规律则始于古希腊。古希腊哲学家如&lt;strong&gt;色诺芬&lt;/strong&gt;与&lt;strong&gt;阿那克西曼德&lt;/strong&gt;摒弃神创论，提出自然现象可通过&lt;strong&gt;观察与逻辑&lt;/strong&gt;解释。亚历山大图书馆馆长&lt;strong&gt;埃拉托色尼&lt;/strong&gt;通过日影、月全食、半月相、日全食等手段依次测量出地球半径、月球半径、地月距离、日地距离、太阳半径。他的想象推理和测量过程如下：&lt;/p&gt;
@@ -25,7 +30,146 @@
 &lt;li&gt;测量太阳半径：日全食时，月球刚好遮住太阳，这样眼睛、月球与太阳构成相似三角形，太阳的半径与月球半径的比例，等于日地距离与地月距离的比例。于是太阳半径可得。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;在这些测量过程中埃拉托色尼只用到了简单的几何运算，这充分证明了强大好奇心结合科学方法的巨大威力。&lt;/p&gt;
-&lt;p&gt;古希腊天文学家&lt;strong&gt;阿里斯塔克斯&lt;/strong&gt;首次提出&lt;strong&gt;日心说&lt;/strong&gt;，却因当时缺乏实证沉寂千年。古罗马天文学家&lt;strong&gt;托勒密&lt;/strong&gt;的&lt;strong&gt;地心模型&lt;/strong&gt;凭借复杂（均论+本轮）但实用的预测能力，成为中世纪天文学圭臬。16世纪，哥白尼在《天球运行论》中复兴&lt;strong&gt;日心说&lt;/strong&gt;（小缺陷：认为行星轨道为完美圆形），但因预测精度不足（还没有认识到引力）未被重视。&lt;strong&gt;第谷·布拉赫&lt;/strong&gt;的精密观测数据经&lt;strong&gt;开普勒&lt;/strong&gt;分析，揭示行星轨道实为椭圆，修正了日心说的核心假设。&lt;strong&gt;伽利略&lt;/strong&gt;则通过望远镜发现木星卫星与金星相位，为日心说提供了直观证据。尽管教会压制，科学革命的浪潮已不可阻挡。&lt;/p&gt;</description>
+&lt;p&gt;古希腊天文学家&lt;strong&gt;阿里斯塔克斯&lt;/strong&gt;首次提出&lt;strong&gt;日心说&lt;/strong&gt;，却因当时缺乏实证沉寂千年。古罗马天文学家&lt;strong&gt;托勒密&lt;/strong&gt;的&lt;strong&gt;地心模型&lt;/strong&gt;凭借复杂（均论+本轮）但实用的预测能力，成为中世纪天文学圭臬。16世纪，哥白尼在《天球运行论》中复兴&lt;strong&gt;日心说&lt;/strong&gt;（小缺陷：认为行星轨道为完美圆形），但因预测精度不足（还没有认识到引力）未被重视。&lt;strong&gt;第谷·布拉赫&lt;/strong&gt;的精密观测数据经&lt;strong&gt;开普勒&lt;/strong&gt;分析，揭示行星轨道实为椭圆，修正了日心说的核心假设。&lt;strong&gt;伽利略&lt;/strong&gt;则通过望远镜发现木星卫星与金星相位，为日心说提供了直观证据。尽管教会压制，科学革命的浪潮已不可阻挡。&lt;/p&gt;
+&lt;h2 id=&#34;时空观的颠覆&#34;&gt;时空观的颠覆&lt;/h2&gt;
+&lt;h3 id=&#34;相对论与时空弯曲&#34;&gt;相对论与时空弯曲&lt;/h3&gt;
+&lt;p&gt;20世纪初，&lt;strong&gt;爱因斯坦&lt;/strong&gt;的狭义相对论颠覆牛顿绝对时空观，狭义相对论认为&lt;strong&gt;光速恒定与时空可变性&lt;/strong&gt;，并通过迈克耳孙-莫雷实验得到验证。后来他又提出广义相对论（引力场方程，又称爱因斯坦场方程）描述物质及其运动与时空的几何结构关系，因此引力可以解释为&lt;strong&gt;时空的弯曲&lt;/strong&gt;，并预言了光线在太阳引力场中的偏折现象（引力透镜），后由&lt;strong&gt;爱丁顿&lt;/strong&gt;的日食观测得到验证。物理学家约翰·惠勒对此总结道：&amp;quot;&lt;strong&gt;物质决定时空如何弯曲，时空决定物质如何运动。&lt;/strong&gt;&amp;quot;&lt;/p&gt;
+&lt;p&gt;在求解爱因斯坦场方程的过程中，爱因斯坦发现得到的解会使得宇宙在引力拉引下塌缩，而爱因斯坦却先入为主地假设了一个静态宇宙，因此试图在方程中引入&amp;quot;宇宙常数&amp;quot;以平衡引力，以免宇宙坍缩。但俄罗斯数学家&lt;strong&gt;弗里德曼&lt;/strong&gt;和比利时神父和宇宙学家&lt;strong&gt;勒迈特&lt;/strong&gt;的数学推演却表明宇宙可能在膨胀。&lt;strong&gt;勒迈特&lt;/strong&gt;还提出&amp;quot;原始原子&amp;quot;假说（如果倒拨时钟，膨胀的宇宙必定始于一个点），成为大爆炸理论的雏形。&lt;/p&gt;
+&lt;h3 id=&#34;光谱学&#34;&gt;光谱学&lt;/h3&gt;
+&lt;p&gt;光是电场与磁场的振动，因此光及相关的辐射形式被称为电磁辐射，光波也就是电磁波。电磁波根据波长从短到长，可以分为：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;紫外线：&lt;code&gt;10&lt;/code&gt;到&lt;code&gt;400&lt;/code&gt;纳米&lt;/li&gt;
+&lt;li&gt;可见光：&lt;code&gt;400&lt;/code&gt;到&lt;code&gt;700&lt;/code&gt;纳米&lt;/li&gt;
+&lt;li&gt;红外线：&lt;code&gt;700&lt;/code&gt;纳米到&lt;code&gt;1&lt;/code&gt;毫米&lt;/li&gt;
+&lt;li&gt;微波：&lt;code&gt;1&lt;/code&gt;毫米到&lt;code&gt;1&lt;/code&gt;米&lt;/li&gt;
+&lt;li&gt;射电波：&lt;code&gt;1&lt;/code&gt;米到超过&lt;code&gt;100&lt;/code&gt;公里&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;光子携带无质量的能量（量子形式，一份一份不连续的），而波长与光波能量成反比，波长越短，能量越大。&lt;code&gt;X&lt;/code&gt;射线属于高能紫外线这一波段的短波，这就是为什么&lt;code&gt;X&lt;/code&gt;射线的伤害性大的原因。能量与温度成正比，也就是说恒星温度越高其发射的电磁波的能量就越大，其波长就越短。通过观察恒星发射的光的颜色与不同波长的比例，可以估算恒星的&lt;strong&gt;温度&lt;/strong&gt;。每种类型的原子都能发射特定波长的光，用分光仪分析恒星发射的光可以得到表示一系列波长的特征光谱。通过分析恒星光谱就可以了解恒星的&lt;strong&gt;元素构成&lt;/strong&gt;，因为恒星内部发射的光在穿越恒星表层大气时，特定波长的光会被恒星表层大气中相应的元素吸收掉（谱吸收）。&lt;/p&gt;
+&lt;p&gt;如果假设星系的平均亮度大体相当，那么根据观察到的星系的光亮度（视亮度）就可以衡量星系到地球的&lt;strong&gt;距离&lt;/strong&gt;：视亮度越亮，则星系离地球越近；视亮度越暗，则星系离地球越远。&lt;/p&gt;
+&lt;h3 id=&#34;多普勒效应&#34;&gt;多普勒效应&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;1842&lt;/code&gt;年，奥地利物理学家&lt;strong&gt;多普勒&lt;/strong&gt;发现，如果光源和观察者之间有相对运动，会使观察者接收到的光源波长发生变化。如果光源离我们而去，我们接收到的波长变长；如果光源朝我们而来，我们接收到的波长变短，这种现象称为&lt;strong&gt;多普勒效应&lt;/strong&gt;。对于可见光来说，波长变长，就是往红光方向移动，所以光源离我们而去时叫做&lt;strong&gt;红移&lt;/strong&gt;。反之，光源朝我们而来波长往蓝光方向移动，就叫&lt;strong&gt;蓝移&lt;/strong&gt;。通过观察星系光谱的红移程度，可以计算出星系相对于地球的退行速度。&lt;/p&gt;
+&lt;h3 id=&#34;造父变星&#34;&gt;造父变星&lt;/h3&gt;
+&lt;p&gt;造父变星处于一种周期性的涨落状态。当造父变星的温度相对较低时，其膨胀力无法抵消引力，从而导致恒星收缩。这种收缩使得处于恒星核心区的燃料被压缩，从而有更多的能量被产生出来加热恒星，恒星受热后又开始膨胀。在膨胀期间及膨胀之后，能量被释放掉，于是恒星又开始冷却和收缩，这个过程就这样不断地循环往复。收缩阶段压缩了恒星的外层，这导致它变得更加不透明，从而导致造父变星处于昏暗阶段。于是在地球上可以观察造父变星的视亮度呈现出周期性的变化。莱维特通过观察发现造父变星的真实亮度正比于其亮度变化的周期长度，而视亮度与真实亮度之比是到地球距离的指标。因此观察某个星系中的造父变星的亮度变化周期，就可以计算出星系到地球的距离。&lt;/p&gt;
+&lt;h3 id=&#34;哈勃定律&#34;&gt;哈勃定律&lt;/h3&gt;
+&lt;p&gt;哈勃正是通过观察&lt;strong&gt;仙女座星云&lt;/strong&gt;中的造父变星计算出仙女座星云到地球的距离，首先确认了星云是独立的星系而不是银河系的一部分，这大大地扩大了人类所理解的宇宙范围。然后哈勃对&lt;strong&gt;星系红移&lt;/strong&gt;的规律进行研究，于1929年，他总结出一个规律：星系的退行速度与它离我们的距离成正比，后来被称为哈勃定律。这为宇宙膨胀提供了首个直接证据。&lt;/p&gt;
+&lt;h3 id=&#34;宇宙年龄&#34;&gt;宇宙年龄&lt;/h3&gt;
+&lt;p&gt;根据哈勃定律，远离我们的星系的速度与其距离成正比，通过测量遥远星系的退行速度和距离就可以计算出宇宙的&lt;strong&gt;膨胀速率&lt;/strong&gt;（即&lt;strong&gt;哈勃常数&lt;/strong&gt;），知道宇宙的膨胀速率，就可以反推宇宙从一个点开始膨胀的时间，从而估计宇宙年龄。&lt;/p&gt;
+&lt;p&gt;宇宙早期发出波长约&lt;code&gt;0.97&lt;/code&gt;微米的电磁辐射，随着时间推移以及宇宙膨胀，这些光经历了显著的红移，波长扩展至现今的微波波段，约为 &lt;code&gt;1&lt;/code&gt; 毫米。由于宇宙一直在膨胀，相比于光速宇宙又是如此之大，宇宙早期发出的光到达地球需要很长的时间，因此今天我们探测到的微波辐射就像一个时空胶囊，携带着宇宙早期的特征信息。如距离地球&lt;code&gt;130&lt;/code&gt;亿光年的星系发出的光，展现的是宇宙诞生后约&lt;code&gt;8&lt;/code&gt;亿年的状态。根据这些特征信息，再结合宇宙学参数（如物质密度、暗能量比例等），可以构建出宇宙演化历史，从而计算出宇宙年龄。&lt;/p&gt;
+&lt;p&gt;此外，更早期的光都还没有到达地球，因此我们可见的宇宙存在一个界限（视界），界限之外是一片无知的漆黑。&lt;/p&gt;
+&lt;p&gt;因此，只需要分析星系或恒星发射出的光（电磁辐射），我们就可以了解该星系或恒星的温度、元素构成、退行速度以及到地球的距离，由此还可以计算宇宙的年龄以及不同年龄阶段的状态。&lt;/p&gt;
+&lt;h2 id=&#34;创生与永恒的较量&#34;&gt;创生与永恒的较量&lt;/h2&gt;
+&lt;p&gt;20世纪40年代，原籍苏联的&lt;strong&gt;伽莫夫、阿尔弗和赫尔曼&lt;/strong&gt;美国三人组提出：宇宙初期的高温高密环境存在一个轻元素核合成的时间窗口，可解释当今宇宙中&lt;strong&gt;氢、氦元素的丰度分布&lt;/strong&gt;，并预言存在宇宙早期的&amp;quot;化石&amp;quot;&lt;strong&gt;宇宙微波背景（CMB）辐射&lt;/strong&gt;，但这一预言长期被忽视。与此同时，&lt;strong&gt;霍伊尔、邦迪和戈尔德&lt;/strong&gt;英国剑桥三人组则提出&amp;quot;稳恒态模型&amp;quot;，主张宇宙通过不断产生新物质来填充星系退行留下的空隙，从而使宇宙的总体密度保持不变呈稳恒态。两派争论从学界蔓延至公众领域，并因霍伊尔、伽莫夫和其他宇宙学家借助于各种科普书籍和广播宣传，成为科学史上著名的&amp;quot;宇宙学大战&amp;quot;。&lt;/p&gt;
+&lt;p&gt;争议中，&lt;strong&gt;巴德&lt;/strong&gt;通过区分两类造父变星，重新校准星系距离尺度，进而向上修正大爆炸理论下的宇宙年龄，化解了大爆炸理论下宇宙比恒星年龄年轻的矛盾。&lt;/p&gt;
+&lt;h2 id=&#34;元素的诞生&#34;&gt;元素的诞生&lt;/h2&gt;
+&lt;p&gt;哈勃通过观测到星系红移证实了宇宙在膨胀，如果倒拨时钟，膨胀的宇宙应该有一个开端，因此需要一套理论机制来解释为什么宇宙能&lt;strong&gt;从无到有&lt;/strong&gt;演化出今天的样子。伽莫夫运用其核物理学知识，提出早期宇宙处于极高温度（约亿亿度）和极高密度的状态，使原始&lt;strong&gt;等离子汤&lt;/strong&gt;中的质子、中子很容易结合成原子核，随着膨胀继续、能量释放、温度下降，因而能通过核聚变产生稳定的轻元素原子（主要是氢和氦）。而霍伊尔则打通了从轻元素聚合成重元素的关键一环（从氦到碳）。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;人存原理&lt;/strong&gt;: 由于人类已知是一种存在，因此物理定律必然是以生命存在为前提的。极端的人存原理甚至认为，宇宙之所以设计成现在这个样子就是要允许生命存在。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;霍伊尔&lt;/strong&gt;在研究恒星核合成时，利用人存原理发现碳的生成依赖一种特定激发态（&lt;code&gt;7.65&lt;/code&gt;兆电子伏），其存在后来被实验证实，因此氦可聚变为铍，然后再变成碳。某种特定类型恒星上的元素合成链：&lt;strong&gt;氦聚变成碳，碳变成更重的元素&lt;/strong&gt;。这一发现支持了恒星可合成重元素，核物理的发展为大爆炸理论提供了更多依据。但宇宙中如此高的氦丰度（24%）仍需大爆炸理论解释，因为恒星核合成中产生氦的速度相当缓慢，根据宇宙演化的过程计算，产生不了占比如此高的氦。&lt;/p&gt;
+&lt;h2 id=&#34;射电天文学与cmb的发现&#34;&gt;射电天文学与CMB的发现&lt;/h2&gt;
+&lt;p&gt;1932年，&lt;strong&gt;卡尔·央斯基&lt;/strong&gt;意外发现银河系射电辐射（射电波），开创射电天文学新领域。&lt;strong&gt;马丁·赖尔&lt;/strong&gt;通过射电源普查发现，距离越遥远射电星系分布的密度就越高，从而得出星系越远越古老，这符合大爆炸理论的演化预期。1965年，&lt;strong&gt;彭齐亚斯与威尔逊&lt;/strong&gt;在调试天线时，意外探测到均匀的微波噪声，经&lt;strong&gt;迪克&lt;/strong&gt;团队确认，这正是预言中的CMB辐射。这一发现成为大爆炸理论的&amp;quot;决定性证据&amp;quot;，稳恒态模型逐渐退出历史舞台。&lt;/p&gt;
+&lt;p&gt;1992年，&lt;code&gt;COBE&lt;/code&gt;卫星精确测量到&lt;code&gt;CMB&lt;/code&gt;的微小温度涨落（约十万分之一），揭示宇宙早期&lt;strong&gt;密度波动&lt;/strong&gt;如何孕育出星系结构。这些波动成为验证&lt;strong&gt;暴胀理论&lt;/strong&gt;的关键线索。&lt;/p&gt;
+&lt;h2 id=&#34;暴胀与暗宇宙&#34;&gt;暴胀与暗宇宙&lt;/h2&gt;
+&lt;p&gt;今天的星系分布是大爆炸后大约&lt;code&gt;30万&lt;/code&gt;年里宇宙密度细微波动的结果，但这些密度变化的起因是什么？为什么我们的宇宙是平直的，什么时候它可能是弯曲的？&lt;/p&gt;
+&lt;p&gt;20世纪80年代，&lt;strong&gt;阿兰·古斯&lt;/strong&gt;提出&lt;strong&gt;暴胀理论&lt;/strong&gt;：宇宙诞生后 &lt;code&gt;10⁻³⁶&lt;/code&gt; 秒内经历指数级膨胀，体积暴增 &lt;code&gt;10^26&lt;/code&gt; 倍。新生宇宙的密度虽然只有微不足道的变化，但暴胀会放大这些微小变化，从而导致&lt;code&gt;30&lt;/code&gt;万年后为天文学家所知晓的显著变化。这一过程解释了宇宙的&lt;strong&gt;平坦性、均匀性&lt;/strong&gt;，并放大了量子涨落形成星系种子。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;WMAP&lt;/code&gt;卫星数据显示，&lt;strong&gt;普通物质仅占宇宙成分的&lt;code&gt;4%&lt;/code&gt;，暗物质占&lt;code&gt;23%&lt;/code&gt;，暗能量占&lt;code&gt;73%&lt;/code&gt;&lt;/strong&gt;——正是暗能量使得宇宙密度稍稍大于临界密度（类比于火箭的逃逸临界速度）从而平衡引力驱动宇宙加速膨胀。暗物质与暗能量成为当代宇宙学最大谜题。&lt;strong&gt;暗物质通过引力束缚星系&lt;/strong&gt;，其本质可能是未知粒子（如弱相互作用粒子&lt;code&gt;WIMP&lt;/code&gt;）；暗能量则表现为时空固有属性，可能与量子真空能相关。两者的性质探究将重塑人类对物质与能量的认知。&lt;/p&gt;
+&lt;h2 id=&#34;宇宙演化概览&#34;&gt;宇宙演化概览&lt;/h2&gt;
+&lt;p&gt;经过众多的理论推演及多方实验和观察验证，大爆炸理论克服了如下难题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;宇宙年龄问题&lt;/strong&gt;：早期估算的宇宙年龄小于恒星年龄，后经巴德和桑德奇修正星系距离尺度，矛盾得以解决。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;氢和氦丰度&lt;/strong&gt;：光谱分析显示宇宙中分布着75%的氢和23%的氦，这是在宇宙早期短暂的时间窗口中产生的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;星系和恒星的形成&lt;/strong&gt;：宇宙早期密度的细微起伏，在大爆炸膨胀中急剧放大，使得局部的物质在引力下聚集成团。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;重元素起源&lt;/strong&gt;：霍伊尔的恒星核合成理论解释了碳等较重元素的形成。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;各向同性&lt;/strong&gt;：古斯提出宇宙初期经历指数级膨胀，解决了平坦性和均匀性问题，并预言了CMB的微小涨落。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;从而成功解释了宇宙诞生与演化的过程：&lt;/p&gt;
+&lt;h3 id=&#34;1-大爆炸---普朗克时期&#34;&gt;1. 大爆炸 - 普朗克时期&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：&lt;code&gt;0&lt;/code&gt; 秒到 &lt;code&gt;10⁻⁴³&lt;/code&gt; 秒&lt;/li&gt;
+&lt;li&gt;物理定律：所有目前知道的宏观（引力）与微观（量子）物理定律都失效，设想了一种万有理论（超弦理论？量子引力理论？），四种基本力统一为一种超力。&lt;/li&gt;
+&lt;li&gt;状态：物质和能量曾被压缩为一个点（奇点），质能不分，然后有一个全能的大爆炸，空间、时间和强烈的能量都在大爆炸的瞬间出现。四种基本力（引力、电磁力、弱核力、强核力）在此时是统一的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-大统一时代引力分离&#34;&gt;2. 大统一时代：引力分离&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：&lt;code&gt;10⁻⁴³&lt;/code&gt; 秒到 &lt;code&gt;10⁻³⁶&lt;/code&gt; 秒&lt;/li&gt;
+&lt;li&gt;物理定律：大统一理论&lt;/li&gt;
+&lt;li&gt;状态：引力从其他基本力里分离出来，物质与能量是一种流动的可互换形式，称为质能。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-暴胀开始强核力分离&#34;&gt;3. 暴胀开始：强核力分离&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：&lt;code&gt;10⁻³⁶&lt;/code&gt; 秒到 &lt;code&gt;10⁻³²&lt;/code&gt; 秒&lt;/li&gt;
+&lt;li&gt;物理定律：电弱理论&lt;/li&gt;
+&lt;li&gt;状态：急剧膨胀，产生大量的质能，强核力从剩余两个基本力中分离出来，宇宙由光子（电磁能量包）主导。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-暴胀结束正反粒子湮灭&#34;&gt;4. 暴胀结束：正反粒子湮灭&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：&lt;code&gt;10⁻³²&lt;/code&gt; 秒到 &lt;code&gt;10⁻¹²&lt;/code&gt; 秒&lt;/li&gt;
+&lt;li&gt;温度：&lt;code&gt;10&lt;/code&gt;亿亿亿摄氏度到几千万亿摄氏度&lt;/li&gt;
+&lt;li&gt;直径：少于一千米&lt;/li&gt;
+&lt;li&gt;物理定律：电磁理论&lt;/li&gt;
+&lt;li&gt;状态：大量粒子与反粒子（夸克-反夸克）自发地由能量形成，然后湮灭回归为能量。每产生一亿个反夸克，就会对应产生一亿零一个普通夸克。夸克比反夸克要多一点点，这就是为什么今天的世界是由物质而不是反物质主导的原因。粒子海洋有时被称为夸克-胶子等离子体。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;5-夸克时期弱核力分离&#34;&gt;5. 夸克时期：弱核力分离&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：&lt;code&gt;10⁻¹²&lt;/code&gt; 秒到 &lt;code&gt;10⁻⁶&lt;/code&gt; 秒&lt;/li&gt;
+&lt;li&gt;温度：几千万亿摄氏度到十万亿摄氏度&lt;/li&gt;
+&lt;li&gt;直径：一亿千米&lt;/li&gt;
+&lt;li&gt;状态：弱核力与电磁力分离，至此四种基本力都分离了，物理学的基本力与定律延续至今。随着宇宙的冷却夸克能够在不破坏彼此的情况下存在，胶子也随之出现。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;6-强子时期质子和中子形成&#34;&gt;6. 强子时期：质子和中子形成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：&lt;code&gt;10⁻⁶&lt;/code&gt; 秒到 &lt;code&gt;3&lt;/code&gt; 分钟&lt;/li&gt;
+&lt;li&gt;温度：十万亿摄氏度到十亿摄氏度&lt;/li&gt;
+&lt;li&gt;直径：千亿千米&lt;/li&gt;
+&lt;li&gt;状态：宇宙进一步冷却，夸克通过胶子结合形成复合粒子，如质子和中子，而反夸克则结合起来形成反质子和反中子。到一秒时，宇宙已经冷却到&lt;code&gt;100&lt;/code&gt;亿度，反物质冻结，不再有粒子-反粒子由能量产出。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;7-核子时期原子核合成&#34;&gt;7. 核子时期：原子核合成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：&lt;code&gt;3&lt;/code&gt; 分钟到 &lt;code&gt;38&lt;/code&gt; 万年&lt;/li&gt;
+&lt;li&gt;温度：十亿摄氏度到&lt;code&gt;3000&lt;/code&gt;摄氏&lt;/li&gt;
+&lt;li&gt;直径：万亿千米&lt;/li&gt;
+&lt;li&gt;状态：质子和中子结合成&lt;code&gt;氦-3&lt;/code&gt;原子核和少量其他如&lt;code&gt;氦-4&lt;/code&gt;、&lt;code&gt;锂-7&lt;/code&gt;原子核，所有自由中子都被结合了，而自由质子依然存在。温度是如此之高，原子核无法约束住的电子，而处于一种原子核与自由电子各自独立的混合态。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;8-重组时期---原子合成&#34;&gt;8. 重组时期 - 原子合成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：&lt;code&gt;38&lt;/code&gt; 万年&lt;/li&gt;
+&lt;li&gt;温度：&lt;code&gt;3000&lt;/code&gt;摄氏度&lt;/li&gt;
+&lt;li&gt;直径：一亿光年&lt;/li&gt;
+&lt;li&gt;状态：温度冷却下来，电子速度减缓并被原子核俘获，电子与质子结合形成稳定的氢原子、氘原子（重氢）、氦原子、锂原子。这一过程被称为&amp;quot;重组&amp;quot;，宇宙从等离子态转变为中性气体态。光子也摆脱粒子散射的束缚，第一次可以在空间中自由传播，形成宇宙微波背景辐射（CMB）——这是伽莫夫、阿尔弗与赫尔曼的理论预言，最终由彭齐亚斯与威尔逊于&lt;code&gt;1965&lt;/code&gt;年意外探测到。宇宙从此变得透明。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;9-第一批恒星形成&#34;&gt;9. 第一批恒星形成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：两亿年&lt;/li&gt;
+&lt;li&gt;温度：随着宇宙的膨胀温度进一步下降&lt;/li&gt;
+&lt;li&gt;状态：暴胀过程急剧放大了早期密度的细微波动，在引力作用下，密度高的区域逐渐吸引更多的物质，形成云团。如此循环，密度变得更大，温度变得更高。在这个过程中，当温度高到一定程度，氢和氦原子核核聚变为碳、氧等至铁为止的中等质量的稳定元素，并释放大量辐射（能量），从而形成第一代恒星。当恒星的燃料（氢和氦原子核）消耗殆尽，因无核聚变平衡引力，大质量恒星向内坍缩，温度急剧升高，最终发生超新星爆发。比铁还重的元素只有在超新星剧烈爆发的条件下才会核成。第一代恒星拥有巨大的质量，引力非常大，氢原子核的消耗也非常快，因此寿命非常短，只存在了几百万年。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;10-第一批星系形成&#34;&gt;10. 第一批星系形成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：四亿年&lt;/li&gt;
+&lt;li&gt;温度：随着宇宙的膨胀温度进一步下降&lt;/li&gt;
+&lt;li&gt;状态：恒星的质量决定了自身命运的走向以及重元素的核成，恒星最终要么爆炸要么成为的黑洞一部分。通过恒星的死亡爆炸，核成的众多元素分散到更广阔的宇宙中，然后它与星际物质以及其它死亡恒星的碎片混合成巨大的分子云，分子云最终会坍缩成新的恒星。如此循环迭代，新的恒星在暗物质集中区域周围聚集，由于星团相互吸引，第一批星系形成。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;宇宙诞生&lt;code&gt;92&lt;/code&gt;亿年后太阳系形成，根据推算，太阳是第三代恒星。正是由于在恒星上形成了诸如碳、氧、氮、磷和钾等元素，为生命诞生与演化奠定了物质基础。单个原子可以和分子云中的其它原子结合，形成复杂的分子，其中一些对生命的形成至关重要（如最简单的氨基酸-谷氨酸）。宇宙诞生后&lt;code&gt;100&lt;/code&gt;亿年，地球上出现生命。宇宙诞生后&lt;code&gt;137&lt;/code&gt;亿年的今天，人类文明出现并繁衍至今。&lt;/p&gt;
+&lt;h2 id=&#34;未解之谜&#34;&gt;未解之谜&lt;/h2&gt;
+&lt;p&gt;尽管大爆炸理论已被广泛接受，但仍面临许多未解之谜：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;奇点困境&lt;/strong&gt;：宇宙起源时刻的高温高压使物理定律失效，需量子引力理论突破。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多元宇宙假说&lt;/strong&gt;：暴胀理论暗示可能存在无数宇宙，构成&amp;quot;多元宇宙&amp;quot;，但无法实证。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;暗物质与暗能量&lt;/strong&gt;：暗物质与暗能量的构成与性质、产生与演化的过程依然未知。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;人存原理争议&lt;/strong&gt;：宇宙基本常数（如氢聚变为氦的质能转换率、电磁力与引力比、暗能量占比、宇宙密度与临界密度之比等，参考《六个数》）的&amp;quot;&lt;strong&gt;精细调谐&lt;/strong&gt;&amp;ldquo;是否暗示存在某种设计？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;而对于神学上等价的&amp;rdquo;&lt;strong&gt;大爆炸之前是什么？&lt;/strong&gt;&amp;ldquo;问题，哲学家暨神学家圣奥古斯丁在《忏悔录》里引用了他听来的一个回答：&amp;ldquo;在创造宇宙之前上帝在做什么？在创造天地之前，上帝创造了地狱，专用于像你这样的问这种问题的人。&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;范式革命&#34;&gt;范式革命&lt;/h2&gt;
+&lt;p&gt;在认识宇宙的历史过程中，人类的宇宙观经历了五次范式转变，当前正处于第六次变革前沿：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;神话到逻辑：从创世神话到古希腊自然哲学&lt;/li&gt;
+&lt;li&gt;地心到日心：从托勒密到哥白尼、开普勒、伽利略&lt;/li&gt;
+&lt;li&gt;绝对时空到相对时空：爱因斯坦相对论&lt;/li&gt;
+&lt;li&gt;静态到膨胀宇宙：星系红移和哈勃定律&lt;/li&gt;
+&lt;li&gt;创生与永恒之争：大爆炸 &lt;code&gt;VS&lt;/code&gt; 稳恒态&lt;/li&gt;
+&lt;li&gt;暗宇宙与量子引力：暗物质、暗能量与量子引力&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;西蒙·辛格以史料钩沉与理论解构的双重视角，以人类对宇宙的认知迭代为主线，按照时间顺序，通过非技术性的故事化表述，用&lt;strong&gt;日常隐喻解构复杂理论&lt;/strong&gt;，并结合罕见的照片、手稿等来展现科学如何通过质疑、验证与迭代逼近真实。从托勒密本轮到大爆炸理论，&lt;strong&gt;每一次突破都凝聚着观测精度提升、数学工具革新与思维范式转换，每一步突破都依赖好奇心与批判性思维、理论与观测的结合&lt;/strong&gt;。正如微生物学家科尼利厄斯·范·尼尔所言：&amp;rdquo;&lt;strong&gt;本质上说，科学就是不断地追求对我们生活的这个世界的那种聪慧、全面的理解。&lt;/strong&gt;&amp;quot;&lt;/p&gt;</description>
+      
     </item>
     
   </channel>

@@ -6,19 +6,171 @@
     <description>Recent content in 贝叶斯 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 21 Oct 2014 23:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Oct 2014 23:14:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://luozhaohui.github.io/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>从贝叶斯定理说开去</title>
       <link>https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/</link>
       <pubDate>Tue, 21 Oct 2014 23:14:00 +0800</pubDate>
       
       <guid>https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/</guid>
-      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+      
+        <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;贝叶斯定理是18世纪英国数学家~~&lt;a href=&#34;http://en.wikipedia.org/wiki/Thomas_Bayes&#34;&gt;托马斯·贝叶斯（Thomas Bayes）&lt;/a&gt;~~提出的重要概率论理论。以下摘一段 &lt;code&gt;Wikipedia&lt;/code&gt; 上的简介：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;所谓的贝叶斯定理源于他生前为解决一个~~“逆向概率”~~问题写的一篇文章，而这篇文章是在他死后才由他的一位朋友发表出来的。在贝叶斯写这篇文章之前，人们已经能够计算“正向概率”，如“假设袋子里面有 &lt;code&gt;N&lt;/code&gt; 个白球，&lt;code&gt;M&lt;/code&gt; 个黑球，你伸手进去摸一把，摸出黑球的概率是多大”。而一个自然而然的问题是反过来：“如果我们事先并不知道袋子里面黑白球的比例，而是闭着眼睛摸出一个（或好几个）球，观察这些取出来的球的颜色之后，那么我们可以就此对袋子里面的黑白球的比例作出什么样的推测”。这个问题，就是所谓的逆向概率问题。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;贝叶斯定理的思想出现在18世纪，但真正大规模派上用途还得等到计算机的出现。因为这个定理需要大规模的数据计算推理才能凸显效果，它在很多计算机应用领域中都大有作为，如自然语言拼写检查、机器学习、推荐系统、图像识别、博弈论等等。&lt;/p&gt;</description>
+&lt;p&gt;所谓的贝叶斯定理源于他生前为解决一个~~“逆向概率”~~问题写的一篇文章，而这篇文章是在他死后才由他的一位朋友发表出来的。在贝叶斯写这篇文章之前，人们已经能够计算“正向概率”，如“假设袋子里面有 &lt;code&gt;N&lt;/code&gt; 个白球，&lt;code&gt;M&lt;/code&gt; 个黑球，你伸手进去摸一把，摸出黑球的概率是多大”。而一个自然而然的问题是反过来：“如果我们事先并不知道袋子里面黑白球的比例，而是闭着眼睛摸出一个（或好几个）球，观察这些取出来的球的颜色之后，那么我们可以就此对袋子里面的黑白球的比例作出什么样的推测”。这个问题，就是所谓的逆向概率问题。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;贝叶斯定理的思想出现在18世纪，但真正大规模派上用途还得等到计算机的出现。因为这个定理需要大规模的数据计算推理才能凸显效果，它在很多计算机应用领域中都大有作为，如自然语言拼写检查、机器学习、推荐系统、图像识别、博弈论等等。&lt;/p&gt;
+&lt;h2 id=&#34;定义&#34;&gt;定义&lt;/h2&gt;
+&lt;p&gt;~~&lt;a href=&#34;http://zh.wikipedia.org/zh/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86&#34;&gt;贝叶斯定理&lt;/a&gt;~~是关于随机事件 &lt;code&gt;A&lt;/code&gt; 和 &lt;code&gt;B&lt;/code&gt; 的&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87&#34;&gt;条件概率&lt;/a&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://upload.wikimedia.org/math/4/6/b/46b680c10ac90b0782843f4bbd0b4a95.png&#34; alt=&#34;贝叶斯定理&#34;&gt;&lt;/p&gt;
+&lt;p&gt;其中&lt;code&gt;P(A|B)&lt;/code&gt;是在 &lt;code&gt;B&lt;/code&gt; 发生的情况下 &lt;code&gt;A&lt;/code&gt; 发生的可能性。&lt;/p&gt;
+&lt;p&gt;在贝叶斯定理中，每个名词都有约定俗成的名称：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;P(A) 是 A 的先验概率，之所以称为“先验”是因为它不考虑任何 B 方面的因素。
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;P(A|B) 是已知 B 发生后 A 的条件概率，也由于得自 B 的取值而被称作 A 的后验概率。
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;P(B|A) 是已知 A 发生后 B 的条件概率，也由于得自 A 的取值而被称作 B 的后验概率。
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;P(B) 是 B 的先验概率，也作标淮化常量（normalizing constant）。
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;按这些术语，贝叶斯定理可表述为：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;后验概率 = (相似度 * 先验概率)/标淮化常量&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;也就是说，后验概率与先验概率和相似度的乘积成正比。&lt;/p&gt;
+&lt;p&gt;另外，比例 &lt;code&gt;P(B|A)/P(B)&lt;/code&gt; 也有时被称作标淮相似度（standardised likelihood），Bayes定理可表述为：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;后验概率 = 标淮相似度 * 先验概率&lt;/p&gt;&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;条件概率&lt;/strong&gt; 就是事件 A 在另外一个事件 B 已经发生条件下的发生概率。条件概率表示为P(A|B)，读作“在 B 发生的条件下 A 发生的概率”。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;联合概率&lt;/strong&gt; 表示两个事件共同发生（数学概念上的交集）的概率。A 与 B 的联合概率表示为&lt;img src=&#34;http://upload.wikimedia.org/math/6/d/e/6de3a4670340b7be5303b63574cb3113.png&#34; alt=&#34;联合概率&#34;&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;推导&#34;&gt;推导&lt;/h2&gt;
+&lt;p&gt;我们可以从条件概率的定义推导出贝叶斯定理。&lt;/p&gt;
+&lt;p&gt;根据条件概率的定义，在事件 B 发生的条件下事件 A 发生的概率为：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://upload.wikimedia.org/math/8/6/9/8694e4193ba45b55403595096b7d23c5.png&#34; alt=&#34;贝叶斯定理&#34;&gt;&lt;/p&gt;
+&lt;p&gt;同样地，在事件 A 发生的条件下事件 B 发生的概率为：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://upload.wikimedia.org/math/8/b/6/8b6c81124815aad54c91c42b3261165d.png&#34; alt=&#34;贝叶斯定理&#34;&gt;&lt;/p&gt;
+&lt;p&gt;结合这两个方程式，我们可以得到：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://upload.wikimedia.org/math/e/f/a/efaf8fda8a92eeb2d8cf70468c20ed5a.png&#34; alt=&#34;贝叶斯定理&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这个引理有时称作概率乘法规则。上式两边同除以 P(A)，若P(A)是非零的，我们可以得到贝叶斯定理:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://upload.wikimedia.org/math/f/1/3/f13abde4811844c29b556a35ca4f55a5.png&#34; alt=&#34;贝叶斯定理&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;解释&#34;&gt;解释&lt;/h2&gt;
+&lt;p&gt;通常，事件 &lt;code&gt;A&lt;/code&gt; 在事件 &lt;code&gt;B&lt;/code&gt; 发生的条件下的概率，与事件 &lt;code&gt;B&lt;/code&gt; 在事件 &lt;code&gt;A&lt;/code&gt; 发生的条件下的概率是不一样的；然而，这两者是有确定关系的，贝叶斯定理就是这种关系的陈述。&lt;/p&gt;
+&lt;p&gt;贝叶斯公式的用途在于通过己知三个概率来推测第四个概率。它的内容是：在 &lt;code&gt;B&lt;/code&gt; 出现的前提下，&lt;code&gt;A&lt;/code&gt; 出现的概率等于 &lt;code&gt;A&lt;/code&gt; 出现的前提下 &lt;code&gt;B&lt;/code&gt; 出现的概率乘以 &lt;code&gt;A&lt;/code&gt; 出现的概率再除以 &lt;code&gt;B&lt;/code&gt; 出现的概率。通过联系 &lt;code&gt;A&lt;/code&gt; 与 &lt;code&gt;B&lt;/code&gt;，计算从一个事件发生的情况下另一事件发生的概率，即从结果上溯到源头（也即逆向概率）。&lt;/p&gt;
+&lt;p&gt;通俗地讲就是当你不能确定某一个事件发生的概率时，你可以依靠与该事件本质属性相关的事件发生的概率去推测该事件发生的概率。用数学语言表达就是：支持某项属性的事件发生得愈多，则该事件发生的的可能性就愈大。这个推理过程有时候也叫贝叶斯推理。&lt;/p&gt;
+&lt;h2 id=&#34;示例&#34;&gt;示例&lt;/h2&gt;
+&lt;h3 id=&#34;示例一应当根据新情况更新先验概率&#34;&gt;示例一：应当根据新情况更新先验概率&lt;/h3&gt;
+&lt;p&gt;《&lt;a href=&#34;http://book.douban.com/subject/1193621/&#34;&gt;决策与判断&lt;/a&gt;》第十二章中讲到人们都有保守主义情结，即使出现了新信息，也不愿意根据新信息来更新先验概率。用前面解释里面的话说就是：新信息是 B 事件不断发生，人们本应该根据这个信息去更新 A 事件发生的概率，但人们却更愿意固守之前估计的 A 事件发生的概率。&lt;/p&gt;
+&lt;p&gt;书中举了这样一个调查案例：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;假设有两个各装了 100 个球的箱子，甲箱子中有 70 个红球，30 个绿球，乙箱子中有 30 个红球，70 个绿球。假设随机选择其中一个箱子，从中拿出一个球记下球色再放回原箱子，如此重复 12 次，记录得到 8 次红球，4 次绿球。问题来了，你认为被选择的箱子是甲箱子的概率有多大？&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;调查结果显示，大部分人都低估了选择的是甲箱子的概率。根据贝叶斯定理，正确答案是 &lt;code&gt;96.7%&lt;/code&gt;。下面容我来详细分析解答。&lt;/p&gt;
+&lt;p&gt;刚开始选择甲乙两箱子的先验概率都是50%，因为是随机二选一（这是贝叶斯定理二选一的特殊形式）。即有：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P(甲) = 0.5， P(乙) = 1 - P(甲)；&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;这时在拿出一个球是红球的情况下，我们就应该根据这个信息来更新选择的是甲箱子的先验概率：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P(甲|红球1) = P(红球|甲) × P(甲) / (P(红球|甲) × P(甲) + (P(红球|乙) × P(乙)))&lt;br&gt;
+P(红球|甲)：甲箱子中拿到红球的概率&lt;br&gt;
+P(红球|乙)：乙箱子中拿到红球的概率&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;因此在出现一个红球的情况下，选择的是甲箱子的先验概率就可被修正为：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P(甲|红球1) = 0.7 × 0.5 / (0.7 × 0.5 + 0.3 × 0.5) = 0.7&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;即在出现一个红球之后，甲乙箱子被选中的先验概率就被修正为：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P(甲) = 0.7， P(乙) = 1 - P(甲) = 0.3；&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;如此重复，直到经历 8 次红球修正（概率增加），4 次绿球修正（概率减少）之后，选择的是甲箱子的概率为：96.7%。&lt;/p&gt;
+&lt;p&gt;我写了一段 Python 代码来解这个问题：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;bayesFunc&lt;/span&gt;(pIsBox1, pBox1, pBox2):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; (pIsBox1 &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; pBox1)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;((pIsBox1 &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; pBox1) &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt; pIsBox1) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; pBox2)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;redGreenBallProblem&lt;/span&gt;():
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    pIsBox1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0.5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# consider 8 red ball&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        pIsBox1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; bayesFunc(pIsBox1, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.7&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.3&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        print &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; After red &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &amp;gt; in 甲 box: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; (i, pIsBox1)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# consider 4 green ball&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        pIsBox1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; bayesFunc(pIsBox1, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.3&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;0.7&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        print &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34; After green &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%d&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; &amp;gt; in 甲 box: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt; (i, pIsBox1)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;redGreenBallProblem()
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;在这个调查问题里面，8 次红球与 4 次绿球出现的顺序并不重要，因为红球的出现总是使选择的是甲箱子的概率增加，而绿球的出现总是减少。因此，为了简化编程，我将红球出现的情况以及绿球出现的情况摆在一起了。&lt;/p&gt;
+&lt;p&gt;程序运行结果如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After red 1 &amp;gt; in 甲 box: 0.700000
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After red 2 &amp;gt; in 甲 box: 0.844828
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After red 3 &amp;gt; in 甲 box: 0.927027
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After red 4 &amp;gt; in 甲 box: 0.967365
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After red 5 &amp;gt; in 甲 box: 0.985748
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After red 6 &amp;gt; in 甲 box: 0.993842
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After red 7 &amp;gt; in 甲 box: 0.997351
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After red 8 &amp;gt; in 甲 box: 0.998863
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After green 1 &amp;gt; in 甲 box: 0.997351
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After green 2 &amp;gt; in 甲 box: 0.993842
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After green 3 &amp;gt; in 甲 box: 0.985748
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;After green 4 &amp;gt; in 甲 box: 0.967365
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;从程序运行结果来看，很明显可以看到红球的出现是增加选择甲箱子的概率，而绿球则相反。&lt;/p&gt;
+&lt;h3 id=&#34;示例二频率更适合用来解答概率问题&#34;&gt;示例二：频率更适合用来解答概率问题&lt;/h3&gt;
+&lt;p&gt;《&lt;a href=&#34;http://book.douban.com/subject/2143904/&#34;&gt;进化心理学&lt;/a&gt;》第十三章(428页)讲到人类的心理从进化角度来看，更偏好使用频率（我最近十次打猎八次有收获）而不是概率（我最近打猎有80%的成功率）。&lt;/p&gt;
+&lt;p&gt;书中举了同一个问题用不同方式表述使得问题的难易程度迥然不同：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;表述一：有一种疾病的发病率是千分之一，医院有一种化验技术可以对这种疾病进行诊断，但是却有百分之五的误诊率（也即是说尽管有百分之五的人没有病，但是化验结果却显示为阳性(即假阳性)）。现在假设一个人的化验结果显示为有病，仅根据这一化验结果推测，那么这个人确实患病的概率有多大？&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;这个问题也可以用贝叶斯定理来解决，不过在看分析之前，你可以先估算下你自己的答案，然后再和正确答案比较。&lt;/p&gt;
+&lt;p&gt;这个问题的分析过程如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;已知先验概率：P(患病) = 0.001，P(正常) = 0.999；&lt;br&gt;
+该化验技术的确诊率（即患病化验结果显示为阳性的概率）为：P(确诊率) = 1.00；&lt;br&gt;
+该化验技术的误诊率（即正常化验结果显示为阳性的概率）为：P(误诊率) = 0.05。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;根据上面的数据，我们就能够推测出一个人化验为阳性的情况下，这个人确实患病的概率有多大：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P(患病|阳性) = P(患病) × P(确诊率) / (P(患病) × P(确诊率) + P(正常) × P(误诊率))&lt;br&gt;
+= 0.001 × 1.00 / (0.001 × 1.00 + 0.999 × 0.05)&lt;br&gt;
+= 0.0198&lt;br&gt;
+= 2%&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;结果让你大吃一惊吧，在没有其他症状增加患病概率的情况下，单凭化验结果显示为阳性来推测的话，其真实患病的概率还不到百分之二。&lt;/p&gt;
+&lt;p&gt;用频率作为信息来记忆或回忆更生动也更容易被提取，想想第一次打猎什么情形，第二次打猎什么情形，历历在目。正因为频率作为信息存储载体保留了事件的形象性，提高了记忆的可得性，因此在进化过程中人类的心理机制优先选择了频率而不是抽象的概率。而且在人类十多万年的进化过程中，出现概率概念的文明进程不过几千年，大脑还没有对进化到更适应抽象的概率的地步。&lt;/p&gt;
+&lt;p&gt;所以这个问题如果换成用频率来表述的话，相信你的答案会大大接近于正确答案。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;表述二：在一千个人中，就有一个人患有X疾病（即发病率为千分之一），有一种化验技术，可以检验是否患有该疾病。如果一个人确实患有该病，化验结果可定显示为阳性。但有时候也会出现误诊，即在一千个完全健康的人中，有五十个人的化验结果显示为阳性（也即是说误诊率为百分之五）。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;换成以频率方式来表述这个问题，答案就显然易见了：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P(患病|阳性) = 1/(1 + 50) = 1/51 = 0.0196 = 2%&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;通过这个例子，我们可以懂得，若能把概率问题转换成频率来表述，即便是需要使用贝叶斯这样复杂定理来计算的问题，也能轻而易举地解答。这就是《&lt;a href=&#34;http://book.douban.com/subject/1135754/&#34;&gt;你的灯亮着么？&lt;/a&gt;》里面提到的“重述问题”的技巧。&lt;/p&gt;
+&lt;h3 id=&#34;示例三在博弈论里面的应用&#34;&gt;示例三：在博弈论里面的应用&lt;/h3&gt;
+&lt;p&gt;挑战者 B 不知道原垄断者 A 是属于高阻挠成本（为阻止 B 进入而花费的成本）类型还是低阻挠成本类型，但B知道，如果 A 属于高阻挠成本类型，B 进入市场时A进行阻挠的概率是 20%（阻扰成本高，因此阻挠概率低）；如果 A 属于低阻挠成本类型，B 进入市场时 A 进行阻挠的概率是 100%。&lt;/p&gt;
+&lt;p&gt;博弈开始时，B 认为 A 属于高阻挠成本企业的概率为 70%，因此，B 估计自己在进入市场时，受到 A 阻挠的概率为：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P(阻挠) = 0.7 × 0.2 + 0.3 × 1.0 = 0.44&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;0.44 是在 B 给定 A 所属类型的先验概率下，A 可能采取阻挠行为的概率。&lt;/p&gt;
+&lt;p&gt;当 B 进入市场时，若 A 确实进行阻挠。根据贝叶斯定理，从 A 进行阻挠这一行为，B 可修正 A 属于高阻挠成本企业的概率为：：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P(高成本阻扰企业) = 0.7 × 0.2 ÷ 0.44 × 1.0 = 0.32&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;根据这一新的先验概率，B 估计自己在进入市场时，受到 A 阻挠的概率为：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P(阻挠) = 0.32 × 0.2 + 0.68 × 1 = 0.744&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;若 B 再一次进入市场时，A 又进行了阻挠。根据贝叶斯定理，从 A 再次进行阻挠这一行为，B 可修正 A 属于高阻挠成本企业的概率为&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P(高成本阻扰企业) = 0.32 × 0.2 ÷ 0.744 × 1.0 = 0.086&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;这样，根据 A 一次又一次的阻挠行为，B 不断修正判断 A 为高阻挠成本的概率（越来越低了），从而越来越倾向于将 A 判断为低阻挠成本企业。&lt;/p&gt;
+&lt;h3 id=&#34;示例四在计算机领域中的应用&#34;&gt;示例四：在计算机领域中的应用&lt;/h3&gt;
+&lt;p&gt;贝叶斯定理在计算机领域中的应用那可是太多了，无论是在机器学习、自然语言处理、图像识别、推荐算法、搜索算法还是垃圾邮件处理中都大有用途。在这些应用中都有一个特点，那就是根据既有输入，在庞大的已有数据库中寻找匹配程度（也即是发生概率）最高的那些项。由于这些话题太大，在这里就不展开了。&lt;/p&gt;
+&lt;p&gt;徐宥翻译过 &lt;code&gt;Peter Norvig&lt;/code&gt; 写的一篇《&lt;a href=&#34;http://norvig.com/spell-correct.html&#34;&gt;怎样写一个拼写检查器&lt;/a&gt;》的文章，作者只用了 20 行 Python 代码就实现了拼写检查/纠错，相当强大。文章也写得深入浅出，推荐看看，&lt;a href=&#34;http://blog.youxu.info/spell-correct.html&#34;&gt;翻译版本在这里&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://zh.wikipedia.org/zh/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86&#34;&gt;WikiPedia 贝叶斯定理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://wiki.mbalib.com/wiki/%E8%B4%9D%E5%8F%B6%E6%96%AF%E6%B3%95%E5%88%99&#34;&gt;Mbalib 贝叶斯法则&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;《&lt;a href=&#34;http://book.douban.com/subject/1193621/&#34;&gt;决策与判断&lt;/a&gt;》&lt;/li&gt;
+&lt;li&gt;《&lt;a href=&#34;http://book.douban.com/subject/2143904/&#34;&gt;进化心理学&lt;/a&gt;》&lt;/li&gt;
+&lt;li&gt;刘未鹏：&lt;a href=&#34;http://mindhacks.cn/2008/09/21/the-magical-bayesian-method/&#34;&gt;数学之美番外篇：平凡而又神奇的贝叶斯方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Peter Norvig，徐宥译：&lt;a href=&#34;http://norvig.com/spell-correct.html&#34;&gt;怎样写一个拼写检查器&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
     </item>
     
   </channel>

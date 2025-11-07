@@ -6,20 +6,50 @@
     <description>Recent content in 可证伪 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 08 Oct 2014 23:14:00 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/tags/%E5%8F%AF%E8%AF%81%E4%BC%AA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Oct 2014 23:14:00 +0800</lastBuildDate>
+    
+        <atom:link href="https://luozhaohui.github.io/tags/%E5%8F%AF%E8%AF%81%E4%BC%AA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>科学理论之可证伪性</title>
       <link>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</link>
       <pubDate>Wed, 08 Oct 2014 23:14:00 +0800</pubDate>
       
       <guid>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</guid>
-      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+      
+        <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7&#34;&gt;可证伪性&lt;/a&gt;&lt;/strong&gt; 是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨 &lt;strong&gt;科学与非科学&lt;/strong&gt; 的一种理论，他认为:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;一切从经验得来的假说、命题和理论都不是科学的，除非它们容许反例存在的可能。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;一切从经验得来的假说、命题和理论都不是科学的，除非它们容许反例存在的可能。&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;定义what&#34;&gt;定义/What&lt;/h2&gt;
-&lt;p&gt;如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。&lt;/p&gt;</description>
+&lt;p&gt;如果一个主张是可证伪的，则至少在理论上存在一种观测的方法（即使实际上没有进行这项观测也无妨），来表明这个主张不符合重言式的标准（即这个主张不总是真的）。对某种描述进行观测的逻辑前提是它描述的事物是存在的。&lt;/p&gt;
+&lt;h2 id=&#34;解释how&#34;&gt;解释/How&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;可证伪性是说要存在被证明为假的这种可能性（即证明为假的方法要存在），但和证明目前是不是可实施并没有关系。&lt;/li&gt;
+&lt;li&gt;可证伪性是科学理论的必要属性，但非充分属性。科学理论必须具备可证伪性，且仍未被证伪。&lt;/li&gt;
+&lt;li&gt;不具备可证伪性的理论都是非科学的。&lt;/li&gt;
+&lt;li&gt;非科学的伦理并非都是伪科学，只有冒称是科学的那些非科学理论才是伪科学。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;深究why&#34;&gt;深究/Why&lt;/h2&gt;
+&lt;p&gt;我们知道归纳与演绎是人类思维方法中的两大法宝。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;归纳：从许多个别的事物中概括出一般性概念、原则或结论的思维方法。&lt;/li&gt;
+&lt;li&gt;演绎：从普遍性的理论知识出发，去认识个别的、特殊的现象的一种逻辑推理方法。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;可证伪性是针对归纳法而言的。由于人类认知和探索的世界有限，在归纳出一种理论时，不可能穷举所有符合这一理论的个案来证实这一理论。倘若存在可以检验为假的某种方法在，即使在目前的条件下还不能够实施检验，假以时日，或许会出现这样的反例从而检验其为假，当然也可能这样的反例永远都不会出现，谁知道呢？如果一种理论不存在任何可检验为假的方法，那么这种理论因缺乏检验方法，而无法判断其真假，因此一定不是科学。用老子相反相成思想来讲就是“天下皆知真之为真，斯假也”。&lt;/p&gt;
+&lt;h2 id=&#34;示例&#34;&gt;示例&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;示例一：“所有的天鹅都是白的。”，试图穷举一只，两只，三只&amp;hellip; &amp;hellip; 白天鹅来证实这一描述是科学的都不够充分，检验这一描述为科学的必要条件是“没有非白色的天鹅”这种可能性存在（可证伪性），当黑天鹅在澳大利亚被发现时，人们就推翻了这一论述。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;示例二：“上帝是存在的。”，这一描述因无法观测或证明“上帝不存在”，从而无法被证伪，因此这一描述是非科学的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;意义&#34;&gt;意义&lt;/h2&gt;
+&lt;p&gt;牛顿定律在相对论没有发现之前被认为是科学理论，但存在检验其为假的标准，而后被相对论证伪，这时人们通过增加牛顿定律发生的限定条件，来完善牛顿定律。这是可证伪性的意义所在，科学理论永远在不断的证伪检验过程中被完善或推翻。用胡适先生的话来说就是“大胆假设，小心求证”。&lt;/p&gt;</description>
+      
     </item>
     
   </channel>

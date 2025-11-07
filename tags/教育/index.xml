@@ -6,14 +6,19 @@
     <description>Recent content in 教育 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://luozhaohui.github.io/tags/%E6%95%99%E8%82%B2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jan 2025 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://luozhaohui.github.io/tags/%E6%95%99%E8%82%B2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>关于 AMC8 数学竞赛你所需要知道的一切</title>
       <link>https://luozhaohui.github.io/post/2025/2025-01-05-amc8-all-in-one/</link>
       <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>https://luozhaohui.github.io/post/2025/2025-01-05-amc8-all-in-one/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+      
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;AMC&lt;/strong&gt; 美国数学竞赛全称 &lt;strong&gt;American Mathematics Competitions&lt;/strong&gt;，由美国数学协会主办，是美国国家级别的系列数学竞赛，赛事分 &lt;strong&gt;AMC8&lt;/strong&gt;（初级中学）、&lt;strong&gt;AMC10&lt;/strong&gt;（高级中学）、&lt;strong&gt;AMC12&lt;/strong&gt;（高级中学）三个级别，分别允许不超过美国 8、10、12 年级的学生参加。&lt;/p&gt;
 &lt;p&gt;为什么要参加一个美国的数学竞赛考试？&lt;/p&gt;
 &lt;ul&gt;
@@ -30,7 +35,240 @@
 &lt;li&gt;打算参加小升初选拔的学生&lt;/li&gt;
 &lt;li&gt;对数学有兴趣，以考促学的学生&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;总的来说，小学阶段&lt;strong&gt;有实际需求以及具备相应领悟能力、学有余力&lt;/strong&gt;的学生可以备考 &lt;strong&gt;AMC8&lt;/strong&gt; 竞赛。&lt;strong&gt;不建议硬控硬上，给孩子留一个快乐的童年和一份阳光健康的心态比让孩子在高压下学习要重要得多&lt;/strong&gt;。&lt;/p&gt;</description>
+&lt;p&gt;总的来说，小学阶段&lt;strong&gt;有实际需求以及具备相应领悟能力、学有余力&lt;/strong&gt;的学生可以备考 &lt;strong&gt;AMC8&lt;/strong&gt; 竞赛。&lt;strong&gt;不建议硬控硬上，给孩子留一个快乐的童年和一份阳光健康的心态比让孩子在高压下学习要重要得多&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;一amc8高频考点&#34;&gt;一、AMC8高频考点&lt;/h2&gt;
+&lt;p&gt;AMC8竞赛考点涵盖了中国小学全部的数学知识和部分初中的知识，旨在全面考察学生的数学知识和思维能力。&lt;/p&gt;
+&lt;h3 id=&#34;1-基础代数&#34;&gt;1. 基础代数&lt;/h3&gt;
+&lt;p&gt;基础代数是 &lt;strong&gt;AMC8&lt;/strong&gt; 考试中出现频率最高的考点之一，通常约占10道题目。代数的核心内容涵盖了以下知识点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;分数&lt;/strong&gt;：学生需要熟练掌握分数的加减乘除运算，以及如何进行分数的简化和比较。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方程&lt;/strong&gt;：包括简单的一元一次方程的解法，学生需能够独立设置和求解方程。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数列&lt;/strong&gt;：理解数列的基本概念，能够识别和生成简单的数列，如等差数列和等比数列。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-基础几何&#34;&gt;2. 基础几何&lt;/h3&gt;
+&lt;p&gt;基础几何的题目数量虽然低于代数，通常约为6-8道，但其考察内容依然非常重要。主要注意的是：大部分几何内容在国际课程中可能没有涉及，学生应通过额外的学习和练习来补充相关知识。&lt;/p&gt;
+&lt;p&gt;主要涉及的知识点包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;三角形&lt;/strong&gt;：理解三角形的性质，包括角的关系、边的长度等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;四边形&lt;/strong&gt;：掌握不同类型四边形的特性，如矩形、正方形和菱形等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;勾股定理&lt;/strong&gt;：能够应用勾股定理解决与直角三角形相关的问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-基础数论&#34;&gt;3. 基础数论&lt;/h3&gt;
+&lt;p&gt;基础数论在AMC8的考察比例逐渐增加，通常占3-4道题目。数论题目通常涉及较为基础的概念，但对于学生的逻辑思维能力有较高的要求。主要考察的内容包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;整除&lt;/strong&gt;：理解整除的概念，能够判断一个数是否可以被另一个数整除。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;质因数分解&lt;/strong&gt;：掌握质因数分解的基本方法，能够将合数分解为质数的乘积。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-基础组合&#34;&gt;4. 基础组合&lt;/h3&gt;
+&lt;p&gt;组合题目在AMC8中相对较少，通常约为3-5道，主要涉及计数和概率等内容。其中，计数题是每年必考的内容，学生应特别重视这一部分的复习。&lt;/p&gt;
+&lt;p&gt;重点考察以下知识点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;计数&lt;/strong&gt;：通过排列和组合的方法解决问题，理解基本的计数原理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;概率&lt;/strong&gt;：能够计算简单事件发生的概率，理解概率的基本概念。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;二amc8-考试内容&#34;&gt;二、AMC8 考试内容&lt;/h2&gt;
+&lt;h3 id=&#34;amc8-考试大纲&#34;&gt;AMC8 考试大纲&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/2025/AMC8%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2.jpg&#34; alt=&#34;AMC8考试大纲&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;amc8-知识点&#34;&gt;AMC8 知识点&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/2025/AMC8%E7%9F%A5%E8%AF%86%E7%82%B9%E5%92%8C%E5%AD%A6%E6%A0%A1%E7%9F%A5%E8%AF%86%E7%82%B9%E6%AF%94%E8%BE%83.png&#34; alt=&#34;AMC8知识点和学校知识点比较&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;amc8-出题范围&#34;&gt;AMC8 出题范围&lt;/h3&gt;
+&lt;p&gt;考察内容：从历年 AMC8 竞赛题目分析得出，题目主要分为三个方向：&lt;strong&gt;小学数学、初中数学和小学奥数&lt;/strong&gt;。其中有部分图表问题夹在小学数学、小奥和初中数学之间，划定范围模棱两可，但基于专业学科老师分析，基本上可以认为上述三类题目范畴各占三分之一。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小学阶段考察范畴&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;基本的计算与应用题:&lt;/em&gt; 整数分数小数以及混合的四则运算，百分比以及比与比例运算类型应用题，行程和相关变形的问题，平均数、中位数、众数等统计问题等;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;基础几何:&lt;/em&gt; 简单的三角形、四边形与圆形等求角、求边求面积的计算，常见且基础的立体图形或需要空间想象的图形有关计算问题;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;简单数论:&lt;/em&gt; 质数与合数，约数和倍数以及最大公约数、最小公倍数和整除性质应用有关问题;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;小学奥数考察范畴&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;巧算和应用题:&lt;/em&gt; 整数分数小数以及混合运算的巧算，计算找规律，多种不同类型的更深入的应用题，例如鸡兔同笼、青蛙跳井问题、植树问题、工程问题、行船流水与环形跑道问题等:&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;几何求值:&lt;/em&gt; 利用割补方法求复杂图形面积;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;数论延伸:&lt;/em&gt; 质因数分析问题、约数个数计算、奇数偶数特点与奇偶性分析问题、余数问题、位置原理有关的问题，以及填数阵图、解竖式类型的计算与数论综合应用题;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;计数与组合杂题:&lt;/em&gt; 阶乘运算，图形计数、找规律计数、加法与乘法原理，举法与分类讨论，容斥原理等，逻辑推理问题，游戏与操作对策问题;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;初中阶段考察范畴&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;代数:&lt;/em&gt; 乘方运算、多项式、一次与二次方程、列方程或方程组解应用题、不等式等差数列和等比数列及其有关计算、一次函数及其计算，文字与图表相结合的常见应用题，复杂的利用代数方法解决的统计学问题;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;几何:&lt;/em&gt; 坐标系有关问题，平面几何中的三角形、四边形、圆形与扇形的定理与性质图形的全等与相似及其在计算中的应用、勾股定理与计算，圆柱和圆锥等立体几何图形;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;三amc8-答题技巧和注意事项&#34;&gt;三、AMC8 答题技巧和注意事项&lt;/h2&gt;
+&lt;h3 id=&#34;1额外的答题技巧&#34;&gt;1、额外的答题技巧&lt;/h3&gt;
+&lt;p&gt;在AMC8竞赛中，除了常规的解题方法外，巧妙的解题技巧和合理的猜测（smart guess）也能帮助我们提高答题效率和准确率。以下是一些常见的技巧：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代值法、特殊值法和选项结合法&lt;/strong&gt;：在涉及比与比例、百分比的问题中，当总数未知且总数不影响答案时，可以假设一个总数来进行计算。在数论的整数性分析问题中，可以使用特殊值法结合选项排除法来找到正确答案。例如，可以假设某个变量为一个方便计算的数，从而简化问题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;作图与几何问题&lt;/strong&gt;：AMC8的几何题通常附有标准配图。在时间紧张或思路不清晰时，可以尝试直接测量图中的参数来快速推理出答案。这种方法尤其适用于那些视觉化的几何问题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;排除法&lt;/strong&gt;：根据奇偶性、平方数、质数性等特征，可以排除不符合要求的选项。例如，如果题目要求找一个质数，而某个选项明显不是质数，则可以直接排除。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;找规律&lt;/strong&gt;：从最简单的初始情况开始研究，找到大致规律后，再延伸验证。这种方法在处理递归关系或数列问题时尤为有效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2要规避的错误&#34;&gt;2、要规避的错误&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;避免计算错误&lt;/strong&gt;：在计算过程中，尽量少跳步，多打草稿，并进行复算检查。时间紧张时，可以采用个位数检查的方法快速验证计算结果。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免理解题意错误&lt;/strong&gt;：注意题目中的关键词和关键条件，例如“包括、排除”，“奇数、偶数”，“质数、合数”，“整数、实数、正数、非负数”等。特别要注意提问部分，准确理解题目所问的问题。对关键条件和关键词划线标注，以避免遗漏。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免方法选择错误&lt;/strong&gt;：审题后，不要急于演算和作答。先判断题目类型，思考题目是否存在多解或巧解，然后选择最适当的方法求解，以避免因方法选择错误而浪费时间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3考试注意事项&#34;&gt;3、考试注意事项&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;时间安排和答题策略&lt;/strong&gt;：根据自己的学习和备考水平，提前确定实际考试中的时间安排和答题策略。合理分配时间，确保有足够的时间处理难题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;充分准备常考题型&lt;/strong&gt;：对于AMC8常考的计算题、应用题、计数概率题等，要做充分的准备，特别是提高各类计算的熟练度。这样不仅能提高常规题目的正确率，还能为应对复杂问题争取更多时间。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;错题反思&lt;/strong&gt;：考前刷题不应只注重题量，而应在刷题的同时多做错题反思。做会一道错题比盲目多做题更加有用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;审题仔细&lt;/strong&gt;：对于题干文字量较大的题目，一定要多次审题，标出重点，避免遗漏条件或审题出错。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;参考英文题目&lt;/strong&gt;：尽管中国区考试为双语试卷，还是尽量参照英文题目，避免因翻译错误导致理解偏差。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;保持良好状态&lt;/strong&gt;：考试前应注重休息和饮食安排，尽量将身体和精神状态调整到最佳。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;四amc8-竞赛制度&#34;&gt;四、AMC8 竞赛制度&lt;/h2&gt;
+&lt;h3 id=&#34;难度分析&#34;&gt;难度分析&lt;/h3&gt;
+&lt;p&gt;AMC8竞赛的难度相对较大，题目设计灵活且复杂，要求学生具备较强的数学知识储备和逻辑思维能力。难度逐层递增，特别是第16至25题，着重考察学生的逻辑思维和解决问题的能力。这体现在多个方面：&lt;/p&gt;
+&lt;h4 id=&#34;1-题目设计&#34;&gt;1. 题目设计&lt;/h4&gt;
+&lt;p&gt;AMC8的题目通常设计得既有趣又具挑战性，旨在全面考察学生的数学知识和思维能力。题目不仅要求学生具备扎实的数学基础，还需要他们具备良好的数学思维和问题解决能力。例如，题目可能设计成趣味性的问题情境，让学生在解题过程中感到既有挑战又有趣味。&lt;/p&gt;
+&lt;h4 id=&#34;2-知识点覆盖&#34;&gt;2. 知识点覆盖&lt;/h4&gt;
+&lt;p&gt;AMC8竞赛的内容涵盖了多个数学领域，包括数与代数、几何、数论、组合数学以及逻辑推理等。知识点广泛且深入，要求学生全面掌握这些领域的知识，并能够灵活运用它们解决实际问题。例如，学生可能需要在同一道题目中运用代数和几何的知识进行综合解答。&lt;/p&gt;
+&lt;h4 id=&#34;3-题目难度&#34;&gt;3. 题目难度&lt;/h4&gt;
+&lt;p&gt;AMC8的题目难度通常较高，需要学生具备一定的数学素养和思维能力才能解答。一些题目可能需要学生运用多种数学知识和方法进行推理和计算，才能得出正确答案。例如，某些题目可能涉及复杂的数论或组合数学问题，需要学生具备较强的推理和计算能力。&lt;/p&gt;
+&lt;h4 id=&#34;4-时间限制&#34;&gt;4. 时间限制&lt;/h4&gt;
+&lt;p&gt;AMC8竞赛的时间限制为40分钟，对于部分学生来说可能比较紧张。学生需要在有限的时间内快速准确地解答25道题目，这对他们的思维速度和解题能力提出了更高的要求。时间管理不当可能导致部分题目无法完成，从而影响整体成绩。&lt;/p&gt;
+&lt;h3 id=&#34;考试制度&#34;&gt;考试制度&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;允许携带：&lt;/strong&gt; 书写用具（注：包括彩色笔/铅笔）；笔记本电脑或平板电脑；空白草稿纸；橡皮擦。
+&lt;strong&gt;禁止携带：&lt;/strong&gt; 计算器；智能手表；电话；计算设备；指南针；量角器；方格纸。
+&lt;strong&gt;注意：&lt;/strong&gt; 为了以数字方式管理比赛，学生可以使用笔记本电脑或平板电脑，打开一个选项卡查看比赛。否则，学生在比赛期间只能使用书写用具、空白草稿纸、尺子和橡皮擦。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;竞赛时间：&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;报名截止：&lt;/strong&gt; 2025年1月12日，&lt;strong&gt;考试：&lt;/strong&gt; 1月23日，10:00-10:40&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;报考要求：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;8年级(初二)且14.5岁以下年级/年龄学生(年龄截止至测评活动当天)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;试卷构成：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;25道单项选择题，每题有五个选项&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;比赛语言：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;AMC8数学竞赛提供中英双语试卷，以满足不同语言背景的学生的需求&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;计分方式：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;满分25分，答对1题得1分，答错得0分&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;活动时长：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;40分钟，学生需要在这个时间内完成所有题目&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;考试地点：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;线上或者线下自由选择&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;发布成绩:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;在 6-8 周内公布竞赛成绩，在官方网站上查询成绩&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;在线模拟考试:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2025年1月15日至1月19日&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;准考证下载：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2025年1月15日&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;证书种类&#34;&gt;证书种类&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Honor Roll of Distinction AMC8 - 全球卓越奖&lt;/strong&gt; ——达到全球前1%，一般在21分及以上。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Honor Roll AMC8 - 全球优秀奖&lt;/strong&gt; ——达到全球前5%，一般在17分及以上。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Perfect Score AMC8 - 满分奖&lt;/strong&gt; ——达到满分25分。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Certificate of Achievement AMC8 - 全球荣誉奖&lt;/strong&gt; ——六年级及其以下参加且在15分及以上。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AMC8 Participation - 参赛证书&lt;/strong&gt; ——参赛即可获得。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;五备考与资料&#34;&gt;五、备考与资料&lt;/h2&gt;
+&lt;h3 id=&#34;备考规划&#34;&gt;备考规划&lt;/h3&gt;
+&lt;p&gt;如果想要报考好的初中学校，那需要提前规划好时间，在小升初选拔之前完成 &lt;strong&gt;AMC8&lt;/strong&gt; 考试。拿五四制来说，一般的升学选拔在五年级第二学期（约三、四月份），因此需要在五年级寒假期间完成考试，领悟能力强的学生可以在四年级寒假参加第一次 AMC8 考试，五年级寒假再参加第二次 AMC8 考试。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;四年级暑假～五年级第一学期：刷蓝宝书（《美国初中数学竞赛-AMC8准备》一套六卷，第一到五卷为知识点、示例以及习题，第六卷为十套模拟题）。&lt;/li&gt;
+&lt;li&gt;12月：刷真题，体会出题风格，琢磨出题思路，学习答题技巧，查漏补短，错题总结。&lt;/li&gt;
+&lt;li&gt;第二年1月：用真题模拟考试，提升思维运转和联想速度，把控答题时间，为正式考试做好充分准备。&lt;/li&gt;
+&lt;li&gt;第二年2月～3月查询结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;资料分析&#34;&gt;资料分析&lt;/h3&gt;
+&lt;p&gt;蓝宝书中的例题和习题总体难度是大于真题的，但真题考试有严格的时间限制，因此，会做也不一定能考高分。为此，必须提高读题能力、解题速度、以及答题技巧，在前面15道题上挤出时间来解答后面10道题，才可能拿到高分。前15题是基础题，一般细心就不太会错，务必要全对；后10道题是综合提升题，难度逐步提高。&lt;/p&gt;
+&lt;p&gt;真题主要是考察&lt;strong&gt;多个知识点的灵活综合应用&lt;/strong&gt;，不会有很复杂的计算；20题以后的题目通常都有多种解决思路，这些题目通常也有避免复杂计算的设计。可以说 &lt;strong&gt;AMC8&lt;/strong&gt; 的出题非常灵活，注意考察的是思维的灵活性、开阔性以及关联应用能力，有点像脑筋急转弯，思路对了就很简单。因此要特别&lt;strong&gt;仔细读题，明确有哪些条件，这些条件之间可以怎样关联和转换，可以和哪些知识点关联，题目的问题是什么&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;解题技巧&#34;&gt;解题技巧&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：每道题平均不到一分半钟，包括读题、解题、答题&lt;/li&gt;
+&lt;li&gt;巧算：不要计算小数，尽量利用分数计算化约&lt;/li&gt;
+&lt;li&gt;延迟计算：不要过早计算中间结果，可以延后化约&lt;/li&gt;
+&lt;li&gt;排除：边算边估选排除选项，无需全部做完。选择题是去证明，而无需完全解答&lt;/li&gt;
+&lt;li&gt;简化：不同尺度的单位统一，简化为熟悉的单位&lt;/li&gt;
+&lt;li&gt;代入：尽量用简单或特殊的值去代入，如：百分比就用100，占比几分之几就用最小公倍数&lt;/li&gt;
+&lt;li&gt;估算：图表都是标准尺寸，可用尺子量大胆估算&lt;/li&gt;
+&lt;li&gt;思路：如果涉及复杂的计算，那么思路一定错了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;历年真题&#34;&gt;历年真题&lt;/h3&gt;
+&lt;h4 id=&#34;amc-8-历年真题以及解决方案&#34;&gt;AMC 8 历年真题以及解决方案&lt;/h4&gt;
+&lt;p&gt;外部资源：&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/AMC_8_Problems_and_Solutions&#34;&gt;AMC Art of Problem Solving&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2024_AMC_8&#34; title=&#34;2024 AMC 8&#34;&gt;2024 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2023_AMC_8&#34; title=&#34;2023 AMC 8&#34;&gt;2023 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2022_AMC_8&#34; title=&#34;2022 AMC 8&#34;&gt;2022 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2020_AMC_8&#34; title=&#34;2020 AMC 8&#34;&gt;2020 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2019_AMC_8&#34; title=&#34;2019 AMC 8&#34;&gt;2019 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2018_AMC_8&#34; title=&#34;2018 AMC 8&#34;&gt;2018 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2017_AMC_8&#34; title=&#34;2017 AMC 8&#34;&gt;2017 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2016_AMC_8&#34; title=&#34;2016 AMC 8&#34;&gt;2016 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2015_AMC_8&#34; title=&#34;2015 AMC 8&#34;&gt;2015 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2014_AMC_8&#34; title=&#34;2014 AMC 8&#34;&gt;2014 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2013_AMC_8&#34; title=&#34;2013 AMC 8&#34;&gt;2013 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2012_AMC_8&#34; title=&#34;2012 AMC 8&#34;&gt;2012 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2011_AMC_8&#34; title=&#34;2011 AMC 8&#34;&gt;2011 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2010_AMC_8&#34; title=&#34;2010 AMC 8&#34;&gt;2010 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2009_AMC_8&#34; title=&#34;2009 AMC 8&#34;&gt;2009 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2008_AMC_8&#34; title=&#34;2008 AMC 8&#34;&gt;2008 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2007_AMC_8&#34; title=&#34;2007 AMC 8&#34;&gt;2007 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2006_AMC_8&#34; title=&#34;2006 AMC 8&#34;&gt;2006 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2005_AMC_8&#34; title=&#34;2005 AMC 8&#34;&gt;2005 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2004_AMC_8&#34; title=&#34;2004 AMC 8&#34;&gt;2004 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2003_AMC_8&#34; title=&#34;2003 AMC 8&#34;&gt;2003 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2002_AMC_8&#34; title=&#34;2002 AMC 8&#34;&gt;2002 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2001_AMC_8&#34; title=&#34;2001 AMC 8&#34;&gt;2001 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2000_AMC_8&#34; title=&#34;2000 AMC 8&#34;&gt;2000 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/1999_AMC_8&#34; title=&#34;1999 AMC 8&#34;&gt;1999 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;amc-8-历年真题在线模拟考试&#34;&gt;AMC 8 历年真题在线模拟考试&lt;/h4&gt;
+&lt;p&gt;外部资源：&lt;a href=&#34;https://live.poshenloh.com/past-contests&#34;&gt;https://live.poshenloh.com/past-contests&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2024&#34;&gt;2024&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2023&#34;&gt;2023&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2022&#34;&gt;2022&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2020&#34;&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2019&#34;&gt;2019&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2018&#34;&gt;2018&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2017&#34;&gt;2017&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2016&#34;&gt;2016&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2015&#34;&gt;2015&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2014&#34;&gt;2014&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2013&#34;&gt;2013&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2012&#34;&gt;2012&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2011&#34;&gt;2011&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2010&#34;&gt;2010&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2009&#34;&gt;2009&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2008&#34;&gt;2008&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2007&#34;&gt;2007&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2006&#34;&gt;2006&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2005&#34;&gt;2005&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2004&#34;&gt;2004&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2003&#34;&gt;2003&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2002&#34;&gt;2002&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2001&#34;&gt;2001&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2000&#34;&gt;2000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/1999&#34;&gt;1999&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/1998&#34;&gt;1998&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/1997&#34;&gt;1997&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
     </item>
     
     <item>
@@ -39,9 +277,73 @@
       <pubDate>Mon, 23 Nov 2015 23:14:00 +0800</pubDate>
       
       <guid>https://luozhaohui.github.io/post/2015/2015-11-23-raising-child/</guid>
-      <description>&lt;h2 id=&#34;阶层的危机&#34;&gt;阶层的危机&lt;/h2&gt;
+      
+        <description>&lt;h2 id=&#34;阶层的危机&#34;&gt;阶层的危机&lt;/h2&gt;
 &lt;p&gt;最近在看一部BBC制作的英国纪录片&lt;a href=&#34;http://movie.douban.com/subject/10748226/&#34;&gt;《人生七年》&lt;/a&gt;，这部纪录片通过采访来自英国不同阶层的十四个七岁的小孩子，每隔七年访谈一次制作一集，从1964年一直到到2000年，一直持续到他们56岁，总共拍了&lt;a href=&#34;https://movie.douban.com/subject/2123439/&#34;&gt;7 Up&lt;/a&gt;, &lt;a href=&#34;&#34;&gt;14 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/2283680/&#34;&gt;21 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/1482936/&#34;&gt;28 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/1778460/&#34;&gt;35 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/1778459/&#34;&gt;42 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/1847588/&#34;&gt;49 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/10748226/&#34;&gt;56 Up&lt;/a&gt; 八集。&lt;/p&gt;
-&lt;p&gt;这部片子是一个小的人生缩影，从读书，到工作，到结婚，到养育后代，到中年，到老年，一路真实访谈过来，让我们感觉片中所说的&lt;code&gt;Give me a child util he is seven and I will give you the man.&lt;/code&gt;，若翻译成中文就是七岁看大。片中所采访记录的这十四个不同背景的人的生活轨迹，绝大部分确实能在起初七岁时看出端倪来，只有少数例外（一个农村孩子考取牛津后进入美国研究核能，一个读私立小学的孩子从大学辍学后靠政府救济度日）。在我们的话语中也有“三岁看大，七岁看老”的说法。为什么能在一个小孩七岁的时候大体推测出他将来的人生轨迹呢？这就是制作该片的初衷。制作方人认为英国社会已经形成了一定的阶层固化，即我们所说的“龙生龙，凤生凤，老鼠生出来打地洞”。在不同的家庭背景中出生的人，从一出生开始每个人从父母所学得的价值观人生观以及家庭能够与愿意提供的各种资源有着天差地别的差别，很多人无法跳脱这个原生家庭环境差别局限，导致在七岁的时候就决定了这些人今后的人生道路以及在社会中所属的阶层。片中一个读私立小学的孩子7岁时便阅读《泰晤士报》，以剑桥大学三一学院为其目标，而另一个底层家庭的孩子却连大学是什么都不懂的。诚然，阶层固化确实是个趋势，有人研究过在土改中被打倒的那些地主后代比当时打倒那些地主的贫农中农后代生活得要好，社会地位也要高。这些地主（乡绅）的后代在家庭被打倒时虽然少了物质上的资源，但们从少接受了较好家庭教育，学得的为人处世的方法，见识胆识要比中下贫农的后代要高一个档次，正是这些以及可能的人脉关系使得他们依然生活得更好。&lt;/p&gt;</description>
+&lt;p&gt;这部片子是一个小的人生缩影，从读书，到工作，到结婚，到养育后代，到中年，到老年，一路真实访谈过来，让我们感觉片中所说的&lt;code&gt;Give me a child util he is seven and I will give you the man.&lt;/code&gt;，若翻译成中文就是七岁看大。片中所采访记录的这十四个不同背景的人的生活轨迹，绝大部分确实能在起初七岁时看出端倪来，只有少数例外（一个农村孩子考取牛津后进入美国研究核能，一个读私立小学的孩子从大学辍学后靠政府救济度日）。在我们的话语中也有“三岁看大，七岁看老”的说法。为什么能在一个小孩七岁的时候大体推测出他将来的人生轨迹呢？这就是制作该片的初衷。制作方人认为英国社会已经形成了一定的阶层固化，即我们所说的“龙生龙，凤生凤，老鼠生出来打地洞”。在不同的家庭背景中出生的人，从一出生开始每个人从父母所学得的价值观人生观以及家庭能够与愿意提供的各种资源有着天差地别的差别，很多人无法跳脱这个原生家庭环境差别局限，导致在七岁的时候就决定了这些人今后的人生道路以及在社会中所属的阶层。片中一个读私立小学的孩子7岁时便阅读《泰晤士报》，以剑桥大学三一学院为其目标，而另一个底层家庭的孩子却连大学是什么都不懂的。诚然，阶层固化确实是个趋势，有人研究过在土改中被打倒的那些地主后代比当时打倒那些地主的贫农中农后代生活得要好，社会地位也要高。这些地主（乡绅）的后代在家庭被打倒时虽然少了物质上的资源，但们从少接受了较好家庭教育，学得的为人处世的方法，见识胆识要比中下贫农的后代要高一个档次，正是这些以及可能的人脉关系使得他们依然生活得更好。&lt;/p&gt;
+&lt;p&gt;在当今的中国，尤其是经历了三十年黄金发展，不同社会阶层与资源壁垒也开始形成。官二代，富二代这些神仙的后代自不必说，他们开着有必杀技的外挂，甩了平民老百姓N条街。而同样作为平民的城市工薪阶层的后代与农村留守儿童之间的差距也在日益扩大，有数据显示：“中国重点大学农村学生比例自1990年代起不断滑落。以北大、清华为例，北大农村学生所占比例从三成落至一成；清华2010级农村生源仅占17%。”教育对人生影响的重要性不言而喻，在当今中国，新的社会阶层无疑已经形成，并且阶层之间的差距在日益扩大与固化，正应了那句“龙生龙，凤生凤，老鼠生出来打地洞”。&lt;/p&gt;
+&lt;p&gt;当然阶层固化也不是铁板一块，有些人没能够利用好拥有的资源导致降级，也有些人能够跳出这种资源差距局限而成功晋级，这在《人生七年》中也有体现。虽然这样的人是少数，却给了我们一线希望以及一个观察与学习的角度：平民阶层的后代如何跳出资源差距局限而晋级呢？平民阶层无疑在物质上是无法与富裕阶层比拼的，因此唯一可能的途径重视教育，尤其是家庭教育，就像被打倒地主的后代一样，从小培养孩子正确的人生观价值观，锻炼见识与胆识以及强大的心理承受能力。&lt;/p&gt;
+&lt;p&gt;我们这一代人从小都是被没有做好充分准备的父母养大的，一则囿于时代限制，他们养育的第一目标是有吃有穿，二则他们缺少正确的指导也没有需要指导的意识，仅仅是按着本能和传统方式养育，非打即骂。但我们这一代要说不幸也幸，因为我们小时候整个社会的教育方式大都是这样，所以虽然养育方式落后，大家差不多还是在同一条起跑线上。而在当今社会，阶层已经形成，不同阶层的养育理念以及拥有的资源已经大为迥异，不比当年我们小时候。这是新时代阶层的危机！&lt;strong&gt;作为平民阶层，要想后代能够有好一点人生道路，必须学习与更新自己的养育理念，重视教育投入。未育儿先育己。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;扩展阅读&#34;&gt;扩展阅读&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.guancha.cn/Education/2013_06_06_149709.shtml&#34;&gt;北大清华仅一两成学生来自农村 李克强决定提高重点高校招收农村学生比例&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;为何家会伤人&#34;&gt;为何家会伤人&lt;/h2&gt;
+&lt;p&gt;在上一篇日志里我探讨了在阶层分明的当今社会，平民阶层只有在教育上下功夫能够让子女有一个比较好的出路。这里的教育是广义上的教育，是以培养健全的人格、有爱好兴趣、有正确的方法论为目标，而不仅仅是学校教育与知识教育。那怎样才算是在教育上下功夫呢？我想有两“得”：一是懂得，懂得如何与孩子相处以及如何引导孩子；二是舍得，舍得投入时间与金钱去培养。而且懂得比舍得更重要，懂得是战略问题，舍得是战术问题。如果行军方向都搞错了，再使劲有什么用呢。在我们的社会里，能正儿八经接触到教人如何为人父母的教育非常少，大都数父母都是凭着本能以及家庭传统来教养儿女。如果爷爷打骂儿子，那么儿子就骂打孙子，并且认为这是天经地义的教养方式。我们这一代人从小接受的教养方式很多就是这样的。&lt;/p&gt;
+&lt;p&gt;很多父母并没有意识到做父母也是一门学问是需要学习的。打个比方，假如你躺在手术台上，进来一个主刀医生和你说：“我没受过多少医学训练，但我很有爱心，我会利用常识来给你做手术。”你敢信任如此仅凭爱心和常识就来主刀的医生么？你绝对不敢！为人父母就像这个主刀医生，父母的言语就像手术刀，如果没经过适当训练，就会用这把刀刮得孩子遍体鳞伤，留下长久的心理伤害。常见的伤害方式包括：评判、比较、命令、指责、挖苦、威胁、说教，或给孩子定性。有一本国产书籍就专门讲各式各样的家庭伤害，书名叫做《为何家会伤人》，书名被我套用为副标题了。&lt;/p&gt;
+&lt;p&gt;我以前有个同事，内心自卑但又常常说大话以夸大自己的能耐。 有一次我去他家做客，发觉他这种性格的形成完全是拜喜欢挖苦他的强势母亲所赐。在他家待的大约一个小时内，她母亲的嘴巴就像连珠炮一样不停地挖苦他，对他穿着评头论足，接着又对他的发型说三道四，在他玩游戏的时候又说他的坐姿这不好那不好，手放的不对脚又乱动等等。我的这位同事毕竟已经成年，大约也已经形成了自己的一套忽略过滤机制，倒也能你说你的，我玩我的，完全不理会就是了。但我想在他小时候不明白事理的时候，莫名长期地被他母亲指责挖苦，肯定让他认同了一部分指责与挖苦，认为自己真的一无是处，留下了自卑与说大话后遗症。而且很可能如果他不经过学习，他们家的这种教养方式将会传承下去，就像很多家暴是有传承性的，因为他所知道与接触到的也许只有这一种教养方式，于是他将依葫芦画瓢会用挖挖苦的方式教育他的孩子。&lt;/p&gt;
+&lt;p&gt;很多父母总是用导致孩子怨恨或厌恶的言辞来评价自己的孩子，导致亲子关系紧张与冲突。他们一方面给孩子定性，说他懒、蠢、说谎等，另一方面又希望这样的评价能让孩子来个逆转大翻身变成一个勤奋、聪明、诚实的孩子。这不是自相矛盾么？我小时候也受过这种折磨，我的母亲总是评价我蠢，幸好我的母亲只否定我这一点，同时也肯定我比较用功，所以我现在还算正常。可以这么说，因为父母不懂得如何教养孩子，导致有一些孩子自小就受到心理伤害，无法形成健全的人格，以致影响孩子今后的人生道路。本来平民阶层的孩子就已经在资源上大大落后于富裕阶层，如果我们再因为教养方式给孩子造成伤害，那无疑是坑娃的爹！老话说：子不教，父之过。因此，父母是很有必要学习与懂得如何去教养孩子的。
+豆瓣上有个家会伤人的小组，小组首语是这样的：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;生活在批评中的孩子，&lt;br&gt;
+——学会指责；&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;生活在敌意中的孩子 ，&lt;br&gt;
+——学会争战；&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;生活在羞辱中的孩子，&lt;br&gt;
+——学会自贬。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;被伤害的孩子独自承受痛苦，&lt;br&gt;
+在家中如此，&lt;br&gt;
+在自己内心也是如此。&lt;br&gt;
+无法对人说，&lt;br&gt;
+也无法在心灵深处找到一个可以尽情大哭的地方。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;扩展阅读-1&#34;&gt;扩展阅读&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.douban.com/subject/25907227/&#34;&gt;《为何家会伤人》&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;端正心态&#34;&gt;端正心态&lt;/h2&gt;
+&lt;p&gt;在前面两篇日志里分别探讨了在当今社会中平民阶层的父母只有重视孩子的教育才有出路，而如何教育是一门学问是需要学习与锻炼的。那么初为人父母应该学习些什么才能更好地教育孩子呢？我想有几个要点：第一是端正心态，以平等的心态与孩子相处；第二是交流沟通技巧，用双方都能接受的方式交流沟通；第三是人生观与方法论，小孩面对复杂外部世界需要教导他一些基础的人生信念，这些信念让他能够庄敬自强，处变不惊，而正确的方法论能够让他自己学会如何去探索与认识这个世界。&lt;/p&gt;
+&lt;p&gt;首先来说端正心态。所谓端正无非革旧鼎新。我们这一代人正处于生活方式巨变的时代，尤其是农村出身的。如果说民国时期是打破四世同堂大家庭建立单一小家庭的转变期，那么现在就从聚居在一个地方到小孩成年就远离出生地与父母的转变期。文化观念一般是趋于保守的，因为大众文化通常滞后于时代变化。现在生活方式变了， 一些传统的旧观念就不再适用于新时代下小孩的养育了。我觉得最重要的就是要改变养儿防老的观念，养老今后更多是社会与自己的责任，而不是子女的责任。从人类发展的历程看，人是越来越趋向自由的，最先是部落聚居，然后是宗族，然后是大家庭，然后是小家庭，以后很有可能是单个个体。拜社会经济条件改善所赐，人能够对外部固定人员的依赖越来越少，自然对外部固定人员的义务也就越来越少。西方发达国家的养老问题普遍都是靠个人以及社会养老制度，而不是依靠子女，我觉得今后中国的发展也必然是这个趋势。当然，我不是说处于转变期的我们这一代就要免于赡养父母的责任，时代虽然在变但还没那么快，赡养父母至少依然是我们这一代人的责任。但到我们子女那一代就不一定了，因此现在生儿育女不是为将来养老进行投资。也许正是去除这个存在了两千多年的养老经济因素，即使放宽了二胎政策，年轻一代的生育意愿并没有多大变化。&lt;/p&gt;
+&lt;p&gt;马克思主义哲学一向认为：经济基础决定上层建筑。这个观点在这里是可以适用的，去除养老经济因素，一些建立在这个基础之上的旧观念自然就站不住脚了。新时代生儿育女的养育目的是不求回报的，子女不是私有财产，也不是附属于父母的。他们是独立的个体，与父母平等的个体，他们的思想境界与对世界的认识只是暂时不如父母，作为父母仅仅是早出生了几十年罢了，并没有拥有什么特别优势与权威。为人父母要能够从这个层面上真正意识到孩子是一个独立的，与你平等的人。他有他自己独特的感受与想法，即便略显稚嫩，父母也要能够去尊重与理解。因为一则处于他的情境与认知水平，这是他认为最合适的解释；二则即便这些想法是错误的，由于人是从经验中学习的（试错法），一些错误也是要容许他们去犯的。无法自由地失败也就无法自由地成功。孩子也不是出气筒，不能因为他弱小好欺负一不顺心就乱撒气。更不能以爱的名义去操办一切，孩子不是需要你照顾一切的人，他只是暂时需要你指导他如何去照顾自己，最终他会成长为一个独立的、自力更生的社会人。&lt;/p&gt;
+&lt;p&gt;上面说父母与孩子是平等的，有两层含义，上一段说的是父母要尊重与理解孩子这一层，不要因为是父母就摆权威架子；另一层是父母要理直气壮地争取自己的平等地位，不要被惯坏的孩子绑架。父母有自己的生活，没有义务去满足孩子的全部要求，尤其是那些过分要求。比如很久以前的一则新闻：父母卖房帮女儿追刘德华，近些的则有：女孩以死威逼父母放弃二胎。这些问题孩子之所以有这样过分的要求，自然与平时纵容很有关系。这些父母在往常心甘情愿一点一点地放弃自己的平等地位，以至于孩子能熟练而任性地掌控其父母来。&lt;/p&gt;
+&lt;p&gt;要真正能从内心把孩子当做共建家庭的合伙人，他们既不是依赖于父母的“寄生虫”，也不是凌驾于父母之上的“小皇帝”，这样才能够既尊重孩子又能与孩子平等相处。在这样环境中长大的孩子，自然也学得尊重父母并于父母平等相处。&lt;/p&gt;
+&lt;h2 id=&#34;交流沟通技巧&#34;&gt;交流沟通技巧&lt;/h2&gt;
+&lt;p&gt;在前一篇日志中，我提到初为人父母应该从三个方面入手去学习如何更好地教养孩子，一是端正心态，以平等的心态与孩子相处；二是交流沟通技巧，用双方都能接受的方式交流沟通；第三是人生观与方法论，小孩面对复杂外部世界需要教导他一些基础的人生信念，这些信念让他能够庄敬自强，处变不惊，而正确的方法论能够让他自己学会如何去探索与认识这个世界。态度问题是一切亲子关系的关键，所以在这三个方面中优先探讨心态问题。只有端正了心态，才能够来讨论交流沟通技巧，要不抱着居高临下的姿态怎么能够友好地沟通呢？&lt;/p&gt;
+&lt;p&gt;在这三个方面中， 也许最不受重视也最容易伤人的就是交流沟通方式了。因为为人父母者至少说了20年以上的话了，总会觉得不就是说话么，有什么大惊小怪的。可恰恰是说话，尤其是和亲密的人说话，导致的争吵最多。我们可以回想一下，自己曾和同事、同学或陌生人吵过多少架？又和父母、伴侣或小孩吵过多少架？两相比较，发现大部分吵架都是在和最亲密的人吵。并非我们不爱他们，只是我们或者双方都不懂得如何更和善地交流沟通，也不曾受过这方面的训练，仅仅是凭着本能在挥舞言语这把手术刀，怎能不伤人呢？&lt;/p&gt;
+&lt;p&gt;有一个经典的沟通失败段子：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;妻子：你每天晚上就知道出去打牌！&lt;br&gt;
+丈夫：哦，那从明天起我改玩游戏好了。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;仔细分析这个段子，我们可以看到人类的交流沟通模式是非常容易引起误会的：说者习惯于把自己真实需求或想法经过加工之后再表达出来，而听者往往不善于解码这些加工了的信息，从而误会了说者的真实意图。我们可以总结一个常见的交流沟通模式：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;说者：真实需求 &amp;mdash; 编码信息 ===传送给=== 听者：解码信息&amp;mdash;明白需求&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;在这个沟通模式中，对听者有较高的要求，听者需要具备解码的能力，如果解码错误，那么误会就会产生。比如上面的例子中，丈夫显然是解码错误，他以为妻子是要他干点别的而不是老打牌。当然这段对话也让我们明白如果妻子能把自己需要关爱陪伴的需求比较直观地表达出来，而不经过加工，那么自然会更容易得到丈夫的理解。因此，理想的沟通模式应该是这样的：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;说者：真实需求 ===传送给=== 听者：明白需求&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;作为人类，我们主要说的话可以归为两类：请和谢谢。请是请求别人满足自己的需求，谢谢是感谢别人满足了我们的需求。但我们对这两种话的表达都不太擅长。比如我们在发起满足自己需求的“请”的对话时，通常会把真实需求编码伪装起来，以至于不容易被正确解码。如果有这么一个人善于解码被你加工的信息而明白你内心的真实需求，你就会把他当作知己，因为他懂你。而我们生气的时候，往往习惯于迁怒于他人，其实往往是因为我们有某种需求没有得到满足，很可能自己也未能意识到这种需求，就开始思考没能满足我们需求的人有什么不对，接着对他进行对方有错的评判。这些评判其实仅仅是需求的异化表达。比如一个简单的场景：母亲对晚归的孩子非常生气：“干什么去了！这么晚才回来！”，母亲其实是在表达害怕和担心，小孩晚归的行为未能满足她内心安全的需求，但母亲表达出来的却像是充满火药味的指责，小孩很容易解码错误而引发对抗。&lt;/p&gt;
+&lt;p&gt;有了上面对沟通本质是需求问题的理解，我们就比较容易采取一些技巧来提高需求表达的精确度以便自己被他人更好地理解，以及提高解码需求的能力以更好地理解他人。回到亲子关系中，由于孩子缺少生活经验，他们表达需求以及解码需求的能力都比较弱，因此为人父母要在解码孩子的需求以及表达自己需求这两方面上多下功夫，以更好地理解孩子和被孩子理解。有一本书叫做&lt;a href=&#34;http://book.douban.com/subject/2275635/&#34;&gt;《如何说 孩子才肯听；怎么听 孩子才肯说》&lt;/a&gt;推荐大家看看，书中说的大体就是关于这两方面的内容。&lt;/p&gt;
+&lt;p&gt;在孩子表达自己想法的时候，父母的理解与共鸣很重要。因此父母要做的就是专心倾听，说出他们的感受，用幻想的方式实现他们的愿望或帮助他们寻找解决方案。父母仔细聆听是为了要鼓励孩子说出他的想法，父母说出孩子的感受并不意味着同意想法的内容，而仅仅是打开对话之门表示尊重的一种方式，我们要对孩子的感受表示理解而不是否定，帮助他发现是在表达哪些需求或哪些需求未能满足，然后找出应对措施。小孩天生想象力丰富，面对他们天马行空的想法时，有一个总的原则：**对感受要宽容，但对行为要严格。**小孩很多富有想象力的愿望并不需要真的用行动去实现，只需要说出来帮助他们在幻想中实现，他们也能得到很大的满足。&lt;/p&gt;
+&lt;p&gt;在面对小孩不可接受的行为时，父母要不带评价地客观描述小孩的行为，说出父母的感受或未满足的需求，以及这些行为造成的影响，然后让小孩独自去想解决办法，或父母提出自己的明确行为请求。当小孩做出值得鼓励的行为时，父母也要不带评价地客观描述其行为，说出父母的感受，这些行为满足了父母的什么需求，并对此表示感激。不要用定性的评价来表达批评或赞扬。简单地说“你蠢死了”或“你好聪明”，都不可取，而要遵循 &lt;strong&gt;“行为-感受-需求-请求”&lt;/strong&gt; 的交流模式。&lt;/p&gt;
+&lt;h3 id=&#34;扩展阅读-2&#34;&gt;扩展阅读&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.douban.com/subject/2275635/&#34;&gt;如何说 孩子才肯听；怎么听 孩子才肯说&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.douban.com/subject/3759379/&#34;&gt;父母效能训练手册&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.douban.com/subject/1067049/&#34;&gt;孩子把你的手给我&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://book.douban.com/subject/3533221/&#34;&gt;非暴力沟通&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
     </item>
     
   </channel>

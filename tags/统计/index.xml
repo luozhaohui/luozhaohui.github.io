@@ -6,14 +6,39 @@
     <description>Recent content in 统计 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 20 Aug 2020 21:38:52 +0800</lastBuildDate><atom:link href="https://luozhaohui.github.io/tags/%E7%BB%9F%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 20 Aug 2020 21:38:52 +0800</lastBuildDate>
+    
+        <atom:link href="https://luozhaohui.github.io/tags/%E7%BB%9F%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>推荐书籍</title>
       <link>https://luozhaohui.github.io/book/recommend/</link>
       <pubDate>Thu, 20 Aug 2020 21:38:52 +0800</pubDate>
       
       <guid>https://luozhaohui.github.io/book/recommend/</guid>
-      <description>心智成长 豆列：心智成长是我读过且觉得非常好的有关思维、心理、哲学、文学、历史、政治、社会、人类学、管理、经济、科技等多方面的书籍与记录片。入</description>
+      
+        <description>&lt;h3 id=&#34;心智成长&#34;&gt;心智成长&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.douban.com/doulist/1133232/&#34;&gt;豆列：心智成长&lt;/a&gt;是我读过且觉得非常好的有关思维、心理、哲学、文学、历史、政治、社会、人类学、管理、经济、科技等多方面的书籍与记录片。入选的标准是实用，纯消遣类小说不在此列。&lt;/p&gt;
+&lt;p&gt;何为实用？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;或能改善思维认知模式&lt;br&gt;
+或能陶冶情操&lt;br&gt;
+或能颠覆既有观念&lt;br&gt;
+或能整合已有知识形成新的见解&lt;br&gt;
+或能增长见识&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;如果觉得&lt;a href=&#34;http://www.douban.com/doulist/1133232/&#34;&gt;豆列：心智成长&lt;/a&gt;翻页麻烦，也可以访问这里&lt;a href=&#34;https://luozhaohui.github.io/book/mindset/&#34;&gt;读书如抽丝：心智成长&lt;/a&gt;。后者的更新滞后于前者，但可读性更好。&lt;/p&gt;
+&lt;h2 id=&#34;私人阅读&#34;&gt;私人阅读：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://luozhaohui.github.io/post/annual-reading/annual-readings/&#34;&gt;历年阅读&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;其他&#34;&gt;其他：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/luozhaohui/books/blob/master/reading/booklist.md&#34;&gt;分类推荐书单&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/luozhaohui/books&#34;&gt;豆瓣各主题图书 Top 100&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
     </item>
     
     <item>
@@ -22,14 +47,221 @@
       <pubDate>Wed, 31 Dec 2008 00:00:00 +0000</pubDate>
       
       <guid>https://luozhaohui.github.io/post/annual-reading/2008-12-31-reading/</guid>
-      <description>&lt;h2 id=&#34;总计-27-本&#34;&gt;总计 27 本&lt;/h2&gt;
+      
+        <description>&lt;h2 id=&#34;总计-27-本&#34;&gt;总计 27 本&lt;/h2&gt;
 &lt;h3 id=&#34;评价统计&#34;&gt;评价统计&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;五星图书 12 本，占比 44.4%&lt;/li&gt;
 &lt;li&gt;四星图书 11 本，占比 40.7%&lt;/li&gt;
 &lt;li&gt;三星图书 3 本，占比 11.1%&lt;/li&gt;
 &lt;li&gt;两星图书 1 本，占比 3.7%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;标签统计&#34;&gt;标签统计&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;软件开发 20 本&lt;/li&gt;
+&lt;li&gt;文学 4 本&lt;/li&gt;
+&lt;li&gt;社会 2 本&lt;/li&gt;
+&lt;li&gt;管理 1 本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;分类统计&#34;&gt;分类统计&lt;/h2&gt;
+&lt;h3 id=&#34;软件开发-20-本&#34;&gt;软件开发: 20 本&lt;/h3&gt;
+&lt;h4 id=&#34;no1-c编程思想第2卷&#34;&gt;No.1 C++编程思想第2卷&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1445308/&#34;&gt;C++编程思想第2卷&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1445308/&#34;&gt;https://book.douban.com/subject/1445308/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 埃克尔 / 机械工业出版社 / 2006-1 / 59.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： C++编程思想（第2卷）实用编程技术&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no2-c编程规范&#34;&gt;No.2 C++编程规范&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1480481/&#34;&gt;C++编程规范&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1480481/&#34;&gt;https://book.douban.com/subject/1480481/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： （美）Herb Sutter, Andrei Alexandrescu / 刘基诚 / 人民邮电出版社 / 2006-1 / 35.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： C++高手养成必读书籍～～&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no3-3d数学基础&#34;&gt;No.3 3D数学基础&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1400419/&#34;&gt;3D数学基础&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1400419/&#34;&gt;https://book.douban.com/subject/1400419/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： (美)邓恩、帕贝利|译者、（美）帕贝利（Parberry,I.）、北京递归开元教育科技有限公司、审校 / 史银雪、陈洪、王荣静 / 清华大学出版社 / 1900-01-01 / 42.0&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 不错的3D数学基础知识书籍&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no4-深入浅出设计模式影印版&#34;&gt;No.4 深入浅出设计模式（影印版）&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1488876/&#34;&gt;深入浅出设计模式（影印版）&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1488876/&#34;&gt;https://book.douban.com/subject/1488876/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： Eric Freeman、Elisabeth Freeman、Kathy Sierra、Bert Bates / 东南大学出版社 / 2005-11 / 98.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 设计模式:简洁明了！&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no5-effective-c&#34;&gt;No.5 Effective C++&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1842426/&#34;&gt;Effective C++&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1842426/&#34;&gt;https://book.douban.com/subject/1842426/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [美]Scott Meyers / 侯捷 / 电子工业出版社 / 2006-7 / 58.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： Effective C++&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no6-c语言的设计和演化&#34;&gt;No.6 C++语言的设计和演化&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1096216/&#34;&gt;C++语言的设计和演化&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1096216/&#34;&gt;https://book.douban.com/subject/1096216/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [美] Bjarne Stroustrup / 裘宗燕 / 机械工业出版社 / 2002-1 / 48.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： C++ 的设计及其演化进程。。。高手进阶必备啊。。。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no7-c专家编程&#34;&gt;No.7 C专家编程&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/2377310/&#34;&gt;C专家编程&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/2377310/&#34;&gt;https://book.douban.com/subject/2377310/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： Peter Van Der Linden / 徐波 / 人民邮电出版社 / 2008-2 / 45.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 不可不读的一本关于C的书籍！&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no8-游戏编程精粹6&#34;&gt;No.8 游戏编程精粹6&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/2305250/&#34;&gt;游戏编程精粹6&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/2305250/&#34;&gt;https://book.douban.com/subject/2305250/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： ，Michael Dickheiser，，美 编 / 孟宪武 / 人民邮电出版社 / 2007-11 / 99.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 游戏编程精粹6&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no9-游戏编程精粹5&#34;&gt;No.9 游戏编程精粹5&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/2248414/&#34;&gt;游戏编程精粹5&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/2248414/&#34;&gt;https://book.douban.com/subject/2248414/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 帕里斯特 / 人民邮电出版社 / 2007-9 / 99.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 游戏编程精粹5&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no10-设计模式&#34;&gt;No.10 设计模式&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1052241/&#34;&gt;设计模式&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1052241/&#34;&gt;https://book.douban.com/subject/1052241/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [美] Erich Gamma、Richard Helm、Ralph Johnson、John Vlissides / 李英军、马晓星、蔡敏、刘建中 等 / 机械工业出版社 / 2000-9 / 35.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 设计模式，买了N年，读了数遍还是半瓶子水，几年之后的一个夜晚在长途火车上消磨时间，读去一切如流水一般舒畅，那个爽啊，只限当时周边无人可以分享那种感觉。。。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no11-深度探索c对象模型&#34;&gt;No.11 深度探索C++对象模型&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1091086/&#34;&gt;深度探索C++对象模型&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1091086/&#34;&gt;https://book.douban.com/subject/1091086/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [美] Stanley B. Lippman / 侯捷 / 华中科技大学出版社 / 2001-5 / 54.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： C++的内存布局，各个特性的背后实现，读了至少三次才懂的。。。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no12-essential-c中文版&#34;&gt;No.12 Essential C++中文版&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1215826/&#34;&gt;Essential C++中文版&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1215826/&#34;&gt;https://book.douban.com/subject/1215826/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [美] Stanley B. Lippman / 侯捷 / 华中科技大学出版社 / 2001-8 / 39.80元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 适合入门的C++书籍。。。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no13-c编程思想&#34;&gt;No.13 C++编程思想&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1057170/&#34;&gt;C++编程思想&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1057170/&#34;&gt;https://book.douban.com/subject/1057170/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 埃克尔(美) / 刘宗田/等 / 机械工业出版社 / 2000-01 / 39.00&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： C++编程思想&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no14-程序员修炼之道&#34;&gt;No.14 程序员修炼之道&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1152111/&#34;&gt;程序员修炼之道&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1152111/&#34;&gt;https://book.douban.com/subject/1152111/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： Andrew Hunt、David Thomas / 马维达 / 电子工业出版社 / 2005-1 / 48.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 程序员修炼之道&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no15-pro-ogre-3d-programming&#34;&gt;No.15 Pro OGRE 3D Programming&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/2006050/&#34;&gt;Pro OGRE 3D Programming&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/2006050/&#34;&gt;https://book.douban.com/subject/2006050/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： Gregory Junker / Apress / 2006-9-25 / USD 59.99&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： Pro OGRE 3D programming&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no16-windows-程序设计第5版&#34;&gt;No.16 Windows 程序设计：第5版&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1088168/&#34;&gt;Windows 程序设计：第5版&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1088168/&#34;&gt;https://book.douban.com/subject/1088168/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： CharlesPetzold / 北京博彦科技发展有限公司 / 北京大学出版社 / 2003-11-1 / 160.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： windows程序开发入门教程&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no17-人月神话&#34;&gt;No.17 人月神话&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1102259/&#34;&gt;人月神话&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1102259/&#34;&gt;https://book.douban.com/subject/1102259/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [美] 弗雷德里克·布鲁克斯 / 汪颖 / 清华大学出版社 / 2002-11 / 29.80元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： “没有银弹”、“人月”均出自作者，全书总结IBM一个大型项目失败的经验教训，提出了概念的完整性/一致性对软件项目成败起着至关重要的作用。此外抨击了外行习惯性以增加人手来来提速的谬误，俗话说：十个孕妇也不可能在一个月生下小孩来。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no18-direct3d游戏编程入门教程&#34;&gt;No.18 Direct3D游戏编程入门教程&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1225606/&#34;&gt;Direct3D游戏编程入门教程&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1225606/&#34;&gt;https://book.douban.com/subject/1225606/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [德] 恩格尔 / 人民邮电出版社 / 2005-1 / 46.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 入门还算不错的。。。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no19-游戏之旅&#34;&gt;No.19 游戏之旅&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1441780/&#34;&gt;游戏之旅&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1441780/&#34;&gt;https://book.douban.com/subject/1441780/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 云风 / 电子工业出版社 / 2005-12-01 / 46.00&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 云风的作品，感觉一般一般。。。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no20-c陷阱与缺陷&#34;&gt;No.20 C陷阱与缺陷&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1102097/&#34;&gt;C陷阱与缺陷&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1102097/&#34;&gt;https://book.douban.com/subject/1102097/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： Andrew Koenig / 高巍 / 人民邮电出版社 / 2003-12-1 / 30.00&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 软件开发                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 怎么看都不对胃口，莫非俺已经真是小强了？哈哈&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;文学-4-本&#34;&gt;文学: 4 本&lt;/h3&gt;
+&lt;h4 id=&#34;no21-呼啸山庄&#34;&gt;No.21 呼啸山庄&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1119522/&#34;&gt;呼啸山庄&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1119522/&#34;&gt;https://book.douban.com/subject/1119522/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 艾米莉·勃朗特 / 张扬、张玲 / 人民文学出版社 / 1999-1 / 27.30元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 人为什么有那么大的仇恨？&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no22-撒哈拉的故事&#34;&gt;No.22 撒哈拉的故事&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1361264/&#34;&gt;撒哈拉的故事&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1361264/&#34;&gt;https://book.douban.com/subject/1361264/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 三毛 / 皇冠出版社 / 1976 / 160 TWD&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 撒哈拉的故事&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no23-第一次的亲密接触&#34;&gt;No.23 第一次的亲密接触&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1024217/&#34;&gt;第一次的亲密接触&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1024217/&#34;&gt;https://book.douban.com/subject/1024217/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 蔡智恒 / 知识出版社 / 1999-11-1 / 12.80&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 第一部出名的网络小说&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no24-麦田里的守望者&#34;&gt;No.24 麦田里的守望者&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1082518/&#34;&gt;麦田里的守望者&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1082518/&#34;&gt;https://book.douban.com/subject/1082518/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [美国] J. D. 塞林格 / 施咸荣 / 译林出版社 / 1997-2 / 7.80元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 麦田里的守望者&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;社会-2-本&#34;&gt;社会: 2 本&lt;/h3&gt;
+&lt;h4 id=&#34;no25-丑陋的中国人&#34;&gt;No.25 丑陋的中国人&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/3067169/&#34;&gt;丑陋的中国人&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/3067169/&#34;&gt;https://book.douban.com/subject/3067169/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 柏杨 / 人民文学出版社 / 2008-4 / 28.00&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 社会                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 丑陋的中国人&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no26-菊与刀&#34;&gt;No.26 菊与刀&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1022238/&#34;&gt;菊与刀&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1022238/&#34;&gt;https://book.douban.com/subject/1022238/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： （美）鲁思・本尼迪克特 / 吕万和、熊达云、王智新 / 商务印书馆 / 1990-6 / 16.00&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 社会                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 探究日本文化的不二经典，虽然有一些内容已经不适用于战后现代化进程中日本，但深层的文化底蕴思想依然是一样的。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h3 id=&#34;管理-1-本&#34;&gt;管理: 1 本&lt;/h3&gt;
+&lt;h4 id=&#34;no27-高效能人士的七个习惯精华版&#34;&gt;No.27 高效能人士的七个习惯（精华版）&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1048007/&#34;&gt;高效能人士的七个习惯（精华版）&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1048007/&#34;&gt;https://book.douban.com/subject/1048007/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [美] 史蒂芬·柯维 / 高新勇、王亦兵、葛雪蕾 / 中国青年出版社 / 2011-6 / 29.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 管理                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 讲述从个人领域到社会领域有所成就的七个优秀习惯：积极主动，自我领导，自我管理，双赢思维，移情沟通，创造性合作，持续的自我更新。四年前读过，再次阅读，再次叹服，不到300页的小册子，几乎句句是精华！强荐！&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;历年阅读&#34;&gt;历年阅读&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://luozhaohui.github.io/post/annual-reading/annual-readings/&#34;&gt;历年阅读统计汇总&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+      
     </item>
     
     <item>
@@ -38,7 +270,8 @@
       <pubDate>Mon, 31 Dec 2007 00:00:00 +0000</pubDate>
       
       <guid>https://luozhaohui.github.io/post/annual-reading/2007-12-31-reading/</guid>
-      <description>&lt;h2 id=&#34;总计-17-本&#34;&gt;总计 17 本&lt;/h2&gt;
+      
+        <description>&lt;h2 id=&#34;总计-17-本&#34;&gt;总计 17 本&lt;/h2&gt;
 &lt;h3 id=&#34;评价统计&#34;&gt;评价统计&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;五星图书 5 本，占比 29.4%&lt;/li&gt;
@@ -50,7 +283,135 @@
 &lt;ul&gt;
 &lt;li&gt;文学 16 本&lt;/li&gt;
 &lt;li&gt;心理 1 本&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;分类统计&#34;&gt;分类统计&lt;/h2&gt;
+&lt;h3 id=&#34;文学-16-本&#34;&gt;文学: 16 本&lt;/h3&gt;
+&lt;h4 id=&#34;no1-围城&#34;&gt;No.1 围城&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1008145/&#34;&gt;围城&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1008145/&#34;&gt;https://book.douban.com/subject/1008145/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 钱锺书 / 人民文学出版社 / 1991-2 / 19.00&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 我觉得人生就是这样，初恋不靠谱，找个可以拉锯的人才会彼此平衡过一生。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no2-红楼梦&#34;&gt;No.2 红楼梦&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1003079/&#34;&gt;红楼梦&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1003079/&#34;&gt;https://book.douban.com/subject/1003079/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 曹雪芹、高鹗 / 上海古籍出版社 / 1995-12-1 / 71.60元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 最喜欢的小说&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no3-鲁迅全集1&#34;&gt;No.3 鲁迅全集(1)&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1044994/&#34;&gt;鲁迅全集(1)&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1044994/&#34;&gt;https://book.douban.com/subject/1044994/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 鲁迅 / 人民文学出版社 / 1981-12 / 580.00&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 鲁迅是我最欣赏的人，其批评和斗争精神让我敬仰，其犀利而幽默的文字让我着迷。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no4-活着&#34;&gt;No.4 活着&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1082154/&#34;&gt;活着&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1082154/&#34;&gt;https://book.douban.com/subject/1082154/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 余华 / 南海出版公司 / 1998-5 / 12.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 极其令人震撼的小说，如果你常常不知道人为什么活着，也许这部小说在某方面给些提示抑或更加让你迷惑，它曾动摇我认为的“人不仅仅是为了活着”的信条，但我明白我和主人公的时代不同，所以我还是能够继续我的信条。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no5-荒野的呼唤&#34;&gt;No.5 荒野的呼唤&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1050367/&#34;&gt;荒野的呼唤&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1050367/&#34;&gt;https://book.douban.com/subject/1050367/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： （美）杰克・伦敦 / 胡春兰/赵苏苏 / 人民文学出版社 / 2004-07 / 16.00&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 描写一条带着狼血统的狗返归狼的本性的历程，我特喜欢那一个个心理暂变的过程。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no6-品三国上&#34;&gt;No.6 品三国（上）&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1829836/&#34;&gt;品三国（上）&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1829836/&#34;&gt;https://book.douban.com/subject/1829836/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 易中天 / 上海文艺出版社 / 2006-7 / 25.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 易中天成名之作，喜欢红楼梦的可以看看&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no7-水浒传全二册&#34;&gt;No.7 水浒传（全二册）&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1008357/&#34;&gt;水浒传（全二册）&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1008357/&#34;&gt;https://book.douban.com/subject/1008357/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [明] 施耐庵、罗贯中 / 人民文学出版社 / 1997-1 / 50.60元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 有人的地方就有江湖，江湖义气下隐藏在深深的权与谋。看经典都需要搭配着点评本看&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no8-曾国藩上中下&#34;&gt;No.8 曾国藩（上中下）&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1037060/&#34;&gt;曾国藩（上中下）&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1037060/&#34;&gt;https://book.douban.com/subject/1037060/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 唐浩明 / 人民文学出版社 / 2002-7 / 66.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 历史小说，引领几代湖南人叱咤中国的祖师爷。。。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no9-飘&#34;&gt;No.9 飘&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1068920/&#34;&gt;飘&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1068920/&#34;&gt;https://book.douban.com/subject/1068920/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 喜欢电影版最后一句：明天又是一个艳阳天。体现着乐观的美国精神，值得有时间了再重温。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no10-简爱&#34;&gt;No.10 简爱&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1141406/&#34;&gt;简爱&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1141406/&#34;&gt;https://book.douban.com/subject/1141406/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 人要追求平等与自主&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no11-平凡的世界全三部&#34;&gt;No.11 平凡的世界（全三部）&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1200840/&#34;&gt;平凡的世界（全三部）&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1200840/&#34;&gt;https://book.douban.com/subject/1200840/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 路遥 / 人民文学出版社 / 2005-1 / 64.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 初中的最爱啊。。。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no12-不能承受的生命之轻&#34;&gt;No.12 不能承受的生命之轻&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1017143/&#34;&gt;不能承受的生命之轻&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1017143/&#34;&gt;https://book.douban.com/subject/1017143/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 不能承受的生命之轻&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no13-文化苦旅&#34;&gt;No.13 文化苦旅&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1050339/&#34;&gt;文化苦旅&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1050339/&#34;&gt;https://book.douban.com/subject/1050339/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 余秋雨 / 东方出版中心 / 2001-4 / 22.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 年少的时候读得很带劲，那真是因为年少太无知。而立之后便看不太下去了。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no14-红与黑&#34;&gt;No.14 红与黑&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1205394/&#34;&gt;红与黑&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1205394/&#34;&gt;https://book.douban.com/subject/1205394/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 斯丹达尔 / 郭宏安 / 译林出版社 / 1994-5-1 / 11.00&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 红与黑&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no15-许三观卖血记&#34;&gt;No.15 许三观卖血记&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1029791/&#34;&gt;许三观卖血记&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1029791/&#34;&gt;https://book.douban.com/subject/1029791/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 余华 / 南海出版公司 / 1998-9 / 16.80元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 豁达地对待磨难中的人生&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h4 id=&#34;no16-千年一叹&#34;&gt;No.16 千年一叹&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1020241/&#34;&gt;千年一叹&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1020241/&#34;&gt;https://book.douban.com/subject/1020241/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： 余秋雨 / 作家出版社 / 2002-10 / 35.00元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 文学                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 远不如文化苦旅有力度&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;心理-1-本&#34;&gt;心理: 1 本&lt;/h3&gt;
+&lt;h4 id=&#34;no17-梦的解析&#34;&gt;No.17 梦的解析&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;图书名称&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1201821/&#34;&gt;梦的解析&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;豆瓣链接&lt;/strong&gt;： &lt;a href=&#34;https://book.douban.com/subject/1201821/&#34;&gt;https://book.douban.com/subject/1201821/&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;出版信息&lt;/strong&gt;： [奥地利] 弗洛伊德 / 丹宁 / 国际文化出版公司 / 1998-5 / 19.80元&lt;br&gt;
+&lt;strong&gt;标签&lt;/strong&gt;： 心理                &lt;strong&gt;评分&lt;/strong&gt; ：&lt;strong&gt;★★★&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;我的评论&lt;/strong&gt;： 以前很喜欢，那时还不会批判着看。现在明白很多了，祖师爷的理论其实很不靠谱。。。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;历年阅读&#34;&gt;历年阅读&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://luozhaohui.github.io/post/annual-reading/annual-readings/&#34;&gt;历年阅读统计汇总&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+      
     </item>
     
   </channel>

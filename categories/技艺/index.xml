@@ -6,14 +6,19 @@
     <description>Recent content in 技艺 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 05 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://luozhaohui.github.io/categories/%E6%8A%80%E8%89%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jan 2025 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://luozhaohui.github.io/categories/%E6%8A%80%E8%89%BA/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>关于 AMC8 数学竞赛你所需要知道的一切</title>
       <link>https://luozhaohui.github.io/post/2025/2025-01-05-amc8-all-in-one/</link>
       <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>https://luozhaohui.github.io/post/2025/2025-01-05-amc8-all-in-one/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+      
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;AMC&lt;/strong&gt; 美国数学竞赛全称 &lt;strong&gt;American Mathematics Competitions&lt;/strong&gt;，由美国数学协会主办，是美国国家级别的系列数学竞赛，赛事分 &lt;strong&gt;AMC8&lt;/strong&gt;（初级中学）、&lt;strong&gt;AMC10&lt;/strong&gt;（高级中学）、&lt;strong&gt;AMC12&lt;/strong&gt;（高级中学）三个级别，分别允许不超过美国 8、10、12 年级的学生参加。&lt;/p&gt;
 &lt;p&gt;为什么要参加一个美国的数学竞赛考试？&lt;/p&gt;
 &lt;ul&gt;
@@ -30,7 +35,240 @@
 &lt;li&gt;打算参加小升初选拔的学生&lt;/li&gt;
 &lt;li&gt;对数学有兴趣，以考促学的学生&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;总的来说，小学阶段&lt;strong&gt;有实际需求以及具备相应领悟能力、学有余力&lt;/strong&gt;的学生可以备考 &lt;strong&gt;AMC8&lt;/strong&gt; 竞赛。&lt;strong&gt;不建议硬控硬上，给孩子留一个快乐的童年和一份阳光健康的心态比让孩子在高压下学习要重要得多&lt;/strong&gt;。&lt;/p&gt;</description>
+&lt;p&gt;总的来说，小学阶段&lt;strong&gt;有实际需求以及具备相应领悟能力、学有余力&lt;/strong&gt;的学生可以备考 &lt;strong&gt;AMC8&lt;/strong&gt; 竞赛。&lt;strong&gt;不建议硬控硬上，给孩子留一个快乐的童年和一份阳光健康的心态比让孩子在高压下学习要重要得多&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;一amc8高频考点&#34;&gt;一、AMC8高频考点&lt;/h2&gt;
+&lt;p&gt;AMC8竞赛考点涵盖了中国小学全部的数学知识和部分初中的知识，旨在全面考察学生的数学知识和思维能力。&lt;/p&gt;
+&lt;h3 id=&#34;1-基础代数&#34;&gt;1. 基础代数&lt;/h3&gt;
+&lt;p&gt;基础代数是 &lt;strong&gt;AMC8&lt;/strong&gt; 考试中出现频率最高的考点之一，通常约占10道题目。代数的核心内容涵盖了以下知识点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;分数&lt;/strong&gt;：学生需要熟练掌握分数的加减乘除运算，以及如何进行分数的简化和比较。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方程&lt;/strong&gt;：包括简单的一元一次方程的解法，学生需能够独立设置和求解方程。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数列&lt;/strong&gt;：理解数列的基本概念，能够识别和生成简单的数列，如等差数列和等比数列。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-基础几何&#34;&gt;2. 基础几何&lt;/h3&gt;
+&lt;p&gt;基础几何的题目数量虽然低于代数，通常约为6-8道，但其考察内容依然非常重要。主要注意的是：大部分几何内容在国际课程中可能没有涉及，学生应通过额外的学习和练习来补充相关知识。&lt;/p&gt;
+&lt;p&gt;主要涉及的知识点包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;三角形&lt;/strong&gt;：理解三角形的性质，包括角的关系、边的长度等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;四边形&lt;/strong&gt;：掌握不同类型四边形的特性，如矩形、正方形和菱形等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;勾股定理&lt;/strong&gt;：能够应用勾股定理解决与直角三角形相关的问题。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-基础数论&#34;&gt;3. 基础数论&lt;/h3&gt;
+&lt;p&gt;基础数论在AMC8的考察比例逐渐增加，通常占3-4道题目。数论题目通常涉及较为基础的概念，但对于学生的逻辑思维能力有较高的要求。主要考察的内容包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;整除&lt;/strong&gt;：理解整除的概念，能够判断一个数是否可以被另一个数整除。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;质因数分解&lt;/strong&gt;：掌握质因数分解的基本方法，能够将合数分解为质数的乘积。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-基础组合&#34;&gt;4. 基础组合&lt;/h3&gt;
+&lt;p&gt;组合题目在AMC8中相对较少，通常约为3-5道，主要涉及计数和概率等内容。其中，计数题是每年必考的内容，学生应特别重视这一部分的复习。&lt;/p&gt;
+&lt;p&gt;重点考察以下知识点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;计数&lt;/strong&gt;：通过排列和组合的方法解决问题，理解基本的计数原理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;概率&lt;/strong&gt;：能够计算简单事件发生的概率，理解概率的基本概念。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;二amc8-考试内容&#34;&gt;二、AMC8 考试内容&lt;/h2&gt;
+&lt;h3 id=&#34;amc8-考试大纲&#34;&gt;AMC8 考试大纲&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/2025/AMC8%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2.jpg&#34; alt=&#34;AMC8考试大纲&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;amc8-知识点&#34;&gt;AMC8 知识点&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/2025/AMC8%E7%9F%A5%E8%AF%86%E7%82%B9%E5%92%8C%E5%AD%A6%E6%A0%A1%E7%9F%A5%E8%AF%86%E7%82%B9%E6%AF%94%E8%BE%83.png&#34; alt=&#34;AMC8知识点和学校知识点比较&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;amc8-出题范围&#34;&gt;AMC8 出题范围&lt;/h3&gt;
+&lt;p&gt;考察内容：从历年 AMC8 竞赛题目分析得出，题目主要分为三个方向：&lt;strong&gt;小学数学、初中数学和小学奥数&lt;/strong&gt;。其中有部分图表问题夹在小学数学、小奥和初中数学之间，划定范围模棱两可，但基于专业学科老师分析，基本上可以认为上述三类题目范畴各占三分之一。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;小学阶段考察范畴&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;基本的计算与应用题:&lt;/em&gt; 整数分数小数以及混合的四则运算，百分比以及比与比例运算类型应用题，行程和相关变形的问题，平均数、中位数、众数等统计问题等;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;基础几何:&lt;/em&gt; 简单的三角形、四边形与圆形等求角、求边求面积的计算，常见且基础的立体图形或需要空间想象的图形有关计算问题;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;简单数论:&lt;/em&gt; 质数与合数，约数和倍数以及最大公约数、最小公倍数和整除性质应用有关问题;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;小学奥数考察范畴&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;巧算和应用题:&lt;/em&gt; 整数分数小数以及混合运算的巧算，计算找规律，多种不同类型的更深入的应用题，例如鸡兔同笼、青蛙跳井问题、植树问题、工程问题、行船流水与环形跑道问题等:&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;几何求值:&lt;/em&gt; 利用割补方法求复杂图形面积;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;数论延伸:&lt;/em&gt; 质因数分析问题、约数个数计算、奇数偶数特点与奇偶性分析问题、余数问题、位置原理有关的问题，以及填数阵图、解竖式类型的计算与数论综合应用题;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;计数与组合杂题:&lt;/em&gt; 阶乘运算，图形计数、找规律计数、加法与乘法原理，举法与分类讨论，容斥原理等，逻辑推理问题，游戏与操作对策问题;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;初中阶段考察范畴&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;代数:&lt;/em&gt; 乘方运算、多项式、一次与二次方程、列方程或方程组解应用题、不等式等差数列和等比数列及其有关计算、一次函数及其计算，文字与图表相结合的常见应用题，复杂的利用代数方法解决的统计学问题;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;几何:&lt;/em&gt; 坐标系有关问题，平面几何中的三角形、四边形、圆形与扇形的定理与性质图形的全等与相似及其在计算中的应用、勾股定理与计算，圆柱和圆锥等立体几何图形;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;三amc8-答题技巧和注意事项&#34;&gt;三、AMC8 答题技巧和注意事项&lt;/h2&gt;
+&lt;h3 id=&#34;1额外的答题技巧&#34;&gt;1、额外的答题技巧&lt;/h3&gt;
+&lt;p&gt;在AMC8竞赛中，除了常规的解题方法外，巧妙的解题技巧和合理的猜测（smart guess）也能帮助我们提高答题效率和准确率。以下是一些常见的技巧：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;代值法、特殊值法和选项结合法&lt;/strong&gt;：在涉及比与比例、百分比的问题中，当总数未知且总数不影响答案时，可以假设一个总数来进行计算。在数论的整数性分析问题中，可以使用特殊值法结合选项排除法来找到正确答案。例如，可以假设某个变量为一个方便计算的数，从而简化问题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;作图与几何问题&lt;/strong&gt;：AMC8的几何题通常附有标准配图。在时间紧张或思路不清晰时，可以尝试直接测量图中的参数来快速推理出答案。这种方法尤其适用于那些视觉化的几何问题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;排除法&lt;/strong&gt;：根据奇偶性、平方数、质数性等特征，可以排除不符合要求的选项。例如，如果题目要求找一个质数，而某个选项明显不是质数，则可以直接排除。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;找规律&lt;/strong&gt;：从最简单的初始情况开始研究，找到大致规律后，再延伸验证。这种方法在处理递归关系或数列问题时尤为有效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2要规避的错误&#34;&gt;2、要规避的错误&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;避免计算错误&lt;/strong&gt;：在计算过程中，尽量少跳步，多打草稿，并进行复算检查。时间紧张时，可以采用个位数检查的方法快速验证计算结果。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免理解题意错误&lt;/strong&gt;：注意题目中的关键词和关键条件，例如“包括、排除”，“奇数、偶数”，“质数、合数”，“整数、实数、正数、非负数”等。特别要注意提问部分，准确理解题目所问的问题。对关键条件和关键词划线标注，以避免遗漏。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免方法选择错误&lt;/strong&gt;：审题后，不要急于演算和作答。先判断题目类型，思考题目是否存在多解或巧解，然后选择最适当的方法求解，以避免因方法选择错误而浪费时间。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3考试注意事项&#34;&gt;3、考试注意事项&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;时间安排和答题策略&lt;/strong&gt;：根据自己的学习和备考水平，提前确定实际考试中的时间安排和答题策略。合理分配时间，确保有足够的时间处理难题。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;充分准备常考题型&lt;/strong&gt;：对于AMC8常考的计算题、应用题、计数概率题等，要做充分的准备，特别是提高各类计算的熟练度。这样不仅能提高常规题目的正确率，还能为应对复杂问题争取更多时间。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;错题反思&lt;/strong&gt;：考前刷题不应只注重题量，而应在刷题的同时多做错题反思。做会一道错题比盲目多做题更加有用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;审题仔细&lt;/strong&gt;：对于题干文字量较大的题目，一定要多次审题，标出重点，避免遗漏条件或审题出错。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;参考英文题目&lt;/strong&gt;：尽管中国区考试为双语试卷，还是尽量参照英文题目，避免因翻译错误导致理解偏差。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;保持良好状态&lt;/strong&gt;：考试前应注重休息和饮食安排，尽量将身体和精神状态调整到最佳。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;四amc8-竞赛制度&#34;&gt;四、AMC8 竞赛制度&lt;/h2&gt;
+&lt;h3 id=&#34;难度分析&#34;&gt;难度分析&lt;/h3&gt;
+&lt;p&gt;AMC8竞赛的难度相对较大，题目设计灵活且复杂，要求学生具备较强的数学知识储备和逻辑思维能力。难度逐层递增，特别是第16至25题，着重考察学生的逻辑思维和解决问题的能力。这体现在多个方面：&lt;/p&gt;
+&lt;h4 id=&#34;1-题目设计&#34;&gt;1. 题目设计&lt;/h4&gt;
+&lt;p&gt;AMC8的题目通常设计得既有趣又具挑战性，旨在全面考察学生的数学知识和思维能力。题目不仅要求学生具备扎实的数学基础，还需要他们具备良好的数学思维和问题解决能力。例如，题目可能设计成趣味性的问题情境，让学生在解题过程中感到既有挑战又有趣味。&lt;/p&gt;
+&lt;h4 id=&#34;2-知识点覆盖&#34;&gt;2. 知识点覆盖&lt;/h4&gt;
+&lt;p&gt;AMC8竞赛的内容涵盖了多个数学领域，包括数与代数、几何、数论、组合数学以及逻辑推理等。知识点广泛且深入，要求学生全面掌握这些领域的知识，并能够灵活运用它们解决实际问题。例如，学生可能需要在同一道题目中运用代数和几何的知识进行综合解答。&lt;/p&gt;
+&lt;h4 id=&#34;3-题目难度&#34;&gt;3. 题目难度&lt;/h4&gt;
+&lt;p&gt;AMC8的题目难度通常较高，需要学生具备一定的数学素养和思维能力才能解答。一些题目可能需要学生运用多种数学知识和方法进行推理和计算，才能得出正确答案。例如，某些题目可能涉及复杂的数论或组合数学问题，需要学生具备较强的推理和计算能力。&lt;/p&gt;
+&lt;h4 id=&#34;4-时间限制&#34;&gt;4. 时间限制&lt;/h4&gt;
+&lt;p&gt;AMC8竞赛的时间限制为40分钟，对于部分学生来说可能比较紧张。学生需要在有限的时间内快速准确地解答25道题目，这对他们的思维速度和解题能力提出了更高的要求。时间管理不当可能导致部分题目无法完成，从而影响整体成绩。&lt;/p&gt;
+&lt;h3 id=&#34;考试制度&#34;&gt;考试制度&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;允许携带：&lt;/strong&gt; 书写用具（注：包括彩色笔/铅笔）；笔记本电脑或平板电脑；空白草稿纸；橡皮擦。
+&lt;strong&gt;禁止携带：&lt;/strong&gt; 计算器；智能手表；电话；计算设备；指南针；量角器；方格纸。
+&lt;strong&gt;注意：&lt;/strong&gt; 为了以数字方式管理比赛，学生可以使用笔记本电脑或平板电脑，打开一个选项卡查看比赛。否则，学生在比赛期间只能使用书写用具、空白草稿纸、尺子和橡皮擦。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;竞赛时间：&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;报名截止：&lt;/strong&gt; 2025年1月12日，&lt;strong&gt;考试：&lt;/strong&gt; 1月23日，10:00-10:40&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;报考要求：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;8年级(初二)且14.5岁以下年级/年龄学生(年龄截止至测评活动当天)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;试卷构成：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;25道单项选择题，每题有五个选项&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;比赛语言：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;AMC8数学竞赛提供中英双语试卷，以满足不同语言背景的学生的需求&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;计分方式：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;满分25分，答对1题得1分，答错得0分&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;活动时长：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;40分钟，学生需要在这个时间内完成所有题目&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;考试地点：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;线上或者线下自由选择&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;发布成绩:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;在 6-8 周内公布竞赛成绩，在官方网站上查询成绩&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;在线模拟考试:&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2025年1月15日至1月19日&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;准考证下载：&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;2025年1月15日&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;证书种类&#34;&gt;证书种类&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Honor Roll of Distinction AMC8 - 全球卓越奖&lt;/strong&gt; ——达到全球前1%，一般在21分及以上。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Honor Roll AMC8 - 全球优秀奖&lt;/strong&gt; ——达到全球前5%，一般在17分及以上。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Perfect Score AMC8 - 满分奖&lt;/strong&gt; ——达到满分25分。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Certificate of Achievement AMC8 - 全球荣誉奖&lt;/strong&gt; ——六年级及其以下参加且在15分及以上。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AMC8 Participation - 参赛证书&lt;/strong&gt; ——参赛即可获得。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;五备考与资料&#34;&gt;五、备考与资料&lt;/h2&gt;
+&lt;h3 id=&#34;备考规划&#34;&gt;备考规划&lt;/h3&gt;
+&lt;p&gt;如果想要报考好的初中学校，那需要提前规划好时间，在小升初选拔之前完成 &lt;strong&gt;AMC8&lt;/strong&gt; 考试。拿五四制来说，一般的升学选拔在五年级第二学期（约三、四月份），因此需要在五年级寒假期间完成考试，领悟能力强的学生可以在四年级寒假参加第一次 AMC8 考试，五年级寒假再参加第二次 AMC8 考试。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;四年级暑假～五年级第一学期：刷蓝宝书（《美国初中数学竞赛-AMC8准备》一套六卷，第一到五卷为知识点、示例以及习题，第六卷为十套模拟题）。&lt;/li&gt;
+&lt;li&gt;12月：刷真题，体会出题风格，琢磨出题思路，学习答题技巧，查漏补短，错题总结。&lt;/li&gt;
+&lt;li&gt;第二年1月：用真题模拟考试，提升思维运转和联想速度，把控答题时间，为正式考试做好充分准备。&lt;/li&gt;
+&lt;li&gt;第二年2月～3月查询结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;资料分析&#34;&gt;资料分析&lt;/h3&gt;
+&lt;p&gt;蓝宝书中的例题和习题总体难度是大于真题的，但真题考试有严格的时间限制，因此，会做也不一定能考高分。为此，必须提高读题能力、解题速度、以及答题技巧，在前面15道题上挤出时间来解答后面10道题，才可能拿到高分。前15题是基础题，一般细心就不太会错，务必要全对；后10道题是综合提升题，难度逐步提高。&lt;/p&gt;
+&lt;p&gt;真题主要是考察&lt;strong&gt;多个知识点的灵活综合应用&lt;/strong&gt;，不会有很复杂的计算；20题以后的题目通常都有多种解决思路，这些题目通常也有避免复杂计算的设计。可以说 &lt;strong&gt;AMC8&lt;/strong&gt; 的出题非常灵活，注意考察的是思维的灵活性、开阔性以及关联应用能力，有点像脑筋急转弯，思路对了就很简单。因此要特别&lt;strong&gt;仔细读题，明确有哪些条件，这些条件之间可以怎样关联和转换，可以和哪些知识点关联，题目的问题是什么&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&#34;解题技巧&#34;&gt;解题技巧&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;时间：每道题平均不到一分半钟，包括读题、解题、答题&lt;/li&gt;
+&lt;li&gt;巧算：不要计算小数，尽量利用分数计算化约&lt;/li&gt;
+&lt;li&gt;延迟计算：不要过早计算中间结果，可以延后化约&lt;/li&gt;
+&lt;li&gt;排除：边算边估选排除选项，无需全部做完。选择题是去证明，而无需完全解答&lt;/li&gt;
+&lt;li&gt;简化：不同尺度的单位统一，简化为熟悉的单位&lt;/li&gt;
+&lt;li&gt;代入：尽量用简单或特殊的值去代入，如：百分比就用100，占比几分之几就用最小公倍数&lt;/li&gt;
+&lt;li&gt;估算：图表都是标准尺寸，可用尺子量大胆估算&lt;/li&gt;
+&lt;li&gt;思路：如果涉及复杂的计算，那么思路一定错了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;历年真题&#34;&gt;历年真题&lt;/h3&gt;
+&lt;h4 id=&#34;amc-8-历年真题以及解决方案&#34;&gt;AMC 8 历年真题以及解决方案&lt;/h4&gt;
+&lt;p&gt;外部资源：&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/AMC_8_Problems_and_Solutions&#34;&gt;AMC Art of Problem Solving&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2024_AMC_8&#34; title=&#34;2024 AMC 8&#34;&gt;2024 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2023_AMC_8&#34; title=&#34;2023 AMC 8&#34;&gt;2023 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2022_AMC_8&#34; title=&#34;2022 AMC 8&#34;&gt;2022 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2020_AMC_8&#34; title=&#34;2020 AMC 8&#34;&gt;2020 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2019_AMC_8&#34; title=&#34;2019 AMC 8&#34;&gt;2019 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2018_AMC_8&#34; title=&#34;2018 AMC 8&#34;&gt;2018 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2017_AMC_8&#34; title=&#34;2017 AMC 8&#34;&gt;2017 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2016_AMC_8&#34; title=&#34;2016 AMC 8&#34;&gt;2016 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2015_AMC_8&#34; title=&#34;2015 AMC 8&#34;&gt;2015 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2014_AMC_8&#34; title=&#34;2014 AMC 8&#34;&gt;2014 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2013_AMC_8&#34; title=&#34;2013 AMC 8&#34;&gt;2013 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2012_AMC_8&#34; title=&#34;2012 AMC 8&#34;&gt;2012 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2011_AMC_8&#34; title=&#34;2011 AMC 8&#34;&gt;2011 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2010_AMC_8&#34; title=&#34;2010 AMC 8&#34;&gt;2010 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2009_AMC_8&#34; title=&#34;2009 AMC 8&#34;&gt;2009 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2008_AMC_8&#34; title=&#34;2008 AMC 8&#34;&gt;2008 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2007_AMC_8&#34; title=&#34;2007 AMC 8&#34;&gt;2007 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2006_AMC_8&#34; title=&#34;2006 AMC 8&#34;&gt;2006 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2005_AMC_8&#34; title=&#34;2005 AMC 8&#34;&gt;2005 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2004_AMC_8&#34; title=&#34;2004 AMC 8&#34;&gt;2004 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2003_AMC_8&#34; title=&#34;2003 AMC 8&#34;&gt;2003 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2002_AMC_8&#34; title=&#34;2002 AMC 8&#34;&gt;2002 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2001_AMC_8&#34; title=&#34;2001 AMC 8&#34;&gt;2001 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/2000_AMC_8&#34; title=&#34;2000 AMC 8&#34;&gt;2000 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://artofproblemsolving.com/wiki/index.php/1999_AMC_8&#34; title=&#34;1999 AMC 8&#34;&gt;1999 AMC 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;amc-8-历年真题在线模拟考试&#34;&gt;AMC 8 历年真题在线模拟考试&lt;/h4&gt;
+&lt;p&gt;外部资源：&lt;a href=&#34;https://live.poshenloh.com/past-contests&#34;&gt;https://live.poshenloh.com/past-contests&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2024&#34;&gt;2024&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2023&#34;&gt;2023&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2022&#34;&gt;2022&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2020&#34;&gt;2020&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2019&#34;&gt;2019&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2018&#34;&gt;2018&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2017&#34;&gt;2017&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2016&#34;&gt;2016&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2015&#34;&gt;2015&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2014&#34;&gt;2014&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2013&#34;&gt;2013&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2012&#34;&gt;2012&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2011&#34;&gt;2011&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2010&#34;&gt;2010&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2009&#34;&gt;2009&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2008&#34;&gt;2008&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2007&#34;&gt;2007&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2006&#34;&gt;2006&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2005&#34;&gt;2005&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2004&#34;&gt;2004&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2003&#34;&gt;2003&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2002&#34;&gt;2002&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2001&#34;&gt;2001&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/2000&#34;&gt;2000&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/1999&#34;&gt;1999&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/1998&#34;&gt;1998&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://live.poshenloh.com/past-contests/amc8/1997&#34;&gt;1997&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
     </item>
     
     <item>
@@ -39,12 +277,94 @@
       <pubDate>Wed, 10 Oct 2018 23:14:00 +0800</pubDate>
       
       <guid>https://luozhaohui.github.io/post/2018/2018-10-10-kids-english-with-phonics/</guid>
-      <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+      
+        <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;新浪上海发布了一条&lt;a href=&#34;http://sh.sina.com.cn/news/k/2018-10-03/detail-ifxeuwws0541305.shtml&#34;&gt;微博&lt;/a&gt;：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;【法语、德语等语种正式列入高中课程 上海部分学校率先试点】根据教育部的新课程方案，今年秋季开学起，中学生除了英语，还可以选择法语、德语、西班牙语等语言作为自己的第一外语，去参加高考。目前在上海，已有光明中学、上外附中等学校进行了先期试点。另据了解，方案推出后，上外和北外都编了法语中学生的教材并将于明年秋季开始试用。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;估计上海的宝妈宝爸们又要白几根头发了，小孩第一外语尚未学好，第二外语就要开始了。但第二外语计划列入的毕竟是高中的课程，对英语启蒙阶段的小孩来说尚有许多年头可以去学习，而且英语、法语、德语都同属于印欧语系，如果把英语学好了，再去学习法语或德语，也会容易许多。因此，宝妈宝爸们也不必过于焦虑，&lt;code&gt;Rome wasn&#39;t built in a day&lt;/code&gt;（罗马不是一天建成的），一个阶段做好一个阶段的事情就好。对于学龄前的幼儿来说，最关键的是做好英语启蒙教育。&lt;/p&gt;</description>
+&lt;p&gt;【法语、德语等语种正式列入高中课程 上海部分学校率先试点】根据教育部的新课程方案，今年秋季开学起，中学生除了英语，还可以选择法语、德语、西班牙语等语言作为自己的第一外语，去参加高考。目前在上海，已有光明中学、上外附中等学校进行了先期试点。另据了解，方案推出后，上外和北外都编了法语中学生的教材并将于明年秋季开始试用。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;估计上海的宝妈宝爸们又要白几根头发了，小孩第一外语尚未学好，第二外语就要开始了。但第二外语计划列入的毕竟是高中的课程，对英语启蒙阶段的小孩来说尚有许多年头可以去学习，而且英语、法语、德语都同属于印欧语系，如果把英语学好了，再去学习法语或德语，也会容易许多。因此，宝妈宝爸们也不必过于焦虑，&lt;code&gt;Rome wasn&#39;t built in a day&lt;/code&gt;（罗马不是一天建成的），一个阶段做好一个阶段的事情就好。对于学龄前的幼儿来说，最关键的是做好英语启蒙教育。&lt;/p&gt;
+&lt;h2 id=&#34;为什么坚持英语启蒙教育这么难呢&#34;&gt;为什么坚持英语启蒙教育这么难呢？&lt;/h2&gt;
+&lt;p&gt;英语启蒙教育说难不难，说不难又很难。为什么这么说呢，说不难是指教育理念与方法，也许一堂课或一篇文章就能够让家长明白该怎么教；说难是指贵在坚持。&lt;/p&gt;
+&lt;p&gt;为什么坚持英语启蒙教育这么难呢？个人觉得有三方面的原因：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;是因为英语启蒙教学的内容与形式要符合这个年龄段小孩的心智水平，这样才能吸引小孩的兴趣。过于复杂的内容，以及死记硬背或责骂高压式的教学方式只会适得其反，让小孩畏惧英语学习，彻底丧失对英语的兴趣，因此非常考验家长的耐心与技巧；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;是因为这个阶段的幼儿认知学习规律要求对所学知识的大量重复，这样重复的教学过程对家长来说是有点枯燥的，对家长的恒心也是一个不小的考验；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;是因为家长尤其是双上班族家庭，工作忙碌了一天，下班回来未必有足够的精力与时间来教小孩学习。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;自然拼读法&#34;&gt;自然拼读法&lt;/h2&gt;
+&lt;p&gt;那么有没有这样一套英语学习启蒙方法，小孩学会之后能够在一定程度上自主学习英语呢？就像教小孩用字典学认字，刚开始需要付出较多努力去指导小孩如何用字典去查生字，一旦小孩学会了，再碰到不会的生字就会自己去查字典，不再需要家长一个字一个字地教了。答案是有的，这套方法就是自然拼读法，英文名字叫：&lt;code&gt;Phonics&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;据我的理解，自然拼读法有三大要点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;以音为切入点，先音后形再意；&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;以拼读为手段；&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;以阅读理解为目的。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这三个要点层层递进，后面的要点是建立在前面要点的基础上的。&lt;/p&gt;
+&lt;h3 id=&#34;以音为切入点先音后形再意&#34;&gt;以音为切入点，先音后形再意&lt;/h3&gt;
+&lt;p&gt;首先是音与字母的对应，即教单个字母的发音，这里的发音是指音标音，而不是字母音。如：&lt;code&gt;c&lt;/code&gt; 发音 &lt;code&gt;/k/&lt;/code&gt;，&lt;code&gt;a&lt;/code&gt; 发音 &lt;code&gt;/æ/&lt;/code&gt;, &lt;code&gt;t&lt;/code&gt; 发音 &lt;code&gt;/t/&lt;/code&gt;。然后是音与单词的对应，即教字母组合的发音以及拼读规则。如：组合 &lt;code&gt;at&lt;/code&gt; 发音 &lt;code&gt;/æt/&lt;/code&gt;，单词 &lt;code&gt;ca&lt;/code&gt;t 拼读为 &lt;code&gt;c-at&lt;/code&gt;，发音为 &lt;code&gt;/kæt/&lt;/code&gt;。最后是音和实物情景对应，使得发音与情境关联起来。&lt;/p&gt;
+&lt;p&gt;可以说自然拼读法是以音为突破点的，这个特点非常像母语的学习过程，也就是情境直接与英语本身关联起来，这样的学习方式就非常的地道，非常的英文思维。避免了成人学习英语过程中常见的中文思维转译为英文的过程，即根据情境理解整理出中文意思再翻译成英文。&lt;/p&gt;
+&lt;h3 id=&#34;以拼读为手段&#34;&gt;以拼读为手段&lt;/h3&gt;
+&lt;p&gt;根据各个字母的发音拼读出单词的发音，然后根据单词发音记住单词拼写，根据上下文情境关联猜测和明白单词意思，从而理解句子和段落的意思。音-词-句依次递进。&lt;/p&gt;
+&lt;h3 id=&#34;以阅读理解为目的&#34;&gt;以阅读理解为目的&lt;/h3&gt;
+&lt;p&gt;有了基础的发音与拼读规则启蒙之后，小孩就能够自主阅读一些初级的分级读物或绘本，在阅读的过程中，能够自己去拼读新单词的发音，根据上下文或画面内容推测出新单词的意思，从而理解整个句子或段落的意思。这是自然拼读法的终极目的。&lt;/p&gt;
+&lt;h3 id=&#34;自然拼读法为什么这么低调&#34;&gt;自然拼读法为什么这么低调？&lt;/h3&gt;
+&lt;p&gt;既然自然拼读大法如此优秀，为何名不见经传呢？国内的学校教育似乎也较少使用呢？我觉得主要是因为在国内九年义务制教育中英语起步较晚，像我们 80 后是从初中开始才教英语，现在上海的公立学校也要到小学一年级才开始教英语。对于一年级6、7岁左右的小孩来说，他的心智已经成长到较高级的阶段了，中文思维已经非常强势了。此时再使用音与情境关联的教学方法，比如说指着一只猫跟他说这是 &lt;code&gt;cat&lt;/code&gt;，以他的心智水平来说就有点的低级，然后再让他重复几次跟着念就更会觉得枯燥无趣。因为在他的心智图谱中猫这个概念已经建立好了，并且和中文字“&lt;code&gt;猫&lt;/code&gt;”关联起来了。这时你再让他建立一个从猫这个概念到英语单词“&lt;code&gt;cat&lt;/code&gt;”的关联，难度就大了。&lt;/p&gt;
+&lt;p&gt;很多大公司都喜欢招应届毕业生自己培养，因为白纸一张嘛，没有什么思维定势需要去改变的，容易塑造成为符合企业需要的人才。学英语也是一样，直接建立一个从猫这个概念到英语单词“&lt;code&gt;cat&lt;/code&gt;”的关联，与从猫这个概念关联到中文“&lt;code&gt;猫&lt;/code&gt;”这个字，再从中文字“&lt;code&gt;猫&lt;/code&gt;”建立一个到英语单词“&lt;code&gt;cat&lt;/code&gt;”的关联相比，前者非常直接，后者不仅多了一个翻译环节，而且是用不地道的英语在表达中文思维。&lt;/p&gt;
+&lt;h2 id=&#34;什么时候开始幼儿英语启蒙&#34;&gt;什么时候开始幼儿英语启蒙？&lt;/h2&gt;
+&lt;p&gt;幼儿的英语启蒙越早越好，在学习母语的黄金时段两到四岁时开始就更好。一是因为这个时段是语言学习的黄金时段，二是因为这个年龄段小孩的心智水平非常适合自然拼读法的情境式教学。&lt;/p&gt;
+&lt;p&gt;是不是完全没有接触过英语就可以开始自然拼读法教学呢？也不是。前面说了，自然拼读法教学首先是要进行音的教学，这个过程无论用怎样生动活泼的游戏方式来教学，对幼儿来说多少有点枯燥，尤其是对英语没有一点点感觉和熟悉感的话，简直就是鸡同鸭讲。就像我们的母语学习，在小孩开始学习说话之前至少在母语环境中磨了一到两年的耳朵，他虽然还不太会说，但已经听了足够多了，对母语的音素、韵律以及节奏有一定的熟悉感了。前面也说过小孩的学习过程需要大量的重复，这个重复就是在不断地确认与增强这种熟悉感。对于有点熟悉感但又尚未完全掌握的事物，小孩是非常感兴趣的。因此，英语零基础是不太适合开始自然拼读法教学。在开始之前，需要有一个磨耳朵的过程。&lt;/p&gt;
+&lt;h2 id=&#34;怎样进行幼儿英语启蒙&#34;&gt;怎样进行幼儿英语启蒙？&lt;/h2&gt;
+&lt;p&gt;因此，&lt;strong&gt;我觉得最佳的幼儿英语启蒙方法是：一岁到三岁之间多听磨耳朵；三岁开始系统地学习自然拼读，同时全方位立体地大量输入英语。&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;如何磨耳朵&#34;&gt;如何磨耳朵？&lt;/h3&gt;
+&lt;p&gt;一岁到三岁这个阶段的幼儿，考虑到视力发育，不宜看太久的视频（每天不应超过十分钟），因此最适合通过听来磨耳朵。父母可以通过儿歌或妈妈语等方式大量地输入英语，让幼儿熟悉英语的音素、韵律以及节奏，从而培养语感。可以这么说怎么给幼儿输入中文儿歌就可以同样给幼儿输入英语儿歌。有条件的父母可以自己哼唱英语儿歌给幼儿听，条件不具备的父母也可以通过手机或平板电脑等给宝宝播放英语儿歌。&lt;/p&gt;
+&lt;p&gt;这个阶段的英语资源推荐：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;英语儿歌：《清华幼儿英语语感启蒙》系列，外教口音纯正，形象和蔼可亲，并伴有肢体动作游戏或舞蹈，幼儿可以模仿一边唱一边做肢体动作。&lt;br&gt;
+&lt;img src=&#34;https://i.imgur.com/p0mp1Td.jpg&#34; alt=&#34;清华幼儿英语语感启蒙&#34;&gt;&lt;/li&gt;
+&lt;li&gt;英语翻翻书：《&lt;code&gt;First ABC&lt;/code&gt;》&lt;br&gt;
+&lt;img src=&#34;https://i.imgur.com/ugArM1L.jpg&#34; alt=&#34;翻翻书《First ABC》&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;我家有两个娃，二宝灿灿在一岁半的时候开始磨耳朵，男孩发育稍微有点晚，现在刚两岁还不太会说话，但是一听到熟悉的英语儿歌，就会闻歌起舞做出相应的动作。而且令我们惊讶的是，“鸡蛋”中文他还不会说，就先学会说英语“&lt;code&gt;egg&lt;/code&gt;”了，这是平时跟他讲《&lt;code&gt;First ABC&lt;/code&gt;》时听的。&lt;/p&gt;
+&lt;p&gt;以下是灿灿闻歌起舞的视频：&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;如何系统地学习自然拼读&#34;&gt;如何系统地学习自然拼读？&lt;/h2&gt;
+&lt;p&gt;大部分有心的家长都可以在家自己给幼儿磨耳朵，磨耳朵磨到一定年龄，两到三岁左右，也就是语言敏感期，就应该提升层次，开始系统地进行自然拼读学习。**在进行自然拼读学习的同时，也要增加英语输入的量与形式。没有大量的输入就不可能有输出，因此要全方位立体地输入，绘本、儿歌、动画、互动游戏、情景对话等等都可以搞起来。**这个年龄段的小孩每天可以看半个小时左右的纯英语视频，不宜更多。&lt;/p&gt;
+&lt;p&gt;这个阶段的英语资源推荐：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;英语绘本：&lt;code&gt;Biscuit&lt;/code&gt;（小饼干狗系列），&lt;code&gt;Oxford Reading Tree&lt;/code&gt;（牛津阅读树系列）&lt;br&gt;
+小饼干狗系列&lt;br&gt;
+&lt;img src=&#34;https://i.imgur.com/fBRntvC.jpg&#34; alt=&#34;小饼干狗系列&#34;&gt;&lt;br&gt;
+牛津阅读树系列&lt;br&gt;
+&lt;img src=&#34;https://i.imgur.com/Lu8BshH.jpg&#34; alt=&#34;牛津阅读树系列&#34;&gt;&lt;/li&gt;
+&lt;li&gt;英语动画：&lt;code&gt;Penelope&lt;/code&gt;（蓝色小考拉），&lt;code&gt;Peppa Pig&lt;/code&gt;（小猪佩奇）&lt;br&gt;
+蓝色小考拉&lt;br&gt;
+&lt;img src=&#34;https://i.imgur.com/IN0b2dS.jpg&#34; alt=&#34;蓝色小考拉&#34;&gt;&lt;br&gt;
+小猪佩奇&lt;br&gt;
+&lt;img src=&#34;https://i.imgur.com/sosU6p6.jpg&#34; alt=&#34;小猪佩奇&#34;&gt;&lt;/li&gt;
+&lt;li&gt;自然拼读教材：&lt;code&gt;Oxford Phonics World&lt;/code&gt;（牛津自然拼读天地系列）&lt;br&gt;
+&lt;img src=&#34;https://i.imgur.com/SCkv6Zk.jpg&#34; alt=&#34;牛津自然拼读天地系列&#34;&gt;&lt;/li&gt;
+&lt;li&gt;自然拼读书籍：《不可错过的英语启蒙》&lt;br&gt;
+&lt;img src=&#34;https://i.imgur.com/mdUGYRO.jpg&#34; alt=&#34;不可错过的英语启蒙&#34;&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;自然拼读训练可以自己在家进行。在家训练的话可以进行得早一点：两岁就可以开始，不过这对家长的英语水平以及自然拼读法知识就有一定的要求了。&lt;/p&gt;
+&lt;p&gt;自然拼读训练也可以在培训机构进行，但前提是要弄清楚培训的内容是不是自然拼读。那种只是记单词背句型的培训作用并不大，因为他们只是授之以鱼而非渔。据我了解，市面上大多培训机构都是这种，因为他们可以通过持续不断地“授之以鱼”的方式办各种级别的培训班来挣更多的钱。此外，送幼儿去培训机构培训的话，幼儿年龄也不应该太小，太小的话还听不懂语言指令也没有一定自控能力，因此培训效果不理想纯属浪费钱（家里有矿的主例外），最好是三岁以上才开始培训。&lt;/p&gt;
+&lt;p&gt;我家大宝嘟嘟从四岁开始学习自然拼读。虽然嘟嘟的自然拼读学习起步稍微有点晚，因为就我们夫妻俩带着两个娃，二宝太小分身无术，但是大半年坚持下来效果非常理想。饼干狗系列以及牛津树系列绘本基本上可以自己拼读着看了。&lt;/p&gt;
+&lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
+&lt;p&gt;幼儿英语启蒙的五个要点。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;英语学习是个长期过程，贵在坚持，要有打持久战的心理准备；&lt;/li&gt;
+&lt;li&gt;没有大量输入就没有输出，儿歌、绘本、动画、互动游戏、情景对话一个都不要拉下；&lt;/li&gt;
+&lt;li&gt;自然拼读情境式学习是最适合这个年龄段的英语学习方式；&lt;/li&gt;
+&lt;li&gt;一到三岁多听磨耳朵；&lt;/li&gt;
+&lt;li&gt;三岁开始系统地学习自然拼读。&lt;/li&gt;
+&lt;/ol&gt;</description>
+      
     </item>
     
     <item>
@@ -53,9 +373,70 @@
       <pubDate>Mon, 08 Dec 2014 23:14:00 +0800</pubDate>
       
       <guid>https://luozhaohui.github.io/post/2014/2014-12-08-share-screen-with-synergy/</guid>
-      <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
+      
+        <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;Synergy&lt;/code&gt; 是一款相当不错的跨平台共享桌面的工具软件，我时常需要在 Mac，Ubuntu，Windows 等系统之间同步工作，因而利用这个这个工具能够大大提供生产效率。由于 &lt;code&gt;Synergy&lt;/code&gt; 没有 UI 界面，程序员们开发了各种带界面的开源版本，如 &lt;code&gt;QuickSynergy&lt;/code&gt; 或 &lt;code&gt;SynergyKM&lt;/code&gt; 等。QuickSynergy 与 SynergyKM 可以混合搭配使用，即任选一个用作服务器，另一个用作客户端程序也是可以运行成功的。但是要&lt;strong&gt;注意各机器上的 Synergy 版本要一致&lt;/strong&gt;，否则会出现不同版本不兼容导致无法链接通信！这个问题折腾来我好一会儿，通过安装 SynergyKM 查看日志才发现问题所在。&lt;/p&gt;
-&lt;p&gt;在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。&lt;/p&gt;</description>
+&lt;p&gt;在本例中，使用 QuickSynergy 作为客户端和服务器，作为服务器的机器安装 Ubuntu 系统，客户端机器安装 Mac 系统。&lt;/p&gt;
+&lt;h2 id=&#34;工具下载&#34;&gt;工具下载&lt;/h2&gt;
+&lt;p&gt;QuickSynergy 工具下载：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mac 版 QuickSynergy 下载链接一：&lt;a href=&#34;https://code.google.com/p/quicksynergy/&#34;&gt;https://code.google.com/p/quicksynergy/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Mac 版 QuickSynergy 下载链接二：&lt;a href=&#34;http://sourceforge.net/projects/quicksynergy/&#34;&gt;http://sourceforge.net/projects/quicksynergy/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Ubuntu 版 QuickSynergy 直接在 Ubuntu Software Center 中输入 QuickSynergy 查找安装即可。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;若使用 SynergyKM，可以从如下链接获取：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SynergyKM 下载链接：&lt;a href=&#34;http://synergykm.com/&#34;&gt;http://synergykm.com/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;安装配置&#34;&gt;安装配置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Ubuntu 下的安装配置&lt;br&gt;
+启动 QuickSynergy，显示界面有三个 Tab 页：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Share Tab：该页面用于服务器。作为服务器的机器在该界面配置受其控制的客户端机器的主机名，然后点击 Excute 启动服务器端（实际上是执行程序：&lt;!-- raw HTML omitted --&gt;/usr/bin/synergys&lt;!-- raw HTML omitted --&gt;）；&lt;/li&gt;
+&lt;li&gt;Use Tag：该页面用于客户端。作为客户端的机器在该界面配置服务器机器的IP地址或主机名，然后点击 Excute 启动客户端端（实际上是执行程序：&lt;!-- raw HTML omitted --&gt;/usr/bin/synergyc&lt;!-- raw HTML omitted --&gt;）；&lt;/li&gt;
+&lt;li&gt;Setting Tag：该页面用于配置 Synergy 执行程序所在的目录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在这里，使用 Ubuntu 机器作为服务器，所以只需要在 Share Tab 界面上的相应位置（上下左右，我的 Mac 机器在左边，所以在 left 位置设置）设置 Mac 机器的主机名即可。Mac 机器的主机名查看方法如下：启动 terminal，输入命令：&lt;!-- raw HTML omitted --&gt;hostname&lt;!-- raw HTML omitted --&gt;，就能得到主机名。&lt;/p&gt;
+&lt;p&gt;设置界面如下：&lt;br&gt;
+&lt;img src=&#34;http://i.imgur.com/ZhCLJVS.png&#34; alt=&#34;Ubuntu QuickSynergy 设置&#34;&gt;&lt;/p&gt;
+&lt;p&gt;然后点击启动。(注意需要先启动服务器端，然后再启动客户端)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mac 下的安装配置
+Mac 版 QuickSynergy 界面比 Ubuntu 版要简洁一些，启动 QuickSynergy，在 Share 页面设置 Server hostname/IP address 为 Ubuntu 机器的 IP 地址即可（Ubuntu 系统下启动 terminal，输入命令：&lt;!-- raw HTML omitted --&gt;ifconfig&lt;!-- raw HTML omitted --&gt; 即可查看 IP 地址，输入命令 &lt;!-- raw HTML omitted --&gt;hostname&lt;!-- raw HTML omitted --&gt; 即可查看主机名）。&lt;/p&gt;
+&lt;p&gt;设置界面如下：&lt;br&gt;
+&lt;img src=&#34;http://i.imgur.com/kKxpgnx.png&#34; alt=&#34;Mac QuickSynergy 设置&#34;&gt;&lt;/p&gt;
+&lt;p&gt;然后点击 Run，这样就能够使用 Ubuntu 机器的键盘和鼠标操作 Mac 机器了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mac 下 SynergyKM 的安装配置&lt;br&gt;
+由于 QuickSynergy 不带日志输出窗口，有时候操作不成功也不知道是怎么回事，这时可以安装 SynergyKM 来解决问题。下载 Mac 版 SynergyKM，双击安装，在安装过程中选择 Client 模式，并设置 Screen Name 为 Mac 机器的主机名（也可以在安装完毕之后在菜单 Perferences/Setting 界面设置）。安装完毕之后启动 SynergyKM，勾选 Client 选择框，在 Server IP 处填写服务器机器 Ubuntu 的 IP 地址。&lt;/p&gt;
+&lt;p&gt;设置界面如下：
+&lt;img src=&#34;http://i.imgur.com/nNcKVPg.png&#34; alt=&#34;Mac SynergyKM 设置&#34;&gt;&lt;/p&gt;
+&lt;p&gt;然后点击 Apply 和 Start，就能在 Log 输出窗口查看日志，根据日志信息就能够知道是版本不匹配还是主机名设置错误等等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改 key-Mapping&lt;br&gt;
+由于 Mac 机键盘与非 Mac 机键盘的物理按键不同，所以在 Ubuntu 机器上的 Ctrl + C 并不能在 Mac 系统上产生同样的效果，这就需要在 Synergy 的配置文件中添加按键映射关系。首先关闭 Ubuntu 系统上的 QuickSynergy（每次启动 QuickSynergy 都会重新生成新的 synergy.conf），再在作为服务器的机器上的 terminal 中输入命令：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gedit ~/.quicksynergy/synergy.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;打开 synergy.conf，修改其内容如下：
+&lt;code&gt;xml section: screens kesalin-ubuntu: kesalin-iMac: ctrl = meta meta = ctrl alt = alt super = super end section: links kesalin-ubuntu: left = kesalin-iMac kesalin-iMac: right = kesalin-ubuntu end &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后在 terminal 上输入命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/bin/synergys -c ~/.quicksynergy/synergy.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;根据特定配置启动 synergys 服务端，就可以实现按键映射了。&lt;/p&gt;
+&lt;p&gt;为了避免每次启动系统之后都需要敲入上面的启动命令，可以在 Ubuntu 的启动项中添加上面的命令：点击 Perference-&amp;gt;Startup Applications Perferences-&amp;gt;Add，在 command 栏输入：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/bin/synergys -c ~/.quicksynergy/synergy.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;即可。注意由于每次启动 QuickSynergy 都会重新生成新的 synergy.conf 覆盖我们修改好的配置文件，所以最好将修改好的 synergy.conf 拷贝备份为 synergy-keymap.conf，然后使用命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usr/bin/synergys -c ~/.quicksynergy/synergy-keymap.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;作为自启动命令。&lt;/p&gt;
+&lt;h2 id=&#34;参考链接&#34;&gt;参考链接&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://help.ubuntu.com/community/SynergyHowto&#34;&gt;SynergyHowto&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://superuser.com/questions/90223/synergy-key-mapping&#34;&gt;Synergy key mapping&lt;/a&gt;&lt;/p&gt;</description>
+      
     </item>
     
   </channel>
