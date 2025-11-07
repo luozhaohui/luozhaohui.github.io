@@ -10,21 +10,56 @@
   
   <url>
     <loc>https://luozhaohui.github.io/categories/</loc>
-    <lastmod>2025-06-07T11:14:00+08:00</lastmod>
+    <lastmod>2025-10-26T20:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://luozhaohui.github.io/post/</loc>
-    <lastmod>2025-06-07T11:14:00+08:00</lastmod>
+    <lastmod>2025-10-26T20:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://luozhaohui.github.io/tags/</loc>
-    <lastmod>2025-06-07T11:14:00+08:00</lastmod>
+    <lastmod>2025-10-26T20:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/tags/%E7%BA%A2%E6%A5%BC%E6%A2%A6/</loc>
+    <lastmod>2025-10-26T20:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/</loc>
+    <lastmod>2025-10-26T20:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/tags/%E5%B0%8F%E8%AF%B4/</loc>
+    <lastmod>2025-10-26T20:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/post/2025/2025-10-26-life-as-dream/</loc>
+    <lastmod>2025-10-26T20:14:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://luozhaohui.github.io/categories/%E9%98%85%E8%AF%BB/</loc>
+    <lastmod>2025-10-26T20:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -44,13 +79,6 @@
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/</loc>
-    <lastmod>2025-06-07T11:14:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://luozhaohui.github.io/tags/%E5%8F%8C%E7%BC%9D%E5%AE%9E%E9%AA%8C/</loc>
     <lastmod>2025-06-07T11:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -59,13 +87,6 @@
   
   <url>
     <loc>https://luozhaohui.github.io/post/2025/2025-06-07-double-slit-experiment/</loc>
-    <lastmod>2025-06-07T11:14:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://luozhaohui.github.io/categories/%E9%98%85%E8%AF%BB/</loc>
     <lastmod>2025-06-07T11:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -1220,14 +1241,14 @@
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E8%BF%B7%E5%A4%B1%E4%B8%9C%E4%BA%AC/</loc>
+    <loc>https://luozhaohui.github.io/post/2007/2007-06-30-movies/</loc>
     <lastmod>2007-06-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2007/2007-06-30-movies/</loc>
+    <loc>https://luozhaohui.github.io/tags/%E8%BF%B7%E5%A4%B1%E4%B8%9C%E4%BA%AC/</loc>
     <lastmod>2007-06-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -1325,14 +1346,14 @@
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E8%8D%92%E9%87%8E%E7%9A%84%E5%91%BC%E5%94%A4/</loc>
+    <loc>https://luozhaohui.github.io/post/2006/2006-12-09-call-of-wild/</loc>
     <lastmod>2006-12-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2006/2006-12-09-call-of-wild/</loc>
+    <loc>https://luozhaohui.github.io/tags/%E8%8D%92%E9%87%8E%E7%9A%84%E5%91%BC%E5%94%A4/</loc>
     <lastmod>2006-12-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
