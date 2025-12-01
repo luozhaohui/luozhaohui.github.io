@@ -15002,27 +15002,27 @@
 &lt;h4 id=&#34;np-问题-1&#34;&gt;NP 问题&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;定义&lt;/strong&gt;：所有可以在&lt;strong&gt;多项式时间&lt;/strong&gt;内被非确定性图灵机&lt;strong&gt;验证解&lt;/strong&gt;的问题的集合。这意味着如果你有一个候选解，你可以快速检查这个解是否满足条件，即使找到这个解可能很困难。&lt;/li&gt;
-&lt;li&gt;​&lt;strong&gt;P ⊆ NP&lt;/strong&gt;：所有 P 问题都属于 NP 问题，因为&lt;strong&gt;能高效求解的问题必然能高效验证解&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;P ⊆ NP&lt;/strong&gt;：所有 P 问题都属于 NP 问题，因为&lt;strong&gt;能高效求解的问题必然能高效验证解&lt;/strong&gt;。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;例子&lt;/strong&gt;：旅行商问题、背包问题、图着色问题等。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&#34;np-完全问题np-complete&#34;&gt;NP 完全问题（NP-Complete）​&lt;/h4&gt;
+&lt;h4 id=&#34;np-完全问题np-complete&#34;&gt;NP 完全问题（NP-Complete）&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;定义&lt;/strong&gt;：NP 完全问题是 NP 问题中最难的一类，它同时满足两个条件：
 &lt;ol&gt;
 &lt;li&gt;属于 NP 类；&lt;/li&gt;
-&lt;li&gt;所有 NP 问题可归约到它​（即存在多项式时间归约）。规约的意思是：若问题 A 可归约为问题 B，则 B 至少和 A 一样难，即若有算法能解决 B，那么 A 也可以用同样复杂度的算法解决。&lt;/li&gt;
+&lt;li&gt;所有 NP 问题可归约到它（即存在多项式时间归约）。规约的意思是：若问题 A 可归约为问题 B，则 B 至少和 A 一样难，即若有算法能解决 B，那么 A 也可以用同样复杂度的算法解决。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;特点&lt;/strong&gt;：如果任何一个 NP 完全问题可以在多项式时间内解决，那么所有的 NP 问题都可以在多项式时间内解决，这意味着 P=NP。相反，如果能证明任何一个 NPC 问题是无法在多项式时间内解决的，则 P≠NP。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;p--np-猜想&#34;&gt;P ≠ NP 猜想&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;含义&lt;/strong&gt;：是否所有 NP 问题都能高效求解，大多数科学家认为不能，即 ​&lt;strong&gt;P类 ≠ NP类&lt;/strong&gt;，这就意味着&lt;strong&gt;有些问题找解很难，但验证解很容易&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;含义&lt;/strong&gt;：是否所有 NP 问题都能高效求解，大多数科学家认为不能，即 &lt;strong&gt;P类 ≠ NP类&lt;/strong&gt;，这就意味着&lt;strong&gt;有些问题找解很难，但验证解很容易&lt;/strong&gt;。&lt;/li&gt;
 &lt;li&gt;如果 &lt;strong&gt;P=NP&lt;/strong&gt; 被证明是真的，这将打破目前的“计算不可逆”假设，从而对加密学（RSA等协议依赖NP问题的困难性假设）、人工智能（对抗样本防御）、算法优化等领域产生革命性影响，因为许多目前认为难以解决的问题都将变得易于处理。&lt;/li&gt;
 &lt;li&gt;如果 &lt;strong&gt;P≠NP&lt;/strong&gt; 被证明是真的，虽然不会改变当前的技术实践，但它会正式确认许多重要问题确实没有高效的解决方案，从而指导研究人员更加专注于开发有效的&lt;strong&gt;近似算法&lt;/strong&gt;和&lt;strong&gt;启发式方法&lt;/strong&gt;来应对这些难题。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;自 NP 问题提出起，人工智能领域的研究人员就利用 NP 完全问题理论来研究他们的课题，结果发现不管哪个领域：问题解决、玩游戏、规划、学习、推理等，似乎任何关键性的问题都是 NP 完全问题。这种现象使得业界流传着一个笑话：所谓的“AI完全问题”意味着“一个和AI本身一样难的问题”，如果你能解决一个AI完全问题，你就能解决所有AI问题。&lt;/p&gt;
-&lt;p&gt;当前人工智能中的最关键的神经网络算法虽然不属于&lt;strong&gt;NP完全问题（NPC）​&lt;/strong&gt;，但其训练过程与NP问题的求解在&lt;strong&gt;计算复杂度&lt;/strong&gt;和&lt;strong&gt;近似解策略&lt;/strong&gt;上高度关联。神经网络训练属于&lt;strong&gt;非凸优化问题&lt;/strong&gt;​（通常为NP难问题），二者虽不属于同一复杂性类别，但均面临“搜索空间庞大”和“缺乏确定性高效算法”的共性挑战：&lt;/p&gt;
+&lt;p&gt;当前人工智能中的最关键的神经网络算法虽然不属于&lt;strong&gt;NP完全问题（NPC）&lt;/strong&gt;，但其训练过程与NP问题的求解在&lt;strong&gt;计算复杂度&lt;/strong&gt;和&lt;strong&gt;近似解策略&lt;/strong&gt;上高度关联。神经网络训练属于&lt;strong&gt;非凸优化问题&lt;/strong&gt;（通常为NP难问题），二者虽不属于同一复杂性类别，但均面临“搜索空间庞大”和“缺乏确定性高效算法”的共性挑战：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;参数空间的维度爆炸与计算复杂度&lt;/strong&gt;：神经网络训练的优化问题本质上是非凸的，其参数规模通常达到百万甚至千亿级别（如GPT-4的参数规模达到了1.8万亿）。随着参数量的增加，搜索空间的维度呈指数级增长，这与NP问题（如旅行商问题）的输入规模扩大时计算量爆炸的特性相似。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;近似解策略&lt;/strong&gt;：神经网络的优化算法不保证找到全局最优解，但根据梯度下降的局部最优性，往往能发现足够好的局部最优解。这类似于NP问题中启发式算法（如模拟退火、遗传算法）的近似求解思路。&lt;/li&gt;
@@ -15350,7 +15350,7 @@
 &lt;li&gt;&lt;strong&gt;套路总结&lt;/strong&gt;：统计十万条脂批发现&amp;quot;凡&amp;rsquo;赤瑕宫&amp;rsquo;出现必关联&amp;rsquo;宝玉疯癫&amp;rsquo;&amp;quot;（注意力模式挖掘）。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;笔补造化&lt;/strong&gt;：要求&amp;quot;描绘潇湘馆AI设计图&amp;quot;，系统融合&amp;quot;竹影纱窗+药炉棋枰+鹦鹉念诗&amp;quot;（跨模态生成），如同将大观园图样与《园冶》营造法式结合。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;为什么这套机制能成功&#34;&gt;​为什么这套机制能成功？&lt;/h3&gt;
+&lt;h3 id=&#34;为什么这套机制能成功&#34;&gt;为什么这套机制能成功？&lt;/h3&gt;
 &lt;p&gt;这套机制能成功运作的关键在三组学术张力的平衡：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;索隐与实证&lt;/strong&gt;：注意力机制允许&amp;quot;索隐派&amp;quot;式发散联想（如将&amp;quot;甄士隐&amp;quot;解读为&amp;quot;真事隐&amp;quot;），残差连接确保不违&amp;quot;作者本意&amp;quot;（文本约束）&lt;/li&gt;
@@ -22428,7 +22428,7 @@ P(红球|乙)：乙箱子中拿到红球的概率&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;第三集《生于红旗下》（Born Under the Red Flag）（1976-1997），可以说是邓时代，内容是邓和他的三位接班人对中国历史的影响，包括80年代末的那次著名运动。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;如果想要了解清末到 1911 年之间的历史，推荐被河蟹的电视剧《走向共和​》。&lt;/p&gt;
+&lt;p&gt;如果想要了解清末到 1911 年之间的历史，推荐被河蟹的电视剧《走向共和》。&lt;/p&gt;
 &lt;h2 id=&#34;下载链接&#34;&gt;下载链接&lt;/h2&gt;
 &lt;p&gt;三集，每集两小时，共六小时。以下附迅雷下载链接&lt;/p&gt;
 &lt;ul&gt;
@@ -22448,7 +22448,7 @@ P(红球|乙)：乙箱子中拿到红球的概率&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;更多介绍&#34;&gt;更多介绍&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.360doc.com/content/11/0624/18/332078_129331107.shtml&#34;&gt;总体介绍&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://movie.douban.com/subject/2042115/%E2%80%8B&#34;&gt;第一集的豆瓣链接&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://movie.douban.com/subject/2042115/&#34;&gt;第一集的豆瓣链接&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
       
     </item>
