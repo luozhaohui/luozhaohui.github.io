@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>思维 on 飘飘白云：所读，所观，所思</title>
-    <link>https://luozhaohui.github.io/tags/%E6%80%9D%E7%BB%B4/</link>
+    <link>http://localhost:1313/tags/%E6%80%9D%E7%BB%B4/</link>
     <description>Recent content in 思维 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 08 Oct 2014 23:14:00 +0800</lastBuildDate>
     
-        <atom:link href="https://luozhaohui.github.io/tags/%E6%80%9D%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/%E6%80%9D%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>科学理论之可证伪性</title>
-      <link>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</link>
+      <link>http://localhost:1313/post/2014/2014-10-08-falsifiability/</link>
       <pubDate>Wed, 08 Oct 2014 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</guid>
+      <guid>http://localhost:1313/post/2014/2014-10-08-falsifiability/</guid>
       
         <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7&#34;&gt;可证伪性&lt;/a&gt;&lt;/strong&gt; 是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨 &lt;strong&gt;科学与非科学&lt;/strong&gt; 的一种理论，他认为:&lt;/p&gt;
@@ -54,13 +54,13 @@
     
     <item>
       <title>关于成就的那些事</title>
-      <link>https://luozhaohui.github.io/post/2014/2014-04-06-success/</link>
+      <link>http://localhost:1313/post/2014/2014-04-06-success/</link>
       <pubDate>Sun, 06 Apr 2014 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2014/2014-04-06-success/</guid>
+      <guid>http://localhost:1313/post/2014/2014-04-06-success/</guid>
       
         <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;最近在练习主题阅读（关于主题阅读，请参考《如何阅读一本书》，我曾&lt;a href=&#34;https://luozhaohui.github.io/post/2010/2010-12-02-how-to-reading/&#34;&gt;推荐过这本书&lt;/a&gt;），选的主题就是成就是怎样获得的？为此阅读和重温了一些书，获益良多，特此总结分析在这里，也算是完成主题阅读步骤的流程。&lt;/p&gt;
+&lt;p&gt;最近在练习主题阅读（关于主题阅读，请参考《如何阅读一本书》，我曾&lt;a href=&#34;http://localhost:1313/post/2010/2010-12-02-how-to-reading/&#34;&gt;推荐过这本书&lt;/a&gt;），选的主题就是成就是怎样获得的？为此阅读和重温了一些书，获益良多，特此总结分析在这里，也算是完成主题阅读步骤的流程。&lt;/p&gt;
 &lt;h2 id=&#34;髓鞘质原理&#34;&gt;髓鞘质原理&lt;/h2&gt;
 &lt;p&gt;人类的活动（练习）最终都是通过在神经纤维之间传导神经信号来完成的，习得一种技能就通过神经信号的触发在神经元之间建立有效连接来实现的。&lt;strong&gt;髓鞘质&lt;/strong&gt;则是包裹在神经纤维上的一层层绝缘物质。包裹神经纤维的髓鞘质越厚，神经信号传递的速度就越快和精确度就越高，从而技能的反应速度和精准度就越好。髓鞘质的生成速度很缓慢，大量重复刻意的练习可以生成大量的髓鞘质，从而提高技能水平。你可以把神经元之间的连接想象成网线，而包裹在连接之上的髓鞘质想象成包裹网线的绝缘物质，练习越多绝缘物质就越厚，带宽就越高。这是从生理学角度解释习得技能的原因。&lt;/p&gt;
 &lt;p&gt;髓鞘质在人的整个一生中都会生成/分解，但在不同年龄段各自的速度是不同的。髓鞘质在0到30岁之间是大量生成的阶段，在 30 岁之后会随着年龄的增长而分解，而到了50岁分解的速度就会超过生成的速度。这就是为什么30岁之前是学习技能的黄金时刻，而 50 岁之后学习技能就要付出更多的努力。&lt;/p&gt;
@@ -101,10 +101,10 @@
     
     <item>
       <title>能力培养与教育体制</title>
-      <link>https://luozhaohui.github.io/post/2009/2009-05-04-education/</link>
+      <link>http://localhost:1313/post/2009/2009-05-04-education/</link>
       <pubDate>Mon, 04 May 2009 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2009/2009-05-04-education/</guid>
+      <guid>http://localhost:1313/post/2009/2009-05-04-education/</guid>
       
         <description>&lt;p&gt;不经意间已十多天没有冒泡了，不太像我一贯的做法，或许是心静得下来了，坦实了点，专注了些，也算是好事情吧。其实上周有想过要写篇关于学习与教育的文章，只是早早地夭折在构思之中，还是简单地就这个话题感慨几句吧，思绪来的时候不留点痕迹，就真如风吹过一样无影无踪了。我们的学校教育一直是填鸭式的灌输，我们只是被动地接收现成的概念和定律，缺少洞悉有关这些概念与定律非常重要的三点：&lt;/p&gt;
 &lt;ul&gt;
@@ -129,10 +129,10 @@
     
     <item>
       <title>高效能人士的7个习惯</title>
-      <link>https://luozhaohui.github.io/post/2008/2008-07-19-seven-habits/</link>
+      <link>http://localhost:1313/post/2008/2008-07-19-seven-habits/</link>
       <pubDate>Sat, 19 Jul 2008 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2008/2008-07-19-seven-habits/</guid>
+      <guid>http://localhost:1313/post/2008/2008-07-19-seven-habits/</guid>
       
         <description>&lt;p&gt;《&lt;a href=&#34;http://book.douban.com/subject/5325618/&#34;&gt;高效能人士的7个习惯&lt;/a&gt;》&lt;/p&gt;
 &lt;ol&gt;

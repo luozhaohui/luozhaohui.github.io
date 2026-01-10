@@ -1,1604 +1,1604 @@
-<?xml-stylesheet type="text/xsl" href="https://luozhaohui.github.io/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://luozhaohui.github.io/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-01-03T20:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2026-01-03T20:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-01-03T20:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%95%A6%E7%85%8C/</loc>
+    <loc>http://localhost:1313/tags/%E6%95%A6%E7%85%8C/</loc>
     <lastmod>2026-01-03T20:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E4%BA%8C%E4%BA%94%E5%9B%9B%E7%AA%9F/</loc>
+    <loc>http://localhost:1313/tags/%E4%BA%8C%E4%BA%94%E5%9B%9B%E7%AA%9F/</loc>
     <lastmod>2026-01-03T20:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2026/2026-01-03-dunhuang-254/</loc>
+    <loc>http://localhost:1313/post/2026/2026-01-03-dunhuang-254/</loc>
     <lastmod>2026-01-03T20:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E8%8E%AB%E9%AB%98%E7%AA%9F/</loc>
+    <loc>http://localhost:1313/tags/%E8%8E%AB%E9%AB%98%E7%AA%9F/</loc>
     <lastmod>2026-01-03T20:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2026-01-03T20:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/categories/%E8%89%BA%E6%9C%AF/</loc>
+    <loc>http://localhost:1313/categories/%E8%89%BA%E6%9C%AF/</loc>
     <lastmod>2026-01-03T20:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2025-12-30-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2025-12-30-reading/</loc>
     <lastmod>2025-12-30T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/categories/%E9%98%85%E8%AF%BB/</loc>
+    <loc>http://localhost:1313/categories/%E9%98%85%E8%AF%BB/</loc>
     <lastmod>2025-12-30T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E9%98%85%E8%AF%BB/</loc>
+    <loc>http://localhost:1313/tags/%E9%98%85%E8%AF%BB/</loc>
     <lastmod>2025-12-30T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%80%BB%E7%BB%93/</loc>
+    <loc>http://localhost:1313/tags/%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2025-12-30T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2025/2025-12-28-zhongyong-summary/</loc>
+    <loc>http://localhost:1313/post/2025/2025-12-28-zhongyong-summary/</loc>
     <lastmod>2025-12-28T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%84%92%E5%AE%B6/</loc>
+    <loc>http://localhost:1313/tags/%E5%84%92%E5%AE%B6/</loc>
     <lastmod>2025-12-28T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/categories/%E5%93%B2%E5%AD%A6/</loc>
+    <loc>http://localhost:1313/categories/%E5%93%B2%E5%AD%A6/</loc>
     <lastmod>2025-12-28T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E4%B8%AD%E5%BA%B8/</loc>
+    <loc>http://localhost:1313/tags/%E4%B8%AD%E5%BA%B8/</loc>
     <lastmod>2025-12-28T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%80%9D%E6%83%B3%E5%8F%B2/</loc>
+    <loc>http://localhost:1313/tags/%E6%80%9D%E6%83%B3%E5%8F%B2/</loc>
     <lastmod>2025-12-21T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E9%99%B6%E6%B8%8A%E6%98%8E/</loc>
+    <loc>http://localhost:1313/tags/%E9%99%B6%E6%B8%8A%E6%98%8E/</loc>
     <lastmod>2025-12-21T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2025/2025-12-21-yuanming/</loc>
+    <loc>http://localhost:1313/post/2025/2025-12-21-yuanming/</loc>
     <lastmod>2025-12-21T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E9%AD%8F%E6%99%8B%E7%8E%84%E5%AD%A6/</loc>
+    <loc>http://localhost:1313/tags/%E9%AD%8F%E6%99%8B%E7%8E%84%E5%AD%A6/</loc>
     <lastmod>2025-12-21T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/categories/%E6%96%87%E5%AD%A6/</loc>
+    <loc>http://localhost:1313/categories/%E6%96%87%E5%AD%A6/</loc>
     <lastmod>2025-12-21T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E8%AF%97%E8%AF%8D/</loc>
+    <loc>http://localhost:1313/tags/%E8%AF%97%E8%AF%8D/</loc>
     <lastmod>2025-11-23T15:15:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/taoyuanming/2025-11-22-index/</loc>
+    <loc>http://localhost:1313/post/taoyuanming/2025-11-22-index/</loc>
     <lastmod>2025-11-23T15:15:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/taoyuanming/2025-11-22-char-freq-analysis/</loc>
+    <loc>http://localhost:1313/post/taoyuanming/2025-11-22-char-freq-analysis/</loc>
     <lastmod>2025-11-22T23:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/taoyuanming/2025-11-22-char-frequency/</loc>
+    <loc>http://localhost:1313/post/taoyuanming/2025-11-22-char-frequency/</loc>
     <lastmod>2025-11-22T22:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/taoyuanming/2025-11-22-poetries/</loc>
+    <loc>http://localhost:1313/post/taoyuanming/2025-11-22-poetries/</loc>
     <lastmod>2025-11-22T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/taoyuanming/2025-11-22-prose/</loc>
+    <loc>http://localhost:1313/post/taoyuanming/2025-11-22-prose/</loc>
     <lastmod>2025-11-22T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/taoyuanming/2025-11-22-chronicle/</loc>
+    <loc>http://localhost:1313/post/taoyuanming/2025-11-22-chronicle/</loc>
     <lastmod>2025-11-21T15:15:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2025/2025-11-17-taoyuanming-liuyi/</loc>
+    <loc>http://localhost:1313/post/2025/2025-11-17-taoyuanming-liuyi/</loc>
     <lastmod>2025-11-17T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%96%87%E5%AD%A6/</loc>
+    <loc>http://localhost:1313/tags/%E6%96%87%E5%AD%A6/</loc>
     <lastmod>2025-11-17T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%93%B2%E5%AD%A6/</loc>
+    <loc>http://localhost:1313/tags/%E5%93%B2%E5%AD%A6/</loc>
     <lastmod>2025-11-17T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2025/2025-11-16-wei-jin-xuan-xue/</loc>
+    <loc>http://localhost:1313/post/2025/2025-11-16-wei-jin-xuan-xue/</loc>
     <lastmod>2025-11-16T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%B1%A4%E7%94%A8%E5%BD%A4/</loc>
+    <loc>http://localhost:1313/tags/%E6%B1%A4%E7%94%A8%E5%BD%A4/</loc>
     <lastmod>2025-11-16T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%93%B2%E5%AD%A6%E5%8F%B2/</loc>
+    <loc>http://localhost:1313/tags/%E5%93%B2%E5%AD%A6%E5%8F%B2/</loc>
     <lastmod>2025-11-16T19:00:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E7%BA%A2%E6%A5%BC%E6%A2%A6/</loc>
+    <loc>http://localhost:1313/tags/%E7%BA%A2%E6%A5%BC%E6%A2%A6/</loc>
     <lastmod>2025-10-26T20:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%B0%8F%E8%AF%B4/</loc>
+    <loc>http://localhost:1313/tags/%E5%B0%8F%E8%AF%B4/</loc>
     <lastmod>2025-10-26T20:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2025/2025-10-26-life-as-dream/</loc>
+    <loc>http://localhost:1313/post/2025/2025-10-26-life-as-dream/</loc>
     <lastmod>2025-10-26T20:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E7%A7%91%E6%8A%80/</loc>
+    <loc>http://localhost:1313/tags/%E7%A7%91%E6%8A%80/</loc>
     <lastmod>2025-06-07T11:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E9%87%8F%E5%AD%90%E7%90%86%E8%AE%BA/</loc>
+    <loc>http://localhost:1313/tags/%E9%87%8F%E5%AD%90%E7%90%86%E8%AE%BA/</loc>
     <lastmod>2025-06-07T11:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%8F%8C%E7%BC%9D%E5%AE%9E%E9%AA%8C/</loc>
+    <loc>http://localhost:1313/tags/%E5%8F%8C%E7%BC%9D%E5%AE%9E%E9%AA%8C/</loc>
     <lastmod>2025-06-07T11:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2025/2025-06-07-double-slit-experiment/</loc>
+    <loc>http://localhost:1313/post/2025/2025-06-07-double-slit-experiment/</loc>
     <lastmod>2025-06-07T11:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2025/2025-04-26-big-bang/</loc>
+    <loc>http://localhost:1313/post/2025/2025-04-26-big-bang/</loc>
     <lastmod>2025-04-26T14:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%A4%A7%E7%88%86%E7%82%B8%E7%90%86%E8%AE%BA/</loc>
+    <loc>http://localhost:1313/tags/%E5%A4%A7%E7%88%86%E7%82%B8%E7%90%86%E8%AE%BA/</loc>
     <lastmod>2025-04-26T14:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%AE%87%E5%AE%99/</loc>
+    <loc>http://localhost:1313/tags/%E5%AE%87%E5%AE%99/</loc>
     <lastmod>2025-04-26T14:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2025/2025-04-03-hanwudi/</loc>
+    <loc>http://localhost:1313/post/2025/2025-04-03-hanwudi/</loc>
     <lastmod>2025-04-03T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%8E%86%E5%8F%B2/</loc>
+    <loc>http://localhost:1313/tags/%E5%8E%86%E5%8F%B2/</loc>
     <lastmod>2025-04-03T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
+    <loc>http://localhost:1313/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/</loc>
     <lastmod>2025-03-15T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2025/2025-03-15-history-of-ai/</loc>
+    <loc>http://localhost:1313/post/2025/2025-03-15-history-of-ai/</loc>
     <lastmod>2025-03-15T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/categories/%E6%9D%82%E8%B0%88/</loc>
+    <loc>http://localhost:1313/categories/%E6%9D%82%E8%B0%88/</loc>
     <lastmod>2025-03-15T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2025/2025-02-15-thinking-about-agi/</loc>
+    <loc>http://localhost:1313/post/2025/2025-02-15-thinking-about-agi/</loc>
     <lastmod>2025-02-15T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2025/2025-01-05-amc8-all-in-one/</loc>
+    <loc>http://localhost:1313/post/2025/2025-01-05-amc8-all-in-one/</loc>
     <lastmod>2025-01-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/categories/%E6%8A%80%E8%89%BA/</loc>
+    <loc>http://localhost:1313/categories/%E6%8A%80%E8%89%BA/</loc>
     <lastmod>2025-01-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%95%99%E8%82%B2/</loc>
+    <loc>http://localhost:1313/tags/%E6%95%99%E8%82%B2/</loc>
     <lastmod>2025-01-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2024-12-28-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2024-12-28-reading/</loc>
     <lastmod>2024-12-28T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2024/2024-09-21-japan-not-guilty/</loc>
+    <loc>http://localhost:1313/post/2024/2024-09-21-japan-not-guilty/</loc>
     <lastmod>2024-09-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E9%BB%84%E5%B1%B1/</loc>
+    <loc>http://localhost:1313/tags/%E9%BB%84%E5%B1%B1/</loc>
     <lastmod>2024-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2024/2024-07-23-mount-huang/</loc>
+    <loc>http://localhost:1313/post/2024/2024-07-23-mount-huang/</loc>
     <lastmod>2024-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/categories/%E6%97%85%E8%A1%8C/</loc>
+    <loc>http://localhost:1313/categories/%E6%97%85%E8%A1%8C/</loc>
     <lastmod>2024-07-23T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E4%BA%8C%E6%88%98/</loc>
+    <loc>http://localhost:1313/tags/%E4%BA%8C%E6%88%98/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2024/2024-06-11-invasion-south-or-north/</loc>
+    <loc>http://localhost:1313/post/2024/2024-06-11-invasion-south-or-north/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2024/2024-06-09-spiritual-chain-jp-history/</loc>
+    <loc>http://localhost:1313/post/2024/2024-06-09-spiritual-chain-jp-history/</loc>
     <lastmod>2024-06-09T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%97%A5%E6%9C%AC/</loc>
+    <loc>http://localhost:1313/tags/%E6%97%A5%E6%9C%AC/</loc>
     <lastmod>2024-06-09T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/</loc>
+    <loc>http://localhost:1313/post/2024/2024-02-22-thinking-about-agi/</loc>
     <lastmod>2024-02-22T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2024/2024-01-24-influence/</loc>
+    <loc>http://localhost:1313/post/2024/2024-01-24-influence/</loc>
     <lastmod>2024-01-24T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%BD%B1%E5%93%8D%E5%8A%9B/</loc>
+    <loc>http://localhost:1313/tags/%E5%BD%B1%E5%93%8D%E5%8A%9B/</loc>
     <lastmod>2024-01-24T22:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2023-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2023-12-31-reading/</loc>
     <lastmod>2023-12-31T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2023/2023-12-24-annual-sumary/</loc>
+    <loc>http://localhost:1313/post/2023/2023-12-24-annual-sumary/</loc>
     <lastmod>2023-12-24T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%80%9D%E7%BB%B4%E6%8A%80%E8%83%BD/</loc>
+    <loc>http://localhost:1313/tags/%E6%80%9D%E7%BB%B4%E6%8A%80%E8%83%BD/</loc>
     <lastmod>2023-12-24T18:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2023/2023-10-12-flow/</loc>
+    <loc>http://localhost:1313/post/2023/2023-10-12-flow/</loc>
     <lastmod>2023-10-12T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%BF%83%E6%B5%81/</loc>
+    <loc>http://localhost:1313/tags/%E5%BF%83%E6%B5%81/</loc>
     <lastmod>2023-10-12T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%86%99%E4%BD%9C/</loc>
+    <loc>http://localhost:1313/tags/%E5%86%99%E4%BD%9C/</loc>
     <lastmod>2023-10-11T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2023/2023-10-11-writing/</loc>
+    <loc>http://localhost:1313/post/2023/2023-10-11-writing/</loc>
     <lastmod>2023-10-11T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2023/2023-10-03-student-donot-learn/</loc>
+    <loc>http://localhost:1313/post/2023/2023-10-03-student-donot-learn/</loc>
     <lastmod>2023-10-03T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
+    <loc>http://localhost:1313/tags/%E5%BF%83%E7%90%86%E5%AD%A6/</loc>
     <lastmod>2023-10-03T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E7%BB%8F%E6%B5%8E%E5%8D%B1%E6%9C%BA/</loc>
+    <loc>http://localhost:1313/tags/%E7%BB%8F%E6%B5%8E%E5%8D%B1%E6%9C%BA/</loc>
     <lastmod>2023-08-19T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2023/2023-08-19-land-finance/</loc>
+    <loc>http://localhost:1313/post/2023/2023-08-19-land-finance/</loc>
     <lastmod>2023-08-19T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%9C%9F%E5%9C%B0%E8%B4%A2%E6%94%BF/</loc>
+    <loc>http://localhost:1313/tags/%E5%9C%9F%E5%9C%B0%E8%B4%A2%E6%94%BF/</loc>
     <lastmod>2023-08-19T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%88%90%E9%95%BF/</loc>
+    <loc>http://localhost:1313/tags/%E6%88%90%E9%95%BF/</loc>
     <lastmod>2023-08-05T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2023/2023-08-05-forty/</loc>
+    <loc>http://localhost:1313/post/2023/2023-08-05-forty/</loc>
     <lastmod>2023-08-05T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
+    <loc>http://localhost:1313/categories/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</loc>
     <lastmod>2023-08-05T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2023/2023-08-04-yuanming/</loc>
+    <loc>http://localhost:1313/post/2023/2023-08-04-yuanming/</loc>
     <lastmod>2023-08-04T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2023/2023-08-01-western-cultural-spirit/</loc>
+    <loc>http://localhost:1313/post/2023/2023-08-01-western-cultural-spirit/</loc>
     <lastmod>2023-08-01T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2023/2023-07-01-zhuangzi/</loc>
+    <loc>http://localhost:1313/post/2023/2023-07-01-zhuangzi/</loc>
     <lastmod>2023-08-01T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%BA%84%E5%AD%90/</loc>
+    <loc>http://localhost:1313/tags/%E5%BA%84%E5%AD%90/</loc>
     <lastmod>2023-08-01T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2023/2023-03-16-poem/</loc>
+    <loc>http://localhost:1313/post/2023/2023-03-16-poem/</loc>
     <lastmod>2023-03-16T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2023/2023-03-15-poem/</loc>
+    <loc>http://localhost:1313/post/2023/2023-03-15-poem/</loc>
     <lastmod>2023-03-15T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2022-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2022-12-31-reading/</loc>
     <lastmod>2022-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2021-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2021-12-31-reading/</loc>
     <lastmod>2021-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2020-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2020-12-31-reading/</loc>
     <lastmod>2020-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/book/</loc>
+    <loc>http://localhost:1313/book/</loc>
     <lastmod>2023-08-04T11:26:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E7%BB%9F%E8%AE%A1/</loc>
+    <loc>http://localhost:1313/tags/%E7%BB%9F%E8%AE%A1/</loc>
     <lastmod>2020-08-20T21:38:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/book/recommend/</loc>
+    <loc>http://localhost:1313/book/recommend/</loc>
     <lastmod>2020-08-20T21:38:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2019-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2019-12-31-reading/</loc>
     <lastmod>2019-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2018-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2018-12-31-reading/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/phonics/</loc>
+    <loc>http://localhost:1313/tags/phonics/</loc>
     <lastmod>2018-10-10T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E8%8B%B1%E8%AF%AD/</loc>
+    <loc>http://localhost:1313/tags/%E8%8B%B1%E8%AF%AD/</loc>
     <lastmod>2018-10-10T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2018/2018-10-10-kids-english-with-phonics/</loc>
+    <loc>http://localhost:1313/post/2018/2018-10-10-kids-english-with-phonics/</loc>
     <lastmod>2018-10-10T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB/</loc>
+    <loc>http://localhost:1313/tags/%E8%87%AA%E7%84%B6%E6%8B%BC%E8%AF%BB/</loc>
     <lastmod>2018-10-10T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2017-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2017-12-31-reading/</loc>
     <lastmod>2017-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%B3%95%E5%BE%8B/</loc>
+    <loc>http://localhost:1313/tags/%E6%B3%95%E5%BE%8B/</loc>
     <lastmod>2017-08-07T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2017/2017-08-07-the-strunggle-for-law/</loc>
+    <loc>http://localhost:1313/post/2017/2017-08-07-the-strunggle-for-law/</loc>
     <lastmod>2017-08-07T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%9D%83%E5%88%A9/</loc>
+    <loc>http://localhost:1313/tags/%E6%9D%83%E5%88%A9/</loc>
     <lastmod>2017-08-07T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2016-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2016-12-31-reading/</loc>
     <lastmod>2016-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/dna/</loc>
+    <loc>http://localhost:1313/tags/dna/</loc>
     <lastmod>2016-01-31T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2016/2016-01-31-book-genome/</loc>
+    <loc>http://localhost:1313/post/2016/2016-01-31-book-genome/</loc>
     <lastmod>2016-01-31T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%9F%BA%E5%9B%A0/</loc>
+    <loc>http://localhost:1313/tags/%E5%9F%BA%E5%9B%A0/</loc>
     <lastmod>2016-01-31T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2015/2015-12-31-books-annual-review/</loc>
+    <loc>http://localhost:1313/post/2015/2015-12-31-books-annual-review/</loc>
     <lastmod>2015-12-31T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2015-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2015-12-31-reading/</loc>
     <lastmod>2015-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2015/2015-11-23-raising-child/</loc>
+    <loc>http://localhost:1313/post/2015/2015-11-23-raising-child/</loc>
     <lastmod>2015-11-23T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/android/</loc>
+    <loc>http://localhost:1313/tags/android/</loc>
     <lastmod>2015-04-02T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2015/2015-04-02-study-android-fw/</loc>
+    <loc>http://localhost:1313/post/2015/2015-04-02-study-android-fw/</loc>
     <lastmod>2015-04-02T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</loc>
+    <loc>http://localhost:1313/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2015-04-02T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%94%BF%E6%B2%BB/</loc>
+    <loc>http://localhost:1313/tags/%E6%94%BF%E6%B2%BB/</loc>
     <lastmod>2015-03-26T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2015/2015-03-26-miss-of-the-dictatos-handbook/</loc>
+    <loc>http://localhost:1313/post/2015/2015-03-26-miss-of-the-dictatos-handbook/</loc>
     <lastmod>2015-03-26T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E7%88%B6%E4%BA%B2/</loc>
+    <loc>http://localhost:1313/tags/%E7%88%B6%E4%BA%B2/</loc>
     <lastmod>2015-03-06T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%95%85%E4%B9%A1/</loc>
+    <loc>http://localhost:1313/tags/%E6%95%85%E4%B9%A1/</loc>
     <lastmod>2015-03-06T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2015/2015-03-06-my-father/</loc>
+    <loc>http://localhost:1313/post/2015/2015-03-06-my-father/</loc>
     <lastmod>2015-03-06T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2014-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2014-12-31-reading/</loc>
     <lastmod>2014-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/synergy/</loc>
+    <loc>http://localhost:1313/tags/synergy/</loc>
     <lastmod>2014-12-08T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2014/2014-12-08-share-screen-with-synergy/</loc>
+    <loc>http://localhost:1313/post/2014/2014-12-08-share-screen-with-synergy/</loc>
     <lastmod>2014-12-08T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E8%BD%AF%E4%BB%B6/</loc>
+    <loc>http://localhost:1313/tags/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2014-12-08T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2014/2014-10-29-brainwash/</loc>
+    <loc>http://localhost:1313/post/2014/2014-10-29-brainwash/</loc>
     <lastmod>2014-10-29T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%B4%97%E8%84%91/</loc>
+    <loc>http://localhost:1313/tags/%E6%B4%97%E8%84%91/</loc>
     <lastmod>2014-10-29T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/</loc>
+    <loc>http://localhost:1313/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/</loc>
     <lastmod>2014-10-21T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/</loc>
+    <loc>http://localhost:1313/post/2014/2014-10-21-bayes-rule/</loc>
     <lastmod>2014-10-21T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%A6%82%E7%8E%87/</loc>
+    <loc>http://localhost:1313/tags/%E6%A6%82%E7%8E%87/</loc>
     <lastmod>2014-10-21T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4/</loc>
+    <loc>http://localhost:1313/tags/%E6%89%B9%E5%88%A4%E6%80%A7%E6%80%9D%E7%BB%B4/</loc>
     <lastmod>2014-10-12T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2014/2014-10-12-critical-thinking/</loc>
+    <loc>http://localhost:1313/post/2014/2014-10-12-critical-thinking/</loc>
     <lastmod>2014-10-12T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%B3%A2%E6%99%AE%E5%B0%94/</loc>
+    <loc>http://localhost:1313/tags/%E6%B3%A2%E6%99%AE%E5%B0%94/</loc>
     <lastmod>2014-10-08T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E7%A7%91%E5%AD%A6/</loc>
+    <loc>http://localhost:1313/tags/%E7%A7%91%E5%AD%A6/</loc>
     <lastmod>2014-10-08T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</loc>
+    <loc>http://localhost:1313/post/2014/2014-10-08-falsifiability/</loc>
     <lastmod>2014-10-08T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%8F%AF%E8%AF%81%E4%BC%AA/</loc>
+    <loc>http://localhost:1313/tags/%E5%8F%AF%E8%AF%81%E4%BC%AA/</loc>
     <lastmod>2014-10-08T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%80%9D%E7%BB%B4/</loc>
+    <loc>http://localhost:1313/tags/%E6%80%9D%E7%BB%B4/</loc>
     <lastmod>2014-10-08T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2014/2014-06-30-reading-history/</loc>
+    <loc>http://localhost:1313/post/2014/2014-06-30-reading-history/</loc>
     <lastmod>2014-06-30T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/categories/%E8%A7%82%E5%BD%B1/</loc>
+    <loc>http://localhost:1313/categories/%E8%A7%82%E5%BD%B1/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2014/2014-05-01-century-of-revolution/</loc>
+    <loc>http://localhost:1313/post/2014/2014-05-01-century-of-revolution/</loc>
     <lastmod>2014-05-01T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2014/2014-04-06-success/</loc>
+    <loc>http://localhost:1313/post/2014/2014-04-06-success/</loc>
     <lastmod>2014-04-06T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0/</loc>
+    <loc>http://localhost:1313/tags/%E5%88%BB%E6%84%8F%E7%BB%83%E4%B9%A0/</loc>
     <lastmod>2014-04-06T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E4%B8%80%E4%B8%87%E5%B0%8F%E6%97%B6%E7%90%86%E8%AE%BA/</loc>
+    <loc>http://localhost:1313/tags/%E4%B8%80%E4%B8%87%E5%B0%8F%E6%97%B6%E7%90%86%E8%AE%BA/</loc>
     <lastmod>2014-04-06T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2014/2014-01-05-summary/</loc>
+    <loc>http://localhost:1313/post/2014/2014-01-05-summary/</loc>
     <lastmod>2014-01-05T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2013-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2013-12-31-reading/</loc>
     <lastmod>2013-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2013/2013-05-16-influence-boy/</loc>
+    <loc>http://localhost:1313/post/2013/2013-05-16-influence-boy/</loc>
     <lastmod>2013-05-16T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2013/2013-05-03-strangers/</loc>
+    <loc>http://localhost:1313/post/2013/2013-05-03-strangers/</loc>
     <lastmod>2013-05-03T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2013/2013-04-16-thirty/</loc>
+    <loc>http://localhost:1313/post/2013/2013-04-16-thirty/</loc>
     <lastmod>2013-04-16T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%BF%83%E6%83%85/</loc>
+    <loc>http://localhost:1313/tags/%E5%BF%83%E6%83%85/</loc>
     <lastmod>2013-04-16T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2012-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2012-12-31-reading/</loc>
     <lastmod>2012-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%95%88%E7%8E%87/</loc>
+    <loc>http://localhost:1313/tags/%E6%95%88%E7%8E%87/</loc>
     <lastmod>2012-06-17T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2012/2012-06-17-seven-habits-more/</loc>
+    <loc>http://localhost:1313/post/2012/2012-06-17-seven-habits-more/</loc>
     <lastmod>2012-06-17T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2011-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2011-12-31-reading/</loc>
     <lastmod>2011-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2011/2011-10-20-huangbitang/</loc>
+    <loc>http://localhost:1313/post/2011/2011-10-20-huangbitang/</loc>
     <lastmod>2011-10-20T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2011/2011-07-18-passion/</loc>
+    <loc>http://localhost:1313/post/2011/2011-07-18-passion/</loc>
     <lastmod>2011-07-18T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2011/2011-02-21-forgetted-old-days/</loc>
+    <loc>http://localhost:1313/post/2011/2011-02-21-forgetted-old-days/</loc>
     <lastmod>2011-02-21T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2011/2011-02-20-psychology/</loc>
+    <loc>http://localhost:1313/post/2011/2011-02-20-psychology/</loc>
     <lastmod>2011-02-20T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2010-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2010-12-31-reading/</loc>
     <lastmod>2010-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%8A%80%E8%83%BD/</loc>
+    <loc>http://localhost:1313/tags/%E6%8A%80%E8%83%BD/</loc>
     <lastmod>2010-12-02T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2010/2010-12-02-how-to-reading/</loc>
+    <loc>http://localhost:1313/post/2010/2010-12-02-how-to-reading/</loc>
     <lastmod>2010-12-02T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2010/2010-08-26-feeling/</loc>
+    <loc>http://localhost:1313/post/2010/2010-08-26-feeling/</loc>
     <lastmod>2010-08-26T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E4%B8%96%E5%8D%9A/</loc>
+    <loc>http://localhost:1313/tags/%E4%B8%96%E5%8D%9A/</loc>
     <lastmod>2010-08-26T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2009-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2009-12-31-reading/</loc>
     <lastmod>2009-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2009/2009-11-08-autum-night/</loc>
+    <loc>http://localhost:1313/post/2009/2009-11-08-autum-night/</loc>
     <lastmod>2009-11-08T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2009/2009-05-04-education/</loc>
+    <loc>http://localhost:1313/post/2009/2009-05-04-education/</loc>
     <lastmod>2009-05-04T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2009/2009-03-21-influence/</loc>
+    <loc>http://localhost:1313/post/2009/2009-03-21-influence/</loc>
     <lastmod>2009-03-21T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2009/2009-01-05-summary/</loc>
+    <loc>http://localhost:1313/post/2009/2009-01-05-summary/</loc>
     <lastmod>2009-01-05T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2008-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2008-12-31-reading/</loc>
     <lastmod>2008-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E9%AB%98%E5%B0%BE%E5%B1%B1/</loc>
+    <loc>http://localhost:1313/tags/%E9%AB%98%E5%B0%BE%E5%B1%B1/</loc>
     <lastmod>2008-11-23T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-11-23-tsujii/</loc>
+    <loc>http://localhost:1313/post/2008/2008-11-23-tsujii/</loc>
     <lastmod>2008-11-23T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-11-11-take-care-yourself/</loc>
+    <loc>http://localhost:1313/post/2008/2008-11-11-take-care-yourself/</loc>
     <lastmod>2008-11-11T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E9%94%BB%E7%82%BC/</loc>
+    <loc>http://localhost:1313/tags/%E9%94%BB%E7%82%BC/</loc>
     <lastmod>2008-10-19T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-10-19-5km-running/</loc>
+    <loc>http://localhost:1313/post/2008/2008-10-19-5km-running/</loc>
     <lastmod>2008-10-19T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-10-09-fighting/</loc>
+    <loc>http://localhost:1313/post/2008/2008-10-09-fighting/</loc>
     <lastmod>2008-10-09T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-10-02-reading-plan/</loc>
+    <loc>http://localhost:1313/post/2008/2008-10-02-reading-plan/</loc>
     <lastmod>2008-10-02T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-09-28-spring/</loc>
+    <loc>http://localhost:1313/post/2008/2008-09-28-spring/</loc>
     <lastmod>2008-09-28T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%9B%BD%E4%BA%A7%E7%89%87/</loc>
+    <loc>http://localhost:1313/tags/%E5%9B%BD%E4%BA%A7%E7%89%87/</loc>
     <lastmod>2008-09-28T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-09-21-miss/</loc>
+    <loc>http://localhost:1313/post/2008/2008-09-21-miss/</loc>
     <lastmod>2008-09-21T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/annual-readings/</loc>
+    <loc>http://localhost:1313/post/annual-reading/annual-readings/</loc>
     <lastmod>2023-01-02T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-08-01-lonely/</loc>
+    <loc>http://localhost:1313/post/2008/2008-08-01-lonely/</loc>
     <lastmod>2008-08-01T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-07-20-breaking-and-entering/</loc>
+    <loc>http://localhost:1313/post/2008/2008-07-20-breaking-and-entering/</loc>
     <lastmod>2008-07-20T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%93%B2%E7%90%86%E7%89%87/</loc>
+    <loc>http://localhost:1313/tags/%E5%93%B2%E7%90%86%E7%89%87/</loc>
     <lastmod>2008-07-20T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-07-19-seven-habits/</loc>
+    <loc>http://localhost:1313/post/2008/2008-07-19-seven-habits/</loc>
     <lastmod>2008-07-19T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-06-06-better-life-alone/</loc>
+    <loc>http://localhost:1313/post/2008/2008-06-06-better-life-alone/</loc>
     <lastmod>2008-06-06T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-05-10-thinking-on-travel/</loc>
+    <loc>http://localhost:1313/post/2008/2008-05-10-thinking-on-travel/</loc>
     <lastmod>2008-05-10T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-03-01-juno/</loc>
+    <loc>http://localhost:1313/post/2008/2008-03-01-juno/</loc>
     <lastmod>2008-03-01T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%AC%A7%E7%BE%8E%E7%89%87/</loc>
+    <loc>http://localhost:1313/tags/%E6%AC%A7%E7%BE%8E%E7%89%87/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%A4%A7%E5%AD%A6/</loc>
+    <loc>http://localhost:1313/tags/%E5%A4%A7%E5%AD%A6/</loc>
     <lastmod>2008-02-26T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-02-26-linear-algebra/</loc>
+    <loc>http://localhost:1313/post/2008/2008-02-26-linear-algebra/</loc>
     <lastmod>2008-02-26T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%AD%A6%E4%BE%A0%E7%89%87/</loc>
+    <loc>http://localhost:1313/tags/%E6%AD%A6%E4%BE%A0%E7%89%87/</loc>
     <lastmod>2008-02-09T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-02-09-more-movie/</loc>
+    <loc>http://localhost:1313/post/2008/2008-02-09-more-movie/</loc>
     <lastmod>2008-02-09T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%9D%8E%E6%98%93%E7%A5%A5/</loc>
+    <loc>http://localhost:1313/tags/%E6%9D%8E%E6%98%93%E7%A5%A5/</loc>
     <lastmod>2008-02-03T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-02-03-liuyuejin/</loc>
+    <loc>http://localhost:1313/post/2008/2008-02-03-liuyuejin/</loc>
     <lastmod>2008-02-03T23:14:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-02-03-continue-dream/</loc>
+    <loc>http://localhost:1313/post/2008/2008-02-03-continue-dream/</loc>
     <lastmod>2008-02-03T21:34:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2008/2008-01-26-youth/</loc>
+    <loc>http://localhost:1313/post/2008/2008-01-26-youth/</loc>
     <lastmod>2008-01-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/annual-reading/2007-12-31-reading/</loc>
+    <loc>http://localhost:1313/post/annual-reading/2007-12-31-reading/</loc>
     <lastmod>2007-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E4%B9%A6%E5%8D%95/</loc>
+    <loc>http://localhost:1313/tags/%E4%B9%A6%E5%8D%95/</loc>
     <lastmod>2023-08-04T11:26:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%BF%83%E6%99%BA/</loc>
+    <loc>http://localhost:1313/tags/%E5%BF%83%E6%99%BA/</loc>
     <lastmod>2023-08-04T11:26:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/book/mindset/</loc>
+    <loc>http://localhost:1313/book/mindset/</loc>
     <lastmod>2023-08-04T11:26:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2007/2007-11-24-inside-self/</loc>
+    <loc>http://localhost:1313/post/2007/2007-11-24-inside-self/</loc>
     <lastmod>2007-11-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2007/2007-09-15-summary/</loc>
+    <loc>http://localhost:1313/post/2007/2007-09-15-summary/</loc>
     <lastmod>2007-09-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E7%94%B5%E5%BD%B1/</loc>
+    <loc>http://localhost:1313/tags/%E7%94%B5%E5%BD%B1/</loc>
     <lastmod>2007-07-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2007/2007-07-12-movies/</loc>
+    <loc>http://localhost:1313/post/2007/2007-07-12-movies/</loc>
     <lastmod>2007-07-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2007/2007-06-30-movies/</loc>
+    <loc>http://localhost:1313/post/2007/2007-06-30-movies/</loc>
     <lastmod>2007-06-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E8%BF%B7%E5%A4%B1%E4%B8%9C%E4%BA%AC/</loc>
+    <loc>http://localhost:1313/tags/%E8%BF%B7%E5%A4%B1%E4%B8%9C%E4%BA%AC/</loc>
     <lastmod>2007-06-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2007/2007-05-31-kekexili/</loc>
+    <loc>http://localhost:1313/post/2007/2007-05-31-kekexili/</loc>
     <lastmod>2007-05-31T21:34:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E7%8E%AF%E4%BF%9D/</loc>
+    <loc>http://localhost:1313/tags/%E7%8E%AF%E4%BF%9D/</loc>
     <lastmod>2007-05-31T21:34:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E5%8F%AF%E5%8F%AF%E8%A5%BF%E9%87%8C/</loc>
+    <loc>http://localhost:1313/tags/%E5%8F%AF%E5%8F%AF%E8%A5%BF%E9%87%8C/</loc>
     <lastmod>2007-05-31T21:34:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2007/2007-05-19-movies/</loc>
+    <loc>http://localhost:1313/post/2007/2007-05-19-movies/</loc>
     <lastmod>2007-05-19T23:43:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%97%A5%E5%89%A7/</loc>
+    <loc>http://localhost:1313/tags/%E6%97%A5%E5%89%A7/</loc>
     <lastmod>2007-05-19T23:43:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2007/2007-03-11-swings/</loc>
+    <loc>http://localhost:1313/post/2007/2007-03-11-swings/</loc>
     <lastmod>2007-03-11T19:11:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2007/2007-02-25-les-choristes/</loc>
+    <loc>http://localhost:1313/post/2007/2007-02-25-les-choristes/</loc>
     <lastmod>2007-02-25T12:25:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%AD%8C%E8%88%9E%E7%89%87/</loc>
+    <loc>http://localhost:1313/tags/%E6%AD%8C%E8%88%9E%E7%89%87/</loc>
     <lastmod>2007-02-25T12:25:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2007/2007-02-04-little-miss-unshine/</loc>
+    <loc>http://localhost:1313/post/2007/2007-02-04-little-miss-unshine/</loc>
     <lastmod>2017-08-28T21:41:52+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%96%B9%E8%A8%80/</loc>
+    <loc>http://localhost:1313/tags/%E6%96%B9%E8%A8%80/</loc>
     <lastmod>2007-01-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2007/2007-01-07-dialect/</loc>
+    <loc>http://localhost:1313/post/2007/2007-01-07-dialect/</loc>
     <lastmod>2007-01-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2006/2006-12-30-summary/</loc>
+    <loc>http://localhost:1313/post/2006/2006-12-30-summary/</loc>
     <lastmod>2006-12-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2006/2006-12-24-china-movie/</loc>
+    <loc>http://localhost:1313/post/2006/2006-12-24-china-movie/</loc>
     <lastmod>2006-12-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2006/2006-12-09-call-of-wild/</loc>
+    <loc>http://localhost:1313/post/2006/2006-12-09-call-of-wild/</loc>
     <lastmod>2006-12-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E8%8D%92%E9%87%8E%E7%9A%84%E5%91%BC%E5%94%A4/</loc>
+    <loc>http://localhost:1313/tags/%E8%8D%92%E9%87%8E%E7%9A%84%E5%91%BC%E5%94%A4/</loc>
     <lastmod>2006-12-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%9D%B0%E5%85%8B%E4%BC%A6%E6%95%A6/</loc>
+    <loc>http://localhost:1313/tags/%E6%9D%B0%E5%85%8B%E4%BC%A6%E6%95%A6/</loc>
     <lastmod>2006-12-09T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%B5%85%E8%8D%89%E5%AF%BA/</loc>
+    <loc>http://localhost:1313/tags/%E6%B5%85%E8%8D%89%E5%AF%BA/</loc>
     <lastmod>2006-11-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2006/2006-11-26-asakusa/</loc>
+    <loc>http://localhost:1313/post/2006/2006-11-26-asakusa/</loc>
     <lastmod>2006-11-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2006/2006-11-24-thanksgiving-day/</loc>
+    <loc>http://localhost:1313/post/2006/2006-11-24-thanksgiving-day/</loc>
     <lastmod>2006-11-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2006/2006-11-18-alive/</loc>
+    <loc>http://localhost:1313/post/2006/2006-11-18-alive/</loc>
     <lastmod>2006-11-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%B4%BB%E7%9D%80/</loc>
+    <loc>http://localhost:1313/tags/%E6%B4%BB%E7%9D%80/</loc>
     <lastmod>2006-11-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E4%BD%99%E5%8D%8E/</loc>
+    <loc>http://localhost:1313/tags/%E4%BD%99%E5%8D%8E/</loc>
     <lastmod>2006-11-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2006/2006-11-04-come-one/</loc>
+    <loc>http://localhost:1313/post/2006/2006-11-04-come-one/</loc>
     <lastmod>2006-11-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/tags/%E6%97%85%E8%A1%8C/</loc>
+    <loc>http://localhost:1313/tags/%E6%97%85%E8%A1%8C/</loc>
     <lastmod>2006-10-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2006/2006-10-29-view-japan/</loc>
+    <loc>http://localhost:1313/post/2006/2006-10-29-view-japan/</loc>
     <lastmod>2006-10-29T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://luozhaohui.github.io/post/2006/2006-10-14-paradise/</loc>
+    <loc>http://localhost:1313/post/2006/2006-10-14-paradise/</loc>
     <lastmod>2006-10-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

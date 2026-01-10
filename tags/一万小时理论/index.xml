@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>一万小时理论 on 飘飘白云：所读，所观，所思</title>
-    <link>https://luozhaohui.github.io/tags/%E4%B8%80%E4%B8%87%E5%B0%8F%E6%97%B6%E7%90%86%E8%AE%BA/</link>
+    <link>http://localhost:1313/tags/%E4%B8%80%E4%B8%87%E5%B0%8F%E6%97%B6%E7%90%86%E8%AE%BA/</link>
     <description>Recent content in 一万小时理论 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 06 Apr 2014 23:14:00 +0800</lastBuildDate>
     
-        <atom:link href="https://luozhaohui.github.io/tags/%E4%B8%80%E4%B8%87%E5%B0%8F%E6%97%B6%E7%90%86%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/%E4%B8%80%E4%B8%87%E5%B0%8F%E6%97%B6%E7%90%86%E8%AE%BA/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>关于成就的那些事</title>
-      <link>https://luozhaohui.github.io/post/2014/2014-04-06-success/</link>
+      <link>http://localhost:1313/post/2014/2014-04-06-success/</link>
       <pubDate>Sun, 06 Apr 2014 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2014/2014-04-06-success/</guid>
+      <guid>http://localhost:1313/post/2014/2014-04-06-success/</guid>
       
         <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;最近在练习主题阅读（关于主题阅读，请参考《如何阅读一本书》，我曾&lt;a href=&#34;https://luozhaohui.github.io/post/2010/2010-12-02-how-to-reading/&#34;&gt;推荐过这本书&lt;/a&gt;），选的主题就是成就是怎样获得的？为此阅读和重温了一些书，获益良多，特此总结分析在这里，也算是完成主题阅读步骤的流程。&lt;/p&gt;
+&lt;p&gt;最近在练习主题阅读（关于主题阅读，请参考《如何阅读一本书》，我曾&lt;a href=&#34;http://localhost:1313/post/2010/2010-12-02-how-to-reading/&#34;&gt;推荐过这本书&lt;/a&gt;），选的主题就是成就是怎样获得的？为此阅读和重温了一些书，获益良多，特此总结分析在这里，也算是完成主题阅读步骤的流程。&lt;/p&gt;
 &lt;h2 id=&#34;髓鞘质原理&#34;&gt;髓鞘质原理&lt;/h2&gt;
 &lt;p&gt;人类的活动（练习）最终都是通过在神经纤维之间传导神经信号来完成的，习得一种技能就通过神经信号的触发在神经元之间建立有效连接来实现的。&lt;strong&gt;髓鞘质&lt;/strong&gt;则是包裹在神经纤维上的一层层绝缘物质。包裹神经纤维的髓鞘质越厚，神经信号传递的速度就越快和精确度就越高，从而技能的反应速度和精准度就越好。髓鞘质的生成速度很缓慢，大量重复刻意的练习可以生成大量的髓鞘质，从而提高技能水平。你可以把神经元之间的连接想象成网线，而包裹在连接之上的髓鞘质想象成包裹网线的绝缘物质，练习越多绝缘物质就越厚，带宽就越高。这是从生理学角度解释习得技能的原因。&lt;/p&gt;
 &lt;p&gt;髓鞘质在人的整个一生中都会生成/分解，但在不同年龄段各自的速度是不同的。髓鞘质在0到30岁之间是大量生成的阶段，在 30 岁之后会随着年龄的增长而分解，而到了50岁分解的速度就会超过生成的速度。这就是为什么30岁之前是学习技能的黄金时刻，而 50 岁之后学习技能就要付出更多的努力。&lt;/p&gt;

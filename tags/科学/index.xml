@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>科学 on 飘飘白云：所读，所观，所思</title>
-    <link>https://luozhaohui.github.io/tags/%E7%A7%91%E5%AD%A6/</link>
+    <link>http://localhost:1313/tags/%E7%A7%91%E5%AD%A6/</link>
     <description>Recent content in 科学 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 08 Oct 2014 23:14:00 +0800</lastBuildDate>
     
-        <atom:link href="https://luozhaohui.github.io/tags/%E7%A7%91%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/%E7%A7%91%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>科学理论之可证伪性</title>
-      <link>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</link>
+      <link>http://localhost:1313/post/2014/2014-10-08-falsifiability/</link>
       <pubDate>Wed, 08 Oct 2014 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</guid>
+      <guid>http://localhost:1313/post/2014/2014-10-08-falsifiability/</guid>
       
         <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7&#34;&gt;可证伪性&lt;/a&gt;&lt;/strong&gt; 是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨 &lt;strong&gt;科学与非科学&lt;/strong&gt; 的一种理论，他认为:&lt;/p&gt;

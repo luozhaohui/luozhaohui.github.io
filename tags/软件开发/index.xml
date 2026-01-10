@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>软件开发 on 飘飘白云：所读，所观，所思</title>
-    <link>https://luozhaohui.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</link>
+    <link>http://localhost:1313/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</link>
     <description>Recent content in 软件开发 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 02 Apr 2015 23:14:00 +0800</lastBuildDate>
     
-        <atom:link href="https://luozhaohui.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Android Framework 学习资料</title>
-      <link>https://luozhaohui.github.io/post/2015/2015-04-02-study-android-fw/</link>
+      <link>http://localhost:1313/post/2015/2015-04-02-study-android-fw/</link>
       <pubDate>Thu, 02 Apr 2015 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2015/2015-04-02-study-android-fw/</guid>
+      <guid>http://localhost:1313/post/2015/2015-04-02-study-android-fw/</guid>
       
         <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;这两年在做一个与 Android 类似的系统（&lt;a href=&#34;http://blog.csdn.net/kesalin/article/details/10474007&#34;&gt;招聘：有兴趣做一个与Android对等的操作系统么？&lt;/a&gt;），因此有机会对 &lt;code&gt;Android framework&lt;/code&gt; 进行系统地学习与研究。期间也阅读了一些不错的书籍与资料，特此分享在这里，或许对其他有兴趣研究 &lt;code&gt;Android framework&lt;/code&gt; 的朋友有所帮助。&lt;/p&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Books on 飘飘白云：所读，所观，所思</title>
-    <link>https://luozhaohui.github.io/book/</link>
+    <link>http://localhost:1313/book/</link>
     <description>Recent content in Books on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 20 Aug 2020 21:38:52 +0800</lastBuildDate>
     
-        <atom:link href="https://luozhaohui.github.io/book/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/book/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>推荐书籍</title>
-      <link>https://luozhaohui.github.io/book/recommend/</link>
+      <link>http://localhost:1313/book/recommend/</link>
       <pubDate>Thu, 20 Aug 2020 21:38:52 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/book/recommend/</guid>
+      <guid>http://localhost:1313/book/recommend/</guid>
       
         <description>&lt;h3 id=&#34;心智成长&#34;&gt;心智成长&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.douban.com/doulist/1133232/&#34;&gt;豆列：心智成长&lt;/a&gt;是我读过且觉得非常好的有关思维、心理、哲学、文学、历史、政治、社会、人类学、管理、经济、科技等多方面的书籍与记录片。入选的标准是实用，纯消遣类小说不在此列。&lt;/p&gt;
@@ -27,10 +27,10 @@
 或能颠覆既有观念&lt;br&gt;
 或能整合已有知识形成新的见解&lt;br&gt;
 或能增长见识&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;如果觉得&lt;a href=&#34;http://www.douban.com/doulist/1133232/&#34;&gt;豆列：心智成长&lt;/a&gt;翻页麻烦，也可以访问这里&lt;a href=&#34;https://luozhaohui.github.io/book/mindset/&#34;&gt;读书如抽丝：心智成长&lt;/a&gt;。后者的更新滞后于前者，但可读性更好。&lt;/p&gt;
+&lt;p&gt;如果觉得&lt;a href=&#34;http://www.douban.com/doulist/1133232/&#34;&gt;豆列：心智成长&lt;/a&gt;翻页麻烦，也可以访问这里&lt;a href=&#34;http://localhost:1313/book/mindset/&#34;&gt;读书如抽丝：心智成长&lt;/a&gt;。后者的更新滞后于前者，但可读性更好。&lt;/p&gt;
 &lt;h2 id=&#34;私人阅读&#34;&gt;私人阅读：&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://luozhaohui.github.io/post/annual-reading/annual-readings/&#34;&gt;历年阅读&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/post/annual-reading/annual-readings/&#34;&gt;历年阅读&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;其他&#34;&gt;其他：&lt;/h2&gt;
 &lt;ul&gt;
@@ -43,10 +43,10 @@
     
     <item>
       <title>心智成长</title>
-      <link>https://luozhaohui.github.io/book/mindset/</link>
+      <link>http://localhost:1313/book/mindset/</link>
       <pubDate>Thu, 20 Dec 2007 21:38:52 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/book/mindset/</guid>
+      <guid>http://localhost:1313/book/mindset/</guid>
       
         <description>&lt;h1 id=&#34;心智成长&#34;&gt;心智成长&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;http://www.douban.com/doulist/1133232/&#34;&gt;豆列：心智成长&lt;/a&gt;是我读过且觉得非常好的有关思维、心理、哲学、文学、历史、政治、社会、人类学、管理、经济、科技等多方面的书籍与记录片。入选的标准是实用，纯消遣类小说不在此列。&lt;/p&gt;

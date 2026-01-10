@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>文学 on 飘飘白云：所读，所观，所思</title>
-    <link>https://luozhaohui.github.io/tags/%E6%96%87%E5%AD%A6/</link>
+    <link>http://localhost:1313/tags/%E6%96%87%E5%AD%A6/</link>
     <description>Recent content in 文学 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 17 Nov 2025 19:00:00 +0800</lastBuildDate>
     
-        <atom:link href="https://luozhaohui.github.io/tags/%E6%96%87%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/%E6%96%87%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>《诚与真：陶渊明考论》评述</title>
-      <link>https://luozhaohui.github.io/post/2025/2025-11-17-taoyuanming-liuyi/</link>
+      <link>http://localhost:1313/post/2025/2025-11-17-taoyuanming-liuyi/</link>
       <pubDate>Mon, 17 Nov 2025 19:00:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2025/2025-11-17-taoyuanming-liuyi/</guid>
+      <guid>http://localhost:1313/post/2025/2025-11-17-taoyuanming-liuyi/</guid>
       
         <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;《诚与真：陶渊明考论》是一部对陶渊明进行综合性深入研究的学术专著。全书分为三编：&lt;strong&gt;历史世界&lt;/strong&gt;（上编）、&lt;strong&gt;精神天地&lt;/strong&gt;（中编）和&lt;strong&gt;文学风貌&lt;/strong&gt;（下编），力图将史学考据、思想解读和文学特色分析熔于一炉，通过深入陶渊明的历史语境，全面立体地解读陶渊明的思想境界与艺术特色。&lt;/p&gt;
@@ -75,8 +75,7 @@
 &lt;p&gt;站在普通读者的角度，本书也存在一些局限：一是上编的考据部分过于繁琐，会让非专业读者感到枯燥；二是某些理论分析（如对郭象玄学的深入阐释）可能过于专业，需要一定的哲学背景才能完全理解；三是作者&lt;strong&gt;在自序中提出的现代关怀问题（古典世界的真实、真诚和心灵自由在今天如何可能），在正文中并未点明或展开，更多是作为研究的背景和动机，而非直接回答的问题&lt;/strong&gt;。或许作者是想通过剖析陶渊明这样一个追寻自我的典范，让读者自己去感染与领悟。&lt;/p&gt;
 &lt;h2 id=&#34;总评&#34;&gt;总评&lt;/h2&gt;
 &lt;p&gt;作者的治学态度严谨，理论创新突出，方法运用得当，既有扎实的考据基础，又有深刻的思想洞察和独到的文学分析。虽然对普通读者而言，某些部分可能显得过于专业和繁琐，但作者的“诚之以求真”的治学态度与追求，以及通过综合考察剖析多方观点得出的“出于成说之外”的结论，都值得肯定。作者的研究不仅是对陶渊明的理解，更是对人生意义、对古典与现代关系的思考，这使得本书具有了超越纯粹学术研究的价值。&lt;/p&gt;
-&lt;p&gt;与戴建业《澄明之境：陶渊明新论》相比，刘奕此书以高度概括、理论构建、文学特色分析见长，十分精彩地以郭象的思想渊源、“诚之以求真”融合儒道思想来剖析陶渊明的自我之路，从字、句、章、篇法详实分析陶渊明“拙放”的艺术特色。戴建业之书则更偏重从&lt;strong&gt;存在主义&lt;/strong&gt;视角，以“洒落与忧勤”、“纵浪大化”与“不失此生”为核心，深入探讨陶渊明的自我意识、生命意识、人生境界，以及其人其诗的接受史，但他的书是从论文集演进而来，所以前后章节内容不够连贯系统，有不少重复之处。两书都是深度解读陶渊明人生、思想和艺术特色的佳作，刘作重理论构建和文学特色分析，学术一些；戴作重自我意识与生命境界阐述，通俗一些，两者互为补充，共同构成了对陶渊明多维度、立体化的理解。&lt;/p&gt;
-</description>
+&lt;p&gt;与戴建业《澄明之境：陶渊明新论》相比，刘奕此书以高度概括、理论构建、文学特色分析见长，十分精彩地以郭象的思想渊源、“诚之以求真”融合儒道思想来剖析陶渊明的自我之路，从字、句、章、篇法详实分析陶渊明“拙放”的艺术特色。戴建业之书则更偏重从&lt;strong&gt;存在主义&lt;/strong&gt;视角，以“洒落与忧勤”、“纵浪大化”与“不失此生”为核心，深入探讨陶渊明的自我意识、生命意识、人生境界，以及其人其诗的接受史，但他的书是从论文集演进而来，所以前后章节内容不够连贯系统，有不少重复之处。两书都是深度解读陶渊明人生、思想和艺术特色的佳作，刘作重理论构建和文学特色分析，学术一些；戴作重自我意识与生命境界阐述，通俗一些，两者互为补充，共同构成了对陶渊明多维度、立体化的理解。&lt;/p&gt;</description>
       
     </item>
     

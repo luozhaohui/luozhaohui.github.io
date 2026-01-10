@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>杂谈 on 飘飘白云：所读，所观，所思</title>
-    <link>https://luozhaohui.github.io/categories/%E6%9D%82%E8%B0%88/</link>
+    <link>http://localhost:1313/categories/%E6%9D%82%E8%B0%88/</link>
     <description>Recent content in 杂谈 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 15 Mar 2025 22:14:00 +0800</lastBuildDate>
     
-        <atom:link href="https://luozhaohui.github.io/categories/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/categories/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>人工智能发展之潮起潮落</title>
-      <link>https://luozhaohui.github.io/post/2025/2025-03-15-history-of-ai/</link>
+      <link>http://localhost:1313/post/2025/2025-03-15-history-of-ai/</link>
       <pubDate>Sat, 15 Mar 2025 22:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2025/2025-03-15-history-of-ai/</guid>
+      <guid>http://localhost:1313/post/2025/2025-03-15-history-of-ai/</guid>
       
         <description>&lt;h2 id=&#34;前言在迷雾中寻找光的轨迹&#34;&gt;前言：在迷雾中寻找光的轨迹&lt;/h2&gt;
 &lt;p&gt;人工智能的演进史是一部充满悖论的启示录：图灵用停机问题为计算划定边界，却意外点燃了智能革命的导火索；罗森布拉特的感知机本欲模仿神经元放电，最终却演变成深度学习中抽象的矩阵运算；辛顿在冷板凳上坚守神经网络四十年，等来的却是算力与数据暴力破解智能密码的&amp;quot;苦涩教训&amp;quot;。这些戏剧性的转折揭示着一个残酷的真相：&lt;strong&gt;我们对智能的理解，始终在知其然与不知其所以然之间徘徊&lt;/strong&gt;。&lt;/p&gt;
@@ -366,10 +366,10 @@
     
     <item>
       <title>人工智能：对涌现与智能的再思考</title>
-      <link>https://luozhaohui.github.io/post/2025/2025-02-15-thinking-about-agi/</link>
+      <link>http://localhost:1313/post/2025/2025-02-15-thinking-about-agi/</link>
       <pubDate>Sat, 15 Feb 2025 22:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2025/2025-02-15-thinking-about-agi/</guid>
+      <guid>http://localhost:1313/post/2025/2025-02-15-thinking-about-agi/</guid>
       
         <description>&lt;h3 id=&#34;前言&#34;&gt;前言&lt;/h3&gt;
 &lt;p&gt;一年前在粗略了解 Sora 之后发表了对通用人工智能（AGI） 的粗浅看法（见&lt;a href=&#34;https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/&#34;&gt;人工智能：Sora 随感&lt;/a&gt;)，经过对 AGI 知识的学习之后，再次刷新对 Scaling Law、Transformer 以及智能/涌现的理解，因此有了此文以更新对这个知识点的“模型参数”（一年前我对 AGI 能否达到涌现是存疑的，现在转变为肯定）。都说大道至简，但精准简化岂是常人所能，我只好在通俗与严谨之间，弃严谨而取通俗。下面就是用通俗的方式来讲述我对人工智能架构主要思想的新理解。&lt;/p&gt;
@@ -436,10 +436,10 @@
     
     <item>
       <title>日本为什么不诚恳认罪？</title>
-      <link>https://luozhaohui.github.io/post/2024/2024-09-21-japan-not-guilty/</link>
+      <link>http://localhost:1313/post/2024/2024-09-21-japan-not-guilty/</link>
       <pubDate>Sat, 21 Sep 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2024/2024-09-21-japan-not-guilty/</guid>
+      <guid>http://localhost:1313/post/2024/2024-09-21-japan-not-guilty/</guid>
       
         <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;又是一年九一八事变纪念日，也是定时勿忘国耻之日。回顾种种无耻侵华事实固然能激发愤慨的爱国之情，可待警钟声了，纪念日一过，一切又照常，不会在心底留下些许涟漪，也不会在脑海中留下什么的感悟。面对如此惨痛的灾难，每个人心中都应该有一份独特的“5D报告”，以深刻认识日本为什么发动战争，又为什么不诚恳地认罪（“遗憾”不是悔罪，甚至也不是道歉。就如盟军不会把对波茨坦公告的“默杀”（日语有多重含义：不置评或拒绝）回应视为接受投降条件一样），以便让自己保持警醒与清醒，意识到什么样迹象和社会氛围可能会重蹈覆辙，而在此种情况下又当如何应对。以下是我个人对侵华战争的“5D报告”，鉴于所知甚陋，疏漏错误之处难免，有错必改。&lt;/p&gt;
@@ -531,10 +531,10 @@
     
     <item>
       <title>人工智能：Sora 随感</title>
-      <link>https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/</link>
+      <link>http://localhost:1313/post/2024/2024-02-22-thinking-about-agi/</link>
       <pubDate>Thu, 22 Feb 2024 22:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2024/2024-02-22-thinking-about-agi/</guid>
+      <guid>http://localhost:1313/post/2024/2024-02-22-thinking-about-agi/</guid>
       
         <description>&lt;h2 id=&#34;sora-做了什么&#34;&gt;Sora 做了什么&lt;/h2&gt;
 &lt;p&gt;基于目前公开的信息 Sora 模型奠基于两大原理之上：Transformer 与 Scaling Law。前者本质就是换个角度看问题，使得跨领域建模及其处理更为一致、高效，一如：频率和概率，直角坐标系和极坐标系，大数据常用的矩阵变换等等；后者就是大力出奇迹的规模效应：模型大，数据多，算力强，那效果就更好（是否能达到涌现的程度存疑）。个人感觉前者使“通用”成为可能，后者使“智能”成为可能。Sora 强大之处是仅通过学习人类产生的视频（仅视觉、听觉、字幕），就能产生&lt;strong&gt;世界模拟器&lt;/strong&gt;的四维视频。但我不认为它从中推理出牛顿定律或能量守恒定律等，进而根据这些理论来构建四维世界视频，它仅仅是通过大数据分析在可能性空间中选择相关关系最大的情景。&lt;/p&gt;
@@ -549,10 +549,10 @@
     
     <item>
       <title>2023年度小结-成长是硬道理</title>
-      <link>https://luozhaohui.github.io/post/2023/2023-12-24-annual-sumary/</link>
+      <link>http://localhost:1313/post/2023/2023-12-24-annual-sumary/</link>
       <pubDate>Sun, 24 Dec 2023 18:30:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2023/2023-12-24-annual-sumary/</guid>
+      <guid>http://localhost:1313/post/2023/2023-12-24-annual-sumary/</guid>
       
         <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;一年又将过去，2023年是疫情放开后的第一年。回想2019年除夕那天晚上，因武汉疫情爆发，我发了一条朋友圈说：“多年以后，面对除夕，你会回想起这样一个特别的新年：2020。”，如今，这三年疫情大体算是过去了，然而今年下半年凶猛的流感潮以及支原体肺炎，却时刻提醒我们新冠去而未远。就我个人的总体感受而言，这一年从年初放宽疫情管控时的轻松解放感，到下半年流感潮的肆虐叠加各种危机的加剧、战争的爆发，从而引发对大周期下萧条乱象的忧虑。但这一年的阅读、见证与思考又让我无比坚信无论对国家、组织还是个人都适用的两条原则：&lt;/p&gt;
@@ -634,16 +634,16 @@
     
     <item>
       <title>经济危机为什么这次不一样又一样？</title>
-      <link>https://luozhaohui.github.io/post/2023/2023-08-19-land-finance/</link>
+      <link>http://localhost:1313/post/2023/2023-08-19-land-finance/</link>
       <pubDate>Sat, 19 Aug 2023 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2023/2023-08-19-land-finance/</guid>
+      <guid>http://localhost:1313/post/2023/2023-08-19-land-finance/</guid>
       
         <description>&lt;p&gt;多家地产开发商暴雷，不再公示的失业率节节攀升，出口大降，投资非常谨慎，突然间消费、出口、投资三驾马车都失灵了，这是怎么了？&lt;/p&gt;
 &lt;p&gt;回答这个问题需要回到近 30 年前，1994 年分税制改革，中央拿大头，地方政府拿小头。地方政府财政收入减少了，但公共支出又没有减少，没钱怎么办？土地财政就被发明出来了，从此支撑中国多年高速发展的土地财政经济模式就登场了。&lt;/p&gt;
 &lt;p&gt;土地财政经济模式简单概括如下：
 地方政府卖地 → 开发商借债买地建房 → 居民借债买房 → 地方政府用借债以及卖地钱搞基建、招商引资 → 产业出口挣外汇 → 央行根据外汇储备以汇率1:8的比例印钞 → 银行放债给各方&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/2023/land_finance.jpg&#34; alt=&#34;土地财政经济模式&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/posts/2023/land_finance.jpg&#34; alt=&#34;土地财政经济模式&#34;&gt;&lt;/p&gt;
 &lt;p&gt;在理想的情况下，这个正向循环是能工作得很好的，尤其是在没有加杠杆的情况下。这 20 多年的高速发展似乎也证明了这个模式很给力。大量结汇的钱，促进了房地产和基建的高歌猛进，并惠及其他产业，大量廉价劳动力+低汇率又促进了出口，挣得更多的外汇。房地产这个蓄水池，既避免了其他物价的通胀，也压缩了其它产业和消费壮大发展的空间。&lt;/p&gt;
 &lt;p&gt;人性是盲目的，既贪婪又恐惧。乐观时加杠杆借债，累积了债务风险；悲观时不计成本抛售，踩踏崩盘。当居民加杠杆都买不起房，当开发商的收入还不起债甚至是还不起利息的时候，这个循环模式就玩不转了。再叠加外部供应链脱钩、全球需求疲软导致出口大减，内部人口出生率剧降、年轻人无欲躺平、房地产前景预期悲观，于是出口和消费（主要是房地产消费，其它消费本就没怎么壮大）两驾马车就跑不动了，出口的外部需求萎靡和内部需求不足，投资也就谨慎了。这样三驾马车就都失灵了。&lt;/p&gt;
 &lt;p&gt;从上面这张图，可以看出为什么政府宁可有价无市也要保房价。房价如不保，资产就缩水，资不抵债，开发商破产、楼盘烂尾、居民断供，银行坏账，政府没钱，各业停罢，社会矛盾激增。也可以看出政府为什么要催老百姓去消费，出口依赖于外部需求，在当前全球局势下既不可控也不乐观；投资既要有钱也要有市场需求。既然增量无望，就只好打打存量的主意了，于是在发钱与发政策中选择了发文让老百姓去消费。可是在掏空六个钱包以及“996”福报下，老百姓有钱和有时间去消费么？于是躺平的继续躺平，吆喝的继续吆喝，双向奔赴。&lt;/p&gt;
@@ -657,10 +657,10 @@
     
     <item>
       <title>法律的斗争（萨孟武节录意译本）</title>
-      <link>https://luozhaohui.github.io/post/2017/2017-08-07-the-strunggle-for-law/</link>
+      <link>http://localhost:1313/post/2017/2017-08-07-the-strunggle-for-law/</link>
       <pubDate>Mon, 07 Aug 2017 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2017/2017-08-07-the-strunggle-for-law/</guid>
+      <guid>http://localhost:1313/post/2017/2017-08-07-the-strunggle-for-law/</guid>
       
         <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;ul&gt;
@@ -714,10 +714,10 @@
     
     <item>
       <title>育儿先育己</title>
-      <link>https://luozhaohui.github.io/post/2015/2015-11-23-raising-child/</link>
+      <link>http://localhost:1313/post/2015/2015-11-23-raising-child/</link>
       <pubDate>Mon, 23 Nov 2015 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2015/2015-11-23-raising-child/</guid>
+      <guid>http://localhost:1313/post/2015/2015-11-23-raising-child/</guid>
       
         <description>&lt;h2 id=&#34;阶层的危机&#34;&gt;阶层的危机&lt;/h2&gt;
 &lt;p&gt;最近在看一部BBC制作的英国纪录片&lt;a href=&#34;http://movie.douban.com/subject/10748226/&#34;&gt;《人生七年》&lt;/a&gt;，这部纪录片通过采访来自英国不同阶层的十四个七岁的小孩子，每隔七年访谈一次制作一集，从1964年一直到到2000年，一直持续到他们56岁，总共拍了&lt;a href=&#34;https://movie.douban.com/subject/2123439/&#34;&gt;7 Up&lt;/a&gt;, &lt;a href=&#34;&#34;&gt;14 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/2283680/&#34;&gt;21 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/1482936/&#34;&gt;28 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/1778460/&#34;&gt;35 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/1778459/&#34;&gt;42 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/1847588/&#34;&gt;49 Up&lt;/a&gt;, &lt;a href=&#34;https://movie.douban.com/subject/10748226/&#34;&gt;56 Up&lt;/a&gt; 八集。&lt;/p&gt;
@@ -789,51 +789,51 @@
     
     <item>
       <title>我的父亲</title>
-      <link>https://luozhaohui.github.io/post/2015/2015-03-06-my-father/</link>
+      <link>http://localhost:1313/post/2015/2015-03-06-my-father/</link>
       <pubDate>Fri, 06 Mar 2015 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2015/2015-03-06-my-father/</guid>
+      <guid>http://localhost:1313/post/2015/2015-03-06-my-father/</guid>
       
         <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;我的父亲今年已七十五了，每次回家都能明显感受到无情岁月在父亲身上留下的印迹。这时时刻刻在提醒着我，相处的时间的不会太多了，尤其是对于常年飘在外面的我来说。虽说在我离开家乡之前与父亲相处了十八个春秋，可我对于父亲的生平却了解的很少，非常的支离破碎。大约以前在一起的时候总觉得明天还会见到的，加上年少总是索取以满足自己的需要而不懂得去了解父辈的需要，因此不曾打听与了解过父亲的过去。这次借过年回家相处的一个夜晚，和父亲聊了聊他的过去，记在这里，以作一个平凡农民半个多世纪的回忆。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/myfather/mf-001.jpg&#34; alt=&#34;我的父亲罗有胜&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/posts/myfather/mf-001.jpg&#34; alt=&#34;我的父亲罗有胜&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;爷爷去世&#34;&gt;爷爷去世&lt;/h2&gt;
 &lt;p&gt;我的父亲罗有胜，1940年出生在湘中的湘乡（今属于湖南省双峰县），这个地方出过不少在中国近代史上有着举足轻重影响的人物，如毛泽东，彭德怀，刘少奇都出自湘中，而曾国藩与大部分湘军都是本县的子民，蔡和森家族更是近在邻村。父亲在家中排行老大，下有一个弟弟，与三个妹妹。父亲只读过小学，之后一如其他农家子弟在家干农活，直到1959年父亲19岁那一年。&lt;/p&gt;
 &lt;p&gt;1959年正是反右批斗运动正紧的时候。爷爷因为祖传茅山道士之术，在当时是属于被批判的“搞迷信”的道士对象。国庆前夕，不到40岁的爷爷受到严重批斗挨打，不到一个月时间就因挨打受的伤而去世了。（后来邓小平上台，各地平反冤假错案，父亲曾为此申怨，现在留得申怨报告一份，如下所示。）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/myfather/mf-002.jpg&#34; alt=&#34;申诉材料&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/posts/myfather/mf-002.jpg&#34; alt=&#34;申诉材料&#34;&gt;
 （父亲的真实年龄与身份证上的出生年月不符，以上申诉材料中使用的年龄是根据身份证上的出生年月计算的）&lt;/p&gt;
 &lt;p&gt;爷爷去世时，父亲才19岁，而最小的妹妹才半岁，一家六口的重担就落到父亲头上了。当时农村已经实行公社制，农民需要每天出工积累工分领取食物等生活必须用品。对于这样一个劳力少而人口多的家庭来说，人均能吃到的食物少得可怜，更因祖父的道士职业的缘故备受歧视，日子无疑是过得非常艰苦。&lt;/p&gt;
 &lt;h2 id=&#34;修铁路&#34;&gt;修铁路&lt;/h2&gt;
 &lt;p&gt;后来碰上1960年湘西怀化修铁路（应该属于&lt;a href=&#34;http://baike.baidu.com/view/940114.htm?fromtitle=%E6%B9%98%E9%BB%94%E7%BA%BF&amp;amp;fromid=1569738&amp;amp;type=syn&#34;&gt;湘黔铁路&lt;/a&gt;）需要劳动力，政府在农村征派劳力，每个生产队分派两个人。以当时农村的思想状况来说，父母在不远行，只有走投无路才会远走背井离乡讨生活。在这困苦的处境下，因此父亲与同生产队的肖石成两人被征派去修建怀化铁路。那个年代修筑铁路都是苦力活，尤其是在湘西怀化那种多山地区（父亲提到过在雪峰山打隧道的经历）。干活是用原始的工具开山辟路，放炮炸，用铁锤敲碎石块，用肩挑石头。父亲在那里修建了三年多（大约1960年～1964年），那一段完工之后就又回到生产队务农。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/myfather/mf-003.png&#34; alt=&#34;父亲曾经修筑铁路的路段&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/posts/myfather/mf-003.png&#34; alt=&#34;父亲曾经修筑铁路的路段&#34;&gt;
 图中红色箭头段应该是父亲曾经修筑铁路的路段，双峰县是我家所在县，图标1处是怀化洪江县的雪峰山，现有雪峰山隧道&lt;/p&gt;
 &lt;h2 id=&#34;弹棉花&#34;&gt;弹棉花&lt;/h2&gt;
 &lt;p&gt;回到生产队之后，日子依旧困苦得过不下去，父亲再次外出讨生活。于是经邻村城坪村的肖玉莲的师父介绍向沙田石桥村的彭来星拜师学习弹棉花打被子。师徒俩组队外出给人打被子，从此开始了“穷游”南中国之旅。父亲有四年（大约1965～1970年）外出打被子的经历，一般都是农历七八月份出发，在除夕前赶回家里。前期是和师父彭来星搭档，后面是和邻村肖玉莲搭档。一共走过两条路线，前几次是南下的路线：即从湖南永州东安南下到广西桂林，到云南蒙自，再返回广西回到湖南；后来是北上的路线，从湖南到湖北。&lt;/p&gt;
 &lt;p&gt;弹棉花的工作过程图（图片来源于网络）：
-&lt;img src=&#34;https://luozhaohui.github.io/image/posts/myfather/mf-004.jpg&#34; alt=&#34;弹棉花的工作过程图&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/image/posts/myfather/mf-004.jpg&#34; alt=&#34;弹棉花的工作过程图&#34;&gt;&lt;/p&gt;
 &lt;p&gt;父亲走过的现在依然印象深刻的地方：
-&lt;img src=&#34;https://luozhaohui.github.io/image/posts/myfather/mf-005.png&#34; alt=&#34;父亲走过的现在依然印象深刻的地方&#34;&gt;
+&lt;img src=&#34;http://localhost:1313/image/posts/myfather/mf-005.png&#34; alt=&#34;父亲走过的现在依然印象深刻的地方&#34;&gt;
 图中的1处是云南蒙自。&lt;/p&gt;
 &lt;p&gt;小时候家里有一本厚厚的中国地图册，在我们兄弟俩成长的过程中被无心地毁坏掉了，那时候并不知道那本地图册对父亲有如此重要的意义。现在父亲对曾经走过的具体地名大都已经回忆不起来了，因此我也无法准确还原他曾经走过的路线，只能凭着父亲记忆深刻的一些地名去串起来。父亲对于广西桂林附近的景色以及云南蒙自县的壮族风俗习惯记忆尤深。比如，桂林、大雁山、阳朔、昭平、蒙自都能准确说出地名来。他说到当时广西的物资比湖南要丰富，许多物资湖南还没有卖的，广西就已经有了。他还记得当时桂林有一条湖南街，上面有卖弹棉花打被子用的一些材料，如纱等。此外，父亲对桂林山水，阳朔岩洞的景色也记忆深刻。下图上标出的湖南永州的道县父亲虽然没有去过，当时正值文革，&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E9%81%93%E5%8E%BF%E4%BA%8B%E4%BB%B6&#34;&gt;道县大屠杀（发生在1967年）&lt;/a&gt;，父亲途径附近区域，听很多人说过，因此记忆深刻。他说到有一次坐火车，列车员说卧倒，话刚一落音，子弹就梭梭地朝火车扫射了，车窗玻璃都打碎了，外面是两派造反派在武斗。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/myfather/mf-006.png&#34; alt=&#34;桂林，大雁山，阳朔，昭平&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/posts/myfather/mf-006.png&#34; alt=&#34;桂林，大雁山，阳朔，昭平&#34;&gt;&lt;/p&gt;
 &lt;p&gt;在广西的时候，父亲还提到过一个有名气的抗日村落，这个村落的布局十分独特，房屋紧凑连接，拐角星罗密布，一进入如同走入迷宫。当地人利用这个地形有效地打击日本鬼子，以至于鬼子动用飞机炸平村落才占领。父亲说这个村落叫做雷锋村，由于大一点的地名父亲记忆不详，更因为这个村落原本不叫雷锋村（抗日是啥年代，雷锋是啥年代啊，多半如《朱德的扁担》到《林彪的扁担》再到《朱德的扁担》一样被共党篡改了），现在我已无法搜索到父亲描述的这个村落记录了。&lt;/p&gt;
 &lt;p&gt;父亲还走过一小段云南境内的茶马古道，只是父亲不明白那是一条很有历史的古路，他说有一些路两边的石壁上雕刻着吊着铃铛的马队驼着货物，我琢磨这应该是茶马古道。附上茶马古道的路线图以及蒙自到普洱、昆明的示意图以估摸父亲走过的地方：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/myfather/mf-007.jpg&#34; alt=&#34;茶马古道&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/myfather/mf-008.png&#34; alt=&#34;蒙自、普洱、昆明示意图&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/posts/myfather/mf-007.jpg&#34; alt=&#34;茶马古道&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/posts/myfather/mf-008.png&#34; alt=&#34;蒙自、普洱、昆明示意图&#34;&gt;&lt;/p&gt;
 &lt;p&gt;父亲对蒙自壮族人民的风俗习惯记忆鲜明，而蒙自离茶马古道普洱到大理或昆明到普洱这两段路程都不远，所以可以推断出，父亲到过蒙自更西的地方，具体是哪一段古道父亲已经记忆不起来了。父亲提到过一个细节，有一次师徒俩挑着工具行李走入山区，一走七十里没有人烟，而那种地方当地传闻常有土匪出没。&lt;/p&gt;
 &lt;h2 id=&#34;弹棉花时的经济社会状态&#34;&gt;弹棉花时的经济社会状态&lt;/h2&gt;
 &lt;p&gt;说到外出讨生活，我仔细了解了一下当时讨生活的经济与社会状态。当时人不是自由的，小范围属于某某生产队，大范围属于某某公社，外出是需要介绍信才能通行的，因为坐火车，住旅店，到别的村落都会要求查验介绍信，否则就可能当作可疑或特务分子对待，这是当时的外部（国民党空降特务）与内部（计划经济控制人口流动）形势所形成的局面。因此，像父亲这样的弹棉花从业者，需要办理手工业证和生产队的证明信及公社的介绍信才能外出。此外，因为生产队外出一人就少了一个劳动力，所以外出自讨生活的人需要每天支付一元给生产队作为补偿。根据父亲的记忆，师徒俩人一天平均可以打两到三块被子，打一块被子当时收费十五元，平均一个月四分之一的天数有生意。因此估算下来，平均每月能进账二百五十块，除去路上的开销和弹棉花的耗材，一个月能节余两百来块。起初父亲是学徒，和师傅按照二八的比例分成，因此父亲起初只能领取到只能领取两成收入约四十多块，减去补偿给生产队的三十块每月只节余十多块。后来学艺日精，分成比例也就高一些，按照五五比例分成能得到一百多块，减去补偿生产队的费用，每月能节余七十块。在当时算是一笔不小的收入吧，只是因为奶奶不善于理家，这些钱都花掉了，并没有积蓄起来。而因花钱多，在生产队上形成在外面挣了大钱的印象，引起嫉妒，以至于后来有人作梗不同意父亲外出讨生活了（因为外出需要生产队同意和介绍信！），即便是父亲为生产队上的每一家都免费打过被子依然有人不领情。&lt;/p&gt;
 &lt;p&gt;父亲说虽然弹被子确实比在公社务农争公分强，但却辛苦很多。在学徒阶段，每天天未亮，父亲就要先师傅起来，将旧被子里面的棉絮拆开拆散，以重复利用旧棉花，然后再掺入新棉花制成新被子，这项工作通常在天亮时就要完成。天一亮师傅就要起来开始弹的工作了。有生意的日子吃住都不用愁，因为都是在主人家吃住的。当时的社会比较穷，父亲说到，他们刚到一个新村落第一家做事情的时候，为了树立吃得少做得多的好名声以便招揽更多生意，往往忍着只吃个半饱，起早摸黑地做。免得吃得多做得慢坏了名声而招揽不到生意。当然也有生意少的时候，故意放慢进度以求多赖在主人家一两天的情况。当时招揽生意一来靠村落间的口口相传，二来是靠在赶集上招揽生意。以前经济并不发达，没有固定的商店与市场，农村地区都是在每个月固定的日子去固定地方买卖东西，叫做赶集。逢上赶集的日子，父亲就要带着弹棉花的工具当名片，站在集会显眼的地方，有需要制作被子的人就会前来询问。而在转移阵地的时候，有时候挑着行李要走上三四天才能找到下一趟生意。&lt;/p&gt;
 &lt;h2 id=&#34;修筑燕霄水库&#34;&gt;修筑燕霄水库&lt;/h2&gt;
 &lt;p&gt;在外出弹棉花受阻拦之后，父亲只好回到生产队。在家务农这一段时间中当上了民兵排长，现在家里还留存有当时父亲的一本民兵训练笔记本。由此可以看出当时的政治大环境还是以斗争为纲，而不是以发展为纲：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://luozhaohui.github.io/image/posts/myfather/mf-009.jpg&#34; alt=&#34;民兵训练笔记本&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/image/posts/myfather/mf-009.jpg&#34; alt=&#34;民兵训练笔记本&#34;&gt;&lt;/p&gt;
 &lt;p&gt;后来政府因修筑燕霄水库及相应的水渠（大约1974年～1979年）再次征派劳动力，而父亲曾经有过修筑铁路的经历，因此被选中。当时开凿水渠，水渠有时候要穿山而过，因此就要开山凿洞，这样的凿出来的洞方言叫做阴洞子，父亲提到过两处负责的地段：双江口和西冲。这也是苦活，也需要放炮炸山，而征派上去的农民缺少这方面的训练，出过不少事故死了一些人。而父亲在修筑铁路时有一定放炮的安全意识与经验，因此负责专管安全的任务了。当时留在生产队吃公社食堂大锅饭的伙食较差，而修筑水库干活辛苦一些因此政府重视，伙食比较好，这时候每个生产队征派的两个名额就成了香饽饽。父亲说，当时他负责的那一段每三个月就要换掉一些人，因为那些生产队采用每户轮流派出劳力的办法来求公平。而父亲因为抓安全需要老将，为人老实干活出力，所以公社顶着生产队的非议，坚持要征派父亲。这一征派就是三四年。在这次征派中，因父亲表现出色，于1975年同永丰镇西冲的刘竹初两人加入了共产党（那时候加入共产党的要求还是蛮严格的），后来还调离生产队转正成为城镇户口吃国家粮（1980年）。从此父亲走上了与水利相关的职业道路，之后在茅坪村附近修筑杨津渡天桥时当过保管（1980年），再调到双江口看护，再到燕霄水库大坝管理所。在杨劲渡当保管时，经人介绍认识了我母亲（茅坪村），于是父亲直到1980年40岁才结婚。&lt;/p&gt;
 &lt;h2 id=&#34;卖爆花&#34;&gt;卖爆花&lt;/h2&gt;
 &lt;p&gt;工作与家庭都稳定之后，1981年我哥出生，1983年我出生。当时已经开始对城镇户口实行计划生育了，我的出生使得父亲违反了计划生育政策，因此父亲被罚停职停薪三年。在这三年里需要自谋生路，而且因不是农村户口，父亲是没有分田土的。父亲再次过上了艰苦的讨生活之路：卖爆花（就是冬天街边常见的用米制作的爆花米，爆花筒）。早上从我村的一个小作坊买来爆花，然后去其他乡村里售卖。父亲说卖不动的时候最远走到邻县衡阳县（大约50公里的路程）。这一起早摸黑的辛苦又是三年，父亲说幸好那时候每天平均能挣五元，以支撑一家人的生活。&lt;/p&gt;
 &lt;h2 id=&#34;燕霄水库管理所职员&#34;&gt;燕霄水库管理所职员&lt;/h2&gt;
 &lt;p&gt;卖了三年爆花之后，父亲回到了原单位。对于父亲在燕霄水库的工作，我不是十分了解，只知道下大雨时要派人看守水库大坝、水渠沿线以防坍陷；水电站发电时需要派人24小时看守；水库需要巡逻防止人偷鱼，水库要养鱼等等，这些父亲都做过。从我懂事起，父亲年龄也大了，便担任总务不再外出干体力活了，他要负责水库管理所三四十号人的食物采购。从县城到燕霄水库管理所有二十里的路程，路况并不好，因为水库建筑在山区。因此天气不好的时候，下大雨或下雪的时候，自行车都不能骑，而管理所不能一天没有吃的，父亲只能挑着食材走路送过去。后来父亲年龄大了，在父亲病着时候或天气不好的时候，我哥曾顶替这项工作好些次。&lt;/p&gt;
 &lt;p&gt;燕霄水库到县城的路线图：从县城到我家附近到城坪村这一段路况较好，从城坪村到燕霄水库那一段山路的路况就差远了。
-&lt;img src=&#34;https://luozhaohui.github.io/image/posts/myfather/mf-010.png&#34; alt=&#34;燕霄水库到县城的路线图&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:1313/image/posts/myfather/mf-010.png&#34; alt=&#34;燕霄水库到县城的路线图&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;道士&#34;&gt;道士&lt;/h2&gt;
 &lt;p&gt;在&lt;code&gt;1989&lt;/code&gt;年，我家修筑了新房子，从此摆脱了一家四口人睡一张床的历史。搬到新房子之后，忘记是哪一年了，邻队筒车坝的蒋生因为患大病久治不愈，各种医院、道士和尚治疗都不凑效。他家知道我家是道士世家，于是病急乱投医，说服父亲出手帮忙驱鬼辟邪。不知怎么的，这一次竟然灵了。于是父亲作为道士的第三职业（第一职业应该算是农民，第二职业是水库管理所职员）名声大震，一则因为周边的和尚道士都没治好而父亲第一次出手就灵了，二则因为祖传的法术在当地还是很有名气的。从此父亲走上了道士这一第三职业，而且随着父亲的退休而成为主业了。至今父亲依然从业中，并因这一职业，父亲又有过好几次出省驱鬼辟邪的经历。&lt;/p&gt;
 &lt;h2 id=&#34;总结&#34;&gt;总结&lt;/h2&gt;
@@ -847,10 +847,10 @@
     
     <item>
       <title>[转]洗脑秘笈：占领思想舆论阵地的十八个招式</title>
-      <link>https://luozhaohui.github.io/post/2014/2014-10-29-brainwash/</link>
+      <link>http://localhost:1313/post/2014/2014-10-29-brainwash/</link>
       <pubDate>Wed, 29 Oct 2014 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2014/2014-10-29-brainwash/</guid>
+      <guid>http://localhost:1313/post/2014/2014-10-29-brainwash/</guid>
       
         <description>&lt;h2 id=&#34;转记&#34;&gt;转记&lt;/h2&gt;
 &lt;p&gt;今天在搜索波普尔的《辩证法是什么》一文时，无意中发现&lt;a href=&#34;http://blog.kdnet.net/boke.asp?twokeqi.showchannel.0.1067.html&#34;&gt;2可器的电线杆&lt;/a&gt;在凯迪社区的博客。此人文笔和理论水平都不错，也非常推崇波普尔(看来反洗脑都需要攀登波普尔这座高山)。用他自己博客上的话来介绍就是：&lt;/p&gt;
@@ -924,10 +924,10 @@
     
     <item>
       <title>从贝叶斯定理说开去</title>
-      <link>https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/</link>
+      <link>http://localhost:1313/post/2014/2014-10-21-bayes-rule/</link>
       <pubDate>Tue, 21 Oct 2014 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/</guid>
+      <guid>http://localhost:1313/post/2014/2014-10-21-bayes-rule/</guid>
       
         <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;贝叶斯定理是18世纪英国数学家~~&lt;a href=&#34;http://en.wikipedia.org/wiki/Thomas_Bayes&#34;&gt;托马斯·贝叶斯（Thomas Bayes）&lt;/a&gt;~~提出的重要概率论理论。以下摘一段 &lt;code&gt;Wikipedia&lt;/code&gt; 上的简介：&lt;/p&gt;
@@ -1086,10 +1086,10 @@ P(红球|乙)：乙箱子中拿到红球的概率&lt;/p&gt;&lt;/blockquote&gt;
     
     <item>
       <title>科学理论之可证伪性</title>
-      <link>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</link>
+      <link>http://localhost:1313/post/2014/2014-10-08-falsifiability/</link>
       <pubDate>Wed, 08 Oct 2014 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2014/2014-10-08-falsifiability/</guid>
+      <guid>http://localhost:1313/post/2014/2014-10-08-falsifiability/</guid>
       
         <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;http://zh.wikipedia.org/wiki/%E5%8F%AF%E8%AF%81%E4%BC%AA%E6%80%A7&#34;&gt;可证伪性&lt;/a&gt;&lt;/strong&gt; 是英籍奥地利科学哲学家卡尔.波普尔主张用来分辨 &lt;strong&gt;科学与非科学&lt;/strong&gt; 的一种理论，他认为:&lt;/p&gt;
@@ -1127,10 +1127,10 @@ P(红球|乙)：乙箱子中拿到红球的概率&lt;/p&gt;&lt;/blockquote&gt;
     
     <item>
       <title>找回使命感，重燃激情！</title>
-      <link>https://luozhaohui.github.io/post/2011/2011-07-18-passion/</link>
+      <link>http://localhost:1313/post/2011/2011-07-18-passion/</link>
       <pubDate>Mon, 18 Jul 2011 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2011/2011-07-18-passion/</guid>
+      <guid>http://localhost:1313/post/2011/2011-07-18-passion/</guid>
       
         <description>&lt;h2 id=&#34;迷茫&#34;&gt;迷茫&lt;/h2&gt;
 &lt;p&gt;近来心态非常滴不踏实，不淡定。怎么说呢，就像一个拧紧发条向前冲的人，突然停下来想：这么冲为了啥呢？于是乎，心底疑惑起来，其余的一切依然在惯性的作用下看似如往常一样运转前行。&lt;/p&gt;
@@ -1151,10 +1151,10 @@ P(红球|乙)：乙箱子中拿到红球的概率&lt;/p&gt;&lt;/blockquote&gt;
     
     <item>
       <title>那些快消逝的记忆</title>
-      <link>https://luozhaohui.github.io/post/2011/2011-02-21-forgetted-old-days/</link>
+      <link>http://localhost:1313/post/2011/2011-02-21-forgetted-old-days/</link>
       <pubDate>Mon, 21 Feb 2011 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2011/2011-02-21-forgetted-old-days/</guid>
+      <guid>http://localhost:1313/post/2011/2011-02-21-forgetted-old-days/</guid>
       
         <description>&lt;h2 id=&#34;活历史老去&#34;&gt;活历史老去&lt;/h2&gt;
 &lt;p&gt;对于我们来说，近代历史并不遥远，学校教科书并不是我们获取近代史故事的唯一途径，而且学校教科书里面的历史很多都经过粉饰和扭曲。我们的父辈，祖辈们都是很好的历史讲述者，遗留的很多建筑也是很好的历史见证者，只是我们不曾仔细观察和探究过那些历史。现在我们的爷爷辈，父辈们都在逐渐老去，存在他们脑海中的真实记忆也将逐渐消退，这让我很有些紧迫感，觉得应该记录一些他们的故事，一则为纪念他们，二则为还原部分历史。&lt;/p&gt;
@@ -1191,10 +1191,10 @@ P(红球|乙)：乙箱子中拿到红球的概率&lt;/p&gt;&lt;/blockquote&gt;
     
     <item>
       <title>能力培养与教育体制</title>
-      <link>https://luozhaohui.github.io/post/2009/2009-05-04-education/</link>
+      <link>http://localhost:1313/post/2009/2009-05-04-education/</link>
       <pubDate>Mon, 04 May 2009 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2009/2009-05-04-education/</guid>
+      <guid>http://localhost:1313/post/2009/2009-05-04-education/</guid>
       
         <description>&lt;p&gt;不经意间已十多天没有冒泡了，不太像我一贯的做法，或许是心静得下来了，坦实了点，专注了些，也算是好事情吧。其实上周有想过要写篇关于学习与教育的文章，只是早早地夭折在构思之中，还是简单地就这个话题感慨几句吧，思绪来的时候不留点痕迹，就真如风吹过一样无影无踪了。我们的学校教育一直是填鸭式的灌输，我们只是被动地接收现成的概念和定律，缺少洞悉有关这些概念与定律非常重要的三点：&lt;/p&gt;
 &lt;ul&gt;
@@ -1219,10 +1219,10 @@ P(红球|乙)：乙箱子中拿到红球的概率&lt;/p&gt;&lt;/blockquote&gt;
     
     <item>
       <title>过好一个人的日子</title>
-      <link>https://luozhaohui.github.io/post/2008/2008-06-06-better-life-alone/</link>
+      <link>http://localhost:1313/post/2008/2008-06-06-better-life-alone/</link>
       <pubDate>Fri, 06 Jun 2008 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2008/2008-06-06-better-life-alone/</guid>
+      <guid>http://localhost:1313/post/2008/2008-06-06-better-life-alone/</guid>
       
         <description>&lt;p&gt;一个人的生活要照顾好自己，保持自信，积极与乐观的心态，适度自恋，怀有梦想并坚持奋斗！&lt;/p&gt;
 &lt;ol&gt;
@@ -1268,10 +1268,10 @@ P(红球|乙)：乙箱子中拿到红球的概率&lt;/p&gt;&lt;/blockquote&gt;
     
     <item>
       <title>旅途中的思考</title>
-      <link>https://luozhaohui.github.io/post/2008/2008-05-10-thinking-on-travel/</link>
+      <link>http://localhost:1313/post/2008/2008-05-10-thinking-on-travel/</link>
       <pubDate>Sat, 10 May 2008 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2008/2008-05-10-thinking-on-travel/</guid>
+      <guid>http://localhost:1313/post/2008/2008-05-10-thinking-on-travel/</guid>
       
         <description>&lt;ol&gt;
 &lt;li&gt;
@@ -1302,10 +1302,10 @@ P(红球|乙)：乙箱子中拿到红球的概率&lt;/p&gt;&lt;/blockquote&gt;
     
     <item>
       <title>线性代数老师</title>
-      <link>https://luozhaohui.github.io/post/2008/2008-02-26-linear-algebra/</link>
+      <link>http://localhost:1313/post/2008/2008-02-26-linear-algebra/</link>
       <pubDate>Tue, 26 Feb 2008 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2008/2008-02-26-linear-algebra/</guid>
+      <guid>http://localhost:1313/post/2008/2008-02-26-linear-algebra/</guid>
       
         <description>&lt;p&gt;这半年翻了翻几本 3D 图像学方面的大部头，满眼看到的都是些矩阵行列式，大学为应付考试学的那点玩意差不多都忘光了，一边复习一边回想当初上线性代数的事情，聊以纪念那位有些古板的教线性代数的老先生。&lt;/p&gt;
 &lt;p&gt;老先生其实也不算老，50 岁左右，黑白各半的头发再加沧桑的脸庞，显的老而已。线性代数似乎是大二上学期开的大班课，每周三节课，都是在一个下午，连续三场，很少见这样的排课。所谓的大班课就是 4 个班，百来号人一起上，呵呵，具备了逃课的先天条件。&lt;/p&gt;
@@ -1316,10 +1316,10 @@ P(红球|乙)：乙箱子中拿到红球的概率&lt;/p&gt;&lt;/blockquote&gt;
     
     <item>
       <title>伟大的家乡话：双峰话</title>
-      <link>https://luozhaohui.github.io/post/2007/2007-01-07-dialect/</link>
+      <link>http://localhost:1313/post/2007/2007-01-07-dialect/</link>
       <pubDate>Sun, 07 Jan 2007 00:00:00 +0000</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2007/2007-01-07-dialect/</guid>
+      <guid>http://localhost:1313/post/2007/2007-01-07-dialect/</guid>
       
         <description>&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
 &lt;p&gt;先秀一句双峰话“昂瓷桑亨咯”，懵了吧，这是说“我是双峰的”。不明白的且听我慢慢道来，是家乡人就多多捧场，弘扬一下家乡话。双峰话和长沙话可以说是代表湘语的一老一新的语言，下面我先说说我经历的故事，然后再说说我们伟大的家乡话――双峰话。&lt;/p&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>大学 on 飘飘白云：所读，所观，所思</title>
-    <link>https://luozhaohui.github.io/tags/%E5%A4%A7%E5%AD%A6/</link>
+    <link>http://localhost:1313/tags/%E5%A4%A7%E5%AD%A6/</link>
     <description>Recent content in 大学 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 26 Feb 2008 23:14:00 +0800</lastBuildDate>
     
-        <atom:link href="https://luozhaohui.github.io/tags/%E5%A4%A7%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="http://localhost:1313/tags/%E5%A4%A7%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>线性代数老师</title>
-      <link>https://luozhaohui.github.io/post/2008/2008-02-26-linear-algebra/</link>
+      <link>http://localhost:1313/post/2008/2008-02-26-linear-algebra/</link>
       <pubDate>Tue, 26 Feb 2008 23:14:00 +0800</pubDate>
       
-      <guid>https://luozhaohui.github.io/post/2008/2008-02-26-linear-algebra/</guid>
+      <guid>http://localhost:1313/post/2008/2008-02-26-linear-algebra/</guid>
       
         <description>&lt;p&gt;这半年翻了翻几本 3D 图像学方面的大部头，满眼看到的都是些矩阵行列式，大学为应付考试学的那点玩意差不多都忘光了，一边复习一边回想当初上线性代数的事情，聊以纪念那位有些古板的教线性代数的老先生。&lt;/p&gt;
 &lt;p&gt;老先生其实也不算老，50 岁左右，黑白各半的头发再加沧桑的脸庞，显的老而已。线性代数似乎是大二上学期开的大班课，每周三节课，都是在一个下午，连续三场，很少见这样的排课。所谓的大班课就是 4 个班，百来号人一起上，呵呵，具备了逃课的先天条件。&lt;/p&gt;
