@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>贝叶斯 on 飘飘白云：所读，所观，所思</title>
-    <link>http://localhost:1313/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/</link>
+    <link>https://luozhaohui.github.io/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/</link>
     <description>Recent content in 贝叶斯 on 飘飘白云：所读，所观，所思</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 21 Oct 2014 23:14:00 +0800</lastBuildDate>
     
-        <atom:link href="http://localhost:1313/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://luozhaohui.github.io/tags/%E8%B4%9D%E5%8F%B6%E6%96%AF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>从贝叶斯定理说开去</title>
-      <link>http://localhost:1313/post/2014/2014-10-21-bayes-rule/</link>
+      <link>https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/</link>
       <pubDate>Tue, 21 Oct 2014 23:14:00 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/2014/2014-10-21-bayes-rule/</guid>
+      <guid>https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/</guid>
       
         <description>&lt;h2 id=&#34;简介&#34;&gt;简介&lt;/h2&gt;
 &lt;p&gt;贝叶斯定理是18世纪英国数学家~~&lt;a href=&#34;http://en.wikipedia.org/wiki/Thomas_Bayes&#34;&gt;托马斯·贝叶斯（Thomas Bayes）&lt;/a&gt;~~提出的重要概率论理论。以下摘一段 &lt;code&gt;Wikipedia&lt;/code&gt; 上的简介：&lt;/p&gt;
