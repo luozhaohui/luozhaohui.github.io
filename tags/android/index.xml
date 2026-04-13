@@ -28,7 +28,8 @@
 &lt;h3 id=&#34;android-bander设计与实现---设计篇&#34;&gt;&lt;a href=&#34;http://blog.csdn.net/universus/article/details/6211589/&#34;&gt;Android Bander设计与实现 - 设计篇&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;引用原文内容：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;这篇文章首先通过介绍 Binder 通信模型和 Binder 通信协议了解 Binder 的设计需求；然后分别阐述 Binder 在系统不同部分的表述方式和起的作用；最后还会解释 Binder 在数据接收端的设计考虑，包括线程池管理，内存映射和等待队列管理等。通过本文对 Binder 的详细介绍以及与其它 IPC 通信方式的对比，读者将对 Binder 的优势和使用 Binder 作为 Android 主要 IPC 方式的原因有深入了解。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;这篇文章首先通过介绍 Binder 通信模型和 Binder 通信协议了解 Binder 的设计需求；然后分别阐述 Binder 在系统不同部分的表述方式和起的作用；最后还会解释 Binder 在数据接收端的设计考虑，包括线程池管理，内存映射和等待队列管理等。通过本文对 Binder 的详细介绍以及与其它 IPC 通信方式的对比，读者将对 Binder 的优势和使用 Binder 作为 Android 主要 IPC 方式的原因有深入了解。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h3 id=&#34;android系统源代码情景分析&#34;&gt;&lt;a href=&#34;http://book.douban.com/subject/19986441/&#34;&gt;Android系统源代码情景分析&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;这是讲解 Android Binder 以及匿名共享内存最详细的书，没有之一。作者花了进200页的篇幅来透彻讲解 Binder，此外对各种组件的启动过程也介绍得相当详细，如 Activity、Service、Content Provider 等。&lt;/p&gt;
 &lt;h3 id=&#34;深入理解android内核设计思想&#34;&gt;&lt;a href=&#34;http://book.douban.com/subject/25921329/&#34;&gt;深入理解Android内核设计思想&lt;/a&gt;&lt;/h3&gt;

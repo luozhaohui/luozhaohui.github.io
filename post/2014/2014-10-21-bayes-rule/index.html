@@ -40,7 +40,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.149.0" />
+<meta name="generator" content="Hugo 0.158.0" />
 
 
 <link rel="canonical" href="https://luozhaohui.github.io/post/2014/2014-10-21-bayes-rule/" />
@@ -61,7 +61,7 @@
 
 
 
-<link rel="stylesheet" href="/sass/jane.min.5b437cf6e65c813281321deb964e207ce17ae80e1ff41125c4285826ea7ea0ef.css" integrity="sha256-W0N89uZcgTKBMh3rlk4gfOF66A4f9BElxChYJup&#43;oO8=" media="screen" crossorigin="anonymous">
+<link rel="stylesheet" href="/sass/jane.min.6a399a5e27a909b782486a19123d9ed033b125ce4333aa0c3a047bd40dc1a543.css" integrity="sha256-ajmaXiepCbeCSGoZEj2e0DOxJc5DM6oMOgR71A3BpUM=" media="screen" crossorigin="anonymous">
 
 
 
@@ -373,24 +373,27 @@
           <h2 id="简介">简介</h2>
 <p>贝叶斯定理是18世纪英国数学家~~<a href="http://en.wikipedia.org/wiki/Thomas_Bayes">托马斯·贝叶斯（Thomas Bayes）</a>~~提出的重要概率论理论。以下摘一段 <code>Wikipedia</code> 上的简介：</p>
 <blockquote>
-<p>所谓的贝叶斯定理源于他生前为解决一个~~“逆向概率”~~问题写的一篇文章，而这篇文章是在他死后才由他的一位朋友发表出来的。在贝叶斯写这篇文章之前，人们已经能够计算“正向概率”，如“假设袋子里面有 <code>N</code> 个白球，<code>M</code> 个黑球，你伸手进去摸一把，摸出黑球的概率是多大”。而一个自然而然的问题是反过来：“如果我们事先并不知道袋子里面黑白球的比例，而是闭着眼睛摸出一个（或好几个）球，观察这些取出来的球的颜色之后，那么我们可以就此对袋子里面的黑白球的比例作出什么样的推测”。这个问题，就是所谓的逆向概率问题。</p></blockquote>
+<p>所谓的贝叶斯定理源于他生前为解决一个~~“逆向概率”~~问题写的一篇文章，而这篇文章是在他死后才由他的一位朋友发表出来的。在贝叶斯写这篇文章之前，人们已经能够计算“正向概率”，如“假设袋子里面有 <code>N</code> 个白球，<code>M</code> 个黑球，你伸手进去摸一把，摸出黑球的概率是多大”。而一个自然而然的问题是反过来：“如果我们事先并不知道袋子里面黑白球的比例，而是闭着眼睛摸出一个（或好几个）球，观察这些取出来的球的颜色之后，那么我们可以就此对袋子里面的黑白球的比例作出什么样的推测”。这个问题，就是所谓的逆向概率问题。</p>
+</blockquote>
 <p>贝叶斯定理的思想出现在18世纪，但真正大规模派上用途还得等到计算机的出现。因为这个定理需要大规模的数据计算推理才能凸显效果，它在很多计算机应用领域中都大有作为，如自然语言拼写检查、机器学习、推荐系统、图像识别、博弈论等等。</p>
 <h2 id="定义">定义</h2>
 <p>~~<a href="http://zh.wikipedia.org/zh/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86">贝叶斯定理</a>~~是关于随机事件 <code>A</code> 和 <code>B</code> 的<a href="http://zh.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87">条件概率</a>：</p>
 <p><img src="http://upload.wikimedia.org/math/4/6/b/46b680c10ac90b0782843f4bbd0b4a95.png" alt="贝叶斯定理"></p>
 <p>其中<code>P(A|B)</code>是在 <code>B</code> 发生的情况下 <code>A</code> 发生的可能性。</p>
 <p>在贝叶斯定理中，每个名词都有约定俗成的名称：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>P(A) 是 A 的先验概率，之所以称为“先验”是因为它不考虑任何 B 方面的因素。
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>P(A) 是 A 的先验概率，之所以称为“先验”是因为它不考虑任何 B 方面的因素。
 </span></span><span style="display:flex;"><span>P(A|B) 是已知 B 发生后 A 的条件概率，也由于得自 B 的取值而被称作 A 的后验概率。
 </span></span><span style="display:flex;"><span>P(B|A) 是已知 A 发生后 B 的条件概率，也由于得自 A 的取值而被称作 B 的后验概率。
 </span></span><span style="display:flex;"><span>P(B) 是 B 的先验概率，也作标淮化常量（normalizing constant）。
 </span></span></code></pre></div><p>按这些术语，贝叶斯定理可表述为：</p>
 <blockquote>
-<p>后验概率 = (相似度 * 先验概率)/标淮化常量</p></blockquote>
+<p>后验概率 = (相似度 * 先验概率)/标淮化常量</p>
+</blockquote>
 <p>也就是说，后验概率与先验概率和相似度的乘积成正比。</p>
 <p>另外，比例 <code>P(B|A)/P(B)</code> 也有时被称作标淮相似度（standardised likelihood），Bayes定理可表述为：</p>
 <blockquote>
-<p>后验概率 = 标淮相似度 * 先验概率</p></blockquote>
+<p>后验概率 = 标淮相似度 * 先验概率</p>
+</blockquote>
 <ul>
 <li>
 <p><strong>条件概率</strong> 就是事件 A 在另外一个事件 B 已经发生条件下的发生概率。条件概率表示为P(A|B)，读作“在 B 发生的条件下 A 发生的概率”。</p>
@@ -418,25 +421,30 @@
 <p>《<a href="http://book.douban.com/subject/1193621/">决策与判断</a>》第十二章中讲到人们都有保守主义情结，即使出现了新信息，也不愿意根据新信息来更新先验概率。用前面解释里面的话说就是：新信息是 B 事件不断发生，人们本应该根据这个信息去更新 A 事件发生的概率，但人们却更愿意固守之前估计的 A 事件发生的概率。</p>
 <p>书中举了这样一个调查案例：</p>
 <blockquote>
-<p>假设有两个各装了 100 个球的箱子，甲箱子中有 70 个红球，30 个绿球，乙箱子中有 30 个红球，70 个绿球。假设随机选择其中一个箱子，从中拿出一个球记下球色再放回原箱子，如此重复 12 次，记录得到 8 次红球，4 次绿球。问题来了，你认为被选择的箱子是甲箱子的概率有多大？</p></blockquote>
+<p>假设有两个各装了 100 个球的箱子，甲箱子中有 70 个红球，30 个绿球，乙箱子中有 30 个红球，70 个绿球。假设随机选择其中一个箱子，从中拿出一个球记下球色再放回原箱子，如此重复 12 次，记录得到 8 次红球，4 次绿球。问题来了，你认为被选择的箱子是甲箱子的概率有多大？</p>
+</blockquote>
 <p>调查结果显示，大部分人都低估了选择的是甲箱子的概率。根据贝叶斯定理，正确答案是 <code>96.7%</code>。下面容我来详细分析解答。</p>
 <p>刚开始选择甲乙两箱子的先验概率都是50%，因为是随机二选一（这是贝叶斯定理二选一的特殊形式）。即有：</p>
 <blockquote>
-<p>P(甲) = 0.5， P(乙) = 1 - P(甲)；</p></blockquote>
+<p>P(甲) = 0.5， P(乙) = 1 - P(甲)；</p>
+</blockquote>
 <p>这时在拿出一个球是红球的情况下，我们就应该根据这个信息来更新选择的是甲箱子的先验概率：</p>
 <blockquote>
 <p>P(甲|红球1) = P(红球|甲) × P(甲) / (P(红球|甲) × P(甲) + (P(红球|乙) × P(乙)))<br>
 P(红球|甲)：甲箱子中拿到红球的概率<br>
-P(红球|乙)：乙箱子中拿到红球的概率</p></blockquote>
+P(红球|乙)：乙箱子中拿到红球的概率</p>
+</blockquote>
 <p>因此在出现一个红球的情况下，选择的是甲箱子的先验概率就可被修正为：</p>
 <blockquote>
-<p>P(甲|红球1) = 0.7 × 0.5 / (0.7 × 0.5 + 0.3 × 0.5) = 0.7</p></blockquote>
+<p>P(甲|红球1) = 0.7 × 0.5 / (0.7 × 0.5 + 0.3 × 0.5) = 0.7</p>
+</blockquote>
 <p>即在出现一个红球之后，甲乙箱子被选中的先验概率就被修正为：</p>
 <blockquote>
-<p>P(甲) = 0.7， P(乙) = 1 - P(甲) = 0.3；</p></blockquote>
+<p>P(甲) = 0.7， P(乙) = 1 - P(甲) = 0.3；</p>
+</blockquote>
 <p>如此重复，直到经历 8 次红球修正（概率增加），4 次绿球修正（概率减少）之后，选择的是甲箱子的概率为：96.7%。</p>
 <p>我写了一段 Python 代码来解这个问题：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bayesFunc</span>(pIsBox1, pBox1, pBox2):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">bayesFunc</span>(pIsBox1, pBox1, pBox2):
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> (pIsBox1 <span style="color:#f92672">*</span> pBox1)<span style="color:#f92672">/</span>((pIsBox1 <span style="color:#f92672">*</span> pBox1) <span style="color:#f92672">+</span> (<span style="color:#ae81ff">1</span> <span style="color:#f92672">-</span> pIsBox1) <span style="color:#f92672">*</span> pBox2)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">redGreenBallProblem</span>():
@@ -455,7 +463,7 @@ P(红球|乙)：乙箱子中拿到红球的概率</p></blockquote>
 </span></span><span style="display:flex;"><span>redGreenBallProblem()
 </span></span></code></pre></div><p>在这个调查问题里面，8 次红球与 4 次绿球出现的顺序并不重要，因为红球的出现总是使选择的是甲箱子的概率增加，而绿球的出现总是减少。因此，为了简化编程，我将红球出现的情况以及绿球出现的情况摆在一起了。</p>
 <p>程序运行结果如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>After red 1 &gt; in 甲 box: 0.700000
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>After red 1 &gt; in 甲 box: 0.700000
 </span></span><span style="display:flex;"><span>After red 2 &gt; in 甲 box: 0.844828
 </span></span><span style="display:flex;"><span>After red 3 &gt; in 甲 box: 0.927027
 </span></span><span style="display:flex;"><span>After red 4 &gt; in 甲 box: 0.967365
@@ -472,43 +480,52 @@ P(红球|乙)：乙箱子中拿到红球的概率</p></blockquote>
 <p>《<a href="http://book.douban.com/subject/2143904/">进化心理学</a>》第十三章(428页)讲到人类的心理从进化角度来看，更偏好使用频率（我最近十次打猎八次有收获）而不是概率（我最近打猎有80%的成功率）。</p>
 <p>书中举了同一个问题用不同方式表述使得问题的难易程度迥然不同：</p>
 <blockquote>
-<p>表述一：有一种疾病的发病率是千分之一，医院有一种化验技术可以对这种疾病进行诊断，但是却有百分之五的误诊率（也即是说尽管有百分之五的人没有病，但是化验结果却显示为阳性(即假阳性)）。现在假设一个人的化验结果显示为有病，仅根据这一化验结果推测，那么这个人确实患病的概率有多大？</p></blockquote>
+<p>表述一：有一种疾病的发病率是千分之一，医院有一种化验技术可以对这种疾病进行诊断，但是却有百分之五的误诊率（也即是说尽管有百分之五的人没有病，但是化验结果却显示为阳性(即假阳性)）。现在假设一个人的化验结果显示为有病，仅根据这一化验结果推测，那么这个人确实患病的概率有多大？</p>
+</blockquote>
 <p>这个问题也可以用贝叶斯定理来解决，不过在看分析之前，你可以先估算下你自己的答案，然后再和正确答案比较。</p>
 <p>这个问题的分析过程如下：</p>
 <blockquote>
 <p>已知先验概率：P(患病) = 0.001，P(正常) = 0.999；<br>
 该化验技术的确诊率（即患病化验结果显示为阳性的概率）为：P(确诊率) = 1.00；<br>
-该化验技术的误诊率（即正常化验结果显示为阳性的概率）为：P(误诊率) = 0.05。</p></blockquote>
+该化验技术的误诊率（即正常化验结果显示为阳性的概率）为：P(误诊率) = 0.05。</p>
+</blockquote>
 <p>根据上面的数据，我们就能够推测出一个人化验为阳性的情况下，这个人确实患病的概率有多大：</p>
 <blockquote>
 <p>P(患病|阳性) = P(患病) × P(确诊率) / (P(患病) × P(确诊率) + P(正常) × P(误诊率))<br>
 = 0.001 × 1.00 / (0.001 × 1.00 + 0.999 × 0.05)<br>
 = 0.0198<br>
-= 2%</p></blockquote>
+= 2%</p>
+</blockquote>
 <p>结果让你大吃一惊吧，在没有其他症状增加患病概率的情况下，单凭化验结果显示为阳性来推测的话，其真实患病的概率还不到百分之二。</p>
 <p>用频率作为信息来记忆或回忆更生动也更容易被提取，想想第一次打猎什么情形，第二次打猎什么情形，历历在目。正因为频率作为信息存储载体保留了事件的形象性，提高了记忆的可得性，因此在进化过程中人类的心理机制优先选择了频率而不是抽象的概率。而且在人类十多万年的进化过程中，出现概率概念的文明进程不过几千年，大脑还没有对进化到更适应抽象的概率的地步。</p>
 <p>所以这个问题如果换成用频率来表述的话，相信你的答案会大大接近于正确答案。</p>
 <blockquote>
-<p>表述二：在一千个人中，就有一个人患有X疾病（即发病率为千分之一），有一种化验技术，可以检验是否患有该疾病。如果一个人确实患有该病，化验结果可定显示为阳性。但有时候也会出现误诊，即在一千个完全健康的人中，有五十个人的化验结果显示为阳性（也即是说误诊率为百分之五）。</p></blockquote>
+<p>表述二：在一千个人中，就有一个人患有X疾病（即发病率为千分之一），有一种化验技术，可以检验是否患有该疾病。如果一个人确实患有该病，化验结果可定显示为阳性。但有时候也会出现误诊，即在一千个完全健康的人中，有五十个人的化验结果显示为阳性（也即是说误诊率为百分之五）。</p>
+</blockquote>
 <p>换成以频率方式来表述这个问题，答案就显然易见了：</p>
 <blockquote>
-<p>P(患病|阳性) = 1/(1 + 50) = 1/51 = 0.0196 = 2%</p></blockquote>
+<p>P(患病|阳性) = 1/(1 + 50) = 1/51 = 0.0196 = 2%</p>
+</blockquote>
 <p>通过这个例子，我们可以懂得，若能把概率问题转换成频率来表述，即便是需要使用贝叶斯这样复杂定理来计算的问题，也能轻而易举地解答。这就是《<a href="http://book.douban.com/subject/1135754/">你的灯亮着么？</a>》里面提到的“重述问题”的技巧。</p>
 <h3 id="示例三在博弈论里面的应用">示例三：在博弈论里面的应用</h3>
 <p>挑战者 B 不知道原垄断者 A 是属于高阻挠成本（为阻止 B 进入而花费的成本）类型还是低阻挠成本类型，但B知道，如果 A 属于高阻挠成本类型，B 进入市场时A进行阻挠的概率是 20%（阻扰成本高，因此阻挠概率低）；如果 A 属于低阻挠成本类型，B 进入市场时 A 进行阻挠的概率是 100%。</p>
 <p>博弈开始时，B 认为 A 属于高阻挠成本企业的概率为 70%，因此，B 估计自己在进入市场时，受到 A 阻挠的概率为：</p>
 <blockquote>
-<p>P(阻挠) = 0.7 × 0.2 + 0.3 × 1.0 = 0.44</p></blockquote>
+<p>P(阻挠) = 0.7 × 0.2 + 0.3 × 1.0 = 0.44</p>
+</blockquote>
 <p>0.44 是在 B 给定 A 所属类型的先验概率下，A 可能采取阻挠行为的概率。</p>
 <p>当 B 进入市场时，若 A 确实进行阻挠。根据贝叶斯定理，从 A 进行阻挠这一行为，B 可修正 A 属于高阻挠成本企业的概率为：：</p>
 <blockquote>
-<p>P(高成本阻扰企业) = 0.7 × 0.2 ÷ 0.44 × 1.0 = 0.32</p></blockquote>
+<p>P(高成本阻扰企业) = 0.7 × 0.2 ÷ 0.44 × 1.0 = 0.32</p>
+</blockquote>
 <p>根据这一新的先验概率，B 估计自己在进入市场时，受到 A 阻挠的概率为：</p>
 <blockquote>
-<p>P(阻挠) = 0.32 × 0.2 + 0.68 × 1 = 0.744</p></blockquote>
+<p>P(阻挠) = 0.32 × 0.2 + 0.68 × 1 = 0.744</p>
+</blockquote>
 <p>若 B 再一次进入市场时，A 又进行了阻挠。根据贝叶斯定理，从 A 再次进行阻挠这一行为，B 可修正 A 属于高阻挠成本企业的概率为</p>
 <blockquote>
-<p>P(高成本阻扰企业) = 0.32 × 0.2 ÷ 0.744 × 1.0 = 0.086</p></blockquote>
+<p>P(高成本阻扰企业) = 0.32 × 0.2 ÷ 0.744 × 1.0 = 0.086</p>
+</blockquote>
 <p>这样，根据 A 一次又一次的阻挠行为，B 不断修正判断 A 为高阻挠成本的概率（越来越低了），从而越来越倾向于将 A 判断为低阻挠成本企业。</p>
 <h3 id="示例四在计算机领域中的应用">示例四：在计算机领域中的应用</h3>
 <p>贝叶斯定理在计算机领域中的应用那可是太多了，无论是在机器学习、自然语言处理、图像识别、推荐算法、搜索算法还是垃圾邮件处理中都大有用途。在这些应用中都有一个特点，那就是根据既有输入，在庞大的已有数据库中寻找匹配程度（也即是发生概率）最高的那些项。由于这些话题太大，在这里就不展开了。</p>
